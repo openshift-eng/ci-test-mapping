@@ -28,7 +28,15 @@ func ExtractTestField(testName, field string) (results []string) {
 func StableID(testInfo *v1.TestInfo, stableName string) string {
 	hash := fmt.Sprintf("%x", md5.Sum([]byte(stableName)))
 	if testInfo.Suite != "" {
-		stableName = fmt.Sprintf("%s:%s", testInfo.Suite, hash)
+		// We differentiate tests on suite and name, because I imagined a scenario where two entirely different
+		// test suites create a generically named test like "TestClusterCreate" and we don't want to conflate them.
+		// However, openshift-tests and  openshift-tests-upgrade are definitely the same tests, and it makes sense to
+		// give them both the same ID. We already get the "upgrade" view from the variants.
+		suite := testInfo.Suite
+		if suite == "openshift-tests-upgrade" {
+			suite = "openshift-tests"
+		}
+		stableName = fmt.Sprintf("%s:%s", suite, hash)
 	}
 
 	return stableName
