@@ -19,6 +19,12 @@ var KubeControllerManagerComponent = Component{
 				IncludeAll: []string{"bz-kube-controller-manager"},
 			},
 			{
+				Namespaces: []string{
+					"openshift-kube-controller-manager",
+					"openshift-kube-controller-manager-operator",
+				},
+			},
+			{
 				IncludeAny: []string{
 					"Feature:ClusterResourceQuota",
 					"ResourceQuota",

@@ -18,6 +18,12 @@ var ControllerManagerComponent = Component{
 			{
 				IncludeAll: []string{"bz-openshift-controller-manager"},
 			},
+			{
+				Namespaces: []string{
+					"openshift-controller-manager",
+					"openshift-controller-manager-operator",
+				},
+			},
 		},
 	},
 }

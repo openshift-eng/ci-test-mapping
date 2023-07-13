@@ -19,6 +19,13 @@ var RouterComponent = Component{
 				IncludeAll: []string{"bz-Routing"},
 			},
 			{
+				Namespaces: []string{
+					"openshift-ingress",
+					"openshift-ingress-canary",
+					"openshift-ingress-operator",
+				},
+			},
+			{
 				SIG:        "sig-network",
 				IncludeAll: []string{"Feature:Router"},
 			},

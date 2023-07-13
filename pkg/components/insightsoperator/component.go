@@ -21,6 +21,11 @@ var InsightsOperatorComponent = Component{
 			{
 				IncludeAll: []string{"insights-operator"},
 			},
+			{
+				Namespaces: []string{
+					"openshift-insights",
+				},
+			},
 		},
 	},
 }

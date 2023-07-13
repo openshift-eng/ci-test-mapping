@@ -19,6 +19,12 @@ var KubeSchedulerComponent = Component{
 				IncludeAll: []string{"bz-kube-scheduler"},
 			},
 			{
+				Namespaces: []string{
+					"openshift-kube-scheduler",
+					"openshift-kube-scheduler-operator",
+				},
+			},
+			{
 				SIG:      "sig-scheduling",
 				Priority: -1,
 			},

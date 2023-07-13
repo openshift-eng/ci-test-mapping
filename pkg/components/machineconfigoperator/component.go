@@ -22,6 +22,11 @@ var MachineConfigOperatorComponent = Component{
 				IncludeAll: []string{"bz-machine config operator"},
 			},
 			{
+				Namespaces: []string{
+					"openshift-machine-config-operator",
+				},
+			},
+			{
 				IncludeAll: []string{"machine-config-operator"},
 			},
 			{

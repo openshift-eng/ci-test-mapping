@@ -18,6 +18,13 @@ var ApiserverAuthComponent = Component{
 			{
 				IncludeAll: []string{"bz-apiserver-auth"},
 			},
+			{
+				Namespaces: []string{
+					"openshift-authentication",
+					"openshift-authentication-operator",
+				},
+				Priority: 1,
+			},
 		},
 	},
 }

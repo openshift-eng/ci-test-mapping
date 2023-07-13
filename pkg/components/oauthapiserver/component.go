@@ -19,6 +19,11 @@ var OauthApiserverComponent = Component{
 				IncludeAll: []string{"bz-oauth-apiserver"},
 			},
 			{
+				Namespaces: []string{
+					"openshift-oauth-apiserver",
+				},
+			},
+			{
 				IncludeAll: []string{"oauth-api", "-connections"},
 			},
 			{

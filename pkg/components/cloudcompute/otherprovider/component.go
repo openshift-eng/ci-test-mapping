@@ -16,6 +16,12 @@ var OtherProviderComponent = Component{
 		DefaultJiraComponent: "Cloud Compute / Other Provider",
 		Matchers: []config.ComponentMatcher{
 			{
+				Namespaces: []string{
+					"openshift-cluster-machine-approver",
+					"openshift-machine-api",
+				},
+			},
+			{
 				IncludeAll: []string{"bz-Cloud Compute"},
 			},
 			{

@@ -20,6 +20,12 @@ var DNSComponent = Component{
 				IncludeAll: []string{"DNS"},
 			},
 			{
+				Namespaces: []string{
+					"openshift-dns",
+					"openshift-dns-operator",
+				},
+			},
+			{
 				IncludeAll: []string{"cluster-dns-operator"},
 			},
 			{

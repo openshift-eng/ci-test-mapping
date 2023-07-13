@@ -22,6 +22,15 @@ var ClusterNetworkOperatorComponent = Component{
 				IncludeAll: []string{"bz-networking"},
 			},
 			{
+				Namespaces: []string{
+					"openshift-host-network",
+					"openshift-network-diagnostics",
+					"openshift-network-operator",
+					"openshift-kni-infra",
+				},
+				Priority: 1,
+			},
+			{
 				SIG: "sig-network",
 				// Everything not already matched goes here
 				Priority: -1,

@@ -22,6 +22,13 @@ var OLMComponent = Component{
 				},
 			},
 			{
+				Namespaces: []string{
+					"openshift-marketplace",
+					"openshift-operator-lifecycle-manager",
+					"openshift-operators",
+				},
+			},
+			{
 				SIG: "sig-operator",
 			},
 			{

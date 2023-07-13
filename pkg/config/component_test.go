@@ -35,6 +35,26 @@ func TestComponent_FindMatch(t *testing.T) {
 			matches: false,
 		},
 		{
+			name: "namespace matches",
+			matcher: ComponentMatcher{
+				Namespaces: []string{"openshift-authentication"},
+			},
+			test: v1.TestInfo{
+				Name: "[sig-network] there should be reasonably few single second disruptions for ns/openshift-authentication route/oauth-openshift disruption/ingress-to-oauth-server connection/reused",
+			},
+			matches: true,
+		},
+		{
+			name: "namespace does not match",
+			matcher: ComponentMatcher{
+				Namespaces: []string{"openshift-console"},
+			},
+			test: v1.TestInfo{
+				Name: "[sig-network] there should be reasonably few single second disruptions for ns/openshift-authentication route/oauth-openshift disruption/ingress-to-oauth-server connection/reused",
+			},
+			matches: false,
+		},
+		{
 			name: "sig and suite and include any matches",
 			matcher: ComponentMatcher{
 				SIG:        "sig-network-edge",
@@ -122,5 +142,16 @@ func TestComponent_FindMatch(t *testing.T) {
 				t.Errorf("FindMatch() did not match, but we wanted a match")
 			}
 		})
+	}
+}
+
+func TestIHateRegexes(t *testing.T) {
+	actual := ExtractNamespaceFromTestName("[sig-arch][bz-Unknown][Late] Alerts [apigroup:monitoring.coreos.com] alert/KubePodNotReady should not be at or above info in ns/openshift [Suite:openshift/conformance/parallel]")
+	if actual != "openshift" {
+		t.Fatal(actual)
+	}
+	actual = ExtractNamespaceFromTestName("[sig-arch][bz-openshift-apiserver][Late] Alerts [apigroup:monitoring.coreos.com] alert/KubePodNotReady should not be at or above info in ns/openshift-apiserver [Suite:openshift/conformance/parallel]")
+	if actual != "openshift-apiserver" {
+		t.Fatal(actual)
 	}
 }

@@ -18,6 +18,11 @@ var ConfigOperatorComponent = Component{
 			{
 				IncludeAll: []string{"bz-config-operator"},
 			},
+			{
+				Namespaces: []string{
+					"openshift-config-operator",
+				},
+			},
 		},
 	},
 }

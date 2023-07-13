@@ -19,6 +19,12 @@ var OpenshiftApiserverComponent = Component{
 				IncludeAll: []string{"bz-openshift-apiserver"},
 			},
 			{
+				Namespaces: []string{
+					"openshift-apiserver",
+					"openshift-apiserver-operator",
+				},
+			},
+			{
 				IncludeAll: []string{"openshift-api-", "-connections"},
 			},
 		},

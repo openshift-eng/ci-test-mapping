@@ -14,7 +14,13 @@ var PlatformOpenstackComponent = Component{
 		Name:                 "Machine Config Operator / platform-openstack",
 		Operators:            []string{},
 		DefaultJiraComponent: "Machine Config Operator / platform-openstack",
-		Matchers:             []config.ComponentMatcher{},
+		Matchers: []config.ComponentMatcher{
+			{
+				Namespaces: []string{
+					"openshift-openstack-infra",
+				},
+			},
+		},
 	},
 }
 

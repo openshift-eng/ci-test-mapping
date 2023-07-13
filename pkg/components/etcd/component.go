@@ -19,6 +19,12 @@ var EtcdComponent = Component{
 				SIG: "sig-etcd",
 			},
 			{
+				Namespaces: []string{
+					"openshift-etcd",
+					"openshift-etcd-operator",
+				},
+			},
+			{
 				IncludeAll: []string{"bz-etcd"},
 			},
 			{

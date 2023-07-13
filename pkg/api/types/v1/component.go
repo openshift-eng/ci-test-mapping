@@ -19,6 +19,9 @@ type Component interface {
 	StableID(*TestInfo) string
 
 	JiraComponents() []string
+
+	// Namespaces returns the list of namespaces owned by this component.
+	Namespaces() []string
 }
 
 // TestInfo is the input to the component owners with metadata about a test. It currently includes only

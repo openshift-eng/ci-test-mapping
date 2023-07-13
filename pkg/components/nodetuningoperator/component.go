@@ -18,6 +18,11 @@ var NodeTuningOperatorComponent = Component{
 			{
 				IncludeAll: []string{"bz-Node Tuning Operator"},
 			},
+			{
+				Namespaces: []string{
+					"openshift-cluster-node-tuning-operator",
+				},
+			},
 		},
 	},
 }

@@ -18,6 +18,12 @@ var ServiceCaComponent = Component{
 			{
 				IncludeAll: []string{"[bz-service-ca]"},
 			},
+			{
+				Namespaces: []string{
+					"openshift-service-ca",
+					"openshift-service-ca-operator",
+				},
+			},
 		},
 	},
 }

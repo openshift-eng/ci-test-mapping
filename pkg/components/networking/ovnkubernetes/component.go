@@ -22,6 +22,12 @@ var OvnKubernetesComponent = Component{
 				ExcludeAny: []string{"Skipped:Network/OVNKubernetes", "Skipped:Network/OVNKuberenetes"},
 			},
 			{
+				Namespaces: []string{
+					"openshift-ovn-kubernetes",
+				},
+				Priority: 1,
+			},
+			{
 				IncludeAll: []string{"ovn-kubernetes"},
 				Priority:   1,
 			},

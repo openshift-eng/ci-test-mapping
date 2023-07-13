@@ -18,6 +18,12 @@ var KubeStorageVersionMigratorComponent = Component{
 			{
 				IncludeAll: []string{"bz-kube-storage-version-migrator"},
 			},
+			{
+				Namespaces: []string{
+					"openshift-kube-storage-version-migrator",
+					"openshift-kube-storage-version-migrator-operator",
+				},
+			},
 		},
 	},
 }

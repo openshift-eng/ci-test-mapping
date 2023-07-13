@@ -14,7 +14,13 @@ var PlatformVsphereComponent = Component{
 		Name:                 "Machine Config Operator / platform-vsphere",
 		Operators:            []string{},
 		DefaultJiraComponent: "Machine Config Operator / platform-vsphere",
-		Matchers:             []config.ComponentMatcher{},
+		Matchers: []config.ComponentMatcher{
+			{
+				Namespaces: []string{
+					"openshift-vsphere-infra",
+				},
+			},
+		},
 	},
 }
 

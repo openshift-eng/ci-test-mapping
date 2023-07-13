@@ -18,6 +18,13 @@ var ManagementConsoleComponent = Component{
 			{
 				IncludeAll: []string{"bz-Management Console"},
 			},
+			{
+				Namespaces: []string{
+					"openshift-console",
+					"openshift-console-operator",
+				},
+				Priority: 1,
+			},
 		},
 	},
 }

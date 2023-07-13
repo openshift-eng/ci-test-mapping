@@ -21,6 +21,11 @@ var SamplesOperatorComponent = Component{
 			{
 				IncludeAll: []string{"bz-samples"},
 			},
+			{
+				Namespaces: []string{
+					"openshift-cluster-samples-operator",
+				},
+			},
 		},
 	},
 }

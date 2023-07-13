@@ -27,6 +27,12 @@ var MonitoringComponent = Component{
 				IncludeAll: []string{"bz-monitoring"},
 			},
 			{
+				Namespaces: []string{
+					"openshift-monitoring",
+					"openshift-user-workload-monitoring",
+				},
+			},
+			{
 				SIG:      "sig-instrumentation",
 				Priority: 1,
 			},

@@ -19,6 +19,11 @@ var ImageRegistryComponent = Component{
 				IncludeAll: []string{"bz-Image Registry"},
 			},
 			{
+				Namespaces: []string{
+					"openshift-image-registry",
+				},
+			},
+			{
 				IncludeAll: []string{"image-registry-", "-connections"},
 			},
 			{

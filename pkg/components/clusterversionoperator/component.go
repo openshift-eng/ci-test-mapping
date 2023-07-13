@@ -30,6 +30,11 @@ var ClusterVersionOperatorComponent = Component{
 				},
 			},
 			{
+				Namespaces: []string{
+					"openshift-cluster-version",
+				},
+			},
+			{
 				IncludeAll: []string{"upgrade"},
 				// Let others claim upgrade tests (i.e. for their component)
 				Priority: -10,

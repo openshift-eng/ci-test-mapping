@@ -19,6 +19,18 @@ var KubeApiserverComponent = Component{
 				IncludeAll: []string{"bz-kube-apiserver"},
 			},
 			{
+				Namespaces: []string{
+					"default",
+					"openshift",
+					"kube-system",
+					"openshift-config",
+					"openshift-config-managed",
+					"openshift-kube-apiserver",
+					"openshift-kube-apiserver-operator",
+				},
+				Priority: 1,
+			},
+			{
 				IncludeAll: []string{"cache-kube-api-"},
 			},
 			{

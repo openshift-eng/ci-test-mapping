@@ -18,6 +18,11 @@ var CloudCredentialOperatorComponent = Component{
 			{
 				IncludeAll: []string{"bz-Cloud Credential Operator"},
 			},
+			{
+				Namespaces: []string{
+					"openshift-cloud-credential-operator",
+				},
+			},
 		},
 	},
 }
