@@ -2,13 +2,11 @@ package config
 
 import (
 	"regexp"
-	"strconv"
 	"strings"
-
-	"k8s.io/apimachinery/pkg/util/sets"
 
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/util"
+	"k8s.io/apimachinery/pkg/util/sets"
 )
 
 // Component is the default configuration struct that you can include in your
@@ -48,20 +46,6 @@ type ComponentMatcher struct {
 }
 
 func (c *Component) FindMatch(test *v1.TestInfo) *ComponentMatcher {
-	jiraComponents := util.ExtractTestField(test.Name, "Jira")
-	for _, jc := range jiraComponents {
-		unquoted, err := strconv.Unquote(jc)
-		if err != nil { // not quoted
-			unquoted = jc
-		}
-
-		if strings.EqualFold(unquoted, c.DefaultJiraComponent) {
-			return &ComponentMatcher{
-				JiraComponent: c.DefaultJiraComponent,
-			}
-		}
-	}
-
 	if ok, capabilities := c.IsOperatorTest(test); ok {
 		return &ComponentMatcher{
 			JiraComponent: c.DefaultJiraComponent,
