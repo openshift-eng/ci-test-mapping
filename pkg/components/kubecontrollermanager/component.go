@@ -29,6 +29,17 @@ var KubeControllerManagerComponent = Component{
 				},
 				Priority: 1, // quota is owned by KCM more strongly than apimachinery
 			},
+			{Suite: "Features of daemonset"},
+			{Suite: "Quota related scenarios"},
+			{Suite: "Testing kube-controller-manager-operator"},
+			{Suite: "Workloads"},
+			{Suite: "cronjob related"},
+			{Suite: "deployment related features"},
+			{Suite: "deployment/dc related features via web"},
+			{Suite: "job.feature"},
+			{Suite: "quota related feature"},
+			{Suite: "Features of daeXXXset"},
+			{Suite: "deployment related steps"},
 		},
 		TestRenames: map[string]string{
 			"[sig-api-machinery][Feature:ClusterResourceQuota] Cluster resource quota should control resource limits across namespaces [apigroup:quota.openshift.io][apigroup:image.openshift.io] [Suite:openshift/conformance/parallel]": "[sig-api-machinery][Feature:ClusterResourceQuota] Cluster resource quota should control resource limits across namespaces [apigroup:quota.openshift.io][apigroup:image.openshift.io][apigroup:monitoring.coreos.com][apigroup:template.openshift.io] [Suite:openshift/conformance/parallel]",

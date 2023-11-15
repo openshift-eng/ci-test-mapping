@@ -31,6 +31,7 @@ var CloudControllerManagerComponent = Component{
 					"[sig-cluster-lifecycle] CSRs from machines that are not recognized by the cloud provider are not approved [Suite:openshift/conformance/parallel]",
 				},
 			},
+			{Suite: "Cluster_Infrastructure"},
 		},
 	},
 }

@@ -14,7 +14,10 @@ var OperatorHubComponent = Component{
 		Name:                 "OLM / OperatorHub",
 		Operators:            []string{},
 		DefaultJiraComponent: "OLM / OperatorHub",
-		Matchers:             []config.ComponentMatcher{},
+		Matchers: []config.ComponentMatcher{
+			{Suite: "Operator Hub tests"},
+			{Suite: "operatorhub feature related"},
+		},
 	},
 }
 

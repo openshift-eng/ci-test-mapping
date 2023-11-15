@@ -14,7 +14,9 @@ var ImageStreamsComponent = Component{
 		Name:                 "ImageStreams",
 		Operators:            []string{},
 		DefaultJiraComponent: "ImageStreams",
-		Matchers:             []config.ComponentMatcher{},
+		Matchers: []config.ComponentMatcher{
+			{Suite: "imagestream related"},
+		},
 	},
 }
 

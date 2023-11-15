@@ -21,6 +21,8 @@ var CloudCredentialOperatorComponent = Component{
 			{
 				IncludeAll: []string{"bz-Cloud Credential Operator"},
 			},
+			{Suite: "CloudCredentialOperator components upgrade tests"},
+			{Suite: "cloud credential operator"},
 		},
 	},
 }

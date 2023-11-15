@@ -21,6 +21,7 @@ var NodeTuningOperatorComponent = Component{
 			{
 				IncludeAll: []string{"bz-Node Tuning Operator"},
 			},
+			{Suite: "PSAP"},
 		},
 	},
 }

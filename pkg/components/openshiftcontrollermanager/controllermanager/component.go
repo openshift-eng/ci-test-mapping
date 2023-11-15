@@ -22,6 +22,7 @@ var ControllerManagerComponent = Component{
 			{
 				IncludeAll: []string{"bz-openshift-controller-manager"},
 			},
+			{Suite: "Check rollout restart and retry in Deployment/DC"},
 		},
 	},
 }

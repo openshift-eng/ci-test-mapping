@@ -14,7 +14,9 @@ var WindowsContainersComponent = Component{
 		Name:                 "Windows Containers",
 		Operators:            []string{},
 		DefaultJiraComponent: "Windows Containers",
-		Matchers:             []config.ComponentMatcher{},
+		Matchers: []config.ComponentMatcher{
+			{Suite: "Windows_Containers"},
+		},
 	},
 }
 

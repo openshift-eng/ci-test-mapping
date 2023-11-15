@@ -31,6 +31,9 @@ var EtcdComponent = Component{
 			{
 				IncludeAll: []string{"cluster-etcd-operator"},
 			},
+			{Suite: "DR_Testing"},
+			{Suite: "ETCD"},
+			{Suite: "etcd related features"},
 		},
 		TestRenames: map[string]string{
 			"[bz-etcd] pathological event should not see excessive RequiredInstallerResourcesMissing secrets": "[bz-etcd] should not see excessive RequiredInstallerResourcesMissing secrets",

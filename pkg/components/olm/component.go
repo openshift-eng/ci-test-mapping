@@ -37,6 +37,8 @@ var OLMComponent = Component{
 					"[sig-arch] openshift-marketplace pods should not get excessive startupProbe failures",
 				},
 			},
+			{Suite: "Marketplace related scenarios"},
+			{Suite: "OLM"},
 		},
 	},
 }

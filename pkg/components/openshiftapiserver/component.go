@@ -25,6 +25,9 @@ var OpenshiftApiserverComponent = Component{
 			{
 				IncludeAll: []string{"openshift-api-", "-connections"},
 			},
+			{Suite: "Projects"},
+			{Suite: "project list tests"},
+			{Suite: "project permissions"},
 		},
 	},
 }

@@ -28,6 +28,12 @@ var OvnKubernetesComponent = Component{
 				IncludeAll: []string{"ovn-kubernetes"},
 				Priority:   1,
 			},
+			{Suite: "OVN related networking scenarios"},
+			{Suite: "OVNKubernetes IPsec related networking scenarios"},
+			{Suite: "OVNKubernetes Windows Container related networking scenarios"},
+			{Suite: "SDN/OVN metrics related networking scenarios"},
+			{Suite: "ipv6 dual stack cluster test scenarios"},
+			{Suite: "sdn2ovn migration testing"},
 		},
 	},
 }

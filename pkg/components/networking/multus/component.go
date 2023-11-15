@@ -17,7 +17,13 @@ var MultusComponent = Component{
 		Namespaces: []string{
 			"openshift-multus",
 		},
-		Matchers: []config.ComponentMatcher{},
+		Matchers: []config.ComponentMatcher{
+			{Suite: "CNI related features"},
+			{Suite: "Multus-CNI ipv6 related scenarios"},
+			{Suite: "Multus-CNI related scenarios"},
+			{Suite: "SDN multus compoment upgrade testing"},
+			{Suite: "testing multicast scenarios"},
+		},
 	},
 }
 
