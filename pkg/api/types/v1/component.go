@@ -89,6 +89,9 @@ type TestOwnership struct {
 	// JIRAComponent specifies the JIRA component that this test belongs to.
 	JIRAComponent string `bigquery:"jira_component"`
 
+	// JIRAComponentID specifies the ID of the JIRA component above.
+	JIRAComponentID *uint `bigquery:"jira_component_id"`
+
 	// CreatedAt is the time this particular record was created.
 	//
 	// Components do not need to set this value.

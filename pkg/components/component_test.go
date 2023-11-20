@@ -50,6 +50,7 @@ func TestIdentifyTest(t *testing.T) {
 			},
 		},
 	}
+	ti := New(componentRegistry, nil)
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			if tt.before != nil {
@@ -58,7 +59,7 @@ func TestIdentifyTest(t *testing.T) {
 				}
 			}
 
-			testOwnership, err := IdentifyTest(componentRegistry, tt.testInfo)
+			testOwnership, err := ti.Identify(tt.testInfo)
 			if tt.wantError == "" && err != nil {
 				t.Fatalf("IdentifyTest() returned unexpected err: %+v", err)
 			} else if tt.wantError != "" && err == nil {

@@ -18,11 +18,27 @@ const (
 	DefaultProduct    = "OpenShift"
 )
 
-func IdentifyTest(reg *registry.Registry, test *v1.TestInfo) (*v1.TestOwnership, error) {
+type TestIdentifier struct {
+	reg          *registry.Registry
+	componentIDs map[string]uint
+}
+
+func New(reg *registry.Registry, componentIDs map[string]uint) *TestIdentifier {
+	if componentIDs == nil {
+		componentIDs = make(map[string]uint)
+	}
+
+	return &TestIdentifier{
+		reg:          reg,
+		componentIDs: componentIDs,
+	}
+}
+
+func (t *TestIdentifier) Identify(test *v1.TestInfo) (*v1.TestOwnership, error) {
 	var ownerships []*v1.TestOwnership
 
-	log.WithFields(testInfoLogFields(test)).Debugf("attempting to identify test using %d components", len(reg.Components))
-	for name, component := range reg.Components {
+	log.WithFields(testInfoLogFields(test)).Debugf("attempting to identify test using %d components", len(t.reg.Components))
+	for name, component := range t.reg.Components {
 		log.WithFields(testInfoLogFields(test)).Tracef("checking component %q", name)
 		ownership, err := component.IdentifyTest(test)
 		if err != nil {
@@ -31,12 +47,12 @@ func IdentifyTest(reg *registry.Registry, test *v1.TestInfo) (*v1.TestOwnership,
 		}
 		if ownership != nil {
 			log.WithFields(testInfoLogFields(test)).Tracef("component %q claimed this test", name)
-			ownerships = append(ownerships, setDefaults(test, ownership, component))
+			ownerships = append(ownerships, t.setDefaults(test, ownership, component))
 		}
 	}
 
 	if len(ownerships) == 0 {
-		ownerships = append(ownerships, setDefaults(test, &v1.TestOwnership{
+		ownerships = append(ownerships, t.setDefaults(test, &v1.TestOwnership{
 			ID:   util.StableID(test, test.Name),
 			Name: test.Name,
 		}, nil))
@@ -53,7 +69,7 @@ func IdentifyTest(reg *registry.Registry, test *v1.TestInfo) (*v1.TestOwnership,
 	return highestPriority, nil
 }
 
-func setDefaults(testInfo *v1.TestInfo, testOwnership *v1.TestOwnership, c v1.Component) *v1.TestOwnership {
+func (t *TestIdentifier) setDefaults(testInfo *v1.TestInfo, testOwnership *v1.TestOwnership, c v1.Component) *v1.TestOwnership {
 	if testOwnership.ID == "" && c != nil {
 		testOwnership.ID = util.StableID(testInfo, c.StableID(testInfo))
 	}
@@ -67,7 +83,14 @@ func setDefaults(testInfo *v1.TestInfo, testOwnership *v1.TestOwnership, c v1.Co
 
 	if testOwnership.Component == "" {
 		testOwnership.Component = DefaultComponent
+	}
+
+	if testOwnership.JIRAComponent == "" {
 		testOwnership.JIRAComponent = DefaultComponent
+	}
+
+	if id, ok := t.componentIDs[testOwnership.JIRAComponent]; ok {
+		testOwnership.JIRAComponentID = &id
 	}
 
 	if len(testOwnership.Capabilities) == 0 {

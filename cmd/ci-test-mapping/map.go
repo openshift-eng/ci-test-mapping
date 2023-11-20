@@ -16,6 +16,7 @@ import (
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/bigquery"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components"
+	"github.com/openshift-eng/ci-test-mapping/pkg/jira"
 	"github.com/openshift-eng/ci-test-mapping/pkg/registry"
 )
 
@@ -73,10 +74,17 @@ var mapCmd = &cobra.Command{
 		now := time.Now()
 		createdAt := civil.DateTimeOf(now)
 		log.Infof("mapping tests to ownership")
+
+		jiraComponentIDs, err := jira.GetJiraComponents()
+		if err != nil {
+			log.WithError(err).Fatalf("could not get jira component mapping")
+		}
+
+		testIdentifier := components.New(componentRegistry, jiraComponentIDs)
 		var newMappings []v1.TestOwnership
 		var matched, unmatched int
 		for i := range tests {
-			ownership, err := components.IdentifyTest(componentRegistry, &tests[i])
+			ownership, err := testIdentifier.Identify(&tests[i])
 			if err != nil {
 				log.WithError(err).Fatalf("encountered error in component identification")
 			}
