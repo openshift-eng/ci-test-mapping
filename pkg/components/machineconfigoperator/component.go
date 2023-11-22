@@ -39,6 +39,11 @@ var MachineConfigOperatorComponent = Component{
 				IncludeAll:   []string{"Pods cannot access the /config"},
 				Capabilities: []string{"Config"},
 			},
+			{Suite: "Improve MachineConfigPool list table for update status"},
+			{Suite: "MCO"},
+			{Suite: "Machine features testing"},
+			{Suite: "Machine misc features testing"},
+			{Suite: "machineconfig/machineconfig pool related"},
 		},
 	},
 }

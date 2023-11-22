@@ -17,6 +17,7 @@ var TestFrameworkComponent = Component{
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAll: []string{"Undiagnosed panic"},
+				Priority:   1,
 			},
 			{
 				SIG: "sig-trt",

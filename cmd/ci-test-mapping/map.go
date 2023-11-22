@@ -43,9 +43,9 @@ var mapCmd = &cobra.Command{
 
 			// Create or update schema for mapping table
 			tableManager = bigquery.NewMappingTableManager(context.Background(), bigqueryClient)
-			if err := tableManager.Migrate(); err != nil {
-				log.WithError(err).Fatal("could not migrate mapping table")
-			}
+			//if err := tableManager.Migrate(); err != nil {
+			//	log.WithError(err).Fatal("could not migrate mapping table")
+			//}
 
 			// Get a list of all tests from bigquery - this could be swapped out with other
 			// mechanisms to get test details later on.
@@ -54,7 +54,7 @@ var mapCmd = &cobra.Command{
 			if err != nil {
 				log.WithError(err).Fatal("could not list tests")
 			}
-			if err := writeRecords(tests, "bigquery_tests.json"); err != nil {
+			if err := writeRecords(tests, "qe_bigquery_tests.json"); err != nil {
 				log.WithError(err).Fatal("couldn't write records")
 			}
 		} else {

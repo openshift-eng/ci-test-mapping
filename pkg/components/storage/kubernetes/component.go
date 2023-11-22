@@ -14,7 +14,12 @@ var KubernetesComponent = Component{
 		Name:                 "Storage / Kubernetes",
 		Operators:            []string{},
 		DefaultJiraComponent: "Storage / Kubernetes",
-		Matchers:             []config.ComponentMatcher{},
+		Matchers: []config.ComponentMatcher{
+			{Suite: "Persistent Volume Claim binding policies"},
+			{Suite: "Storage of Hostpath plugin testing"},
+			{Suite: "Testing for pv and pvc pre-bind feature"},
+			{Suite: "Target pvc to a specific pv"},
+		},
 	},
 }
 

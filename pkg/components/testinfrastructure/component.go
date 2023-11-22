@@ -29,6 +29,7 @@ var TestInfrastructureComponent = Component{
 					"Store build results into a layer on top of bin and save as rpms",
 					"Store build results into a layer on top of src and save as bin",
 				},
+				Priority: 1,
 			},
 		},
 		TestRenames: map[string]string{

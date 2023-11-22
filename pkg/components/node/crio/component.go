@@ -20,6 +20,7 @@ var CRIOComponent = Component{
 					"[sig-arch] [Conformance] FIPS TestFIPS",
 				},
 			},
+			{Suite: "Container_Engine_Tools"},
 		},
 	},
 }

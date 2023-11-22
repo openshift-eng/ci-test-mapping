@@ -14,7 +14,10 @@ var BareMetalProviderComponent = Component{
 		Name:                 "Cloud Compute / BareMetal Provider",
 		Operators:            []string{},
 		DefaultJiraComponent: "Cloud Compute / BareMetal Provider",
-		Matchers:             []config.ComponentMatcher{},
+		Matchers: []config.ComponentMatcher{
+			{Suite: "BareMetalHosts related features"},
+			{Suite: "BM related features"},
+		},
 	},
 }
 

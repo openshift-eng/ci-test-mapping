@@ -15,9 +15,10 @@ var HyperShiftComponent = Component{
 		Operators:            []string{},
 		DefaultJiraComponent: "HyperShift",
 		Matchers: []config.ComponentMatcher{
-			{
-				Suite: "hypershift-e2e",
-			},
+			{Suite: "Check on hypershift provisined cluster"},
+			{Suite: "Hypershift"},
+			{Suite: "feature for hypershift provisined cluster"},
+			{Suite: "hypershift-e2e"},
 		},
 	},
 }

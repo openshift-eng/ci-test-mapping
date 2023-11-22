@@ -14,7 +14,9 @@ var PlatformBaremetalComponent = Component{
 		Name:                 "Machine Config Operator / platform-baremetal",
 		Operators:            []string{},
 		DefaultJiraComponent: "Machine Config Operator / platform-baremetal",
-		Matchers:             []config.ComponentMatcher{},
+		Matchers: []config.ComponentMatcher{
+			{Suite: "metal infra"},
+		},
 	},
 }
 

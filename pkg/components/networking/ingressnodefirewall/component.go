@@ -14,7 +14,9 @@ var IngressNodeFirewallComponent = Component{
 		Name:                 "Networking / ingress-node-firewall",
 		Operators:            []string{},
 		DefaultJiraComponent: "Networking / ingress-node-firewall",
-		Matchers:             []config.ComponentMatcher{},
+		Matchers: []config.ComponentMatcher{
+			{Suite: "Egress-ingress related networking scenarios"},
+		},
 	},
 }
 

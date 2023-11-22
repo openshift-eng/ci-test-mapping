@@ -14,7 +14,9 @@ var MachineHealthCheckComponent = Component{
 		Name:                 "Cloud Compute / MachineHealthCheck",
 		Operators:            []string{},
 		DefaultJiraComponent: "Cloud Compute / MachineHealthCheck",
-		Matchers:             []config.ComponentMatcher{},
+		Matchers: []config.ComponentMatcher{
+			{Suite: "MachineHealthCheck Test Scenarios"},
+		},
 	},
 }
 

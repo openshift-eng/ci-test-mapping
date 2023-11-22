@@ -37,6 +37,11 @@ var MonitoringComponent = Component{
 			{
 				IncludeAll: []string{"cluster-monitoring-operator"},
 			},
+			{Suite: "Cluster_Observability"},
+			{Suite: "Symptom Detection"},
+			{Suite: "cluster monitoring related upgrade check"},
+			{Suite: "servicemonitor"},
+			{Suite: "serviceXXXitor"},
 		},
 	},
 }

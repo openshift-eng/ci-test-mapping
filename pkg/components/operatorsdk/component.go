@@ -14,7 +14,9 @@ var OperatorSDKComponent = Component{
 		Name:                 "Operator SDK",
 		Operators:            []string{},
 		DefaultJiraComponent: "Operator SDK",
-		Matchers:             []config.ComponentMatcher{},
+		Matchers: []config.ComponentMatcher{
+			{Suite: "Operator_SDK"},
+		},
 	},
 }
 
