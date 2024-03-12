@@ -84,10 +84,13 @@ var mapCmd = &cobra.Command{
 		testIdentifier := components.New(componentRegistry, jiraComponentIDs)
 		var newMappings []v1.TestOwnership
 		var matched, unmatched int
+		success := true
 		for i := range tests {
 			ownership, err := testIdentifier.Identify(&tests[i])
 			if err != nil {
-				log.WithError(err).Fatalf("encountered error in component identification")
+				log.WithError(err).Warningf("encountered error in component identification")
+				success = false
+				continue
 			}
 			if ownership != nil {
 				if ownership.Component == components.DefaultComponent {
@@ -100,6 +103,9 @@ var mapCmd = &cobra.Command{
 				ownership.StaffApprovedObsolete = testObsoleter.IsObsolete(&tests[i])
 				newMappings = append(newMappings, *ownership)
 			}
+		}
+		if !success {
+			log.Fatalf("encountered errors while trying to identify tests")
 		}
 
 		// Ensure slice is sorted

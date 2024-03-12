@@ -24,7 +24,7 @@ var KubeSchedulerComponent = Component{
 			},
 			{
 				SIG:      "sig-scheduling",
-				Priority: -1,
+				Priority: -10,
 			},
 		},
 		TestRenames: map[string]string{

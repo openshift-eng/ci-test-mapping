@@ -33,6 +33,7 @@ var OtherProviderComponent = Component{
 					"Managed cluster should have same number of Machines and Nodes",
 					"control plane machine set operator",
 				},
+				Priority: -1,
 			},
 			{
 				IncludeAll: []string{"service-load-balancer-", "disruption"},

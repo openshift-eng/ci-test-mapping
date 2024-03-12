@@ -23,6 +23,7 @@ var ClusterNetworkOperatorComponent = Component{
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAll: []string{"bz-Networking"},
+				Priority:   -1,
 			},
 			{
 				IncludeAll: []string{"bz-networking"},

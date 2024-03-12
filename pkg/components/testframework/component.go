@@ -34,18 +34,18 @@ var TestFrameworkComponent = Component{
 				SIG:          "sig-arch",
 				IncludeAll:   []string{"events should not repeat"},
 				Capabilities: []string{"Pathological Events"},
-				Priority:     -1,
+				Priority:     -10,
 			},
 			{
 				SIG:          "sig-arch",
 				IncludeAll:   []string{"Alerts alert/"},
 				Capabilities: []string{"Alerts"},
-				Priority:     -1,
+				Priority:     -10,
 			},
 
 			{
 				IncludeAll:   []string{"bz-Unknown", "alert/KubePodNotReady"},
-				Priority:     -1,
+				Priority:     -10,
 				Capabilities: []string{"KubePodNotReady - Other"},
 			},
 		},
