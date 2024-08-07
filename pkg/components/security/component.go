@@ -14,7 +14,14 @@ var SecurityComponent = Component{
 		Name:                 "Security",
 		Operators:            []string{},
 		DefaultJiraComponent: "Security",
-		Matchers:             []config.ComponentMatcher{},
+		Matchers: []config.ComponentMatcher{
+			{
+				IncludeAny: []string{
+					":SecurityandCompliance ",
+				},
+				Priority: 1,
+			},
+		},
 	},
 }
 

@@ -15,6 +15,12 @@ var LoggingComponent = Component{
 		Operators:            []string{},
 		DefaultJiraComponent: "Logging",
 		Matchers: []config.ComponentMatcher{
+			{
+				IncludeAny: []string{
+					":Logging ",
+				},
+				Priority: 1,
+			},
 			{Suite: "Elasticsearch related tests"},
 			{Suite: "Kibana related features"},
 			{Suite: "LOGGING"},

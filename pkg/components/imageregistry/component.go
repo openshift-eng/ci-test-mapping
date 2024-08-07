@@ -33,9 +33,14 @@ var ImageRegistryComponent = Component{
 			{
 				SIG: "sig-imageregistry",
 			},
+			{
+				IncludeAny: []string{
+					":ImageRegistry ",
+				},
+				Priority: 1,
+			},
 			{Suite: "ImageStream Manifest"},
 			{Suite: "Image_Registry"},
-			{Suite: "remote registry related scenarios"},
 			{Suite: "Testing registry"},
 			{Suite: "Testing image registry operator"},
 		},

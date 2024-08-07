@@ -23,8 +23,13 @@ var ApiserverAuthComponent = Component{
 				IncludeAll: []string{"bz-apiserver-auth"},
 			},
 			{
-				IncludeAny: []string{":Authentication ", ":Authentication:"}, // Auth QE cases all include either ":Authentication " (for cucushift cases) or ":Authentication:" (for go-lang cases) in junit xml
-				Priority:   20,
+				// Auth QE cases all include either ":Authentication " (for cucushift cases) or ":Authentication:" (for go-lang cases) in junit xml
+				IncludeAny: []string{
+					":APIServer ",
+					":Authentication ",
+					":Authentication:",
+				},
+				Priority: 2,
 			},
 		},
 		TestRenames: map[string]string{

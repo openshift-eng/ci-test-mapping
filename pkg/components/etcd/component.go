@@ -31,6 +31,12 @@ var EtcdComponent = Component{
 			{
 				IncludeAll: []string{"cluster-etcd-operator"},
 			},
+			{
+				IncludeAny: []string{
+					":Etcd ",
+				},
+				Priority: 1,
+			},
 			{Suite: "DR_Testing"},
 			{Suite: "ETCD"},
 			{Suite: "etcd related features"},

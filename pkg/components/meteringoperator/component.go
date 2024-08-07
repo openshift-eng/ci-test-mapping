@@ -14,7 +14,14 @@ var MeteringOperatorComponent = Component{
 		Name:                 "Metering Operator",
 		Operators:            []string{},
 		DefaultJiraComponent: "Metering Operator",
-		Matchers:             []config.ComponentMatcher{},
+		Matchers: []config.ComponentMatcher{
+			{
+				IncludeAny: []string{
+					":Metering ",
+				},
+				Priority: 1,
+			},
+		},
 	},
 }
 

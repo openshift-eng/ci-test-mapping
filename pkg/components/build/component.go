@@ -21,6 +21,12 @@ var BuildComponent = Component{
 			{
 				SIG: "sig-devex",
 			},
+			{
+				IncludeAny: []string{
+					":BuildAPI ",
+				},
+				Priority: 1,
+			},
 			{Suite: "BuildAPI"},
 			{Suite: "build related"},
 			{Suite: "template related scenarios:"},

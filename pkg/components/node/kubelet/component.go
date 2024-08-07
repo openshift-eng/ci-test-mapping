@@ -33,6 +33,12 @@ var KubeletComponent = Component{
 				},
 				Priority: 1,
 			},
+			{
+				IncludeAny: []string{
+					":Node ",
+				},
+				Priority: 1,
+			},
 			{Suite: "Access to Node logs"},
 			{Suite: "Configuration of environment variables check"},
 			{Suite: "Downward API"},

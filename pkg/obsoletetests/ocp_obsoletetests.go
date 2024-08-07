@@ -20,6 +20,12 @@ var obsoleteTests = sets.New[obsoleteTestIdentifier](
 			name:  "[sig-arch] Check if alerts are firing during or after upgrade success",
 			suite: "Cluster upgrade",
 		},
+		// The test has been removed in cucushift, and migrate to ginkgo with different format
+		// https://github.com/openshift/cucushift/pull/9640
+		{
+			name:  "OCP-12158:APIServer Specify ResourceQuota on project",
+			suite: "remote registry related scenarios",
+		},
 	}...)
 
 func (*OCPObsoleteTestManager) IsObsolete(test *v1.TestInfo) bool {

@@ -16,6 +16,12 @@ var OperatorSDKComponent = Component{
 		DefaultJiraComponent: "Operator SDK",
 		Matchers: []config.ComponentMatcher{
 			{Suite: "Operator_SDK"},
+			{
+				IncludeAny: []string{
+					":OperatorSDK ",
+				},
+				Priority: 1,
+			},
 		},
 	},
 }

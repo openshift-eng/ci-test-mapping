@@ -42,6 +42,12 @@ var StorageComponent = Component{
 			},
 			{
 				IncludeAny: []string{
+					":Storage ",
+				},
+				Priority: 1,
+			},
+			{
+				IncludeAny: []string{
 					"[k8s.io] GKE local SSD [Feature:GKELocalSSD] should write and read from node local SSD [Feature:GKELocalSSD] [sig-arch] [Suite:openshift/conformance/parallel] [Suite:k8s]",
 					"[k8s.io] GKE node pools [Feature:GKENodePool] should create a cluster with multiple node pools [Feature:GKENodePool] [sig-arch] [Suite:openshift/conformance/parallel] [Suite:k8s]",
 				},

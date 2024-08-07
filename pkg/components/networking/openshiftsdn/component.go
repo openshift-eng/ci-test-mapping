@@ -25,6 +25,7 @@ var OpenshiftSdnComponent = Component{
 				IncludeAny: []string{
 					"Build image sdn",
 					"Bug 1812261: iptables is segfaulting",
+					":SDN ",
 				},
 				Priority: 1,
 			},

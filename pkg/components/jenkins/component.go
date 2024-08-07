@@ -14,7 +14,14 @@ var JenkinsComponent = Component{
 		Name:                 "Jenkins",
 		Operators:            []string{},
 		DefaultJiraComponent: "Jenkins",
-		Matchers:             []config.ComponentMatcher{},
+		Matchers: []config.ComponentMatcher{
+			{
+				IncludeAny: []string{
+					":OpenshiftJenkins ",
+				},
+				Priority: 1,
+			},
+		},
 	},
 }
 
