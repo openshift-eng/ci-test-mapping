@@ -3140,6 +3140,10 @@
     "Suite": "Machine features testing"
   },
   {
+    "Name": "Machines phase should become 'Failed' when it has create error (outline example : | OCP-25927:ClusterInfrastructure | /machineType:.*/ | machineType: n2d-invalid | machineset-invalid-25927 |)",
+    "Suite": "Machine features testing"
+  },
+  {
     "Name": "Machines phase should become 'Failed' when it has create error (outline example : | OCP-28817:ClusterInfrastructure | /instanceType:.*/ | instanceType: invalid | machineset-invalid-28817 |)",
     "Suite": "Machine features testing"
   },
@@ -4286,6 +4290,10 @@
   {
     "Name": "OCP-11111:Workloads Buildconfig should support providing cpu and memory usage",
     "Suite": "Quota related scenarios"
+  },
+  {
+    "Name": "OCP-11111:yinzhou:Workloads:[sig-cli] Workloads oc adm command works well Buildconfig should support providing cpu and memory usage",
+    "Suite": "Workloads"
   },
   {
     "Name": "OCP-11112:Workloads Prune old deployments by admin command",
@@ -40248,6 +40256,10 @@
     "Suite": "LOGGING"
   },
   {
+    "Name": "OCP-53691:qitang:LOGGING:[sig-openshift-logging] LOGGING Logging Forward logs to GCL using Service Account authentication.",
+    "Suite": "LOGGING"
+  },
+  {
     "Name": "OCP-53691:qitang:LOGGING:[sig-openshift-logging] LOGGING Logging Forward logs to Google Cloud Logging using Service Account authentication.",
     "Suite": "LOGGING"
   },
@@ -40385,6 +40397,10 @@
   },
   {
     "Name": "OCP-53817:qitang:LOGGING:[sig-openshift-logging] LOGGING Logging WRS-Logging acceptance testing: vector to loki[Slow][Serial]",
+    "Suite": "LOGGING"
+  },
+  {
+    "Name": "OCP-53817:qitang:LOGGING:[sig-openshift-logging] LOGGING Logging vector to lokistack[Slow][Serial]",
     "Suite": "LOGGING"
   },
   {
@@ -43753,6 +43769,10 @@
   },
   {
     "Name": "OCP-56539:mjoseph:Network_Edge:[sig-network-edge] Network_Edge Component_DNS should Disabling internal registry should not corrupt /etc/hosts [Disruptive] [Serial]",
+    "Suite": "Network_Edge"
+  },
+  {
+    "Name": "OCP-56539:mjoseph:Network_Edge:[sig-network-edge] Network_Edge Component_DNS should Disabling the internal registry should not corrupt /etc/hosts [Disruptive] [Serial]",
     "Suite": "Network_Edge"
   },
   {
@@ -51480,6 +51500,10 @@
     "Suite": "SDN"
   },
   {
+    "Name": "OCP-67105:asood:SDN:[sig-networking] SDN [FdpOvnOvs] Ingress BANP, ANP and NP with allow, deny and pass action with TCP, UDP and SCTP protocols. [Serial]",
+    "Suite": "SDN"
+  },
+  {
     "Name": "OCP-67105:asood:SDN:[sig-networking] SDN adminnetworkpolicy [FdpOvnOvs] Ingress BANP, ANP and NP with allow, deny and pass action with TCP, UDP and SCTP protocols. [Serial]",
     "Suite": "SDN"
   },
@@ -54044,6 +54068,10 @@
     "Suite": "LOGGING"
   },
   {
+    "Name": "OCP-71772:anli:LOGGING:[sig-openshift-logging] LOGGING Logging Forward logs to az Log Analytics -- full options",
+    "Suite": "LOGGING"
+  },
+  {
     "Name": "OCP-71773:kbharti:Logging:[sig-openshift-logging] Logging  Loki - Managed auth/STS mode Verify CCO support on Azure WIF cluster and forward logs to default Loki[Serial]",
     "Suite": "Logging"
   },
@@ -55784,6 +55812,10 @@
     "Suite": "SDN"
   },
   {
+    "Name": "OCP-74923:xzha:OLM:[sig-operators] OLM v1 oprun should no two ClusterExtensions can manage the same underlying object",
+    "Suite": "OLM"
+  },
+  {
     "Name": "OCP-74948:jitli:OLM:[sig-operators] OLM v1 opeco should catalog offer the operator content through https server",
     "Suite": "OLM"
   },
@@ -55810,6 +55842,10 @@
   {
     "Name": "OCP-75037:huliu:Cluster_Infrastructure:[sig-cluster-lifecycle] Cluster_Infrastructure MAPI [MAPI] Webhook validation for AWS Placement Group Partition Number [Disruptive] [Serial]",
     "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "OCP-75236:anusaxen:SDN:[sig-networking] SDN udn Check udn pods are not isolated if same nad network is shared across two namespaces",
+    "Suite": "SDN"
   },
   {
     "Name": "OCP-7XX17:yinzhou:Workloads:Should get warning when there is an identical short name for two or more resources",
@@ -63633,6 +63669,10 @@
   },
   {
     "Name": "tls-singletenant",
+    "Suite": "tests/e2e-openshift/tls-monolithic-singletenant"
+  },
+  {
+    "Name": "tls-singletenant-monolithic",
     "Suite": "tests/e2e-openshift/tls-monolithic-singletenant"
   },
   {
