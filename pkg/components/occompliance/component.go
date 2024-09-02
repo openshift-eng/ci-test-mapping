@@ -14,7 +14,11 @@ var OcComplianceComponent = Component{
 		Name:                 "oc-compliance",
 		Operators:            []string{},
 		DefaultJiraComponent: "oc-compliance",
-		Matchers:             []config.ComponentMatcher{},
+		Matchers: []config.ComponentMatcher{
+			{
+				IncludeAll: []string{"oc_compliance_plugin"}, //// oc-compliance QE cases all have "oc_compliance_plugin" in junit xml
+			},
+		},
 	},
 }
 
