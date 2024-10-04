@@ -12,9 +12,13 @@ type Component struct {
 var FileIntegrityOperatorComponent = Component{
 	Component: &config.Component{
 		Name:                 "File Integrity Operator",
-		Operators:            []string{},
+		Operators:            []string{"file integrity operator"},
 		DefaultJiraComponent: "File Integrity Operator",
-		Matchers:             []config.ComponentMatcher{},
+		Matchers: []config.ComponentMatcher{
+			{
+				IncludeAll: []string{"File_Integrity_Operator"}, //// File Integrity operator QE cases all have "File_Integrity_Operator" in junit xml
+			},
+		},
 	},
 }
 

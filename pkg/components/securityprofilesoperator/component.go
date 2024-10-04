@@ -12,9 +12,13 @@ type Component struct {
 var SecurityProfilesOperatorComponent = Component{
 	Component: &config.Component{
 		Name:                 "Security Profiles Operator",
-		Operators:            []string{},
+		Operators:            []string{"security profiles operator"},
 		DefaultJiraComponent: "Security Profiles Operator",
-		Matchers:             []config.ComponentMatcher{},
+		Matchers: []config.ComponentMatcher{
+			{
+				IncludeAll: []string{"Security_Profiles_Operator"}, //// security profiles operator QE cases all have "Security_Profiles_Operator" in junit xml
+			},
+		},
 	},
 }
 
