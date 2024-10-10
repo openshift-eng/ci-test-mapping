@@ -1580,6 +1580,10 @@
     "Suite": "(OCP-74049 Network_Observability) Prometheus datasource only"
   },
   {
+    "Name": "(OCP-74049, OCP-73875 Network_Observability) Prometheus datasource only \"after all\" hook: after all tests are done for \"(OCP-73876, aramesha, Network_Observability), Verify prom dataSource in Administrator view as non-cluster-admin user\"",
+    "Suite": "(OCP-74049, OCP-73875 Network_Observability) Prometheus datasource only"
+  },
+  {
     "Name": "(OCP-74049, OCP-73875 Network_Observability) Prometheus datasource only \"after all\" hook: after all tests are done for \"(OCP-74049, aramesha, Network_Observability), prom dataSource only\"",
     "Suite": "(OCP-74049, OCP-73875 Network_Observability) Prometheus datasource only"
   },
@@ -3116,6 +3120,10 @@
     "Suite": "Lightspeed related features"
   },
   {
+    "Name": "Lightspeed related features \"after all\" hook for \"(OLS-747,anpicker,Lightspeed) Test attaching logs\"",
+    "Suite": "Lightspeed related features"
+  },
+  {
     "Name": "Lightspeed related features \"before all\" hook for \"(OLS-427,jfula,Lightspeed) Deploy OpenShift Lightspeed operator via web console\"",
     "Suite": "Lightspeed related features"
   },
@@ -3129,6 +3137,22 @@
   },
   {
     "Name": "Lightspeed related features (OLS-427,jfula,Lightspeed) Deploy Openshift Lightspeed operator via web console",
+    "Suite": "Lightspeed related features"
+  },
+  {
+    "Name": "Lightspeed related features (OLS-743,anpicker,Lightspeed) Test OpenShift Lightspeed with pod",
+    "Suite": "Lightspeed related features"
+  },
+  {
+    "Name": "Lightspeed related features (OLS-745,anpicker,Lightspeed) Test attaching YAML",
+    "Suite": "Lightspeed related features"
+  },
+  {
+    "Name": "Lightspeed related features (OLS-746,anpicker,Lightspeed) Test attaching events",
+    "Suite": "Lightspeed related features"
+  },
+  {
+    "Name": "Lightspeed related features (OLS-747,anpicker,Lightspeed) Test attaching logs",
     "Suite": "Lightspeed related features"
   },
   {
@@ -5070,6 +5094,10 @@
   {
     "Name": "OCP-11635:NetworkEdge Set timeout server for passthough route",
     "Suite": "Testing timeout route"
+  },
+  {
+    "Name": "OCP-11635:iamin:Network_Edge:[sig-network-edge] Network_Edge Component_Router should NetworkEdge Set timeout server for passthough route",
+    "Suite": "Network_Edge"
   },
   {
     "Name": "OCP-11636:Node Quota scope conflict BestEffort and NotBestEffort",
@@ -11400,6 +11428,10 @@
     "Suite": "MachineHealthCheck Test Scenarios"
   },
   {
+    "Name": "OCP-25702:hongli:Network_Edge:[sig-network-edge] Network_Edge Component_Router should V-BR.12-the tlsSecurityProfile in ingresscontroller can be updated",
+    "Suite": "Network_Edge"
+  },
+  {
     "Name": "OCP-25724:ClusterOperator Scrape metrics for cloud credential operator in OpenShift 4 prometheus",
     "Suite": "cloud credential operator"
   },
@@ -16112,6 +16144,10 @@
     "Suite": "Workloads"
   },
   {
+    "Name": "OCP-33767:yinzhou:Workloads:[sig-scheduling] Workloads Check Validate Pod with only one TopologySpreadConstraint topologyKey node [Disruptive] [Serial]",
+    "Suite": "Workloads"
+  },
+  {
     "Name": "OCP-33767:yinzhou:Workloads:[sig-scheduling] Workloads podTopologySpreadConstraints works well Check Validate Pod with only one TopologySpreadConstraint topologyKey node",
     "Suite": "Workloads"
   },
@@ -16145,6 +16181,10 @@
   },
   {
     "Name": "OCP-33824:yinzhou:Workloads:[sig-scheduling] Workloads Check Validate TopologySpreadConstraint with podAffinity and podAntiAffinity",
+    "Suite": "Workloads"
+  },
+  {
+    "Name": "OCP-33824:yinzhou:Workloads:[sig-scheduling] Workloads Check Validate TopologySpreadConstraint with podAffinity and podAntiAffinity [Disruptive] [Serial]",
     "Suite": "Workloads"
   },
   {
@@ -16228,6 +16268,10 @@
     "Suite": "Workloads"
   },
   {
+    "Name": "OCP-33836:yinzhou:Workloads:[sig-scheduling] Workloads Check Validate Pod with only one TopologySpreadConstraint topologyKey node [Disruptive] [Serial]",
+    "Suite": "Workloads"
+  },
+  {
     "Name": "OCP-33836:yinzhou:Workloads:[sig-scheduling] Workloads podTopologySpreadConstraints works well Check Validate Pod with only one TopologySpreadConstraint topologyKey node",
     "Suite": "Workloads"
   },
@@ -16241,6 +16285,10 @@
   },
   {
     "Name": "OCP-33845:yinzhou:Workloads:[sig-scheduling] Workloads Check Validate Pod with only one TopologySpreadConstraint topologyKey node",
+    "Suite": "Workloads"
+  },
+  {
+    "Name": "OCP-33845:yinzhou:Workloads:[sig-scheduling] Workloads Check Validate Pod with only one TopologySpreadConstraint topologyKey node [Disruptive] [Serial]",
     "Suite": "Workloads"
   },
   {
@@ -16440,6 +16488,10 @@
     "Suite": "Workloads"
   },
   {
+    "Name": "OCP-34014:knarra:Workloads:[sig-scheduling] Workloads Validate TopologySpreadConstraints with NodeAffinity [Disruptive] [Serial]",
+    "Suite": "Workloads"
+  },
+  {
     "Name": "OCP-34014:knarra:Workloads:[sig-scheduling] Workloads podTopologySpreadConstraints works well Validate TopologySpreadConstraints with NodeAffinity",
     "Suite": "Workloads"
   },
@@ -16473,6 +16525,10 @@
   },
   {
     "Name": "OCP-34017:knarra:Workloads:[sig-scheduling] Workloads TopologySpreadConstraints do not work on cross namespaced pods",
+    "Suite": "Workloads"
+  },
+  {
+    "Name": "OCP-34017:knarra:Workloads:[sig-scheduling] Workloads TopologySpreadConstraints do not work on cross namespaced pods [Disruptive] [Serial]",
     "Suite": "Workloads"
   },
   {
@@ -19821,6 +19877,10 @@
   },
   {
     "Name": "OCP-41080:asood:SDN:[sig-networking] SDN networkpolicy Check network policy ACL audit messages are logged to journald",
+    "Suite": "SDN"
+  },
+  {
+    "Name": "OCP-41080:asood:SDN:[sig-networking] SDN networkpolicy V-BR.10-Check network policy ACL audit messages are logged to journald",
     "Suite": "SDN"
   },
   {
@@ -23881,6 +23941,10 @@
   },
   {
     "Name": "OCP-43277:knarra:Workloads:[sig-scheduling] Workloads The Descheduler Operator automates pod evictions using different profiles Descheduler-Validate Predictive and Automatic mode for descheduler [Slow][Disruptive] [Serial]",
+    "Suite": "Workloads"
+  },
+  {
+    "Name": "OCP-43277:knarra:Workloads:[sig-scheduling] Workloads The Descheduler Operator automates pod evictions using different profiles Descheduler-Validate Predictive, Automatic mode and eviction limits for descheduler [Slow][Disruptive] [Serial]",
     "Suite": "Workloads"
   },
   {
@@ -37228,6 +37292,10 @@
     "Suite": "Workloads"
   },
   {
+    "Name": "OCP-50941:knarra:Workloads:[sig-scheduling] Workloads The Descheduler Operator automates pod evictions using different profiles Descheduler-Validate Predictive, Automatic mode and eviction limits for descheduler [Slow][Disruptive] [Serial]",
+    "Suite": "Workloads"
+  },
+  {
     "Name": "OCP-50941:knarra:Workloads:[sig-scheduling] Workloads The Descheduler Operator automates pod evictions using different profiles V-ACS.02-Descheduler-Validate Predictive and Automatic mode for descheduler [Slow][Disruptive] [Serial]",
     "Suite": "Workloads"
   },
@@ -39908,6 +39976,10 @@
     "Suite": "Logging"
   },
   {
+    "Name": "OCP-52496:ikanse:Logging:[sig-openshift-logging] Logging  Log Forward to Kafka via Vector as Collector VA-IAC.03-Vector Forward logs to kafka using SASL SSL[Serial][Slow]",
+    "Suite": "Logging"
+  },
+  {
     "Name": "OCP-52496:ikanse:Logging:[sig-openshift-logging] Logging  Log Forward to Kafka via Vector as Collector Vector Forward logs to kafka using SASL SSL[Serial][Slow]",
     "Suite": "Logging"
   },
@@ -41260,6 +41332,10 @@
     "Suite": "LOGGING"
   },
   {
+    "Name": "OCP-53817:qitang:LOGGING:[sig-openshift-logging] LOGGING Logging acceptance testing vector to loki[Slow][Serial]",
+    "Suite": "LOGGING"
+  },
+  {
     "Name": "OCP-53817:qitang:LOGGING:[sig-openshift-logging] LOGGING Logging vector to lokistack[Slow][Serial]",
     "Suite": "LOGGING"
   },
@@ -42520,6 +42596,10 @@
     "Suite": "SDN"
   },
   {
+    "Name": "OCP-54714:anusaxen:SDN:[sig-networking] SDN infw V-BR.53-Check Ingress Firewall Allow/Deny functionality for TCP via Nodeport svc [Serial][Disruptive] [Serial]",
+    "Suite": "SDN"
+  },
+  {
     "Name": "OCP-54741:jechen:EgressIP health check through monitoring port over GRPC on hypershift cluster. [Disruptive] [Serial]",
     "Suite": "SDN"
   },
@@ -42957,6 +43037,10 @@
   },
   {
     "Name": "OCP-54992:anusaxen:SDN:[sig-networking] SDN infw Check Ingress Firewall Allow/Deny functionality for UDP via Nodeport svc [Serial]",
+    "Suite": "SDN"
+  },
+  {
+    "Name": "OCP-54992:anusaxen:SDN:[sig-networking] SDN infw V-BR.53-Check Ingress Firewall Allow/Deny functionality for UDP via Nodeport svc [Serial]",
     "Suite": "SDN"
   },
   {
@@ -43657,6 +43741,10 @@
   },
   {
     "Name": "OCP-55411:anusaxen:SDN:[sig-networking] SDN infw Check Ingress Firewall Allow/Deny functionality for ICMP [Serial]",
+    "Suite": "SDN"
+  },
+  {
+    "Name": "OCP-55411:anusaxen:SDN:[sig-networking] SDN infw V-BR.53-Check Ingress Firewall Allow/Deny functionality for ICMP [Serial]",
     "Suite": "SDN"
   },
   {
@@ -47364,6 +47452,10 @@
     "Suite": "Windows_Containers"
   },
   {
+    "Name": "OCP-60835:rdeore:STORAGE:[sig-storage] STORAGE [LVMS] Support multiple storage classes on single lvms deployment [Disruptive] [Serial]",
+    "Suite": "STORAGE"
+  },
+  {
     "Name": "OCP-60854:pdhamdhe:Check the scan for ocp4-cis/ocp4-pci-dss with tailored profile works for hypershift cluster [Serial][Slow]",
     "Suite": "Security_and_Compliance"
   },
@@ -47477,6 +47569,10 @@
   },
   {
     "Name": "OCP-60926:anli:vector Forward logs to fluentd over http - http[Serial]",
+    "Suite": "Logging"
+  },
+  {
+    "Name": "OCP-60933:anli:Logging:[sig-openshift-logging] Logging  vector forward logs to external store over http VA-IAC.03-vector Forward logs to fluentd over http - https",
     "Suite": "Logging"
   },
   {
@@ -47748,6 +47844,10 @@
     "Suite": "SDN"
   },
   {
+    "Name": "OCP-61253:anli:Logging:[sig-openshift-logging] Logging  vector forward logs to external store over http VA-IAC.03-vector forward logs to fluentdserver over http - mtls",
+    "Suite": "Logging"
+  },
+  {
     "Name": "OCP-61253:anli:Logging:[sig-openshift-logging] Logging  vector forward logs to external store over http vector forward logs to fluentdserver over http - mtls",
     "Suite": "Logging"
   },
@@ -47969,6 +48069,10 @@
   },
   {
     "Name": "OCP-61477:gkarager:Logging:Vector-Forward logs to syslog (mtls with private key passphrase)[Serial][Slow]",
+    "Suite": "Logging"
+  },
+  {
+    "Name": "OCP-61477:gkarager:Logging:[sig-openshift-logging] Logging  Test logforwarding to syslog via vector as collector Vector-Forward logs to syslog (mtls with private key passphrase)",
     "Suite": "Logging"
   },
   {
@@ -50972,6 +51076,18 @@
     "Suite": "STORAGE"
   },
   {
+    "Name": "OCP-65028:yuewu:CFE:[sig-auth] CFE cert-manager Vault issuer should work well when authenticating with Vault AppRole",
+    "Suite": "CFE"
+  },
+  {
+    "Name": "OCP-65029:yuewu:CFE:[sig-auth] CFE cert-manager Vault issuer should work well when authenticating with Vault token",
+    "Suite": "CFE"
+  },
+  {
+    "Name": "OCP-65030:yuewu:CFE:[sig-auth] CFE cert-manager Vault issuer should work well when authenticating with Kubernetes static service account",
+    "Suite": "CFE"
+  },
+  {
     "Name": "OCP-65031:yuewu:CFE:Operand and operator log levels can be set [Serial]",
     "Suite": "CFE"
   },
@@ -52358,6 +52474,10 @@
   {
     "Name": "OCP-66884:anusaxen:SDN:[sig-networking] SDN misc Larger packet size than Cluster MTU should not cause packet drops",
     "Suite": "SDN"
+  },
+  {
+    "Name": "OCP-66907:yuewu:CFE:[sig-auth] CFE cert-manager Vault issuer should work well when authenticating with Kubernetes bound service account through Kubernetes auth",
+    "Suite": "CFE"
   },
   {
     "Name": "OCP-66921:rgangwar:1-APIServer LatencySensitive featureset must be removed [Slow][Disruptive] [Serial]",
@@ -54812,6 +54932,10 @@
     "Suite": "Workloads"
   },
   {
+    "Name": "OCP-70877:knarra:Workloads:[sig-cli] Workloads kube-controller-manager on Microshift Add annotation in the kube-controller-manager-guard static pod for workload partitioning",
+    "Suite": "Workloads"
+  },
+  {
     "Name": "OCP-70878:knarra:Workloads:Add annotation in the kube-scheduler-guard static pod for workload partitioning",
     "Suite": "Workloads"
   },
@@ -54861,6 +54985,10 @@
   },
   {
     "Name": "OCP-70965:anli:LOGGING:[sig-openshift-logging] LOGGING Logging fluentd: Logging acceptance testing: fluentd to ES[Slow][Serial]",
+    "Suite": "LOGGING"
+  },
+  {
+    "Name": "OCP-70965:anli:LOGGING:[sig-openshift-logging] LOGGING Logging fluentd: acceptance testing fluentd to ES[Slow][Serial]",
     "Suite": "LOGGING"
   },
   {
@@ -55920,6 +56048,10 @@
     "Suite": "Workloads"
   },
   {
+    "Name": "OCP-72920:yinzhou:Workloads:[sig-cli] Workloads ocmirror v2 works well support head-only for catalog [Serial]",
+    "Suite": "Workloads"
+  },
+  {
     "Name": "OCP-72938:knarra:Workloads:[sig-cli] Workloads ocmirror v2 works well should give clear information for invalid operator filter setting [Serial]",
     "Suite": "Workloads"
   },
@@ -56520,6 +56652,10 @@
     "Suite": "Network_Observability"
   },
   {
+    "Name": "OCP-73540:rdeore:STORAGE:[sig-storage] STORAGE [LVMS] [Resize] [Thick] Enable LVMCluster configurations without thinPoolConfig [Disruptive] [Serial]",
+    "Suite": "STORAGE"
+  },
+  {
     "Name": "OCP-73554:ansaxen:SDN:[sig-networking] SDN IPSEC NS External Traffic should still be IPsec encrypted in presense of Admin Network Policy application at egress node [Disruptive] [Serial]",
     "Suite": "SDN"
   },
@@ -56805,6 +56941,10 @@
   },
   {
     "Name": "OCP-73783:knarra:Workloads:[sig-cli] Workloads ocmirror v2 works well Do not generate IDMS or ITMS if nothing has been mirrored [Serial]",
+    "Suite": "Workloads"
+  },
+  {
+    "Name": "OCP-73791:knarra:Workloads:[sig-cli] Workloads ocmirror v2 works well verify blockedImages feature for v2 [Serial]",
     "Suite": "Workloads"
   },
   {
@@ -57304,6 +57444,10 @@
     "Suite": "Network_Observability"
   },
   {
+    "Name": "OCP-75366:yinzhou:Workloads:[sig-cli] Workloads ocmirror v2 works well show operator on error logs and skip bundle when related image associated failed [Serial]",
+    "Suite": "Workloads"
+  },
+  {
     "Name": "OCP-75375:knarra:Workloads:[sig-apps] Workloads oc create job fails with cannot set blockOwnerDeletion",
     "Suite": "Workloads"
   },
@@ -57314,6 +57458,10 @@
   {
     "Name": "OCP-75387:huirwang:SDN:[sig-networking] SDN OVN EgressIP Multi-NIC [rducluster] [Multi-NIC] Default Routes should be injected to Egress IP Routing Table for Secondary NIC. [Disruptive] [Serial]",
     "Suite": "SDN"
+  },
+  {
+    "Name": "OCP-75422:knarra:Workloads:[sig-cli] Workloads ocmirror v2 works well Verify Skip deletion of operator catalog image in delete feature [Serial]",
+    "Suite": "Workloads"
   },
   {
     "Name": "OCP-75424:asood:SDN:[sig-networking] SDN service SessionAffinity does not work after scaling down the Pods",
@@ -57364,6 +57512,10 @@
     "Suite": "OLM"
   },
   {
+    "Name": "OCP-75499:mjoseph:Network_Edge:[sig-network-edge] Network_Edge Component_Router should Allocating and updating EIPs on AWS NLB cluster",
+    "Suite": "Network_Edge"
+  },
+  {
     "Name": "OCP-75501:xzha:OLM:[sig-operators] OLM v1 oprun should the updates of various status fields is orthogonal",
     "Suite": "OLM"
   },
@@ -57402,6 +57554,10 @@
   {
     "Name": "OCP-75613:huirwang:SDN:[sig-networking] SDN misc Should be able to access applications when client ephemeral port is 22623 or 22624",
     "Suite": "SDN"
+  },
+  {
+    "Name": "OCP-75617:mjoseph:Network_Edge:[sig-network-edge] Network_Edge Component_Router should Update with auto-delete-loadbalancer annotation and unmanaged EIP allocation annotation on AWS NLB cluster",
+    "Suite": "Network_Edge"
   },
   {
     "Name": "OCP-75623:weliang:SDN:[sig-networking] SDN udn Feature Integration UDN with multus. [Disruptive] [Serial]",
@@ -57452,6 +57608,10 @@
     "Suite": "Hypershift"
   },
   {
+    "Name": "OCP-75862:sregidor:MCO:[sig-mco] MCO alerts Add alert for users of deprecating the Image Registry workaround [Disruptive] [Serial]",
+    "Suite": "MCO"
+  },
+  {
     "Name": "OCP-75875:anusaxen:SDN:[sig-networking] SDN udn Check udn pods isolation on user defined networks (layer 2)",
     "Suite": "SDN"
   },
@@ -57480,7 +57640,15 @@
     "Suite": "SDN"
   },
   {
+    "Name": "OCP-75908:shudili:Network_Edge:[sig-network-edge] Network_Edge Component_Router should http2 connection coalescing component routing should not be broken with single certificate [Disruptive] [Serial]",
+    "Suite": "Network_Edge"
+  },
+  {
     "Name": "OCP-75942:huirwang:SDN:[sig-networking] SDN udn Validate pod2Service/nodePortService for UDN(Layer3)",
+    "Suite": "SDN"
+  },
+  {
+    "Name": "OCP-75955:meinli:SDN:[sig-networking] SDN udn Verify pods failed status when NAD subnets overlapping with UDN default join subnet value(Layer3)",
     "Suite": "SDN"
   },
   {
@@ -57488,8 +57656,16 @@
     "Suite": "STORAGE"
   },
   {
+    "Name": "OCP-75984:anusaxen:SDN:[sig-networking] SDN udn Check udn pods isolation on user defined networks post OVN gateway migration",
+    "Suite": "SDN"
+  },
+  {
     "Name": "OCP-75986:miyadav:Cluster_Infrastructure:[sig-cluster-lifecycle] Cluster_Infrastructure CAPI [CAPI]-vspherecluster reconciliation should not fail [Disruptive] [Serial]",
     "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "OCP-75995:meinli:SDN:[sig-networking] SDN udn Verify pods failed status when NAD subnets overlapping with UDN default join subnet value(Layer3)",
+    "Suite": "SDN"
   },
   {
     "Name": "OCP-75997:yinzhou:Workloads:[sig-cli] Workloads client test Make sure images with different tag but same layers could be mirrored correctly",
@@ -57508,6 +57684,14 @@
     "Suite": "Cluster_Infrastructure"
   },
   {
+    "Name": "OCP-76116:yinzhou:Workloads:[sig-cli] Workloads client test Make sure oc could run on rhel with fips on",
+    "Suite": "Workloads"
+  },
+  {
+    "Name": "OCP-76130:yinzhou:Workloads:[sig-apps] Workloads make sure kcm should not restart when processing StatefulSet with spec.podManagementPolicy is Parallel [Serial]",
+    "Suite": "Workloads"
+  },
+  {
     "Name": "OCP-76130:yinzhou:Workloads:[sig-apps] Workloads test kcm works well make sure kcm should not restart when processing StatefulSet with spec.podManagementPolicy is Parallel [Serial]",
     "Suite": "Workloads"
   },
@@ -57516,7 +57700,51 @@
     "Suite": "Workloads"
   },
   {
+    "Name": "OCP-76158:knarra:Workloads:[sig-scheduling] Workloads The Descheduler Operator automates pod evictions using different profiles Descheduler-Validate Predictive, Automatic mode and eviction limits for descheduler [Slow][Disruptive] [Serial]",
+    "Suite": "Workloads"
+  },
+  {
+    "Name": "OCP-76187:miyadav:Cluster_Infrastructure:[sig-cluster-lifecycle] Cluster_Infrastructure MAPI Add Paused condition to Machine and MachineSet resources",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "OCP-76194:knarra:Workloads:[sig-scheduling] Workloads The Descheduler Operator automates pod evictions using different profiles Descheduler-Validate profiles below cannot be declared together [Slow][Disruptive] [Serial]",
+    "Suite": "Workloads"
+  },
+  {
+    "Name": "OCP-76212:meinli:SDN:[sig-networking] SDN nmstate-operator functional Validate Metrics collection for kubernetes-nmstate [Disruptive] [Serial]",
+    "Suite": "SDN"
+  },
+  {
     "Name": "OCP-76216:sregidor:MCO:[sig-mco] MCO Upgrade Scale up nodes after upgrade [Disruptive] [Serial]",
+    "Suite": "MCO"
+  },
+  {
+    "Name": "OCP-76366:huliu:Cluster_Infrastructure:[sig-cluster-lifecycle] Cluster_Infrastructure MAPI [MAPI] Allow creating Nutanix VMs with multiple disks [Disruptive] [Serial]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "OCP-76367:huliu:Cluster_Infrastructure:[sig-cluster-lifecycle] Cluster_Infrastructure MAPI [MAPI] Allow creating Nutanix worker VMs with GPUs [Disruptive] [Serial]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "OCP-76372:meinli:SDN:[sig-networking] SDN nmstate-operator functional Check NMstate Features Metrics Value collection [Disruptive] [Serial]",
+    "Suite": "SDN"
+  },
+  {
+    "Name": "OCP-76422:knarra:Workloads:[sig-scheduling] Workloads The Descheduler Operator automates pod evictions using different profiles Descheduler-Verify LongLifeCycle descheduler [Slow][Disruptive] [Serial]",
+    "Suite": "Workloads"
+  },
+  {
+    "Name": "OCP-76515:yuewu:CFE:[sig-auth] CFE cert-manager Vault issuer should work well when authenticating with Kubernetes bound service account through JWT/OIDC auth",
+    "Suite": "CFE"
+  },
+  {
+    "Name": "OCP-76587:sregidor:MCO:[sig-mco] MCO security MCS port should not expose weak ciphers to external client from master node IP [Disruptive] [Serial]",
+    "Suite": "MCO"
+  },
+  {
+    "Name": "OCP-76587:sregidor:MCO:[sig-mco] MCO security Port number 22623 should not expose weak ciphers to external client from master node IP [Disruptive] [Serial]",
     "Suite": "MCO"
   },
   {
@@ -59257,6 +59485,10 @@
   },
   {
     "Name": "[It] Controllers/Podplacement/PodReconciler when Handling Single-container Pods with different pull secrets handles images with local pull secrets correctly",
+    "Suite": "Controllers Integration Suite"
+  },
+  {
+    "Name": "[It] Controllers/Podplacement/PodReconciler when Reconciling a pod with cache enabled and an image that changes after the first time it is used does not query the remote registry until the cache expires",
     "Suite": "Controllers Integration Suite"
   },
   {
@@ -64237,6 +64469,10 @@
   },
   {
     "Name": "env-vars",
+    "Suite": "tests/e2e/use-labels-for-resource-attributes"
+  },
+  {
+    "Name": "env-vars",
     "Suite": "tests/e2e/env-vars"
   },
   {
@@ -64298,6 +64534,10 @@
   {
     "Name": "export-to-cluster-XXXXXXXXXXXXstack",
     "Suite": "tests/e2e-openshift/export-to-cluster-XXXXXXXXXXXXstack"
+  },
+  {
+    "Name": "export-to-cluster-logging-lokistack",
+    "Suite": "tests/e2e-openshift/export-to-cluster-logging-lokistack"
   },
   {
     "Name": "external oidc test - cli. (OCP-71561,xxia,Auth) HCP authentication should work well with Microsoft Entra ID as external OIDC - cli",
@@ -65568,6 +65808,10 @@
     "Suite": "project list tests"
   },
   {
+    "Name": "project list tests \"after all\" hook for \"(OCP-43131,yapei,UserInterface) normal and admin user able to filter projects with Requester\"",
+    "Suite": "project list tests"
+  },
+  {
     "Name": "project list tests \"after all\" hook for \"(OCP-43131,yapei,UserInterface)) normal and admin user able to filter projects with Requester\"",
     "Suite": "project list tests"
   },
@@ -65585,6 +65829,10 @@
   },
   {
     "Name": "project list tests \"before all\" hook for \"(OCP-43131,yapei,UI) normal and admin user able to filter projects with Requester\"",
+    "Suite": "project list tests"
+  },
+  {
+    "Name": "project list tests \"before all\" hook for \"(OCP-43131,yapei,UserInterface) normal and admin user able to filter projects with Requester\"",
     "Suite": "project list tests"
   },
   {
