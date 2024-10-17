@@ -12,9 +12,13 @@ type Component struct {
 var ComplianceOperatorComponent = Component{
 	Component: &config.Component{
 		Name:                 "Compliance Operator",
-		Operators:            []string{},
+		Operators:            []string{"compliance operator"},
 		DefaultJiraComponent: "Compliance Operator",
-		Matchers:             []config.ComponentMatcher{},
+		Matchers: []config.ComponentMatcher{
+			{
+				IncludeAll: []string{"Compliance_Operator"}, //// Compliance Operator QE cases all have "Compliance_Operator" in junit xml
+			},
+		},
 	},
 }
 
