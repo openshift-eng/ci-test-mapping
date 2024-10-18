@@ -4420,6 +4420,10 @@
     "Suite": "API_Server"
   },
   {
+    "Name": "OCP-10943:iamin:Network_Edge:[sig-network-edge] Network_Edge Component_Router should NetworkEdge Set invalid timeout server for route",
+    "Suite": "Network_Edge"
+  },
+  {
     "Name": "OCP-10945:Node The quota usage should be released when pod completed",
     "Suite": "Quota related scenarios"
   },
@@ -5410,6 +5414,10 @@
   {
     "Name": "OCP-11982:NetworkEdge Set timeout server for unsecure route",
     "Suite": "Testing timeout route"
+  },
+  {
+    "Name": "OCP-11982:iamin:Network_Edge:[sig-network-edge] Network_Edge Component_Router should NetworkEdge Set timeout server for unsecure route",
+    "Suite": "Network_Edge"
   },
   {
     "Name": "OCP-11983:Node Quota with BestEffort and NotBestEffort scope",
@@ -6942,6 +6950,10 @@
   {
     "Name": "OCP-16732:NetworkEdge Check haproxy.config when overwriting 'timeout server' which was already specified",
     "Suite": "Testing route"
+  },
+  {
+    "Name": "OCP-16732:iamin:Network_Edge:[sig-network-edge] Network_Edge Component_Router should NetworkEdge Check haproxy.config when overwriting timeout server which was already specified",
+    "Suite": "Network_Edge"
   },
   {
     "Name": "OCP-16748:SDN Should remove the conntrack table immediately when the endpoint of UDP service gets deleted",
@@ -18768,6 +18780,10 @@
     "Suite": "Testing route"
   },
   {
+    "Name": "OCP-38671:iamin:Network_Edge:[sig-network-edge] Network_Edge Component_Router should NetworkEdge haproxy.router.openshift.io/timeout-tunnel annotation gets applied alongside haproxy.router.openshift.io/timeout for clear/edge/reencrypt routes",
+    "Suite": "Network_Edge"
+  },
+  {
     "Name": "OCP-38672:NetworkEdge \"haproxy.router.openshift.io/timeout-tunnel\" annotation takes precedence over \"haproxy.router.openshift.io/timeout\" values for passthrough routes",
     "Suite": "Testing route"
   },
@@ -27694,6 +27710,10 @@
   {
     "Name": "OCP-45689:weliang:SDN:[sig-networking] SDN metrics Metrics for idling enable/disabled.",
     "Suite": "SDN"
+  },
+  {
+    "Name": "OCP-45694:knarra:Workloads:[sig-scheduling] Workloads The Descheduler Operator automates pod evictions using different profiles V-ACS.02-Support to collect olm data in must-gather [Slow][Disruptive] [Serial]",
+    "Suite": "Workloads"
   },
   {
     "Name": "OCP-45694:yinzhou:Support to collect olm data in must-gather [Slow]",
@@ -55272,6 +55292,10 @@
     "Suite": "LOGGING"
   },
   {
+    "Name": "OCP-70965:anli:LOGGING:[sig-openshift-logging] LOGGING Logging acceptance testing: fluentd to ES[Slow][Serial]",
+    "Suite": "LOGGING"
+  },
+  {
     "Name": "OCP-70965:anli:LOGGING:[sig-openshift-logging] LOGGING Logging fluentd acceptance testing fluentd to ES[Slow][Serial]",
     "Suite": "LOGGING"
   },
@@ -58188,8 +58212,16 @@
     "Suite": "Workloads"
   },
   {
+    "Name": "OCP-76469:knarra:Workloads:[sig-cli] Workloads ocmirror v2 works well Verify Creating release signature configmap with oc-mirror v2 [Serial]",
+    "Suite": "Workloads"
+  },
+  {
     "Name": "OCP-76471:sregidor:MCO:[sig-mco] MCO scale Scaleup using 4.12 cloud image[Disruptive] [Serial]",
     "Suite": "MCO"
+  },
+  {
+    "Name": "OCP-76489:knarra:Workloads:[sig-cli] Workloads ocmirror v2 works well oc-mirror should fail when the cincinnati API has errors [Serial]",
+    "Suite": "Workloads"
   },
   {
     "Name": "OCP-76515:yuewu:CFE:[sig-auth] CFE cert-manager Vault issuer should work well when authenticating with Kubernetes bound service account through JWT/OIDC auth",
@@ -58206,6 +58238,10 @@
   {
     "Name": "OCP-76587:sregidor:MCO:[sig-mco] MCO security Port number 22623 should not expose weak ciphers to external client from master node IP [Disruptive] [Serial]",
     "Suite": "MCO"
+  },
+  {
+    "Name": "OCP-76596:knarra:Workloads:[sig-cli] Workloads ocmirror v2 works well oc-mirror should not GenerateSignatureConfigMap when not mirror the release images [Serial]",
+    "Suite": "Workloads"
   },
   {
     "Name": "OCP-7XX17:yinzhou:Workloads:Should get warning when there is an identical short name for two or more resources",
