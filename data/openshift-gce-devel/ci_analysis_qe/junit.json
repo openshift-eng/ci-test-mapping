@@ -1604,6 +1604,10 @@
     "Suite": "(OCP-75874 Network_Observability) NetObserv developer view"
   },
   {
+    "Name": "(OCP-75874 Network_Observability) NetObserv developer view \"before all\" hook: any test for \"(OCP-75874, aramesha, Network_Observability) should verify developer view - Loki DataSource\"",
+    "Suite": "(OCP-75874 Network_Observability) NetObserv developer view"
+  },
+  {
     "Name": "(OCP-75874 Network_Observability) NetObserv developer view (OCP-75874, aramesha, Network_Observability) should verify developer view - Loki DataSource",
     "Suite": "(OCP-75874 Network_Observability) NetObserv developer view"
   },
@@ -3116,6 +3120,14 @@
     "Suite": "Insights check"
   },
   {
+    "Name": "Lightspeed Operator related features \"before all\" hook for \"(OCP-76350,yanpzhan,UserInterface) Console could default select \"Enable Operator recommended monitoring\"\"",
+    "Suite": "Lightspeed Operator related features"
+  },
+  {
+    "Name": "Lightspeed Operator related features (OCP-76350,yanpzhan,UserInterface) Console could default select \"Enable Operator recommended monitoring\"",
+    "Suite": "Lightspeed Operator related features"
+  },
+  {
     "Name": "Lightspeed related features \"after all\" hook for \"(OLS-1095,anpicker,Lightspeed) Test user feedback\"",
     "Suite": "Lightspeed related features"
   },
@@ -3342,6 +3354,10 @@
   {
     "Name": "Machine status returns context deadline exceeded",
     "Suite": "Machine misc features testing"
+  },
+  {
+    "Name": "MachineConfig related tests \"before all\" hook for \"(OCP-74602,yapei,UserInterface)Simplified view of MachineConfig configuration files)\"",
+    "Suite": "MachineConfig related tests"
   },
   {
     "Name": "MachineConfig related tests (OCP-74602,yapei,UserInterface)Simplified view of MachineConfig configuration files)",
@@ -4420,6 +4436,10 @@
     "Suite": "API_Server"
   },
   {
+    "Name": "OCP-10943:iamin:Network_Edge:[sig-network-edge] Network_Edge Component_Router should NetworkEdge Set invalid timeout server for route",
+    "Suite": "Network_Edge"
+  },
+  {
     "Name": "OCP-10945:Node The quota usage should be released when pod completed",
     "Suite": "Quota related scenarios"
   },
@@ -5410,6 +5430,10 @@
   {
     "Name": "OCP-11982:NetworkEdge Set timeout server for unsecure route",
     "Suite": "Testing timeout route"
+  },
+  {
+    "Name": "OCP-11982:iamin:Network_Edge:[sig-network-edge] Network_Edge Component_Router should NetworkEdge Set timeout server for unsecure route",
+    "Suite": "Network_Edge"
   },
   {
     "Name": "OCP-11983:Node Quota with BestEffort and NotBestEffort scope",
@@ -6560,8 +6584,16 @@
     "Suite": "Testing route"
   },
   {
+    "Name": "OCP-14678:iamin:Network_Edge:[sig-network-edge] Network_Edge Component_Router should NetworkEdge Only the host in whitelist could access unsecure/edge/reencrypt/passthrough routes",
+    "Suite": "Network_Edge"
+  },
+  {
     "Name": "OCP-14679:NetworkEdge Only the host in whitelist could access the route - edge routes",
     "Suite": "Testing route"
+  },
+  {
+    "Name": "OCP-14680:iamin:Network_Edge:[sig-network-edge] Network_Edge Component_Router should NetworkEdge Add invalid value in annotation whitelist to route",
+    "Suite": "Network_Edge"
   },
   {
     "Name": "OCP-14684:NetworkEdge Only the host in whitelist could access the route - reencrypt routes",
@@ -6942,6 +6974,10 @@
   {
     "Name": "OCP-16732:NetworkEdge Check haproxy.config when overwriting 'timeout server' which was already specified",
     "Suite": "Testing route"
+  },
+  {
+    "Name": "OCP-16732:iamin:Network_Edge:[sig-network-edge] Network_Edge Component_Router should NetworkEdge Check haproxy.config when overwriting timeout server which was already specified",
+    "Suite": "Network_Edge"
   },
   {
     "Name": "OCP-16748:SDN Should remove the conntrack table immediately when the endpoint of UDP service gets deleted",
@@ -7430,6 +7466,14 @@
   {
     "Name": "OCP-19922:Workloads Terminating pod should removed from endpoints list for service",
     "Suite": "deployment related steps"
+  },
+  {
+    "Name": "OCP-19922:yinzhou:Workloads:[sig-apps] Workloads Terminating pod should be removed from endpoints list for service",
+    "Suite": "Workloads"
+  },
+  {
+    "Name": "OCP-19922:yinzhou:Workloads:[sig-apps] Workloads test kcm works well Terminating pod should be removed from endpoints list for service",
+    "Suite": "Workloads"
   },
   {
     "Name": "OCP-19941:rgangwar:DR_Testing:[Apiserver] [failure inject] when 1 master is down the cluster should continue serving well without unavailable more than 30s [Disruptive] [Serial]",
@@ -18768,6 +18812,10 @@
     "Suite": "Testing route"
   },
   {
+    "Name": "OCP-38671:iamin:Network_Edge:[sig-network-edge] Network_Edge Component_Router should NetworkEdge haproxy.router.openshift.io/timeout-tunnel annotation gets applied alongside haproxy.router.openshift.io/timeout for clear/edge/reencrypt routes",
+    "Suite": "Network_Edge"
+  },
+  {
     "Name": "OCP-38672:NetworkEdge \"haproxy.router.openshift.io/timeout-tunnel\" annotation takes precedence over \"haproxy.router.openshift.io/timeout\" values for passthrough routes",
     "Suite": "Testing route"
   },
@@ -27696,6 +27744,10 @@
     "Suite": "SDN"
   },
   {
+    "Name": "OCP-45694:knarra:Workloads:[sig-scheduling] Workloads The Descheduler Operator automates pod evictions using different profiles V-ACS.02-Support to collect olm data in must-gather [Slow][Disruptive] [Serial]",
+    "Suite": "Workloads"
+  },
+  {
     "Name": "OCP-45694:yinzhou:Support to collect olm data in must-gather [Slow]",
     "Suite": "Workloads"
   },
@@ -29534,6 +29586,10 @@
   {
     "Name": "OCP-46882:ikanse:Vector ClusterLogForwarder forward logs to non ClusterLogging managed Elasticsearch insecure forward[Serial][Slow]",
     "Suite": "Logging"
+  },
+  {
+    "Name": "OCP-46897:sregidor:MCO:[sig-mco] MCO V-BR.26-add new ssh authorized keys RHEL. OCP\u003e=4.10 [Serial]",
+    "Suite": "MCO"
   },
   {
     "Name": "OCP-46897:sregidor:MCO:[sig-mco] MCO add new ssh authorized keys RHEL. OCP\u003e=4.10 [Serial]",
@@ -37532,6 +37588,10 @@
     "Suite": "SDN"
   },
   {
+    "Name": "OCP-50950:asood:SDN:[sig-networking] SDN metallb Verify community creation and webhook validation.",
+    "Suite": "SDN"
+  },
+  {
     "Name": "OCP-50951:pewang:STORAGE:[LSO] [Filesystem ext4] [Resize] LocalVolume CR related pv could be expanded capacity manually",
     "Suite": "STORAGE"
   },
@@ -38126,6 +38186,10 @@
   {
     "Name": "OCP-51172:pewang:[LSO] [Filesystem xfs] [Resize] LocalVolume CR related pv could be expanded capacity manually ",
     "Suite": "STORAGE"
+  },
+  {
+    "Name": "OCP-51186:qiowang:SDN:[sig-networking] SDN metallb l2 Validate ipAddressPoolSelector, ipAddressPool and nodeSelector are honored when advertising service IP address with L2 advertisement [Serial]",
+    "Suite": "SDN"
   },
   {
     "Name": "OCP-51187:qiowang:SDN:[sig-networking] SDN metallb l3 Validate ipAddressPoolSelector, ipAddressPool and nodeSelector are honored when advertising service IP address via BGP advertisement [Serial]",
@@ -42864,6 +42928,14 @@
     "Suite": "API_Server"
   },
   {
+    "Name": "OCP-54819:qiowang:SDN:[sig-networking] SDN metallb l2 Validate ipAddressPoolSelector, ipAddressPool and nodeSelector are honored when advertising service IP address with L2 advertisement [Serial]",
+    "Suite": "SDN"
+  },
+  {
+    "Name": "OCP-54820:qiowang:SDN:[sig-networking] SDN metallb l3 Validate ipAddressPoolSelector, ipAddressPool and nodeSelector are honored when advertising service IP address via BGP advertisement [Serial]",
+    "Suite": "SDN"
+  },
+  {
     "Name": "OCP-54840:aramesha:Use console-plugin authorize API [Serial]",
     "Suite": "Network_Observability"
   },
@@ -44341,6 +44413,10 @@
   },
   {
     "Name": "OCP-55823:yinzhou:Workloads:[sig-apps] Workloads make sure split the route controllers out from OCM",
+    "Suite": "Workloads"
+  },
+  {
+    "Name": "OCP-55823:yinzhou:Workloads:[sig-apps] Workloads test kcm works well make sure split the route controllers out from OCM",
     "Suite": "Workloads"
   },
   {
@@ -47948,6 +48024,10 @@
     "Suite": "NODE"
   },
   {
+    "Name": "OCP-60964:asahay:NODE:[sig-node] NODE keda Audit logging test - Writing to PVC [Serial]",
+    "Suite": "NODE"
+  },
+  {
     "Name": "OCP-60966:asahay:NODE:[sig-node] NODE keda CMA Scale applications based on memory metrics [Serial]",
     "Suite": "NODE"
   },
@@ -49025,6 +49105,14 @@
   },
   {
     "Name": "OCP-62093:kewang:API_Server:[Apiserver] Wire tlsSecurityProfile cipher config from apiservers/cluster into apiservers of hosted cluster [Slow][Disruptive] [Serial]",
+    "Suite": "API_Server"
+  },
+  {
+    "Name": "OCP-62093:kewang:API_Server:[sig-api-machinery] API_Server on hypershift 1-[Apiserver] Wire tlsSecurityProfile cipher config from apiservers/cluster into apiservers of hosted cluster [Slow][Disruptive] [Serial]",
+    "Suite": "API_Server"
+  },
+  {
+    "Name": "OCP-62093:kewang:API_Server:[sig-api-machinery] API_Server on hypershift 2-[Apiserver] Wire tlsSecurityProfile cipher config from apiservers/cluster into apiservers of hosted cluster [Slow][Disruptive] [Serial]",
     "Suite": "API_Server"
   },
   {
@@ -55272,6 +55360,10 @@
     "Suite": "LOGGING"
   },
   {
+    "Name": "OCP-70965:anli:LOGGING:[sig-openshift-logging] LOGGING Logging acceptance testing: fluentd to ES[Slow][Serial]",
+    "Suite": "LOGGING"
+  },
+  {
     "Name": "OCP-70965:anli:LOGGING:[sig-openshift-logging] LOGGING Logging fluentd acceptance testing fluentd to ES[Slow][Serial]",
     "Suite": "LOGGING"
   },
@@ -56832,6 +56924,10 @@
     "Suite": "API_Server"
   },
   {
+    "Name": "OCP-73410:kewang:API_Server:[sig-api-machinery] API_Server V-BR.22-V-BR.33-V-BR.39-Support customRules list for by-group with none profile to the audit configuration [Disruptive] [Serial][Slow]",
+    "Suite": "API_Server"
+  },
+  {
     "Name": "OCP-73410:kewang:API_Server:[sig-api-machinery] API_Server V-BR.33-Support customRules list for by-group with none profile to the audit configuration [Disruptive] [Serial][Slow]",
     "Suite": "API_Server"
   },
@@ -56894,6 +56990,10 @@
   {
     "Name": "OCP-73418:rioliu:MCO:[sig-mco] MCO NodeDisruptionPolicy NodeDisruptionPolicy sshkey with action Reboot [Disruptive] [Serial]",
     "Suite": "MCO"
+  },
+  {
+    "Name": "OCP-73419:knarra:Workloads:[sig-cli] Workloads Verify filtering and mirroring specific bundle versions for operators works fine with oc-mirror v2 [Serial]",
+    "Suite": "Workloads"
   },
   {
     "Name": "OCP-73419:knarra:Workloads:[sig-cli] Workloads ocmirror v2 works well Verify filtering and mirroring specific bundle versions for operators works fine with oc-mirror v2 [Serial]",
@@ -58188,8 +58288,16 @@
     "Suite": "Workloads"
   },
   {
+    "Name": "OCP-76469:knarra:Workloads:[sig-cli] Workloads ocmirror v2 works well Verify Creating release signature configmap with oc-mirror v2 [Serial]",
+    "Suite": "Workloads"
+  },
+  {
     "Name": "OCP-76471:sregidor:MCO:[sig-mco] MCO scale Scaleup using 4.12 cloud image[Disruptive] [Serial]",
     "Suite": "MCO"
+  },
+  {
+    "Name": "OCP-76489:knarra:Workloads:[sig-cli] Workloads ocmirror v2 works well oc-mirror should fail when the cincinnati API has errors [Serial]",
+    "Suite": "Workloads"
   },
   {
     "Name": "OCP-76515:yuewu:CFE:[sig-auth] CFE cert-manager Vault issuer should work well when authenticating with Kubernetes bound service account through JWT/OIDC auth",
@@ -58206,6 +58314,22 @@
   {
     "Name": "OCP-76587:sregidor:MCO:[sig-mco] MCO security Port number 22623 should not expose weak ciphers to external client from master node IP [Disruptive] [Serial]",
     "Suite": "MCO"
+  },
+  {
+    "Name": "OCP-76596:knarra:Workloads:[sig-cli] Workloads ocmirror v2 works well oc-mirror should not GenerateSignatureConfigMap when not mirror the release images [Serial]",
+    "Suite": "Workloads"
+  },
+  {
+    "Name": "OCP-76597:knarra:Workloads:[sig-cli] Workloads ocmirror v2 works well oc-mirror throws error when performing delete operation with --generate [Serial]",
+    "Suite": "Workloads"
+  },
+  {
+    "Name": "OCP-76983:kuiwang:OLM:[sig-operators] OLM v1 oprun should install index and bundle from private image",
+    "Suite": "OLM"
+  },
+  {
+    "Name": "OCP-77042:zzhao:SDN:[sig-networking] SDN on-prem Add annotation in the on-prem namespace static pods for workload partitioning",
+    "Suite": "SDN"
   },
   {
     "Name": "OCP-7XX17:yinzhou:Workloads:Should get warning when there is an identical short name for two or more resources",
@@ -65340,6 +65464,10 @@
     "Suite": "knmstate operator console plugin related features"
   },
   {
+    "Name": "knmstate operator console plugin related features \"before each\" hook for \"(OCP-64820,qiowang,SDN) Verify can configure node selector on web console(from form)\"",
+    "Suite": "knmstate operator console plugin related features"
+  },
+  {
     "Name": "knmstate operator console plugin related features (OCP-64784,qiowang) Verify NMState cosole plugin operator installation(GUI)",
     "Suite": "knmstate operator console plugin related features"
   },
@@ -66692,6 +66820,34 @@
     "Suite": "some SCC policy related scenarios"
   },
   {
+    "Name": "test_cluster_version",
+    "Suite": "pytest"
+  },
+  {
+    "Name": "test_http_endpoint[url0]",
+    "Suite": "pytest"
+  },
+  {
+    "Name": "test_http_endpoint[url1]",
+    "Suite": "pytest"
+  },
+  {
+    "Name": "test_ztp_namespaces[multicluster-engine]",
+    "Suite": "pytest"
+  },
+  {
+    "Name": "test_ztp_namespaces[open-cluster-management]",
+    "Suite": "pytest"
+  },
+  {
+    "Name": "test_ztp_namespaces[openshift-gitops]",
+    "Suite": "pytest"
+  },
+  {
+    "Name": "test_ztp_storageclass",
+    "Suite": "pytest"
+  },
+  {
     "Name": "the tlsSecurityProfile of ingresscontroller can be set to Old, Intermediate, Modern and Custom (outline example : | OCP-25665:NetworkEdge | test-25665 | ingressctl-tls-old.yaml | TLSv1.1 | AES128-GCM-SHA256:AES256-GCM-SHA384 |)",
     "Suite": "Testing Ingress Operator related scenarios"
   },
@@ -66804,6 +66960,10 @@
     "Suite": "user preferences related features"
   },
   {
+    "Name": "user preferences related features \"after all\" hook for \"(OCP-75494,yanpzhan,UserInterface) Show Lightspeed hover button on pages\"",
+    "Suite": "user preferences related features"
+  },
+  {
     "Name": "user preferences related features \"before all\" hook for \"(OCP-49134,yanpzhan) Support dark theme for admin console\"",
     "Suite": "user preferences related features"
   },
@@ -66817,6 +66977,10 @@
   },
   {
     "Name": "user preferences related features \"before all\" hook for \"(OCP-49134,yanpzhan,UserInterface)) Support dark theme for admin console\"",
+    "Suite": "user preferences related features"
+  },
+  {
+    "Name": "user preferences related features \"before all\" hook for \"(OCP-75494,yanpzhan,UserInterface) Show Lightspeed hover button on pages\"",
     "Suite": "user preferences related features"
   },
   {
