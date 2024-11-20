@@ -7776,6 +7776,14 @@
     "Suite": "UI-storage (storageclass, pv, pvc) related"
   },
   {
+    "Name": "OCP-20979:kuiwang:OLM:[sig-operators] OLM for an end user handle within a namespace only one IP is generated",
+    "Suite": "OLM"
+  },
+  {
+    "Name": "OCP-20981:jiazha:OLM:[sig-operators] OLM should contain the source commit id",
+    "Suite": "OLM"
+  },
+  {
     "Name": "OCP-20983:UserInterface Check daemon set on Home Overview page",
     "Suite": "UI-overview cases"
   },
@@ -7857,6 +7865,10 @@
   },
   {
     "Name": "OCP-21080:jiazha:OLM:OLM Check OLM metrics [Serial] ",
+    "Suite": "OLM"
+  },
+  {
+    "Name": "OCP-21080:jiazha:OLM:[sig-operators] OLM for an end user handle within a namespace Check metrics [Serial]",
     "Suite": "OLM"
   },
   {
@@ -8364,6 +8376,10 @@
     "Suite": "Service related networking scenarios"
   },
   {
+    "Name": "OCP-21824:xzha:OLM:[sig-operators] OLM for an end user handle to support verify CRD should be ready before installing the operator",
+    "Suite": "OLM"
+  },
+  {
     "Name": "OCP-21825:kuiwang:Certs for packageserver can be rotated successfully",
     "Suite": "OLM"
   },
@@ -8690,6 +8706,10 @@
   {
     "Name": "OCP-22178:ClusterObservability Deploy prometheus operator by marketplace",
     "Suite": "Install and configuration related scenarios"
+  },
+  {
+    "Name": "OCP-22200:kuiwang:OLM:[sig-operators] OLM for an end user handle to support add minimum kube version to CSV [Slow]",
+    "Suite": "OLM"
   },
   {
     "Name": "OCP-22201:SDN Should have a clusteroperator object created under config.openshift.io api group for network-operator",
@@ -9186,6 +9206,10 @@
   {
     "Name": "OCP-22655:SDN The openflow should be clear up when namespaces is deleted",
     "Suite": "SDN related networking scenarios"
+  },
+  {
+    "Name": "OCP-22656:kuiwang:OLM:[sig-operators] OLM for an end user handle within a namespace manual approval strategy apply to subsequent releases",
+    "Suite": "OLM"
   },
   {
     "Name": "OCP-22659:SDN The old and new created networkpolicy should work well when the sdn pod is recreated",
@@ -10520,6 +10544,10 @@
     "Suite": "OLM"
   },
   {
+    "Name": "OCP-24387:bandrade:OLM:[sig-operators] OLM should Any CRD upgrade is allowed if there is only one owner in a cluster [Disruptive] [Serial]",
+    "Suite": "OLM"
+  },
+  {
     "Name": "OCP-24389:dpunia:API_Server:Verify the CR admission of the APIServer CRD [Slow][Disruptive] [Serial]",
     "Suite": "API_Server"
   },
@@ -10900,6 +10928,10 @@
     "Suite": "OLM"
   },
   {
+    "Name": "OCP-24587:scolange:OLM:[sig-operators] OLM should Add InstallPlan conditions to Subscription status",
+    "Suite": "OLM"
+  },
+  {
     "Name": "OCP-24601:ClusterObservability Alert graph is added to alert details page",
     "Suite": "alerts browser"
   },
@@ -11016,6 +11048,10 @@
     "Suite": "Cluster_Infrastructure"
   },
   {
+    "Name": "OCP-24738:scolange:OLM:[sig-operators] OLM for an end user handle within a namespace CRD should update if previously defined schemas do not change [Disruptive] [Serial]",
+    "Suite": "OLM"
+  },
+  {
     "Name": "OCP-24739:SDN An allowedCIDRs inside an rejectedCIDRs",
     "Suite": "Service related networking scenarios"
   },
@@ -11082,6 +11118,10 @@
   {
     "Name": "OCP-24838:wewang:Registry OpenStack Storage test with invalid settings [Disruptive] [Serial]",
     "Suite": "Image_Registry"
+  },
+  {
+    "Name": "OCP-24850:bandrade:OLM:[sig-operators] OLM should Allow users to edit the deployment of an active CSV",
+    "Suite": "OLM"
   },
   {
     "Name": "OCP-24870:kuiwang:OLM:[sig-operators] OLM for an end user handle within a namespace can not create csv without operator group",
@@ -11173,6 +11213,10 @@
   },
   {
     "Name": "OCP-24906:kuiwang:Operators requesting cluster-scoped permission can trigger kube GC bug [Serial] ",
+    "Suite": "OLM"
+  },
+  {
+    "Name": "OCP-24916:bandrade:OLM:[sig-operators] OLM should Operators in AllNamespaces should be granted namespace list",
     "Suite": "OLM"
   },
   {
@@ -11598,6 +11642,10 @@
   {
     "Name": "OCP-25746:Workloads Inspect resource by oc command",
     "Suite": "oc inspect related scenarios"
+  },
+  {
+    "Name": "OCP-25757:kuiwang:OLM:[sig-operators] OLM for an end user handle within a namespace manual approval strategy apply to subsequent releases",
+    "Suite": "OLM"
   },
   {
     "Name": "OCP-25760:kuiwang:OLM:Operator upgrades does not fail after change the channel",
@@ -15108,6 +15156,10 @@
     "Suite": "alerts browser"
   },
   {
+    "Name": "OCP-32862:scolange:OLM:[sig-operators] OLM should Pods found with invalid container images not present in release payload",
+    "Suite": "OLM"
+  },
+  {
     "Name": "OCP-32863:kuiwang:OLM:Support resources required for SAP Gardener Control Plane Operator [Disruptive] [Serial]",
     "Suite": "OLM"
   },
@@ -15334,6 +15386,10 @@
   {
     "Name": "OCP-33141:ClusterObservability Apply limits of ingested samples",
     "Suite": "Install and configuration related scenarios"
+  },
+  {
+    "Name": "OCP-33176:kuiwang:OLM:[sig-operators] OLM for an end user handle within a namespace Enable generated operator component adoption for operators with single ns mode [Slow]",
+    "Suite": "OLM"
   },
   {
     "Name": "OCP-33177:xiyuan:Security_and_Compliance:[sig-isc] Security_and_Compliance File_Integrity_Operator an end user handle FIO within a namespace V-EST.01-only one long-running daemonset should be created by FIO [Serial]",
@@ -16600,6 +16656,10 @@
     "Suite": "cluster-logging-operator related test"
   },
   {
+    "Name": "OCP-33902:jiazha:OLM:[sig-operators] OLM should Catalog Weighting",
+    "Suite": "OLM"
+  },
+  {
     "Name": "OCP-33905:pewang:STORAGE:[LSO] [block volume] LocalVolumeSet CR with maxDeviceCount shold provision matched device and could be used by Pod [Serial] ",
     "Suite": "STORAGE"
   },
@@ -17045,6 +17105,10 @@
   },
   {
     "Name": "OCP-34472:kuiwang:OLM:[sig-operators] OLM for an end user handle within a namespace OLM label dependency",
+    "Suite": "OLM"
+  },
+  {
+    "Name": "OCP-34472:kuiwang:OLM:[sig-operators] OLM for an end user handle within a namespace olm label dependency",
     "Suite": "OLM"
   },
   {
@@ -18020,6 +18084,10 @@
     "Suite": "Machine misc features testing"
   },
   {
+    "Name": "OCP-37260:jiazha:OLM:[sig-operators] OLM should should allow to create the default CatalogSource [Disruptive] [Serial]",
+    "Suite": "OLM"
+  },
+  {
     "Name": "OCP-37263:kuiwang:OLM:Subscription stays in UpgradePending but InstallPlan not installing [Slow]",
     "Suite": "OLM"
   },
@@ -18250,6 +18318,10 @@
   {
     "Name": "OCP-37415:liqcui:PSAP:[sig-node] PSAP should Allow setting isolated_cores without touching the default_irq_affinity [Disruptive] [Serial]",
     "Suite": "PSAP"
+  },
+  {
+    "Name": "OCP-37442:jiazha:OLM:[sig-operators] OLM should create a Conditions CR for each Operator it installs",
+    "Suite": "OLM"
   },
   {
     "Name": "OCP-37463:knarra:Workloads:Descheduler-Validate AffinityAndTaints and TopologyAndDuplicates profile [Disruptive] [Serial][Slow]",
@@ -19560,12 +19632,20 @@
     "Suite": "OLM"
   },
   {
+    "Name": "OCP-40532:xzha:OLM:[sig-operators] OLM for an end user handle within a namespace the deployment should not lost the resources section",
+    "Suite": "OLM"
+  },
+  {
     "Name": "OCP-40533:UserInterface Allow Rollbback for deploymentconfig/deployment",
     "Suite": "deployment/dc related features via web"
   },
   {
     "Name": "OCP-40533:UserInterface Allow Rollbback for deploymentconfig/deployment",
     "Suite": "UI-deployment/dc related features via web"
+  },
+  {
+    "Name": "OCP-40534:xzha:OLM:[sig-operators] OLM for an end user handle within a namespace the deployment should not lost the resources section",
+    "Suite": "OLM"
   },
   {
     "Name": "OCP-40560:jhajyahy:INSTALLER:[sig-baremetal] INSTALLER IPI for INSTALLER_GENERAL job on BareMetal Test accessing Metal3 ironic endpoint on different ways An unauthenticated user cant do actions in the ironic-api when using http",
@@ -19862,6 +19942,10 @@
   {
     "Name": "OCP-40908:SDN Allow from hostnetwork policy to allow traffic from hostnetwork pods on LoadBalancerService endpoint strategy cluster",
     "Suite": "Network policy plugin scenarios"
+  },
+  {
+    "Name": "OCP-40958:kuiwang:OLM:[sig-operators] OLM for an end user handle within a namespace Indicate invalid OperatorGroup on InstallPlan status",
+    "Suite": "OLM"
   },
   {
     "Name": "OCP-40972:xzha:OLM:Provide more specific text when no candidates for Subscription spec",
@@ -22508,6 +22592,10 @@
     "Suite": "Cluster_Operator"
   },
   {
+    "Name": "OCP-42663:xiyuan:Security_and_Compliance:[sig-isc] Security_and_Compliance File_Integrity_Operator intra release upgrade precheck and postcheck for file integrity operator [Serial][Slow]",
+    "Suite": "Security_and_Compliance"
+  },
+  {
     "Name": "OCP-42674:ikanse:Elasticsearch log4j2 properties file and configuration test[Serial][Slow]",
     "Suite": "Logging"
   },
@@ -23049,6 +23137,10 @@
   },
   {
     "Name": "OCP-42970:bandrade:OperatorGroup status indicates cardinality conflicts - SingleNamespace ",
+    "Suite": "OLM"
+  },
+  {
+    "Name": "OCP-42972:bandrade:OLM:[sig-operators] OLM should OperatorGroup status should indicate if the SA named in spec not found",
     "Suite": "OLM"
   },
   {
@@ -24504,6 +24596,10 @@
     "Suite": "Workloads"
   },
   {
+    "Name": "OCP-43291:xzha:OLM:[sig-operators] OLM for an end user handle within a namespace Indicate resolution conflicts on involved Subscription statuses",
+    "Suite": "OLM"
+  },
+  {
     "Name": "OCP-43292:shudili:Network_Edge:User can delete configmap and update configmap with new custom error page",
     "Suite": "Network_Edge"
   },
@@ -25638,6 +25734,10 @@
   {
     "Name": "OCP-43789:pmali:Container_Engine_Tools:[sig-node] Container_Engine_Tools crio,scc Check podman and crictl version to check if bug fixed",
     "Suite": "Container_Engine_Tools"
+  },
+  {
+    "Name": "OCP-43803:jiazha:OLM:[sig-operators] OLM should Only one of multiple subscriptions to the same package is honored",
+    "Suite": "OLM"
   },
   {
     "Name": "OCP-43807:ikanse:Fluentd Forward logs to Grafana Loki using HTTPS [Serial]",
@@ -27488,6 +27588,10 @@
     "Suite": "OLM"
   },
   {
+    "Name": "OCP-45348:jiazha:OLM:[sig-operators] OLM on hypershift Enable hypershift to deploy OperatorLifecycleManager resources",
+    "Suite": "OLM"
+  },
+  {
     "Name": "OCP-45351:minmli:NODE:[sig-node] NODE initContainer policy,volume,readines,quota post check crioConfig[Disruptive] [Serial][Slow]",
     "Suite": "NODE"
   },
@@ -27510,6 +27614,18 @@
   {
     "Name": "OCP-45351:minmli:prepare to check crioConfig[Disruptive] [Serial][Slow]",
     "Suite": "NODE"
+  },
+  {
+    "Name": "OCP-45359:jitli:OLM:[sig-operators] OLM on VM for an end user handle within a namespace Default catalogs need to use the correct tags",
+    "Suite": "OLM"
+  },
+  {
+    "Name": "OCP-45361:jitli:OLM:[sig-operators] OLM on VM for an end user handle within a namespace Resolution failed error condition in Subscription should be removed after resolution error is resolved",
+    "Suite": "OLM"
+  },
+  {
+    "Name": "OCP-45366:xiyuan:Security_and_Compliance:[sig-isc] Security_and_Compliance File_Integrity_Operator intra release upgrade precheck and postcheck for file integrity operator [Serial][Slow]",
+    "Suite": "Security_and_Compliance"
   },
   {
     "Name": "OCP-45368:gkarager:Forward logs to kafka using sasl-plaintext[Serial][Slow]",
@@ -27929,6 +28045,10 @@
   },
   {
     "Name": "OCP-45543:jiazha:OLM:[sig-operators] OLM on hypershift Enable hypershift to deploy OLM resources",
+    "Suite": "OLM"
+  },
+  {
+    "Name": "OCP-45543:jiazha:OLM:[sig-operators] OLM on hypershift Enable hypershift to deploy OperatorLifecycleManager resources",
     "Suite": "OLM"
   },
   {
@@ -42112,6 +42232,10 @@
     "Suite": "OLM"
   },
   {
+    "Name": "OCP-53758:jiazha:OLM:[sig-operators] OLM should failed to recreate SA for the CatalogSource that without poll Interval",
+    "Suite": "OLM"
+  },
+  {
     "Name": "OCP-53759:jiazha:OLM:Opeatorhub status shows errors after disabling default catalogSources [Disruptive] [Serial]",
     "Suite": "OLM"
   },
@@ -55964,6 +56088,10 @@
     "Suite": "OLM"
   },
   {
+    "Name": "OCP-70162:jiazha:OLM:[sig-operators] OLM optional Leverage Composable OpenShift feature to make OperatorLifecycleManager optional",
+    "Suite": "OLM"
+  },
+  {
     "Name": "OCP-70203:minmli:NODE:ICSP and IDMS/ITMS can coexist in cluster[Disruptive] [Serial][Slow]",
     "Suite": "NODE"
   },
@@ -59945,6 +60073,10 @@
   },
   {
     "Name": "OCP-77091:iamin:Network_Edge:[sig-network-edge] Network_Edge Component_Router should NetworkEdge Route does not enable allowlist with than 61 CIDRs and if invalid IP annotation is given",
+    "Suite": "Network_Edge"
+  },
+  {
+    "Name": "OCP-77283:shudili:Network_Edge:[sig-network-edge] Network_Edge Component_Router should Router should support SHA1 CA certificates in the default certificate chain",
     "Suite": "Network_Edge"
   },
   {
