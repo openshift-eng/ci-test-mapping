@@ -12,10 +12,12 @@ type Component struct {
 var IngressNodeFirewallComponent = Component{
 	Component: &config.Component{
 		Name:                 "Networking / ingress-node-firewall",
-		Operators:            []string{},
+		Operators:            []string{"ingress-node-firewall"},
 		DefaultJiraComponent: "Networking / ingress-node-firewall",
 		Matchers: []config.ComponentMatcher{
-			{Suite: "SDN infw"},
+			{
+				IncludeAll: []string{"infw"}, //// QE cases all have "infw" in junit xml
+			},
 		},
 	},
 }
