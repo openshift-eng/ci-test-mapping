@@ -1384,6 +1384,10 @@
     "Suite": "(OCP-68246 Network_Observability) FlowRTT test"
   },
   {
+    "Name": "(OCP-68246 Network_Observability) FlowRTT test \"after each\" hook: test for \"(OCP-68246, aramesha, Network_Observability) Verify flowRTT panels\"",
+    "Suite": "(OCP-68246 Network_Observability) FlowRTT test"
+  },
+  {
     "Name": "(OCP-68246 Network_Observability) FlowRTT test \"before all\" hook: any test for \"(OCP-68246, aramesha, Network_Observability) Validate flowRTT edge labels and Query Summary stats\"",
     "Suite": "(OCP-68246 Network_Observability) FlowRTT test"
   },
@@ -1405,6 +1409,10 @@
   },
   {
     "Name": "(OCP-68246 Network_Observability) FlowRTT test \"before each\" hook: any flowRTT test for \"(OCP-68246, aramesha, Network_Observability) Verify flowRTT column values\"",
+    "Suite": "(OCP-68246 Network_Observability) FlowRTT test"
+  },
+  {
+    "Name": "(OCP-68246 Network_Observability) FlowRTT test \"before each\" hook: any flowRTT test for \"(OCP-68246, aramesha, Network_Observability) Verify flowRTT panels\"",
     "Suite": "(OCP-68246 Network_Observability) FlowRTT test"
   },
   {
@@ -2564,6 +2572,10 @@
     "Suite": "Dynamic plugins features"
   },
   {
+    "Name": "Dynamic plugins features \"after all\" hook for \"(OCP-77719,yanpzhan,UserInterface)Supply custom Consoleplugin details page\"",
+    "Suite": "Dynamic plugins features"
+  },
+  {
     "Name": "Dynamic plugins features \"before all\" hook for \"(OCP-51743,yapei) Implement check for the new i18n annotation for dynamic plugins\"",
     "Suite": "Dynamic plugins features"
   },
@@ -2593,6 +2605,10 @@
   },
   {
     "Name": "Dynamic plugins features \"before all\" hook for \"(OCP-54170,yapei,UserInterface),UserInterface)) Promote ConsolePlugins API version to v1\"",
+    "Suite": "Dynamic plugins features"
+  },
+  {
+    "Name": "Dynamic plugins features \"before all\" hook for \"(OCP-77719,yanpzhan,UserInterface)Supply custom Consoleplugin details page\"",
     "Suite": "Dynamic plugins features"
   },
   {
@@ -2821,6 +2837,10 @@
   },
   {
     "Name": "Dynamic plugins features (OCP-75644,yapei,UserInterface)console plugin proxy should directly copy the plugin service proxy response status code",
+    "Suite": "Dynamic plugins features"
+  },
+  {
+    "Name": "Dynamic plugins features (OCP-77719,yanpzhan,UserInterface)Supply custom Consoleplugin details page",
     "Suite": "Dynamic plugins features"
   },
   {
@@ -3268,6 +3288,14 @@
     "Suite": "Logging related features"
   },
   {
+    "Name": "Logging related features \"before each\" hook for \"(OCP-22558,gkarager,Logging) Deploy cluster-logging operator via web console\"",
+    "Suite": "Logging related features"
+  },
+  {
+    "Name": "Logging related features \"before each\" hook for \"(OCP-70833,gkarager,Logging) Deploy loki-operator via Web Console\"",
+    "Suite": "Logging related features"
+  },
+  {
     "Name": "Logging related features (OCP-22558,gkarager) Deploy cluster-logging operator via web console",
     "Suite": "Logging related features"
   },
@@ -3305,6 +3333,10 @@
   },
   {
     "Name": "Logging view on the openshift console \"after all\" hook for \"(OCP-53324,gkarager) disable query executors when the query is empty\"",
+    "Suite": "Logging view on the openshift console"
+  },
+  {
+    "Name": "Logging view on the openshift console \"after all\" hook for \"(OCP-53324,gkarager) execute query as per selected tenant\"",
     "Suite": "Logging view on the openshift console"
   },
   {
@@ -3364,11 +3396,23 @@
     "Suite": "Loki log based alerts on dev-console"
   },
   {
+    "Name": "Loki log based alerts on dev-console \"after each\" hook for \"(OCP-65686,kbharti,Logging) Validate Loki log based alerts on Console\"",
+    "Suite": "Loki log based alerts on dev-console"
+  },
+  {
     "Name": "Loki log based alerts on dev-console \"before all\" hook for \"(OCP-65686,kbharti) Validate Loki log based alerts on Console\"",
     "Suite": "Loki log based alerts on dev-console"
   },
   {
     "Name": "Loki log based alerts on dev-console \"before all\" hook for \"(OCP-65686,kbharti,Logging) Validate Loki log based alerts on Console\"",
+    "Suite": "Loki log based alerts on dev-console"
+  },
+  {
+    "Name": "Loki log based alerts on dev-console \"before each\" hook for \"(OCP-65686,kbharti,Logging) Validate Loki log based alerts on Console\"",
+    "Suite": "Loki log based alerts on dev-console"
+  },
+  {
+    "Name": "Loki log based alerts on dev-console (OCP-65686,kbharti,Logging) Validate Loki log based alerts on Console",
     "Suite": "Loki log based alerts on dev-console"
   },
   {
@@ -3881,6 +3925,10 @@
   },
   {
     "Name": "OCP-10207:shudili:Network_Edge:[sig-network-edge] Network_Edge Component_Router should NetworkEdge Should use the same cookies for secure and insecure access when insecureEdgeTerminationPolicy set to allow for edge route",
+    "Suite": "Network_Edge"
+  },
+  {
+    "Name": "OCP-10207:shudili:Network_Edge:[sig-network-edge] Network_Edge Component_Router should NetworkEdge Should use the same cookies for secure and insecure access when insecureEdgeTerminationPolicy set to allow for edge/reencrypt route",
     "Suite": "Network_Edge"
   },
   {
@@ -4550,6 +4598,10 @@
   {
     "Name": "OCP-11036:NetworkEdge Set insecureEdgeTerminationPolicy to Redirect for passthrough route",
     "Suite": "Testing route"
+  },
+  {
+    "Name": "OCP-11036:iamin:Network_Edge:[sig-network-edge] Network_Edge Component_Router should NetworkEdge Set insecureEdgeTerminationPolicy to Redirect for passthrough/edge/reencrypt route",
+    "Suite": "Network_Edge"
   },
   {
     "Name": "OCP-11042:NetworkEdge Disable haproxy hash based sticky session for edge termination routes",
@@ -5480,6 +5532,10 @@
     "Suite": "Testing timeout route"
   },
   {
+    "Name": "OCP-11982:iamin:Network_Edge:[sig-network-edge] Network_Edge Component_Router should NetworkEdge Set timeout server for http route",
+    "Suite": "Network_Edge"
+  },
+  {
     "Name": "OCP-11982:iamin:Network_Edge:[sig-network-edge] Network_Edge Component_Router should NetworkEdge Set timeout server for unsecure route",
     "Suite": "Network_Edge"
   },
@@ -6400,6 +6456,10 @@
     "Suite": "Testing route"
   },
   {
+    "Name": "OCP-13753:iamin:Network_Edge:[sig-network-edge] Network_Edge Component_Router should NetworkEdge Check the cookie if using secure mode when insecureEdgeTerminationPolicy to Redirect for edge/reencrypt route",
+    "Suite": "Network_Edge"
+  },
+  {
     "Name": "OCP-13771:Workloads Taint Toleration pod with wildcard toleration can be scheduled to taint node",
     "Suite": "taint toleration related scenarios"
   },
@@ -6426,6 +6486,10 @@
   {
     "Name": "OCP-13839:NetworkEdge Set insecureEdgeTerminationPolicy to Redirect and Allow for reencrypt route",
     "Suite": "Testing route"
+  },
+  {
+    "Name": "OCP-13839:iamin:Network_Edge:[sig-network-edge] Network_Edge Component_Router should NetworkEdge Set insecureEdgeTerminationPolicy to Allow for reencrypt/edge route",
+    "Suite": "Network_Edge"
   },
   {
     "Name": "OCP-13847:SDN an empty OPENSHIFT-ADMIN-OUTPUT-RULES chain is created in filter table at startup",
@@ -7776,6 +7840,14 @@
     "Suite": "UI-storage (storageclass, pv, pvc) related"
   },
   {
+    "Name": "OCP-20979:kuiwang:OLM:[sig-operators] OLM for an end user handle within a namespace only one IP is generated",
+    "Suite": "OLM"
+  },
+  {
+    "Name": "OCP-20981:jiazha:OLM:[sig-operators] OLM should contain the source commit id",
+    "Suite": "OLM"
+  },
+  {
     "Name": "OCP-20983:UserInterface Check daemon set on Home Overview page",
     "Suite": "UI-overview cases"
   },
@@ -7857,6 +7929,10 @@
   },
   {
     "Name": "OCP-21080:jiazha:OLM:OLM Check OLM metrics [Serial] ",
+    "Suite": "OLM"
+  },
+  {
+    "Name": "OCP-21080:jiazha:OLM:[sig-operators] OLM for an end user handle within a namespace Check metrics [Serial]",
     "Suite": "OLM"
   },
   {
@@ -8364,6 +8440,10 @@
     "Suite": "Service related networking scenarios"
   },
   {
+    "Name": "OCP-21824:xzha:OLM:[sig-operators] OLM for an end user handle to support verify CRD should be ready before installing the operator",
+    "Suite": "OLM"
+  },
+  {
     "Name": "OCP-21825:kuiwang:Certs for packageserver can be rotated successfully",
     "Suite": "OLM"
   },
@@ -8692,6 +8772,10 @@
     "Suite": "Install and configuration related scenarios"
   },
   {
+    "Name": "OCP-22200:kuiwang:OLM:[sig-operators] OLM for an end user handle to support add minimum kube version to CSV [Slow]",
+    "Suite": "OLM"
+  },
+  {
     "Name": "OCP-22201:SDN Should have a clusteroperator object created under config.openshift.io api group for network-operator",
     "Suite": "Operator related networking scenarios"
   },
@@ -8956,6 +9040,14 @@
     "Suite": "Image_Registry"
   },
   {
+    "Name": "OCP-22597:UserInterface check console accessibility",
+    "Suite": "web console related upgrade check"
+  },
+  {
+    "Name": "OCP-22597:UserInterface check console accessibility - prepare",
+    "Suite": "web console related upgrade check"
+  },
+  {
     "Name": "OCP-22612:zhsun:Cluster could scale up/down after upgrade [Disruptive] [Serial][Slow]",
     "Suite": "Cluster_Infrastructure"
   },
@@ -9186,6 +9278,10 @@
   {
     "Name": "OCP-22655:SDN The openflow should be clear up when namespaces is deleted",
     "Suite": "SDN related networking scenarios"
+  },
+  {
+    "Name": "OCP-22656:kuiwang:OLM:[sig-operators] OLM for an end user handle within a namespace manual approval strategy apply to subsequent releases",
+    "Suite": "OLM"
   },
   {
     "Name": "OCP-22659:SDN The old and new created networkpolicy should work well when the sdn pod is recreated",
@@ -9762,6 +9858,10 @@
   {
     "Name": "OCP-23677:mihuang:[aws]Change EC2RootVolume: make IOPS optional [Serial]",
     "Suite": "Cluster_Operator"
+  },
+  {
+    "Name": "OCP-23680:SDN Both namespace ingress and openshift-monitoring should have the default label for networkpolicy",
+    "Suite": "Network policy plugin scenarios"
   },
   {
     "Name": "OCP-23680:SDN Both namespace openshift-ingress and openshift-monitoring should have the default label for networkpolicy",
@@ -10520,6 +10620,10 @@
     "Suite": "OLM"
   },
   {
+    "Name": "OCP-24387:bandrade:OLM:[sig-operators] OLM should Any CRD upgrade is allowed if there is only one owner in a cluster [Disruptive] [Serial]",
+    "Suite": "OLM"
+  },
+  {
     "Name": "OCP-24389:dpunia:API_Server:Verify the CR admission of the APIServer CRD [Slow][Disruptive] [Serial]",
     "Suite": "API_Server"
   },
@@ -10585,6 +10689,10 @@
   },
   {
     "Name": "OCP-24467:SDN CNO manager mavlan configured manually with static",
+    "Suite": "Multus-CNI related scenarios"
+  },
+  {
+    "Name": "OCP-24467:SDN network operator manager mavlan configured manually with static",
     "Suite": "Multus-CNI related scenarios"
   },
   {
@@ -10900,6 +11008,10 @@
     "Suite": "OLM"
   },
   {
+    "Name": "OCP-24587:scolange:OLM:[sig-operators] OLM should Add InstallPlan conditions to Subscription status",
+    "Suite": "OLM"
+  },
+  {
     "Name": "OCP-24601:ClusterObservability Alert graph is added to alert details page",
     "Suite": "alerts browser"
   },
@@ -11016,6 +11128,10 @@
     "Suite": "Cluster_Infrastructure"
   },
   {
+    "Name": "OCP-24738:scolange:OLM:[sig-operators] OLM for an end user handle within a namespace CRD should update if previously defined schemas do not change [Disruptive] [Serial]",
+    "Suite": "OLM"
+  },
+  {
     "Name": "OCP-24739:SDN An allowedCIDRs inside an rejectedCIDRs",
     "Suite": "Service related networking scenarios"
   },
@@ -11082,6 +11198,10 @@
   {
     "Name": "OCP-24838:wewang:Registry OpenStack Storage test with invalid settings [Disruptive] [Serial]",
     "Suite": "Image_Registry"
+  },
+  {
+    "Name": "OCP-24850:bandrade:OLM:[sig-operators] OLM should Allow users to edit the deployment of an active CSV",
+    "Suite": "OLM"
   },
   {
     "Name": "OCP-24870:kuiwang:OLM:[sig-operators] OLM for an end user handle within a namespace can not create csv without operator group",
@@ -11173,6 +11293,10 @@
   },
   {
     "Name": "OCP-24906:kuiwang:Operators requesting cluster-scoped permission can trigger kube GC bug [Serial] ",
+    "Suite": "OLM"
+  },
+  {
+    "Name": "OCP-24916:bandrade:OLM:[sig-operators] OLM should Operators in AllNamespaces should be granted namespace list",
     "Suite": "OLM"
   },
   {
@@ -11598,6 +11722,10 @@
   {
     "Name": "OCP-25746:Workloads Inspect resource by oc command",
     "Suite": "oc inspect related scenarios"
+  },
+  {
+    "Name": "OCP-25757:kuiwang:OLM:[sig-operators] OLM for an end user handle within a namespace manual approval strategy apply to subsequent releases",
+    "Suite": "OLM"
   },
   {
     "Name": "OCP-25760:kuiwang:OLM:Operator upgrades does not fail after change the channel",
@@ -15108,6 +15236,10 @@
     "Suite": "alerts browser"
   },
   {
+    "Name": "OCP-32862:scolange:OLM:[sig-operators] OLM should Pods found with invalid container images not present in release payload",
+    "Suite": "OLM"
+  },
+  {
     "Name": "OCP-32863:kuiwang:OLM:Support resources required for SAP Gardener Control Plane Operator [Disruptive] [Serial]",
     "Suite": "OLM"
   },
@@ -15334,6 +15466,10 @@
   {
     "Name": "OCP-33141:ClusterObservability Apply limits of ingested samples",
     "Suite": "Install and configuration related scenarios"
+  },
+  {
+    "Name": "OCP-33176:kuiwang:OLM:[sig-operators] OLM for an end user handle within a namespace Enable generated operator component adoption for operators with single ns mode [Slow]",
+    "Suite": "OLM"
   },
   {
     "Name": "OCP-33177:xiyuan:Security_and_Compliance:[sig-isc] Security_and_Compliance File_Integrity_Operator an end user handle FIO within a namespace V-EST.01-only one long-running daemonset should be created by FIO [Serial]",
@@ -16600,6 +16736,10 @@
     "Suite": "cluster-logging-operator related test"
   },
   {
+    "Name": "OCP-33902:jiazha:OLM:[sig-operators] OLM should Catalog Weighting",
+    "Suite": "OLM"
+  },
+  {
     "Name": "OCP-33905:pewang:STORAGE:[LSO] [block volume] LocalVolumeSet CR with maxDeviceCount shold provision matched device and could be used by Pod [Serial] ",
     "Suite": "STORAGE"
   },
@@ -17045,6 +17185,10 @@
   },
   {
     "Name": "OCP-34472:kuiwang:OLM:[sig-operators] OLM for an end user handle within a namespace OLM label dependency",
+    "Suite": "OLM"
+  },
+  {
+    "Name": "OCP-34472:kuiwang:OLM:[sig-operators] OLM for an end user handle within a namespace olm label dependency",
     "Suite": "OLM"
   },
   {
@@ -18020,6 +18164,10 @@
     "Suite": "Machine misc features testing"
   },
   {
+    "Name": "OCP-37260:jiazha:OLM:[sig-operators] OLM should should allow to create the default CatalogSource [Disruptive] [Serial]",
+    "Suite": "OLM"
+  },
+  {
     "Name": "OCP-37263:kuiwang:OLM:Subscription stays in UpgradePending but InstallPlan not installing [Slow]",
     "Suite": "OLM"
   },
@@ -18250,6 +18398,10 @@
   {
     "Name": "OCP-37415:liqcui:PSAP:[sig-node] PSAP should Allow setting isolated_cores without touching the default_irq_affinity [Disruptive] [Serial]",
     "Suite": "PSAP"
+  },
+  {
+    "Name": "OCP-37442:jiazha:OLM:[sig-operators] OLM should create a Conditions CR for each Operator it installs",
+    "Suite": "OLM"
   },
   {
     "Name": "OCP-37463:knarra:Workloads:Descheduler-Validate AffinityAndTaints and TopologyAndDuplicates profile [Disruptive] [Serial][Slow]",
@@ -18594,6 +18746,10 @@
   {
     "Name": "OCP-37714:NetworkEdge Ingresscontroller routes traffic only to ready pods/backends",
     "Suite": "Testing route"
+  },
+  {
+    "Name": "OCP-37721:xiyuan:Security_and_Compliance:[sig-isc] Security_and_Compliance Compliance_Operator Intra-release upgrade precheck and postchck for compliance operator upgrade [Slow][Serial]",
+    "Suite": "Security_and_Compliance"
   },
   {
     "Name": "OCP-37721:xiyuan:Security_and_Compliance:[sig-isc] Security_and_Compliance Compliance_Operator Pre-check and post-check for compliance operator upgrade When the compliance-operator is installed postcheck for compliance operator",
@@ -19560,12 +19716,20 @@
     "Suite": "OLM"
   },
   {
+    "Name": "OCP-40532:xzha:OLM:[sig-operators] OLM for an end user handle within a namespace the deployment should not lost the resources section",
+    "Suite": "OLM"
+  },
+  {
     "Name": "OCP-40533:UserInterface Allow Rollbback for deploymentconfig/deployment",
     "Suite": "deployment/dc related features via web"
   },
   {
     "Name": "OCP-40533:UserInterface Allow Rollbback for deploymentconfig/deployment",
     "Suite": "UI-deployment/dc related features via web"
+  },
+  {
+    "Name": "OCP-40534:xzha:OLM:[sig-operators] OLM for an end user handle within a namespace the deployment should not lost the resources section",
+    "Suite": "OLM"
   },
   {
     "Name": "OCP-40560:jhajyahy:INSTALLER:[sig-baremetal] INSTALLER IPI for INSTALLER_GENERAL job on BareMetal Test accessing Metal3 ironic endpoint on different ways An unauthenticated user cant do actions in the ironic-api when using http",
@@ -19828,6 +19992,10 @@
     "Suite": "Network_Edge"
   },
   {
+    "Name": "OCP-40825:mihuang:Cluster_Operator:[sig-hive] Cluster_Operator hive should [HiveSDRosa] [HiveSpec] Support AWS AssumeRole credentials cluster. [Disruptive] [Serial]",
+    "Suite": "Cluster_Operator"
+  },
+  {
     "Name": "OCP-40861:rgangwar:API_Server:[Apiserver] [bug 1912564] cluster works fine wihtout panic under stress with API Priority and Fairness feature [Slow]",
     "Suite": "API_Server"
   },
@@ -19862,6 +20030,10 @@
   {
     "Name": "OCP-40908:SDN Allow from hostnetwork policy to allow traffic from hostnetwork pods on LoadBalancerService endpoint strategy cluster",
     "Suite": "Network policy plugin scenarios"
+  },
+  {
+    "Name": "OCP-40958:kuiwang:OLM:[sig-operators] OLM for an end user handle within a namespace Indicate invalid OperatorGroup on InstallPlan status",
+    "Suite": "OLM"
   },
   {
     "Name": "OCP-40972:xzha:OLM:Provide more specific text when no candidates for Subscription spec",
@@ -21372,6 +21544,10 @@
     "Suite": "Flows Tracking and Monitoring for Network Analytics"
   },
   {
+    "Name": "OCP-41754:SDN network operator exportNetworkFlows rejects invalid input",
+    "Suite": "Flows Tracking and Monitoring for Network Analytics"
+  },
+  {
     "Name": "OCP-41769:xiyuan:Security_and_Compliance:The compliance operator could get HTTP_PROXY and HTTPS_PROXY environment from OpenShift has global proxy settings ",
     "Suite": "Security_and_Compliance"
   },
@@ -22508,6 +22684,10 @@
     "Suite": "Cluster_Operator"
   },
   {
+    "Name": "OCP-42663:xiyuan:Security_and_Compliance:[sig-isc] Security_and_Compliance File_Integrity_Operator intra release upgrade precheck and postcheck for file integrity operator [Serial][Slow]",
+    "Suite": "Security_and_Compliance"
+  },
+  {
     "Name": "OCP-42674:ikanse:Elasticsearch log4j2 properties file and configuration test[Serial][Slow]",
     "Suite": "Logging"
   },
@@ -23049,6 +23229,10 @@
   },
   {
     "Name": "OCP-42970:bandrade:OperatorGroup status indicates cardinality conflicts - SingleNamespace ",
+    "Suite": "OLM"
+  },
+  {
+    "Name": "OCP-42972:bandrade:OLM:[sig-operators] OLM should OperatorGroup status should indicate if the SA named in spec not found",
     "Suite": "OLM"
   },
   {
@@ -24504,6 +24688,10 @@
     "Suite": "Workloads"
   },
   {
+    "Name": "OCP-43291:xzha:OLM:[sig-operators] OLM for an end user handle within a namespace Indicate resolution conflicts on involved Subscription statuses",
+    "Suite": "OLM"
+  },
+  {
     "Name": "OCP-43292:shudili:Network_Edge:User can delete configmap and update configmap with new custom error page",
     "Suite": "Network_Edge"
   },
@@ -25638,6 +25826,10 @@
   {
     "Name": "OCP-43789:pmali:Container_Engine_Tools:[sig-node] Container_Engine_Tools crio,scc Check podman and crictl version to check if bug fixed",
     "Suite": "Container_Engine_Tools"
+  },
+  {
+    "Name": "OCP-43803:jiazha:OLM:[sig-operators] OLM should Only one of multiple subscriptions to the same package is honored",
+    "Suite": "OLM"
   },
   {
     "Name": "OCP-43807:ikanse:Fluentd Forward logs to Grafana Loki using HTTPS [Serial]",
@@ -27156,6 +27348,10 @@
     "Suite": "Security_and_Compliance"
   },
   {
+    "Name": "OCP-45014:xiyuan:Security_and_Compliance:[sig-isc] Security_and_Compliance Compliance_Operator Intra-release upgrade precheck and postcheck for compliance operator resources count and MachineConfigPool status[Slow][Serial]",
+    "Suite": "Security_and_Compliance"
+  },
+  {
     "Name": "OCP-45014:xiyuan:Security_and_Compliance:[sig-isc] Security_and_Compliance Compliance_Operator Pre-check and post-check for compliance operator upgrade When the compliance-operator is installed precheck for compliance operator",
     "Suite": "Security_and_Compliance"
   },
@@ -27488,6 +27684,10 @@
     "Suite": "OLM"
   },
   {
+    "Name": "OCP-45348:jiazha:OLM:[sig-operators] OLM on hypershift Enable hypershift to deploy OperatorLifecycleManager resources",
+    "Suite": "OLM"
+  },
+  {
     "Name": "OCP-45351:minmli:NODE:[sig-node] NODE initContainer policy,volume,readines,quota post check crioConfig[Disruptive] [Serial][Slow]",
     "Suite": "NODE"
   },
@@ -27510,6 +27710,18 @@
   {
     "Name": "OCP-45351:minmli:prepare to check crioConfig[Disruptive] [Serial][Slow]",
     "Suite": "NODE"
+  },
+  {
+    "Name": "OCP-45359:jitli:OLM:[sig-operators] OLM on VM for an end user handle within a namespace Default catalogs need to use the correct tags",
+    "Suite": "OLM"
+  },
+  {
+    "Name": "OCP-45361:jitli:OLM:[sig-operators] OLM on VM for an end user handle within a namespace Resolution failed error condition in Subscription should be removed after resolution error is resolved",
+    "Suite": "OLM"
+  },
+  {
+    "Name": "OCP-45366:xiyuan:Security_and_Compliance:[sig-isc] Security_and_Compliance File_Integrity_Operator intra release upgrade precheck and postcheck for file integrity operator [Serial][Slow]",
+    "Suite": "Security_and_Compliance"
   },
   {
     "Name": "OCP-45368:gkarager:Forward logs to kafka using sasl-plaintext[Serial][Slow]",
@@ -27932,6 +28144,10 @@
     "Suite": "OLM"
   },
   {
+    "Name": "OCP-45543:jiazha:OLM:[sig-operators] OLM on hypershift Enable hypershift to deploy OperatorLifecycleManager resources",
+    "Suite": "OLM"
+  },
+  {
     "Name": "OCP-45549:Etcd cluster-etcd-operator: peer cert DNS SAN is populated incorrectly.",
     "Suite": "etcd related features"
   },
@@ -28304,6 +28520,10 @@
     "Suite": "Security_and_Compliance"
   },
   {
+    "Name": "OCP-45956:xiyuan:Security_and_Compliance:[sig-isc] Security_and_Compliance Compliance_Operator Intra-release upgrade precheck and postcheck for compliance operator resources count and MachineConfigPool status[Slow][Serial]",
+    "Suite": "Security_and_Compliance"
+  },
+  {
     "Name": "OCP-45971:miyadav:Cluster_Infrastructure:Implement the in-tree to out-of-tree code owner migration",
     "Suite": "Cluster_Infrastructure"
   },
@@ -28534,6 +28754,10 @@
   {
     "Name": "OCP-46100:pdhamdhe:Security_and_Compliance:[sig-isc] Security_and_Compliance Compliance_Operator The Compliance Operator automates compliance check for OpenShift and CoreOS Verify autoremediations works for CIS profiles [Disruptive] [Serial][Slow]",
     "Suite": "Security_and_Compliance"
+  },
+  {
+    "Name": "OCP-46105:asood:SDN:[sig-networking] SDN metallb l3 Verify only the specified node BGP peered advertise network prefixes. [Serial]",
+    "Suite": "SDN"
   },
   {
     "Name": "OCP-46110:asood:SDN:[sig-networking] SDN metallb l3 Verify service is functional if BGP peer is modified to cause session to re establish. [Serial]",
@@ -38116,6 +38340,10 @@
     "Suite": "Cluster_Observability"
   },
   {
+    "Name": "OCP-50958:xiyuan:Security_and_Compliance:[sig-isc] Security_and_Compliance Security_Profiles_Operator The Security_Profiles_Operator Check selinxprofiles working as expected before/after upgrade [Serial][Slow]",
+    "Suite": "Security_and_Compliance"
+  },
+  {
     "Name": "OCP-50XX3:jmekkatt:API_Server:Checks on different bad admission webhook errors, status of kube-apiserver [Serial]",
     "Suite": "API_Server"
   },
@@ -41112,6 +41340,10 @@
     "Suite": "SDN"
   },
   {
+    "Name": "OCP-53030:zzhao:SDN:[sig-networking] SDN metrics bug2060079- NodeProxyApplySlow should have correct value.",
+    "Suite": "SDN"
+  },
+  {
     "Name": "OCP-53048:shudili:Ingresscontroller with private endpoint publishing strategy supports PROXY protocol",
     "Suite": "Network_Edge"
   },
@@ -42109,6 +42341,10 @@
   },
   {
     "Name": "OCP-53758:jiazha:OLM:[sig-operators] OLM should OLM failed to recreate SA for the CatalogSource that without poll Interval",
+    "Suite": "OLM"
+  },
+  {
+    "Name": "OCP-53758:jiazha:OLM:[sig-operators] OLM should failed to recreate SA for the CatalogSource that without poll Interval",
     "Suite": "OLM"
   },
   {
@@ -44168,6 +44404,10 @@
     "Suite": "Logging"
   },
   {
+    "Name": "OCP-55180:qiowang:SDN:[sig-networking] SDN network-tools ovnkube-trace Check ovnkube-trace - pod2external traffic [Disruptive] [Serial]",
+    "Suite": "SDN"
+  },
+  {
     "Name": "OCP-55181:zzhao:SDN:[sig-networking] SDN sriov pci-address should be contained in networks-status annotation when using the tuning metaPlugin on SR-IOV Networks [Disruptive] [Serial]",
     "Suite": "SDN"
   },
@@ -45638,6 +45878,10 @@
   {
     "Name": "OCP-56326:aramesha:Network_Observability:[sig-netobserv] Network_Observability with Kafka Verify network flows are captured with Kafka with TLS [Serial][Slow]",
     "Suite": "Network_Observability"
+  },
+  {
+    "Name": "OCP-56351:xiyuan:Security_and_Compliance:[sig-isc] Security_and_Compliance Compliance_Operator Intra-release upgrade precheck and postchck for compliance operator upgrade [Slow][Serial]",
+    "Suite": "Security_and_Compliance"
   },
   {
     "Name": "OCP-56362:aramesha:Network_Observability:Verify network flows are captured with Kafka with TLS [Serial][Slow]",
@@ -51984,6 +52228,10 @@
     "Suite": "Hypershift"
   },
   {
+    "Name": "OCP-64854:qiowang:SDN:[sig-networking] SDN nmstate-operator functional Static IP and Route can be applied [Disruptive] [Serial]",
+    "Suite": "SDN"
+  },
+  {
     "Name": "OCP-64868:tagao:Cluster_Observability:[sig-monitoring] Cluster_Observability parallel monitoring netclass/netdev device configuration [Serial]",
     "Suite": "Cluster_Observability"
   },
@@ -53352,6 +53600,10 @@
     "Suite": "MCO"
   },
   {
+    "Name": "OCP-66573:sregidor:MCO:[sig-mco] MCO ocb OCB configure image builder type for config map on-cluster-build-config [Disruptive] [Serial]",
+    "Suite": "MCO"
+  },
+  {
     "Name": "OCP-66652:rbrattai:SDN:Verify IPsec encapsulation is enabled for NAT-T",
     "Suite": "SDN"
   },
@@ -54588,6 +54840,10 @@
     "Suite": "Network_Observability"
   },
   {
+    "Name": "OCP-68312:anli:Logging:[sig-openshift-logging] Logging  Log Forward to Kafka via Vector as Collector VA-IAC.03-Forward to Kafka using SSL-SASL_SCRAM auth",
+    "Suite": "Logging"
+  },
+  {
     "Name": "OCP-68318:qitang:Logging:Multiple policies can be applied to one pipeline.[Serial]",
     "Suite": "Logging"
   },
@@ -54968,6 +55224,10 @@
     "Suite": "OLM"
   },
   {
+    "Name": "OCP-68821:xzha:OLM:[sig-operators] OLM v1 oprun should olmv1 Supports Version Ranges during Installation",
+    "Suite": "OLM"
+  },
+  {
     "Name": "OCP-68822:ropatil:STORAGE:[AWS-EFS-CSI Driver][Dynamic PV][Filesystem] the provisioning directory should respect the ensureUniqueDirectory parameter setting",
     "Suite": "STORAGE"
   },
@@ -55324,6 +55584,10 @@
     "Suite": "OLM"
   },
   {
+    "Name": "OCP-69193:bandrade:OLM:[sig-operators] OLM v1 oprun should olmv1 major version zero",
+    "Suite": "OLM"
+  },
+  {
     "Name": "OCP-69195:tagao:Cluster_Observability:Replace OAuth-proxy container with Kube-RBAC-proxy in Prometheus pod",
     "Suite": "Cluster_Observability"
   },
@@ -55345,6 +55609,10 @@
   },
   {
     "Name": "OCP-69196:xzha:OLM:[sig-operators] OLM v1 oprun should OLMv1 Supports Version Ranges during operator upgrade",
+    "Suite": "OLM"
+  },
+  {
+    "Name": "OCP-69196:xzha:OLM:[sig-operators] OLM v1 oprun should olmv1 Supports Version Ranges during clusterextension upgrade",
     "Suite": "OLM"
   },
   {
@@ -55964,6 +56232,10 @@
     "Suite": "OLM"
   },
   {
+    "Name": "OCP-70162:jiazha:OLM:[sig-operators] OLM optional Leverage Composable OpenShift feature to make OperatorLifecycleManager optional",
+    "Suite": "OLM"
+  },
+  {
     "Name": "OCP-70203:minmli:NODE:ICSP and IDMS/ITMS can coexist in cluster[Disruptive] [Serial][Slow]",
     "Suite": "NODE"
   },
@@ -56232,11 +56504,19 @@
     "Suite": "OLM"
   },
   {
+    "Name": "OCP-70719:bandrade:OLM:[sig-operators] OLM v1 oprun should olmv1 Upgrade non-zero major version",
+    "Suite": "OLM"
+  },
+  {
     "Name": "OCP-70723:bandrade:OLM:OLMv1 downgrade version",
     "Suite": "OLM"
   },
   {
     "Name": "OCP-70723:bandrade:OLM:[sig-operators] OLM v1 oprun should OLMv1 downgrade version",
+    "Suite": "OLM"
+  },
+  {
+    "Name": "OCP-70723:bandrade:OLM:[sig-operators] OLM v1 oprun should olmv1 downgrade version",
     "Suite": "OLM"
   },
   {
@@ -58776,6 +59056,10 @@
     "Suite": "SDN"
   },
   {
+    "Name": "OCP-74099:yinzhou:Workloads:[sig-cli] Workloads client test oc set env should not overrides the apiVersion of routes and deployment configs",
+    "Suite": "Workloads"
+  },
+  {
     "Name": "OCP-74104:xiyuan:Security_and_Compliance:[sig-isc] Security_and_Compliance Compliance_Operator The Compliance Operator automates compliance check for OpenShift and CoreOS Verify the moderate profiles perform scan as expected with default scanSettings [Serial][Slow]",
     "Suite": "Security_and_Compliance"
   },
@@ -58785,6 +59069,10 @@
   },
   {
     "Name": "OCP-74108:xzha:OLM:[sig-operators] OLM v1 oprun should OLM v1 supports legacy upgrade edges",
+    "Suite": "OLM"
+  },
+  {
+    "Name": "OCP-74108:xzha:OLM:[sig-operators] OLM v1 oprun should olm v1 supports legacy upgrade edges",
     "Suite": "OLM"
   },
   {
@@ -59408,6 +59696,10 @@
     "Suite": "Cluster_Operator"
   },
   {
+    "Name": "OCP-75434:sahshah:PSAP:[sig-node] PSAP should NTO deferred feature with annotation deferred -always[Disruptive] [Serial]",
+    "Suite": "PSAP"
+  },
+  {
     "Name": "OCP-75435:liqcui:PSAP:[sig-node] PSAP should NTO deferred feature with annotation deferred update[Disruptive] [Serial]",
     "Suite": "PSAP"
   },
@@ -59474,6 +59766,10 @@
   {
     "Name": "OCP-75516:jitli:OLM:[sig-operators] OLM v1 opeco should CRD upgrade checks for the field maximum minimum changes",
     "Suite": "OLM"
+  },
+  {
+    "Name": "OCP-75521:sregidor:MCO:[sig-mco] MCO security [P1] Log details for malformed certificates. No infinite loop [Disruptive] [Serial]",
+    "Suite": "MCO"
   },
   {
     "Name": "OCP-75540:asood:SDN:[sig-networking] SDN networkpolicy Network Policy Validation",
@@ -59700,6 +59996,10 @@
     "Suite": "SDN"
   },
   {
+    "Name": "OCP-76051:UserInterface check vsphere connection form not empty",
+    "Suite": "web console related upgrade check"
+  },
+  {
     "Name": "OCP-76073:qitang:Logging:[sig-openshift-logging] Logging  Vector User-Managed-ES tests Send logs from containers in the same pod to separate indices",
     "Suite": "Logging"
   },
@@ -59848,6 +60148,10 @@
     "Suite": "Workloads"
   },
   {
+    "Name": "OCP-76537:aramesha:Network_Observability:[sig-netobserv] Network_Observability Verify flow enrichment for VMs secondary interfaces [Disruptive] [Serial]",
+    "Suite": "Network_Observability"
+  },
+  {
     "Name": "OCP-76587:sregidor:MCO:[sig-mco] MCO security MCS port should not expose weak ciphers to external client from master node IP [Disruptive] [Serial]",
     "Suite": "MCO"
   },
@@ -59868,12 +60172,24 @@
     "Suite": "Workloads"
   },
   {
+    "Name": "OCP-76652:weliang:SDN:[sig-networking] SDN multus Support for Dummy CNI",
+    "Suite": "SDN"
+  },
+  {
     "Name": "OCP-76668:xzha:OLM:[sig-operators] OLM v1 oprun should olm v1 Supports MaxOCPVersion field",
     "Suite": "OLM"
   },
   {
     "Name": "OCP-76685:xzha:OLM:[sig-operators] OLM v1 oprun should olm v1 supports selecting catalogs",
     "Suite": "OLM"
+  },
+  {
+    "Name": "OCP-76727:qitang:Logging:[sig-openshift-logging] Logging  test forward logs to lokistack with vector Add stream info to data model viaq[Serial][Slow]",
+    "Suite": "Logging"
+  },
+  {
+    "Name": "OCP-76728:qitang:Logging:[sig-openshift-logging] Logging  otlp output testing Add stream info to data model OTEL[Serial][Slow]",
+    "Suite": "Logging"
   },
   {
     "Name": "OCP-76729:qitang:Logging:[sig-openshift-logging] Logging  Loki Stack testing LokiStack 1x.pico Support[Serial]",
@@ -59892,6 +60208,10 @@
     "Suite": "Security_and_Compliance"
   },
   {
+    "Name": "OCP-76802:xiuwang:Image_Registry:[sig-imageregistry] Image_Registry Configure image registry to use a custom azure storage account located in a different resource group [Disruptive] [Serial]",
+    "Suite": "Image_Registry"
+  },
+  {
     "Name": "OCP-76803:xiuwang:Image_Registry:[sig-imageregistry] Image_Registry Discovery vnet by tag when set up azure private account [Disruptive] [Serial]",
     "Suite": "Image_Registry"
   },
@@ -59904,7 +60224,15 @@
     "Suite": "OLM"
   },
   {
+    "Name": "OCP-76854:wewang:Image_Registry:[sig-imageregistry] Image_Registry Export storage metrics for read-only errors [Disruptive] [Serial]",
+    "Suite": "Image_Registry"
+  },
+  {
     "Name": "OCP-76876:wewang:Image_Registry:[sig-imageregistry] Image_Registry Support reconciliation of tags on day2 updates in HCP cluster [Serial]",
+    "Suite": "Image_Registry"
+  },
+  {
+    "Name": "OCP-76929:xiuwang:Image_Registry:[sig-imageregistry] Image_Registry shared access keys are disabled by default on new installations that use workload identity",
     "Suite": "Image_Registry"
   },
   {
@@ -59914,6 +60242,10 @@
   {
     "Name": "OCP-76956:wewang:Image_Registry:[sig-imageregistry] Image_Registry Should deduplicate the url for openshift-controller-manager if config.image cluster has duplicated urls [Disruptive] [Serial]",
     "Suite": "Image_Registry"
+  },
+  {
+    "Name": "OCP-76959:yinzhou:Workloads:[sig-apps] Workloads test kcm works well make sure split the route controllers out from OCM for hosted-control-plane",
+    "Suite": "Workloads"
   },
   {
     "Name": "OCP-76983:kuiwang:OLM:[sig-operators] OLM v1 oprun should install index and bundle from private image",
@@ -59948,12 +60280,92 @@
     "Suite": "Network_Edge"
   },
   {
+    "Name": "OCP-77160:wewang:Image_Registry:[sig-imageregistry] Image_Registry Add device out of space alerts to prometheus rules [Disruptive] [Serial]",
+    "Suite": "Image_Registry"
+  },
+  {
+    "Name": "OCP-77283:shudili:Network_Edge:[sig-network-edge] Network_Edge Component_Router should Router should support SHA1 CA certificates in the default certificate chain",
+    "Suite": "Network_Edge"
+  },
+  {
+    "Name": "OCP-77284:shudili:Network_Edge:[sig-network-edge] Network_Edge Component_Router should http request with duplicated headers should not cause disruption to a router pod",
+    "Suite": "Network_Edge"
+  },
+  {
     "Name": "OCP-77285:jshu:Cluster_Operator:[sig-cco] Cluster_Operator CCO is enabled  CCO Pod Security Admission change",
     "Suite": "Cluster_Operator"
   },
   {
+    "Name": "OCP-77354:sregidor:MCO:[sig-mco] MCO [P1] Install all extensions [Disruptive] [Serial]",
+    "Suite": "MCO"
+  },
+  {
+    "Name": "OCP-77356:sregidor:MCO:[sig-mco] MCO metrics [P1][OnCLayer] Test mcd_local_unsupported_packages metric [Disruptive] [Serial]",
+    "Suite": "MCO"
+  },
+  {
+    "Name": "OCP-77413:bandrade:OLM:[sig-operators] OLM v1 oprun should Check if ClusterCatalog is in Serving properly",
+    "Suite": "OLM"
+  },
+  {
+    "Name": "OCP-77497:sregidor:MCO:[sig-mco] MCO ocb OCB Trigger new build when Containerfile is updated [Disruptive] [Serial]",
+    "Suite": "MCO"
+  },
+  {
+    "Name": "OCP-77498:sregidor:MCO:[sig-mco] MCO ocb OCB Trigger new build when renderedImagePushspec is updated [Disruptive] [Serial]",
+    "Suite": "MCO"
+  },
+  {
+    "Name": "OCP-77517:meinli:SDN:[sig-networking] SDN udn pods Validate pod2pod connection within and across node when creating UDN with Secondary role from same namespace (Layer3)",
+    "Suite": "SDN"
+  },
+  {
+    "Name": "OCP-77519:meinli:SDN:[sig-networking] SDN udn pods Validate pod2pod isolation within and across nodes when creating UDN with Secondary role from different namespaces (Layer3)",
+    "Suite": "SDN"
+  },
+  {
+    "Name": "OCP-77563:meinli:SDN:[sig-networking] SDN udn pods Validate pod2pod connection within and across node when creating UDN with Secondary role from same namespace (Layer2)",
+    "Suite": "SDN"
+  },
+  {
+    "Name": "OCP-77564:meinli:SDN:[sig-networking] SDN udn pods Validate pod2pod isolation within and across node when creating UDN with Secondary role from different namespaces (Layer2)",
+    "Suite": "SDN"
+  },
+  {
+    "Name": "OCP-77576:sregidor:MCO:[sig-mco] MCO ocb In OCB. Create a new MC while a build is running [Disruptive] [Serial]",
+    "Suite": "MCO"
+  },
+  {
     "Name": "OCP-77579:pewang:STORAGE:[sig-storage] STORAGE [vSphere CSI Driver][bz-storage] should mount volume succeed on multipath enabled nodes [Disruptive] [Serial]",
     "Suite": "STORAGE"
+  },
+  {
+    "Name": "OCP-77654:jechen:SDN:[sig-networking] SDN udn EgressIP Validate egressIP with mixed of multiple non-overlapping UDNs and default network(layer3 and IPv4 only) [Serial]",
+    "Suite": "SDN"
+  },
+  {
+    "Name": "OCP-77655:jechen:SDN:[sig-networking] SDN udn EgressIP Validate egressIP with mixed of multiple overlapping UDNs and default network(layer3 and IPv4 only) [Serial]",
+    "Suite": "SDN"
+  },
+  {
+    "Name": "OCP-77744:jechen:SDN:[sig-networking] SDN udn EgressIP Validate egressIP Failover with non-overlapping and overlapping UDNs (layer3 and IPv4 only) [Serial]",
+    "Suite": "SDN"
+  },
+  {
+    "Name": "OCP-77811:yuewu:CFE:[sig-auth] CFE cert-manager google-cas-issuer should integrate well as an external issuer with cert-manager operator",
+    "Suite": "CFE"
+  },
+  {
+    "Name": "OCP-77862:mjoseph:Network_Edge:[sig-network-edge] Network_Edge Component_Router should Check whether required ENV varibales are configured after enabling Dynamic Configuration Manager",
+    "Suite": "Network_Edge"
+  },
+  {
+    "Name": "OCP-77919:rgangwar:API_Server:[sig-api-machinery] API_Server [Apiserver] HPA/oc scale and DeploymenConfig Should be working [Disruptive] [Serial]",
+    "Suite": "API_Server"
+  },
+  {
+    "Name": "OCP-77972:xzha:OLM:[sig-operators] OLM v1 oprun should olm v1 Supports MaxOCPVersion in properties file",
+    "Suite": "OLM"
   },
   {
     "Name": "OCP-7XX17:yinzhou:Workloads:Should get warning when there is an identical short name for two or more resources",
@@ -60408,6 +60820,10 @@
     "Suite": "Operator Hub tests"
   },
   {
+    "Name": "Operator Hub tests \"after all\" hook for \"(OCP-45874,yapei,UserInterface)) Check source labels on the operator hub page tiles\"",
+    "Suite": "Operator Hub tests"
+  },
+  {
     "Name": "Operator Hub tests \"after all\" hook for \"(OCP-62266,xiyuzhao)  Filter operators based on nodes OS type\"",
     "Suite": "Operator Hub tests"
   },
@@ -60564,6 +60980,10 @@
     "Suite": "Operators Installed nonlatest operator test"
   },
   {
+    "Name": "Operators Installed nonlatest operator test \"after all\" hook for \"(OCP-63222,xiyuzhao,UserInterface) Console supports installing non-latest Operator versions\"",
+    "Suite": "Operators Installed nonlatest operator test"
+  },
+  {
     "Name": "Operators Installed nonlatest operator test \"before all\" hook for \"(OCP-63222,xiyuzhao) Console supports installing non-latest Operator versions \"",
     "Suite": "Operators Installed nonlatest operator test"
   },
@@ -60573,6 +60993,10 @@
   },
   {
     "Name": "Operators Installed nonlatest operator test \"before all\" hook for \"(OCP-63222,xiyuzhao,UserInterface) Console supports installing non-latest Operator versions \"",
+    "Suite": "Operators Installed nonlatest operator test"
+  },
+  {
+    "Name": "Operators Installed nonlatest operator test \"before all\" hook for \"(OCP-63222,xiyuzhao,UserInterface) Console supports installing non-latest Operator versions\"",
     "Suite": "Operators Installed nonlatest operator test"
   },
   {
@@ -61501,7 +61925,15 @@
   },
   {
     "Name": "[AfterSuite]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[AfterSuite]",
     "Suite": "Multiarch Tuning Operator Suite (PodPlacementOperand E2E)"
+  },
+  {
+    "Name": "[BeforeSuite]",
+    "Suite": "Performance Test"
   },
   {
     "Name": "[BeforeSuite]",
@@ -61510,6 +61942,10 @@
   {
     "Name": "[BeforeSuite]",
     "Suite": "Multiarch Tuning Operator Suite (Operator E2E)"
+  },
+  {
+    "Name": "[BeforeSuite]",
+    "Suite": "Machine Suite"
   },
   {
     "Name": "[It] Account roles with attaching arbitrary policies can be upgraded and deleted successfully - [id:74402] [feature-policy, Critical, day2]",
@@ -61570,6 +62006,126 @@
   {
     "Name": "[It] Autoscaler creation testing create/describe/edit/delete cluster autoscaler by rosacli - [id:67275] [feature-autoscaler, Critical, day2]",
     "Suite": "rosa-e2e-rosa"
+  },
+  {
+    "Name": "[It] Autoscaler should use a ClusterAutoscaler that has 100 maximum total nodes count It scales from/to zero [autoscaler, periodic]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] Autoscaler should use a ClusterAutoscaler that has 100 maximum total nodes count It scales from/to zero [autoscaler, periodic]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] Autoscaler should use a ClusterAutoscaler that has 100 maximum total nodes count It scales from/to zero a machine set with the architecture requested by the workload [autoscaler, periodic]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] Autoscaler should use a ClusterAutoscaler that has 100 maximum total nodes count It scales from/to zero a machine set with the architecture requested by the workload [autoscaler, periodic]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] Autoscaler should use a ClusterAutoscaler that has 100 maximum total nodes count cleanup deletion information after scale down [Slow] [autoscaler, periodic]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] Autoscaler should use a ClusterAutoscaler that has 100 maximum total nodes count cleanup deletion information after scale down [Slow] [autoscaler, periodic]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] Autoscaler should use a ClusterAutoscaler that has balance similar nodes enabled and 100 maximum total nodes places nodes evenly across node groups [Slow] [autoscaler]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] Autoscaler should use a ClusterAutoscaler that has balance similar nodes enabled and 100 maximum total nodes places nodes evenly across node groups [Slow] [autoscaler]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] Autoscaler should use a ClusterAutoscaler that has priority expander option enabled high priority machineset should be scaled up first [Slow] [autoscaler]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] Autoscaler should use a ClusterAutoscaler that has priority expander option enabled high priority machineset should be scaled up first [Slow] [autoscaler]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] Autoscaler should use a ClusterAutoscaler with maximum total nodes scales up and down while respecting MaxNodesTotal [Slow][Serial] [autoscaler, periodic]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] Autoscaler should use a ClusterAutoscaler with maximum total nodes scales up and down while respecting MaxNodesTotal [Slow][Serial] [autoscaler, periodic]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] CapacityReservationID machine should get Running with active capacityReservationId [cloud-provider-specific, AWS]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] CapacityReservationID machine should get Running with active capacityReservationId [cloud-provider-specific, AWS]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] CapacityReservationID should not allow to create machineset with incorrect capacityReservationId [cloud-provider-specific, AWS]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] CapacityReservationID should not allow to create machineset with incorrect capacityReservationId [cloud-provider-specific, AWS]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] Cluster API Azure MachineSet should be able to run a machine [capi, disruptive]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] Cluster API Azure MachineSet should be able to run a machine [capi, disruptive]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] Cluster Machine Approver Cluster Operator Status should be available [operators]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] Cluster Machine Approver Cluster Operator Status should be available [operators]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] Cluster Machine Approver deployment should be available [operators]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] Cluster Machine Approver deployment should be available [operators]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] Cluster autoscaler cluster operator status should be available [operators, autoscaler]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] Cluster autoscaler cluster operator status should be available [operators, autoscaler]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] Cluster autoscaler operator deployment should be available [operators, autoscaler]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] Cluster autoscaler operator deployment should be available [operators, autoscaler]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] Cluster autoscaler operator should reject invalid ClusterAutoscaler resources early via webhook [operators, autoscaler]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] Cluster autoscaler operator should reject invalid ClusterAutoscaler resources early via webhook [operators, autoscaler]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] Cluster autoscaler operator should reject invalid MachineAutoscaler resources early via webhook [operators, autoscaler]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] Cluster autoscaler operator should reject invalid MachineAutoscaler resources early via webhook [operators, autoscaler]",
+    "Suite": "Cluster_Infrastructure"
   },
   {
     "Name": "[It] Controllers/ClusterPodPlacementConfig/ClusterPodPlacementConfigReconciler the operand is deployed when all components are available should be available",
@@ -65448,6 +66004,174 @@
     "Suite": "rosa-e2e-rosa-hcp"
   },
   {
+    "Name": "[It] Lifecycle Hooks should pause lifecycle actions when present [machines]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] Lifecycle Hooks should pause lifecycle actions when present [machines]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] Machine API cluster operator status should be available [operators, machines]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] Machine API cluster operator status should be available [operators, machines]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] Machine API operator deployment should be available [disruptive, operators, machines]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] Machine API operator deployment should be available [disruptive, operators, machines]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] Machine API operator deployment should maintains deployment spec [disruptive, operators, machines]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] Machine API operator deployment should maintains deployment spec [disruptive, operators, machines]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] Machine API operator deployment should maintains spec after mutating webhook configuration change and preserve caBundle [disruptive, operators, machines]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] Machine API operator deployment should maintains spec after mutating webhook configuration change and preserve caBundle [disruptive, operators, machines]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] Machine API operator deployment should maintains spec after validating webhook configuration change and preserve caBundle [disruptive, operators, machines]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] Machine API operator deployment should maintains spec after validating webhook configuration change and preserve caBundle [disruptive, operators, machines]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] Machine API operator deployment should reconcile controllers deployment [disruptive, operators, machines]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] Machine API operator deployment should reconcile controllers deployment [disruptive, operators, machines]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] Machine API operator deployment should reconcile mutating webhook configuration [disruptive, operators, machines]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] Machine API operator deployment should reconcile mutating webhook configuration [disruptive, operators, machines]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] Machine API operator deployment should reconcile validating webhook configuration [disruptive, operators, machines]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] Machine API operator deployment should reconcile validating webhook configuration [disruptive, operators, machines]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] Machine API operator deployment should recover after mutating webhook configuration deletion [disruptive, operators, machines]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] Machine API operator deployment should recover after mutating webhook configuration deletion [disruptive, operators, machines]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] Machine API operator deployment should recover after validating webhook configuration deletion [disruptive, operators, machines]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] Machine API operator deployment should recover after validating webhook configuration deletion [disruptive, operators, machines]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] MachineHealthCheck should not remediate larger number of unhealthy machines then maxUnhealthy [machine-health-checks]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] MachineHealthCheck should not remediate larger number of unhealthy machines then maxUnhealthy [machine-health-checks]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] MachineHealthCheck should remediate unhealthy nodes [machine-health-checks]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] MachineHealthCheck should remediate unhealthy nodes [machine-health-checks]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] Managed cluster should reject invalid machinesets [machines]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] Managed cluster should reject invalid machinesets [machines]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] Managed cluster should when machineset has 2 replicas drain node before removing machine resource [machines]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] Managed cluster should when machineset has 2 replicas drain node before removing machine resource [machines]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] Managed cluster should when machineset has 2 replicas grow and decrease when scaling different machineSets simultaneously [machines, periodic]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] Managed cluster should when machineset has 2 replicas grow and decrease when scaling different machineSets simultaneously [machines, periodic]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] Managed cluster should when machineset has 2 replicas recover from deleted worker machines [machines]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] Managed cluster should when machineset has 2 replicas recover from deleted worker machines [machines]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] Managed cluster should when machineset has one replica have ability to additively reconcile taints from machine to nodes [machines]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] Managed cluster should when machineset has one replica have ability to additively reconcile taints from machine to nodes [machines]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] MetadataServiceOptions should allow unauthorized requests to metadata service if metadataServiceOptions.authentication is Optional [cloud-provider-specific, AWS]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] MetadataServiceOptions should allow unauthorized requests to metadata service if metadataServiceOptions.authentication is Optional [cloud-provider-specific, AWS]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] MetadataServiceOptions should enforce auth on metadata service if metadataServiceOptions.authentication set to Required [cloud-provider-specific, AWS]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] MetadataServiceOptions should enforce auth on metadata service if metadataServiceOptions.authentication set to Required [cloud-provider-specific, AWS]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] MetadataServiceOptions should not allow to create machineset with incorrect metadataServiceOptions.authentication [cloud-provider-specific, AWS]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] MetadataServiceOptions should not allow to create machineset with incorrect metadataServiceOptions.authentication [cloud-provider-specific, AWS]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
     "Name": "[It] Network verifier can verify network - [id:64917] [day2, feature-networkverifier, High]",
     "Suite": "rosa-e2e-rosa-shared-vpc-auto"
   },
@@ -65750,6 +66474,14 @@
   {
     "Name": "[It] Region can list regions - [id:55729] [day2, feature-region, High]",
     "Suite": "rosa-e2e-rosa"
+  },
+  {
+    "Name": "[It] Running on Spot should handle the spot instances [machines, spot-instances]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] Running on Spot should handle the spot instances [machines, spot-instances]",
+    "Suite": "Cluster_Infrastructure"
   },
   {
     "Name": "[It] The Multiarch Tuning Operator The operator should respect to an opt-in namespaceSelector in ClusterPodPlacementConfig CR should exclude namespaces that do not match the opt-in configuration",
@@ -66190,6 +66922,322 @@
   {
     "Name": "[It] Verify the windows certificates expiration - [id:64040] [day1-post, Medium]",
     "Suite": "rosa-e2e-rosa"
+  },
+  {
+    "Name": "[It] Webhooks should be able to create a machine from a minimal providerSpec [machines]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] Webhooks should be able to create a machine from a minimal providerSpec [machines]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] Webhooks should be able to create machines from a machineset with a minimal providerSpec [machines]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] Webhooks should be able to create machines from a machineset with a minimal providerSpec [machines]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] Webhooks should return an error when removing required fields from the Machine providerSpec [machines]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] Webhooks should return an error when removing required fields from the Machine providerSpec [machines]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] Webhooks should return an error when removing required fields from the MachineSet providerSpec [machines]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] Webhooks should return an error when removing required fields from the MachineSet providerSpec [machines]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] When cluster-wide proxy is configured, Machine API cluster operator should  create machines when configured behind a proxy [disruptive, operators, periodic, machines]",
+    "Suite": "Machine Suite"
+  },
+  {
+    "Name": "[It] When cluster-wide proxy is configured, Machine API cluster operator should  create machines when configured behind a proxy [disruptive, operators, periodic, machines]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] [performance] Checking IRQBalance settings Verify GloballyDisableIrqLoadBalancing Spec field [test_id:36150] Verify that IRQ load balancing is enabled/disabled correctly [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [performance] Checking IRQBalance settings Verify irqbalance configuration handling Should not overwrite the banned CPU set on tuned restart [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [performance] Checking IRQBalance settings Verify irqbalance configuration handling Should store empty cpu mask in the backup file [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [performance]Hugepages [rfe_id:27354]Huge pages support for container workloads [test_id:27477][crit:high][vendor:cnf-qe@redhat.com][level:acceptance] Huge pages support for container workloads [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [performance]Hugepages [rfe_id:27369]when NUMA node specified [test_id:27752][crit:high][vendor:cnf-qe@redhat.com][level:acceptance] should be allocated on the specifed NUMA node [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [performance]Hugepages with multiple sizes [test_id:34080] should be supported and available for the container usage [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [performance]RT Kernel [test_id:26861][crit:high][vendor:cnf-qe@redhat.com][level:acceptance] should have RT kernel enabled [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [performance]RT Kernel [test_id:28526][crit:high][vendor:cnf-qe@redhat.com][level:acceptance] a node without performance profile applied should not have RT kernel installed [tier-0, openshift]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [ref_id: 40307][pao]Resizing Network Queues Updating performance profile for netqueues [test_id:40308][crit:high][vendor:cnf-qe@redhat.com][level:acceptance] Network device queues Should be set to the profile's reserved CPUs count [tier-1]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [ref_id: 40307][pao]Resizing Network Queues Updating performance profile for netqueues [test_id:40542] Verify the number of network queues of all supported network interfaces are equal to reserved cpus count [tier-1]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [ref_id: 40307][pao]Resizing Network Queues Updating performance profile for netqueues [test_id:40543] Add interfaceName and verify the interface netqueues are equal to reserved cpus count. [tier-1]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [ref_id: 40307][pao]Resizing Network Queues Updating performance profile for netqueues [test_id:40545] Verify reserved cpus count is applied to specific supported networking devices using wildcard matches [tier-1]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [ref_id: 40307][pao]Resizing Network Queues Updating performance profile for netqueues [test_id:40668] Verify reserved cpu count is added to networking devices matched with vendor and Device id [tier-1]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [ref_id: 40307][pao]Resizing Network Queues Updating performance profile for netqueues [test_id:72051] Verify reserved cpus count is applied to all but specific supported networking device using a negative match [tier-1]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27350][performance]Topology Manager [test_id:26932][crit:high][vendor:cnf-qe@redhat.com][level:acceptance] should be enabled with the policy specified in profile",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27363][performance] CPU Management Cgroupsv2 [test_id:75327] cpus from deleted cgroup can be reassigned to new cgroup [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27363][performance] CPU Management Crio Annotations CPU Quota annotation [test_id: 72081] Verify cpu assigned to pod with quota disabled is not throttled [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27363][performance] CPU Management Crio Annotations CPU Quota annotation [test_id:72079] CPU Quota interface files have correct values [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27363][performance] CPU Management Crio Annotations Load Balancing Annotation [test_id:32646] cpus used by container should not be load balanced [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27363][performance] CPU Management Crio Annotations Load Balancing Annotation [test_id:73382]cpuset.cpus.exclusive of kubepods.slice should be updated [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27363][performance] CPU Management Crio Annotations cpuset controller [test_id:72080] Verify cpu affinity of container process matches with cpuset controller interface file cpuset.cpus [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27363][performance] CPU Management Hyper-thread aware scheduling for guaranteed pods Verify Hyper-Thread aware scheduling for guaranteed pods [test_id:46538] HT aware scheduling on SNO cluster [tier-1]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27363][performance] CPU Management Hyper-thread aware scheduling for guaranteed pods Verify Hyper-Thread aware scheduling for guaranteed pods [test_id:46539] HT aware scheduling on SNO cluster and Workload Partitioning enabled [tier-1]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27363][performance] CPU Management Hyper-thread aware scheduling for guaranteed pods Verify Hyper-Thread aware scheduling for guaranteed pods [test_id:46544] Odd number of CPU requests allowed when HT disabled [tier-1]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27363][performance] CPU Management Hyper-thread aware scheduling for guaranteed pods Verify Hyper-Thread aware scheduling for guaranteed pods [test_id:46959] Number of CPU requests as multiple of SMT count allowed when HT enabled [tier-1]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27363][performance] CPU Management Verification of configuration on the worker node [test_id:28528][crit:high][vendor:cnf-qe@redhat.com][level:acceptance] Verify CPU reservation on the node [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27363][performance] CPU Management Verification of configuration on the worker node [test_id:34358] Verify rcu_nocbs kernel argument on the node [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27363][performance] CPU Management Verification of configuration on the worker node [test_id:37862][crit:high][vendor:cnf-qe@redhat.com][level:acceptance] Verify CPU affinity mask, CPU reservation and CPU isolation on worker node [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27363][performance] CPU Management Verification of cpu manager functionality Verify CPU usage by stress PODs [test_id:27492] Guaranteed POD should work on isolated cpu [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27363][performance] CPU Management Verification of cpu manager functionality Verify CPU usage by stress PODs [test_id:37860] Non-guaranteed POD can work on any CPU [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27363][performance] CPU Management Verification of cpu_manager_state file when kubelet is restart [test_id: 73501] defaultCpuset should not change [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27363][performance] CPU Management Verification that IRQ load balance can be disabled per POD [test_id:36364] should disable IRQ balance for CPU where POD is running [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27363][performance] CPU Management when reserved CPUs specified [test_id:49147] should run infra containers on reserved CPUs [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27363][performance] CPU Management when strict NUMA aligment is requested [test_id:49149] should reject pods which request integral CPUs not aligned with machine SMT level [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27368][performance] Additional kernel arguments added from perfomance profile [test_id:28611][crit:high][vendor:cnf-qe@redhat.com][level:acceptance] Should set additional kernel arguments on the machine [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27368][performance] Create second performance profiles on a cluster [test_id:32364] Verifies that cluster can have multiple profiles [tier-0, openshift]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27368][performance] Network latency parameters adjusted by the Node Tuning Operator [test_id:28467][crit:high][vendor:cnf-qe@redhat.com][level:acceptance] Should contain configuration injected through the openshift-node-performance profile [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27368][performance] Pre boot tuning adjusted by tuned  [test_id:27081][crit:high][vendor:cnf-qe@redhat.com][level:acceptance] Should set workqueue CPU mask [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27368][performance] Pre boot tuning adjusted by tuned  [test_id:31198] Should set CPU affinity kernel argument [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27368][performance] Pre boot tuning adjusted by tuned  [test_id:32702] Should set CPU isolcpu's kernel argument managed_irq flag [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27368][performance] Pre boot tuning adjusted by tuned  [test_id:35363][crit:high][vendor:cnf-qe@redhat.com][level:acceptance] stalld daemon is running on the host [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27368][performance] Pre boot tuning adjusted by tuned  [test_id:42400][crit:medium][vendor:cnf-qe@redhat.com][level:acceptance] stalld daemon is running as sched_fifo [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27368][performance] Pre boot tuning adjusted by tuned  [test_id:42696][crit:medium][vendor:cnf-qe@redhat.com][level:acceptance] Stalld runs in higher priority than ksoftirq and rcu{c,b} [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27368][performance] RPS configuration [test_id: 59572] Check RPS Mask is applied to at least one single rx queue on all veth interface [tier-1]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27368][performance] RPS configuration [test_id:54190] Should not have RPS configuration set when realtime workload hint is explicitly set [tier-1]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27368][performance] RPS configuration [test_id:55012] Should have the correct RPS configuration [tier-1]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27368][performance] Tuned CRs generated from profile Tuned profile shouldn't be degraded [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27368][performance] Tuned CRs generated from profile [test_id:31748] Should have the expected name for tuned from the profile owner object [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27368][performance] Tuned CRs generated from profile [test_id:37127] Node should point to right tuned profile [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27368][performance] Tuned kernel parameters [test_id:28466][crit:high][vendor:cnf-qe@redhat.com][level:acceptance] Should contain configuration injected through openshift-node-performance profile [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27368][performance] Using performance profile Should have system services running on the system.slice cgroup [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27368][performance] Using performance profile [test_id:74767] Should have the ocp-tuned-one-shot.service started and ended before kubelet [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27368][performance] Validation webhook with API version v1 profile should reject the creation of the profile with no isolated CPUs [tier-0, openshift]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27368][performance] Validation webhook with API version v1 profile should reject the creation of the profile with overlapping CPUs [tier-0, openshift]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27368][performance] Validation webhook with API version v1 profile should reject the creation of the profile with the node selector that already in use [tier-0, openshift]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27368][performance] Validation webhook with API version v1alpha1 profile should reject the creation of the profile with no isolated CPUs [tier-0, openshift]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27368][performance] Validation webhook with API version v1alpha1 profile should reject the creation of the profile with overlapping CPUs [tier-0, openshift]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27368][performance] Validation webhook with API version v1alpha1 profile should reject the creation of the profile with the node selector that already in use [tier-0, openshift]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27368][performance] Validation webhook with profile version v2 should reject the creation of the profile with no isolated CPUs [tier-0, openshift]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27368][performance] Validation webhook with profile version v2 should reject the creation of the profile with overlapping CPUs [tier-0, openshift]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27368][performance] Validation webhook with profile version v2 should reject the creation of the profile with the node selector that already in use [tier-0, openshift]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27368][performance] Verify API Conversions  when the GloballyDisableIrqLoadBalancing field set to false should preserve the value during the v1 \u003c-\u003e v2 conversion [tier-0, openshift]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27368][performance] Verify API Conversions  when the GloballyDisableIrqLoadBalancing field set to true should preserve the value during the v1 \u003c-\u003e v2 conversion [tier-0, openshift]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27368][performance] Verify API Conversions [test_id:35887] Verifies v1 \u003c-\u003e v1alpha1 conversions [tier-0, openshift]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27368][performance] Verify API Conversions [test_id:35888] Verifies v1 \u003c-\u003e v2 conversions [tier-0, openshift]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27368][performance] Verify API Conversions when the performance profile does not contain NUMA field Verifies v1 \u003c-\u003e v1alpha1 conversions [tier-0, openshift]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27368][performance] Verify API Conversions when the performance profile does not contain NUMA field Verifies v1 \u003c-\u003e v2 conversions [tier-0, openshift]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[It] [rfe_id:27368][performance] [test_id:54083] Should have kernel param rcutree.kthread [tier-0]",
+    "Suite": "Performance Test"
+  },
+  {
+    "Name": "[ReportAfterSuite] e2e serial suite",
+    "Suite": "Performance Test"
   },
   {
     "Name": "[sig-metal] should get working host from infra provider",
@@ -68176,12 +69224,28 @@
     "Suite": "tests/e2e-rh-sdl"
   },
   {
+    "Name": "rapidast-lca",
+    "Suite": "/tmp/telco-dast-qe/tests/dast/rapid-lca"
+  },
+  {
+    "Name": "rapidast-nrop",
+    "Suite": "/tmp/telco-dast-qe/tests/dast/rapid-nrop"
+  },
+  {
     "Name": "rapidast-otel",
     "Suite": "tests/e2e-rh-sdl/rapidast-otel"
   },
   {
     "Name": "rapidast-otel",
     "Suite": "tests/e2e-rh-sdl"
+  },
+  {
+    "Name": "rapidast-ptp",
+    "Suite": "/tmp/telco-dast-qe/tests/dast/rapid-ptp"
+  },
+  {
+    "Name": "rapidast-talm",
+    "Suite": "/tmp/telco-dast-qe/tests/dast/rapid-talm"
   },
   {
     "Name": "rapidast-tempo",
