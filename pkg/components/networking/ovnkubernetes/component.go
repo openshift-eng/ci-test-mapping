@@ -25,7 +25,7 @@ var OvnKubernetesComponent = Component{
 				ExcludeAny: []string{"Skipped:Network/OVNKubernetes", "Skipped:Network/OVNKuberenetes"},
 			},
 			{
-				IncludeAll: []string{"ovn-kubernetes", "IPSEC", "adminnetworkpolicy", "egressfirewall", "egressqos", "networkpolicy", "node-identity", "alerts", "sctp", "service", "EgressIP", "metrics", "misc"},
+				IncludeAll: []string{"ovn-kubernetes", "IPSEC", "adminnetworkpolicy", "egressfirewall", "egressqos", "networkpolicy", "node-identity", "alerts", "sctp", "service", "EgressIP", "metrics", "misc", "udn"},
 				Priority:   1,
 			},
 			{Suite: "OVN related networking scenarios"},
