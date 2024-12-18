@@ -12,9 +12,13 @@ type Component struct {
 var KubernetesNmstateOperatorComponent = Component{
 	Component: &config.Component{
 		Name:                 "Networking / kubernetes-nmstate-operator",
-		Operators:            []string{},
+		Operators:            []string{"kubernetes-nmstate-operator"},
 		DefaultJiraComponent: "Networking / kubernetes-nmstate-operator",
-		Matchers:             []config.ComponentMatcher{},
+		Matchers: []config.ComponentMatcher{
+			{
+				IncludeAll: []string{"nmstate-operator"}, //// QE cases all have "nmstate-operator" in junit xml
+			},
+		},
 	},
 }
 

@@ -25,15 +25,14 @@ var OvnKubernetesComponent = Component{
 				ExcludeAny: []string{"Skipped:Network/OVNKubernetes", "Skipped:Network/OVNKuberenetes"},
 			},
 			{
-				IncludeAll: []string{"ovn-kubernetes"},
+				IncludeAll: []string{"ovn-kubernetes", "IPSEC", "adminnetworkpolicy", "egressfirewall", "egressqos", "networkpolicy", "node-identity", "alerts", "sctp", "service", "EgressIP", "metrics", "misc", "udn"},
 				Priority:   1,
 			},
 			{Suite: "OVN related networking scenarios"},
 			{Suite: "OVNKubernetes IPsec related networking scenarios"},
 			{Suite: "OVNKubernetes Windows Container related networking scenarios"},
-			{Suite: "SDN/OVN metrics related networking scenarios"},
+			{Suite: "Network policy plugin scenarios"},
 			{Suite: "ipv6 dual stack cluster test scenarios"},
-			{Suite: "sdn2ovn migration testing"},
 		},
 		TestRenames: map[string]string{
 			"[Networking][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ovn-kubernetes":    "[bz-Networking][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ovn-kubernetes",
