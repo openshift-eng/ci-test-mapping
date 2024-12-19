@@ -52788,6 +52788,10 @@
     "Suite": "Logging"
   },
   {
+    "Name": "OCP-65132:yuewu:CFE:[sig-auth] CFE cert-manager CLOUD_CREDENTIALS_SECRET_NAME should work in AWS STS env when pod-identity-webhook is not used [Serial]",
+    "Suite": "CFE"
+  },
+  {
     "Name": "OCP-65134:yuewu:CFE:[sig-auth] CFE cert-manager Prepare cert-manager test data before OCP upgrade",
     "Suite": "CFE"
   },
@@ -60728,6 +60732,18 @@
     "Suite": "OLM"
   },
   {
+    "Name": "OCP-77973:shudili:Network_Edge:[sig-network-edge] Network_Edge Component_Router should Dynamic Configuration Manager for edge route [Serial]",
+    "Suite": "Network_Edge"
+  },
+  {
+    "Name": "OCP-77974:shudili:Network_Edge:[sig-network-edge] Network_Edge Component_Router should Dynamic Configuration Manager for passthrough route [Serial]",
+    "Suite": "Network_Edge"
+  },
+  {
+    "Name": "OCP-77975:shudili:Network_Edge:[sig-network-edge] Network_Edge Component_Router should Dynamic Configuration Manager for reencrypt route [Serial]",
+    "Suite": "Network_Edge"
+  },
+  {
     "Name": "OCP-77977:ptalgulk:MCO:[sig-mco] MCO ocb Install extension after OCB is enabled [Disruptive] [Serial]",
     "Suite": "MCO"
   },
@@ -60742,6 +60758,10 @@
   {
     "Name": "OCP-78162:asood:SDN:[sig-networking] SDN egressfirewall Egress traffic works with ANP and egress fireall.",
     "Suite": "SDN"
+  },
+  {
+    "Name": "OCP-78217:tagao:Cluster_Observability:[sig-monitoring] Cluster_Observability Observability Operator  COO should pass DAST test [Serial]",
+    "Suite": "Cluster_Observability"
   },
   {
     "Name": "OCP-78238:meinli:SDN:[sig-networking] SDN udn services Validate host/pod to nodeport with externalTrafficPolicy is local/cluster on same/diff workers (UDN layer3 and default network)",
@@ -68213,6 +68233,10 @@
   },
   {
     "Name": "feature for hypershift provisined cluster \"after all\" hook for \"(OCP-48890,yanpzhan,UserInterface) The TopologyMode needs to be passed to the console via console-config.yaml\"",
+    "Suite": "feature for hypershift provisined cluster"
+  },
+  {
+    "Name": "feature for hypershift provisined cluster \"after all\" hook for \"(OCP-48890,yanpzhan,UserInterface)) The TopologyMode needs to be passed to the console via console-config.yaml\"",
     "Suite": "feature for hypershift provisined cluster"
   },
   {
