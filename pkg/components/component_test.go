@@ -49,6 +49,11 @@ func TestIdentifyTest(t *testing.T) {
 				return nil
 			},
 		},
+		{
+			name:             "categorizes capability based on variants",
+			testInfo:         &v1.TestInfo{Name: "[sig-qe] test with variants", Variants: []string{"Procedure:automated-release"}},
+			wantCapabilities: []string{"LEVEL0"},
+		},
 	}
 	ti := NewTestIdentifier(componentRegistry, nil)
 	for _, tt := range tests {

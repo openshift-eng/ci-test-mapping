@@ -72,7 +72,7 @@ var mapCmd = &cobra.Command{
 
 			// Get a list of all tests from bigquery - this could be swapped out with other
 			// mechanisms to get test details later on.
-			testLister := bigquery.NewTestTableManager(context.Background(), bigqueryClient, config, f.junitTable)
+			testLister := bigquery.NewTestTableManager(context.Background(), bigqueryClient, config, f.junitTable, f.jobVariantsTable)
 			tests, err = testLister.ListTests()
 			if err != nil {
 				return errors.WithMessage(err, "could not list tests")
@@ -186,6 +186,7 @@ type MapFlags struct {
 	bigqueryFlags       *flags.BigQueryFlags
 	configFlags         *flags.ConfigFlags
 	junitTable          string
+	jobVariantsTable    string
 	testMappingTable    string
 	variantMappingTable string
 	mapVariants         bool
@@ -207,6 +208,7 @@ func (f *MapFlags) BindFlags(fs *pflag.FlagSet) {
 
 func init() {
 	mapCmd.PersistentFlags().StringVar(&f.junitTable, "table-junit", "junit", "BigQuery table name storing JUnit test results")
+	mapCmd.PersistentFlags().StringVar(&f.jobVariantsTable, "table-job-variants", "job_variants", "BigQuery table name storing job variant mappings")
 	mapCmd.PersistentFlags().StringVar(&f.testMappingTable, "table-mapping", "component_mapping", "BigQuery table name storing component mappings")
 	mapCmd.PersistentFlags().StringVar(&f.variantMappingTable, "table-variant-mapping", "variant_mapping", "BigQuery table name storing variant mappings")
 	mapCmd.PersistentFlags().StringVar(&f.mode, "mode", "local", "Mode (one of: local, bigquery). Local mode doesn't require access to BigQuery and is suitable for local development.")

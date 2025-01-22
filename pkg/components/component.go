@@ -100,7 +100,11 @@ func (t *TestIdentifier) setDefaults(testInfo *v1.TestInfo, testOwnership *v1.Te
 	}
 
 	if len(testOwnership.Capabilities) == 0 {
-		testOwnership.Capabilities = []string{DefaultCapability}
+		capabilities := util.DefaultCapabilities(testInfo)
+		if len(capabilities) == 0 {
+			capabilities = []string{DefaultCapability}
+		}
+		testOwnership.Capabilities = capabilities
 	}
 
 	if testOwnership.Suite == "" {
