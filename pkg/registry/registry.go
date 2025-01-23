@@ -11,6 +11,7 @@ import (
 	baremetalhardwareprovisioningironic "github.com/openshift-eng/ci-test-mapping/pkg/components/baremetalhardwareprovisioning/ironic"
 	baremetalhardwareprovisioningosimageprovider "github.com/openshift-eng/ci-test-mapping/pkg/components/baremetalhardwareprovisioning/osimageprovider"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/bmerevents"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/bpfman"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/build"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/certmanager"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/climanager"
@@ -30,6 +31,7 @@ import (
 	cloudcomputeopenstackprovider "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudcompute/openstackprovider"
 	cloudcomputeovirtprovider "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudcompute/ovirtprovider"
 	cloudcomputeunknown "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudcompute/unknown"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/cloudcompute/vsphereprovider"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/cloudcredentialoperator"
 	cloudnativeeventscloudeventproxy "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudnativeevents/cloudeventproxy"
 	cloudnativeeventscloudnativeevents "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudnativeevents/cloudnativeevents"
@@ -57,11 +59,15 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/hive"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/hypershift"
 	hypershiftagent "github.com/openshift-eng/ci-test-mapping/pkg/components/hypershift/agent"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/hypershift/aro"
 	hypershiftocpvirtualization "github.com/openshift-eng/ci-test-mapping/pkg/components/hypershift/ocpvirtualization"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/hypershift/openstack"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/hypershift/rosa"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/ibmrokstoolkit"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/imageregistry"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/imagestreams"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/insightsoperator"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/insightsruntimeextractor"
 	installeragentbasedinstallation "github.com/openshift-eng/ci-test-mapping/pkg/components/installer/agentbasedinstallation"
 	installeralibabacloud "github.com/openshift-eng/ci-test-mapping/pkg/components/installer/alibabacloud"
 	installerassistedinstaller "github.com/openshift-eng/ci-test-mapping/pkg/components/installer/assistedinstaller"
@@ -74,14 +80,17 @@ import (
 	installeropenshiftonrhv "github.com/openshift-eng/ci-test-mapping/pkg/components/installer/openshiftonrhv"
 	installerpowervs "github.com/openshift-eng/ci-test-mapping/pkg/components/installer/powervs"
 	installersinglenodeopenshift "github.com/openshift-eng/ci-test-mapping/pkg/components/installer/singlenodeopenshift"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/installer/vsphere"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/isvoperators"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/jenkins"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/kmm"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/ksanstorage"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/kubeapiserver"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/kubecontrollermanager"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/kubescheduler"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/kubestorageversionmigrator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/lcaoperator"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/lightspeed"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/logging"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/logicalvolumemanagerstorage"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/lowlatencyvalidationtooling"
@@ -106,6 +115,7 @@ import (
 	networkingclusternetworkoperator "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/clusternetworkoperator"
 	networkingdns "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/dns"
 	networkingdpu "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/dpu"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/networking/frrk8s"
 	networkingingressnodefirewall "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/ingressnodefirewall"
 	networkingkubernetesnmstate "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/kubernetesnmstate"
 	networkingkubernetesnmstateoperator "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/kubernetesnmstateoperator"
@@ -146,9 +156,11 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/observabilityui"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/oc"
 	occlustercompare "github.com/openshift-eng/ci-test-mapping/pkg/components/oc/clustercompare"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/oc/nodeimage"
 	ococmirror "github.com/openshift-eng/ci-test-mapping/pkg/components/oc/ocmirror"
 	ocupdate "github.com/openshift-eng/ci-test-mapping/pkg/components/oc/update"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/occompliance"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/ocmirror"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/olm"
 	olmoperatorhub "github.com/openshift-eng/ci-test-mapping/pkg/components/olm/operatorhub"
 	olmregistry "github.com/openshift-eng/ci-test-mapping/pkg/components/olm/registry"
@@ -197,6 +209,7 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/testframework"
 	testframeworkopenstack "github.com/openshift-eng/ci-test-mapping/pkg/components/testframework/openstack"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/testinfrastructure"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/twonode/arbiter"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/unknown"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/windowscontainers"
 )
@@ -405,6 +418,19 @@ func NewComponentRegistry() *Registry {
 	r.Register("sandboxed-containers", &sandboxedcontainers.SandboxedContainersComponent)
 	r.Register("secondary-scheduler-operator", &secondaryscheduleroperator.SecondarySchedulerOperatorComponent)
 	r.Register("service-ca", &serviceca.ServiceCaComponent)
+	r.Register("bpfman", &bpfman.BpfmanComponent)
+	r.Register("Cloud Compute / vSphere Provider", &cloudcomputevsphereprovider.VSphereProviderComponent)
+	r.Register("HyperShift / ARO", &hypershiftaro.AROComponent)
+	r.Register("HyperShift / OpenStack", &hypershiftopenstack.OpenStackComponent)
+	r.Register("HyperShift / ROSA", &hypershiftrosa.ROSAComponent)
+	r.Register("insights-runtime-extractor", &insightsruntimeextractor.InsightsRuntimeExtractorComponent)
+	r.Register("Installer / vSphere", &installervsphere.VSphereComponent)
+	r.Register("kSAN Storage", &ksanstorage.KSANStorageComponent)
+	r.Register("Lightspeed", &lightspeed.LightspeedComponent)
+	r.Register("Networking / FRR-K8s", &networkingfrrk8s.FRRK8sComponent)
+	r.Register("oc / node-image", &ocnodeimage.NodeImageComponent)
+	r.Register("oc-mirror", &ocmirror.OcMirrorComponent)
+	r.Register("TwoNode / Arbiter", &twonodearbiter.ArbiterComponent)
 	// New components go here
 
 	return &r
