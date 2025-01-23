@@ -14,6 +14,7 @@ var VSphereProviderComponent = Component{
 		Name:                 "Cloud Compute / vSphere Provider",
 		Operators:            []string{},
 		DefaultJiraComponent: "Cloud Compute / vSphere Provider",
+		Variants:             []string{"Platform:vsphere"},
 		Matchers:             []config.ComponentMatcher{},
 	},
 }
