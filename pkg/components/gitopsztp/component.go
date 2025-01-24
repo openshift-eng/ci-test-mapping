@@ -14,7 +14,9 @@ var GitOpsZTPComponent = Component{
 		Name:                 "GitOps ZTP",
 		Operators:            []string{},
 		DefaultJiraComponent: "GitOps ZTP",
-		Matchers:             []config.ComponentMatcher{},
+		Matchers: []config.ComponentMatcher{
+			{SIG: "sig-telco-verification"},
+		},
 	},
 }
 
