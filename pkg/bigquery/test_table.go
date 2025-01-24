@@ -13,19 +13,21 @@ import (
 )
 
 type TestTableManager struct {
-	ctx        context.Context
-	junitTable string
-	client     *Client
-	config     *v1.Config
-	dataset    string
+	ctx           context.Context
+	junitTable    string
+	variantsTable string
+	client        *Client
+	config        *v1.Config
+	dataset       string
 }
 
-func NewTestTableManager(ctx context.Context, client *Client, config *v1.Config, junitTable string) *TestTableManager {
+func NewTestTableManager(ctx context.Context, client *Client, config *v1.Config, junitTable, jobVariantsTable string) *TestTableManager {
 	return &TestTableManager{
-		ctx:        ctx,
-		config:     config,
-		junitTable: junitTable,
-		client:     client,
+		ctx:           ctx,
+		config:        config,
+		junitTable:    junitTable,
+		variantsTable: jobVariantsTable,
+		client:        client,
 	}
 }
 
@@ -61,7 +63,8 @@ func (tm *TestTableManager) ListTests() ([]v1.TestInfo, error) {
 func (tm *TestTableManager) buildSQLQuery() string {
 	var suitesFilter, jobsFilter, excludeSuitesFilter, excludeTestsFilter, excludeJobsFilter string
 
-	table := tm.client.bigquery.Dataset(tm.dataset).Table(tm.junitTable)
+	junitTable := tm.client.bigquery.Dataset(tm.dataset).Table(tm.junitTable)
+	variantsTable := tm.client.bigquery.Dataset(tm.dataset).Table(tm.variantsTable)
 
 	if len(tm.config.IncludeSuites) > 0 {
 		suitesFilter = fmt.Sprintf("testsuite IN ('%s')", strings.Join(tm.config.IncludeSuites, "','"))
@@ -91,12 +94,18 @@ func (tm *TestTableManager) buildSQLQuery() string {
 		excludeJobsFilter = fmt.Sprintf("AND prowjob_name NOT LIKE '%s'", strings.Join(tm.config.ExcludeJobs, "' AND prowjob_name NOT LIKE '"))
 	}
 
+	junitTableName := fmt.Sprintf("%s.%s.%s", tm.client.projectName, tm.client.datasetName, junitTable.TableID)
+	variantsTableName := fmt.Sprintf("%s.%s.%s", tm.client.projectName, tm.client.datasetName, variantsTable.TableID)
+
 	sql := fmt.Sprintf(`
 		SELECT DISTINCT
 		    test_name as name,
-		    testsuite as suite
+		    testsuite as suite,
+			ARRAY_AGG(DISTINCT CONCAT(jv.variant_name, ':', jv.variant_value) ORDER BY CONCAT(jv.variant_name, ':', jv.variant_value)) AS variants,
 		FROM
-			%s.%s.%s
+			%s junit
+		INNER JOIN
+			%s jv ON jv.job_name = junit.prowjob_name
 		WHERE
 		    %s
 		%s
@@ -105,8 +114,10 @@ func (tm *TestTableManager) buildSQLQuery() string {
 		%s
 		AND
 		    modified_time <= CURRENT_DATETIME()
+		GROUP BY 
+		    junit.test_name, junit.testsuite
 		ORDER BY name, testsuite DESC`,
-		tm.client.projectName, tm.client.datasetName, table.TableID, suitesFilter, jobsFilter, excludeSuitesFilter, excludeTestsFilter, excludeJobsFilter)
+		junitTableName, variantsTableName, suitesFilter, jobsFilter, excludeSuitesFilter, excludeTestsFilter, excludeJobsFilter)
 
 	log.Debugf("query is %s", sql)
 	return sql

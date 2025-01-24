@@ -31,11 +31,15 @@ type Component interface {
 	ListNamespaces() []string
 }
 
-// TestInfo is the input to the component owners with metadata about a test. It currently includes only
-// the test name and suite, but could in the future contain additional metadata.
+// TestInfo is the input to the component owners with metadata about a test.
 type TestInfo struct {
-	Name  string
-	Suite string
+	Name  string `bigquery:"name"`
+	Suite string `bigquery:"suite"`
+
+	// Variants contains the set of all job variants this test appeared in.  This is useful
+	// for assinging components and capabilities. For example, all tests with `Procedure:etcd-scaling`
+	// could be assigned to the `etcd` component.
+	Variants []string `bigquery:"variants"`
 }
 
 const TestOwnershipAPIVersion = "v1"
