@@ -165,3 +165,20 @@ You'll need to set the env var `JIRA_TOKEN` to your personal API token
 1. Move any configuration for renamed components
 2. Delete the obsolete `pkg/components/<component>` directory
 3. Remove references to removed components from `pkg/registry`.
+
+# Component Readiness Variant Mapping
+
+Variant mapping maps a particular job variant to a Jira component. This helps us map 
+a column on Component Readiness dashboard to its proper owners. Variant mapping is not
+enabled by default. One can use ```--map-variant=true``` (or simply ```--map-variant```) to enable it.
+
+## Add Variant Mapping to components
+
+To add variant mapping to one particular component, all you need to do is to initialize 
+Variants slice in your component definition. For example, the following was added to
+pkg/components/cloudcompute/vsphereprovider/component.go to map Platform:vsphere to 
+component "Cloud Compute / vSphere Provider"
+
+```
+		Variants:             []string{"Platform:vsphere"},
+```

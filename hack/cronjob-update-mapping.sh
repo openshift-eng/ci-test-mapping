@@ -16,11 +16,11 @@ git checkout -b update
 
 # Generate and push mapping
 ## OCP Engineering Mappings
-ci-test-mapping map --mode=bigquery --push-to-bigquery
+ci-test-mapping map --mode=bigquery --push-to-bigquery --map-variant
 ## QE Mappings
 ci-test-mapping map --mode=bigquery --push-to-bigquery \
 	            --bigquery-dataset ci_analysis_qe --bigquery-project openshift-gce-devel \
-	            --table-junit junit --table-mapping component_mapping --config ""
+	            --table-junit junit --table-mapping component_mapping --config "" --map-variant
 
 if git diff --quiet
 then
