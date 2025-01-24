@@ -1,0 +1,20 @@
+[
+  {
+    "APIVersion": "v1",
+    "Kind": "VariantOwnership",
+    "Product": "OpenShift",
+    "JiraProject": "OCPBUGS",
+    "JiraComponent": "Cloud Compute / vSphere Provider",
+    "VariantName": "Platform",
+    "VariantValue": "vsphere"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "VariantOwnership",
+    "Product": "OpenShift",
+    "JiraProject": "OCPBUGS",
+    "JiraComponent": "Bare Metal Hardware Provisioning",
+    "VariantName": "Platform",
+    "VariantValue": "metal"
+  }
+]
