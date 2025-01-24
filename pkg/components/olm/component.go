@@ -24,6 +24,9 @@ var OLMComponent = Component{
 		},
 		Matchers: []config.ComponentMatcher{
 			{
+				SIG: "sig-olmv1",
+			},
+			{
 				IncludeAny: []string{
 					"bz-OLM",
 					"bz-platform-operators-aggregated",
