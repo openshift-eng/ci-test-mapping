@@ -170,7 +170,7 @@ You'll need to set the env var `JIRA_TOKEN` to your personal API token
 
 Variant mapping maps a particular job variant to a Jira component. This helps us map 
 a column on Component Readiness dashboard to its proper owners. Variant mapping is not
-enabled by default. One can use --map-variant=true to enable it.
+enabled by default. One can use ```--map-variant=true``` (or simply ```--map-variant```) to enable it.
 
 ## Add Variant Mapping to components
 
