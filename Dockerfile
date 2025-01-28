@@ -5,9 +5,12 @@ ENV GOPATH="/go"
 RUN dnf install -y \
         git \
         go \
-        make \
-     && go install github.com/Link-/gh-token@latest \
-     && go install k8s.io/test-infra/robots/pr-creator@latest
+        make
+RUN go install k8s.io/test-infra/robots/pr-creator@latest
+# install gh-token before it required go 1.23 which ubi9 doesn't have yet;
+# unfortunately `go install` with the tag is broken, so just clone and install.
+RUN git clone https://github.com/Link-/gh-token --branch v2.0.2 \
+ && cd gh-token && go install . 
 COPY . .
 RUN make build
 
