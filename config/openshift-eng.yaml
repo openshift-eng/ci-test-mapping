@@ -11,6 +11,7 @@ includeSuites:
   - perfscale-nd
   - perfscale-crd
   - chaos-krkn
+  - telco-verification
 excludeSuites: []
 excludeTests:
   - "Build image%"
