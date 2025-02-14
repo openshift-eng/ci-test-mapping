@@ -36,19 +36,10 @@ var ClusterNetworkOperatorComponent = Component{
 			{
 				IncludeAll: []string{"cluster-network-operator"},
 			},
-			{Suite: "IPsec upgrade scenarios"},
-			{Suite: "Network policy plugin scenarios"},
+			{
+				IncludeAll: []string{"CNO"},
+			},
 			{Suite: "Operator related networking scenarios"},
-			{Suite: "Pod related networking scenarios"},
-			{Suite: "SCTP related scenarios"},
-			{Suite: "Service related networking scenarios"},
-			{Suite: "Service_Development_A"},
-			{Suite: "networking isolation related scenarios"},
-			{Suite: "service upgrade scenarios"},
-			{Suite: "service related scenarios"},
-			{Suite: "Egress IP related features"},
-			{Suite: "Operator related networking scenarios"},
-			{Suite: "SDN CNO"},
 		},
 		TestRenames: map[string]string{
 			"[Networking][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-host-network":           "[bz-Networking][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-host-network",
