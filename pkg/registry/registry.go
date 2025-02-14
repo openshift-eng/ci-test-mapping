@@ -140,7 +140,7 @@ import (
 	nodedevicemanager "github.com/openshift-eng/ci-test-mapping/pkg/components/node/devicemanager"
 	nodeinstasliceoperator "github.com/openshift-eng/ci-test-mapping/pkg/components/node/instasliceoperator"
 	nodekubelet "github.com/openshift-eng/ci-test-mapping/pkg/components/node/kubelet"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/node/kueue"
+	nodekueue "github.com/openshift-eng/ci-test-mapping/pkg/components/node/kueue"
 	nodememorymanager "github.com/openshift-eng/ci-test-mapping/pkg/components/node/memorymanager"
 	nodenodeproblemdetector "github.com/openshift-eng/ci-test-mapping/pkg/components/node/nodeproblemdetector"
 	nodenumaawarescheduling "github.com/openshift-eng/ci-test-mapping/pkg/components/node/numaawarescheduling"
