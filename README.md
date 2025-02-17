@@ -159,11 +159,16 @@ components that have been removed, and report on any new Jira components
 that are available.
 
 To create any missing components, run `./ci-test-mapping jira-create`.
+If any components are being renamed, run `jira-create` first and then
+move the configuration to the new component.
+
+Run `./ci-test-mapping jira-verify` to ensure it reports back cleanly.
+
 You'll need to set the env var `JIRA_TOKEN` to your personal API token
 (which you can create from your Jira profile page). Then:
 
 1. Move any configuration for renamed components
-2. Delete the obsolete `pkg/components/<component>` directory
+2. Delete any obsolete `pkg/components/<component>` directory
 3. Remove references to removed components from `pkg/registry`.
 
 # Component Readiness Variant Mapping

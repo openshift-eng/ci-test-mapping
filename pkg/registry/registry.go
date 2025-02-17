@@ -140,6 +140,7 @@ import (
 	nodedevicemanager "github.com/openshift-eng/ci-test-mapping/pkg/components/node/devicemanager"
 	nodeinstasliceoperator "github.com/openshift-eng/ci-test-mapping/pkg/components/node/instasliceoperator"
 	nodekubelet "github.com/openshift-eng/ci-test-mapping/pkg/components/node/kubelet"
+	nodekueue "github.com/openshift-eng/ci-test-mapping/pkg/components/node/kueue"
 	nodememorymanager "github.com/openshift-eng/ci-test-mapping/pkg/components/node/memorymanager"
 	nodenodeproblemdetector "github.com/openshift-eng/ci-test-mapping/pkg/components/node/nodeproblemdetector"
 	nodenumaawarescheduling "github.com/openshift-eng/ci-test-mapping/pkg/components/node/numaawarescheduling"
@@ -194,6 +195,7 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/serviceca"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/servicecatalog"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/specialresourceoperator"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/spireoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/storage"
 	storagekubernetes "github.com/openshift-eng/ci-test-mapping/pkg/components/storage/kubernetes"
 	storagekubernetesexternalcomponents "github.com/openshift-eng/ci-test-mapping/pkg/components/storage/kubernetesexternalcomponents"
@@ -210,6 +212,8 @@ import (
 	testframeworkopenstack "github.com/openshift-eng/ci-test-mapping/pkg/components/testframework/openstack"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/testinfrastructure"
 	twonodearbiter "github.com/openshift-eng/ci-test-mapping/pkg/components/twonode/arbiter"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/twonodefencing"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/twonodewitharbiter"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/unknown"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/windowscontainers"
 )
@@ -247,6 +251,7 @@ func NewComponentRegistry() *Registry {
 	r.Register("Cloud Compute / OpenStack Provider", &cloudcomputeopenstackprovider.OpenStackProviderComponent)
 	r.Register("Cloud Compute / Unknown", &cloudcomputeunknown.UnknownComponent)
 	r.Register("Cloud Compute / oVirt Provider", &cloudcomputeovirtprovider.OVirtProviderComponent)
+	r.Register("Cloud Compute / vSphere Provider", &cloudcomputevsphereprovider.VSphereProviderComponent)
 	r.Register("Cloud Credential Operator", &cloudcredentialoperator.CloudCredentialOperatorComponent)
 	r.Register("Cloud Native Events / Cloud Event Proxy", &cloudnativeeventscloudeventproxy.CloudEventProxyComponent)
 	r.Register("Cloud Native Events / Cloud Native Events", &cloudnativeeventscloudnativeevents.CloudNativeEventsComponent)
@@ -267,8 +272,11 @@ func NewComponentRegistry() *Registry {
 	r.Register("Hawkular", &hawkular.HawkularComponent)
 	r.Register("Helm", &helm.HelmComponent)
 	r.Register("Hive", &hive.HiveComponent)
+	r.Register("HyperShift / ARO", &hypershiftaro.AROComponent)
 	r.Register("HyperShift / Agent", &hypershiftagent.AgentComponent)
 	r.Register("HyperShift / OCP Virtualization", &hypershiftocpvirtualization.OCPVirtualizationComponent)
+	r.Register("HyperShift / OpenStack", &hypershiftopenstack.OpenStackComponent)
+	r.Register("HyperShift / ROSA", &hypershiftrosa.ROSAComponent)
 	r.Register("HyperShift", &hypershift.HyperShiftComponent)
 	r.Register("ISV Operators", &isvoperators.ISVOperatorsComponent)
 	r.Register("Image Registry", &imageregistry.ImageRegistryComponent)
@@ -286,8 +294,10 @@ func NewComponentRegistry() *Registry {
 	r.Register("Installer / Single Node OpenShift", &installersinglenodeopenshift.SingleNodeOpenShiftComponent)
 	r.Register("Installer / openshift-ansible", &installeropenshiftansible.OpenshiftAnsibleComponent)
 	r.Register("Installer / openshift-installer", &installeropenshiftinstaller.OpenshiftInstallerComponent)
+	r.Register("Installer / vSphere", &installervsphere.VSphereComponent)
 	r.Register("Jenkins", &jenkins.JenkinsComponent)
 	r.Register("LCA operator", &lcaoperator.LCAOperatorComponent)
+	r.Register("Lightspeed", &lightspeed.LightspeedComponent)
 	r.Register("Logging", &logging.LoggingComponent)
 	r.Register("Logical Volume Manager Storage", &logicalvolumemanagerstorage.LogicalVolumeManagerStorageComponent)
 	r.Register("Low latency validation tooling", &lowlatencyvalidationtooling.LowLatencyValidationToolingComponent)
@@ -311,6 +321,7 @@ func NewComponentRegistry() *Registry {
 	r.Register("NVIDIA", &nvidia.NVIDIAComponent)
 	r.Register("Networking / DNS", &networkingdns.DNSComponent)
 	r.Register("Networking / DPU", &networkingdpu.DPUComponent)
+	r.Register("Networking / FRR-K8s", &networkingfrrk8s.FRRK8sComponent)
 	r.Register("Networking / Metal LB", &networkingmetallb.MetalLBComponent)
 	r.Register("Networking / NetObs", &networkingnetobs.NetObsComponent)
 	r.Register("Networking / On-Prem DNS", &networkingonpremdns.OnPremDNSComponent)
@@ -337,6 +348,7 @@ func NewComponentRegistry() *Registry {
 	r.Register("Node / Device Manager", &nodedevicemanager.DeviceManagerComponent)
 	r.Register("Node / Instaslice-operator", &nodeinstasliceoperator.InstasliceOperatorComponent)
 	r.Register("Node / Kubelet", &nodekubelet.KubeletComponent)
+	r.Register("Node / Kueue", &nodekueue.KueueComponent)
 	r.Register("Node / Memory manager", &nodememorymanager.MemoryManagerComponent)
 	r.Register("Node / Node Problem Detector", &nodenodeproblemdetector.NodeProblemDetectorComponent)
 	r.Register("Node / Numa aware Scheduling", &nodenumaawarescheduling.NumaAwareSchedulingComponent)
@@ -386,9 +398,13 @@ func NewComponentRegistry() *Registry {
 	r.Register("Test Framework / OpenStack", &testframeworkopenstack.OpenStackComponent)
 	r.Register("Test Framework", &testframework.TestFrameworkComponent)
 	r.Register("Test Infrastructure", &testinfrastructure.TestInfrastructureComponent)
+	r.Register("Two Node Fencing", &twonodefencing.TwoNodeFencingComponent)
+	r.Register("Two Node with Arbiter", &twonodewitharbiter.TwoNodeWithArbiterComponent)
+	r.Register("TwoNode / Arbiter", &twonodearbiter.ArbiterComponent)
 	r.Register("Unknown", &unknown.UnknownComponent)
 	r.Register("Windows Containers", &windowscontainers.WindowsContainersComponent)
 	r.Register("apiserver-auth", &apiserverauth.ApiserverAuthComponent)
+	r.Register("bpfman", &bpfman.BpfmanComponent)
 	r.Register("cert-manager", &certmanager.CertManagerComponent)
 	r.Register("cli-manager", &climanager.CliManagerComponent)
 	r.Register("confidential-compute-attestation", &confidentialcomputeattestation.ConfidentialComputeAttestationComponent)
@@ -396,6 +412,8 @@ func NewComponentRegistry() *Registry {
 	r.Register("crc", &crc.CrcComponent)
 	r.Register("descheduler", &descheduler.DeschedulerComponent)
 	r.Register("ibm-roks-toolkit", &ibmrokstoolkit.IbmRoksToolkitComponent)
+	r.Register("insights-runtime-extractor", &insightsruntimeextractor.InsightsRuntimeExtractorComponent)
+	r.Register("kSAN Storage", &ksanstorage.KSANStorageComponent)
 	r.Register("kmm", &kmm.KmmComponent)
 	r.Register("kube-apiserver", &kubeapiserver.KubeApiserverComponent)
 	r.Register("kube-controller-manager", &kubecontrollermanager.KubeControllerManagerComponent)
@@ -405,10 +423,12 @@ func NewComponentRegistry() *Registry {
 	r.Register("oauth-apiserver", &oauthapiserver.OauthApiserverComponent)
 	r.Register("oauth-proxy", &oauthproxy.OauthProxyComponent)
 	r.Register("oc / cluster-compare", &occlustercompare.ClusterCompareComponent)
+	r.Register("oc / node-image", &ocnodeimage.NodeImageComponent)
 	r.Register("oc / oc-mirror", &ococmirror.OcMirrorComponent)
 	r.Register("oc / update", &ocupdate.UpdateComponent)
 	r.Register("oc", &oc.OcComponent)
 	r.Register("oc-compliance", &occompliance.OcComplianceComponent)
+	r.Register("oc-mirror", &ocmirror.OcMirrorComponent)
 	r.Register("openshift-apiserver", &openshiftapiserver.OpenshiftApiserverComponent)
 	r.Register("openshift-controller-manager / apps", &openshiftcontrollermanagerapps.AppsComponent)
 	r.Register("openshift-controller-manager / build", &openshiftcontrollermanagerbuild.BuildComponent)
@@ -418,19 +438,7 @@ func NewComponentRegistry() *Registry {
 	r.Register("sandboxed-containers", &sandboxedcontainers.SandboxedContainersComponent)
 	r.Register("secondary-scheduler-operator", &secondaryscheduleroperator.SecondarySchedulerOperatorComponent)
 	r.Register("service-ca", &serviceca.ServiceCaComponent)
-	r.Register("bpfman", &bpfman.BpfmanComponent)
-	r.Register("Cloud Compute / vSphere Provider", &cloudcomputevsphereprovider.VSphereProviderComponent)
-	r.Register("HyperShift / ARO", &hypershiftaro.AROComponent)
-	r.Register("HyperShift / OpenStack", &hypershiftopenstack.OpenStackComponent)
-	r.Register("HyperShift / ROSA", &hypershiftrosa.ROSAComponent)
-	r.Register("insights-runtime-extractor", &insightsruntimeextractor.InsightsRuntimeExtractorComponent)
-	r.Register("Installer / vSphere", &installervsphere.VSphereComponent)
-	r.Register("kSAN Storage", &ksanstorage.KSANStorageComponent)
-	r.Register("Lightspeed", &lightspeed.LightspeedComponent)
-	r.Register("Networking / FRR-K8s", &networkingfrrk8s.FRRK8sComponent)
-	r.Register("oc / node-image", &ocnodeimage.NodeImageComponent)
-	r.Register("oc-mirror", &ocmirror.OcMirrorComponent)
-	r.Register("TwoNode / Arbiter", &twonodearbiter.ArbiterComponent)
+	r.Register("spire-operator", &spireoperator.SpireOperatorComponent)
 	// New components go here
 
 	return &r
