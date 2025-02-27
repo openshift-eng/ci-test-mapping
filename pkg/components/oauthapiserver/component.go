@@ -25,8 +25,9 @@ var OauthApiserverComponent = Component{
 				IncludeAll: []string{"oauth-api", "-connections"},
 			},
 			{
-				SIG:      "sig-auth",
-				Priority: -1,
+				SIG:        "sig-auth",
+				Priority:   -1,
+				ExcludeAny: []string{"CFE cert-manager"}, // comment ...
 			},
 		},
 		TestRenames: map[string]string{
