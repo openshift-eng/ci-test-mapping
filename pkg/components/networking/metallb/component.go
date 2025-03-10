@@ -12,9 +12,13 @@ type Component struct {
 var MetalLBComponent = Component{
 	Component: &config.Component{
 		Name:                 "Networking / Metal LB",
-		Operators:            []string{},
+		Operators:            []string{"metallb-operator"},
 		DefaultJiraComponent: "Networking / Metal LB",
-		Matchers:             []config.ComponentMatcher{},
+		Matchers: []config.ComponentMatcher{
+			{
+				IncludeAll: []string{"metallb"},
+			},
+		},
 	},
 }
 
