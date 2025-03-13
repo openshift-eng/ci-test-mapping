@@ -7,6 +7,7 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
 
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
@@ -23,15 +24,15 @@ func GetJiraComponents() (map[string]int64, error) {
 	var components []v1.JiraComponent
 	err = json.Unmarshal(body, &components)
 	if err != nil {
-		return nil, err
+		return nil, errors.WithMessage(err, "response from jira: "+string(body))
 	}
 
 	ids := make(map[string]int64)
 	for _, c := range components {
 		jiraID, err := strconv.ParseInt(c.ID, 10, 64)
 		if err != nil {
-			msg := "error parsing jira ID"
-			log.WithError(err).Warn(msg)
+			log.WithError(err).Warnf("error parsing jira ID '%s'", c.ID)
+			continue
 		}
 
 		ids[c.Name] = jiraID
