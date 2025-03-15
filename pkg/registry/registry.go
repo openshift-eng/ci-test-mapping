@@ -106,7 +106,6 @@ import (
 	microshiftnetworking "github.com/openshift-eng/ci-test-mapping/pkg/components/microshift/networking"
 	microshiftstorage "github.com/openshift-eng/ci-test-mapping/pkg/components/microshift/storage"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/monitoring"
-	monitoringgrafana "github.com/openshift-eng/ci-test-mapping/pkg/components/monitoring/grafana"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/multiarch"
 	multiarcharm "github.com/openshift-eng/ci-test-mapping/pkg/components/multiarch/arm"
 	multiarchibmpandz "github.com/openshift-eng/ci-test-mapping/pkg/components/multiarch/ibmpandz"
@@ -312,7 +311,6 @@ func NewComponentRegistry() *Registry {
 	r.Register("MicroShift / Networking", &microshiftnetworking.NetworkingComponent)
 	r.Register("MicroShift / Storage", &microshiftstorage.StorageComponent)
 	r.Register("MicroShift", &microshift.MicroShiftComponent)
-	r.Register("Monitoring / Grafana", &monitoringgrafana.GrafanaComponent)
 	r.Register("Monitoring", &monitoring.MonitoringComponent)
 	r.Register("Multi-Arch / ARM", &multiarcharm.ARMComponent)
 	r.Register("Multi-Arch / IBM P and Z", &multiarchibmpandz.IBMPAndZComponent)
