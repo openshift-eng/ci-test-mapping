@@ -43,7 +43,6 @@ func GetJiraComponents() (map[string]int64, error) {
 }
 
 func jiraRequest(apiURL string) ([]byte, error) {
-	client := &http.Client{}
 	req, err := http.NewRequest("GET", apiURL, nil)
 	if err != nil {
 		return nil, err
@@ -52,11 +51,33 @@ func jiraRequest(apiURL string) ([]byte, error) {
 	req.Header.Add("Accept", "application/json")
 	req.Header.Add("Content-Type", "application/json")
 
-	resp, err := client.Do(req)
+	var finalError error // keep the last error seen in case all attempts fail
+	for _, wait := range []time.Duration{0, 1, 5, 15} {
+		// sleep for an increasing time before retrying
+		time.Sleep(wait * time.Minute)
+
+		var bytes []byte
+		bytes, finalError = singleJiraRequest(req)
+		if finalError == nil {
+			return bytes, nil
+		}
+		log.Errorf("jira request failed: %v", err)
+	}
+	return nil, finalError
+}
+
+func singleJiraRequest(req *http.Request) ([]byte, error) {
+	// needing this method seemed a bit silly but defer in a loop is a no-no
+	resp, err := (&http.Client{}).Do(req)
+	if err == nil {
+		defer resp.Body.Close()
+		if resp.StatusCode != http.StatusOK {
+			err = errors.New(resp.Status)
+		}
+	}
 	if err != nil {
 		return nil, err
 	}
-	defer resp.Body.Close()
 
 	return io.ReadAll(resp.Body)
 }
