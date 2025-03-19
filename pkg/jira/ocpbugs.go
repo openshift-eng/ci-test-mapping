@@ -61,7 +61,7 @@ func jiraRequest(apiURL string) ([]byte, error) {
 		if finalError == nil {
 			return bytes, nil
 		}
-		log.Errorf("jira request failed: %v", err)
+		log.Errorf("jira request failed: %v", finalError)
 	}
 	return nil, finalError
 }
