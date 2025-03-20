@@ -36,8 +36,36 @@ var ClusterVersionOperatorComponent = Component{
 			},
 			{
 				IncludeAll: []string{"upgrade"},
+				// There are other component's cases with `upgrade` substring in the name, excluded them
+				ExcludeAny: []string{
+					"Cluster_Infrastructure",
+					"Cloud credential",
+					"OCP-13016",
+					"OCP-22612",
+					"OCP-41804",
+					"OCP-64657",
+					"OAP cert-manager",
+					"samples/openshift-controller-manager/image-registry operators",
+					"etcd-operator and cluster works well after upgrade",
+					"Seccomp part of SCC policy should be kept and working after upgrade",
+					"Make sure multiple resources work well after upgrade",
+					"upgrade should succeed: rhel",
+					"upgrade should succeed: machine-config",
+					"upgrade should succeed:  ",
+				},
 				// Let others claim upgrade tests (i.e. for their component)
 				Priority: -10,
+			},
+			{
+				// all cvo QE cases include "OTA cvo should"
+				// the junit report of Prow upgrade ci is like pattern "upgrade should succeed: $UPGRADE_FAILURE_TYPE"
+				IncludeAny: []string{
+					"OTA cvo should",
+					"upgrade should succeed: overall",
+					"upgrade should succeed: cvo",
+					"upgrade should succeed: rollback",
+					"upgrade should succeed: admin_ack",
+				},
 			},
 			{
 				IncludeAny: []string{
@@ -51,10 +79,6 @@ var ClusterVersionOperatorComponent = Component{
 					"[sig-cluster-lifecycle] TestAdminAck should succeed [apigroup:config.openshift.io] [Suite:openshift/conformance/parallel]",
 					"[sig-cluster-lifecycle] TestAdminAck should succeed [Suite:openshift/conformance/parallel]",
 				},
-			},
-			{
-				// all cvo QE cases from ginkgo include "OTA cvo" and prow ci include "cluster upgrade" in junit xml
-				IncludeAny: []string{"OTA cvo", "cluster upgrade"},
 			},
 		},
 	},
