@@ -16,9 +16,10 @@ var UpdateComponent = Component{
 		DefaultJiraComponent: "oc / update",
 		Matchers: []config.ComponentMatcher{
 			{
-				// all OTA team oc QE cases from ginkgo include "OTA oc" in junit xml
+				// all OTA team oc QE cases from ginkgo include "OTA oc should" in junit xml
 				IncludeAny: []string{
-					"OTA oc",
+					"OTA oc should",
+					"upgrade should succeed: oc_update",
 				},
 			},
 		},
