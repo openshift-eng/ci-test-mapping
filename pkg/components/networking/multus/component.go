@@ -18,17 +18,13 @@ var MultusComponent = Component{
 			"openshift-multus",
 		},
 		Matchers: []config.ComponentMatcher{
-			{Suite: "CNI related features"},
+			{
+				IncludeAll: []string{"multihoming", "multinetworkpolicy", "multus"},
+			},
+
 			{Suite: "Multus-CNI ipv6 related scenarios"},
 			{Suite: "Multus-CNI related scenarios"},
 			{Suite: "SDN multus compoment upgrade testing"},
-			{Suite: "CNI related features"},
-			{Suite: "Multus-CNI ipv6 related scenarios"},
-			{Suite: "Multus-CNI related scenarios"},
-			{Suite: "SDN multus compoment upgrade testing"},
-			{Suite: "SDN multihoming"},
-			{Suite: "SDN multinetworkpolicy"},
-			{Suite: "SDN multus"},
 		},
 		TestRenames: map[string]string{
 			"[Networking][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-multus":    "[bz-Networking][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-multus",

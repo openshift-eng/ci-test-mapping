@@ -12,9 +12,13 @@ type Component struct {
 var SRIOVComponent = Component{
 	Component: &config.Component{
 		Name:                 "Networking / SR-IOV",
-		Operators:            []string{},
+		Operators:            []string{"sriov-network-operator"},
 		DefaultJiraComponent: "Networking / SR-IOV",
-		Matchers:             []config.ComponentMatcher{},
+		Matchers: []config.ComponentMatcher{
+			{
+				IncludeAll: []string{"sriov"},
+			},
+		},
 	},
 }
 
