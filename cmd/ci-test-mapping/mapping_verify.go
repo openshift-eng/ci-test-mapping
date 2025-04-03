@@ -19,7 +19,7 @@ import (
 var verifyMapFlags = NewVerifyMapFlags()
 var mappingFiles = []string{
 	"data/openshift-gce-devel/ci_analysis_us/component_mapping.json",
-	"data/openshift-gce-devel/ci_analaysis_us/qe_component_mapping.json",
+	"data/openshift-gce-devel/ci_analysis_qe/component_mapping.json",
 }
 
 type VerifyMapFlags struct {
@@ -51,6 +51,11 @@ var verifyMapCmd = &cobra.Command{
 				fmt.Println("Failed to fetch data:", err)
 				return
 			}
+			if response.StatusCode != 200 {
+				fmt.Println("Failed to fetch data:", response.StatusCode)
+				return
+			}
+
 			currentMap, err := fetchMap(response.Body)
 			if err != nil {
 				logrus.WithError(err).Fatalf("couldn't fetch current mapping")
