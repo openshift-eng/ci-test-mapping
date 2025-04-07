@@ -27,6 +27,11 @@ var OpenshiftInstallerComponent = Component{
 			},
 			{Suite: "cluster install"},
 			{Suite: "fips"},
+			{
+				IncludeAny: []string{
+					"upgrade should succeed: rhel",
+				},
+			},
 		},
 	},
 }

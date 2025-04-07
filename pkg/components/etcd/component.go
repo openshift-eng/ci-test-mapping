@@ -34,6 +34,8 @@ var EtcdComponent = Component{
 			{
 				IncludeAny: []string{
 					":Etcd ",
+					"etcd-operator and cluster works well after upgrade",
+					"upgrade should succeed: etcd",
 				},
 				Priority: 1,
 			},

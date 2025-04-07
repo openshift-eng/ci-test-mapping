@@ -32,6 +32,7 @@ var UnknownComponent = Component{
 					"bz-control-plane-machine-set",
 					"Managed cluster should have same number of Machines and Nodes",
 					"control plane machine set operator",
+					"upgrade should succeed: control-plane-machine-set",
 				},
 				Priority: -1,
 			},

@@ -22,6 +22,11 @@ var NodeTuningOperatorComponent = Component{
 				IncludeAll: []string{"bz-Node Tuning Operator"},
 			},
 			{Suite: "PSAP"},
+			{
+				IncludeAny: []string{
+					"upgrade should succeed: node-tuning",
+				},
+			},
 		},
 		TestRenames: map[string]string{
 			"[Node Tuning Operator][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cluster-node-tuning-operator":    "[bz-Node Tuning Operator][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cluster-node-tuning-operator",

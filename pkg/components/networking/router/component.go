@@ -51,6 +51,7 @@ var RouterComponent = Component{
 					"[sig-network-edge][Feature:Idling] Unidling should work with TCP (when fully idled) [Skipped:Network/OVNKubernetes] [Suite:openshift/conformance/parallel]",
 					"[sig-network-edge][Feature:Idling] Unidling should work with UDP [Suite:openshift/conformance/parallel]",
 					"[sig-networking] should not see excessive FailedToUpdateEndpointSlices Error updating Endpoint Slices",
+					"upgrade should succeed: ingress",
 				},
 			},
 			{Suite: "Network_Edge"},

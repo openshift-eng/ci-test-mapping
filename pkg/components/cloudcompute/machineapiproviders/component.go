@@ -19,6 +19,7 @@ var MachineAPIProvidersComponent = Component{
 				IncludeAny: []string{
 					"[sig-cluster-lifecycle] Cluster_Infrastructure MAPI",
 					"[sig-cluster-lifecycle] Cluster_Infrastructure Upgrade",
+					"upgrade should succeed: machine-api",
 				},
 				Priority: 1,
 			},

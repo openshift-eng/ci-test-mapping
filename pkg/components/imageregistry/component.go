@@ -38,6 +38,8 @@ var ImageRegistryComponent = Component{
 			{
 				IncludeAny: []string{
 					":ImageRegistry ",
+					"samples/openshift-controller-manager/image-registry operators",
+					"upgrade should succeed: image-registry",
 				},
 				Priority: 1,
 			},

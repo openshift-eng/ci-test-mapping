@@ -43,6 +43,8 @@ var StorageComponent = Component{
 			{
 				IncludeAny: []string{
 					":Storage ",
+					"upgrade should succeed: storage",
+					"upgrade should succeed: csi-snapshot-controller",
 				},
 				Priority: 1,
 			},

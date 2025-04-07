@@ -33,6 +33,7 @@ var KubeApiserverComponent = Component{
 					"API LBs follow /readyz of kube-apiserver",
 					"clients should not use APIs that are removed in upcoming releases",
 					"operators should not create watch channels very often",
+					"upgrade should succeed: kube-apiserver",
 				},
 			},
 			{

@@ -28,6 +28,7 @@ var ApiserverAuthComponent = Component{
 					":APIServer ",
 					":Authentication ",
 					":Authentication:",
+					"upgrade should succeed: authentication",
 				},
 				Priority: 2,
 			},

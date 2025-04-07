@@ -26,6 +26,11 @@ var ManagementConsoleComponent = Component{
 				IncludeAll: []string{"UserInterface"},
 				Priority:   -1,
 			},
+			{
+				IncludeAny: []string{
+					"upgrade should succeed: baremetal",
+				},
+			},
 		},
 		TestRenames: map[string]string{
 			"[Management Console][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-console":             "[bz-Management Console][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-console",

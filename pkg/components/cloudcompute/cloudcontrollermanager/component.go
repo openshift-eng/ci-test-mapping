@@ -40,6 +40,9 @@ var CloudControllerManagerComponent = Component{
 			{
 				IncludeAny: []string{
 					"[sig-cluster-lifecycle] Cluster_Infrastructure CCM",
+					"upgrade should succeed: cloud-controller-manager",
+					"OCP-41804",
+					"OCP-64657",
 				},
 				Priority: 2,
 			},

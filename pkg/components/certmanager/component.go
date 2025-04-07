@@ -21,6 +21,11 @@ var CertManagerComponent = Component{
 			{
 				IncludeAll: []string{"CFE cert-manager"}, // cert-manager QE cases all have "CFE cert-manager" in junit xml
 			},
+			{
+				IncludeAny: []string{
+					"OAP cert-manager",
+				},
+			},
 		},
 	},
 }

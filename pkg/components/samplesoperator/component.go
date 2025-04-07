@@ -24,6 +24,11 @@ var SamplesOperatorComponent = Component{
 			{
 				IncludeAll: []string{"bz-samples"},
 			},
+			{
+				IncludeAny: []string{
+					"upgrade should succeed: openshift-samples",
+				},
+			},
 		},
 		TestRenames: map[string]string{
 			"[Samples][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cluster-samples-operator":    "[bz-Samples][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cluster-samples-operator",

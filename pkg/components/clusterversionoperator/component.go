@@ -40,6 +40,17 @@ var ClusterVersionOperatorComponent = Component{
 				Priority: -10,
 			},
 			{
+				// all cvo QE cases include "OTA cvo should"
+				// the junit report of Prow upgrade ci is like pattern "upgrade should succeed: $UPGRADE_FAILURE_TYPE"
+				IncludeAny: []string{
+					"OTA cvo should",
+					"upgrade should succeed: overall",
+					"upgrade should succeed: cvo",
+					"upgrade should succeed: rollback",
+					"upgrade should succeed: admin_ack",
+				},
+			},
+			{
 				IncludeAny: []string{
 					"[sig-arch] ClusterOperators [apigroup:config.openshift.io] should define at least one namespace in their lists of related objects  [Suite:openshift/conformance/parallel]",
 					"[sig-arch] ClusterOperators [apigroup:config.openshift.io] should define at least one namespace in their lists of related objects [Suite:openshift/conformance/parallel]",
@@ -51,10 +62,6 @@ var ClusterVersionOperatorComponent = Component{
 					"[sig-cluster-lifecycle] TestAdminAck should succeed [apigroup:config.openshift.io] [Suite:openshift/conformance/parallel]",
 					"[sig-cluster-lifecycle] TestAdminAck should succeed [Suite:openshift/conformance/parallel]",
 				},
-			},
-			{
-				// all cvo QE cases from ginkgo include "OTA cvo" and prow ci include "cluster upgrade" in junit xml
-				IncludeAny: []string{"OTA cvo", "cluster upgrade"},
 			},
 		},
 	},

@@ -22,6 +22,11 @@ var ControllerManagerComponent = Component{
 			{
 				IncludeAll: []string{"bz-openshift-controller-manager"},
 			},
+			{
+				IncludeAny: []string{
+					"upgrade should succeed: openshift-controller-manager",
+				},
+			},
 			{Suite: "Check rollout restart and retry in Deployment/DC"},
 		},
 		TestRenames: map[string]string{

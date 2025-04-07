@@ -28,6 +28,8 @@ var ClusterAutoscalerComponent = Component{
 			{
 				IncludeAny: []string{
 					"[sig-cluster-lifecycle] Cluster_Infrastructure CAS",
+					"upgrade should succeed: cluster-autoscaler",
+					"OCP-22612",
 				},
 				Priority: 2,
 			},

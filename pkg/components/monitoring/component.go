@@ -53,6 +53,11 @@ var MonitoringComponent = Component{
 			{Suite: "query browser"},
 			{Suite: "Install and configuration related scenarios"},
 			{Suite: "Monitoring dashboards related features"},
+			{
+				IncludeAny: []string{
+					"upgrade should succeed: monitoring",
+				},
+			},
 		},
 	},
 }
