@@ -41,6 +41,11 @@ var DNSComponent = Component{
 				Priority:   1,
 			},
 			{Suite: "Testing DNS features"},
+			{
+				IncludeAny: []string{
+					"upgrade should succeed: dns",
+				},
+			},
 		},
 	},
 }

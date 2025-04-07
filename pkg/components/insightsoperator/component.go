@@ -25,6 +25,11 @@ var InsightsOperatorComponent = Component{
 				IncludeAll: []string{"insights-operator"},
 			},
 			{Suite: "Insights check"},
+			{
+				IncludeAny: []string{
+					"upgrade should succeed: insights",
+				},
+			},
 		},
 		TestRenames: map[string]string{
 			"[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-insights":    "[bz-Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-insights",

@@ -22,6 +22,11 @@ var KubeStorageVersionMigratorComponent = Component{
 			{
 				IncludeAll: []string{"bz-kube-storage-version-migrator"},
 			},
+			{
+				IncludeAny: []string{
+					"upgrade should succeed: kube-storage-version-migrator",
+				},
+			},
 		},
 		TestRenames: map[string]string{
 			"[kube-storage-version-migrator][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kube-storage-version-migrator":             "[bz-kube-storage-version-migrator][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kube-storage-version-migrator",

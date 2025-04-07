@@ -18,6 +18,7 @@ var MachineCSRApproverComponent = Component{
 			{
 				IncludeAny: []string{
 					"[sig-cluster-lifecycle] Cluster_Infrastructure CMA",
+					"upgrade should succeed: machine-approver",
 				},
 				Priority: 2,
 			},

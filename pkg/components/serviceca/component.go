@@ -22,6 +22,11 @@ var ServiceCaComponent = Component{
 			{
 				IncludeAll: []string{"[bz-service-ca]"},
 			},
+			{
+				IncludeAny: []string{
+					"upgrade should succeed: service-ca",
+				},
+			},
 		},
 		TestRenames: map[string]string{
 			"[service-ca][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-service-ca":             "[bz-service-ca][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-service-ca",

@@ -26,6 +26,7 @@ var KubeControllerManagerComponent = Component{
 				IncludeAny: []string{
 					"Feature:ClusterResourceQuota",
 					"ResourceQuota",
+					"upgrade should succeed: kube-controller-manager",
 				},
 				Priority: 1, // quota is owned by KCM more strongly than apimachinery
 			},

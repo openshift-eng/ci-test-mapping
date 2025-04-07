@@ -27,6 +27,12 @@ var CloudCredentialOperatorComponent = Component{
 			},
 			{Suite: "CloudCredentialOperator components upgrade tests"},
 			{Suite: "cloud credential operator"},
+			{
+				IncludeAny: []string{
+					"Cloud credential",
+					"upgrade should succeed: cloud-credential",
+				},
+			},
 		},
 	},
 }

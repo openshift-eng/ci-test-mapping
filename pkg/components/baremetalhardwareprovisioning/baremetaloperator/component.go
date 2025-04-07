@@ -14,7 +14,13 @@ var BaremetalOperatorComponent = Component{
 		Name:                 "Bare Metal Hardware Provisioning / baremetal-operator",
 		Operators:            []string{},
 		DefaultJiraComponent: "Bare Metal Hardware Provisioning / baremetal-operator",
-		Matchers:             []config.ComponentMatcher{},
+		Matchers: []config.ComponentMatcher{
+			{
+				IncludeAny: []string{
+					"upgrade should succeed: console",
+				},
+			},
+		},
 	},
 }
 

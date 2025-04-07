@@ -21,6 +21,11 @@ var ConfigOperatorComponent = Component{
 			{
 				IncludeAll: []string{"bz-config-operator"},
 			},
+			{
+				IncludeAny: []string{
+					"upgrade should succeed: config-operator",
+				},
+			},
 		},
 		TestRenames: map[string]string{
 			"[config-operator][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-config-operator":    "[bz-config-operator][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-config-operator",

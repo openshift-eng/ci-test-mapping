@@ -32,6 +32,7 @@ var MachineConfigOperatorComponent = Component{
 					"machine-config-operator",
 					"node count should match or exceed machine count",
 					"OSUpdateStarted event should be recorded for nodes that reach OSUpdateStaged",
+					"upgrade should succeed: machine-config",
 				},
 			},
 			{

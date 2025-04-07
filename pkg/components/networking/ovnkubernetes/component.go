@@ -34,6 +34,11 @@ var OvnKubernetesComponent = Component{
 			{Suite: "SDN/OVN metrics related networking scenarios"},
 			{Suite: "ipv6 dual stack cluster test scenarios"},
 			{Suite: "sdn2ovn migration testing"},
+			{
+				IncludeAny: []string{
+					"upgrade should succeed: network",
+				},
+			},
 		},
 		TestRenames: map[string]string{
 			"[Networking][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ovn-kubernetes":    "[bz-Networking][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ovn-kubernetes",

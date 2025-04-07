@@ -26,6 +26,11 @@ var KubeSchedulerComponent = Component{
 				SIG:      "sig-scheduling",
 				Priority: -20,
 			},
+			{
+				IncludeAny: []string{
+					"upgrade should succeed: kube-scheduler",
+				},
+			},
 			{Suite: "Scheduler predicates and priority test suites"},
 			{Suite: "Scheduler related scenarios"},
 			{Suite: "Testing Scheduler Operator related scenarios"},
