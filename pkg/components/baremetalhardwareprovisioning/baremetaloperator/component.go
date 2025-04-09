@@ -17,7 +17,7 @@ var BaremetalOperatorComponent = Component{
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAny: []string{
-					"upgrade should succeed: console",
+					"upgrade should succeed: baremetal",
 				},
 			},
 		},
