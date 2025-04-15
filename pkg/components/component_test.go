@@ -65,12 +65,16 @@ func TestIdentifyTest(t *testing.T) {
 			}
 
 			testOwnership, err := ti.Identify(tt.testInfo)
-			if tt.wantError == "" && err != nil {
-				t.Fatalf("IdentifyTest() returned unexpected err: %+v", err)
-			} else if tt.wantError != "" && err == nil {
+
+			if err != nil {
+				if tt.wantError == "" {
+					t.Fatalf("IdentifyTest() returned unexpected err: %+v", err)
+				}
+				if !strings.Contains(err.Error(), tt.wantError) {
+					t.Fatalf("IdentifyTest() did not return expected err %q: %+v", tt.wantError, err)
+				}
+			} else if tt.wantError != "" {
 				t.Fatalf("IdentifyTest() did not return expected err: %+v", err)
-			} else if err != nil && !strings.Contains(err.Error(), tt.wantError) {
-				t.Fatalf("IdentifyTest() did not return expected err %q: %+v", tt.wantError, err)
 			}
 
 			if tt.wantComponent != "" && testOwnership.Component != tt.wantComponent {
