@@ -28,7 +28,7 @@ var ManagementConsoleComponent = Component{
 			},
 			{
 				IncludeAny: []string{
-					"upgrade should succeed: baremetal",
+					"upgrade should succeed: console",
 				},
 			},
 		},
