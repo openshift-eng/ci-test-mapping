@@ -62,6 +62,7 @@ var (
 		"openshift-openstack-infra",
 		"openshift-operator-lifecycle-manager",
 		"openshift-operators",
+		"openshift-catalogd",
 		"openshift-operator-controller",
 		"openshift-cluster-olm-operator",
 		"openshift-rukpak",
@@ -129,6 +130,7 @@ var (
 		"openshift-openstack-infra":                        "Machine Config Operator / platform-openstack",
 		"openshift-operator-lifecycle-manager":             "OLM",
 		"openshift-operators":                              "OLM",
+		"openshift-catalogd":                               "OLM",
 		"openshift-operator-controller":                    "OLM",
 		"openshift-cluster-olm-operator":                   "OLM",
 		"openshift-rukpak":                                 "OLM",
@@ -216,6 +218,7 @@ var (
 			"openshift-cluster-node-tuning-operator",
 		},
 		"OLM": {
+			"openshift-catalogd",
 			"openshift-cluster-olm-operator",
 			"openshift-marketplace",
 			"openshift-operator-controller",
