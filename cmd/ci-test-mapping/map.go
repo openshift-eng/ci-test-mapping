@@ -108,7 +108,7 @@ var mapCmd = &cobra.Command{
 		var matched, unmatched int
 		success := true
 		for i := range tests {
-			ownership, err := testIdentifier.Identify(&tests[i])
+			ownership, err := testIdentifier.Identify(tests[i])
 			if err != nil {
 				log.WithError(err).Warningf("encountered error in component identification")
 				success = false
