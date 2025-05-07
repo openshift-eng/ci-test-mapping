@@ -1,4 +1,4 @@
-package cloudcomputeclusterautoscaler
+package clusterautoscaler
 
 import (
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
@@ -11,9 +11,9 @@ type Component struct {
 
 var ClusterAutoscalerComponent = Component{
 	Component: &config.Component{
-		Name:                 "Cloud Compute / Cluster Autoscaler",
+		Name:                 "Cluster Autoscaler",
 		Operators:            []string{"cluster-autoscaler"},
-		DefaultJiraComponent: "Cloud Compute / Cluster Autoscaler",
+		DefaultJiraComponent: "Cluster Autoscaler",
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAny: []string{

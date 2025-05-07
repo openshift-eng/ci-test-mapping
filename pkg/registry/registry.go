@@ -18,7 +18,6 @@ import (
 	cloudcomputebaremetalprovider "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudcompute/baremetalprovider"
 	cloudcomputecloudcontrollermanager "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudcompute/cloudcontrollermanager"
 	cloudcomputeclusterapiproviders "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudcompute/clusterapiproviders"
-	cloudcomputeclusterautoscaler "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudcompute/clusterautoscaler"
 	cloudcomputecontrolplanemachineset "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudcompute/controlplanemachineset"
 	cloudcomputeexternalprovider "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudcompute/externalprovider"
 	cloudcomputeibmprovider "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudcompute/ibmprovider"
@@ -36,6 +35,7 @@ import (
 	cloudnativeeventscloudeventproxy "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudnativeevents/cloudeventproxy"
 	cloudnativeeventscloudnativeevents "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudnativeevents/cloudnativeevents"
 	cloudnativeeventshardwareeventproxy "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudnativeevents/hardwareeventproxy"
+	clusterautoscaler "github.com/openshift-eng/ci-test-mapping/pkg/components/clusterautoscaler"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/clusterloader"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/clusterresourceoverrideadmissionoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/clusterversionoperator"
@@ -234,10 +234,10 @@ func NewComponentRegistry() *Registry {
 	r.Register("Bare Metal Hardware Provisioning", &baremetalhardwareprovisioning.BareMetalHardwareProvisioningComponent)
 	r.Register("Build", &build.BuildComponent)
 	r.Register("CNF-Cert-TNF", &cnfcerttnf.CNFCertTNFComponent)
+	r.Register("Cluster Autoscaler", &clusterautoscaler.ClusterAutoscalerComponent)
 	r.Register("Cloud Compute / BareMetal Provider", &cloudcomputebaremetalprovider.BareMetalProviderComponent)
 	r.Register("Cloud Compute / Cloud Controller Manager", &cloudcomputecloudcontrollermanager.CloudControllerManagerComponent)
 	r.Register("Cloud Compute / Cluster API Providers", &cloudcomputeclusterapiproviders.ClusterAPIProvidersComponent)
-	r.Register("Cloud Compute / Cluster Autoscaler", &cloudcomputeclusterautoscaler.ClusterAutoscalerComponent)
 	r.Register("Cloud Compute / ControlPlaneMachineSet", &cloudcomputecontrolplanemachineset.ControlPlaneMachineSetComponent)
 	r.Register("Cloud Compute / External Provider", &cloudcomputeexternalprovider.ExternalProviderComponent)
 	r.Register("Cloud Compute / IBM Provider", &cloudcomputeibmprovider.IBMProviderComponent)
