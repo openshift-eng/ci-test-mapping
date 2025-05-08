@@ -11,7 +11,7 @@ type Component struct {
 
 var ClusterAutoscalerComponent = Component{
 	Component: &config.Component{
-		Name:                 "Cloud Compute / Cluster Autoscaler",
+		Name:                 "Cluster Autoscaler",
 		Operators:            []string{"cluster-autoscaler"},
 		DefaultJiraComponent: "Cluster Autoscaler",
 		Matchers: []config.ComponentMatcher{
