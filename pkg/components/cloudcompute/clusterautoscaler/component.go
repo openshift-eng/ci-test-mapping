@@ -13,7 +13,7 @@ var ClusterAutoscalerComponent = Component{
 	Component: &config.Component{
 		Name:                 "Cloud Compute / Cluster Autoscaler",
 		Operators:            []string{"cluster-autoscaler"},
-		DefaultJiraComponent: "Cloud Compute / Cluster Autoscaler",
+		DefaultJiraComponent: "Cluster Autoscaler",
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAny: []string{
