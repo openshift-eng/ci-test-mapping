@@ -16,7 +16,7 @@ func TestIdentifyTest(t *testing.T) {
 	tests := []struct {
 		before           func() error
 		name             string
-		testInfo         v1.TestInfo
+		testInfo         *v1.TestInfo
 		wantError        string
 		wantComponent    string
 		wantCapabilities []string
@@ -25,25 +25,25 @@ func TestIdentifyTest(t *testing.T) {
 	}{
 		{
 			name:             "identifies the correct component and capability",
-			testInfo:         v1.TestInfo{Name: "[sig-storage][Feature:foobar] component with feature"},
+			testInfo:         &v1.TestInfo{Name: "[sig-storage][Feature:foobar] component with feature"},
 			wantComponent:    "Storage",
 			wantCapabilities: []string{"foobar"},
 		},
 		{
 			name:             "identifies the correct component with default capability",
-			testInfo:         v1.TestInfo{Name: "[sig-storage] component with unknown capability"},
+			testInfo:         &v1.TestInfo{Name: "[sig-storage] component with unknown capability"},
 			wantComponent:    "Storage",
 			wantCapabilities: []string{"Other"},
 		},
 		{
 			name:             "handles unknown capability",
-			testInfo:         v1.TestInfo{Name: "[sig-something] what even is this"},
+			testInfo:         &v1.TestInfo{Name: "[sig-something] what even is this"},
 			wantComponent:    "Unknown",
 			wantCapabilities: []string{"Other"},
 		},
 		{
 			name:      "detects duplicate owners without priority",
-			testInfo:  v1.TestInfo{Name: "[sig-storage] A storage test"},
+			testInfo:  &v1.TestInfo{Name: "[sig-storage] A storage test"},
 			wantError: "unable to resolve conflict",
 			before: func() error {
 				componentRegistry.Register("storage2", &storage.StorageComponent)
@@ -52,16 +52,15 @@ func TestIdentifyTest(t *testing.T) {
 		},
 		{
 			name:             "categorizes capability based on variants",
-			testInfo:         v1.TestInfo{Name: "[sig-qe] test with variants", Variants: []string{"Procedure:automated-release"}},
+			testInfo:         &v1.TestInfo{Name: "[sig-qe] test with variants", Variants: []string{"Procedure:automated-release"}},
 			wantCapabilities: []string{"LEVEL0"},
 		},
 		{
 			name: "identifies the correct testID for kubernetes renamed test",
-			testInfo: v1.TestInfo{
-				Name:  "[sig-api-machinery] Aggregator Should be able to support the 1.17 Sample API Server using the current Aggregator [Conformance]",
-				Suite: "openshift/conformance/parallel/minimal",
+			testInfo: &v1.TestInfo{
+				Name: "[sig-network] DNS should provide DNS for the cluster [Conformance] [Suite:openshift/conformance/parallel/minimal] [Suite:k8s]",
 			},
-			wantID: "openshift/conformance/parallel/minimal:72f9da4eba692bc8c82964cbd766eb5f",
+			wantID: "[sig-network] DNS should provide DNS for the cluster [Conformance] [Skipped:Proxy] [Suite:openshift/conformance/parallel/minimal] [Suite:k8s]",
 		},
 	}
 	ti := NewTestIdentifier(componentRegistry, nil)

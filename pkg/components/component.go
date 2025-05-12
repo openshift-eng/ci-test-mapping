@@ -39,13 +39,13 @@ func NewTestIdentifier(reg *registry.Registry, componentIDs map[string]int64) *T
 	}
 }
 
-func (t *TestIdentifier) Identify(test v1.TestInfo) (*v1.TestOwnership, error) {
+func (t *TestIdentifier) Identify(test *v1.TestInfo) (*v1.TestOwnership, error) {
 	var ownerships []*v1.TestOwnership
 
 	log.WithFields(testInfoLogFields(test)).Debugf("attempting to identify test using %d components", len(t.reg.Components))
 	for name, component := range t.reg.Components {
 		log.WithFields(testInfoLogFields(test)).Tracef("checking component %q", name)
-		ownership, err := component.IdentifyTest(&test)
+		ownership, err := component.IdentifyTest(test)
 		if err != nil {
 			log.WithError(err).Errorf("component %q returned an error", name)
 			return nil, err
@@ -74,11 +74,11 @@ func (t *TestIdentifier) Identify(test v1.TestInfo) (*v1.TestOwnership, error) {
 	return highestPriority, nil
 }
 
-func (t *TestIdentifier) setDefaults(testInfo v1.TestInfo, testOwnership *v1.TestOwnership, c v1.Component) *v1.TestOwnership {
+func (t *TestIdentifier) setDefaults(testInfo *v1.TestInfo, testOwnership *v1.TestOwnership, c v1.Component) *v1.TestOwnership {
 	// Kubernetes renames represent a global rename of tests that can belong to any (or no) components
 	// They were renamed when openshift/kubernetes ceased the annotation of tests
 	if newName, ok := KubernetesRenames[testInfo.Name]; ok {
-		testInfo = v1.TestInfo{
+		testInfo = &v1.TestInfo{
 			Name:     newName,
 			Suite:    testInfo.Suite,
 			Variants: testInfo.Variants,
@@ -86,7 +86,7 @@ func (t *TestIdentifier) setDefaults(testInfo v1.TestInfo, testOwnership *v1.Tes
 	}
 	if testOwnership.ID == "" {
 		if c != nil {
-			testOwnership.ID = util.StableID(testInfo, c.StableID(&testInfo))
+			testOwnership.ID = util.StableID(testInfo, c.StableID(testInfo))
 		} else {
 			testOwnership.ID = util.StableID(testInfo, testInfo.Name)
 		}
@@ -113,7 +113,7 @@ func (t *TestIdentifier) setDefaults(testInfo v1.TestInfo, testOwnership *v1.Tes
 	}
 
 	if len(testOwnership.Capabilities) == 0 {
-		capabilities := util.DefaultCapabilities(&testInfo)
+		capabilities := util.DefaultCapabilities(testInfo)
 		if len(capabilities) == 0 {
 			capabilities = []string{DefaultCapability}
 		}
@@ -127,7 +127,7 @@ func (t *TestIdentifier) setDefaults(testInfo v1.TestInfo, testOwnership *v1.Tes
 	return testOwnership
 }
 
-func testInfoLogFields(testInfo v1.TestInfo) log.Fields {
+func testInfoLogFields(testInfo *v1.TestInfo) log.Fields {
 	return log.Fields{
 		"name":  testInfo.Name,
 		"suite": testInfo.Suite,
