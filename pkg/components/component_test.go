@@ -20,6 +20,7 @@ func TestIdentifyTest(t *testing.T) {
 		wantError        string
 		wantComponent    string
 		wantCapabilities []string
+		wantID           string
 		after            func() error
 	}{
 		{
@@ -54,6 +55,13 @@ func TestIdentifyTest(t *testing.T) {
 			testInfo:         &v1.TestInfo{Name: "[sig-qe] test with variants", Variants: []string{"Procedure:automated-release"}},
 			wantCapabilities: []string{"LEVEL0"},
 		},
+		{
+			name: "identifies the correct testID for kubernetes renamed test",
+			testInfo: &v1.TestInfo{
+				Name: "[sig-network] DNS should provide DNS for the cluster [Conformance] [Suite:openshift/conformance/parallel/minimal] [Suite:k8s]",
+			},
+			wantID: "[sig-network] DNS should provide DNS for the cluster [Conformance] [Skipped:Proxy] [Suite:openshift/conformance/parallel/minimal] [Suite:k8s]",
+		},
 	}
 	ti := NewTestIdentifier(componentRegistry, nil)
 	for _, tt := range tests {
@@ -82,6 +90,9 @@ func TestIdentifyTest(t *testing.T) {
 			}
 			if tt.wantCapabilities != nil && !reflect.DeepEqual(testOwnership.Capabilities, tt.wantCapabilities) {
 				t.Errorf("IdentifyTest() gotCapabilities = %v, want %v", testOwnership.Capabilities, tt.wantCapabilities)
+			}
+			if tt.wantID != "" && testOwnership.ID != tt.wantID {
+				t.Errorf("IdentifyTest() gotID = %s, want %s", testOwnership.ID, tt.wantID)
 			}
 		})
 	}
