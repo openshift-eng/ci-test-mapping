@@ -31,6 +31,8 @@ var ManagementConsoleComponent = Component{
 					"upgrade should succeed: console",
 				},
 			},
+			{Suite: "Operator Hub tests"},
+			{Suite: "operatorhub feature related"},
 		},
 		TestRenames: map[string]string{
 			"[Management Console][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-console":             "[bz-Management Console][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-console",
