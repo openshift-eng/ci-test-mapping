@@ -210,7 +210,6 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/testframework"
 	testframeworkopenstack "github.com/openshift-eng/ci-test-mapping/pkg/components/testframework/openstack"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/testinfrastructure"
-	twonodearbiter "github.com/openshift-eng/ci-test-mapping/pkg/components/twonode/arbiter"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/twonodefencing"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/twonodewitharbiter"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/unknown"
@@ -398,7 +397,6 @@ func NewComponentRegistry() *Registry {
 	r.Register("Test Infrastructure", &testinfrastructure.TestInfrastructureComponent)
 	r.Register("Two Node Fencing", &twonodefencing.TwoNodeFencingComponent)
 	r.Register("Two Node with Arbiter", &twonodewitharbiter.TwoNodeWithArbiterComponent)
-	r.Register("TwoNode / Arbiter", &twonodearbiter.ArbiterComponent)
 	r.Register("Unknown", &unknown.UnknownComponent)
 	r.Register("Windows Containers", &windowscontainers.WindowsContainersComponent)
 	r.Register("apiserver-auth", &apiserverauth.ApiserverAuthComponent)
