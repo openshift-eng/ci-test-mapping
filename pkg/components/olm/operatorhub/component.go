@@ -14,9 +14,11 @@ var OperatorHubComponent = Component{
 		Name:                 "OLM / OperatorHub",
 		Operators:            []string{},
 		DefaultJiraComponent: "OLM / OperatorHub",
-		Matchers: []config.ComponentMatcher{
-			{Suite: "Operator Hub tests"},
-			{Suite: "operatorhub feature related"},
+		Matchers:             []config.ComponentMatcher{
+			// No QE OLM test cases belong to this component.
+			// These test case should belong to the Console team. Such as `Operator Hub tests.Operator Hub tests (OCP-62266,xiyuzhao,UserInterface) Filter operators based on nodes OS type`
+			// {Suite: "Operator Hub tests"},
+			// {Suite: "operatorhub feature related"},
 		},
 	},
 }
