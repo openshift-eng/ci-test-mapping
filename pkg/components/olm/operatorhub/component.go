@@ -17,6 +17,7 @@ var OperatorHubComponent = Component{
 		Matchers: []config.ComponentMatcher{
 			{Suite: "Operator Hub tests"},
 			{Suite: "operatorhub feature related"},
+			{Suite: "OLM-Catalog-Validation"},
 		},
 	},
 }
