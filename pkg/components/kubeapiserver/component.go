@@ -109,6 +109,7 @@ var KubeApiserverComponent = Component{
 			"[sig-arch][Late] all tls artifacts must be registered [Suite:openshift/conformance/parallel]":                                                  "[sig-arch][Late][Jira:\"kube-apiserver\"] all tls artifacts must be registered [Suite:openshift/conformance/parallel]",
 			"[sig-arch][Late] all registered tls artifacts must have no metadata violation regressions [Suite:openshift/conformance/parallel]":              "[sig-arch][Late][Jira:\"kube-apiserver\"] all registered tls artifacts must have no metadata violation regressions [Suite:openshift/conformance/parallel]",
 			"[sig-arch][Late] operators should not create watch channels very often":                                                                        "[sig-arch][Late] operators should not create watch channels very often [apigroup:apiserver.openshift.io] [Suite:openshift/conformance/parallel]",
+			"API LBs follow /readyz of kube-apiserver and stop sending requests before server shutdowns for external clients":                               "[sig-api-machinery][Feature:APIServer] API LBs follow /readyz of kube-apiserver and stop sending requests before server shutdowns for external clients",
 		},
 	},
 }
