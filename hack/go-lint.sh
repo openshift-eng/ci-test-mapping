@@ -20,6 +20,6 @@ else
   $DOCKER run --rm \
     --volume "${PWD}:/go/src/github.com/openshift-eng/ci-test-mapping:z" \
     --workdir /go/src/github.com/openshift-eng/ci-test-mapping \
-    docker.io/golangci/golangci-lint:v1.60.1 \
+    docker.io/golangci/golangci-lint:v1.64.8 \
     golangci-lint "${@}"
 fi
