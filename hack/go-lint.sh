@@ -7,7 +7,9 @@ set -ex
 
 if [ "$CI" = "true" ];
 then
-  golangci-lint "${@}"
+  go version
+  golangci-lint version -v
+  golangci-lint --timeout 10m "${@}"
 else
   DOCKER=${DOCKER:-podman}
 
