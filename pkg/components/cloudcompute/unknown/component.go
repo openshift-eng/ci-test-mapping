@@ -33,6 +33,7 @@ var UnknownComponent = Component{
 					"Managed cluster should have same number of Machines and Nodes",
 					"control plane machine set operator",
 					"upgrade should succeed: control-plane-machine-set",
+					"upgrade should succeed: cluster-api",
 				},
 				Priority: -1,
 			},
