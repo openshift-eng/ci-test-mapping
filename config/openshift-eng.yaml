@@ -13,6 +13,7 @@ includeSuites:
   - chaos-krkn
   - telco-verification
   - OLM-Catalog-Validation
+  - insights-operator-tests
 excludeSuites: []
 excludeTests:
   - "Build image%"

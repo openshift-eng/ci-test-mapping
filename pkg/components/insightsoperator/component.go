@@ -25,6 +25,7 @@ var InsightsOperatorComponent = Component{
 				IncludeAll: []string{"insights-operator"},
 			},
 			{Suite: "Insights check"},
+			{Suite: "insights-operator-tests"},
 			{
 				IncludeAny: []string{
 					"upgrade should succeed: insights",
