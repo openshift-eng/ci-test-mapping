@@ -24,6 +24,7 @@ var CertManagerComponent = Component{
 			{
 				IncludeAny: []string{
 					"OAP cert-manager",
+					"OAP eso",
 				},
 			},
 		},
