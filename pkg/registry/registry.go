@@ -40,6 +40,7 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/clusterresourceoverrideadmissionoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/clusterversionoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/cnfcerttnf"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/cnvlpinterop"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/complianceoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/confidentialcomputeattestation"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/configoperator"
@@ -435,6 +436,7 @@ func NewComponentRegistry() *Registry {
 	r.Register("secondary-scheduler-operator", &secondaryscheduleroperator.SecondarySchedulerOperatorComponent)
 	r.Register("service-ca", &serviceca.ServiceCaComponent)
 	r.Register("spire-operator", &spireoperator.SpireOperatorComponent)
+	r.Register("CNV-lp-interop", &cnvlpinterop.CNVLpInteropComponent)
 	// New components go here
 
 	return &r
