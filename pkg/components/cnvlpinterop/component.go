@@ -14,9 +14,7 @@ var CNVLpInteropComponent = Component{
 		Name:                 "CNV-lp-interop",
 		Operators:            []string{},
 		DefaultJiraComponent: "CNV-lp-interop",
-		Matchers:             []config.ComponentMatcher{
-			{Suite: "CNV-lp-interop"},
-		},
+		Matchers:             []config.ComponentMatcher{{Suite: "CNV-lp-interop"}},
 	},
 }
 

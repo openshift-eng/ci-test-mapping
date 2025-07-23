@@ -1,7 +1,6 @@
 package registry
 
 import (
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/cnvlpinterop"
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/apiserverauth"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/awsloadbalanceroperator"
@@ -41,6 +40,7 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/clusterresourceoverrideadmissionoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/clusterversionoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/cnfcerttnf"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/cnvlpinterop"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/complianceoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/confidentialcomputeattestation"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/configoperator"
