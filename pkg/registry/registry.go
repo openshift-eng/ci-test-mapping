@@ -1,13 +1,6 @@
 package registry
 
 import (
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/zerotrustworkloadidentitymanager"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/secretsstorecsidriver"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/ocloudmanageroperator"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/leaderworkerset"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/jobset"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/externalsecretsoperator"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/ebpfmanager"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/cnvlpinterop"
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/apiserverauth"
@@ -444,13 +437,6 @@ func NewComponentRegistry() *Registry {
 	r.Register("service-ca", &serviceca.ServiceCaComponent)
 	r.Register("spire-operator", &spireoperator.SpireOperatorComponent)
 	r.Register("CNV-lp-interop", &cnvlpinterop.CNVLpInteropComponent)
-	r.Register("eBPF Manager", &ebpfmanager.EBPFManagerComponent)
-	r.Register("External Secrets Operator", &externalsecretsoperator.ExternalSecretsOperatorComponent)
-	r.Register("JobSet", &jobset.JobSetComponent)
-	r.Register("LeaderWorkerSet", &leaderworkerset.LeaderWorkerSetComponent)
-	r.Register("O-Cloud Manager Operator", &ocloudmanageroperator.OCloudManagerOperatorComponent)
-	r.Register("Secrets Store CSI driver", &secretsstorecsidriver.SecretsStoreCSIDriverComponent)
-	r.Register("zero-trust-workload-identity-manager", &zerotrustworkloadidentitymanager.ZeroTrustWorkloadIdentityManagerComponent)
 	// New components go here
 
 	return &r
