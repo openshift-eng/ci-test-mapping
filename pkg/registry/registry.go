@@ -1,13 +1,6 @@
 package registry
 
 import (
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/zerotrustworkloadidentitymanager"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/secretsstorecsidriver"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/ocloudmanageroperator"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/leaderworkerset"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/jobset"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/externalsecretsoperator"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/ebpfmanager"
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/apiserverauth"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/awsloadbalanceroperator"
@@ -57,8 +50,10 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/descheduler"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/devconsole"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/drivertoolkit"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/ebpfmanager"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/etcd"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/externaldnsoperator"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/externalsecretsoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/fileintegrityoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/gitopsztp"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/hawkular"
@@ -90,6 +85,7 @@ import (
 	installervsphere "github.com/openshift-eng/ci-test-mapping/pkg/components/installer/vsphere"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/isvoperators"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/jenkins"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/jobset"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/kmm"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/ksanstorage"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/kubeapiserver"
@@ -97,6 +93,7 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/kubescheduler"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/kubestorageversionmigrator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/lcaoperator"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/leaderworkerset"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/lightspeed"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/logging"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/logicalvolumemanagerstorage"
@@ -167,6 +164,7 @@ import (
 	ococmirror "github.com/openshift-eng/ci-test-mapping/pkg/components/oc/ocmirror"
 	ocupdate "github.com/openshift-eng/ci-test-mapping/pkg/components/oc/update"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/occompliance"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/ocloudmanageroperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/ocmirror"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/olm"
 	olmoperatorhub "github.com/openshift-eng/ci-test-mapping/pkg/components/olm/operatorhub"
@@ -194,6 +192,7 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/samplesoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/sandboxedcontainers"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/secondaryscheduleroperator"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/secretsstorecsidriver"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/security"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/securityprofilesoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/servicebinding"
@@ -221,6 +220,7 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/twonodewitharbiter"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/unknown"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/windowscontainers"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/zerotrustworkloadidentitymanager"
 )
 
 type Registry struct {
