@@ -18,7 +18,6 @@ import (
 	baremetalhardwareprovisioningironic "github.com/openshift-eng/ci-test-mapping/pkg/components/baremetalhardwareprovisioning/ironic"
 	baremetalhardwareprovisioningosimageprovider "github.com/openshift-eng/ci-test-mapping/pkg/components/baremetalhardwareprovisioning/osimageprovider"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/bmerevents"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/bpfman"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/build"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/certmanager"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/climanager"
@@ -408,7 +407,6 @@ func NewComponentRegistry() *Registry {
 	r.Register("Unknown", &unknown.UnknownComponent)
 	r.Register("Windows Containers", &windowscontainers.WindowsContainersComponent)
 	r.Register("apiserver-auth", &apiserverauth.ApiserverAuthComponent)
-	r.Register("bpfman", &bpfman.BpfmanComponent)
 	r.Register("cert-manager", &certmanager.CertManagerComponent)
 	r.Register("cli-manager", &climanager.CliManagerComponent)
 	r.Register("confidential-compute-attestation", &confidentialcomputeattestation.ConfidentialComputeAttestationComponent)
