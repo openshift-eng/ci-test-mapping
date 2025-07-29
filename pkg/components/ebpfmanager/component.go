@@ -1,4 +1,4 @@
-package bpfman
+package ebpfmanager
 
 import (
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
@@ -9,11 +9,11 @@ type Component struct {
 	*config.Component
 }
 
-var BpfmanComponent = Component{
+var EBPFManagerComponent = Component{
 	Component: &config.Component{
-		Name:                 "bpfman",
+		Name:                 "eBPF Manager",
 		Operators:            []string{},
-		DefaultJiraComponent: "bpfman",
+		DefaultJiraComponent: "eBPF Manager",
 		Matchers:             []config.ComponentMatcher{},
 	},
 }

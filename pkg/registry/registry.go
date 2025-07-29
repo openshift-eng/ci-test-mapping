@@ -11,7 +11,6 @@ import (
 	baremetalhardwareprovisioningironic "github.com/openshift-eng/ci-test-mapping/pkg/components/baremetalhardwareprovisioning/ironic"
 	baremetalhardwareprovisioningosimageprovider "github.com/openshift-eng/ci-test-mapping/pkg/components/baremetalhardwareprovisioning/osimageprovider"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/bmerevents"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/bpfman"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/build"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/certmanager"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/climanager"
@@ -51,8 +50,10 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/descheduler"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/devconsole"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/drivertoolkit"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/ebpfmanager"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/etcd"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/externaldnsoperator"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/externalsecretsoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/fileintegrityoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/gitopsztp"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/hawkular"
@@ -84,6 +85,7 @@ import (
 	installervsphere "github.com/openshift-eng/ci-test-mapping/pkg/components/installer/vsphere"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/isvoperators"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/jenkins"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/jobset"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/kmm"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/ksanstorage"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/kubeapiserver"
@@ -91,6 +93,7 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/kubescheduler"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/kubestorageversionmigrator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/lcaoperator"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/leaderworkerset"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/lightspeed"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/logging"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/logicalvolumemanagerstorage"
@@ -161,6 +164,7 @@ import (
 	ococmirror "github.com/openshift-eng/ci-test-mapping/pkg/components/oc/ocmirror"
 	ocupdate "github.com/openshift-eng/ci-test-mapping/pkg/components/oc/update"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/occompliance"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/ocloudmanageroperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/ocmirror"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/olm"
 	olmoperatorhub "github.com/openshift-eng/ci-test-mapping/pkg/components/olm/operatorhub"
@@ -188,6 +192,7 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/samplesoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/sandboxedcontainers"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/secondaryscheduleroperator"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/secretsstorecsidriver"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/security"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/securityprofilesoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/servicebinding"
@@ -215,6 +220,7 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/twonodewitharbiter"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/unknown"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/windowscontainers"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/zerotrustworkloadidentitymanager"
 )
 
 type Registry struct {
@@ -401,7 +407,6 @@ func NewComponentRegistry() *Registry {
 	r.Register("Unknown", &unknown.UnknownComponent)
 	r.Register("Windows Containers", &windowscontainers.WindowsContainersComponent)
 	r.Register("apiserver-auth", &apiserverauth.ApiserverAuthComponent)
-	r.Register("bpfman", &bpfman.BpfmanComponent)
 	r.Register("cert-manager", &certmanager.CertManagerComponent)
 	r.Register("cli-manager", &climanager.CliManagerComponent)
 	r.Register("confidential-compute-attestation", &confidentialcomputeattestation.ConfidentialComputeAttestationComponent)
@@ -437,6 +442,13 @@ func NewComponentRegistry() *Registry {
 	r.Register("service-ca", &serviceca.ServiceCaComponent)
 	r.Register("spire-operator", &spireoperator.SpireOperatorComponent)
 	r.Register("CNV-lp-interop", &cnvlpinterop.CNVLpInteropComponent)
+	r.Register("eBPF Manager", &ebpfmanager.EBPFManagerComponent)
+	r.Register("External Secrets Operator", &externalsecretsoperator.ExternalSecretsOperatorComponent)
+	r.Register("JobSet", &jobset.JobSetComponent)
+	r.Register("LeaderWorkerSet", &leaderworkerset.LeaderWorkerSetComponent)
+	r.Register("O-Cloud Manager Operator", &ocloudmanageroperator.OCloudManagerOperatorComponent)
+	r.Register("Secrets Store CSI driver", &secretsstorecsidriver.SecretsStoreCSIDriverComponent)
+	r.Register("zero-trust-workload-identity-manager", &zerotrustworkloadidentitymanager.ZeroTrustWorkloadIdentityManagerComponent)
 	// New components go here
 
 	return &r
