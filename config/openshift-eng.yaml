@@ -14,6 +14,7 @@ includeSuites:
   - telco-verification
   - OLM-Catalog-Validation
   - insights-operator-tests
+  - CNV-lp-interop
 excludeSuites: []
 excludeTests:
   - "Build image%"
