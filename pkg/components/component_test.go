@@ -62,6 +62,13 @@ func TestIdentifyTest(t *testing.T) {
 			},
 			wantID: "[sig-network] DNS should provide DNS for the cluster [Conformance] [Skipped:Proxy] [Suite:openshift/conformance/parallel/minimal] [Suite:k8s]",
 		},
+		{
+			name: "identifies the correct testID for origin renamed test",
+			testInfo: &v1.TestInfo{
+				Name: "[sig-network] network isolation when using a plugin in a mode that does not isolate namespaces by default should allow communication between pods in different namespaces on different nodes",
+			},
+			wantID: "[sig-network] network isolation when using a plugin in a mode that does not isolate namespaces by default should allow communication between pods in different namespaces on different nodes [Suite:openshift/conformance/parallel]",
+		},
 	}
 	ti := NewTestIdentifier(componentRegistry, nil)
 	for _, tt := range tests {
