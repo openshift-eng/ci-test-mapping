@@ -75,13 +75,17 @@ func (t *TestIdentifier) Identify(test *v1.TestInfo) (*v1.TestOwnership, error) 
 }
 
 func (t *TestIdentifier) setDefaults(testInfo *v1.TestInfo, testOwnership *v1.TestOwnership, c v1.Component) *v1.TestOwnership {
-	// Kubernetes renames represent a global rename of tests that can belong to any (or no) components
-	// They were renamed when openshift/kubernetes ceased the annotation of tests
-	if newName, ok := KubernetesRenames[testInfo.Name]; ok {
-		testInfo = &v1.TestInfo{
-			Name:     newName,
-			Suite:    testInfo.Suite,
-			Variants: testInfo.Variants,
+	// Kubernetes and Origin renames represent a global rename of tests that can belong to any (or no) components
+	// They were renamed when openshift/kubernetes and openshift/origin ceased the annotation of tests
+	renameMaps := []map[string]string{KubernetesRenames, OriginRenames}
+	for _, renameMap := range renameMaps {
+		if newName, ok := renameMap[testInfo.Name]; ok {
+			testInfo = &v1.TestInfo{
+				Name:     newName,
+				Suite:    testInfo.Suite,
+				Variants: testInfo.Variants,
+			}
+			break
 		}
 	}
 	if testOwnership.ID == "" {
