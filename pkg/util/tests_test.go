@@ -1,7 +1,9 @@
 package util
 
 import (
+	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"reflect"
+	"strings"
 	"testing"
 )
 
@@ -59,6 +61,98 @@ func TestExtractField(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			if gotResults := ExtractTestField(tt.test, tt.field); !reflect.DeepEqual(gotResults, tt.wantValues) {
 				t.Errorf("ExtractTestField() = %v, want %v", gotResults, tt.wantValues)
+			}
+		})
+	}
+}
+
+func TestRemoveField(t *testing.T) {
+	tests := []struct {
+		name      string
+		test      string
+		field     string
+		wantValue string
+	}{
+		{
+			name:      "can remove first in line test field",
+			test:      "[sig-storage] In-tree Volumes [Driver: windows-gcepd] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should be able to unmount after the subpath directory is deleted [LinuxOnly] [Skipped:NoOptionalCapabilities] [Suite:openshift/conformance/parallel] [Suite:k8s]",
+			field:     "[Driver:",
+			wantValue: "[sig-storage] In-tree Volumes [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should be able to unmount after the subpath directory is deleted [LinuxOnly] [Skipped:NoOptionalCapabilities] [Suite:openshift/conformance/parallel] [Suite:k8s]",
+		},
+		{
+			name:      "can remove second in line test field",
+			test:      "[sig-storage] In-tree Volumes [Driver: windows-gcepd] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should be able to unmount after the subpath directory is deleted [LinuxOnly] [Skipped:NoOptionalCapabilities] [Suite:openshift/conformance/parallel] [Suite:k8s]",
+			field:     "[Testpattern:",
+			wantValue: "[sig-storage] In-tree Volumes [Driver: windows-gcepd][Feature:Windows] subPath should be able to unmount after the subpath directory is deleted [LinuxOnly] [Skipped:NoOptionalCapabilities] [Suite:openshift/conformance/parallel] [Suite:k8s]",
+		},
+		{
+			name:      "can remove leading test field",
+			test:      "[Monitor:generation-analyzer][Jira:\"kube-apiserver\"] monitor test generation-analyzer preparation",
+			field:     "[Monitor:",
+			wantValue: "[Jira:\"kube-apiserver\"] monitor test generation-analyzer preparation",
+		},
+		{
+			name:      "can remove leading with space test field",
+			test:      "[Monitor:generation-analyzer] [Jira:\"kube-apiserver\"] monitor test generation-analyzer preparation",
+			field:     "[Monitor:",
+			wantValue: "[Jira:\"kube-apiserver\"] monitor test generation-analyzer preparation",
+		},
+		{
+			name:      "can remove trailing test field",
+			test:      "[Jira:\"apiserver-auth\"] [Monitor:legacy-authentication-invariants] monitor test legacy-authentication-invariants preparation",
+			field:     "[Monitor:",
+			wantValue: "[Jira:\"apiserver-auth\"] monitor test legacy-authentication-invariants preparation",
+		},
+		{
+			name:      "can remove trailing no space test field",
+			test:      "[Jira:\"apiserver-auth\"][Monitor:legacy-authentication-invariants] monitor test legacy-authentication-invariants preparation",
+			field:     "[Monitor:",
+			wantValue: "[Jira:\"apiserver-auth\"] monitor test legacy-authentication-invariants preparation",
+		},
+		{
+			name:      "doesn't remove field value",
+			test:      "[Jira:\"Monitoring\"] monitor test metrics-api-availability interval construction",
+			field:     "[Monitor:",
+			wantValue: "[Jira:\"Monitoring\"] monitor test metrics-api-availability interval construction",
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if gotResults := removeTestField(tt.test, tt.field); !reflect.DeepEqual(gotResults, tt.wantValue) {
+				t.Errorf("removeTestField() = %v, \nwant %v", gotResults, tt.wantValue)
+			}
+		})
+	}
+}
+
+func TestStableIdMatch(t *testing.T) {
+	tests := []struct {
+		name          string
+		testInfo      v1.TestInfo
+		testName      string
+		matchTestName string
+	}{
+		{
+			name:          "can match stable ID",
+			testInfo:      v1.TestInfo{Suite: "kubernetes/test"},
+			testName:      "[Jira:\"apiserver-auth\"][Monitor:legacy-authentication-invariants] monitor test legacy-authentication-invariants preparation",
+			matchTestName: "[Jira:\"apiserver-auth\"] monitor test legacy-authentication-invariants preparation",
+		},
+		{
+			name:          "can match stable ID",
+			testInfo:      v1.TestInfo{Suite: "kubernetes/test"},
+			testName:      "[Monitor:generation-analyzer][Jira:\"kube-apiserver\"] monitor test generation-analyzer preparation",
+			matchTestName: "[Jira:\"kube-apiserver\"] monitor test generation-analyzer preparation",
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			stableId := StableID(&tt.testInfo, tt.testName)
+			matchId := StableID(&tt.testInfo, tt.matchTestName)
+			if !strings.EqualFold(stableId, matchId) {
+				t.Errorf("removeTestField() = %v, \nwant %v", stableId, matchId)
 			}
 		})
 	}
