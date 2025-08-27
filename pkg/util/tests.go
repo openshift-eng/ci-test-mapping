@@ -41,22 +41,24 @@ func removeTestField(testName, field string) string {
 	updatedTestName := testName
 	matches := fieldRegexp.FindAllStringSubmatch(testName, -1)
 	for _, match := range matches {
-		if len(match) > 0 {
-			// we want the first match which should be the complete field value
-			matched := match[0]
-			if !strings.Contains(matched, field) {
-				continue
-			}
-			// does the match have a leading " ", if so remove it too
-			index := strings.Index(updatedTestName, matched)
-			if index > 0 && updatedTestName[index-1] == ' ' {
-				matched = fmt.Sprintf(" %s", matched)
-			}
-
-			updatedTestName = strings.TrimSpace(strings.Replace(updatedTestName, matched, "", 1))
-			// we found our field so quit processing
-			break
+		if len(match) == 0 {
+			continue
 		}
+
+		// we want the first match which should be the complete field value
+		matched := match[0]
+		if !strings.Contains(matched, field) {
+			continue
+		}
+		// does the match have a leading " ", if so remove it too
+		index := strings.Index(updatedTestName, matched)
+		if index > 0 && updatedTestName[index-1] == ' ' {
+			matched = fmt.Sprintf(" %s", matched)
+		}
+
+		updatedTestName = strings.TrimSpace(strings.Replace(updatedTestName, matched, "", 1))
+		// we found our field so quit processing
+		break
 	}
 
 	return updatedTestName

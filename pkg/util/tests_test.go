@@ -1,10 +1,11 @@
 package util
 
 import (
-	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"reflect"
 	"strings"
 	"testing"
+
+	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 )
 
 func TestExtractField(t *testing.T) {
@@ -149,10 +150,10 @@ func TestStableIdMatch(t *testing.T) {
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			stableId := StableID(&tt.testInfo, tt.testName)
-			matchId := StableID(&tt.testInfo, tt.matchTestName)
-			if !strings.EqualFold(stableId, matchId) {
-				t.Errorf("removeTestField() = %v, \nwant %v", stableId, matchId)
+			stableID := StableID(&tt.testInfo, tt.testName)
+			matchID := StableID(&tt.testInfo, tt.matchTestName)
+			if !strings.EqualFold(stableID, matchID) {
+				t.Errorf("removeTestField() = %v, \nwant %v", stableID, matchID)
 			}
 		})
 	}
