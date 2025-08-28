@@ -30,7 +30,7 @@ var ApiserverAuthComponent = Component{
 					":Authentication:",
 					"upgrade should succeed: authentication",
 				},
-				Priority: 2,
+				Priority: 3,
 			},
 		},
 		TestRenames: map[string]string{

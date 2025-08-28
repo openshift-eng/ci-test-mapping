@@ -28,7 +28,7 @@ var KubeControllerManagerComponent = Component{
 					"ResourceQuota",
 					"upgrade should succeed: kube-controller-manager",
 				},
-				Priority: 1, // quota is owned by KCM more strongly than apimachinery
+				Priority: 2, // quota is owned by KCM more strongly than apimachinery
 			},
 			{Suite: "Features of daemonset"},
 			{Suite: "Quota related scenarios"},

@@ -32,7 +32,8 @@ var StorageComponent = Component{
 		},
 		Matchers: []config.ComponentMatcher{
 			{
-				SIG: "sig-storage",
+				SIG:      "sig-storage",
+				Priority: 1,
 			},
 			{
 				IncludeAny: []string{
