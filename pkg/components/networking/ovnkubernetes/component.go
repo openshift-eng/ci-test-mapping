@@ -26,7 +26,7 @@ var OvnKubernetesComponent = Component{
 			},
 			{
 				IncludeAll: []string{"ovn-kubernetes"},
-				Priority:   1,
+				Priority:   2,
 			},
 			{Suite: "OVN related networking scenarios"},
 			{Suite: "OVNKubernetes IPsec related networking scenarios"},

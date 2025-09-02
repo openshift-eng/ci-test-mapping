@@ -28,6 +28,7 @@ var DNSComponent = Component{
 			{
 				SIG:        "sig-network",
 				IncludeAll: []string{"DNS"},
+				Priority:   1,
 			},
 			{
 				IncludeAll: []string{"cluster-dns-operator"},
