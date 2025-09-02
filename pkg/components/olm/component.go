@@ -33,7 +33,8 @@ var OLMComponent = Component{
 				},
 			},
 			{
-				SIG: "sig-operator",
+				SIG:      "sig-operator",
+				Priority: 1,
 			},
 			{
 				IncludeAny: []string{
