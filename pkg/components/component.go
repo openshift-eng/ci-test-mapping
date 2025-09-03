@@ -88,12 +88,10 @@ func (t *TestIdentifier) setDefaults(testInfo *v1.TestInfo, testOwnership *v1.Te
 			break
 		}
 	}
-	if testOwnership.ID == "" {
-		if c != nil {
-			testOwnership.ID = util.StableID(testInfo, c.StableID(testInfo))
-		} else {
-			testOwnership.ID = util.StableID(testInfo, testInfo.Name)
-		}
+	if c != nil {
+		testOwnership.ID = util.StableID(testInfo, c.StableID(testInfo))
+	} else {
+		testOwnership.ID = util.StableID(testInfo, testInfo.Name)
 	}
 
 	testOwnership.Kind = v1.TestOwnershipKind

@@ -65,9 +65,9 @@ func TestIdentifyTest(t *testing.T) {
 		{
 			name: "identifies the correct testID for origin renamed test",
 			testInfo: &v1.TestInfo{
-				Name: "[sig-network] network isolation when using a plugin in a mode that does not isolate namespaces by default should allow communication between pods in different namespaces on different nodes",
+				Name: "[sig-arch][Early] Managed cluster should [apigroup:config.openshift.io] start all core operators [Suite:openshift/conformance/parallel]",
 			},
-			wantID: "[sig-network] network isolation when using a plugin in a mode that does not isolate namespaces by default should allow communication between pods in different namespaces on different nodes [Suite:openshift/conformance/parallel]",
+			wantID: "[sig-arch][Early] Managed cluster should [apigroup:config.openshift.io] start all core operators [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
 		},
 	}
 	ti := NewTestIdentifier(componentRegistry, nil)
