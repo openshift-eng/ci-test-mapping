@@ -21,6 +21,9 @@ var CRIOComponent = Component{
 				},
 			},
 			{Suite: "Container_Engine_Tools"},
+			{
+				SIG: "sig-imagepolicy",
+			},
 		},
 	},
 }
