@@ -15,6 +15,11 @@ var TwoNodeFencingComponent = Component{
 		Operators:            []string{},
 		DefaultJiraComponent: "Two Node Fencing",
 		Matchers:             []config.ComponentMatcher{},
+		TestRenames: map[string]string{
+			"[sig-etcd][apigroup:config.openshift.io][OCPFeatureGate:DualReplica] Two Node with Fencing should have etcd pods and containers configured correctly":              "[sig-etcd][apigroup:config.openshift.io][OCPFeatureGate:DualReplica][Suite:openshift/two-node] Two Node with Fencing pods and podman containers Should validate the number of etcd pods and containers as configured",
+			"[sig-etcd][apigroup:config.openshift.io][OCPFeatureGate:DualReplica] Two Node with Fencing should have podman etcd containers running on each node":                "[sig-etcd][apigroup:config.openshift.io][OCPFeatureGate:DualReplica][Suite:openshift/two-node] Two Node with Fencing pods and podman containers Should verify the number of podman-etcd containers as configured",
+			"[sig-node][apigroup:config.openshift.io][OCPFeatureGate:DualReplica] Two Node with Fencing topology should only have two control plane nodes and no arbiter nodes": "[sig-node][apigroup:config.openshift.io][OCPFeatureGate:DualReplica][Suite:openshift/two-node] Two Node with Fencing topology Should validate the number of control-planes, arbiters as configured",
+		},
 	},
 }
 
