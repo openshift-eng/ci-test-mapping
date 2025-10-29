@@ -162,7 +162,6 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/oc"
 	occlustercompare "github.com/openshift-eng/ci-test-mapping/pkg/components/oc/clustercompare"
 	ocnodeimage "github.com/openshift-eng/ci-test-mapping/pkg/components/oc/nodeimage"
-	ococmirror "github.com/openshift-eng/ci-test-mapping/pkg/components/oc/ocmirror"
 	ocupdate "github.com/openshift-eng/ci-test-mapping/pkg/components/oc/update"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/occompliance"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/ocloudmanageroperator"
@@ -458,6 +457,7 @@ func NewComponentRegistry() *Registry {
 	r.Register("MTA-lp-interop", &mtalpinterop.MTALpInteropComponent)
 	r.Register("Gitops-lp-interop", &gitopslpinterop.GitopsLpInteropComponent)
 	r.Register("ACS-lp-interop", &acslpinterop.ACSLpInteropComponent)
+	r.Register("OADP-lp-interop", &oadplpinterop.OADPLpInteropComponent)
 	// New components go here
 
 	return &r
