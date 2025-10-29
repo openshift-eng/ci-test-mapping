@@ -15,6 +15,20 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/hypershift/gcp"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/gitopslpinterop"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/acslpinterop"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/servicemeshlpinterop"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/serverlesslpinterop"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/quaylpinterop"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/openshiftpipelineslpinterop"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/odflpinterop"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/oadplpinterop"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/networkingingresscommatrix"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/mustgather"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/mtalpinterop"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/kueue"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/installer/disconnectedui"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/hypershift/gcp"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/gitopslpinterop"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/acslpinterop"
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/apiserverauth"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/awsloadbalanceroperator"
@@ -471,6 +485,20 @@ func NewComponentRegistry() *Registry {
 	r.Register("MTA-lp-interop", &mtalpinterop.MTALpInteropComponent)
 	r.Register("Gitops-lp-interop", &gitopslpinterop.GitopsLpInteropComponent)
 	r.Register("ACS-lp-interop", &acslpinterop.ACSLpInteropComponent)
+	r.Register("ACS-lp-interop", &acslpinterop.ACSLpInteropComponent)
+	r.Register("Gitops-lp-interop", &gitopslpinterop.GitopsLpInteropComponent)
+	r.Register("HyperShift / GCP", &hypershiftgcp.GCPComponent)
+	r.Register("Installer / Disconnected UI", &installerdisconnectedui.DisconnectedUIComponent)
+	r.Register("Kueue", &kueue.KueueComponent)
+	r.Register("MTA-lp-interop", &mtalpinterop.MTALpInteropComponent)
+	r.Register("must-gather", &mustgather.MustGatherComponent)
+	r.Register("networking-ingress-commatrix", &networkingingresscommatrix.NetworkingIngressCommatrixComponent)
+	r.Register("OADP-lp-interop", &oadplpinterop.OADPLpInteropComponent)
+	r.Register("ODF-lp-interop", &odflpinterop.ODFLpInteropComponent)
+	r.Register("Openshift-pipelines-lp-interop", &openshiftpipelineslpinterop.OpenshiftPipelinesLpInteropComponent)
+	r.Register("Quay-lp-interop", &quaylpinterop.QuayLpInteropComponent)
+	r.Register("Serverless-lp-interop", &serverlesslpinterop.ServerlessLpInteropComponent)
+	r.Register("Service-mesh-lp-interop", &servicemeshlpinterop.ServiceMeshLpInteropComponent)
 	r.Register("ACS-lp-interop", &acslpinterop.ACSLpInteropComponent)
 	r.Register("Gitops-lp-interop", &gitopslpinterop.GitopsLpInteropComponent)
 	r.Register("HyperShift / GCP", &hypershiftgcp.GCPComponent)
