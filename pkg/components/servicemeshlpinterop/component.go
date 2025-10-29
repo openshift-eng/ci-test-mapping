@@ -9,9 +9,9 @@ type Component struct {
 	*config.Component
 }
 
-var ServiceMeshpInteropComponent = Component{
+var ServiceMeshLpInteropComponent = Component{
 	Component: &config.Component{
-		Name:                 "ServiceMesh-lp-interop",
+		Name:                 "Service-mesh-lp-interop",
 		Operators:            []string{},
 		DefaultJiraComponent: "Service-mesh-lp-interop",
 		Matchers:             []config.ComponentMatcher{{Suite: "ServiceMesh-lp-interop"}},

@@ -11,7 +11,7 @@ type Component struct {
 
 var OpenshiftPipelinesLpInteropComponent = Component{
 	Component: &config.Component{
-		Name:                 "OpenshiftPipelines-lp-interop",
+		Name:                 "Openshift-pipelines-lp-interop",
 		Operators:            []string{},
 		DefaultJiraComponent: "Openshift-pipelines-lp-interop",
 		Matchers:             []config.ComponentMatcher{{Suite: "OpenshiftPipelines-lp-interop"}},
