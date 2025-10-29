@@ -40,7 +40,14 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/clusterversionoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/cnfcerttnf"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/cnvlpinterop"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/complianceoperator"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/quaylpinterop"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/openshiftpipelineslpinterop"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/servicemeshlpinterop"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/serverlesslpinterop"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/odflpinterop"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/mtalpinterop"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/acslpinterop"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/gitopslpinterop"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/confidentialcomputeattestation"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/configoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/consolemetal3plugin"
@@ -48,13 +55,11 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/containers"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/crc"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/descheduler"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/devconsole"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/drivertoolkit"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/ebpfmanager"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/etcd"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/externaldnsoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/externalsecretsoperator"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/fileintegrityoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/gitopsztp"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/hawkular"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/helm"
@@ -194,7 +199,6 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/secondaryscheduleroperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/secretsstorecsidriver"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/security"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/securityprofilesoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/servicebinding"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/servicebroker"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/serviceca"
@@ -264,15 +268,12 @@ func NewComponentRegistry() *Registry {
 	r.Register("Cluster Loader", &clusterloader.ClusterLoaderComponent)
 	r.Register("Cluster Resource Override Admission Operator", &clusterresourceoverrideadmissionoperator.ClusterResourceOverrideAdmissionOperatorComponent)
 	r.Register("Cluster Version Operator", &clusterversionoperator.ClusterVersionOperatorComponent)
-	r.Register("Compliance Operator", &complianceoperator.ComplianceOperatorComponent)
 	r.Register("Console Metal3 Plugin", &consolemetal3plugin.ConsoleMetal3PluginComponent)
 	r.Register("Console Storage Plugin", &consolestorageplugin.ConsoleStoragePluginComponent)
 	r.Register("Containers", &containers.ContainersComponent)
-	r.Register("Dev Console", &devconsole.DevConsoleComponent)
 	r.Register("Driver Toolkit", &drivertoolkit.DriverToolkitComponent)
 	r.Register("Etcd", &etcd.EtcdComponent)
 	r.Register("ExternalDNS Operator", &externaldnsoperator.ExternalDNSOperatorComponent)
-	r.Register("File Integrity Operator", &fileintegrityoperator.FileIntegrityOperatorComponent)
 	r.Register("GitOps ZTP", &gitopsztp.GitOpsZTPComponent)
 	r.Register("Hawkular", &hawkular.HawkularComponent)
 	r.Register("Helm", &helm.HelmComponent)
@@ -381,7 +382,6 @@ func NewComponentRegistry() *Registry {
 	r.Register("Registry Console", &registryconsole.RegistryConsoleComponent)
 	r.Register("Release", &release.ReleaseComponent)
 	r.Register("Samples Operator", &samplesoperator.SamplesOperatorComponent)
-	r.Register("Security Profiles Operator", &securityprofilesoperator.SecurityProfilesOperatorComponent)
 	r.Register("Security", &security.SecurityComponent)
 	r.Register("Service Binding", &servicebinding.ServiceBindingComponent)
 	r.Register("Service Broker", &servicebroker.ServiceBrokerComponent)
@@ -426,7 +426,6 @@ func NewComponentRegistry() *Registry {
 	r.Register("oauth-proxy", &oauthproxy.OauthProxyComponent)
 	r.Register("oc / cluster-compare", &occlustercompare.ClusterCompareComponent)
 	r.Register("oc / node-image", &ocnodeimage.NodeImageComponent)
-	r.Register("oc / oc-mirror", &ococmirror.OcMirrorComponent)
 	r.Register("oc / update", &ocupdate.UpdateComponent)
 	r.Register("oc", &oc.OcComponent)
 	r.Register("oc-compliance", &occompliance.OcComplianceComponent)
@@ -449,6 +448,15 @@ func NewComponentRegistry() *Registry {
 	r.Register("O-Cloud Manager Operator", &ocloudmanageroperator.OCloudManagerOperatorComponent)
 	r.Register("Secrets Store CSI driver", &secretsstorecsidriver.SecretsStoreCSIDriverComponent)
 	r.Register("zero-trust-workload-identity-manager", &zerotrustworkloadidentitymanager.ZeroTrustWorkloadIdentityManagerComponent)
+	r.Register("Quay-lp-interop", &quaylpinterop.QuayLpInteropComponent)
+	r.Register("OpenshiftPipelines-lp-interop", &openshiftpipelineslpinterop.OpenshiftPipelinesLpInteropComponent)
+	r.Register("CNV-lp-interop", &cnvlpinterop.CNVLpInteropComponent)
+	r.Register("ServiceMesh-lp-interop", &servicemeshlpinterop.ServiceMeshLpInteropComponent)
+	r.Register("Serverless-lp-interop", &serverlesslpinterop.ServerlessLpInteropComponent)
+	r.Register("ODF-lp-interop", &odflpinterop.ODFLpInteropComponent)
+	r.Register("MTA-lp-interop", &mtalpinterop.MTALpInteropComponent)
+	r.Register("Gitops-lp-interop", &gitopslpinterop.GitopsLpInteropComponent)
+	r.Register("ACS-lp-interop", &acslpinterop.ACSLpInteropComponent)
 	// New components go here
 
 	return &r
