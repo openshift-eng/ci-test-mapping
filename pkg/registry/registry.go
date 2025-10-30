@@ -190,15 +190,16 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/release"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/rhcos"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/rhmimonitoring"
-    "github.com/openshift-eng/ci-test-mapping/pkg/components/routecontrollermanager"
-    "github.com/openshift-eng/ci-test-mapping/pkg/components/runoncedurationoverride"
-    "github.com/openshift-eng/ci-test-mapping/pkg/components/samplesoperator"
-    "github.com/openshift-eng/ci-test-mapping/pkg/components/sandboxedcontainers"
-    "github.com/openshift-eng/ci-test-mapping/pkg/components/secondaryscheduleroperator"
-    "github.com/openshift-eng/ci-test-mapping/pkg/components/secretsstorecsidriver"
-    "github.com/openshift-eng/ci-test-mapping/pkg/components/security"
-    "github.com/openshift-eng/ci-test-mapping/pkg/components/servicebinding"
-    "github.com/openshift-eng/ci-test-mapping/pkg/components/servicebroker"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/routecontrollermanager"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/runoncedurationoverride"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/samplesoperator"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/sandboxedcontainers"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/secondaryscheduleroperator"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/secretsstorecsidriver"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/security"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/securityprofilesoperator"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/servicebinding"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/servicebroker"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/serviceca"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/servicecatalog"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/servicemeshlpinterop"
@@ -382,6 +383,7 @@ func NewComponentRegistry() *Registry {
 	r.Register("Registry Console", &registryconsole.RegistryConsoleComponent)
 	r.Register("Release", &release.ReleaseComponent)
 	r.Register("Samples Operator", &samplesoperator.SamplesOperatorComponent)
+	r.Register("Security Profiles Operator", &securityprofilesoperator.SecurityProfilesOperatorComponent)
 	r.Register("Security", &security.SecurityComponent)
 	r.Register("Service Binding", &servicebinding.ServiceBindingComponent)
 	r.Register("Service Broker", &servicebroker.ServiceBrokerComponent)
