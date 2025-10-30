@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi9/ubi:latest AS builder
+FROM registry.ci.openshift.org/ocp/builder:rhel-9-golang-1.24-openshift-4.21
 WORKDIR /go/src/openshift-eng/ci-test-mapping
 ENV PATH="/go/bin:${PATH}"
 ENV GOPATH="/go"
@@ -10,7 +10,7 @@ RUN go install k8s.io/test-infra/robots/pr-creator@latest
 # install gh-token before it required go 1.23 which ubi9 doesn't have yet;
 # unfortunately `go install` with the tag is broken, so just clone and install.
 RUN git clone https://github.com/Link-/gh-token --branch v2.0.2 \
- && cd gh-token && go install . 
+ && cd gh-token && go install .
 COPY . .
 RUN make build
 
