@@ -2,6 +2,10 @@ FROM registry.ci.openshift.org/ocp/builder:rhel-9-golang-1.24-openshift-4.21 AS 
 WORKDIR /go/src/openshift-eng/ci-test-mapping
 ENV PATH="/go/bin:${PATH}"
 ENV GOPATH="/go"
+RUN dnf install -y \
+        git \
+        go \
+        make
 RUN go install k8s.io/test-infra/robots/pr-creator@latest
 # install gh-token before it required go 1.23 which ubi9 doesn't have yet;
 # unfortunately `go install` with the tag is broken, so just clone and install.
