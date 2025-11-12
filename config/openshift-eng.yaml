@@ -15,6 +15,15 @@ includeSuites:
   - OLM-Catalog-Validation
   - insights-operator-tests
   - CNV-lp-interop
+  - Quay-lp-interop
+  - OpenshiftPipelines-lp-interop
+  - ServiceMesh-lp-interop
+  - Serverless-lp-interop
+  - ODF-lp-interop
+  - MTA-lp-interop
+  - Gitops-lp-interop
+  - ACS-lp-interop
+  - OADP-lp-interop
 excludeSuites: []
 excludeTests:
   - "Build image%"
