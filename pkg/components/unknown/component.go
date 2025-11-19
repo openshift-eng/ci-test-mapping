@@ -18,6 +18,7 @@ var UnknownComponent = Component{
 		TestRenames: map[string]string{
 			"[sig-cluster-lifecycle] pathological event should not see excessive Back-off restarting failed containers":                   "[sig-cluster-lifecycle] should not see excessive Back-off restarting failed containers",
 			"[sig-cluster-lifecycle] pathological event should not see excessive Back-off restarting failed containers in e2e namespaces": "[sig-cluster-lifecycle] should not see excessive Back-off restarting failed containers in e2e namespaces",
+			"verify the cluster readiness and stability": "verify the cluster can be connected",
 		},
 	},
 }
