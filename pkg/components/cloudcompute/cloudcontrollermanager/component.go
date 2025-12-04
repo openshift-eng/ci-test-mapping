@@ -46,6 +46,9 @@ var CloudControllerManagerComponent = Component{
 				},
 				Priority: 2,
 			},
+			{
+				IncludeAll: []string{"cloud-provider-aws-e2e"},
+			},
 		},
 	},
 }
