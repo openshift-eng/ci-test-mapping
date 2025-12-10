@@ -24,6 +24,7 @@ includeSuites:
   - Gitops-lp-interop
   - ACS-lp-interop
   - OADP-lp-interop
+  - COO-lp-interop
 excludeSuites: []
 excludeTests:
   - "Build image%"
