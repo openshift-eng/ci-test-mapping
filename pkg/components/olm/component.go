@@ -18,6 +18,7 @@ var OLMComponent = Component{
 			"openshift-marketplace",
 			"openshift-operator-lifecycle-manager",
 			"openshift-operators",
+			"openshift-catalogd",
 			"openshift-operator-controller",
 			"openshift-cluster-olm-operator",
 			"openshift-rukpak",
