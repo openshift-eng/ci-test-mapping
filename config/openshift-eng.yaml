@@ -25,6 +25,7 @@ includeSuites:
   - ACS-lp-interop
   - OADP-lp-interop
   - COO-lp-interop
+  - Compliance-lp-interop
 excludeSuites: []
 excludeTests:
   - "Build image%"
