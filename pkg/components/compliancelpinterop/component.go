@@ -1,4 +1,4 @@
-package occompliance
+package compliancelpinterop
 
 import (
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
@@ -9,16 +9,17 @@ type Component struct {
 	*config.Component
 }
 
-var OcComplianceComponent = Component{
+var ComplianceLpInteropComponent = Component{
 	Component: &config.Component{
-		Name:                 "oc-compliance",
-		Operators:            []string{},
-		DefaultJiraComponent: "oc-compliance",
+		Name:                 "Compliance-lp-interop",
+		Operators:            []string{"compliance-operator"},
+		DefaultJiraComponent: "Compliance Operator",
 		Matchers: []config.ComponentMatcher{
-			{
-				IncludeAll: []string{"oc_compliance_plugin"}, //// oc-compliance QE cases all have "oc_compliance_plugin" in junit xml
-			},
+			{Suite: "Compliance-lp-interop"},
+			{IncludeAll: []string{"Compliance_Operator"}},  // Legacy QE tests
+			{IncludeAll: []string{"oc_compliance_plugin"}}, // oc-compliance plugin tests
 		},
+		Variants: []string{"LayeredProduct:lp-interop-compliance"},
 	},
 }
 
