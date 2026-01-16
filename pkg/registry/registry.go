@@ -41,6 +41,7 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/clusterversionoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/cnfcerttnf"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/cnvlpinterop"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/compliancelpinterop"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/confidentialcomputeattestation"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/configoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/consolemetal3plugin"
@@ -163,7 +164,6 @@ import (
 	occlustercompare "github.com/openshift-eng/ci-test-mapping/pkg/components/oc/clustercompare"
 	ocnodeimage "github.com/openshift-eng/ci-test-mapping/pkg/components/oc/nodeimage"
 	ocupdate "github.com/openshift-eng/ci-test-mapping/pkg/components/oc/update"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/occompliance"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/ocloudmanageroperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/ocmirror"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/odflpinterop"
@@ -267,6 +267,7 @@ func NewComponentRegistry() *Registry {
 	r.Register("Cloud Native Events / Hardware Event Proxy", &cloudnativeeventshardwareeventproxy.HardwareEventProxyComponent)
 	r.Register("Cluster Autoscaler", &clusterautoscaler.ClusterAutoscalerComponent)
 	r.Register("Cluster Loader", &clusterloader.ClusterLoaderComponent)
+	r.Register("Compliance-lp-interop", &compliancelpinterop.ComplianceLpInteropComponent)
 	r.Register("Cluster Resource Override Admission Operator", &clusterresourceoverrideadmissionoperator.ClusterResourceOverrideAdmissionOperatorComponent)
 	r.Register("Cluster Version Operator", &clusterversionoperator.ClusterVersionOperatorComponent)
 	r.Register("Console Metal3 Plugin", &consolemetal3plugin.ConsoleMetal3PluginComponent)
@@ -430,7 +431,6 @@ func NewComponentRegistry() *Registry {
 	r.Register("oc / node-image", &ocnodeimage.NodeImageComponent)
 	r.Register("oc / update", &ocupdate.UpdateComponent)
 	r.Register("oc", &oc.OcComponent)
-	r.Register("oc-compliance", &occompliance.OcComplianceComponent)
 	r.Register("oc-mirror", &ocmirror.OcMirrorComponent)
 	r.Register("openshift-apiserver", &openshiftapiserver.OpenshiftApiserverComponent)
 	r.Register("openshift-controller-manager / apps", &openshiftcontrollermanagerapps.AppsComponent)
