@@ -37,6 +37,7 @@ import (
 	cloudnativeeventshardwareeventproxy "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudnativeevents/hardwareeventproxy"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/clusterautoscaler"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/clusterloader"
+	tracinguiplugin "github.com/openshift-eng/ci-test-mapping/pkg/components/clusterobservabilityoperator/tracinguiplugin"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/clusterresourceoverrideadmissionoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/clusterversionoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/cnfcerttnf"
@@ -267,6 +268,7 @@ func NewComponentRegistry() *Registry {
 	r.Register("Cloud Native Events / Hardware Event Proxy", &cloudnativeeventshardwareeventproxy.HardwareEventProxyComponent)
 	r.Register("Cluster Autoscaler", &clusterautoscaler.ClusterAutoscalerComponent)
 	r.Register("Cluster Loader", &clusterloader.ClusterLoaderComponent)
+	r.Register("tracing-uiplugin", &tracinguiplugin.ClusterObservabilityOperatorComponent)
 	r.Register("Cluster Resource Override Admission Operator", &clusterresourceoverrideadmissionoperator.ClusterResourceOverrideAdmissionOperatorComponent)
 	r.Register("Cluster Version Operator", &clusterversionoperator.ClusterVersionOperatorComponent)
 	r.Register("Console Metal3 Plugin", &consolemetal3plugin.ConsoleMetal3PluginComponent)

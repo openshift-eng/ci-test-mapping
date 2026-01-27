@@ -24,7 +24,7 @@ includeSuites:
   - Gitops-lp-interop
   - ACS-lp-interop
   - OADP-lp-interop
-  - COO-lp-interop
+  - tracing-uiplugin
 excludeSuites: []
 excludeTests:
   - "Build image%"
