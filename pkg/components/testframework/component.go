@@ -51,9 +51,11 @@ var TestFrameworkComponent = Component{
 			},
 		},
 		TestRenames: map[string]string{
-			"[sig-arch] pathological event should not see excessive pull back-off on registry.redhat.io":               "[sig-arch] should not see excessive pull back-off on registry.redhat.io",
-			"[Unknown][invariant] alert/KubePodNotReady should not be at or above info in all the other namespaces":    "[bz-Unknown][invariant] alert/KubePodNotReady should not be at or above info in all the other namespaces",
-			"[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in all the other namespaces": "[bz-Unknown][invariant] alert/KubePodNotReady should not be at or above pending in all the other namespaces",
+			"[sig-arch] pathological event should not see excessive pull back-off on registry.redhat.io":                                                                                                                                                                                              "[sig-arch] should not see excessive pull back-off on registry.redhat.io",
+			"[Unknown][invariant] alert/KubePodNotReady should not be at or above info in all the other namespaces":                                                                                                                                                                                   "[bz-Unknown][invariant] alert/KubePodNotReady should not be at or above info in all the other namespaces",
+			"[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in all the other namespaces":                                                                                                                                                                                "[bz-Unknown][invariant] alert/KubePodNotReady should not be at or above pending in all the other namespaces",
+			"[Jira:\"Test Framework\"] Prometheus [apigroup:config.openshift.io] when installed on the cluster shouldn't have failing rules evaluation [Suite:openshift/conformance/parallel]":                                                                                                        "[sig-instrumentation] Prometheus [apigroup:image.openshift.io] when installed on the cluster shouldn't have failing rules evaluation [Suite:openshift/conformance/parallel]",
+			"[Jira:\"Test Framework\"] Prometheus [apigroup:coreos.monitoring.com] when installed on the cluster shouldn't report any alerts in firing state apart from Watchdog and AlertmanagerReceiversNotConfigured [Early][apigroup:config.openshift.io] [Suite:openshift/conformance/parallel]": "[sig-instrumentation] Prometheus [apigroup:image.openshift.io] when installed on the cluster should have a AlertmanagerReceiversNotConfigured alert in firing state [Suite:openshift/conformance/parallel]",
 		},
 	},
 }
