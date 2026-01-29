@@ -2,6 +2,7 @@ package registry
 
 import (
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/acslatestlpinterop"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/acslpinterop"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/apiserverauth"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/awsloadbalanceroperator"
@@ -460,6 +461,7 @@ func NewComponentRegistry() *Registry {
 	r.Register("ODF-lp-interop", &odflpinterop.ODFLpInteropComponent)
 	r.Register("MTA-lp-interop", &mtalpinterop.MTALpInteropComponent)
 	r.Register("Gitops-lp-interop", &gitopslpinterop.GitopsLpInteropComponent)
+	r.Register("ACSLatest-lp-interop", &acslatestlpinterop.ACSLatestLpInteropComponent)
 	r.Register("ACS-lp-interop", &acslpinterop.ACSLpInteropComponent)
 	r.Register("OADP-lp-interop", &oadplpinterop.OADPLpInteropComponent)
 	// New components go here
