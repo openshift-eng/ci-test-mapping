@@ -22,6 +22,7 @@ includeSuites:
   - ODF-lp-interop
   - MTA-lp-interop
   - Gitops-lp-interop
+  - ACSLatest-lp-interop
   - ACS-lp-interop
   - OADP-lp-interop
   - tracing-uiplugin
