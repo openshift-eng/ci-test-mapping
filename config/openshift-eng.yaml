@@ -26,6 +26,7 @@ includeSuites:
   - ACS-lp-interop
   - OADP-lp-interop
   - tracing-uiplugin
+  - E2E Suite
 excludeSuites: []
 excludeTests:
   - "Build image%"
