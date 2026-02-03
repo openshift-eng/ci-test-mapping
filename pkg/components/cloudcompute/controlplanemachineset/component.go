@@ -18,6 +18,7 @@ var ControlPlaneMachineSetComponent = Component{
 			{
 				IncludeAny: []string{
 					"[sig-cluster-lifecycle] Cluster_Infrastructure CPMS MAPI",
+					"ControlPlaneMachineSet Operator",
 				},
 				Priority: 2,
 			},
