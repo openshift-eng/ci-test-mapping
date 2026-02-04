@@ -18,6 +18,7 @@ var SecurityComponent = Component{
 			{
 				IncludeAny: []string{
 					":SecurityandCompliance ",
+					"[sig-arch] [Conformance] FIPS TestFIPS",
 				},
 				Priority: 1,
 			},
