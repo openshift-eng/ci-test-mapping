@@ -75,6 +75,7 @@ var KubeletComponent = Component{
 			"[sig-node] pathological event NodeHasNoDiskPressure condition does not occur too often":                                                                                                    "[sig-node] Test the NodeHasNoDiskPressure condition does not occur too often",
 			"[sig-node] pathological event NodeHasSufficientPID condition does not occur too often":                                                                                                     "[sig-node] Test the NodeHasSufficientPID condition does not occur too often",
 			"[sig-builds][sig-node][Feature:Builds][apigroup:build.openshift.io] zstd:chunked Image should successfully run date command [Skipped:Disconnected] [Suite:openshift/conformance/parallel]": "[sig-node][Feature:Builds][apigroup:build.openshift.io] zstd:chunked Image should successfully run date command [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
+			"[sig-node] zstd:chunked Image should successfully run date command [Skipped:Disconnected] [Suite:openshift/conformance/parallel]":                                                          "[sig-builds][sig-node][Feature:Builds][apigroup:build.openshift.io] zstd:chunked Image should successfully run date command [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
 		},
 	},
 }
