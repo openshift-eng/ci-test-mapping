@@ -16,7 +16,7 @@ import (
 func GetJiraComponents() (map[string]int64, error) {
 	start := time.Now()
 	log.Infof("loading jira ocpbugs component information...")
-	body, err := jiraRequest("https://issues.redhat.com/rest/api/2/project/12332330/components")
+	body, err := jiraRequest("https://issues.redhat.com/rest/api/2/project/OCPBUGS/components")
 	if err != nil {
 		return nil, err
 	}

@@ -25,7 +25,7 @@ type CreateFlags struct {
 
 func NewCreateFlags() *CreateFlags {
 	return &CreateFlags{
-		JiraURL: "https://issues.redhat.com/rest/api/2/issue/createmeta/OCPBUGS/issuetypes/1",
+		JiraURL: "https://issues.redhat.com/rest/api/2/issue/createmeta/OCPBUGS/issuetypes/",
 	}
 }
 
@@ -65,8 +65,64 @@ var createCmd = &cobra.Command{
 	},
 }
 
-func getJiraComponents(url, bearerToken string) ([]string, error) {
+func getJiraBugTypeID(url, bearerToken string) (string, error) {
 	req, err := http.NewRequest("GET", url, nil)
+	if err != nil {
+		logrus.WithError(err).Fatal("could not create GET client")
+	}
+	req.Header.Add("Authorization", fmt.Sprintf("Bearer %s", bearerToken))
+	req.Header.Add("Content-Type", "application/json")
+	req.Header.Add("Accept", "application/json")
+	client := &http.Client{}
+	resp, err := client.Do(req)
+	if err != nil {
+		return "", err
+	}
+	defer resp.Body.Close()
+
+	body, err := io.ReadAll(resp.Body)
+	if err != nil {
+		logrus.WithError(err).Fatal("error while reading types response")
+	}
+
+	var jiraTypes struct {
+		Values []struct {
+			ID   string `json:"id"`
+			Name string `json:"name"`
+		} `json:"values"`
+	}
+
+	if err := json.Unmarshal(body, &jiraTypes); err != nil {
+		return "", err
+	}
+
+	for _, value := range jiraTypes.Values {
+		if value.Name == "Bug" {
+			return value.ID, nil
+		}
+	}
+
+	return "", nil
+}
+
+func getJiraComponents(url, bearerToken string) ([]string, error) {
+
+	// bug type ids are not constant across environments so look it up
+	id, err := getJiraBugTypeID(url, bearerToken)
+	if err != nil {
+		logrus.WithError(err).Fatal("could not fetch jira bug type")
+	}
+
+	if len(id) == 0 {
+		logrus.Fatalf("jira bug type id required")
+	}
+
+	componentsURL := fmt.Sprintf("%s%s", url, id)
+	if !strings.HasSuffix(url, "/") {
+		componentsURL = fmt.Sprintf("%s/%s", url, id)
+	}
+
+	req, err := http.NewRequest("GET", componentsURL, nil)
 	if err != nil {
 		logrus.WithError(err).Fatal("could not create GET client")
 	}
