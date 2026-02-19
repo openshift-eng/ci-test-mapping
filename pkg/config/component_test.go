@@ -107,6 +107,16 @@ func TestComponent_FindMatch(t *testing.T) {
 			},
 			matches: true,
 		},
+		{
+			name: "Suite matches regex",
+			matcher: ComponentMatcher{
+				Suite: "^CNV-lp-interop.*",
+			},
+			test: v1.TestInfo{
+				Name: "[sig-compute] CNV-lp-interop:VirtualMachine A valid VirtualMachine given Using RunStrategyAlways [test_id:3165]",
+			},
+			matches: true,
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
