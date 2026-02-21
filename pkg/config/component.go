@@ -150,7 +150,14 @@ func (c *Component) IsNamespaceTest(testName string) (string, bool) {
 }
 
 func (cm *ComponentMatcher) IsSuiteTest(test *v1.TestInfo) bool {
-	return test.Suite == cm.Suite
+	// A static name is a valid regex
+	re, err := regexp.Compile(cm.Suite)
+	// If the Suite name includes a special character
+	// that fails regex compilation, we fall back to a static match.
+	if err != nil {
+		return test.Suite == cm.Suite
+	}
+	return re.MatchString(test.Suite)
 }
 
 func (cm *ComponentMatcher) IsSubstringAllTest(allOf []string, test *v1.TestInfo) bool {
