@@ -90,8 +90,8 @@ func (c *Component) FindMatch(test *v1.TestInfo) *ComponentMatcher {
 
 		if m.Suite != "" || m.SuiteRegEx != nil {
 			// If filters exist, we must prove a match
-			suiteMatch = (m.Suite != "" && m.IsSuiteTest(test)) || 
-						 (m.SuiteRegEx != nil && m.IsSuiteRegExTest(test))
+			suiteMatch = (m.Suite != "" && m.IsSuiteTest(test)) ||
+				(m.SuiteRegEx != nil && m.IsSuiteRegExTest(test))
 		}
 
 		if len(m.IncludeAll) > 0 {
