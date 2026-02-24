@@ -32,15 +32,18 @@ type Component struct {
 }
 
 // ComponentMatcher is used to match against a TestInfo struct. Note the fields SIG,
-// Suite, IncludeAll, and ExcludeAll are ANDed together. That is, all that have values must
+// Suite (or SuiteRegEx), IncludeAll, and ExcludeAll are ANDed together. That is, all that have values must
 // match.  For include  and exclude, the individual items in the array are ANDed. That
 // is, if you  specify multiple substrings, all must match. Use separate component
 // matchers for an OR operation.
+//
+// Suite is matched by exact string equality. SuiteRegEx is matched by regex against test.Suite.
 //
 // The second set  of fields are metadata used to assign ownership.
 type ComponentMatcher struct {
 	SIG        string
 	Suite      string
+	SuiteRegEx string
 	IncludeAll []string
 	IncludeAny []string
 	ExcludeAll []string
@@ -76,7 +79,7 @@ func (c *Component) FindMatch(test *v1.TestInfo) *ComponentMatcher {
 	// Check if any of the Matchers match the given test
 	for _, m := range c.Matchers {
 		sigMatch := true
-		suiteMatch := true
+		suiteMatch := false
 		incSubstrMatch := true
 		incAnySubstrMatch := true
 
@@ -86,6 +89,12 @@ func (c *Component) FindMatch(test *v1.TestInfo) *ComponentMatcher {
 
 		if m.Suite != "" {
 			suiteMatch = m.IsSuiteTest(test)
+		}
+		if m.SuiteRegEx != "" {
+			suiteMatch = suiteMatch || m.IsSuiteRegExTest(test)
+		}
+		if m.Suite == "" && m.SuiteRegEx == "" {
+			suiteMatch = true // no suite filter: don't care
 		}
 
 		if len(m.IncludeAll) > 0 {
@@ -150,12 +159,13 @@ func (c *Component) IsNamespaceTest(testName string) (string, bool) {
 }
 
 func (cm *ComponentMatcher) IsSuiteTest(test *v1.TestInfo) bool {
-	// A static name is a valid regex
-	re, err := regexp.Compile(cm.Suite)
-	// If the Suite name includes a special character
-	// that fails regex compilation, we fall back to a static match.
+	return test.Suite == cm.Suite
+}
+
+func (cm *ComponentMatcher) IsSuiteRegExTest(test *v1.TestInfo) bool {
+	re, err := regexp.Compile(cm.SuiteRegEx)
 	if err != nil {
-		return test.Suite == cm.Suite
+		return false
 	}
 	return re.MatchString(test.Suite)
 }

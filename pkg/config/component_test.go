@@ -108,25 +108,48 @@ func TestComponent_FindMatch(t *testing.T) {
 			matches: true,
 		},
 		{
-			name: "Suite matches regex",
+			name: "Suite and SuiteRegEx both set: exact match only (regex does not match)",
 			matcher: ComponentMatcher{
-				Suite: "^CNV-lp-interop.*",
+				Suite:      "e2e-openstack",
+				SuiteRegEx: "^CNV-lp-interop.*",
 			},
 			test: v1.TestInfo{
-				Name: "[sig-compute] VirtualMachine A valid VirtualMachine given Using RunStrategyAlways [test_id:3165]",
+				Suite: "e2e-openstack",
+			},
+			matches: true,
+		},
+		{
+			name: "Suite and SuiteRegEx both set: regex match only (exact does not match)",
+			matcher: ComponentMatcher{
+				Suite:      "CNV-lp-interop",
+				SuiteRegEx: "^CNV-lp-interop.*",
+			},
+			test: v1.TestInfo{
 				Suite: "CNV-lp-interop: Testing VM workload.",
 			},
 			matches: true,
 		},
 		{
-			name: "Suite does not matches regex",
+			name: "Suite and SuiteRegEx both set: neither matches",
 			matcher: ComponentMatcher{
-				Suite: "CNV-lp-interop",
+				Suite:      "e2e-openstack",
+				SuiteRegEx: "^CNV-lp-interop.*",
 			},
 			test: v1.TestInfo{
-				Suite: "CNV-lp-interop: Testing VM workload.",
+				Suite: "CNV-lp",
 			},
 			matches: false,
+		},
+		{
+			name: "Suite and SuiteRegEx both set: both match",
+			matcher: ComponentMatcher{
+				Suite:      "CNV-lp-interop",
+				SuiteRegEx: "^CNV-lp-interop.*",
+			},
+			test: v1.TestInfo{
+				Suite: "CNV-lp-interop",
+			},
+			matches: true,
 		},
 	}
 	for _, tt := range tests {
