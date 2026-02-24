@@ -118,6 +118,16 @@ func TestComponent_FindMatch(t *testing.T) {
 			},
 			matches: true,
 		},
+		{
+			name: "Suite does not matches regex",
+			matcher: ComponentMatcher{
+				Suite: "CNV-lp-interop",
+			},
+			test: v1.TestInfo{
+				Suite: "CNV-lp-interop: Testing VM workload.",
+			},
+			matches: false,
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
