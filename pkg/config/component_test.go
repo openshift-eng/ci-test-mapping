@@ -2,6 +2,7 @@ package config
 
 import (
 	"reflect"
+	"regexp"
 	"testing"
 
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
@@ -111,7 +112,7 @@ func TestComponent_FindMatch(t *testing.T) {
 			name: "Suite and SuiteRegEx both set: exact match only (regex does not match)",
 			matcher: ComponentMatcher{
 				Suite:      "e2e-openstack",
-				SuiteRegEx: "^CNV-lp-interop.*",
+				SuiteRegEx: regexp.MustCompile("^CNV-lp-interop.*"),
 			},
 			test: v1.TestInfo{
 				Suite: "e2e-openstack",
@@ -122,7 +123,7 @@ func TestComponent_FindMatch(t *testing.T) {
 			name: "Suite and SuiteRegEx both set: regex match only (exact does not match)",
 			matcher: ComponentMatcher{
 				Suite:      "CNV-lp-interop",
-				SuiteRegEx: "^CNV-lp-interop.*",
+				SuiteRegEx: regexp.MustCompile("^CNV-lp-interop.*"),
 			},
 			test: v1.TestInfo{
 				Suite: "CNV-lp-interop: Testing VM workload.",
@@ -133,7 +134,7 @@ func TestComponent_FindMatch(t *testing.T) {
 			name: "Suite and SuiteRegEx both set: neither matches",
 			matcher: ComponentMatcher{
 				Suite:      "e2e-openstack",
-				SuiteRegEx: "^CNV-lp-interop.*",
+				SuiteRegEx: regexp.MustCompile("^CNV-lp-interop.*"),
 			},
 			test: v1.TestInfo{
 				Suite: "CNV-lp",
@@ -144,7 +145,7 @@ func TestComponent_FindMatch(t *testing.T) {
 			name: "Suite and SuiteRegEx both set: both match",
 			matcher: ComponentMatcher{
 				Suite:      "CNV-lp-interop",
-				SuiteRegEx: "^CNV-lp-interop.*",
+				SuiteRegEx: regexp.MustCompile("^CNV-lp-interop.*"),
 			},
 			test: v1.TestInfo{
 				Suite: "CNV-lp-interop",

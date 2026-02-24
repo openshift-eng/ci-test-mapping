@@ -37,13 +37,14 @@ type Component struct {
 // is, if you  specify multiple substrings, all must match. Use separate component
 // matchers for an OR operation.
 //
-// Suite is matched by exact string equality. SuiteRegEx is matched by regex against test.Suite.
+// Suite is matched by exact string equality. Otherwise, SuiteRegEx is matched against test.Suite;
+// set it using regexp.MustCompile so invalid patterns fail at init time.
 //
 // The second set  of fields are metadata used to assign ownership.
 type ComponentMatcher struct {
 	SIG        string
 	Suite      string
-	SuiteRegEx string
+	SuiteRegEx *regexp.Regexp
 	IncludeAll []string
 	IncludeAny []string
 	ExcludeAll []string
@@ -79,7 +80,7 @@ func (c *Component) FindMatch(test *v1.TestInfo) *ComponentMatcher {
 	// Check if any of the Matchers match the given test
 	for _, m := range c.Matchers {
 		sigMatch := true
-		suiteMatch := false
+		suiteMatch := true
 		incSubstrMatch := true
 		incAnySubstrMatch := true
 
@@ -87,14 +88,10 @@ func (c *Component) FindMatch(test *v1.TestInfo) *ComponentMatcher {
 			sigMatch = util.IsSigTest(test.Name, m.SIG)
 		}
 
-		if m.Suite != "" {
-			suiteMatch = m.IsSuiteTest(test)
-		}
-		if m.SuiteRegEx != "" {
-			suiteMatch = suiteMatch || m.IsSuiteRegExTest(test)
-		}
-		if m.Suite == "" && m.SuiteRegEx == "" {
-			suiteMatch = true // no suite filter: don't care
+		if m.Suite != "" || m.SuiteRegEx != nil {
+			// If filters exist, we must prove a match
+			suiteMatch = (m.Suite != "" && m.IsSuiteTest(test)) || 
+						 (m.SuiteRegEx != nil && m.IsSuiteRegExTest(test))
 		}
 
 		if len(m.IncludeAll) > 0 {
@@ -163,11 +160,10 @@ func (cm *ComponentMatcher) IsSuiteTest(test *v1.TestInfo) bool {
 }
 
 func (cm *ComponentMatcher) IsSuiteRegExTest(test *v1.TestInfo) bool {
-	re, err := regexp.Compile(cm.SuiteRegEx)
-	if err != nil {
-		return false
+	if cm.SuiteRegEx == nil {
+		return true
 	}
-	return re.MatchString(test.Suite)
+	return cm.SuiteRegEx.MatchString(test.Suite)
 }
 
 func (cm *ComponentMatcher) IsSubstringAllTest(allOf []string, test *v1.TestInfo) bool {
