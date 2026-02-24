@@ -113,7 +113,8 @@ func TestComponent_FindMatch(t *testing.T) {
 				Suite: "^CNV-lp-interop.*",
 			},
 			test: v1.TestInfo{
-				Name: "[sig-compute] CNV-lp-interop:VirtualMachine A valid VirtualMachine given Using RunStrategyAlways [test_id:3165]",
+				Name: "[sig-compute] VirtualMachine A valid VirtualMachine given Using RunStrategyAlways [test_id:3165]",
+				Suite: "CNV-lp-interop: Testing VM workload.",
 			},
 			matches: true,
 		},
