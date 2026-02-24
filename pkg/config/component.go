@@ -161,7 +161,7 @@ func (cm *ComponentMatcher) IsSuiteTest(test *v1.TestInfo) bool {
 
 func (cm *ComponentMatcher) IsSuiteRegExTest(test *v1.TestInfo) bool {
 	if cm.SuiteRegEx == nil {
-		return true
+		return false // No pattern set, so it cannot match.
 	}
 	return cm.SuiteRegEx.MatchString(test.Suite)
 }
