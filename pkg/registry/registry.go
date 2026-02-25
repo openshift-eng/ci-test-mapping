@@ -55,6 +55,7 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/etcd"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/externaldnsoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/externalsecretsoperator"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/fusionaccesslpinterop"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/gitopslpinterop"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/gitopsztp"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/hawkular"
@@ -464,6 +465,7 @@ func NewComponentRegistry() *Registry {
 	r.Register("ACSLatest-lp-interop", &acslatestlpinterop.ACSLatestLpInteropComponent)
 	r.Register("ACS-lp-interop", &acslpinterop.ACSLpInteropComponent)
 	r.Register("OADP-lp-interop", &oadplpinterop.OADPLpInteropComponent)
+	r.Register("Fusion-access-lp-interop", &fusionaccesslpinterop.FusionAccessLpInteropComponent)
 	// New components go here
 
 	return &r
