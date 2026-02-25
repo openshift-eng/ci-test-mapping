@@ -32,15 +32,19 @@ type Component struct {
 }
 
 // ComponentMatcher is used to match against a TestInfo struct. Note the fields SIG,
-// Suite, IncludeAll, and ExcludeAll are ANDed together. That is, all that have values must
+// Suite (or SuiteRegEx), IncludeAll, and ExcludeAll are ANDed together. That is, all that have values must
 // match.  For include  and exclude, the individual items in the array are ANDed. That
 // is, if you  specify multiple substrings, all must match. Use separate component
 // matchers for an OR operation.
+//
+// Suite is matched by exact string equality. Otherwise, SuiteRegEx is matched against test.Suite;
+// set it using regexp.MustCompile so invalid patterns fail at init time.
 //
 // The second set  of fields are metadata used to assign ownership.
 type ComponentMatcher struct {
 	SIG        string
 	Suite      string
+	SuiteRegEx *regexp.Regexp
 	IncludeAll []string
 	IncludeAny []string
 	ExcludeAll []string
@@ -84,8 +88,10 @@ func (c *Component) FindMatch(test *v1.TestInfo) *ComponentMatcher {
 			sigMatch = util.IsSigTest(test.Name, m.SIG)
 		}
 
-		if m.Suite != "" {
-			suiteMatch = m.IsSuiteTest(test)
+		if m.Suite != "" || m.SuiteRegEx != nil {
+			// If filters exist, we must prove a match
+			suiteMatch = (m.Suite != "" && m.IsSuiteTest(test)) ||
+				(m.SuiteRegEx != nil && m.IsSuiteRegExTest(test))
 		}
 
 		if len(m.IncludeAll) > 0 {
@@ -151,6 +157,13 @@ func (c *Component) IsNamespaceTest(testName string) (string, bool) {
 
 func (cm *ComponentMatcher) IsSuiteTest(test *v1.TestInfo) bool {
 	return test.Suite == cm.Suite
+}
+
+func (cm *ComponentMatcher) IsSuiteRegExTest(test *v1.TestInfo) bool {
+	if cm.SuiteRegEx == nil {
+		return false // No pattern set, so it cannot match.
+	}
+	return cm.SuiteRegEx.MatchString(test.Suite)
 }
 
 func (cm *ComponentMatcher) IsSubstringAllTest(allOf []string, test *v1.TestInfo) bool {

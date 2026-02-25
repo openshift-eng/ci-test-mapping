@@ -2,6 +2,7 @@ package config
 
 import (
 	"reflect"
+	"regexp"
 	"testing"
 
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
@@ -104,6 +105,50 @@ func TestComponent_FindMatch(t *testing.T) {
 			},
 			test: v1.TestInfo{
 				Name: "[sig-network-edge][Feature:Idling] Unidling [apigroup:apps.openshift.io][apigroup:route.openshift.io] should handle many TCP connections by possibly dropping those over a certain bound [Serial] [Skipped:Network/OVNKubernetes]",
+			},
+			matches: true,
+		},
+		{
+			name: "Suite and SuiteRegEx both set: exact match only (regex does not match)",
+			matcher: ComponentMatcher{
+				Suite:      "e2e-openstack",
+				SuiteRegEx: regexp.MustCompile("^CNV-lp-interop.*"),
+			},
+			test: v1.TestInfo{
+				Suite: "e2e-openstack",
+			},
+			matches: true,
+		},
+		{
+			name: "Suite and SuiteRegEx both set: regex match only (exact does not match)",
+			matcher: ComponentMatcher{
+				Suite:      "CNV-lp-interop",
+				SuiteRegEx: regexp.MustCompile("^CNV-lp-interop.*"),
+			},
+			test: v1.TestInfo{
+				Suite: "CNV-lp-interop: Testing VM workload.",
+			},
+			matches: true,
+		},
+		{
+			name: "Suite and SuiteRegEx both set: neither matches",
+			matcher: ComponentMatcher{
+				Suite:      "e2e-openstack",
+				SuiteRegEx: regexp.MustCompile("^CNV-lp-interop.*"),
+			},
+			test: v1.TestInfo{
+				Suite: "CNV-lp",
+			},
+			matches: false,
+		},
+		{
+			name: "Suite and SuiteRegEx both set: both match",
+			matcher: ComponentMatcher{
+				Suite:      "CNV-lp-interop",
+				SuiteRegEx: regexp.MustCompile("^CNV-lp-interop.*"),
+			},
+			test: v1.TestInfo{
+				Suite: "CNV-lp-interop",
 			},
 			matches: true,
 		},
