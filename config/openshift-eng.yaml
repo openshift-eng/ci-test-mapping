@@ -24,6 +24,7 @@ includeSuites:
   - Gitops-lp-interop
   - ACSLatest-lp-interop
   - ACS-lp-interop
+  - Fusion-access-lp-interop
   - OADP-lp-interop
   - tracing-uiplugin
   - E2E Suite
