@@ -28,21 +28,8 @@ var UnknownComponent = Component{
 			{
 				IncludeAny: []string{
 					"bz-Cloud Compute",
-					"bz-cluster-api",
-					"bz-control-plane-machine-set",
-					"Managed cluster should have same number of Machines and Nodes",
-					"control plane machine set operator",
-					"upgrade should succeed: control-plane-machine-set",
-					"upgrade should succeed: cluster-api",
 				},
 				Priority: -1,
-			},
-			{
-				IncludeAll: []string{"service-load-balancer-", "disruption"},
-			},
-			{
-				SIG:        "sig-network-edge",
-				IncludeAll: []string{"Application behind service load balancer"},
 			},
 		},
 	},
