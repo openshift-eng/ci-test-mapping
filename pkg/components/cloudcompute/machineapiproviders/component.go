@@ -20,6 +20,7 @@ var MachineAPIProvidersComponent = Component{
 					"[sig-cluster-lifecycle] Cluster_Infrastructure MAPI",
 					"[sig-cluster-lifecycle] Cluster_Infrastructure Upgrade",
 					"upgrade should succeed: machine-api",
+					"MAPA Dedicated Hosts",
 				},
 				Priority: 1,
 			},
