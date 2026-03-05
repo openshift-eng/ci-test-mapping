@@ -38,6 +38,7 @@ import (
 	cloudnativeeventshardwareeventproxy "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudnativeevents/hardwareeventproxy"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/clusterautoscaler"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/clusterloader"
+	clusterobservabilityoperator "github.com/openshift-eng/ci-test-mapping/pkg/components/clusterobservabilityoperator/clusterobservabilityoperator"
 	tracinguiplugin "github.com/openshift-eng/ci-test-mapping/pkg/components/clusterobservabilityoperator/tracinguiplugin"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/clusterresourceoverrideadmissionoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/clusterversionoperator"
@@ -270,6 +271,7 @@ func NewComponentRegistry() *Registry {
 	r.Register("Cloud Native Events / Hardware Event Proxy", &cloudnativeeventshardwareeventproxy.HardwareEventProxyComponent)
 	r.Register("Cluster Autoscaler", &clusterautoscaler.ClusterAutoscalerComponent)
 	r.Register("Cluster Loader", &clusterloader.ClusterLoaderComponent)
+	r.Register("cluster-observability-operator", &clusterobservabilityoperator.ClusterObservabilityOperatorComponent)
 	r.Register("tracing-uiplugin", &tracinguiplugin.ClusterObservabilityOperatorComponent)
 	r.Register("Cluster Resource Override Admission Operator", &clusterresourceoverrideadmissionoperator.ClusterResourceOverrideAdmissionOperatorComponent)
 	r.Register("Cluster Version Operator", &clusterversionoperator.ClusterVersionOperatorComponent)
