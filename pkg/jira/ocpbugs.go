@@ -13,10 +13,10 @@ import (
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 )
 
-func GetJiraComponents() (map[string]int64, error) {
+func GetJiraComponents(authorization string) (map[string]int64, error) {
 	start := time.Now()
 	log.Infof("loading jira ocpbugs component information...")
-	body, err := jiraRequest("https://issues.redhat.com/rest/api/2/project/12332330/components")
+	body, err := jiraRequest("https://issues.redhat.com/rest/api/2/project/OCPBUGS/components", authorization)
 	if err != nil {
 		return nil, err
 	}
@@ -42,7 +42,7 @@ func GetJiraComponents() (map[string]int64, error) {
 	return ids, nil
 }
 
-func jiraRequest(apiURL string) ([]byte, error) {
+func jiraRequest(apiURL, authorization string) ([]byte, error) {
 	req, err := http.NewRequest("GET", apiURL, nil)
 	if err != nil {
 		return nil, err
@@ -50,6 +50,12 @@ func jiraRequest(apiURL string) ([]byte, error) {
 
 	req.Header.Add("Accept", "application/json")
 	req.Header.Add("Content-Type", "application/json")
+
+	// testing UAT environment required auth
+	// may not be necessary after migration
+	if authorization != "" {
+		req.Header.Add("Authorization", authorization)
+	}
 
 	var finalError error // keep the last error seen in case all attempts fail
 	for _, wait := range []time.Duration{0, 1, 5, 15} {

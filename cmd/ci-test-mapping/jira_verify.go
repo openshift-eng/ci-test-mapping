@@ -16,7 +16,7 @@ type VerifyFlags struct {
 
 func NewVerifyFlags() *VerifyFlags {
 	return &VerifyFlags{
-		JiraURL: "https://issues.redhat.com/rest/api/2/issue/createmeta/OCPBUGS/issuetypes/1",
+		JiraURL: "https://issues.redhat.com/rest/api/2/issue/createmeta/OCPBUGS/issuetypes/",
 	}
 }
 
@@ -28,11 +28,14 @@ var verifyCmd = &cobra.Command{
 
 		logrus.Info("fetching jira components from jira...")
 		bearerToken := os.Getenv("JIRA_TOKEN")
-		if bearerToken == "" {
-			cmd.Usage() // nolint:errcheck
-			logrus.Fatal("jira token required")
+		if len(bearerToken) == 0 {
+			basicToken := os.Getenv("JIRA_TOKEN_BASIC")
+			if len(basicToken) == 0 {
+				cmd.Usage() // nolint:errcheck
+				logrus.Fatal("jira token required")
+			}
 		}
-		jiraComponents, err := getJiraComponents(f.JiraURL, bearerToken)
+		jiraComponents, err := getJiraComponents(f.JiraURL)
 		if err != nil {
 			logrus.WithError(err).Fatal("could not fetch jira components")
 		}

@@ -165,7 +165,9 @@ move the configuration to the new component.
 Run `./ci-test-mapping jira-verify` to ensure it reports back cleanly.
 
 You'll need to set the env var `JIRA_TOKEN` to your personal API token
-(which you can create from your Jira profile page). Then:
+With the new hosted Jira environment a basic authentication header must be used.
+Set the env var `JIRA_TOKEN_BASIC` with the output from `echo -n "your_email@redhat.com:the_token" | base64 -w 0`
+(you can create the token from your Jira profile page). Then:
 
 1. Move any configuration for renamed components
 2. Delete any obsolete `pkg/components/<component>` directory
