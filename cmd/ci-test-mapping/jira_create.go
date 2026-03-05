@@ -36,11 +36,15 @@ var createCmd = &cobra.Command{
 		f := NewCreateFlags()
 
 		bearerToken := os.Getenv("JIRA_TOKEN")
-		if bearerToken == "" {
-			cmd.Usage() // nolint:errcheck
-			logrus.Fatal("jira token required")
+		if len(bearerToken) == 0 {
+			basicToken := os.Getenv("JIRA_TOKEN_BASIC")
+			if len(basicToken) == 0 {
+				cmd.Usage() // nolint:errcheck
+				logrus.Fatal("jira token required")
+			}
 		}
-		components, err := getJiraComponents(f.JiraURL, bearerToken)
+
+		components, err := getJiraComponents(f.JiraURL)
 		if err != nil {
 			logrus.WithError(err).Fatal("could not fetch jira components")
 		}
@@ -65,12 +69,34 @@ var createCmd = &cobra.Command{
 	},
 }
 
-func getJiraBugTypeID(url, bearerToken string) (string, error) {
+func getAuthorizationHeader() string {
+	bearerToken := os.Getenv("JIRA_TOKEN")
+	if len(bearerToken) > 0 {
+		return fmt.Sprintf("Bearer %s", bearerToken)
+	}
+
+	basicToken := os.Getenv("JIRA_TOKEN_BASIC")
+	if len(basicToken) > 0 {
+		return fmt.Sprintf("Basic %s", basicToken)
+	}
+
+	// may not be required so return empty string
+	return ""
+}
+
+func addRequestAuthorization(req *http.Request) {
+	authorization := getAuthorizationHeader()
+	if len(authorization) > 0 {
+		req.Header.Add("Authorization", authorization)
+	}
+}
+
+func getJiraBugTypeID(url string) (string, error) {
 	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
 		logrus.WithError(err).Fatal("could not create GET client")
 	}
-	req.Header.Add("Authorization", fmt.Sprintf("Bearer %s", bearerToken))
+	addRequestAuthorization(req)
 	req.Header.Add("Content-Type", "application/json")
 	req.Header.Add("Accept", "application/json")
 	client := &http.Client{}
@@ -85,18 +111,26 @@ func getJiraBugTypeID(url, bearerToken string) (string, error) {
 		logrus.WithError(err).Fatal("error while reading types response")
 	}
 
+	type JiraTypes struct {
+		ID   string `json:"id"`
+		Name string `json:"name"`
+	}
+
 	var jiraTypes struct {
-		Values []struct {
-			ID   string `json:"id"`
-			Name string `json:"name"`
-		} `json:"values"`
+		Values     []JiraTypes `json:"values"`
+		IssueTypes []JiraTypes `json:"issueTypes"`
 	}
 
 	if err := json.Unmarshal(body, &jiraTypes); err != nil {
 		return "", err
 	}
 
-	for _, value := range jiraTypes.Values {
+	types := jiraTypes.IssueTypes
+	if len(types) == 0 {
+		types = jiraTypes.Values
+	}
+
+	for _, value := range types {
 		if value.Name == "Bug" {
 			return value.ID, nil
 		}
@@ -105,10 +139,10 @@ func getJiraBugTypeID(url, bearerToken string) (string, error) {
 	return "", nil
 }
 
-func getJiraComponents(url, bearerToken string) ([]string, error) {
+func getJiraComponents(url string) ([]string, error) {
 
 	// bug type ids are not constant across environments so look it up
-	id, err := getJiraBugTypeID(url, bearerToken)
+	id, err := getJiraBugTypeID(url)
 	if err != nil {
 		logrus.WithError(err).Fatal("could not fetch jira bug type")
 	}
@@ -126,7 +160,7 @@ func getJiraComponents(url, bearerToken string) ([]string, error) {
 	if err != nil {
 		logrus.WithError(err).Fatal("could not create GET client")
 	}
-	req.Header.Add("Authorization", fmt.Sprintf("Bearer %s", bearerToken))
+	addRequestAuthorization(req)
 	req.Header.Add("Content-Type", "application/json")
 	req.Header.Add("Accept", "application/json")
 	client := &http.Client{}
@@ -141,19 +175,30 @@ func getJiraComponents(url, bearerToken string) ([]string, error) {
 		logrus.WithError(err).Fatal("error while reading response")
 	}
 
+	type Fields struct {
+		FieldID       string `json:"fieldId"`
+		AllowedValues []struct {
+			Name string `json:"name"`
+		} `json:"allowedValues"`
+	}
+
 	var jiraComponents struct {
-		Values []struct {
-			FieldID       string `json:"fieldId"`
-			AllowedValues []struct {
-				Name string `json:"name"`
-			} `json:"allowedValues"`
-		} `json:"values"`
+		Values []Fields `json:"values"`
+		Fields []Fields `json:"fields"`
 	}
 	if err := json.Unmarshal(body, &jiraComponents); err != nil {
 		return nil, err
 	}
+
+	// atlassian cloud response is slightly different
+	// handle both
+	fields := jiraComponents.Fields
+	if len(fields) == 0 {
+		fields = jiraComponents.Values
+	}
+
 	var components []string
-	for _, value := range jiraComponents.Values {
+	for _, value := range fields {
 		if value.FieldID == "components" {
 			for _, allowedValue := range value.AllowedValues {
 				if strings.Contains(allowedValue.Name, "Documentation") {

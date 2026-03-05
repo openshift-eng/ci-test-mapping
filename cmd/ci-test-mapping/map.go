@@ -98,7 +98,7 @@ var mapCmd = &cobra.Command{
 		createdAt := civil.DateTimeOf(now)
 		log.Infof("mapping tests to ownership")
 
-		jiraComponentIDs, err := jira.GetJiraComponents()
+		jiraComponentIDs, err := jira.GetJiraComponents(getAuthorizationHeader())
 		if err != nil {
 			return errors.WithMessage(err, "could not get jira component mapping")
 		}
