@@ -17,9 +17,11 @@ var MachineAPIProvidersComponent = Component{
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAny: []string{
-					"[sig-cluster-lifecycle] Cluster_Infrastructure MAPI",
+					"[sig-cluster-lifecycle] Cluster_Infrastructure MAPI", // openshift-tests-private
+					"[sig-cluster-lifecycle] Machine API",                 // cluster-api-actuator-pkg
 					"[sig-cluster-lifecycle] Cluster_Infrastructure Upgrade",
 					"upgrade should succeed: machine-api",
+					"[sig-cluster-lifecycle][Feature:Machines]", // origin
 					"MAPA Dedicated Hosts",
 				},
 				Priority: 1,

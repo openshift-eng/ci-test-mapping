@@ -17,8 +17,11 @@ var ControlPlaneMachineSetComponent = Component{
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAny: []string{
+					"bz-control-plane-machine-set",
+					"control plane machine set operator",
 					"[sig-cluster-lifecycle] Cluster_Infrastructure CPMS MAPI",
 					"ControlPlaneMachineSet Operator",
+					"upgrade should succeed: control-plane-machine-set",
 				},
 				Priority: 2,
 			},

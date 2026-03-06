@@ -39,15 +39,17 @@ var CloudControllerManagerComponent = Component{
 			},
 			{
 				IncludeAny: []string{
-					"[sig-cluster-lifecycle] Cluster_Infrastructure CCM",
+					"[sig-cluster-lifecycle] Cluster_Infrastructure CCM", // openshift-tests-private
+					"[sig-cluster-lifecycle] CCM",                        // cluster-api-actuator-pkg
 					"upgrade should succeed: cloud-controller-manager",
-					"OCP-41804",
-					"OCP-64657",
 				},
 				Priority: 2,
 			},
 			{
 				IncludeAll: []string{"cloud-provider-aws-e2e"},
+			},
+			{
+				IncludeAll: []string{"service-load-balancer-", "disruption"},
 			},
 		},
 	},

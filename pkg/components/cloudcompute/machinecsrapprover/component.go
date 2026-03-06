@@ -17,7 +17,8 @@ var MachineCSRApproverComponent = Component{
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAny: []string{
-					"[sig-cluster-lifecycle] Cluster_Infrastructure CMA",
+					"[sig-cluster-lifecycle] Cluster_Infrastructure CMA", // openshift-tests-private
+					"[sig-cluster-lifecycle] Cluster Machine Approver",   // cluster-api-actuator-pkg
 					"upgrade should succeed: machine-approver",
 				},
 				Priority: 2,
