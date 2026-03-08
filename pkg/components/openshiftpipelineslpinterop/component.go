@@ -16,7 +16,7 @@ var OpenshiftPipelinesLpInteropComponent = Component{
 		Name:                 "Openshift-pipelines-lp-interop",
 		Operators:            []string{},
 		DefaultJiraComponent: "Openshift-pipelines-lp-interop",
-		Matchers:             []config.ComponentMatcher{{Suite: "OpenshiftPipelines-lp-interop", SuiteRegEx: regexp.MustCompile("^OpenshiftPipelines-lp-interop.*")}},
+		Matchers:             []config.ComponentMatcher{{Suite: "OpenshiftPipelines-lp-interop", SuiteRegEx: regexp.MustCompile("^lp-interop-OpenshiftPipelines.*")}},
 	},
 }
 
