@@ -1,6 +1,8 @@
 package openshiftpipelineslpinterop
 
 import (
+	"regexp"
+
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/config"
 )
@@ -14,7 +16,7 @@ var OpenshiftPipelinesLpInteropComponent = Component{
 		Name:                 "Openshift-pipelines-lp-interop",
 		Operators:            []string{},
 		DefaultJiraComponent: "Openshift-pipelines-lp-interop",
-		Matchers:             []config.ComponentMatcher{{Suite: "OpenshiftPipelines-lp-interop"}},
+		Matchers:             []config.ComponentMatcher{{Suite: "OpenshiftPipelines-lp-interop", SuiteRegEx: regexp.MustCompile("^lp-interop-OpenshiftPipelines.*")}},
 	},
 }
 
