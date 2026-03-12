@@ -17,7 +17,8 @@ var MachineHealthCheckComponent = Component{
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAny: []string{
-					"[sig-cluster-lifecycle] Cluster_Infrastructure MHC MAPI",
+					"[sig-cluster-lifecycle] Cluster_Infrastructure MHC MAPI", // openshift-tests-private
+					"[sig-cluster-lifecycle] MachineHealthCheck",              // cluster-api-actuator-pkg
 				},
 				Priority: 2,
 			},

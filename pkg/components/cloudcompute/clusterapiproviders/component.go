@@ -17,7 +17,11 @@ var ClusterAPIProvidersComponent = Component{
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAny: []string{
-					"[sig-cluster-lifecycle] Cluster_Infrastructure CAPI",
+					"bz-cluster-api",
+					"[sig-cluster-lifecycle] Cluster_Infrastructure CAPI",                     // openshift-tests-private
+					"[sig-cluster-lifecycle] Cluster API",                                     // cluster-api-actuator-pkg/cluster-capi-operator
+					"[sig-cluster-lifecycle][OCPFeatureGate:MachineAPIMigration] Cluster API", // cluster-api-actuator-pkg/cluster-capi-operator
+					"upgrade should succeed: cluster-api",
 				},
 				Priority: 2,
 			},

@@ -28,6 +28,7 @@ includeSuites:
   - OADP-lp-interop
   - tracing-uiplugin
   - E2E Suite
+  - Machine Suite
 excludeSuites: []
 excludeTests:
   - "Build image%"
