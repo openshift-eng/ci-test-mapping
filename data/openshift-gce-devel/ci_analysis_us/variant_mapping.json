@@ -4,17 +4,17 @@
     "Kind": "VariantOwnership",
     "Product": "OpenShift",
     "JiraProject": "OCPBUGS",
-    "JiraComponent": "Bare Metal Hardware Provisioning",
+    "JiraComponent": "Cloud Compute / vSphere Provider",
     "VariantName": "Platform",
-    "VariantValue": "metal"
+    "VariantValue": "vsphere"
   },
   {
     "APIVersion": "v1",
     "Kind": "VariantOwnership",
     "Product": "OpenShift",
     "JiraProject": "OCPBUGS",
-    "JiraComponent": "Cloud Compute / vSphere Provider",
+    "JiraComponent": "Bare Metal Hardware Provisioning",
     "VariantName": "Platform",
-    "VariantValue": "vsphere"
+    "VariantValue": "metal"
   }
 ]
