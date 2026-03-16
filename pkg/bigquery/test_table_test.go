@@ -34,8 +34,8 @@ func TestBuildSuitesFilter(t *testing.T) {
 		{
 			name: "include exact and patterns",
 			config: &v1.Config{
-				IncludeSuites:         []string{"openshift-tests"},
-				IncludeSuitePatterns:  []string{"lp-interop%"},
+				IncludeSuites:        []string{"openshift-tests"},
+				IncludeSuitePatterns: []string{"lp-interop%"},
 			},
 			want: "(testsuite IN ('openshift-tests') OR testsuite LIKE 'lp-interop%')",
 		},
