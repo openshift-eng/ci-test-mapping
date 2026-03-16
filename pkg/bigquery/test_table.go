@@ -60,17 +60,55 @@ func (tm *TestTableManager) ListTests() ([]v1.TestInfo, error) {
 	return results, nil
 }
 
+func replaceSQLSingleQuotes(list []string) []string {
+	result := make([]string, len(list))
+	for i, s := range list {
+		result[i] = fmt.Sprintf("'%s'", s)
+	}
+	return result
+}
+
+func (tm *TestTableManager) buildSuitesFilter() string {
+	if len(tm.config.IncludeSuites) == 0 && len(tm.config.IncludeSuitePatterns) == 0 {
+		return "1=1" // no suites filter
+	}
+	var parts []string
+	if len(tm.config.IncludeSuites) > 0 {
+		quoted := replaceSQLSingleQuotes(tm.config.IncludeSuites)
+		parts = append(parts, fmt.Sprintf("testsuite IN (%s)", strings.Join(quoted, ",")))
+	}
+	if len(tm.config.IncludeSuitePatterns) > 0 {
+		for _, p := range tm.config.IncludeSuitePatterns {
+			parts = append(parts, fmt.Sprintf("testsuite LIKE '%s'", p))
+		}
+	}
+	return "(" + strings.Join(parts, " OR ") + ")"
+}
+
+func (tm *TestTableManager) buildExcludeSuitesFilter() string {
+	if len(tm.config.ExcludeSuites) == 0 && len(tm.config.ExcludeSuitePatterns) == 0 {
+		return ""
+	}
+	var parts []string
+	if len(tm.config.ExcludeSuites) > 0 {
+		quoted := replaceSQLSingleQuotes(tm.config.ExcludeSuites)
+		parts = append(parts, fmt.Sprintf("testsuite NOT IN (%s)", strings.Join(quoted, ",")))
+	}
+	if len(tm.config.ExcludeSuitePatterns) > 0 {
+		for _, p := range tm.config.ExcludeSuitePatterns {
+			parts = append(parts, fmt.Sprintf("testsuite NOT LIKE '%s'", p))
+		}
+	}
+	return "AND " + strings.Join(parts, " AND ")
+}
+
 func (tm *TestTableManager) buildSQLQuery() string {
 	var suitesFilter, jobsFilter, excludeSuitesFilter, excludeTestsFilter, excludeJobsFilter string
 
 	junitTable := tm.client.bigquery.Dataset(tm.dataset).Table(tm.junitTable)
 	variantsTable := tm.client.bigquery.Dataset(tm.dataset).Table(tm.variantsTable)
 
-	if len(tm.config.IncludeSuites) > 0 {
-		suitesFilter = fmt.Sprintf("testsuite IN ('%s')", strings.Join(tm.config.IncludeSuites, "','"))
-	} else {
-		suitesFilter = "1=1" // no filtering by suites
-	}
+	suitesFilter = tm.buildSuitesFilter()
 
 	if len(tm.config.IncludeJobs) > 0 {
 		jobsFilter = fmt.Sprintf("AND (%s)", strings.Join(func(jobs []string) []string {
@@ -82,9 +120,7 @@ func (tm *TestTableManager) buildSQLQuery() string {
 		}(tm.config.IncludeJobs), " OR "))
 	}
 
-	if len(tm.config.ExcludeSuites) > 0 {
-		excludeSuitesFilter = fmt.Sprintf("AND testsuite NOT IN ('%s')", strings.Join(tm.config.ExcludeSuites, "','"))
-	}
+	excludeSuitesFilter = tm.buildExcludeSuitesFilter()
 
 	if len(tm.config.ExcludeTests) > 0 {
 		excludeTestsFilter = fmt.Sprintf("AND test_name NOT LIKE '%s'", strings.Join(tm.config.ExcludeTests, "' AND test_name NOT LIKE '"))
