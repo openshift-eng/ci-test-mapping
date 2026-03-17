@@ -30,6 +30,9 @@ includeSuites:
   - E2E Suite
   - Machine Suite
 excludeSuites: []
+includeSuitePatterns:
+  - "lp-interop%"
+excludeSuitePatterns: []
 excludeTests:
   - "Build image%"
   - "Find the input image%"
