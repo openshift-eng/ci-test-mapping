@@ -16,7 +16,7 @@ type VerifyFlags struct {
 
 func NewVerifyFlags() *VerifyFlags {
 	return &VerifyFlags{
-		JiraURL: "https://issues.redhat.com/rest/api/2/issue/createmeta/OCPBUGS/issuetypes/",
+		JiraURL: "https://redhat.atlassian.net/rest/api/2/issue/createmeta/OCPBUGS/issuetypes/",
 	}
 }
 
