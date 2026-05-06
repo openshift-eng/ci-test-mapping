@@ -1,5 +1,50 @@
 # Component Readiness Test Mapping
 
+## Prerequisites
+
+This repository uses [Git Large File Storage (LFS)](https://git-lfs.github.com/) to manage large data files. You must have Git LFS installed and configured before cloning or working with this repository.
+
+### Installing Git LFS
+
+**Fedora/RHEL/CentOS:**
+```bash
+sudo dnf install git-lfs
+```
+
+**Ubuntu/Debian:**
+```bash
+sudo apt-get install git-lfs
+```
+
+**macOS (with Homebrew):**
+```bash
+brew install git-lfs
+```
+
+**Windows:**
+Download from https://git-lfs.github.com/ or use:
+```bash
+winget install GitHub.GitLFS
+```
+
+### Initial Setup
+
+After installing Git LFS, run this command once:
+```bash
+git lfs install
+```
+
+Then clone the repository as usual:
+```bash
+git clone https://github.com/openshift-eng/ci-test-mapping.git
+```
+
+If you already have the repository cloned, run `git lfs pull` to download the LFS files.
+
+**Note:** GitHub provides 1 GB of free LFS storage and 1 GB/month of bandwidth per account. Large files in the `data/` directory are tracked with LFS to avoid hitting Git's 100 MB file size limit.
+
+## Overview
+
 Component Readiness needs to know how to map each test to a particular
 component and its capabilities. This tool:
 

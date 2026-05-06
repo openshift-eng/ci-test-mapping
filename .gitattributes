@@ -1,1 +1,2 @@
 data/** linguist-generated
+data/**/*.json filter=lfs diff=lfs merge=lfs -text

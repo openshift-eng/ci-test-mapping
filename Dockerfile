@@ -4,8 +4,10 @@ ENV PATH="/go/bin:${PATH}"
 ENV GOPATH="/go"
 RUN dnf install -y \
         git \
+        git-lfs \
         go \
         make
+RUN git lfs install
 RUN go install k8s.io/test-infra/robots/pr-creator@latest
 # install gh-token before it required go 1.23 which ubi9 doesn't have yet;
 # unfortunately `go install` with the tag is broken, so just clone and install.
@@ -15,7 +17,8 @@ COPY . .
 RUN make build
 
 FROM registry.access.redhat.com/ubi9/ubi:latest AS base
-RUN dnf install -y git jq
+RUN dnf install -y git git-lfs jq
+RUN git lfs install
 COPY --from=builder /go/src/openshift-eng/ci-test-mapping/ci-test-mapping /bin/ci-test-mapping
 COPY --from=builder /go/bin/gh-token /bin/gh-token
 COPY --from=builder /go/bin/pr-creator /bin/pr-creator
