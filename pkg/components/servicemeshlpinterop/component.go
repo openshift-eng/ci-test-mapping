@@ -1,6 +1,8 @@
 package servicemeshlpinterop
 
 import (
+	"regexp"
+
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/config"
 )
@@ -14,7 +16,12 @@ var ServiceMeshLpInteropComponent = Component{
 		Name:                 "Service-mesh-lp-interop",
 		Operators:            []string{},
 		DefaultJiraComponent: "Service-mesh-lp-interop",
-		Matchers:             []config.ComponentMatcher{{Suite: "ServiceMesh-lp-interop"}},
+		Matchers: []config.ComponentMatcher{
+			{Suite: "ServiceMesh-lp-interop"},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--`)},
+		},
 	},
 }
 

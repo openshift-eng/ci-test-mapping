@@ -1,6 +1,8 @@
 package oadplpinterop
 
 import (
+	"regexp"
+
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/config"
 )
@@ -14,7 +16,12 @@ var OADPLpInteropComponent = Component{
 		Name:                 "OADP-lp-interop",
 		Operators:            []string{},
 		DefaultJiraComponent: "OADP-lp-interop",
-		Matchers:             []config.ComponentMatcher{{Suite: "OADP-lp-interop"}},
+		Matchers: []config.ComponentMatcher{
+			{Suite: "OADP-lp-interop"},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--`)},
+		},
 	},
 }
 

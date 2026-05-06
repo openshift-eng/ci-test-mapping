@@ -1,6 +1,8 @@
 package fusionaccesslpinterop
 
 import (
+	"regexp"
+
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/config"
 )
@@ -14,7 +16,12 @@ var FusionAccessLpInteropComponent = Component{
 		Name:                 "Fusion-access-lp-interop",
 		Operators:            []string{},
 		DefaultJiraComponent: "Fusion-access-lp-interop",
-		Matchers:             []config.ComponentMatcher{{Suite: "Fusion-access-lp-interop"}},
+		Matchers: []config.ComponentMatcher{
+			{Suite: "Fusion-access-lp-interop"},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--`)},
+		},
 	},
 }
 

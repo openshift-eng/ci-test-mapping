@@ -1,6 +1,8 @@
 package odflpinterop
 
 import (
+	"regexp"
+
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/config"
 )
@@ -14,7 +16,12 @@ var ODFLpInteropComponent = Component{
 		Name:                 "ODF-lp-interop",
 		Operators:            []string{},
 		DefaultJiraComponent: "ODF-lp-interop",
-		Matchers:             []config.ComponentMatcher{{Suite: "ODF-lp-interop"}},
+		Matchers: []config.ComponentMatcher{
+			{Suite: "ODF-lp-interop"},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--`)},
+		},
 	},
 }
 
