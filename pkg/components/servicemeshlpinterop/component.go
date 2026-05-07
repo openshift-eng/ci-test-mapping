@@ -18,9 +18,9 @@ var ServiceMeshLpInteropComponent = Component{
 		DefaultJiraComponent: "Service-mesh-lp-interop",
 		Matchers: []config.ComponentMatcher{
 			{Suite: "ServiceMesh-lp-interop"},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ServiceMesh--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ServiceMesh--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--ServiceMesh--`)},
 		},
 	},
 }

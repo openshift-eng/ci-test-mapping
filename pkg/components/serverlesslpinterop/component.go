@@ -18,9 +18,9 @@ var ServerlessLpInteropComponent = Component{
 		DefaultJiraComponent: "Serverless-lp-interop",
 		Matchers: []config.ComponentMatcher{
 			{Suite: "Serverless-lp-interop"},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--Serverless--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--Serverless--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--Serverless--`)},
 		},
 	},
 }

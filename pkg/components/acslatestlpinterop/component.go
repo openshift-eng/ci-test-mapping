@@ -18,9 +18,9 @@ var ACSLatestLpInteropComponent = Component{
 		DefaultJiraComponent: "ACS-lp-interop",
 		Matchers: []config.ComponentMatcher{
 			{Suite: "ACSLatest-lp-interop"},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACSLatest--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ACSLatest--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--ACSLatest--`)},
 		},
 	},
 }

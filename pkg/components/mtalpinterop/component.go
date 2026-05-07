@@ -18,9 +18,9 @@ var MTALpInteropComponent = Component{
 		DefaultJiraComponent: "MTA-lp-interop",
 		Matchers: []config.ComponentMatcher{
 			{Suite: "MTA-lp-interop"},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--MTA--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--MTA--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--MTA--`)},
 		},
 	},
 }

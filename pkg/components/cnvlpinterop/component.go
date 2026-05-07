@@ -18,9 +18,9 @@ var CNVLpInteropComponent = Component{
 		DefaultJiraComponent: "CNV-lp-interop",
 		Matchers: []config.ComponentMatcher{
 			{Suite: "CNV-lp-interop"},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--CNV--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--CNV--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--CNV--`)},
 		},
 	},
 }

@@ -18,9 +18,9 @@ var ODFLpInteropComponent = Component{
 		DefaultJiraComponent: "ODF-lp-interop",
 		Matchers: []config.ComponentMatcher{
 			{Suite: "ODF-lp-interop"},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ODF--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ODF--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--ODF--`)},
 		},
 	},
 }

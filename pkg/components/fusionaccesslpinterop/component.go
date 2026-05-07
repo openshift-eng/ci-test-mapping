@@ -18,9 +18,9 @@ var FusionAccessLpInteropComponent = Component{
 		DefaultJiraComponent: "Fusion-access-lp-interop",
 		Matchers: []config.ComponentMatcher{
 			{Suite: "Fusion-access-lp-interop"},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--Fusion-access--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--Fusion-access--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--Fusion-access--`)},
 		},
 	},
 }

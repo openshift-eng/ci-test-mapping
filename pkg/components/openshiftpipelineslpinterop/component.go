@@ -18,9 +18,10 @@ var OpenshiftPipelinesLpInteropComponent = Component{
 		DefaultJiraComponent: "Openshift-pipelines-lp-interop",
 		Matchers: []config.ComponentMatcher{
 			{Suite: "OpenshiftPipelines-lp-interop"},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--`)},
+			{SuiteRegEx: regexp.MustCompile("^lp-interop-OpenshiftPipelines--")}, //To be removed
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OpenshiftPipelines--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--OpenshiftPipelines--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--OpenshiftPipelines--`)},
 		},
 	},
 }

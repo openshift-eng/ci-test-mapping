@@ -18,9 +18,9 @@ var OADPLpInteropComponent = Component{
 		DefaultJiraComponent: "OADP-lp-interop",
 		Matchers: []config.ComponentMatcher{
 			{Suite: "OADP-lp-interop"},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OADP--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--OADP--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--OADP--`)},
 		},
 	},
 }

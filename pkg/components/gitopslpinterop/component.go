@@ -18,9 +18,9 @@ var GitopsLpInteropComponent = Component{
 		DefaultJiraComponent: "Gitops-lp-interop",
 		Matchers: []config.ComponentMatcher{
 			{Suite: "Gitops-lp-interop"},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--Gitops--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--Gitops--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--Gitops--`)},
 		},
 	},
 }
