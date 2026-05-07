@@ -27,17 +27,17 @@ func TestBuildSuitesFilter(t *testing.T) {
 		{
 			name: "include patterns only",
 			config: &v1.Config{
-				IncludeSuitePatterns: []string{"lp-interop%", "e2e-%"},
+				IncludeSuitePatterns: []string{"lp-interop--%", "e2e-%"},
 			},
-			want: "(testsuite LIKE 'lp-interop%' OR testsuite LIKE 'e2e-%')",
+			want: "(testsuite LIKE 'lp-interop--%' OR testsuite LIKE 'e2e-%')",
 		},
 		{
 			name: "include exact and patterns",
 			config: &v1.Config{
 				IncludeSuites:        []string{"openshift-tests"},
-				IncludeSuitePatterns: []string{"lp-interop%"},
+				IncludeSuitePatterns: []string{"lp-interop--%"},
 			},
-			want: "(testsuite IN ('openshift-tests') OR testsuite LIKE 'lp-interop%')",
+			want: "(testsuite IN ('openshift-tests') OR testsuite LIKE 'lp-interop--%')",
 		},
 	}
 	for _, tt := range tests {

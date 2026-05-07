@@ -1,6 +1,8 @@
 package cnvlpinterop
 
 import (
+	"regexp"
+
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/config"
 )
@@ -14,7 +16,12 @@ var CNVLpInteropComponent = Component{
 		Name:                 "CNV-lp-interop",
 		Operators:            []string{},
 		DefaultJiraComponent: "CNV-lp-interop",
-		Matchers:             []config.ComponentMatcher{{Suite: "CNV-lp-interop"}},
+		Matchers: []config.ComponentMatcher{
+			{Suite: "CNV-lp-interop"},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--CNV--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--CNV--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--CNV--`)},
+		},
 	},
 }
 

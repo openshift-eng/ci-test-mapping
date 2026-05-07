@@ -1,6 +1,8 @@
 package serverlesslpinterop
 
 import (
+	"regexp"
+
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/config"
 )
@@ -14,7 +16,12 @@ var ServerlessLpInteropComponent = Component{
 		Name:                 "Serverless-lp-interop",
 		Operators:            []string{},
 		DefaultJiraComponent: "Serverless-lp-interop",
-		Matchers:             []config.ComponentMatcher{{Suite: "Serverless-lp-interop"}},
+		Matchers: []config.ComponentMatcher{
+			{Suite: "Serverless-lp-interop"},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--Serverless--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--Serverless--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--Serverless--`)},
+		},
 	},
 }
 

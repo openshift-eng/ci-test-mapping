@@ -1,6 +1,8 @@
 package mtalpinterop
 
 import (
+	"regexp"
+
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/config"
 )
@@ -14,7 +16,12 @@ var MTALpInteropComponent = Component{
 		Name:                 "MTA-lp-interop",
 		Operators:            []string{},
 		DefaultJiraComponent: "MTA-lp-interop",
-		Matchers:             []config.ComponentMatcher{{Suite: "MTA-lp-interop"}},
+		Matchers: []config.ComponentMatcher{
+			{Suite: "MTA-lp-interop"},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--MTA--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--MTA--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--MTA--`)},
+		},
 	},
 }
 

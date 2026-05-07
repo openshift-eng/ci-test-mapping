@@ -1,6 +1,8 @@
 package quaylpinterop
 
 import (
+	"regexp"
+
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/config"
 )
@@ -14,7 +16,12 @@ var QuayLpInteropComponent = Component{
 		Name:                 "Quay-lp-interop",
 		Operators:            []string{},
 		DefaultJiraComponent: "Quay-lp-interop",
-		Matchers:             []config.ComponentMatcher{{Suite: "Quay-lp-interop"}},
+		Matchers: []config.ComponentMatcher{
+			{Suite: "Quay-lp-interop"},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--Quay--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--Quay--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--Quay--`)},
+		},
 	},
 }
 

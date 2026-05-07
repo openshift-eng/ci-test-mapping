@@ -1,6 +1,8 @@
 package acslpinterop
 
 import (
+	"regexp"
+
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/config"
 )
@@ -14,7 +16,12 @@ var ACSLpInteropComponent = Component{
 		Name:                 "ACS-lp-interop",
 		Operators:            []string{},
 		DefaultJiraComponent: "ACS-lp-interop",
-		Matchers:             []config.ComponentMatcher{{Suite: "ACS-lp-interop"}},
+		Matchers: []config.ComponentMatcher{
+			{Suite: "ACS-lp-interop"},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACS--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ACS--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--ACS--`)},
+		},
 	},
 }
 

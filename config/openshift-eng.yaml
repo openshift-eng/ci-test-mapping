@@ -31,7 +31,9 @@ includeSuites:
   - Machine Suite
 excludeSuites: []
 includeSuitePatterns:
-  - "lp-interop%"
+  - "lp-chaos--%"
+  - "lp-interop--%"
+  - "lp-ocp-compat--%"
 excludeSuitePatterns: []
 excludeTests:
   - "Build image%"

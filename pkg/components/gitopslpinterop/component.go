@@ -1,6 +1,8 @@
 package gitopslpinterop
 
 import (
+	"regexp"
+
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/config"
 )
@@ -14,7 +16,12 @@ var GitopsLpInteropComponent = Component{
 		Name:                 "Gitops-lp-interop",
 		Operators:            []string{},
 		DefaultJiraComponent: "Gitops-lp-interop",
-		Matchers:             []config.ComponentMatcher{{Suite: "Gitops-lp-interop"}},
+		Matchers: []config.ComponentMatcher{
+			{Suite: "Gitops-lp-interop"},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--Gitops--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--Gitops--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--Gitops--`)},
+		},
 	},
 }
 
