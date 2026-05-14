@@ -14,7 +14,15 @@ var OcMirrorComponent = Component{
 		Name:                 "oc-mirror",
 		Operators:            []string{},
 		DefaultJiraComponent: "oc-mirror",
-		Matchers:             []config.ComponentMatcher{},
+		Matchers: []config.ComponentMatcher{
+			{
+				IncludeAny: []string{
+					"ocmirror",
+					"oc-mirror",
+				},
+				Priority: 5,
+			},
+		},
 	},
 }
 
