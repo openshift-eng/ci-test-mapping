@@ -101,6 +101,7 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/logging"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/logicalvolumemanagerstorage"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/lowlatencyvalidationtooling"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpcomplpinterop"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/machineconfigoperator"
 	machineconfigoperatorplatformbaremetal "github.com/openshift-eng/ci-test-mapping/pkg/components/machineconfigoperator/platformbaremetal"
 	machineconfigoperatorplatformnone "github.com/openshift-eng/ci-test-mapping/pkg/components/machineconfigoperator/platformnone"
@@ -464,6 +465,7 @@ func NewComponentRegistry() *Registry {
 	r.Register("ODF-lp-interop", &odflpinterop.ODFLpInteropComponent)
 	r.Register("MTA-lp-interop", &mtalpinterop.MTALpInteropComponent)
 	r.Register("Gitops-lp-interop", &gitopslpinterop.GitopsLpInteropComponent)
+	r.Register("LPComp-lp-interop", &lpcomplpinterop.LPCompLpInteropComponent)
 	r.Register("ACSLatest-lp-interop", &acslatestlpinterop.ACSLatestLpInteropComponent)
 	r.Register("ACS-lp-interop", &acslpinterop.ACSLpInteropComponent)
 	r.Register("OADP-lp-interop", &oadplpinterop.OADPLpInteropComponent)
