@@ -113,6 +113,7 @@ import (
 	microshiftnetworking "github.com/openshift-eng/ci-test-mapping/pkg/components/microshift/networking"
 	microshiftstorage "github.com/openshift-eng/ci-test-mapping/pkg/components/microshift/storage"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/monitoring"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/mpexoperatorlpinterop"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/mtalpinterop"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/multiarch"
 	multiarcharm "github.com/openshift-eng/ci-test-mapping/pkg/components/multiarch/arm"
@@ -462,6 +463,7 @@ func NewComponentRegistry() *Registry {
 	r.Register("ServiceMesh-lp-interop", &servicemeshlpinterop.ServiceMeshLpInteropComponent)
 	r.Register("Serverless-lp-interop", &serverlesslpinterop.ServerlessLpInteropComponent)
 	r.Register("ODF-lp-interop", &odflpinterop.ODFLpInteropComponent)
+	r.Register("MPEXOperator-lp-interop", &mpexoperatorlpinterop.MPEXOperatorLpInteropComponent)
 	r.Register("MTA-lp-interop", &mtalpinterop.MTALpInteropComponent)
 	r.Register("Gitops-lp-interop", &gitopslpinterop.GitopsLpInteropComponent)
 	r.Register("ACSLatest-lp-interop", &acslatestlpinterop.ACSLatestLpInteropComponent)
