@@ -129,7 +129,7 @@ import (
 	networkingkuryr "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/kuryr"
 	networkingmetallb "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/metallb"
 	networkingmultus "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/multus"
-	networkingnetobs "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/netobs"
+	networkingnetobs "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/netobserv"
 	networkingnetworkingconsoleplugin "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/networkingconsoleplugin"
 	networkingnetworktools "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/networktools"
 	networkingnmstateconsoleplugin "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/nmstateconsoleplugin"
