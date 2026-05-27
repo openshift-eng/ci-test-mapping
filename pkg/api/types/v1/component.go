@@ -37,9 +37,11 @@ type TestInfo struct {
 	Suite string `bigquery:"suite"`
 
 	// Variants contains the set of all job variants this test appeared in.  This is useful
-	// for assinging components and capabilities. For example, all tests with `Procedure:etcd-scaling`
+	// for assigning components and capabilities. For example, all tests with `Procedure:etcd-scaling`
 	// could be assigned to the `etcd` component.
-	Variants []string `bigquery:"variants"`
+	// Because including this makes junit.json much larger and nothing relies on that
+	// serialized form, we exclude it from the json serialization.
+	Variants []string `bigquery:"variants" json:"-"`
 }
 
 const TestOwnershipAPIVersion = "v1"
