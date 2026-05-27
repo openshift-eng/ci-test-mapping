@@ -1,9 +1,8 @@
----
+version: "2"
 run:
   concurrency: 6
-  deadline: 10m
 linters:
-  disable-all: true
+  default: none
   enable:
     - copyloopvar
     - dupl
@@ -11,99 +10,119 @@ linters:
     - goconst
     - gocritic
     - gocyclo
-    - gofmt
-    - goimports
-    - gosimple
     - govet
     - ineffassign
     - misspell
     - revive
     - staticcheck
-    - typecheck
     - unconvert
     - unparam
-linters-settings:
-  gofmt:
-    simplify: false # do not require the -s flag
-  gocritic:
-    enabled-checks:
-      # Diagnostic
-      - commentedOutCode
-      - nilValReturn
-      - octalLiteral
-      - sloppyReassign
-      - weakCond
-
-      # Performance
-      - equalFold
-      - indexAlloc
-      - rangeExprCopy
-
-      # Style
-      - boolExprSimplify
-      - commentedOutImport
-      - docStub
-      - emptyFallthrough
-      - hexLiteral
-      - methodExprCall
-      - stringXbytes
-      - typeAssertChain
-      - unlabelStmt
-      - yodaStyleExpr
-
-      # Opinionated
-      - initClause
-      - nestingReduce
-      - paramTypeCombine
-      - ptrToRefParam
-      - typeUnparen
-      - unnecessaryBlock
-  revive:
+  settings:
+    gocritic:
+      enabled-checks:
+        - commentedOutCode
+        - nilValReturn
+        - octalLiteral
+        - sloppyReassign
+        - weakCond
+        - equalFold
+        - indexAlloc
+        - rangeExprCopy
+        - boolExprSimplify
+        - commentedOutImport
+        - docStub
+        - emptyFallthrough
+        - hexLiteral
+        - methodExprCall
+        - stringXbytes
+        - typeAssertChain
+        - unlabelStmt
+        - yodaStyleExpr
+        - initClause
+        - nestingReduce
+        - paramTypeCombine
+        - ptrToRefParam
+        - typeUnparen
+        - unnecessaryBlock
+    revive:
+      rules:
+        - name: atomic
+        - name: blank-imports
+        - name: bool-literal-in-expr
+        - name: call-to-gc
+        - name: confusing-naming
+        - name: constant-logical-expr
+        - name: context-as-argument
+        - name: context-keys-type
+        - name: deep-exit
+        - name: defer
+        - name: dot-imports
+        - name: duplicated-imports
+        - name: early-return
+        - name: empty-block
+        - name: error-naming
+        - name: error-return
+        - name: error-strings
+        - name: errorf
+        - name: get-return
+        - name: identical-branches
+        - name: if-return
+        - name: import-shadowing
+        - name: imports-blacklist
+        - name: increment-decrement
+        - name: indent-error-flow
+        - name: modifies-parameter
+        - name: modifies-value-receiver
+        - name: package-comments
+        - name: range
+        - name: range-val-address
+        - name: range-val-in-closure
+        - name: receiver-naming
+        - name: redefines-builtin-id
+        - name: string-of-int
+        - name: struct-tag
+        - name: superfluous-else
+        - name: time-naming
+        - name: unconditional-recursion
+        - name: unexported-naming
+        - name: unnecessary-stmt
+        - name: unreachable-code
+        # TODO: Enable these in the future
+        # - name: unused-parameter
+        # - name: unused-receiver
+        - name: var-declaration
+        - name: var-naming
+        - name: waitgroup-by-value
+  exclusions:
+    generated: lax
+    presets:
+      - comments
+      - common-false-positives
+      - legacy
+      - std-error-handling
+    paths:
+      - third_party$
+      - builtin$
+      - examples$
     rules:
-      - name: atomic
-      - name: blank-imports
-      - name: bool-literal-in-expr
-      - name: call-to-gc
-      - name: confusing-naming
-      - name: constant-logical-expr
-      - name: context-as-argument
-      - name: context-keys-type
-      - name: deep-exit
-      - name: defer
-      - name: dot-imports
-      - name: duplicated-imports
-      - name: early-return
-      - name: empty-block
-      - name: error-naming
-      - name: error-return
-      - name: error-strings
-      - name: errorf
-      - name: get-return
-      - name: identical-branches
-      - name: if-return
-      - name: import-shadowing
-      - name: imports-blacklist
-      - name: increment-decrement
-      - name: indent-error-flow
-      - name: modifies-parameter
-      - name: modifies-value-receiver
-      - name: package-comments
-      - name: range
-      - name: range-val-address
-      - name: range-val-in-closure
-      - name: receiver-naming
-      - name: redefines-builtin-id
-      - name: string-of-int
-      - name: struct-tag
-      - name: superfluous-else
-      - name: time-naming
-      - name: unconditional-recursion
-      - name: unexported-naming
-      - name: unnecessary-stmt
-      - name: unreachable-code
-      # TODO: Enable these in the future
-      # - name: unused-parameter
-      # - name: unused-receiver
-      - name: var-declaration
-      - name: var-naming
-      - name: waitgroup-by-value
+      - path: 'pkg/components/build/component\.go'
+        linters:
+          - revive
+        text: 'var-naming.*package names that conflict'
+      - path: 'pkg/util/'
+        linters:
+          - revive
+        text: 'var-naming.*meaningless package names'
+formatters:
+  enable:
+    - gofmt
+    - goimports
+  settings:
+    gofmt:
+      simplify: false
+  exclusions:
+    generated: lax
+    paths:
+      - third_party$
+      - builtin$
+      - examples$
