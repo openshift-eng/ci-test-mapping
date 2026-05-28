@@ -1,4 +1,4 @@
-package acslatestlpinterop
+package lpfusionaccess
 
 import (
 	"regexp"
@@ -11,16 +11,16 @@ type Component struct {
 	*config.Component
 }
 
-var ACSLatestLpInteropComponent = Component{
+var LPFusionAccessComponent = Component{
 	Component: &config.Component{
-		Name:                 "ACSLatest-lp-interop",
+		Name:                 "lp--Fusion-access",
 		Operators:            []string{},
-		DefaultJiraComponent: "ACS-lp-interop",
+		DefaultJiraComponent: "LP--Fusion-access",
 		Matchers: []config.ComponentMatcher{
-			{Suite: "ACSLatest-lp-interop"},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACSLatest--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ACSLatest--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--ACSLatest--`)},
+			{Suite: "Fusion-access-lp-interop"},
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--Fusion-access--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--Fusion-access--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--Fusion-access--`)},
 		},
 	},
 }

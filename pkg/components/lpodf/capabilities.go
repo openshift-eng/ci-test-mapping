@@ -1,4 +1,4 @@
-package acslatestlpinterop
+package lpodf
 
 import (
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"

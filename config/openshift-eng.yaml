@@ -22,7 +22,6 @@ includeSuites:
   - ODF-lp-interop
   - MTA-lp-interop
   - Gitops-lp-interop
-  - ACSLatest-lp-interop
   - ACS-lp-interop
   - Fusion-access-lp-interop
   - OADP-lp-interop
