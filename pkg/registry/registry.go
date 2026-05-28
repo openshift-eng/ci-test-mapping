@@ -2,8 +2,6 @@ package registry
 
 import (
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/acslatestlpinterop"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/acslpinterop"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/apiserverauth"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/awsloadbalanceroperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/baremetalhardwareprovisioning"
@@ -43,7 +41,6 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/clusterresourceoverrideadmissionoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/clusterversionoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/cnfcerttnf"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/cnvlpinterop"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/confidentialcomputeattestation"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/configoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/consolemetal3plugin"
@@ -56,8 +53,6 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/etcd"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/externaldnsoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/externalsecretsoperator"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/fusionaccesslpinterop"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/gitopslpinterop"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/gitopsztp"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/hawkular"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/helm"
@@ -101,6 +96,17 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/logging"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/logicalvolumemanagerstorage"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/lowlatencyvalidationtooling"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpacs"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpcnv"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpfusionaccess"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpgitops"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpmta"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpoadp"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpodf"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpopenshiftpipelines"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpquay"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpserverless"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpservicemesh"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/machineconfigoperator"
 	machineconfigoperatorplatformbaremetal "github.com/openshift-eng/ci-test-mapping/pkg/components/machineconfigoperator/platformbaremetal"
 	machineconfigoperatorplatformnone "github.com/openshift-eng/ci-test-mapping/pkg/components/machineconfigoperator/platformnone"
@@ -113,7 +119,6 @@ import (
 	microshiftnetworking "github.com/openshift-eng/ci-test-mapping/pkg/components/microshift/networking"
 	microshiftstorage "github.com/openshift-eng/ci-test-mapping/pkg/components/microshift/storage"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/monitoring"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/mtalpinterop"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/multiarch"
 	multiarcharm "github.com/openshift-eng/ci-test-mapping/pkg/components/multiarch/arm"
 	multiarchibmpandz "github.com/openshift-eng/ci-test-mapping/pkg/components/multiarch/ibmpandz"
@@ -159,7 +164,6 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/nodetuningoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/none"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/nvidia"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/oadplpinterop"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/oauthapiserver"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/oauthproxy"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/observabilityui"
@@ -170,7 +174,6 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/occompliance"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/ocloudmanageroperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/ocmirror"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/odflpinterop"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/olm"
 	olmoperatorhub "github.com/openshift-eng/ci-test-mapping/pkg/components/olm/operatorhub"
 	olmregistry "github.com/openshift-eng/ci-test-mapping/pkg/components/olm/registry"
@@ -182,14 +185,12 @@ import (
 	openshiftcontrollermanagerapps "github.com/openshift-eng/ci-test-mapping/pkg/components/openshiftcontrollermanager/apps"
 	openshiftcontrollermanagerbuild "github.com/openshift-eng/ci-test-mapping/pkg/components/openshiftcontrollermanager/build"
 	openshiftcontrollermanagercontrollermanager "github.com/openshift-eng/ci-test-mapping/pkg/components/openshiftcontrollermanager/controllermanager"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/openshiftpipelineslpinterop"
 	openshiftupdateserviceoperand "github.com/openshift-eng/ci-test-mapping/pkg/components/openshiftupdateservice/operand"
 	openshiftupdateserviceoperator "github.com/openshift-eng/ci-test-mapping/pkg/components/openshiftupdateservice/operator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/operatorsdk"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/performanceaddonoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/podautoscaler"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/poisonpilloperator"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/quaylpinterop"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/registryconsole"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/release"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/rhcos"
@@ -202,12 +203,10 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/secretsstorecsidriver"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/security"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/securityprofilesoperator"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/serverlesslpinterop"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/servicebinding"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/servicebroker"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/serviceca"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/servicecatalog"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/servicemeshlpinterop"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/specialresourceoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/spireoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/storage"
@@ -448,7 +447,7 @@ func NewComponentRegistry() *Registry {
 	r.Register("secondary-scheduler-operator", &secondaryscheduleroperator.SecondarySchedulerOperatorComponent)
 	r.Register("service-ca", &serviceca.ServiceCaComponent)
 	r.Register("spire-operator", &spireoperator.SpireOperatorComponent)
-	r.Register("CNV-lp-interop", &cnvlpinterop.CNVLpInteropComponent)
+	r.Register("LP--CNV", &lpcnv.LPcnvComponent)
 	r.Register("eBPF Manager", &ebpfmanager.EBPFManagerComponent)
 	r.Register("External Secrets Operator", &externalsecretsoperator.ExternalSecretsOperatorComponent)
 	r.Register("JobSet", &jobset.JobSetComponent)
@@ -456,18 +455,16 @@ func NewComponentRegistry() *Registry {
 	r.Register("O-Cloud Manager Operator", &ocloudmanageroperator.OCloudManagerOperatorComponent)
 	r.Register("Secrets Store CSI driver", &secretsstorecsidriver.SecretsStoreCSIDriverComponent)
 	r.Register("zero-trust-workload-identity-manager", &zerotrustworkloadidentitymanager.ZeroTrustWorkloadIdentityManagerComponent)
-	r.Register("Quay-lp-interop", &quaylpinterop.QuayLpInteropComponent)
-	r.Register("OpenshiftPipelines-lp-interop", &openshiftpipelineslpinterop.OpenshiftPipelinesLpInteropComponent)
-	r.Register("CNV-lp-interop", &cnvlpinterop.CNVLpInteropComponent)
-	r.Register("ServiceMesh-lp-interop", &servicemeshlpinterop.ServiceMeshLpInteropComponent)
-	r.Register("Serverless-lp-interop", &serverlesslpinterop.ServerlessLpInteropComponent)
-	r.Register("ODF-lp-interop", &odflpinterop.ODFLpInteropComponent)
-	r.Register("MTA-lp-interop", &mtalpinterop.MTALpInteropComponent)
-	r.Register("Gitops-lp-interop", &gitopslpinterop.GitopsLpInteropComponent)
-	r.Register("ACSLatest-lp-interop", &acslatestlpinterop.ACSLatestLpInteropComponent)
-	r.Register("ACS-lp-interop", &acslpinterop.ACSLpInteropComponent)
-	r.Register("OADP-lp-interop", &oadplpinterop.OADPLpInteropComponent)
-	r.Register("Fusion-access-lp-interop", &fusionaccesslpinterop.FusionAccessLpInteropComponent)
+	r.Register("LP--Quay", &lpquay.LPquayComponent)
+	r.Register("LP--Openshift-pipelines", &lpopenshiftpipelines.LPopenshiftpipelinesComponent)
+	r.Register("LP--Service-mesh", &lpservicemesh.LPservicemeshComponent)
+	r.Register("LP--Serverless", &lpserverless.LPserverlessComponent)
+	r.Register("LP--ODF", &lpodf.LPodfComponent)
+	r.Register("LP--MTA", &lpmta.LPmtaComponent)
+	r.Register("LP--Gitops", &lpgitops.LPgitopsComponent)
+	r.Register("LP--ACS", &lpacs.LPacsComponent)
+	r.Register("LP--OADP", &lpoadp.LPoadpComponent)
+	r.Register("LP--Fusion-access", &lpfusionaccess.LPfusionaccessComponent)
 	// New components go here
 
 	return &r
