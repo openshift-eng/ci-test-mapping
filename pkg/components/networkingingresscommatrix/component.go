@@ -1,8 +1,6 @@
-package lpopenshiftpipelines
+package networkingingresscommatrix
 
 import (
-	"regexp"
-
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/config"
 )
@@ -11,18 +9,12 @@ type Component struct {
 	*config.Component
 }
 
-var LPopenshiftpipelinesComponent = Component{
+var NetworkingIngressCommatrixComponent = Component{
 	Component: &config.Component{
-		Name:                 "lp--OpenshiftPipelines",
+		Name:                 "networking-ingress-commatrix",
 		Operators:            []string{},
-		DefaultJiraComponent: "LP--OpenshiftPipelines",
-		Matchers: []config.ComponentMatcher{
-			{Suite: "OpenshiftPipelines-lp-interop"},
-			{SuiteRegEx: regexp.MustCompile("^lp-interop-OpenshiftPipelines--")}, // To be removed
-			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--OpenshiftPipelines--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OpenshiftPipelines--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--OpenshiftPipelines--`)},
-		},
+		DefaultJiraComponent: "networking-ingress-commatrix",
+		Matchers:             []config.ComponentMatcher{},
 	},
 }
 

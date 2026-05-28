@@ -11,7 +11,7 @@ type Component struct {
 	*config.Component
 }
 
-var LPServiceMeshComponent = Component{
+var LPservicemeshComponent = Component{
 	Component: &config.Component{
 		Name:                 "lp--ServiceMesh",
 		Operators:            []string{},

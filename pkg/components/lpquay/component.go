@@ -11,7 +11,7 @@ type Component struct {
 	*config.Component
 }
 
-var LPQuayComponent = Component{
+var LPquayComponent = Component{
 	Component: &config.Component{
 		Name:                 "lp--Quay",
 		Operators:            []string{},

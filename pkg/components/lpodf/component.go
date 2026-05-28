@@ -11,7 +11,7 @@ type Component struct {
 	*config.Component
 }
 
-var LPODFComponent = Component{
+var LPodfComponent = Component{
 	Component: &config.Component{
 		Name:                 "lp--ODF",
 		Operators:            []string{},

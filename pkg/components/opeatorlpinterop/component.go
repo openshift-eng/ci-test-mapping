@@ -1,4 +1,4 @@
-package lpopenshiftpipelines
+package opeatorlpinterop
 
 import (
 	"regexp"
@@ -11,17 +11,16 @@ type Component struct {
 	*config.Component
 }
 
-var LPopenshiftpipelinesComponent = Component{
+var OpeatorLpInteropComponent = Component{
 	Component: &config.Component{
-		Name:                 "lp--OpenshiftPipelines",
+		Name:                 "OPEATOR-lp-interop",
 		Operators:            []string{},
-		DefaultJiraComponent: "LP--OpenshiftPipelines",
+		DefaultJiraComponent: "OPEATOR-lp-interop",
 		Matchers: []config.ComponentMatcher{
-			{Suite: "OpenshiftPipelines-lp-interop"},
-			{SuiteRegEx: regexp.MustCompile("^lp-interop-OpenshiftPipelines--")}, // To be removed
-			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--OpenshiftPipelines--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OpenshiftPipelines--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--OpenshiftPipelines--`)},
+			{Suite: "OPEATOR-lp-interop"},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPEATOR--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--OPEATOR--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--OPEATOR--`)},
 		},
 	},
 }

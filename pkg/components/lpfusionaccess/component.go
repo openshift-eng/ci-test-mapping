@@ -11,7 +11,7 @@ type Component struct {
 	*config.Component
 }
 
-var LPFusionAccessComponent = Component{
+var LPfusionaccessComponent = Component{
 	Component: &config.Component{
 		Name:                 "lp--Fusion-access",
 		Operators:            []string{},

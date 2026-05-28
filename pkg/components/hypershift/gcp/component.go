@@ -1,8 +1,6 @@
-package lpopenshiftpipelines
+package hypershiftgcp
 
 import (
-	"regexp"
-
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/config"
 )
@@ -11,18 +9,12 @@ type Component struct {
 	*config.Component
 }
 
-var LPopenshiftpipelinesComponent = Component{
+var GCPComponent = Component{
 	Component: &config.Component{
-		Name:                 "lp--OpenshiftPipelines",
+		Name:                 "HyperShift / GCP",
 		Operators:            []string{},
-		DefaultJiraComponent: "LP--OpenshiftPipelines",
-		Matchers: []config.ComponentMatcher{
-			{Suite: "OpenshiftPipelines-lp-interop"},
-			{SuiteRegEx: regexp.MustCompile("^lp-interop-OpenshiftPipelines--")}, // To be removed
-			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--OpenshiftPipelines--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OpenshiftPipelines--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--OpenshiftPipelines--`)},
-		},
+		DefaultJiraComponent: "HyperShift / GCP",
+		Matchers:             []config.ComponentMatcher{},
 	},
 }
 

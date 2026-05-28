@@ -11,7 +11,7 @@ type Component struct {
 	*config.Component
 }
 
-var LPServerlessComponent = Component{
+var LPserverlessComponent = Component{
 	Component: &config.Component{
 		Name:                 "lp--Serverless",
 		Operators:            []string{},

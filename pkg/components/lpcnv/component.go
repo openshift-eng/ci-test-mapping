@@ -11,7 +11,7 @@ type Component struct {
 	*config.Component
 }
 
-var LPCNVComponent = Component{
+var LPcnvComponent = Component{
 	Component: &config.Component{
 		Name:                 "lp--CNV",
 		Operators:            []string{},

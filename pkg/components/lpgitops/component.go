@@ -11,7 +11,7 @@ type Component struct {
 	*config.Component
 }
 
-var LPGitopsComponent = Component{
+var LPgitopsComponent = Component{
 	Component: &config.Component{
 		Name:                 "lp--Gitops",
 		Operators:            []string{},

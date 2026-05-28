@@ -11,7 +11,7 @@ type Component struct {
 	*config.Component
 }
 
-var LPMTAComponent = Component{
+var LPmtaComponent = Component{
 	Component: &config.Component{
 		Name:                 "lp--MTA",
 		Operators:            []string{},

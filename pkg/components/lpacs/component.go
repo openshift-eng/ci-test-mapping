@@ -11,7 +11,7 @@ type Component struct {
 	*config.Component
 }
 
-var LPACSComponent = Component{
+var LPacsComponent = Component{
 	Component: &config.Component{
 		Name:                 "lp--ACS",
 		Operators:            []string{},

@@ -11,7 +11,7 @@ type Component struct {
 	*config.Component
 }
 
-var LPOADPComponent = Component{
+var LPoadpComponent = Component{
 	Component: &config.Component{
 		Name:                 "lp--OADP",
 		Operators:            []string{},
