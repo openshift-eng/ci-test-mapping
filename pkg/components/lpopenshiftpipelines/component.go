@@ -13,9 +13,9 @@ type Component struct {
 
 var LPopenshiftpipelinesComponent = Component{
 	Component: &config.Component{
-		Name:                 "lp--OpenshiftPipelines",
+		Name:                 "LP--Openshift-pipelines",
 		Operators:            []string{},
-		DefaultJiraComponent: "LP--OpenshiftPipelines",
+		DefaultJiraComponent: "LP--Openshift-pipelines",
 		Matchers: []config.ComponentMatcher{
 			{Suite: "OpenshiftPipelines-lp-interop"},
 			{SuiteRegEx: regexp.MustCompile("^lp-interop-OpenshiftPipelines--")}, // To be removed

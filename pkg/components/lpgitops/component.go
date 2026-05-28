@@ -13,7 +13,7 @@ type Component struct {
 
 var LPgitopsComponent = Component{
 	Component: &config.Component{
-		Name:                 "lp--Gitops",
+		Name:                 "LP--Gitops",
 		Operators:            []string{},
 		DefaultJiraComponent: "LP--Gitops",
 		Matchers: []config.ComponentMatcher{

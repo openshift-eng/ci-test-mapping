@@ -13,7 +13,7 @@ type Component struct {
 
 var LPoadpComponent = Component{
 	Component: &config.Component{
-		Name:                 "lp--OADP",
+		Name:                 "LP--OADP",
 		Operators:            []string{},
 		DefaultJiraComponent: "LP--OADP",
 		Matchers: []config.ComponentMatcher{

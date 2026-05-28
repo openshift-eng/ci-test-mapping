@@ -13,7 +13,7 @@ type Component struct {
 
 var LPodfComponent = Component{
 	Component: &config.Component{
-		Name:                 "lp--ODF",
+		Name:                 "LP--ODF",
 		Operators:            []string{},
 		DefaultJiraComponent: "LP--ODF",
 		Matchers: []config.ComponentMatcher{

@@ -13,7 +13,7 @@ type Component struct {
 
 var LPacsComponent = Component{
 	Component: &config.Component{
-		Name:                 "lp--ACS",
+		Name:                 "LP--ACS",
 		Operators:            []string{},
 		DefaultJiraComponent: "LP--ACS",
 		Matchers: []config.ComponentMatcher{

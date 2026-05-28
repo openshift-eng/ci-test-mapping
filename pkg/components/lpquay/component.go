@@ -13,7 +13,7 @@ type Component struct {
 
 var LPquayComponent = Component{
 	Component: &config.Component{
-		Name:                 "lp--Quay",
+		Name:                 "LP--Quay",
 		Operators:            []string{},
 		DefaultJiraComponent: "LP--Quay",
 		Matchers: []config.ComponentMatcher{

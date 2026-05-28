@@ -13,7 +13,7 @@ type Component struct {
 
 var LPfusionaccessComponent = Component{
 	Component: &config.Component{
-		Name:                 "lp--Fusion-access",
+		Name:                 "LP--Fusion-access",
 		Operators:            []string{},
 		DefaultJiraComponent: "LP--Fusion-access",
 		Matchers: []config.ComponentMatcher{

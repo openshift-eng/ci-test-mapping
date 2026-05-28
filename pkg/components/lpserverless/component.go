@@ -13,7 +13,7 @@ type Component struct {
 
 var LPserverlessComponent = Component{
 	Component: &config.Component{
-		Name:                 "lp--Serverless",
+		Name:                 "LP--Serverless",
 		Operators:            []string{},
 		DefaultJiraComponent: "LP--Serverless",
 		Matchers: []config.ComponentMatcher{

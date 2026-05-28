@@ -13,7 +13,7 @@ type Component struct {
 
 var LPcnvComponent = Component{
 	Component: &config.Component{
-		Name:                 "lp--CNV",
+		Name:                 "LP--CNV",
 		Operators:            []string{},
 		DefaultJiraComponent: "LP--CNV",
 		Matchers: []config.ComponentMatcher{

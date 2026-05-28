@@ -13,9 +13,9 @@ type Component struct {
 
 var LPservicemeshComponent = Component{
 	Component: &config.Component{
-		Name:                 "lp--ServiceMesh",
+		Name:                 "LP--Service-mesh",
 		Operators:            []string{},
-		DefaultJiraComponent: "LP--ServiceMesh",
+		DefaultJiraComponent: "LP--Service-mesh",
 		Matchers: []config.ComponentMatcher{
 			{Suite: "ServiceMesh-lp-interop"},
 			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ServiceMesh--`)},

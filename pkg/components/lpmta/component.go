@@ -13,7 +13,7 @@ type Component struct {
 
 var LPmtaComponent = Component{
 	Component: &config.Component{
-		Name:                 "lp--MTA",
+		Name:                 "LP--MTA",
 		Operators:            []string{},
 		DefaultJiraComponent: "LP--MTA",
 		Matchers: []config.ComponentMatcher{
