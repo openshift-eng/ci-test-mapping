@@ -1,4 +1,4 @@
-package networkingnetobs
+package networkingnetobserv
 
 import (
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"

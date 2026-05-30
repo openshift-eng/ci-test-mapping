@@ -1,4 +1,4 @@
-package networkingnetobs
+package networkingnetobserv
 
 import (
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
@@ -9,11 +9,11 @@ type Component struct {
 	*config.Component
 }
 
-var NetObsComponent = Component{
+var NetObservComponent = Component{
 	Component: &config.Component{
-		Name:                 "Networking / NetObs",
+		Name:                 "Networking / NetObserv",
 		Operators:            []string{},
-		DefaultJiraComponent: "Networking / NetObs",
+		DefaultJiraComponent: "Networking / NetObserv",
 		Matchers: []config.ComponentMatcher{
 			{Suite: `"(OCP-50532, OCP-50531, OCP-50530, OCP-59408 NETOBSERV) Netflow Table view tests"`},
 			{Suite: `(OCP-50532, OCP-50531, OCP-50530 NETOBSERV) Netflow Table view tests`},

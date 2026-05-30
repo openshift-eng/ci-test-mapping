@@ -134,7 +134,7 @@ import (
 	networkingkuryr "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/kuryr"
 	networkingmetallb "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/metallb"
 	networkingmultus "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/multus"
-	networkingnetobs "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/netobs"
+	networkingnetobs "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/netobserv"
 	networkingnetworkingconsoleplugin "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/networkingconsoleplugin"
 	networkingnetworktools "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/networktools"
 	networkingnmstateconsoleplugin "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/nmstateconsoleplugin"
@@ -334,7 +334,7 @@ func NewComponentRegistry() *Registry {
 	r.Register("Networking / DPU", &networkingdpu.DPUComponent)
 	r.Register("Networking / FRR-K8s", &networkingfrrk8s.FRRK8sComponent)
 	r.Register("Networking / Metal LB", &networkingmetallb.MetalLBComponent)
-	r.Register("Networking / NetObs", &networkingnetobs.NetObsComponent)
+	r.Register("Networking / NetObserv", &networkingnetobs.NetObservComponent)
 	r.Register("Networking / On-Prem DNS", &networkingonpremdns.OnPremDNSComponent)
 	r.Register("Networking / On-Prem Host Networking", &networkingonpremhostnetworking.OnPremHostNetworkingComponent)
 	r.Register("Networking / On-Prem Load Balancer", &networkingonpremloadbalancer.OnPremLoadBalancerComponent)
