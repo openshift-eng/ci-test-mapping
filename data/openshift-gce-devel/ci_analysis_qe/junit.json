@@ -53476,14 +53476,6 @@
     "Suite": "Overall CI (test step)"
   },
   {
-    "Name": "cucushift-installer-rehearse-aws-cases-all-regions-deprovision",
-    "Suite": "Overall CI (test step)"
-  },
-  {
-    "Name": "cucushift-installer-rehearse-aws-cases-all-regions-provision",
-    "Suite": "Overall CI (test step)"
-  },
-  {
     "Name": "cucushift-installer-rehearse-aws-cases-multi-cidr-deprovision",
     "Suite": "Overall CI (test step)"
   },
