@@ -52940,8 +52940,16 @@
     "Suite": "Overall CI (test step)"
   },
   {
+    "Name": "create-pm-prometheus-exporters",
+    "Suite": "tests/e2e-prometheuscr/create-pm-prometheus-exporters"
+  },
+  {
     "Name": "create-pm-prometheus-exporters-native",
     "Suite": "tests/e2e-prometheuscr/create-pm-prometheus-exporters"
+  },
+  {
+    "Name": "create-sm-prometheus-exporters",
+    "Suite": "tests/e2e-prometheuscr/create-sm-prometheus-exporters"
   },
   {
     "Name": "csi-snapshot-webhook blocks volumesnapshot creation (outline example : | OCP-37745:Storage | invailid-volumesnapshot-both-nil.yaml | (\"spec.source\" must validate one and only one schema|exactly one of volumeSnapshotContentName and persistentVolumeClaimName must be set) |)",
@@ -57644,6 +57652,10 @@
     "Suite": "tests/e2e/smoke-init-containers"
   },
   {
+    "Name": "smoke-ip-families-policies",
+    "Suite": "tests/e2e/smoke-ip-families"
+  },
+  {
     "Name": "smoke-pod-annotations",
     "Suite": "tests/e2e/smoke-pod-annotations"
   },
@@ -57676,8 +57688,24 @@
     "Suite": "tests/e2e/smoke-shareprocessnamespace"
   },
   {
+    "Name": "smoke-sidecar",
+    "Suite": "tests/e2e/smoke-sidecar"
+  },
+  {
+    "Name": "smoke-sidecar",
+    "Suite": "tests/e2e-sidecar/smoke-sidecar"
+  },
+  {
     "Name": "smoke-sidecar-native",
     "Suite": "tests/e2e-sidecar/smoke-sidecar"
+  },
+  {
+    "Name": "smoke-sidecar-other-namespace",
+    "Suite": "tests/e2e/smoke-sidecar-other-namespace"
+  },
+  {
+    "Name": "smoke-sidecar-other-namespace",
+    "Suite": "tests/e2e-sidecar/smoke-sidecar-other-namespace"
   },
   {
     "Name": "smoke-sidecar-other-namespace-native",
