@@ -41252,6 +41252,26 @@
     "Suite": "cluster upgrade"
   },
   {
+    "Name": "OpenShift Distributed Tracing UI Plugin tests Test Distributed Traces Cutoffbox functionality",
+    "Suite": "OpenShift Distributed Tracing UI Plugin tests"
+  },
+  {
+    "Name": "OpenShift Distributed Tracing UI Plugin tests Test Distributed Tracing UI plugin page without any Tempo instances",
+    "Suite": "OpenShift Distributed Tracing UI Plugin tests"
+  },
+  {
+    "Name": "OpenShift Distributed Tracing UI Plugin tests Test Distributed Tracing UI plugin with Tempo instances and verify traces using user having cluster-admin role",
+    "Suite": "OpenShift Distributed Tracing UI Plugin tests"
+  },
+  {
+    "Name": "OpenShift Distributed Tracing UI Plugin tests Test Distributed Tracing UI plugin with Tempo instances and verify traces, span links using user having cluster-admin role",
+    "Suite": "OpenShift Distributed Tracing UI Plugin tests"
+  },
+  {
+    "Name": "OpenShift Distributed Tracing UI Plugin tests Test trace limit functionality",
+    "Suite": "OpenShift Distributed Tracing UI Plugin tests"
+  },
+  {
     "Name": "Operator Hub tests \"after all\" hook for \"(OCP-45874,yapei,UserInterface) Check source labels on the operator hub page tiles\"",
     "Suite": "Operator Hub tests"
   },
@@ -52752,6 +52772,10 @@
     "Suite": "Overall CI (test step)"
   },
   {
+    "Name": "ca-bundle",
+    "Suite": "tests/e2e/ca-bundle"
+  },
+  {
     "Name": "cel-validations-test",
     "Suite": "tests/e2e-crd-validations/sidecar"
   },
@@ -55308,6 +55332,14 @@
     "Suite": "Overall CI (test step)"
   },
   {
+    "Name": "mcp-monolithic",
+    "Suite": "tests/e2e/mcp-monolithic"
+  },
+  {
+    "Name": "mcp-tempostack",
+    "Suite": "tests/e2e/mcp-tempostack"
+  },
+  {
     "Name": "mirror-images-by-oc-adm",
     "Suite": "Overall CI (test step)"
   },
@@ -55340,6 +55372,10 @@
     "Suite": "tests/e2e-openshift/monitoring"
   },
   {
+    "Name": "monolithic-ca-bundle",
+    "Suite": "tests/e2e/monolithic-ca-bundle"
+  },
+  {
     "Name": "monolithic-extraconfig",
     "Suite": "tests/e2e/monolithic-extraconfig"
   },
@@ -55362,6 +55398,10 @@
   {
     "Name": "monolithic-multitenancy-rbac",
     "Suite": "tests/e2e-openshift/monolithic-multitenancy-rbac"
+  },
+  {
+    "Name": "monolithic-multitenancy-receiver-tls",
+    "Suite": "tests/e2e-openshift/monolithic-multitenancy-receiver-tls"
   },
   {
     "Name": "monolithic-multitenancy-static",
@@ -57864,8 +57904,40 @@
     "Suite": "tests/e2e-otel/transformprocessor"
   },
   {
+    "Name": "tshirt-size-demo",
+    "Suite": "tests/e2e-openshift-tshirt-sizes/tshirt-size-demo"
+  },
+  {
+    "Name": "tshirt-size-extra-small",
+    "Suite": "tests/e2e-openshift-tshirt-sizes/tshirt-size-extra-small"
+  },
+  {
+    "Name": "tshirt-size-invalid",
+    "Suite": "tests/e2e-openshift-tshirt-sizes/tshirt-size-invalid"
+  },
+  {
+    "Name": "tshirt-size-medium",
+    "Suite": "tests/e2e-openshift-tshirt-sizes/tshirt-size-medium"
+  },
+  {
+    "Name": "tshirt-size-oauth-proxy",
+    "Suite": "tests/e2e-openshift-tshirt-sizes/tshirt-size-oauth-proxy"
+  },
+  {
+    "Name": "tshirt-size-override",
+    "Suite": "tests/e2e-openshift-tshirt-sizes/tshirt-size-override"
+  },
+  {
     "Name": "tshirt-size-pico",
     "Suite": "tests/e2e/tshirt-size-pico"
+  },
+  {
+    "Name": "tshirt-size-pico",
+    "Suite": "tests/e2e-openshift-tshirt-sizes/tshirt-size-pico"
+  },
+  {
+    "Name": "tshirt-size-small",
+    "Suite": "tests/e2e-openshift-tshirt-sizes/tshirt-size-small"
   },
   {
     "Name": "upgrade cluster monitoring along with OCP",
