@@ -57888,6 +57888,18 @@
     "Suite": "Testing Ingress Operator related scenarios"
   },
   {
+    "Name": "tls-profile",
+    "Suite": "tests/e2e-openshift-tls-profile/03-tls-profile"
+  },
+  {
+    "Name": "tls-profile-override-mono",
+    "Suite": "tests/e2e-openshift-tls-profile/01-tls-profile-override-mono"
+  },
+  {
+    "Name": "tls-profile-override-stack",
+    "Suite": "tests/e2e-openshift-tls-profile/02-tls-profile-override-stack"
+  },
+  {
     "Name": "tls-singletenant",
     "Suite": "tests/e2e-openshift/tls-singletenant"
   },
