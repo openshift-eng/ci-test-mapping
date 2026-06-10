@@ -43400,7 +43400,15 @@
     "Suite": "Cluster_Infrastructure"
   },
   {
+    "Name": "[It] Managed cluster should when machineset has one replica have ability to additively reconcile taints from machine to nodes [mapi, disruptive, periodic]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
     "Name": "[It] Managed cluster should when machineset has one replica have ability to additively reconcile taints from machine to nodes [mapi, disruptive]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] Managed cluster should when machineset has one replica publish selector in the scale subresource for HPA targets [mapi, disruptive]",
     "Suite": "Cluster_Infrastructure"
   },
   {
