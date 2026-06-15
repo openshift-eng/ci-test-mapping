@@ -103,6 +103,7 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpmta"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpoadp"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpodf"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpocp"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpopenshiftpipelines"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpquay"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpserverless"
@@ -448,6 +449,7 @@ func NewComponentRegistry() *Registry {
 	r.Register("service-ca", &serviceca.ServiceCaComponent)
 	r.Register("spire-operator", &spireoperator.SpireOperatorComponent)
 	r.Register("LP--CNV", &lpcnv.LPcnvComponent)
+	r.Register("LP--OCP", &lpocp.LPocpComponent)
 	r.Register("eBPF Manager", &ebpfmanager.EBPFManagerComponent)
 	r.Register("External Secrets Operator", &externalsecretsoperator.ExternalSecretsOperatorComponent)
 	r.Register("JobSet", &jobset.JobSetComponent)
