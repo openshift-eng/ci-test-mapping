@@ -18,7 +18,7 @@ var HyperShiftComponent = Component{
 			{Suite: "Check on hypershift provisined cluster"},
 			{Suite: "Hypershift"},
 			{Suite: "feature for hypershift provisined cluster"},
-			{Suite: "hypershift-e2e"},
+			{Suite: "hypershift-e2e", Priority: 1},
 		},
 	},
 }

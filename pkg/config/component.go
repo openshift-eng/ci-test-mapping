@@ -56,6 +56,8 @@ type ComponentMatcher struct {
 }
 
 func (c *Component) FindMatch(test *v1.TestInfo) *ComponentMatcher {
+	var bestMatch *ComponentMatcher
+
 	jiraComponents := util.ExtractTestField(test.Name, "Jira")
 	for _, jc := range jiraComponents {
 		unquoted, err := strconv.Unquote(jc)
@@ -64,20 +66,25 @@ func (c *Component) FindMatch(test *v1.TestInfo) *ComponentMatcher {
 		}
 
 		if strings.EqualFold(unquoted, c.DefaultJiraComponent) {
-			return &ComponentMatcher{
+			bestMatch = &ComponentMatcher{
 				JiraComponent: c.DefaultJiraComponent,
 			}
+			break
 		}
 	}
 
 	if ok, capabilities := c.IsOperatorTest(test); ok {
-		return &ComponentMatcher{
+		match := &ComponentMatcher{
 			JiraComponent: c.DefaultJiraComponent,
 			Capabilities:  capabilities,
 		}
+		if bestMatch == nil || match.Priority > bestMatch.Priority {
+			bestMatch = match
+		}
 	}
 
-	// Check if any of the Matchers match the given test
+	// Check if any of the Matchers match the given test; a matcher with
+	// higher priority than an earlier Jira/operator match can override it.
 	for _, m := range c.Matchers {
 		sigMatch := true
 		suiteMatch := true
@@ -116,8 +123,14 @@ func (c *Component) FindMatch(test *v1.TestInfo) *ComponentMatcher {
 
 		// AND the match results together
 		if sigMatch && suiteMatch && incSubstrMatch && incAnySubstrMatch {
-			return &m
+			if bestMatch == nil || m.Priority > bestMatch.Priority {
+				bestMatch = &m
+			}
 		}
+	}
+
+	if bestMatch != nil {
+		return bestMatch
 	}
 
 	// Namespace ownership is last to allow specifically overriding a test's ownership.
