@@ -170,6 +170,110 @@ func TestComponent_FindMatch(t *testing.T) {
 	}
 }
 
+func TestFindMatch_JiraOverride(t *testing.T) {
+	tests := []struct {
+		name             string
+		component        Component
+		test             v1.TestInfo
+		wantNil          bool
+		wantPriority     int
+		wantJiraComponent string
+	}{
+		{
+			name: "jira match wins when no higher-priority matcher exists",
+			component: Component{
+				DefaultJiraComponent: "HyperShift",
+				Matchers: []ComponentMatcher{
+					{Suite: "other-suite"},
+				},
+			},
+			test: v1.TestInfo{
+				Name:  "[Jira:Hypershift] some test",
+				Suite: "hypershift-e2e",
+			},
+			wantPriority:      0,
+			wantJiraComponent: "HyperShift",
+		},
+		{
+			name: "higher-priority suite matcher overrides jira match",
+			component: Component{
+				DefaultJiraComponent: "HyperShift",
+				Matchers: []ComponentMatcher{
+					{Suite: "hypershift-e2e", Priority: 1},
+				},
+			},
+			test: v1.TestInfo{
+				Name:  "[Jira:Hypershift] some test",
+				Suite: "hypershift-e2e",
+			},
+			wantPriority: 1,
+		},
+		{
+			name: "equal-priority suite matcher does not override jira match",
+			component: Component{
+				DefaultJiraComponent: "HyperShift",
+				Matchers: []ComponentMatcher{
+					{Suite: "hypershift-e2e", Priority: 0},
+				},
+			},
+			test: v1.TestInfo{
+				Name:  "[Jira:Hypershift] some test",
+				Suite: "hypershift-e2e",
+			},
+			wantPriority:      0,
+			wantJiraComponent: "HyperShift",
+		},
+		{
+			name: "no jira match falls through to matchers as before",
+			component: Component{
+				DefaultJiraComponent: "HyperShift",
+				Matchers: []ComponentMatcher{
+					{Suite: "hypershift-e2e", Priority: 1},
+				},
+			},
+			test: v1.TestInfo{
+				Name:  "some test without jira tag",
+				Suite: "hypershift-e2e",
+			},
+			wantPriority: 1,
+		},
+		{
+			name: "no match at all returns nil",
+			component: Component{
+				DefaultJiraComponent: "HyperShift",
+				Matchers: []ComponentMatcher{
+					{Suite: "other-suite"},
+				},
+			},
+			test: v1.TestInfo{
+				Name:  "some unrelated test",
+				Suite: "unrelated-suite",
+			},
+			wantNil: true,
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			got := tt.component.FindMatch(&tt.test)
+			if tt.wantNil {
+				if got != nil {
+					t.Errorf("FindMatch() = %+v, want nil", got)
+				}
+				return
+			}
+			if got == nil {
+				t.Fatal("FindMatch() = nil, want a match")
+			}
+			if got.Priority != tt.wantPriority {
+				t.Errorf("FindMatch().Priority = %d, want %d", got.Priority, tt.wantPriority)
+			}
+			if tt.wantJiraComponent != "" && got.JiraComponent != tt.wantJiraComponent {
+				t.Errorf("FindMatch().JiraComponent = %q, want %q", got.JiraComponent, tt.wantJiraComponent)
+			}
+		})
+	}
+}
+
 func TestIHateRegexes(t *testing.T) {
 	actual := ExtractNamespaceFromTestName("[sig-arch][bz-Unknown][Late] Alerts [apigroup:monitoring.coreos.com] alert/KubePodNotReady should not be at or above info in ns/openshift [Suite:openshift/conformance/parallel]")
 	if actual != "openshift" {
