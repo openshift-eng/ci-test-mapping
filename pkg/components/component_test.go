@@ -10,6 +10,113 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/registry"
 )
 
+func TestJiraTagWinner(t *testing.T) {
+	tests := []struct {
+		name          string
+		test          *v1.TestInfo
+		ownerships    []*v1.TestOwnership
+		wantNil       bool
+		wantError     string
+		wantComponent string
+	}{
+		{
+			name: "jira tag resolves conflict to tagged component",
+			test: &v1.TestInfo{
+				Name: "[Jira:HyperShift] some test with cluster-network-operator",
+			},
+			ownerships: []*v1.TestOwnership{
+				{Component: "HyperShift", JIRAComponent: "HyperShift"},
+				{Component: "Networking / cluster-network-operator", JIRAComponent: "Networking / cluster-network-operator"},
+			},
+			wantComponent: "HyperShift",
+		},
+		{
+			name: "no jira tag returns nil",
+			test: &v1.TestInfo{
+				Name: "some test without jira tag",
+			},
+			ownerships: []*v1.TestOwnership{
+				{Component: "A", JIRAComponent: "A"},
+				{Component: "B", JIRAComponent: "B"},
+			},
+			wantNil: true,
+		},
+		{
+			name: "jira tag matches no claimant returns nil",
+			test: &v1.TestInfo{
+				Name: "[Jira:Unrelated] some test",
+			},
+			ownerships: []*v1.TestOwnership{
+				{Component: "A", JIRAComponent: "A"},
+				{Component: "B", JIRAComponent: "B"},
+			},
+			wantNil: true,
+		},
+		{
+			name: "single ownership returns nil (no conflict to resolve)",
+			test: &v1.TestInfo{
+				Name: "[Jira:A] some test",
+			},
+			ownerships: []*v1.TestOwnership{
+				{Component: "A", JIRAComponent: "A"},
+			},
+			wantNil: true,
+		},
+		{
+			name: "multiple jira tags matching multiple claimants returns error",
+			test: &v1.TestInfo{
+				Name:  "[Jira:A][Jira:B] some test",
+				Suite: "test-suite",
+			},
+			ownerships: []*v1.TestOwnership{
+				{Component: "A", JIRAComponent: "A"},
+				{Component: "B", JIRAComponent: "B"},
+			},
+			wantError: "at most one Jira component claimant",
+		},
+		{
+			name: "jira tag match is case-insensitive",
+			test: &v1.TestInfo{
+				Name: "[Jira:hypershift] some test",
+			},
+			ownerships: []*v1.TestOwnership{
+				{Component: "HyperShift", JIRAComponent: "HyperShift"},
+				{Component: "Other", JIRAComponent: "Other"},
+			},
+			wantComponent: "HyperShift",
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			got, err := jiraTagWinner(tt.test, tt.ownerships)
+			if tt.wantError != "" {
+				if err == nil {
+					t.Fatalf("jiraTagWinner() error = nil, want error containing %q", tt.wantError)
+				}
+				if !strings.Contains(err.Error(), tt.wantError) {
+					t.Errorf("jiraTagWinner() error = %q, want error containing %q", err.Error(), tt.wantError)
+				}
+				return
+			}
+			if err != nil {
+				t.Fatalf("jiraTagWinner() unexpected error: %v", err)
+			}
+			if tt.wantNil {
+				if got != nil {
+					t.Errorf("jiraTagWinner() = %+v, want nil", got)
+				}
+				return
+			}
+			if got == nil {
+				t.Fatal("jiraTagWinner() = nil, want a winner")
+			}
+			if got.Component != tt.wantComponent {
+				t.Errorf("jiraTagWinner().Component = %q, want %q", got.Component, tt.wantComponent)
+			}
+		})
+	}
+}
+
 func TestIdentifyTest(t *testing.T) {
 	componentRegistry := registry.NewComponentRegistry()
 

@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"math/big"
 	"sort"
+	"strconv"
 	"strings"
 	"time"
 
@@ -61,6 +62,12 @@ func (t *TestIdentifier) Identify(test *v1.TestInfo) (*v1.TestOwnership, error) 
 			ID:   util.StableID(test, test.Name),
 			Name: test.Name,
 		}, nil))
+	}
+
+	if winner, err := jiraTagWinner(test, ownerships); err != nil {
+		return nil, err
+	} else if winner != nil {
+		ownerships = []*v1.TestOwnership{winner}
 	}
 
 	highestPriority, err := getHighestPriority(ownerships)
@@ -134,6 +141,52 @@ func testInfoLogFields(testInfo *v1.TestInfo) log.Fields {
 		"name":  testInfo.Name,
 		"suite": testInfo.Suite,
 	}
+}
+
+// jiraTagWinner resolves conflicts when a test carries an explicit [Jira:X]
+// tag. If exactly one claimant's JIRAComponent matches a tag, it wins
+// outright regardless of priority. If multiple claimants match different
+// Jira tags, that is an error: each test should be claimed by at most one
+// component via Jira tag.
+func jiraTagWinner(test *v1.TestInfo, ownerships []*v1.TestOwnership) (*v1.TestOwnership, error) {
+	if len(ownerships) <= 1 {
+		return nil, nil
+	}
+
+	jiraTags := util.ExtractTestField(test.Name, "Jira")
+	if len(jiraTags) == 0 {
+		return nil, nil
+	}
+
+	tagSet := make(map[string]bool, len(jiraTags))
+	for _, jc := range jiraTags {
+		unquoted, err := strconv.Unquote(jc)
+		if err != nil {
+			unquoted = jc
+		}
+		tagSet[strings.ToLower(unquoted)] = true
+	}
+
+	var matched []*v1.TestOwnership
+	for _, o := range ownerships {
+		if tagSet[strings.ToLower(o.JIRAComponent)] {
+			matched = append(matched, o)
+		}
+	}
+
+	if len(matched) == 1 {
+		return matched[0], nil
+	}
+	if len(matched) > 1 {
+		var components []string
+		for _, m := range matched {
+			components = append(components, m.Component)
+		}
+		return nil, fmt.Errorf("suite=%q test=%q is claimed by multiple Jira components (%s) "+
+			"-- each test should have at most one Jira component claimant",
+			test.Suite, test.Name, strings.Join(components, ", "))
+	}
+	return nil, nil
 }
 
 func getHighestPriority(ownerships []*v1.TestOwnership) (*v1.TestOwnership, error) {
