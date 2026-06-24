@@ -42388,6 +42388,10 @@
     "Suite": "Cluster_Infrastructure"
   },
   {
+    "Name": "[It] Autoscaler should use a ClusterAutoscaler with NewPodScaleUpDelay option should not schedule pods on nodes [autoscaler, disruptive, Serial, periodic]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
     "Name": "[It] Autoscaler should use a ClusterAutoscaler with maximum total nodes scales up and down while respecting MaxNodesTotal [Slow][Serial] [autoscaler, disruptive, Serial, periodic]",
     "Suite": "Cluster_Infrastructure"
   },
@@ -53352,6 +53356,10 @@
     "Suite": "Routing and DNS related scenarios"
   },
   {
+    "Name": "env-config",
+    "Suite": "tests/e2e-openshift/env-config"
+  },
+  {
     "Name": "env-vars",
     "Suite": "tests/e2e/use-labels-for-resource-attributes"
   },
@@ -53642,6 +53650,10 @@
   {
     "Name": "hostmetricsreceiver",
     "Suite": "tests/e2e-otel/hostmetricsreceiver"
+  },
+  {
+    "Name": "httproute",
+    "Suite": "tests/e2e/httpRoute"
   },
   {
     "Name": "hypershift-agent-create-add-worker-metal3",
@@ -53956,8 +53968,16 @@
     "Suite": "tests/e2e-instrumentation/instrumentation-apache-multicontainer"
   },
   {
+    "Name": "instrumentation-blocked-upgrade",
+    "Suite": "tests/e2e-instrumentation/instrumentation-blocked-upgrade"
+  },
+  {
     "Name": "instrumentation-dotnet",
     "Suite": "tests/e2e-instrumentation/instrumentation-dotnet"
+  },
+  {
+    "Name": "instrumentation-dotnet-initcontainer",
+    "Suite": "tests/e2e-instrumentation/instrumentation-dotnet-initcontainer"
   },
   {
     "Name": "instrumentation-dotnet-multicontainer",
@@ -53974,6 +53994,10 @@
   {
     "Name": "instrumentation-java",
     "Suite": "tests/e2e-instrumentation/instrumentation-java"
+  },
+  {
+    "Name": "instrumentation-java-initcontainer",
+    "Suite": "tests/e2e-instrumentation/instrumentation-java-initcontainer"
   },
   {
     "Name": "instrumentation-java-multicontainer",
@@ -54016,6 +54040,10 @@
     "Suite": "tests/e2e-instrumentation/instrumentation-nodejs"
   },
   {
+    "Name": "instrumentation-nodejs-initcontainer",
+    "Suite": "tests/e2e-instrumentation/instrumentation-nodejs-initcontainer"
+  },
+  {
     "Name": "instrumentation-nodejs-multicontainer",
     "Suite": "tests/e2e-instrumentation/instrumentation-nodejs-multicontainer"
   },
@@ -54026,6 +54054,10 @@
   {
     "Name": "instrumentation-python",
     "Suite": "tests/e2e-instrumentation/instrumentation-python"
+  },
+  {
+    "Name": "instrumentation-python-initcontainer",
+    "Suite": "tests/e2e-instrumentation/instrumentation-python-initcontainer"
   },
   {
     "Name": "instrumentation-python-multicontainer",
@@ -54046,6 +54078,10 @@
   {
     "Name": "instrumentation-sdk",
     "Suite": "tests/e2e-instrumentation/instrumentation-sdk"
+  },
+  {
+    "Name": "instrumentation-sdk-initcontainer",
+    "Suite": "tests/e2e-instrumentation/instrumentation-sdk-initcontainer"
   },
   {
     "Name": "instrumentation-single-instr-first-container",
@@ -57414,6 +57450,14 @@
   {
     "Name": "targetallocator-prometheuscr",
     "Suite": "tests/e2e-targetallocator/targetallocator-prometheuscr"
+  },
+  {
+    "Name": "targetallocator-prometheuscr-denyfs",
+    "Suite": "tests/e2e-targetallocator/targetallocator-prometheuscr-denyfs"
+  },
+  {
+    "Name": "targetallocator-prometheuscr-secrets",
+    "Suite": "tests/e2e-targetallocator/targetallocator-prometheuscr-secrets"
   },
   {
     "Name": "tempo-serverless",
