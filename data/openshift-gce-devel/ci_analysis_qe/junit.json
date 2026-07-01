@@ -57497,6 +57497,10 @@
   },
   {
     "Name": "tls-profile",
+    "Suite": "tests/e2e-openshift-tls-profile/tls-profile"
+  },
+  {
+    "Name": "tls-profile",
     "Suite": "tests/e2e-openshift-tls-profile/03-tls-profile"
   },
   {
