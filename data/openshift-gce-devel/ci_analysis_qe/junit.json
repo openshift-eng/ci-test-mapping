@@ -53808,10 +53808,6 @@
     "Suite": "Overall CI (test step)"
   },
   {
-    "Name": "ibmcloud-provision-dedicatedhost-dynamic",
-    "Suite": "Overall CI (test step)"
-  },
-  {
     "Name": "ibmcloud-provision-dedicatedhost-static",
     "Suite": "Overall CI (test step)"
   },
