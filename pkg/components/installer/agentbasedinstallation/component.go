@@ -14,7 +14,11 @@ var AgentBasedInstallationComponent = Component{
 		Name:                 "Installer / Agent based installation",
 		Operators:            []string{},
 		DefaultJiraComponent: "Installer / Agent based installation",
-		Matchers:             []config.ComponentMatcher{},
+		Matchers: []config.ComponentMatcher{
+			{
+				IncludeAny: []string{"[Feature:NoRegistryClusterInstall]"},
+			},
+		},
 	},
 }
 
