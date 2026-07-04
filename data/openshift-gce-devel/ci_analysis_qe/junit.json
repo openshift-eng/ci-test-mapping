@@ -40740,6 +40740,10 @@
     "Suite": "Windows_Containers"
   },
   {
+    "Name": "OCP-87809:rrasouli:Windows_Containers:[sig-windows] Windows_Containers Node drain with DaemonSet workloads during Windows reconciliation [Disruptive] [Serial]",
+    "Suite": "Windows_Containers"
+  },
+  {
     "Name": "OCP-87962:ngavali:Workloads:[sig-cli] Workloads ocmirror v2 works well Verify operator images are pinned by digest [Serial]",
     "Suite": "Workloads"
   },
