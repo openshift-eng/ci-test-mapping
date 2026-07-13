@@ -36960,6 +36960,10 @@
     "Suite": "MCO"
   },
   {
+    "Name": "OCP-74240:sregidor:MCO:[sig-mco] MCO Bootimages ManagedBootImages. Restore All MachineSet images [Disruptive] [Serial]",
+    "Suite": "MCO"
+  },
+  {
     "Name": "OCP-74240:sregidor:MCO:[sig-mco] MCO Bootimages [P2] ManagedBootImages. Restore All MachineSet images [Disruptive] [Serial]",
     "Suite": "MCO"
   },
@@ -37208,6 +37212,10 @@
     "Suite": "STORAGE"
   },
   {
+    "Name": "OCP-74751:sregidor:MCO:[sig-mco] MCO Bootimages ManagedBootImages. Fix errors [Disruptive] [Serial]",
+    "Suite": "MCO"
+  },
+  {
     "Name": "OCP-74751:sregidor:MCO:[sig-mco] MCO Bootimages [P2] ManagedBootImages. Fix errors [Disruptive] [Serial]",
     "Suite": "MCO"
   },
@@ -37230,6 +37238,10 @@
   {
     "Name": "OCP-74760:rrasouli:Windows_Containers:[sig-windows] Windows_Containers Windows workloads with disconnected registry image",
     "Suite": "Windows_Containers"
+  },
+  {
+    "Name": "OCP-74764:sregidor:MCO:[sig-mco] MCO Bootimages ManagedBootImages. Delete machineset when error [Disruptive] [Serial]",
+    "Suite": "MCO"
   },
   {
     "Name": "OCP-74764:sregidor:MCO:[sig-mco] MCO Bootimages [P1] ManagedBootImages. Delete machineset when error [Disruptive] [Serial]",
@@ -37364,6 +37376,10 @@
     "Suite": "Logging"
   },
   {
+    "Name": "OCP-75109:rioliu:MCO:[sig-mco] MCO NodeDisruptionPolicy NodeDisruptionPolicy files allow paths to be defined for non-disruptive updates [Disruptive] [Serial]",
+    "Suite": "MCO"
+  },
+  {
     "Name": "OCP-75109:rioliu:MCO:[sig-mco] MCO NodeDisruptionPolicy [P2] NodeDisruptionPolicy files allow paths to be defined for non-disruptive updates [Disruptive] [Serial]",
     "Suite": "MCO"
   },
@@ -37400,6 +37416,10 @@
     "Suite": "OLM"
   },
   {
+    "Name": "OCP-75149:sregidor:MCO:[sig-mco] MCO Update pool with manually cordoned nodes [Disruptive] [Serial]",
+    "Suite": "MCO"
+  },
+  {
     "Name": "OCP-75149:sregidor:MCO:[sig-mco] MCO [P1] Update pool with manually cordoned nodes [Disruptive] [Serial]",
     "Suite": "MCO"
   },
@@ -37425,6 +37445,10 @@
   },
   {
     "Name": "OCP-75222:ptalgulk:MCO:[sig-mco] MCO security [P2] tlSecurityProfile switch and check the expected tlsMinVersion and cipheres suite are seen in MCS,MSS and rbac-kube-proxy pod logs[Disruptive] [Serial]",
+    "Suite": "MCO"
+  },
+  {
+    "Name": "OCP-75222:ptalgulk:MCO:[sig-mco] MCO security tlSecurityProfile switch and check the expected tlsMinVersion and cipheres suite are seen in MCS,MSS and rbac-kube-proxy pod logs[Disruptive] [Serial]",
     "Suite": "MCO"
   },
   {
@@ -37856,6 +37880,10 @@
     "Suite": "Hypershift"
   },
   {
+    "Name": "OCP-75862:sregidor:MCO:[sig-mco] MCO alerts Add alert for users of deprecating the Image Registry workaround [Disruptive] [Serial]",
+    "Suite": "MCO"
+  },
+  {
     "Name": "OCP-75862:sregidor:MCO:[sig-mco] MCO alerts [P2] Add alert for users of deprecating the Image Registry workaround [Disruptive] [Serial]",
     "Suite": "MCO"
   },
@@ -38200,7 +38228,15 @@
     "Suite": "Workloads"
   },
   {
+    "Name": "OCP-76471:sregidor:MCO:[sig-mco] MCO scale Scaleup using 4.12 cloud image[Disruptive] [Serial]",
+    "Suite": "MCO"
+  },
+  {
     "Name": "OCP-76471:sregidor:MCO:[sig-mco] MCO scale [P1] Scaleup using 4.12 cloud image[Disruptive] [Serial]",
+    "Suite": "MCO"
+  },
+  {
+    "Name": "OCP-76471:sregidor:MCO:[sig-mco] MCO scale [P2] Scaleup using 4.3 cloud image[Disruptive] [Serial]",
     "Suite": "MCO"
   },
   {
