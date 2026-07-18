@@ -784,6 +784,10 @@
     "Suite": "BareMetalHosts related features"
   },
   {
+    "Name": "Branding check \"before all\" hook for \"(OCP-48357,yanpzhan,UserInterface) Switch the OCP branding logo and title to Red Hat OpenShift logo and title\"",
+    "Suite": "Root Suite"
+  },
+  {
     "Name": "Branding check (OCP-48357) Switch the OCP branding logo and title to Red Hat OpenShift logo and title",
     "Suite": "Branding check"
   },
