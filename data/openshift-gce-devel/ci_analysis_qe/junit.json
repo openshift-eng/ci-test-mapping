@@ -47564,10 +47564,6 @@
     "Suite": "Overall CI (test step)"
   },
   {
-    "Name": "cucushift-installer-check-azure-nat-gateway",
-    "Suite": "Overall CI (test step)"
-  },
-  {
     "Name": "cucushift-installer-check-azure-networking-type",
     "Suite": "Overall CI (test step)"
   },
