@@ -42308,6 +42308,10 @@
     "Suite": "Cluster_Infrastructure"
   },
   {
+    "Name": "[It] Autoscaler should use a ClusterAutoscaler that has 100 maximum total nodes count should not enforce minimum size [autoscaler, disruptive, Serial, periodic]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
     "Name": "[It] Autoscaler should use a ClusterAutoscaler that has 8 maximum total nodes scales up and down while respecting MaxNodesTotal [Slow][Serial] [autoscaler, disruptive, periodic]",
     "Suite": "Cluster_Infrastructure"
   },
@@ -42333,6 +42337,10 @@
   },
   {
     "Name": "[It] Autoscaler should use a ClusterAutoscaler that has priority expander option enabled high priority machineset should be scaled up first [Slow] [autoscaler]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] Autoscaler should use a ClusterAutoscaler with EnforceNodeGroupMinSize should enforce minimum size and scale up from 0 to 1 replica when enabled [autoscaler, disruptive, Serial, periodic]",
     "Suite": "Cluster_Infrastructure"
   },
   {
