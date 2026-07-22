@@ -96,6 +96,7 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/logging"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/logicalvolumemanagerstorage"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/lowlatencyvalidationtooling"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpacm"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpacs"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpcnv"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpfusionaccess"
@@ -462,6 +463,7 @@ func NewComponentRegistry() *Registry {
 	r.Register("LP--ODF", &lpodf.LPodfComponent)
 	r.Register("LP--MTA", &lpmta.LPmtaComponent)
 	r.Register("LP--Gitops", &lpgitops.LPgitopsComponent)
+	r.Register("LP--ACM", &lpacm.LPacmComponent)
 	r.Register("LP--ACS", &lpacs.LPacsComponent)
 	r.Register("LP--OADP", &lpoadp.LPoadpComponent)
 	r.Register("LP--Fusion-access", &lpfusionaccess.LPfusionaccessComponent)
