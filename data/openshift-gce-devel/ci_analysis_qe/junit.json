@@ -42504,6 +42504,22 @@
     "Suite": "Cluster_Infrastructure"
   },
   {
+    "Name": "[It] Cluster autoscaler operator TLS adherence should configure webhook TLS to match custom cluster profile when TLSAdherence is StrictAllComponents [autoscaler, periodic, disruptive, Serial]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] Cluster autoscaler operator TLS adherence should revert webhook TLS when TLSAdherence transitions from StrictAllComponents to LegacyAdheringComponentsOnly [autoscaler, periodic, disruptive, Serial]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] Cluster autoscaler operator TLS adherence should update webhook TLS when TLSAdherence transitions to StrictAllComponents [autoscaler, periodic, disruptive, Serial]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
+    "Name": "[It] Cluster autoscaler operator TLS adherence should use default TLS config when TLSAdherence is LegacyAdheringComponentsOnly [autoscaler, periodic, disruptive, Serial]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
     "Name": "[It] Cluster autoscaler operator deployment should be available [autoscaler, LEVEL0]",
     "Suite": "Cluster_Infrastructure"
   },
