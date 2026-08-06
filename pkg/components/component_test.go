@@ -174,7 +174,9 @@ func TestIdentifyTest(t *testing.T) {
 			testInfo: &v1.TestInfo{
 				Name: "[sig-arch][Early] Managed cluster should [apigroup:config.openshift.io] start all core operators [Suite:openshift/conformance/parallel]",
 			},
-			wantID: "[sig-arch][Early] Managed cluster should [apigroup:config.openshift.io] start all core operators [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
+			// apigroup annotations are stripped when computing the stable ID so
+			// they no longer appear in the resulting identifier.
+			wantID: "[sig-arch][Early] Managed cluster should start all core operators [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
 		},
 	}
 	ti := NewTestIdentifier(componentRegistry, nil)

@@ -64,12 +64,38 @@ func removeTestField(testName, field string) string {
 	return updatedTestName
 }
 
+// removeAllTestFields removes every occurrence of the given field (and its
+// value) from the testName. removeTestField only removes the first match, so
+// this repeatedly applies it until no matching field remains. This is required
+// for fields such as apigroup that may appear multiple times on a single test
+// name (e.g. "[apigroup:foo][apigroup:bar]").
+func removeAllTestFields(testName, field string) string {
+	for {
+		updated := removeTestField(testName, field)
+		if updated == testName {
+			return testName
+		}
+		testName = updated
+	}
+}
+
 // StableID produces a stable test ID based on a TestInfo struct and a stableName.
 func StableID(testInfo *v1.TestInfo, stableName string) string {
 	// Monitor attribute will be added automatically to monitor tests
 	// want to avoid mass mapping so we remove from the stableID
 	stableName = removeTestField(stableName, "[Monitor:")
+
+	// apigroup annotations (e.g. [apigroup:config.openshift.io]) are added to
+	// tests automatically by openshift/origin, and a single test may carry
+	// several of them. They can appear or disappear without any meaningful
+	// change to the test itself, which would otherwise churn the stable ID.
+	// Strip every occurrence so the ID stays stable regardless of apigroups.
+	stableName = removeAllTestFields(stableName, "[apigroup:")
+
 	hash := fmt.Sprintf("%x", md5.Sum([]byte(stableName)))
+	if oldHash, ok := apigroupHashOverrides[hash]; ok {
+		hash = oldHash
+	}
 	if testInfo.Suite != "" {
 		stableName = fmt.Sprintf("%s:%s", testInfo.Suite, hash)
 	}

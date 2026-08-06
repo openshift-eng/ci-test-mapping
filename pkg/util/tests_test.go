@@ -146,6 +146,24 @@ func TestStableIdMatch(t *testing.T) {
 			testName:      "[Monitor:generation-analyzer][Jira:\"kube-apiserver\"] monitor test generation-analyzer preparation",
 			matchTestName: "[Jira:\"kube-apiserver\"] monitor test generation-analyzer preparation",
 		},
+		{
+			name:          "matches stable ID ignoring a single apigroup annotation",
+			testInfo:      v1.TestInfo{Suite: "openshift/conformance/parallel"},
+			testName:      "[sig-arch] Managed cluster should [apigroup:config.openshift.io] start all core operators [Suite:openshift/conformance/parallel]",
+			matchTestName: "[sig-arch] Managed cluster should start all core operators [Suite:openshift/conformance/parallel]",
+		},
+		{
+			name:          "matches stable ID ignoring concatenated apigroup annotations",
+			testInfo:      v1.TestInfo{Suite: "openshift/conformance/parallel"},
+			testName:      "[sig-cli] oc adm new-project [apigroup:project.openshift.io][apigroup:authorization.openshift.io] [Suite:openshift/conformance/parallel]",
+			matchTestName: "[sig-cli] oc adm new-project [Suite:openshift/conformance/parallel]",
+		},
+		{
+			name:          "matches stable ID ignoring scattered apigroup annotations",
+			testInfo:      v1.TestInfo{Suite: "openshift/conformance/serial"},
+			testName:      "[sig-network][Feature:EgressIP][apigroup:operator.openshift.io] pods [apigroup:user.openshift.io] should work [Suite:openshift/conformance/serial]",
+			matchTestName: "[sig-network][Feature:EgressIP] pods should work [Suite:openshift/conformance/serial]",
+		},
 	}
 
 	for _, tt := range tests {
@@ -154,6 +172,48 @@ func TestStableIdMatch(t *testing.T) {
 			matchID := StableID(&tt.testInfo, tt.matchTestName)
 			if !strings.EqualFold(stableID, matchID) {
 				t.Errorf("removeTestField() = %v, \nwant %v", stableID, matchID)
+			}
+		})
+	}
+}
+
+func TestRemoveAllTestFields(t *testing.T) {
+	tests := []struct {
+		name      string
+		test      string
+		field     string
+		wantValue string
+	}{
+		{
+			name:      "removes a single apigroup field",
+			test:      "[sig-arch] Managed cluster should [apigroup:config.openshift.io] start all core operators [Suite:openshift/conformance/parallel]",
+			field:     "[apigroup:",
+			wantValue: "[sig-arch] Managed cluster should start all core operators [Suite:openshift/conformance/parallel]",
+		},
+		{
+			name:      "removes multiple concatenated apigroup fields",
+			test:      "[sig-cli] oc adm new-project [apigroup:project.openshift.io][apigroup:authorization.openshift.io] [Suite:openshift/conformance/parallel]",
+			field:     "[apigroup:",
+			wantValue: "[sig-cli] oc adm new-project [Suite:openshift/conformance/parallel]",
+		},
+		{
+			name:      "removes multiple scattered apigroup fields",
+			test:      "[sig-network][Feature:EgressIP][apigroup:operator.openshift.io] pods [apigroup:user.openshift.io] should work [Suite:openshift/conformance/serial]",
+			field:     "[apigroup:",
+			wantValue: "[sig-network][Feature:EgressIP] pods should work [Suite:openshift/conformance/serial]",
+		},
+		{
+			name:      "leaves a name without the field unchanged",
+			test:      "[sig-arch] Managed cluster should start all core operators [Suite:openshift/conformance/parallel]",
+			field:     "[apigroup:",
+			wantValue: "[sig-arch] Managed cluster should start all core operators [Suite:openshift/conformance/parallel]",
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if gotResults := removeAllTestFields(tt.test, tt.field); gotResults != tt.wantValue {
+				t.Errorf("removeAllTestFields() = %q, \nwant %q", gotResults, tt.wantValue)
 			}
 		})
 	}

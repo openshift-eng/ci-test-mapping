@@ -113,7 +113,7 @@ To find unmapped tests, run `make unmapped`.
 ### Development
 
 For production usage we fetch and push data to BigQuery, but for local
-testing you can used locally comitted copies of that data by using
+testing you can used locally committed copies of that data by using
 `--mode local`:
 
 ```
