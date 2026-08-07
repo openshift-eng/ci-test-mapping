@@ -17,7 +17,9 @@ var LPinteropOPPACMComponent = Component{
 		Operators:            []string{},
 		DefaultJiraComponent: "lp-interop--OPP-ACM",
 		Matchers: []config.ComponentMatcher{
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--acm-`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--Observability`)},
+			{SuiteRegEx: regexp.MustCompile(`^acm-opp-app$`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--acm`)},
 		},
 	},
 }
