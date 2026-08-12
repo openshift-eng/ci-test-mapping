@@ -17,7 +17,7 @@ var LPinteropOPPODFComponent = Component{
 		Operators:            []string{},
 		DefaultJiraComponent: "lp-interop--ODF",
 		Matchers: []config.ComponentMatcher{
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--pytest`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--interop-tests-ocs`)},
 		},
 	},
 }

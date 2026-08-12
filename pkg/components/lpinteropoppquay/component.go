@@ -17,7 +17,7 @@ var LPinteropOPPQuayComponent = Component{
 		Operators:            []string{},
 		DefaultJiraComponent: "lp-interop--Quay",
 		Matchers: []config.ComponentMatcher{
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--QUAY `)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--quay-tests`)},
 		},
 	},
 }
