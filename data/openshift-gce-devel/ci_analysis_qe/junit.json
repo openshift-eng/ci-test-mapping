@@ -34160,10 +34160,6 @@
     "Suite": "Cluster_Infrastructure"
   },
   {
-    "Name": "OCP-6XX65:huliu:Cluster_Infrastructure:[sig-cluster-lifecycle] Cluster_Infrastructure [Upgrade] Ensure controlplanemachineset is generated automatically after upgrade",
-    "Suite": "Cluster_Infrastructure"
-  },
-  {
     "Name": "OCP-70009:meinli:SDN:[sig-networking] SDN networkpolicy Pod IP is missing from OVN DB AddressSet when using allow-namespace-only network policy",
     "Suite": "SDN"
   },
@@ -41128,10 +41124,6 @@
     "Suite": "Cluster_Infrastructure"
   },
   {
-    "Name": "OCP-XX612:zhsun:Cluster_Infrastructure:[sig-cluster-lifecycle] Cluster_Infrastructure [Upgrade] Cluster could scale up/down after upgrade [Disruptive] [Serial][Slow]",
-    "Suite": "Cluster_Infrastructure"
-  },
-  {
     "Name": "OCP-XX615:xzha:OLM:Post check the OLM status",
     "Suite": "OLM"
   },
@@ -41160,15 +41152,7 @@
     "Suite": "OLM"
   },
   {
-    "Name": "OCP-XX618:xzha:OLM:[sig-operators] OLM should Post check the marketplace status",
-    "Suite": "OLM"
-  },
-  {
     "Name": "OCP-XX618:xzha:OLM:[sig-operators] OLM should prepare to check the catalogsource status of catalogsource",
-    "Suite": "OLM"
-  },
-  {
-    "Name": "OCP-XX618:xzha:OLM:[sig-operators] OLM should prepare to check the marketplace status",
     "Suite": "OLM"
   },
   {
@@ -41205,10 +41189,6 @@
   },
   {
     "Name": "OCP-XX665:skundu:ETCD:Check etcd image have been update to target release value after upgrade [Serial]",
-    "Suite": "ETCD"
-  },
-  {
-    "Name": "OCP-XX665:skundu:ETCD:[sig-etcd] ETCD Check etcd image have been update to target release value after upgrade [Serial]",
     "Suite": "ETCD"
   },
   {
