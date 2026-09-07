@@ -136647,22 +136647,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "Cluster_Infrastructure:a2a564316785d81150043cca977d3cb9",
-    "Name": "OCP-6XX65:huliu:Cluster_Infrastructure:[sig-cluster-lifecycle] Cluster_Infrastructure [Upgrade] Ensure controlplanemachineset is generated automatically after upgrade",
-    "Suite": "Cluster_Infrastructure",
-    "Product": "OpenShift",
-    "Priority": -10,
-    "StaffApprovedObsolete": false,
-    "Component": "Cluster Version Operator",
-    "Capabilities": [
-      "ClusterUpgrade"
-    ],
-    "JIRAComponent": "Cluster Version Operator",
-    "JIRAComponentID": "14665"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "SDN:465497d239ce57ea2d29e61b852106ad",
     "Name": "OCP-70009:meinli:SDN:[sig-networking] SDN networkpolicy Pod IP is missing from OVN DB AddressSet when using allow-namespace-only network policy",
     "Suite": "SDN",
@@ -164525,22 +164509,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "Cluster_Infrastructure:1db01084dd4894efd3a985b2f491f793",
-    "Name": "OCP-XX612:zhsun:Cluster_Infrastructure:[sig-cluster-lifecycle] Cluster_Infrastructure [Upgrade] Cluster could scale up/down after upgrade [Disruptive] [Serial][Slow]",
-    "Suite": "Cluster_Infrastructure",
-    "Product": "OpenShift",
-    "Priority": -10,
-    "StaffApprovedObsolete": false,
-    "Component": "Cluster Version Operator",
-    "Capabilities": [
-      "ClusterUpgrade"
-    ],
-    "JIRAComponent": "Cluster Version Operator",
-    "JIRAComponentID": "14665"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "OLM:8ff030fb6ca7d62d27808371529787ef",
     "Name": "OCP-XX615:xzha:OLM:Post check the OLM status",
     "Suite": "OLM",
@@ -164653,40 +164621,8 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "OLM:8764883453400dcbbaec754948d84b90",
-    "Name": "OCP-XX618:xzha:OLM:[sig-operators] OLM should Post check the marketplace status",
-    "Suite": "OLM",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "OLM",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "OLM",
-    "JIRAComponentID": "14927"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "OLM:05c7436784a0e7ecba86761da6580881",
     "Name": "OCP-XX618:xzha:OLM:[sig-operators] OLM should prepare to check the catalogsource status of catalogsource",
-    "Suite": "OLM",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "OLM",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "OLM",
-    "JIRAComponentID": "14927"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "OLM:faeccf88ab14302817cb71148c7b8eac",
-    "Name": "OCP-XX618:xzha:OLM:[sig-operators] OLM should prepare to check the marketplace status",
     "Suite": "OLM",
     "Product": "OpenShift",
     "Priority": 0,
@@ -164831,22 +164767,6 @@
     "Kind": "TestOwnership",
     "ID": "ETCD:02bd4bc410cd62a690fe011f7cd219a2",
     "Name": "OCP-XX665:skundu:ETCD:Check etcd image have been update to target release value after upgrade [Serial]",
-    "Suite": "ETCD",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Etcd",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Etcd",
-    "JIRAComponentID": "14713"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "ETCD:a535ca600bb664a15794cf03873b25e2",
-    "Name": "OCP-XX665:skundu:ETCD:[sig-etcd] ETCD Check etcd image have been update to target release value after upgrade [Serial]",
     "Suite": "ETCD",
     "Product": "OpenShift",
     "Priority": 0,
