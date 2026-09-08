@@ -27108,6 +27108,10 @@
     "Suite": "Serverless-lp-interop"
   },
   {
+    "Name": "TestBrokerConformance/Prerequisite/#00/Setup/install_broker_\"broker-aijibint\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestBrokerConformance/Prerequisite/#00/Setup/install_broker_\"broker-amjgllkw\"",
     "Suite": "Serverless-lp-interop"
   },
@@ -27726,6 +27730,10 @@
   {
     "Name": "TestBrokerConformance/Prerequisite/#00/Setup/install_broker_\"broker-wiyznkgs\"",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestBrokerConformance/Prerequisite/#00/Setup/install_broker_\"broker-wjayinlw\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestBrokerConformance/Prerequisite/#00/Setup/install_broker_\"broker-wqsqxiiz\"",
@@ -30400,6 +30408,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestBrokerSupportsAuthZ/Prerequisite/#00/Setup/install_broker_\"broker-ctudaddm\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestBrokerSupportsAuthZ/Prerequisite/#00/Setup/install_broker_\"broker-cuwsrovy\"",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -30686,6 +30698,10 @@
   {
     "Name": "TestBrokerSupportsAuthZ/Prerequisite/#00/Setup/install_broker_\"broker-oegeemno\"",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestBrokerSupportsAuthZ/Prerequisite/#00/Setup/install_broker_\"broker-oemwlypj\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestBrokerSupportsAuthZ/Prerequisite/#00/Setup/install_broker_\"broker-ofyoypzc\"",
@@ -31508,6 +31524,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestBrokerSupportsOIDC/Prerequisite/#00/Setup/install_broker_\"broker-dpntxofd\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestBrokerSupportsOIDC/Prerequisite/#00/Setup/install_broker_\"broker-dtwfafaj\"",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -31894,6 +31914,10 @@
   {
     "Name": "TestBrokerSupportsOIDC/Prerequisite/#00/Setup/install_broker_\"broker-tojxcvsw\"",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestBrokerSupportsOIDC/Prerequisite/#00/Setup/install_broker_\"broker-tozwuorb\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestBrokerSupportsOIDC/Prerequisite/#00/Setup/install_broker_\"broker-tpjfwrlg\"",
@@ -33592,6 +33616,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/eventinge2erekt"
   },
   {
+    "Name": "TestChannelBasedBrokerToKsvc/Prerequisite/#00/Setup/install_broker_\"broker-kcnvddyc\"",
+    "Suite": "lp-ocp-compat--Serverless--test/eventinge2erekt"
+  },
+  {
     "Name": "TestChannelBasedBrokerToKsvc/Prerequisite/#00/Setup/install_broker_\"broker-khcharxu\"",
     "Suite": "lp-ocp-compat--Serverless--test/eventinge2erekt"
   },
@@ -33897,6 +33925,10 @@
   },
   {
     "Name": "TestChannelBasedBrokerToKsvc/Prerequisite/#00/Setup/install_broker_\"broker-swwmyabl\"",
+    "Suite": "lp-ocp-compat--Serverless--test/eventinge2erekt"
+  },
+  {
+    "Name": "TestChannelBasedBrokerToKsvc/Prerequisite/#00/Setup/install_broker_\"broker-taqcbycx\"",
     "Suite": "lp-ocp-compat--Serverless--test/eventinge2erekt"
   },
   {
@@ -36140,6 +36172,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new_channel"
   },
   {
+    "Name": "TestChannelWithBackingKafkaChannelSupportsAuthZ/Prerequisite/Channel_goes_ready./Setup/install_a_Channel_named_\"channel-pacxjqtj\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new_channel"
+  },
+  {
     "Name": "TestChannelWithBackingKafkaChannelSupportsAuthZ/Prerequisite/Channel_goes_ready./Setup/install_a_Channel_named_\"channel-pgdepbke\"",
     "Suite": "Serverless-lp-interop"
   },
@@ -36282,6 +36318,10 @@
   {
     "Name": "TestChannelWithBackingKafkaChannelSupportsAuthZ/Prerequisite/Channel_goes_ready./Setup/install_a_Channel_named_\"channel-uesoqkhk\"",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestChannelWithBackingKafkaChannelSupportsAuthZ/Prerequisite/Channel_goes_ready./Setup/install_a_Channel_named_\"channel-uhcoujua\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new_channel"
   },
   {
     "Name": "TestChannelWithBackingKafkaChannelSupportsAuthZ/Prerequisite/Channel_goes_ready./Setup/install_a_Channel_named_\"channel-uknydgyk\"",
@@ -43748,6 +43788,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new_channel"
   },
   {
+    "Name": "TestKafkaChannelOIDC/Prerequisite/ChannelImpl_goes_ready./Setup/install_a_KafkaChannel_named_\"kafka-channel-gmszuxrn\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new_channel"
+  },
+  {
     "Name": "TestKafkaChannelOIDC/Prerequisite/ChannelImpl_goes_ready./Setup/install_a_KafkaChannel_named_\"kafka-channel-gsufzbok\"",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new_channel"
   },
@@ -44093,6 +44137,10 @@
   },
   {
     "Name": "TestKafkaChannelOIDC/Prerequisite/ChannelImpl_goes_ready./Setup/install_a_KafkaChannel_named_\"kafka-channel-usrzosth\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new_channel"
+  },
+  {
+    "Name": "TestKafkaChannelOIDC/Prerequisite/ChannelImpl_goes_ready./Setup/install_a_KafkaChannel_named_\"kafka-channel-uupvoasa\"",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new_channel"
   },
   {
@@ -44944,6 +44992,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new_channel"
   },
   {
+    "Name": "TestKafkaChannelSupportsAuthZ/Prerequisite/ChannelImpl_goes_ready./Setup/install_a_KafkaChannel_named_\"kafkachannel-jdzrzumk\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new_channel"
+  },
+  {
     "Name": "TestKafkaChannelSupportsAuthZ/Prerequisite/ChannelImpl_goes_ready./Setup/install_a_KafkaChannel_named_\"kafkachannel-jfqqjepg\"",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new_channel"
   },
@@ -45213,6 +45265,10 @@
   },
   {
     "Name": "TestKafkaChannelSupportsAuthZ/Prerequisite/ChannelImpl_goes_ready./Setup/install_a_KafkaChannel_named_\"kafkachannel-tdzvojve\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new_channel"
+  },
+  {
+    "Name": "TestKafkaChannelSupportsAuthZ/Prerequisite/ChannelImpl_goes_ready./Setup/install_a_KafkaChannel_named_\"kafkachannel-teqikrgs\"",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new_channel"
   },
   {
@@ -45924,6 +45980,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestKafkaSinkSupportsAuthZ/Prerequisite#01/#00/Setup/install_KafkaSink_\"kafkasink-fvshrfph\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestKafkaSinkSupportsAuthZ/Prerequisite#01/#00/Setup/install_KafkaSink_\"kafkasink-fwhblfyg\"",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -46261,6 +46321,10 @@
   },
   {
     "Name": "TestKafkaSinkSupportsAuthZ/Prerequisite#01/#00/Setup/install_KafkaSink_\"kafkasink-tferxraa\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestKafkaSinkSupportsAuthZ/Prerequisite#01/#00/Setup/install_KafkaSink_\"kafkasink-tmxekzfx\"",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -47044,6 +47108,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestKafkaSinkSupportsAuthZ/Prerequisite/#00/Setup/install_Topic_\"topic-wsfojwsd\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestKafkaSinkSupportsAuthZ/Prerequisite/#00/Setup/install_Topic_\"topic-wxehithl\"",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -47073,6 +47141,10 @@
   },
   {
     "Name": "TestKafkaSinkSupportsAuthZ/Prerequisite/#00/Setup/install_Topic_\"topic-xsmmxxvl\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestKafkaSinkSupportsAuthZ/Prerequisite/#00/Setup/install_Topic_\"topic-xstdxqpr\"",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -47876,7 +47948,15 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestKafkaSinkSupportsOIDC/Prerequisite#01/#00/Setup/install_KafkaSink_\"kafkasink-mdlcngyp\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestKafkaSinkSupportsOIDC/Prerequisite#01/#00/Setup/install_KafkaSink_\"kafkasink-mhcsizef\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestKafkaSinkSupportsOIDC/Prerequisite#01/#00/Setup/install_KafkaSink_\"kafkasink-mjqtfwks\"",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -48820,6 +48900,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestKafkaSinkSupportsOIDC/Prerequisite/#00/Setup/install_Topic_\"topic-uhpnxoiu\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestKafkaSinkSupportsOIDC/Prerequisite/#00/Setup/install_Topic_\"topic-uqpfcpmz\"",
     "Suite": "Serverless-lp-interop"
   },
@@ -48902,6 +48986,10 @@
   {
     "Name": "TestKafkaSinkSupportsOIDC/Prerequisite/#00/Setup/install_Topic_\"topic-xbtdvjpo\"",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestKafkaSinkSupportsOIDC/Prerequisite/#00/Setup/install_Topic_\"topic-xicoakzu\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestKafkaSinkSupportsOIDC/Prerequisite/#00/Setup/install_Topic_\"topic-xkgsybbi\"",
@@ -54600,6 +54688,10 @@
     "Suite": "Serverless-lp-interop"
   },
   {
+    "Name": "TestNamespacedBrokerNamespaceDeletion/delete_namespace/Assert/wait_for_namespace_test-namespaced-broker-hoppylne_to_be_deleted",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNamespacedBrokerNamespaceDeletion/delete_namespace/Assert/wait_for_namespace_test-namespaced-broker-hsjtyrig_to_be_deleted",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -55004,6 +55096,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNamespacedBrokerNamespaceDeletion/delete_namespace/Assert/wait_for_namespace_test-namespaced-broker-vreopgvw_to_be_deleted",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNamespacedBrokerNamespaceDeletion/delete_namespace/Assert/wait_for_namespace_test-namespaced-broker-vtcxfkye_to_be_deleted",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -55302,6 +55398,10 @@
   {
     "Name": "TestNamespacedBrokerNamespaceDeletion/delete_namespace/Setup/delete_namespace_test-namespaced-broker-hkuypzzt",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNamespacedBrokerNamespaceDeletion/delete_namespace/Setup/delete_namespace_test-namespaced-broker-hoppylne",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNamespacedBrokerNamespaceDeletion/delete_namespace/Setup/delete_namespace_test-namespaced-broker-hsjtyrig",
@@ -55708,6 +55808,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNamespacedBrokerNamespaceDeletion/delete_namespace/Setup/delete_namespace_test-namespaced-broker-vreopgvw",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNamespacedBrokerNamespaceDeletion/delete_namespace/Setup/delete_namespace_test-namespaced-broker-vtcxfkye",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -56030,6 +56134,10 @@
   {
     "Name": "TestNamespacedBrokerNamespaceDeletion/setup_namespace/Setup/install_namespace_test-namespaced-broker-hkuypzzt",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNamespacedBrokerNamespaceDeletion/setup_namespace/Setup/install_namespace_test-namespaced-broker-hoppylne",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNamespacedBrokerNamespaceDeletion/setup_namespace/Setup/install_namespace_test-namespaced-broker-hsjtyrig",
@@ -56433,6 +56541,10 @@
   },
   {
     "Name": "TestNamespacedBrokerNamespaceDeletion/setup_namespace/Setup/install_namespace_test-namespaced-broker-vpuitbtg",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNamespacedBrokerNamespaceDeletion/setup_namespace/Setup/install_namespace_test-namespaced-broker-vreopgvw",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -57692,6 +57804,10 @@
     "Suite": "Serverless-lp-interop"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-kbwkqfuf",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-kcblelzq",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -57860,6 +57976,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-lnayggig",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-lngtqqtm",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -57946,6 +58066,10 @@
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-mfpmjezv",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-mgyckpme",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-mhbqqoim",
@@ -58098,6 +58222,10 @@
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-nqoqwipk",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-nspfdrli",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-ntuxfodz",
@@ -58386,6 +58514,10 @@
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-pwxrtngo",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-pxikfjhx",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-pxljjxrd",
@@ -58753,6 +58885,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-tqezxjun",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-tuzthyng",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -59152,6 +59288,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-yazmvhuc",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-yciawoyj",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -59333,6 +59473,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-zrmoapnd",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-zslmboly",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -59569,6 +59713,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-asvvjvsv",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-asylrwfm",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -60636,6 +60784,10 @@
     "Suite": "Serverless-lp-interop"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-gxqksunh",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-gxvfeytd",
     "Suite": "Serverless-lp-interop"
   },
@@ -60712,6 +60864,10 @@
     "Suite": "Serverless-lp-interop"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-hjeghpou",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-hkwazzeo",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -60737,6 +60893,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-hnevfcgm",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-hnitemsi",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -60929,6 +61089,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-itjpwogc",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-iuobnauj",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -61672,6 +61836,10 @@
     "Suite": "Serverless-lp-interop"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-nzkodfrc",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-nzvmpdzt",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -61820,6 +61988,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-ozuzaxyx",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-pacslsgv",
     "Suite": "Serverless-lp-interop"
   },
@@ -61829,6 +62001,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-paqndsto",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-parpokzl",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -61894,6 +62070,10 @@
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-pnjinmfx",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-poifjjaa",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-powuxniv",
@@ -62033,6 +62213,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-qkvcbdcn",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-qlbzzsfe",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -62338,6 +62522,10 @@
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-smngkniu",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-snacizbu",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-sofaaotk",
@@ -63200,6 +63388,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-ykjcntpf",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-ykmcnzbc",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -63672,6 +63864,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/CloudEvents_SQL_filter/Requirement/Install_event_sender_sender-dfwuoequ",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/CloudEvents_SQL_filter/Requirement/Install_event_sender_sender-dhhcjfws",
     "Suite": "Serverless-lp-interop"
   },
@@ -63900,8 +64096,16 @@
     "Suite": "Serverless-lp-interop"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/CloudEvents_SQL_filter/Requirement/Install_event_sender_sender-hexmjzsd",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/CloudEvents_SQL_filter/Requirement/Install_event_sender_sender-hfzopayo",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/CloudEvents_SQL_filter/Requirement/Install_event_sender_sender-hluudvbw",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/CloudEvents_SQL_filter/Requirement/Install_event_sender_sender-hqapphie",
@@ -64117,6 +64321,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/CloudEvents_SQL_filter/Requirement/Install_event_sender_sender-lblnvswb",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/CloudEvents_SQL_filter/Requirement/Install_event_sender_sender-ldwwozsl",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -64952,6 +65160,10 @@
     "Suite": "Serverless-lp-interop"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/Exact_filter/Requirement/Install_event_sender_sender-auwaxfrv",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Exact_filter/Requirement/Install_event_sender_sender-avqyiyzk",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -65062,6 +65274,10 @@
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Exact_filter/Requirement/Install_event_sender_sender-dbyonvpt",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/Exact_filter/Requirement/Install_event_sender_sender-ddziavtw",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Exact_filter/Requirement/Install_event_sender_sender-deuwjlvu",
@@ -65824,6 +66040,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/Exact_filter/Requirement/Install_event_sender_sender-sbswvqkf",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Exact_filter/Requirement/Install_event_sender_sender-scvcwgtl",
     "Suite": "Serverless-lp-interop"
   },
@@ -65970,6 +66190,10 @@
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Exact_filter/Requirement/Install_event_sender_sender-vhxpqddt",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/Exact_filter/Requirement/Install_event_sender_sender-vjmlhnvo",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Exact_filter/Requirement/Install_event_sender_sender-vkmpidua",
@@ -66316,6 +66540,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/FilterAttributeWithEmptyFiltersFeature/Requirement/Install_event_sender_sender-amhzddih",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/FilterAttributeWithEmptyFiltersFeature/Requirement/Install_event_sender_sender-arqbyfhy",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -66480,6 +66708,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/FilterAttributeWithEmptyFiltersFeature/Requirement/Install_event_sender_sender-eiwkwwwq",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/FilterAttributeWithEmptyFiltersFeature/Requirement/Install_event_sender_sender-elwoqyos",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -66637,6 +66869,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/FilterAttributeWithEmptyFiltersFeature/Requirement/Install_event_sender_sender-hrjoptvz",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/FilterAttributeWithEmptyFiltersFeature/Requirement/Install_event_sender_sender-hsqrmzaq",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -67248,6 +67484,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/FilterAttributeWithEmptyFiltersFeature/Requirement/Install_event_sender_sender-tepitqci",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/FilterAttributeWithEmptyFiltersFeature/Requirement/Install_event_sender_sender-tntkqcmh",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -67688,6 +67928,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/FiltersOverrideAttributeFilterFeature/Requirement/Install_event_sender_sender-ahcowwak",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/FiltersOverrideAttributeFilterFeature/Requirement/Install_event_sender_sender-ahvodhqn",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -67772,11 +68016,19 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/FiltersOverrideAttributeFilterFeature/Requirement/Install_event_sender_sender-clpoctge",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/FiltersOverrideAttributeFilterFeature/Requirement/Install_event_sender_sender-cqgqjlxi",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/FiltersOverrideAttributeFilterFeature/Requirement/Install_event_sender_sender-cquqjuep",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/FiltersOverrideAttributeFilterFeature/Requirement/Install_event_sender_sender-csxwqnke",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -68952,6 +69204,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/FiltersOverrideAttributeFilterFeature/Requirement/Install_event_sender_sender-zdppnlat",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/FiltersOverrideAttributeFilterFeature/Requirement/Install_event_sender_sender-zencdykn",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -69444,6 +69700,10 @@
     "Suite": "Serverless-lp-interop"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MissingAttributesFeature/Requirement/Install_event_sender_sender-henoapvs",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MissingAttributesFeature/Requirement/Install_event_sender_sender-hfgawrcb",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -69650,6 +69910,10 @@
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MissingAttributesFeature/Requirement/Install_event_sender_sender-lmpiobui",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MissingAttributesFeature/Requirement/Install_event_sender_sender-lpbbycit",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MissingAttributesFeature/Requirement/Install_event_sender_sender-lrlvyswm",
@@ -70036,8 +70300,16 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MissingAttributesFeature/Requirement/Install_event_sender_sender-thlbrxrx",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MissingAttributesFeature/Requirement/Install_event_sender_sender-tjmcctjm",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MissingAttributesFeature/Requirement/Install_event_sender_sender-tjnvtiww",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MissingAttributesFeature/Requirement/Install_event_sender_sender-tnfwgejs",
@@ -70484,6 +70756,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-aaebinqs",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-abqjphmh",
     "Suite": "Serverless-lp-interop"
   },
@@ -70925,6 +71201,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-eerpdjbh",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-efemacsx",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -72104,6 +72384,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-pfwoevwd",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-pggadbay",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -72153,6 +72437,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-puvmipwm",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-pvybikjz",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -72465,6 +72753,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-twcydtdy",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-twhrwegg",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -72784,6 +73076,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-wwcyqdui",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-wwklxbxf",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -72849,6 +73145,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-xiiulado",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-xipkscdo",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -73074,6 +73374,10 @@
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-zpefldvs",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-zqmvlnzl",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-zqzcmlnp",
@@ -73340,6 +73644,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-angpdknl",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-anlyzffl",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -73524,6 +73832,10 @@
     "Suite": "Serverless-lp-interop"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-boghayrz",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-boniknbs",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -73641,6 +73953,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-cdqotqvo",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-ceqsigsb",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -73921,6 +74237,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-dkfqdwmj",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-dkunvoys",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -74229,6 +74549,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-etrvifnf",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-euiyxgsa",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -75380,6 +75704,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-kfpdaufh",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-kfsjzzgw",
     "Suite": "Serverless-lp-interop"
   },
@@ -76072,6 +76400,10 @@
     "Suite": "Serverless-lp-interop"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-njmocmxn",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-njruzics",
     "Suite": "Serverless-lp-interop"
   },
@@ -76081,6 +76413,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-nkwlcpxs",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-nmevnphm",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -76300,6 +76636,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-opjocexk",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-oqbtgfoj",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -76508,6 +76848,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-prlhxkvv",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-pscobvec",
     "Suite": "Serverless-lp-interop"
   },
@@ -76692,7 +77036,15 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-qqbifgrz",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-qqpvygdr",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-qqrlugqk",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -77172,6 +77524,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-tjtoausx",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-tkzhxasj",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -77385,6 +77741,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-urknrift",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-urwffapq",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -77980,6 +78340,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-xmetcysa",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-xmjmgkfu",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -78222,6 +78586,10 @@
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-yqvnfsms",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-yqyxkyug",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-yrdnelhf",
@@ -78801,6 +79169,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Prefix_filter/Requirement/Install_event_sender_sender-ejfcdaxf",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/Prefix_filter/Requirement/Install_event_sender_sender-ekkyicbe",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -79632,6 +80004,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/Prefix_filter/Requirement/Install_event_sender_sender-toenmhhc",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Prefix_filter/Requirement/Install_event_sender_sender-tonssovy",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -79702,6 +80078,10 @@
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Prefix_filter/Requirement/Install_event_sender_sender-uxpjcyll",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/Prefix_filter/Requirement/Install_event_sender_sender-uzdqlxjw",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Prefix_filter/Requirement/Install_event_sender_sender-vcukpphm",
@@ -79794,6 +80174,10 @@
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Prefix_filter/Requirement/Install_event_sender_sender-wxsgpkpx",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/Prefix_filter/Requirement/Install_event_sender_sender-wzlmiuve",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Prefix_filter/Requirement/Install_event_sender_sender-xaoszzuq",
@@ -80062,6 +80446,10 @@
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Suffix_filter/Requirement/Install_event_sender_sender-bwkxezau",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/Suffix_filter/Requirement/Install_event_sender_sender-bwmvfhty",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Suffix_filter/Requirement/Install_event_sender_sender-bwpkfixt",
@@ -80784,6 +81172,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/Suffix_filter/Requirement/Install_event_sender_sender-pmshzcea",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Suffix_filter/Requirement/Install_event_sender_sender-psisygsf",
     "Suite": "Serverless-lp-interop"
   },
@@ -80798,6 +81190,10 @@
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Suffix_filter/Requirement/Install_event_sender_sender-qarbwppq",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/Suffix_filter/Requirement/Install_event_sender_sender-qcjiqskc",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Suffix_filter/Requirement/Install_event_sender_sender-qhugynkl",
@@ -81169,6 +81565,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Suffix_filter/Requirement/Install_event_sender_sender-xgvcjkut",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/Suffix_filter/Requirement/Install_event_sender_sender-xkvxiton",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -93096,126 +93496,6 @@
     "Suite": "ServiceMesh-lp-interop"
   },
   {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.26.4 when sample apps are deployed in the cluster can access the httpbin service from the sleep pod [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.26.4 when sample apps are deployed in the cluster has the ztunnel proxy sockets configured in the pod network namespace [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.26.4 when sample apps are deployed in the cluster updates the status of pods to Running [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.26.4 when the Istio CR is created with ambient profile deploys istiod [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.26.4 when the Istio CR is created with ambient profile has istiod with appropriate env variables set [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.26.4 when the Istio CR is created with ambient profile updates the Istio CR status to Ready [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.26.4 when the Istio CR is created with ambient profile updates the Istio CR status to Reconciled [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.26.4 when the Istio CR is created with ambient profile uses the correct image [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.26.4 when the Istio CR is deleted removes everything from the namespace [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.26.4 when the IstioCNI CR is created with ambient profile deploys the CNI DaemonSet [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.26.4 when the IstioCNI CR is created with ambient profile uses the configured values in the istio-cni-config config map [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.26.4 when the IstioCNI CR is deleted removes everything from the CNI namespace [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.26.4 when the ZTunnel CR is created deploys the ZTunnel DaemonSet [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.26.4 when the ZTunnel CR is created has ztunnel running with appropriate env variables set [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.26.4 when the ZTunnel CR is deleted removes everything from the ztunnel namespace [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.26.6 when sample apps are deployed in the cluster can access the httpbin service from the sleep pod [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.26.6 when sample apps are deployed in the cluster has the ztunnel proxy sockets configured in the pod network namespace [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.26.6 when sample apps are deployed in the cluster updates the status of pods to Running [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.26.6 when the Istio CR is created with ambient profile deploys istiod [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.26.6 when the Istio CR is created with ambient profile has istiod with appropriate env variables set [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.26.6 when the Istio CR is created with ambient profile updates the Istio CR status to Ready [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.26.6 when the Istio CR is created with ambient profile updates the Istio CR status to Reconciled [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.26.6 when the Istio CR is created with ambient profile uses the correct image [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.26.6 when the Istio CR is deleted removes everything from the namespace [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.26.6 when the IstioCNI CR is created with ambient profile deploys the CNI DaemonSet [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.26.6 when the IstioCNI CR is created with ambient profile uses the configured values in the istio-cni-config config map [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.26.6 when the IstioCNI CR is deleted removes everything from the CNI namespace [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.26.6 when the ZTunnel CR is created deploys the ZTunnel DaemonSet [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.26.6 when the ZTunnel CR is created has ztunnel running with appropriate env variables set [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.26.6 when the ZTunnel CR is deleted removes everything from the ztunnel namespace [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
     "Name": "[It] Ambient configuration  for supported versions Istio version 1.26.8 when sample apps are deployed in the cluster can access the httpbin service from the sleep pod [smoke, ambient]",
     "Suite": "ServiceMesh-lp-interop"
   },
@@ -93273,66 +93553,6 @@
   },
   {
     "Name": "[It] Ambient configuration  for supported versions Istio version 1.26.8 when the ZTunnel CR is deleted removes everything from the ztunnel namespace [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.27.3 when sample apps are deployed in the cluster can access the httpbin service from the sleep pod [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.27.3 when sample apps are deployed in the cluster has the ztunnel proxy sockets configured in the pod network namespace [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.27.3 when sample apps are deployed in the cluster updates the status of pods to Running [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.27.3 when the Istio CR is created with ambient profile deploys istiod [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.27.3 when the Istio CR is created with ambient profile has istiod with appropriate env variables set [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.27.3 when the Istio CR is created with ambient profile updates the Istio CR status to Ready [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.27.3 when the Istio CR is created with ambient profile updates the Istio CR status to Reconciled [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.27.3 when the Istio CR is created with ambient profile uses the correct image [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.27.3 when the Istio CR is deleted removes everything from the namespace [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.27.3 when the IstioCNI CR is created with ambient profile deploys the CNI DaemonSet [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.27.3 when the IstioCNI CR is created with ambient profile uses the configured values in the istio-cni-config config map [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.27.3 when the IstioCNI CR is deleted removes everything from the CNI namespace [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.27.3 when the ZTunnel CR is created deploys the ZTunnel DaemonSet [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.27.3 when the ZTunnel CR is created has ztunnel running with appropriate env variables set [smoke, ambient]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Ambient configuration  for supported versions Istio version 1.27.3 when the ZTunnel CR is deleted removes everything from the ztunnel namespace [smoke, ambient]",
     "Suite": "ServiceMesh-lp-interop"
   },
   {
@@ -95056,78 +95276,6 @@
     "Suite": "Machine Suite"
   },
   {
-    "Name": "[It] Cert-manager Installation Istio version: v1.27.3 when custom resource for the IstioCSR is created has IstioCSR pods running [smoke, cert-manager, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Cert-manager Installation Istio version: v1.27.3 when root CA issuer for the IstioCSR agent is created creates certificate Issuer [smoke, cert-manager, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Cert-manager Installation Istio version: v1.27.3 when sample apps are deployed in the cluster can access the httpbin service from the sleep pod [smoke, cert-manager, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Cert-manager Installation Istio version: v1.27.3 when sample apps are deployed in the cluster waits for sample pods to be ready [smoke, cert-manager, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Cert-manager Installation Istio version: v1.27.3 when the Cert Manager Operator is deployed should have subscription created successfully [smoke, cert-manager, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Cert-manager Installation Istio version: v1.27.3 when the Cert Manager Operator is deployed verifies all cert-manager pods are Ready [smoke, cert-manager, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Cert-manager Installation Istio version: v1.27.3 when the Istio CR is created deploys istiod [smoke, cert-manager, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Cert-manager Installation Istio version: v1.27.3 when the Istio CR is created doesn't continuously reconcile the Istio CR [smoke, cert-manager, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Cert-manager Installation Istio version: v1.27.3 when the Istio CR is created updates the Istio CR status to Ready [smoke, cert-manager, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Cert-manager Installation Istio version: v1.27.3 when the Istio CR is deleted removes everything from the namespace [smoke, cert-manager, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Cert-manager Installation Istio version: v1.27.3 when the IstioCNI CR is created doesn't continuously reconcile the IstioCNI CR [smoke, cert-manager, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Cert-manager Installation Istio version: v1.27.3 when the IstioCNI CR is created updates the status to Ready [smoke, cert-manager, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Cert-manager Installation Istio version: v1.27.3 when the IstioCNI CR is deleted removes everything from the CNI namespace [smoke, cert-manager, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Cert-manager Installation Istio version: v1.27.3 when the IstioCSR is deleted removes cert-manager-istio-csr resources from the cluster [smoke, cert-manager, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Cert-manager Installation Istio version: v1.27.3 when the cert-manager resources are deleted removes role cert-manager-tokenrequest from the cluster [smoke, cert-manager, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Cert-manager Installation Istio version: v1.27.3 when the cert-manager resources are deleted removes rolebinding cert-manager-tokenrequest from the cluster [smoke, cert-manager, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Cert-manager Installation Istio version: v1.27.3 when the cert-manager-operator resources are deleted removes operatorgroup from the cert-manager-operator namespace [smoke, cert-manager, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Cert-manager Installation Istio version: v1.27.3 when the cert-manager-operator resources are deleted removes subscription from the cert-manager-operator namespace [smoke, cert-manager, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
     "Name": "[It] Cert-manager Installation Istio version: v1.27.5 when custom resource for the IstioCSR is created has IstioCSR pods running [smoke, cert-manager, slow]",
     "Suite": "ServiceMesh-lp-interop"
   },
@@ -95956,118 +96104,6 @@
     "Suite": "ServiceMesh-lp-interop"
   },
   {
-    "Name": "[It] Control Plane Installation given Istio version v1.26.4 when sample pod is deployed has sidecars with the correct istio version [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.26.4 when sample pod is deployed updates the pods status to Running [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.26.4 when the Istio CR is created deploys istiod [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.26.4 when the Istio CR is created doesn't continuously reconcile the Istio CR [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.26.4 when the Istio CR is created updates the Istio CR status to Ready [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.26.4 when the Istio CR is created updates the Istio CR status to Reconciled [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.26.4 when the Istio CR is created uses the correct image [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.26.4 when the Istio CR is deleted removes everything from the namespace [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.26.4 when the IstioCNI CR is created deploys the CNI DaemonSet [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.26.4 when the IstioCNI CR is created doesn't continuously reconcile the IstioCNI CR [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.26.4 when the IstioCNI CR is created updates the status to Ready [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.26.4 when the IstioCNI CR is created updates the status to Reconciled [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.26.4 when the IstioCNI CR is created uses the correct image [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.26.4 when the IstioCNI CR is deleted removes everything from the CNI namespace [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.26.6 when sample pod is deployed has sidecars with the correct istio version [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.26.6 when sample pod is deployed updates the pods status to Running [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.26.6 when the Istio CR is created deploys istiod [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.26.6 when the Istio CR is created doesn't continuously reconcile the Istio CR [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.26.6 when the Istio CR is created updates the Istio CR status to Ready [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.26.6 when the Istio CR is created updates the Istio CR status to Reconciled [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.26.6 when the Istio CR is created uses the correct image [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.26.6 when the Istio CR is deleted removes everything from the namespace [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.26.6 when the IstioCNI CR is created deploys the CNI DaemonSet [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.26.6 when the IstioCNI CR is created doesn't continuously reconcile the IstioCNI CR [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.26.6 when the IstioCNI CR is created updates the status to Ready [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.26.6 when the IstioCNI CR is created updates the status to Reconciled [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.26.6 when the IstioCNI CR is created uses the correct image [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.26.6 when the IstioCNI CR is deleted removes everything from the CNI namespace [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
     "Name": "[It] Control Plane Installation given Istio version v1.26.8 when sample pod is deployed has sidecars with the correct istio version [smoke, control-plane, slow]",
     "Suite": "ServiceMesh-lp-interop"
   },
@@ -96121,62 +96157,6 @@
   },
   {
     "Name": "[It] Control Plane Installation given Istio version v1.26.8 when the IstioCNI CR is deleted removes everything from the CNI namespace [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.27.3 when sample pod is deployed has sidecars with the correct istio version [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.27.3 when sample pod is deployed updates the pods status to Running [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.27.3 when the Istio CR is created deploys istiod [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.27.3 when the Istio CR is created doesn't continuously reconcile the Istio CR [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.27.3 when the Istio CR is created updates the Istio CR status to Ready [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.27.3 when the Istio CR is created updates the Istio CR status to Reconciled [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.27.3 when the Istio CR is created uses the correct image [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.27.3 when the Istio CR is deleted removes everything from the namespace [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.27.3 when the IstioCNI CR is created deploys the CNI DaemonSet [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.27.3 when the IstioCNI CR is created doesn't continuously reconcile the IstioCNI CR [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.27.3 when the IstioCNI CR is created updates the status to Ready [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.27.3 when the IstioCNI CR is created updates the status to Reconciled [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.27.3 when the IstioCNI CR is created uses the correct image [smoke, control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane Installation given Istio version v1.27.3 when the IstioCNI CR is deleted removes everything from the CNI namespace [smoke, control-plane, slow]",
     "Suite": "ServiceMesh-lp-interop"
   },
   {
@@ -96905,102 +96885,6 @@
   },
   {
     "Name": "[It] Control Plane updates using IstioRevisionTag updating from  to  when the IstioRevisionTag resource is created istiod-default-validator VWC rejects invalid Istio resources [control-plane, update, slow, sidecar]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane updates using IstioRevisionTag v1.26.4 when sample pod are restarted IstioRevisionTag revision name is equal to the IstionRevision name of the new Istio version [control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane updates using IstioRevisionTag v1.26.4 when sample pod are restarted IstionRevision resource and old istiod pod is deleted [control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane updates using IstioRevisionTag v1.26.4 when sample pod are restarted updates the proxy version to the new Istio version [control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane updates using IstioRevisionTag v1.26.4 when sample pod is deployed IstioRevisionTag state change to inUse true [control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane updates using IstioRevisionTag v1.26.4 when the Istio CR is created with RevisionBased updateStrategy for base version v1.26.4 deploys istiod and pod is Ready [control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane updates using IstioRevisionTag v1.26.4 when the Istio CR is updated to the new Istio version Istio resource has revisions in use equal to two [control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane updates using IstioRevisionTag v1.26.4 when the Istio CR is updated to the new Istio version both IstionRevision are in use [control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane updates using IstioRevisionTag v1.26.4 when the Istio CR is updated to the new Istio version proxy version on sample pods still is base version [control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane updates using IstioRevisionTag v1.26.4 when the Istio CR is updated to the new Istio version there is one IstionRevision for each version [control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane updates using IstioRevisionTag v1.26.4 when the Istio CR is updated to the new Istio version two istiod pods are running [control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane updates using IstioRevisionTag v1.26.4 when the IstioRevisionTag resource is created IstioRevisionTag revision name is equal to the IstioRevision base name [control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane updates using IstioRevisionTag v1.26.4 when the IstioRevisionTag resource is created creates the resource with condition InUse false [control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane updates using IstioRevisionTag v1.26.6 when sample pod are restarted IstioRevisionTag revision name is equal to the IstionRevision name of the new Istio version [control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane updates using IstioRevisionTag v1.26.6 when sample pod are restarted IstionRevision resource and old istiod pod is deleted [control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane updates using IstioRevisionTag v1.26.6 when sample pod are restarted updates the proxy version to the new Istio version [control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane updates using IstioRevisionTag v1.26.6 when sample pod is deployed IstioRevisionTag state change to inUse true [control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane updates using IstioRevisionTag v1.26.6 when the Istio CR is created with RevisionBased updateStrategy for base version v1.26.6 deploys istiod and pod is Ready [control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane updates using IstioRevisionTag v1.26.6 when the Istio CR is updated to the new Istio version Istio resource has revisions in use equal to two [control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane updates using IstioRevisionTag v1.26.6 when the Istio CR is updated to the new Istio version both IstionRevision are in use [control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane updates using IstioRevisionTag v1.26.6 when the Istio CR is updated to the new Istio version proxy version on sample pods still is base version [control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane updates using IstioRevisionTag v1.26.6 when the Istio CR is updated to the new Istio version there is one IstionRevision for each version [control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane updates using IstioRevisionTag v1.26.6 when the Istio CR is updated to the new Istio version two istiod pods are running [control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane updates using IstioRevisionTag v1.26.6 when the IstioRevisionTag resource is created IstioRevisionTag revision name is equal to the IstioRevision base name [control-plane, slow]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Control Plane updates using IstioRevisionTag v1.26.6 when the IstioRevisionTag resource is created creates the resource with condition InUse false [control-plane, slow]",
     "Suite": "ServiceMesh-lp-interop"
   },
   {
@@ -98932,118 +98816,6 @@
     "Suite": "ServiceMesh-lp-interop"
   },
   {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.26.4 Installation Deploys applications App 1 [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.26.4 Installation Deploys applications App 2a [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.26.4 Installation Deploys applications App 2b [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.26.4 Installation Installs IstioCNI [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.26.4 Installation Installs Istios Mesh 1 [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.26.4 Installation Installs Istios Mesh 2 [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.26.4 Installation Sets up namespaces [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.26.4 Installation Waits for Istios Mesh 1 [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.26.4 Installation Waits for Istios Mesh 2 [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.26.4 Installation Waits for apps to be ready App 1 [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.26.4 Installation Waits for apps to be ready App 2a [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.26.4 Installation Waits for apps to be ready App 2b [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.26.4 Verification Verifies app2a can connect to app2b [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.26.4 Verification Verifies app2a cannot connect to app1 [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.26.6 Installation Deploys applications App 1 [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.26.6 Installation Deploys applications App 2a [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.26.6 Installation Deploys applications App 2b [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.26.6 Installation Installs IstioCNI [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.26.6 Installation Installs Istios Mesh 1 [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.26.6 Installation Installs Istios Mesh 2 [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.26.6 Installation Sets up namespaces [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.26.6 Installation Waits for Istios Mesh 1 [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.26.6 Installation Waits for Istios Mesh 2 [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.26.6 Installation Waits for apps to be ready App 1 [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.26.6 Installation Waits for apps to be ready App 2a [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.26.6 Installation Waits for apps to be ready App 2b [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.26.6 Verification Verifies app2a can connect to app2b [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.26.6 Verification Verifies app2a cannot connect to app1 [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
     "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.26.8 Installation Deploys applications App 1 [smoke, multicontrol-plane]",
     "Suite": "ServiceMesh-lp-interop"
   },
@@ -99097,62 +98869,6 @@
   },
   {
     "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.26.8 Verification Verifies app2a cannot connect to app1 [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.27.3 Installation Deploys applications App 1 [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.27.3 Installation Deploys applications App 2a [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.27.3 Installation Deploys applications App 2b [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.27.3 Installation Installs IstioCNI [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.27.3 Installation Installs Istios Mesh 1 [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.27.3 Installation Installs Istios Mesh 2 [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.27.3 Installation Sets up namespaces [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.27.3 Installation Waits for Istios Mesh 1 [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.27.3 Installation Waits for Istios Mesh 2 [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.27.3 Installation Waits for apps to be ready App 1 [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.27.3 Installation Waits for apps to be ready App 2a [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.27.3 Installation Waits for apps to be ready App 2b [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.27.3 Verification Verifies app2a can connect to app2b [smoke, multicontrol-plane]",
-    "Suite": "ServiceMesh-lp-interop"
-  },
-  {
-    "Name": "[It] Multi control plane deployment model for supported versions Istio version 1.27.3 Verification Verifies app2a cannot connect to app1 [smoke, multicontrol-plane]",
     "Suite": "ServiceMesh-lp-interop"
   },
   {
@@ -169949,6 +169665,26 @@
   },
   {
     "Name": "[sig-cluster-lifecycle][platform:vsphere][Disruptive] Managed cluster should create machinesets with thin data disk [apigroup:machine.openshift.io][Serial][Suite:openshift/conformance/serial]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-cluster-lifecycle][platform:vsphere][Suite:openshift/disruptive-longrunning][Disruptive] Managed cluster should create machines with data disks [apigroup:machine.openshift.io][Serial]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-cluster-lifecycle][platform:vsphere][Suite:openshift/disruptive-longrunning][Disruptive] Managed cluster should create machinesets with a data disk using each provisioning mode [apigroup:machine.openshift.io][Serial]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-cluster-lifecycle][platform:vsphere][Suite:openshift/disruptive-longrunning][Disruptive] Managed cluster should create machinesets with eagerly zeroed data disk [apigroup:machine.openshift.io][Serial]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-cluster-lifecycle][platform:vsphere][Suite:openshift/disruptive-longrunning][Disruptive] Managed cluster should create machinesets with thick data disk [apigroup:machine.openshift.io][Serial]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-cluster-lifecycle][platform:vsphere][Suite:openshift/disruptive-longrunning][Disruptive] Managed cluster should create machinesets with thin data disk [apigroup:machine.openshift.io][Serial]",
     "Suite": "openshift-tests"
   },
   {
