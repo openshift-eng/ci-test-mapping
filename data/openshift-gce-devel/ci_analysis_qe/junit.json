@@ -51416,6 +51416,10 @@
     "Suite": "cluster upgrade"
   },
   {
+    "Name": "upgrade should succeed:  authentication openshift-apiserver",
+    "Suite": "cluster upgrade"
+  },
+  {
     "Name": "upgrade should succeed: 30",
     "Suite": "cluster upgrade"
   },
