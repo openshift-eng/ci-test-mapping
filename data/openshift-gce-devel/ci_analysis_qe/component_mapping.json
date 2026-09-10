@@ -205689,6 +205689,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "cluster upgrade:1b4049736d50256e8fa81241c72bf809",
+    "Name": "upgrade should succeed:  authentication openshift-apiserver",
+    "Suite": "cluster upgrade",
+    "Product": "OpenShift",
+    "Priority": -10,
+    "StaffApprovedObsolete": false,
+    "Component": "Cluster Version Operator",
+    "Capabilities": [
+      "ClusterUpgrade"
+    ],
+    "JIRAComponent": "Cluster Version Operator",
+    "JIRAComponentID": "14665"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "cluster upgrade:b8b15529b6d275b6435ee09a7fdee684",
     "Name": "upgrade should succeed: 30",
     "Suite": "cluster upgrade",
