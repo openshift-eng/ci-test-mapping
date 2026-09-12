@@ -1068,10 +1068,6 @@
     "Suite": "Machine-api components upgrade tests"
   },
   {
-    "Name": "Cluster operator should be available after upgrade (outline example : | OCP-XX712:ClusterInfrastructure | \"machine-api\" |)",
-    "Suite": "Machine-api components upgrade tests"
-  },
-  {
     "Name": "Cluster operator should be available after upgrade - prepare (outline example : | \"cluster-autoscaler\" |)",
     "Suite": "cucushift-upgrade-prepare"
   },
@@ -5170,14 +5166,6 @@
   {
     "Name": "OCP-13095:Authentication Add add-cluster-role-to-user support for -z",
     "Suite": "change the policy of user/service account"
-  },
-  {
-    "Name": "OCP-130XX:Node Make sure nodeConfig is not changed after upgrade",
-    "Suite": "Node components upgrade tests"
-  },
-  {
-    "Name": "OCP-130XX:Node Make sure nodeConfig is not changed after upgrade - prepare",
-    "Suite": "Node components upgrade tests"
   },
   {
     "Name": "OCP-13248:NetworkEdge The hostname should be converted to available route when met special character",
@@ -13678,10 +13666,6 @@
   {
     "Name": "OCP-34992:wewang:Image_Registry:[sig-imageregistry] Image_Registry Add logLevel to registry config object with invalid value",
     "Suite": "Image_Registry"
-  },
-  {
-    "Name": "OCP-34XX3:rgangwar:API_Server:[Apiserver] kube-apiserver and openshift-apiserver should have zero-disruption upgrade",
-    "Suite": "API_Server"
   },
   {
     "Name": "OCP-34XX3:rgangwar:API_Server:[sig-api-machinery] API_Server [Apiserver] kube-apiserver and openshift-apiserver should have zero-disruption upgrade",
@@ -34156,10 +34140,6 @@
     "Suite": "OLM"
   },
   {
-    "Name": "OCP-6XX65:huliu:Cluster_Infrastructure:[Upgrade] Ensure controlplanemachineset is generated automatically after upgrade",
-    "Suite": "Cluster_Infrastructure"
-  },
-  {
     "Name": "OCP-70009:meinli:SDN:[sig-networking] SDN networkpolicy Pod IP is missing from OVN DB AddressSet when using allow-namespace-only network policy",
     "Suite": "SDN"
   },
@@ -41120,14 +41100,6 @@
     "Suite": "Image_Registry"
   },
   {
-    "Name": "OCP-XX612:zhsun:Cluster_Infrastructure:[Upgrade] Cluster could scale up/down after upgrade [Disruptive] [Serial][Slow]",
-    "Suite": "Cluster_Infrastructure"
-  },
-  {
-    "Name": "OCP-XX615:xzha:OLM:Post check the OLM status",
-    "Suite": "OLM"
-  },
-  {
     "Name": "OCP-XX615:xzha:OLM:[sig-operators] OLM should Post check the OLM status",
     "Suite": "OLM"
   },
@@ -41136,31 +41108,11 @@
     "Suite": "OLM"
   },
   {
-    "Name": "OCP-XX615:xzha:OLM:prepare to check the OLM status",
-    "Suite": "OLM"
-  },
-  {
-    "Name": "OCP-XX618:xzha:OLM:Post check the catalogsource status of catalogsource",
-    "Suite": "OLM"
-  },
-  {
-    "Name": "OCP-XX618:xzha:OLM:Post check the marketplace status",
-    "Suite": "OLM"
-  },
-  {
     "Name": "OCP-XX618:xzha:OLM:[sig-operators] OLM should Post check the catalogsource status of catalogsource",
     "Suite": "OLM"
   },
   {
     "Name": "OCP-XX618:xzha:OLM:[sig-operators] OLM should prepare to check the catalogsource status of catalogsource",
-    "Suite": "OLM"
-  },
-  {
-    "Name": "OCP-XX618:xzha:OLM:prepare to check the catalogsource status of catalogsource",
-    "Suite": "OLM"
-  },
-  {
-    "Name": "OCP-XX618:xzha:OLM:prepare to check the marketplace status",
     "Suite": "OLM"
   },
   {
@@ -41186,14 +41138,6 @@
   {
     "Name": "OCP-XX640:UserInterface Add HTPasswd IDP",
     "Suite": "UI-customize console related"
-  },
-  {
-    "Name": "OCP-XX665:skundu:ETCD:Check etcd image have been update to target release value after upgrade [Serial]",
-    "Suite": "ETCD"
-  },
-  {
-    "Name": "OCP-XX678:xiuwang:Image_Registry:Check image-registry operator upgrade",
-    "Suite": "Image_Registry"
   },
   {
     "Name": "OCP-XX678:xiuwang:Image_Registry:[sig-imageregistry] Image_Registry Check image-registry operator upgrade",
