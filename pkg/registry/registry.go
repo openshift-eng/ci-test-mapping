@@ -101,6 +101,7 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpcnv"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpfusionaccess"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpgitops"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpinteropopp"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpinteropoppackm"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpinteropoppodf"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpinteropoppquay"
@@ -473,6 +474,7 @@ func NewComponentRegistry() *Registry {
 	r.Register("lp-interop--ODF", &lpinteropoppodf.LPinteropOPPODFComponent)
 	r.Register("lp-interop--Quay", &lpinteropoppquay.LPinteropOPPQuayComponent)
 	r.Register("lp-interop--OPP-ACM", &lpinteropoppackm.LPinteropOPPACMComponent)
+	r.Register("lp-interop--OPP", &lpinteropopp.LPinteropOPPComponent)
 	// New components go here
 
 	return &r
