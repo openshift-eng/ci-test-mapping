@@ -19,6 +19,7 @@ var LPinteropOPPComponent = Component{
 		Matchers: []config.ComponentMatcher{
 			{Suite: "lp-interop--OPP"},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--`)},
+			{IncludeAny: []string{"interop-opp-", "interop-tests-ocs", "interop-tests-opp"}},
 		},
 	},
 }
