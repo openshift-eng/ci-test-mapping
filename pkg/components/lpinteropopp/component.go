@@ -19,6 +19,34 @@ var LPinteropOPPComponent = Component{
 		Matchers: []config.ComponentMatcher{
 			{Suite: "lp-interop--OPP"},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--interop-opp-`)},
+
+			// PR-B: invisible suite renames
+			{Suite: "lp-interop--OPP--smoke"},
+			{Suite: "lp-interop--OPP--skip-gate"},
+			{Suite: "lp-interop--OPP--acm-app"},
+
+			// PR-C: working suite renames
+			{Suite: "lp-interop--OPP--odf-health"},
+			{Suite: "lp-interop--OPP--acm-obs-odf"},
+
+			// PR-D: JUnit wrappers
+			{Suite: "lp-interop--OPP--install-operators"},
+			{Suite: "lp-interop--OPP--interop-opp-backup"},
+			{Suite: "lp-interop--OPP--interop-opp-product-upgrade-acm"},
+			{Suite: "lp-interop--OPP--interop-opp-product-upgrade-acs"},
+			{Suite: "lp-interop--OPP--interop-opp-product-upgrade-odf"},
+			{Suite: "lp-interop--OPP--interop-opp-product-upgrade-quay"},
+			{Suite: "lp-interop--OPP--interop-opp-wait-mcp"},
+
+			// PR-E: sed post-process renames
+			{Suite: "lp-interop--OPP--acs-smoke"},
+			{Suite: "lp-interop--OPP--acm-clc"},
+			{Suite: "lp-interop--OPP--ocs"},
+			{Suite: "lp-interop--OPP--acm-upgrade"},
+			{Suite: "lp-interop--OPP--acs-upgrade"},
+
+			// PR-F: per-policy breakout
+			{Suite: "lp-interop--OPP--acm-policies"},
 		},
 	},
 }
