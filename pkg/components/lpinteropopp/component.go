@@ -18,7 +18,16 @@ var LPinteropOPPComponent = Component{
 		DefaultJiraComponent: "lp-interop--OPP",
 		Matchers: []config.ComponentMatcher{
 			{Suite: "lp-interop--OPP"},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--interop-opp-`)},
+			{
+				SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--`),
+				ExcludeAny: []string{"QUAY"},
+				Priority:   -1,
+			},
+			{
+				SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP`),
+				IncludeAny: []string{"interop-opp-", "interop-tests-ocs", "interop-tests-opp"},
+				Priority:   -1,
+			},
 		},
 	},
 }
