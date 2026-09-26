@@ -32,10 +32,6 @@
     "Suite": "(OCP-50532, OCP-50531, OCP-50530, OCP-59408 Network_Observability) Netflow Table view tests"
   },
   {
-    "Name": "(OCP-50532, OCP-50531, OCP-50530, OCP-59408 Network_Observability) Netflow Table view tests \"after all\" hook: all tests for \"(OCP-59408, memodi, Network_Observability) should verify histogram\"",
-    "Suite": "(OCP-50532, OCP-50531, OCP-50530, OCP-59408 Network_Observability) Netflow Table view tests"
-  },
-  {
     "Name": "(OCP-50532, OCP-50531, OCP-50530, OCP-59408 Network_Observability) Netflow Table view tests \"after each\" hook: test for \"(OCP-50532, memodi, Network_Observability) should validate filters\"",
     "Suite": "(OCP-50532, OCP-50531, OCP-50530, OCP-59408 Network_Observability) Netflow Table view tests"
   },
@@ -9636,10 +9632,6 @@
     "Suite": "Security_and_Compliance"
   },
   {
-    "Name": "OCP-27599:xiyuan:Security_and_Compliance:[sig-isc] Security_and_Compliance File_Integrity_Operator an end user handle FIO within a namespace WRS-check operator file-integrity-operator could run file integrity checks on the cluster nodes and shows relevant fileintegritynodestatuses [Slow][Serial]",
-    "Suite": "Security_and_Compliance"
-  },
-  {
     "Name": "OCP-27601:UserInterface Multiple resources could be selected on event page",
     "Suite": "UserInterface_cucushift"
   },
@@ -10572,15 +10564,7 @@
     "Suite": "Security_and_Compliance"
   },
   {
-    "Name": "OCP-29782:pdhamdhe:Security_and_Compliance:[sig-isc] Security_and_Compliance File_Integrity_Operator an end user handle FIO within a namespace V-EST.01-check md5 algorithm could not work for a fips enabled cluster while working well for a fips disabled cluster [Serial]",
-    "Suite": "Security_and_Compliance"
-  },
-  {
     "Name": "OCP-29782:pdhamdhe:Security_and_Compliance:[sig-isc] Security_and_Compliance File_Integrity_Operator an end user handle FIO within a namespace V-EST.01-check md5 algorithm will be soft-blocked on a fips enabled cluster [Slow][Serial]",
-    "Suite": "Security_and_Compliance"
-  },
-  {
-    "Name": "OCP-29782:pdhamdhe:Security_and_Compliance:[sig-isc] Security_and_Compliance File_Integrity_Operator an end user handle FIO within a namespace WRS-check md5 algorithm could not work for a fips enabled cluster while working well for a fips disabled cluster [Serial]",
     "Suite": "Security_and_Compliance"
   },
   {
@@ -16392,10 +16376,6 @@
     "Suite": "OLM"
   },
   {
-    "Name": "OCP-43136:xiyuan:Security_and_Compliance:[sig-isc] Security_and_Compliance File_Integrity_Operator an end user handle FIO within a namespace Check FIO metrics and alerting [Serial][Slow]",
-    "Suite": "Security_and_Compliance"
-  },
-  {
     "Name": "OCP-43136:xiyuan:Security_and_Compliance:[sig-isc] Security_and_Compliance File_Integrity_Operator an end user handle FIO within a namespace V-EST.01-Check FIO metrics and alerting [Serial][Slow]",
     "Suite": "Security_and_Compliance"
   },
@@ -19428,10 +19408,6 @@
     "Suite": "MCO"
   },
   {
-    "Name": "OCP-46897:sregidor:MCO:[sig-mco] MCO add new ssh authorized keys RHEL. OCP\u003e=4.10 [Serial]",
-    "Suite": "MCO"
-  },
-  {
     "Name": "OCP-46898:mjoseph:Network_Edge:Setting wrong data in ROUTER_ENABLE_COMPRESSION and ROUTER_COMPRESSION_MIME in HAProxy",
     "Suite": "Network_Edge"
   },
@@ -20569,10 +20545,6 @@
   },
   {
     "Name": "OCP-48141:qitang:Logging:[sig-openshift-logging] Logging  Log Forward to Kafka Vector Forward logs to different Kafka brokers.[Slow]",
-    "Suite": "Logging"
-  },
-  {
-    "Name": "OCP-48141:qitang:Logging:[sig-openshift-logging] Logging  Log Forward to Kafka via Vector as Collector V-ICA.03-Vector Forward logs to different Kafka brokers.[Slow]",
     "Suite": "Logging"
   },
   {
@@ -23820,14 +23792,6 @@
     "Suite": "Cluster_Infrastructure"
   },
   {
-    "Name": "OCP-52496:ikanse:Logging:[sig-openshift-logging] Logging  Log Forward to Kafka via Vector as Collector VA-IAC.03-Vector Forward logs to kafka using SASL SSL",
-    "Suite": "Logging"
-  },
-  {
-    "Name": "OCP-52496:ikanse:Logging:[sig-openshift-logging] Logging  Log Forward to Kafka via Vector as Collector WRS-Vector Forward logs to kafka using SASL SSL[Serial][Slow]",
-    "Suite": "Logging"
-  },
-  {
     "Name": "OCP-52497:mjoseph:Network_Edge:Support CoreDNS forwarding DNS requests over TLS - using system CA [Disruptive] [Serial]",
     "Suite": "Network_Edge"
   },
@@ -25996,10 +25960,6 @@
     "Suite": "Cluster_Observability"
   },
   {
-    "Name": "OCP-55781:xiyuan:Security_and_Compliance:[sig-isc] Security_and_Compliance File_Integrity_Operator an end user handle FIO within a namespace Check FIO metrics and alerting [Serial][Slow]",
-    "Suite": "Security_and_Compliance"
-  },
-  {
     "Name": "OCP-55781:xiyuan:Security_and_Compliance:[sig-isc] Security_and_Compliance File_Integrity_Operator an end user handle FIO within a namespace V-EST.01-Check FIO metrics and alerting [Serial][Slow]",
     "Suite": "Security_and_Compliance"
   },
@@ -28084,10 +28044,6 @@
     "Suite": "Security_and_Compliance"
   },
   {
-    "Name": "OCP-60960:xiyuan:Security_and_Compliance:[sig-isc] Security_and_Compliance File_Integrity_Operator an end user handle FIO within a namespace WRS-check the initialDelay could work as expected [Serial]",
-    "Suite": "Security_and_Compliance"
-  },
-  {
     "Name": "OCP-60961:prozehna:NODE:[sig-node] NODE keda Audit logging test - stdout Metadata[Serial]",
     "Suite": "NODE"
   },
@@ -28324,14 +28280,6 @@
     "Suite": "Logging"
   },
   {
-    "Name": "OCP-61477:gkarager:Logging:[sig-openshift-logging] Logging  Test logforwarding to syslog via vector as collector Vector-Forward logs to syslog - mtls with private key passphrase",
-    "Suite": "Logging"
-  },
-  {
-    "Name": "OCP-61477:gkarager:Logging:[sig-openshift-logging] Logging  Test logforwarding to syslog via vector as collector WRS-Vector-Forward logs to syslog (mtls with private key passphrase)",
-    "Suite": "Logging"
-  },
-  {
     "Name": "OCP-61477:gkarager:Logging:[sig-openshift-logging] Logging  to Syslog Vector-Forward logs to syslog - mtls with private key passphrase",
     "Suite": "Logging"
   },
@@ -28341,10 +28289,6 @@
   },
   {
     "Name": "OCP-61479:gkarager:Logging:[sig-openshift-logging] Logging  Log Forward to Syslog VA-IAC.03-Vector-Forward logs to syslog(tls)",
-    "Suite": "Logging"
-  },
-  {
-    "Name": "OCP-61479:gkarager:Logging:[sig-openshift-logging] Logging  Test logforwarding to syslog via vector as collector VA-IAC.03-Vector-Forward logs to syslog(tls)",
     "Suite": "Logging"
   },
   {
@@ -32008,10 +31952,6 @@
     "Suite": "Logging"
   },
   {
-    "Name": "OCP-68312:anli:Logging:[sig-openshift-logging] Logging  Log Forward to Kafka via Vector as Collector VA-IAC.03-Forward to Kafka using SSL-SASL_SCRAM auth",
-    "Suite": "Logging"
-  },
-  {
     "Name": "OCP-68318:qitang:Logging:[sig-openshift-logging] Logging  Audit Policy Testing Multiple policies can be applied to one pipeline LokiStack.[Serial]",
     "Suite": "Logging"
   },
@@ -33960,14 +33900,6 @@
     "Suite": "Security_and_Compliance"
   },
   {
-    "Name": "OCP-71796:xiyuan:Security_and_Compliance:[sig-isc] Security_and_Compliance File_Integrity_Operator an end user handle FIO within a namespace V-EST.01-file integrity operator should pass DAST test",
-    "Suite": "Security_and_Compliance"
-  },
-  {
-    "Name": "OCP-71796:xiyuan:Security_and_Compliance:[sig-isc] Security_and_Compliance File_Integrity_Operator an end user handle FIO within a namespace WRS-file integrity operator should pass DAST test",
-    "Suite": "Security_and_Compliance"
-  },
-  {
     "Name": "OCP-71797:xiyuan:Security_and_Compliance:[sig-isc] Security_and_Compliance Security_Profiles_Operator The Security_Profiles_Operator security profiles operator should pass DAST test",
     "Suite": "Security_and_Compliance"
   },
@@ -35445,10 +35377,6 @@
   },
   {
     "Name": "OCP-73648:sserafin:MCO:[sig-mco] MCO Pinnedimages [OnCLayer] A rebooted node reconciles with the pinned images status [Disruptive] [Serial]",
-    "Suite": "MCO"
-  },
-  {
-    "Name": "OCP-73653:sregidor:MCO:[sig-mco] MCO Pinnedimages Pinned images with a ImageDigestMirrorSet mirroring a single repository [Disruptive] [Serial]",
     "Suite": "MCO"
   },
   {
@@ -37566,10 +37494,6 @@
   {
     "Name": "OCP-77893:jechen:SDN:[sig-networking] SDN OVN EgressIP egressIP on default network and UDN if applicable should still be functional post upgrade (layer3). [Disruptive] [Serial]",
     "Suite": "SDN"
-  },
-  {
-    "Name": "OCP-77894:memodi:Network_Observability:[sig-netobserv] Network_Observability TechPreview Network Policies Correlation",
-    "Suite": "Network_Observability"
   },
   {
     "Name": "OCP-77894:memodi:Network_Observability:[sig-netobserv] Network_Observability TechPreview Network Policies Correlation [Serial]",
@@ -46176,19 +46100,11 @@
     "Suite": "Overall CI (test step)"
   },
   {
-    "Name": "cucushift-installer-check-vsphere-customized-resource",
-    "Suite": "Overall CI (test step)"
-  },
-  {
     "Name": "cucushift-installer-check-vsphere-customized-resourcepool",
     "Suite": "Overall CI (test step)"
   },
   {
     "Name": "cucushift-installer-check-vsphere-disktype",
-    "Suite": "Overall CI (test step)"
-  },
-  {
-    "Name": "cucushift-installer-check-vsphere-folder",
     "Suite": "Overall CI (test step)"
   },
   {
@@ -47660,19 +47576,11 @@
     "Suite": "Overall CI (test step)"
   },
   {
-    "Name": "ipi-conf-vsphere-customized-resource",
-    "Suite": "Overall CI (test step)"
-  },
-  {
     "Name": "ipi-conf-vsphere-disktype",
     "Suite": "Overall CI (test step)"
   },
   {
     "Name": "ipi-conf-vsphere-dns",
-    "Suite": "Overall CI (test step)"
-  },
-  {
-    "Name": "ipi-conf-vsphere-folder",
     "Suite": "Overall CI (test step)"
   },
   {
@@ -47757,10 +47665,6 @@
   },
   {
     "Name": "ipi-deprovision-vsphere-dns",
-    "Suite": "Overall CI (test step)"
-  },
-  {
-    "Name": "ipi-deprovision-vsphere-folder",
     "Suite": "Overall CI (test step)"
   },
   {
@@ -47868,19 +47772,11 @@
     "Suite": "knmstate operator console plugin related features"
   },
   {
-    "Name": "knmstate operator console plugin related features (OCP-64784,qiowang) Verify NMState cosole plugin operator installation(GUI)",
-    "Suite": "knmstate operator console plugin related features"
-  },
-  {
     "Name": "knmstate operator console plugin related features (OCP-64784,qiowang,SDN) Verify NMState cosole plugin operator installation(GUI)",
     "Suite": "knmstate operator console plugin related features"
   },
   {
     "Name": "knmstate operator console plugin related features (OCP-64803,qiowang,SDN) Create/Edit NNCP on web console(from yaml)",
-    "Suite": "knmstate operator console plugin related features"
-  },
-  {
-    "Name": "knmstate operator console plugin related features (OCP-64820,qiowang) Verify can configure node selector on web console(from form)",
     "Suite": "knmstate operator console plugin related features"
   },
   {
@@ -47896,15 +47792,7 @@
     "Suite": "knmstate operator console plugin related features"
   },
   {
-    "Name": "knmstate operator console plugin related features (OCP-64981,qiowang) Create NNCP for adding bridge on web console(from form)",
-    "Suite": "knmstate operator console plugin related features"
-  },
-  {
     "Name": "knmstate operator console plugin related features (OCP-64981,qiowang,SDN) Create NNCP for adding bridge on web console(from form)",
-    "Suite": "knmstate operator console plugin related features"
-  },
-  {
-    "Name": "knmstate operator console plugin related features (OCP-64982,qiowang) Create NNCP for adding bond on web console(from form)",
     "Suite": "knmstate operator console plugin related features"
   },
   {

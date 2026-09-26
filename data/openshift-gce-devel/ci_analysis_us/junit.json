@@ -3400,6 +3400,10 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "External Storage [Driver: csi.kubevirt.io] [Testpattern: Dynamic PV (default fs)] OpenShift CSI extended - Pod delete after umount should delete pod after volume directory was umounted on the node",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "External Storage [Driver: csi.kubevirt.io] [Testpattern: Dynamic PV (default fs)] capacity provides storage capacity information",
     "Suite": "openshift-tests"
   },
@@ -10020,6 +10024,10 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "External Storage [Driver: efs.csi.aws.com] [Testpattern: Dynamic PV (default fs)] OpenShift CSI extended - Pod delete after umount should delete pod after volume directory was umounted on the node",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "External Storage [Driver: efs.csi.aws.com] [Testpattern: Dynamic PV (default fs)] capacity provides storage capacity information",
     "Suite": "openshift-tests"
   },
@@ -11864,6 +11872,10 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "External Storage [Driver: file.csi.azure.com] [Testpattern: Dynamic PV (default fs)] OpenShift CSI extended - Pod delete after umount should delete pod after volume directory was umounted on the node",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "External Storage [Driver: file.csi.azure.com] [Testpattern: Dynamic PV (default fs)] capacity provides storage capacity information",
     "Suite": "openshift-tests"
   },
@@ -13233,6 +13245,10 @@
   },
   {
     "Name": "External Storage [Driver: filestore.csi.storage.gke.io] [Testpattern: Dynamic PV (default fs)] OpenShift CSI extended - CSI Clone should provision volume with pvc data source larger than original volume",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: filestore.csi.storage.gke.io] [Testpattern: Dynamic PV (default fs)] OpenShift CSI extended - Pod delete after umount should delete pod after volume directory was umounted on the node",
     "Suite": "openshift-tests"
   },
   {
@@ -18117,6 +18133,10 @@
   },
   {
     "Name": "External Storage [Driver: smb.csi.k8s.io] [Testpattern: Dynamic PV (default fs)] OpenShift CSI extended - CSI Clone should provision volume with pvc data source larger than original volume",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: smb.csi.k8s.io] [Testpattern: Dynamic PV (default fs)] OpenShift CSI extended - Pod delete after umount should delete pod after volume directory was umounted on the node",
     "Suite": "openshift-tests"
   },
   {
@@ -179540,6 +179560,18 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-auth][Suite:openshift/conformance/serial][Jira:\"Authentication\"][OCPFeatureGate:AuthenticationComponentProxy][Serial] oauth-server should bypass proxy by directly connecting to idp to perform OIDC login flow when spec.proxy.noProxy contains idp",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-auth][Suite:openshift/conformance/serial][Jira:\"Authentication\"][OCPFeatureGate:AuthenticationComponentProxy][Serial] oauth-server should perform full OIDC login flow through the proxy when auth proxy config is applied",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-auth][Suite:openshift/conformance/serial][Jira:\"Authentication\"][OCPFeatureGate:AuthenticationComponentProxy][Serial] oauth-server/operator should hot-reload mounted CA file on change when spec.proxy.trustedCA is set",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-auth][Suite:openshift/conformance/serial][Jira:\"Authentication\"][OCPFeatureGate:AuthenticationComponentProxy][Serial] operator should fall back to original configuration on spec.proxy removal",
     "Suite": "openshift-tests"
   },
@@ -194109,6 +194141,10 @@
   },
   {
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/disruptive][Serial][Disruptive][OCPFeatureGate:ImageModeStatusReporting] MachineConfigPool machine counts should transition when OCB is enabled in a default MCP [apigroup:machineconfiguration.openshift.io]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-mco][Suite:openshift/machine-config-operator/disruptive][Serial][Disruptive][OCPFeatureGate:ManagedBootImagesAWSCAPI] MCO CAPI Bootimages [OTP] CAPI MachineConfiguration status correctly reflects spec changes [apigroup:machineconfiguration.openshift.io]",
     "Suite": "openshift-tests"
   },
   {

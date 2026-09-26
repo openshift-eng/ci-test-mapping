@@ -130,22 +130,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "(OCP-50532, OCP-50531, OCP-50530, OCP-59408 Network_Observability) Netflow Table view tests:3a43090b122cd361849030cef9370dd3",
-    "Name": "(OCP-50532, OCP-50531, OCP-50530, OCP-59408 Network_Observability) Netflow Table view tests \"after all\" hook: all tests for \"(OCP-59408, memodi, Network_Observability) should verify histogram\"",
-    "Suite": "(OCP-50532, OCP-50531, OCP-50530, OCP-59408 Network_Observability) Netflow Table view tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "(OCP-50532, OCP-50531, OCP-50530, OCP-59408 Network_Observability) Netflow Table view tests:194bdc18fc95f76e8b4eea78f7e82aee",
     "Name": "(OCP-50532, OCP-50531, OCP-50530, OCP-59408 Network_Observability) Netflow Table view tests \"after each\" hook: test for \"(OCP-50532, memodi, Network_Observability) should validate filters\"",
     "Suite": "(OCP-50532, OCP-50531, OCP-50530, OCP-59408 Network_Observability) Netflow Table view tests",
@@ -38547,22 +38531,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "Security_and_Compliance:9f25e9eb5de927df62757b309ab455aa",
-    "Name": "OCP-27599:xiyuan:Security_and_Compliance:[sig-isc] Security_and_Compliance File_Integrity_Operator an end user handle FIO within a namespace WRS-check operator file-integrity-operator could run file integrity checks on the cluster nodes and shows relevant fileintegritynodestatuses [Slow][Serial]",
-    "Suite": "Security_and_Compliance",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "UserInterface_cucushift:eeaf833c4bb342db14e3dffe695cc14e",
     "Name": "OCP-27601:UserInterface Multiple resources could be selected on event page",
     "Suite": "UserInterface_cucushift",
@@ -42291,40 +42259,8 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "Security_and_Compliance:1232af2b98dee66125c8f9cb8234c996",
-    "Name": "OCP-29782:pdhamdhe:Security_and_Compliance:[sig-isc] Security_and_Compliance File_Integrity_Operator an end user handle FIO within a namespace V-EST.01-check md5 algorithm could not work for a fips enabled cluster while working well for a fips disabled cluster [Serial]",
-    "Suite": "Security_and_Compliance",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "Security_and_Compliance:4e8d802f59a835d5b5aa3b3ba90a6815",
     "Name": "OCP-29782:pdhamdhe:Security_and_Compliance:[sig-isc] Security_and_Compliance File_Integrity_Operator an end user handle FIO within a namespace V-EST.01-check md5 algorithm will be soft-blocked on a fips enabled cluster [Slow][Serial]",
-    "Suite": "Security_and_Compliance",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "Security_and_Compliance:43e7c8c4b61329f651030b6dca1287ad",
-    "Name": "OCP-29782:pdhamdhe:Security_and_Compliance:[sig-isc] Security_and_Compliance File_Integrity_Operator an end user handle FIO within a namespace WRS-check md5 algorithm could not work for a fips enabled cluster while working well for a fips disabled cluster [Serial]",
     "Suite": "Security_and_Compliance",
     "Product": "OpenShift",
     "Priority": 0,
@@ -65571,22 +65507,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "Security_and_Compliance:d3987ed04e54e0b9bd642b36f084a72a",
-    "Name": "OCP-43136:xiyuan:Security_and_Compliance:[sig-isc] Security_and_Compliance File_Integrity_Operator an end user handle FIO within a namespace Check FIO metrics and alerting [Serial][Slow]",
-    "Suite": "Security_and_Compliance",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "Security_and_Compliance:764419c47c7afe26bf2b7bf1c5a75fdd",
     "Name": "OCP-43136:xiyuan:Security_and_Compliance:[sig-isc] Security_and_Compliance File_Integrity_Operator an end user handle FIO within a namespace V-EST.01-Check FIO metrics and alerting [Serial][Slow]",
     "Suite": "Security_and_Compliance",
@@ -77718,22 +77638,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "MCO:c54e623f84836ba558cda0e1b32f6172",
-    "Name": "OCP-46897:sregidor:MCO:[sig-mco] MCO add new ssh authorized keys RHEL. OCP\u003e=4.10 [Serial]",
-    "Suite": "MCO",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "Network_Edge:7f34037fa7935a441f2196afd1859116",
     "Name": "OCP-46898:mjoseph:Network_Edge:Setting wrong data in ROUTER_ENABLE_COMPRESSION and ROUTER_COMPRESSION_MIME in HAProxy",
     "Suite": "Network_Edge",
@@ -82281,22 +82185,6 @@
     "Kind": "TestOwnership",
     "ID": "Logging:c9f785eaa86061fa2058c0df9f59b59a",
     "Name": "OCP-48141:qitang:Logging:[sig-openshift-logging] Logging  Log Forward to Kafka Vector Forward logs to different Kafka brokers.[Slow]",
-    "Suite": "Logging",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Logging",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Logging",
-    "JIRAComponentID": "14829"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "Logging:b4e4fed5d0108e0f67f52ed478f1618b",
-    "Name": "OCP-48141:qitang:Logging:[sig-openshift-logging] Logging  Log Forward to Kafka via Vector as Collector V-ICA.03-Vector Forward logs to different Kafka brokers.[Slow]",
     "Suite": "Logging",
     "Product": "OpenShift",
     "Priority": 0,
@@ -95287,38 +95175,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "Logging:e5ec484755766dc634350056d34257c3",
-    "Name": "OCP-52496:ikanse:Logging:[sig-openshift-logging] Logging  Log Forward to Kafka via Vector as Collector VA-IAC.03-Vector Forward logs to kafka using SASL SSL",
-    "Suite": "Logging",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Logging",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Logging",
-    "JIRAComponentID": "14829"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "Logging:b7077e43946e0dcb22a5922c1fcb6924",
-    "Name": "OCP-52496:ikanse:Logging:[sig-openshift-logging] Logging  Log Forward to Kafka via Vector as Collector WRS-Vector Forward logs to kafka using SASL SSL[Serial][Slow]",
-    "Suite": "Logging",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Logging",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Logging",
-    "JIRAComponentID": "14829"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "Network_Edge:3e04294d92c214d1c8cfec7066db399e",
     "Name": "OCP-52497:mjoseph:Network_Edge:Support CoreDNS forwarding DNS requests over TLS - using system CA [Disruptive] [Serial]",
     "Suite": "Network_Edge",
@@ -103991,22 +103847,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "Security_and_Compliance:13041111caffb9c9954f6ea2f89baab9",
-    "Name": "OCP-55781:xiyuan:Security_and_Compliance:[sig-isc] Security_and_Compliance File_Integrity_Operator an end user handle FIO within a namespace Check FIO metrics and alerting [Serial][Slow]",
-    "Suite": "Security_and_Compliance",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "Security_and_Compliance:523644952000a199406345169265fbf5",
     "Name": "OCP-55781:xiyuan:Security_and_Compliance:[sig-isc] Security_and_Compliance File_Integrity_Operator an end user handle FIO within a namespace V-EST.01-Check FIO metrics and alerting [Serial][Slow]",
     "Suite": "Security_and_Compliance",
@@ -112343,22 +112183,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "Security_and_Compliance:1383fb1a00f1f26cc0724d73122a1d27",
-    "Name": "OCP-60960:xiyuan:Security_and_Compliance:[sig-isc] Security_and_Compliance File_Integrity_Operator an end user handle FIO within a namespace WRS-check the initialDelay could work as expected [Serial]",
-    "Suite": "Security_and_Compliance",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "NODE:78dd6567e3cc64bb83f4a2b3f7625f3d",
     "Name": "OCP-60961:prozehna:NODE:[sig-node] NODE keda Audit logging test - stdout Metadata[Serial]",
     "Suite": "NODE",
@@ -113303,38 +113127,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "Logging:30a023680725a8acdba7c7e79759aeeb",
-    "Name": "OCP-61477:gkarager:Logging:[sig-openshift-logging] Logging  Test logforwarding to syslog via vector as collector Vector-Forward logs to syslog - mtls with private key passphrase",
-    "Suite": "Logging",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Logging",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Logging",
-    "JIRAComponentID": "14829"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "Logging:5de55c014ba9136a39a756da44f43a85",
-    "Name": "OCP-61477:gkarager:Logging:[sig-openshift-logging] Logging  Test logforwarding to syslog via vector as collector WRS-Vector-Forward logs to syslog (mtls with private key passphrase)",
-    "Suite": "Logging",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Logging",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Logging",
-    "JIRAComponentID": "14829"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "Logging:6f4d632c07486473979ff7fd3b542c12",
     "Name": "OCP-61477:gkarager:Logging:[sig-openshift-logging] Logging  to Syslog Vector-Forward logs to syslog - mtls with private key passphrase",
     "Suite": "Logging",
@@ -113369,22 +113161,6 @@
     "Kind": "TestOwnership",
     "ID": "Logging:656a894ec9958ed55caff8df4a871c99",
     "Name": "OCP-61479:gkarager:Logging:[sig-openshift-logging] Logging  Log Forward to Syslog VA-IAC.03-Vector-Forward logs to syslog(tls)",
-    "Suite": "Logging",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Logging",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Logging",
-    "JIRAComponentID": "14829"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "Logging:886451f3ee07821f0edd63afe5f3b646",
-    "Name": "OCP-61479:gkarager:Logging:[sig-openshift-logging] Logging  Test logforwarding to syslog via vector as collector VA-IAC.03-Vector-Forward logs to syslog(tls)",
     "Suite": "Logging",
     "Product": "OpenShift",
     "Priority": 0,
@@ -128039,22 +127815,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "Logging:46c13800e85b820b3a67ee6f9278e3bf",
-    "Name": "OCP-68312:anli:Logging:[sig-openshift-logging] Logging  Log Forward to Kafka via Vector as Collector VA-IAC.03-Forward to Kafka using SSL-SASL_SCRAM auth",
-    "Suite": "Logging",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Logging",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Logging",
-    "JIRAComponentID": "14829"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "Logging:98f4486dd059fa178e99af4f56aa3a57",
     "Name": "OCP-68318:qitang:Logging:[sig-openshift-logging] Logging  Audit Policy Testing Multiple policies can be applied to one pipeline LokiStack.[Serial]",
     "Suite": "Logging",
@@ -135849,38 +135609,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "Security_and_Compliance:9576153ad37243865f917a77f5acd69c",
-    "Name": "OCP-71796:xiyuan:Security_and_Compliance:[sig-isc] Security_and_Compliance File_Integrity_Operator an end user handle FIO within a namespace V-EST.01-file integrity operator should pass DAST test",
-    "Suite": "Security_and_Compliance",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "Security_and_Compliance:bb34f7ea3e8ab730130e093c26891e93",
-    "Name": "OCP-71796:xiyuan:Security_and_Compliance:[sig-isc] Security_and_Compliance File_Integrity_Operator an end user handle FIO within a namespace WRS-file integrity operator should pass DAST test",
-    "Suite": "Security_and_Compliance",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "Security_and_Compliance:517f56ed01fa9a7dd0cf18e1dbf0dd46",
     "Name": "OCP-71797:xiyuan:Security_and_Compliance:[sig-isc] Security_and_Compliance Security_Profiles_Operator The Security_Profiles_Operator security profiles operator should pass DAST test",
     "Suite": "Security_and_Compliance",
@@ -141787,22 +141515,6 @@
     "Kind": "TestOwnership",
     "ID": "MCO:a1de4b2ac027a80bcedb6a341f986f25",
     "Name": "OCP-73648:sserafin:MCO:[sig-mco] MCO Pinnedimages [OnCLayer] A rebooted node reconciles with the pinned images status [Disruptive] [Serial]",
-    "Suite": "MCO",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "MCO:bfd4c87ebd8ed9e7403af621cd81f60a",
-    "Name": "OCP-73653:sregidor:MCO:[sig-mco] MCO Pinnedimages Pinned images with a ImageDigestMirrorSet mirroring a single repository [Disruptive] [Serial]",
     "Suite": "MCO",
     "Product": "OpenShift",
     "Priority": 0,
@@ -150278,22 +149990,6 @@
     ],
     "JIRAComponent": "Networking / openshift-sdn",
     "JIRAComponentID": "14763"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "Network_Observability:b669754cc55d1b8ccef0643948e4179a",
-    "Name": "OCP-77894:memodi:Network_Observability:[sig-netobserv] Network_Observability TechPreview Network Policies Correlation",
-    "Suite": "Network_Observability",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Networking / NetObserv",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Networking / NetObserv",
-    "JIRAComponentID": "14957"
   },
   {
     "APIVersion": "v1",
@@ -184720,22 +184416,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "Overall CI (test step):54d175c5bfd102745a14b8a30e8b1104",
-    "Name": "cucushift-installer-check-vsphere-customized-resource",
-    "Suite": "Overall CI (test step)",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "Overall CI (test step):71fdd8e1e8884aedd298a91c61262d03",
     "Name": "cucushift-installer-check-vsphere-customized-resourcepool",
     "Suite": "Overall CI (test step)",
@@ -184754,22 +184434,6 @@
     "Kind": "TestOwnership",
     "ID": "Overall CI (test step):1427eb93e1ea8e394e4b0991abc9fac0",
     "Name": "cucushift-installer-check-vsphere-disktype",
-    "Suite": "Overall CI (test step)",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "Overall CI (test step):cfb4c205c583b17db018b9f65e413d42",
-    "Name": "cucushift-installer-check-vsphere-folder",
     "Suite": "Overall CI (test step)",
     "Product": "OpenShift",
     "Priority": 0,
@@ -190664,22 +190328,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "Overall CI (test step):f025021a4914b4816b4c337b4a61c732",
-    "Name": "ipi-conf-vsphere-customized-resource",
-    "Suite": "Overall CI (test step)",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "Overall CI (test step):4c49c22a588aa1702ddb00ad23655d9e",
     "Name": "ipi-conf-vsphere-disktype",
     "Suite": "Overall CI (test step)",
@@ -190698,22 +190346,6 @@
     "Kind": "TestOwnership",
     "ID": "Overall CI (test step):ed1d6bd2fc3bd4ee940a9d170d7d45ef",
     "Name": "ipi-conf-vsphere-dns",
-    "Suite": "Overall CI (test step)",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "Overall CI (test step):8a6c6b519643affb9fba11ca256476b6",
-    "Name": "ipi-conf-vsphere-folder",
     "Suite": "Overall CI (test step)",
     "Product": "OpenShift",
     "Priority": 0,
@@ -191050,22 +190682,6 @@
     "Kind": "TestOwnership",
     "ID": "Overall CI (test step):a73ba0843b5bceaaf009e1991c08539d",
     "Name": "ipi-deprovision-vsphere-dns",
-    "Suite": "Overall CI (test step)",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "Overall CI (test step):264727dd07622235e13090b55fa8bf18",
-    "Name": "ipi-deprovision-vsphere-folder",
     "Suite": "Overall CI (test step)",
     "Product": "OpenShift",
     "Priority": 0,
@@ -191496,22 +191112,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "knmstate operator console plugin related features:e6299f2031de7fff9e9b7036725678f0",
-    "Name": "knmstate operator console plugin related features (OCP-64784,qiowang) Verify NMState cosole plugin operator installation(GUI)",
-    "Suite": "knmstate operator console plugin related features",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "knmstate operator console plugin related features:8d6f8c67e4a399fe15926546d3f7ea52",
     "Name": "knmstate operator console plugin related features (OCP-64784,qiowang,SDN) Verify NMState cosole plugin operator installation(GUI)",
     "Suite": "knmstate operator console plugin related features",
@@ -191530,22 +191130,6 @@
     "Kind": "TestOwnership",
     "ID": "knmstate operator console plugin related features:08f3ea082d12d4a5e5aabb5200ab775a",
     "Name": "knmstate operator console plugin related features (OCP-64803,qiowang,SDN) Create/Edit NNCP on web console(from yaml)",
-    "Suite": "knmstate operator console plugin related features",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "knmstate operator console plugin related features:dc57b9a70cfb680e8282ebe95a5d59c1",
-    "Name": "knmstate operator console plugin related features (OCP-64820,qiowang) Verify can configure node selector on web console(from form)",
     "Suite": "knmstate operator console plugin related features",
     "Product": "OpenShift",
     "Priority": 0,
@@ -191608,40 +191192,8 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "knmstate operator console plugin related features:e8f48c9f06778a0c119a65503d73ffae",
-    "Name": "knmstate operator console plugin related features (OCP-64981,qiowang) Create NNCP for adding bridge on web console(from form)",
-    "Suite": "knmstate operator console plugin related features",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "knmstate operator console plugin related features:457d83f03817c6df19e452f2e6a906b5",
     "Name": "knmstate operator console plugin related features (OCP-64981,qiowang,SDN) Create NNCP for adding bridge on web console(from form)",
-    "Suite": "knmstate operator console plugin related features",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "knmstate operator console plugin related features:d35eabe2e3138b6bd6aac0eb77717ccd",
-    "Name": "knmstate operator console plugin related features (OCP-64982,qiowang) Create NNCP for adding bond on web console(from form)",
     "Suite": "knmstate operator console plugin related features",
     "Product": "OpenShift",
     "Priority": 0,
