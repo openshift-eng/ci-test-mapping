@@ -26,6 +26,7 @@ var LPinteropOPPComponent = Component{
 			{
 				SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP`),
 				IncludeAny: []string{"interop-opp-", "interop-tests-ocs", "interop-tests-opp"},
+				Priority:   -1,
 			},
 		},
 	},
