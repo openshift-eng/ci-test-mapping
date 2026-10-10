@@ -198204,6 +198204,18 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-network] LocalhostNodePorts should honor sessionAffinity=ClientIP for localhost NodePort [Feature:LocalhostNodePorts]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network] LocalhostNodePorts should let a node pull an image from a registry exposed via localhost NodePort [Feature:LocalhostNodePorts]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network] LocalhostNodePorts should proxy localhost NodePort traffic to backends across nodes [Feature:LocalhostNodePorts]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-network] MultiQueue VMI should boot fedora to the login prompt and report the correct number of queues [test_id:4599] with default virtio interface",
     "Suite": "lp-ocp-compat--CNV--KubeVirt Tests Suite"
   },
@@ -211701,6 +211713,10 @@
   },
   {
     "Name": "[sig-node] zstd:chunked Image should successfully run date command [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-node][DRA][OCPFeatureGate:DynamicResourceAllocation] Dynamic Resource Allocation should serve only the expected DRA API versions [apigroup:resource.k8s.io] [Suite:openshift/conformance/parallel]",
     "Suite": "openshift-tests"
   },
   {
