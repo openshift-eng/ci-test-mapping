@@ -18,20 +18,19 @@ var LPacmComponent = Component{
 		DefaultJiraComponent: "LP--ACM",
 		Matchers: []config.ComponentMatcher{
 			{Suite: "ACM-lp-interop"},
+			// OPP-specific matchers (must appear before broad ACM matchers so FindMatch returns opp)
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM--OPP--`), Capabilities: []string{"opp"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--Observability`), Capabilities: []string{"opp"}},
+			{SuiteRegEx: regexp.MustCompile(`^acm-opp-app$`), Capabilities: []string{"opp"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--acm-opp-app`), Capabilities: []string{"opp"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM-OBS-ODF`), Capabilities: []string{"opp"}},
+			{SuiteRegEx: regexp.MustCompile(`(?i)^lp-interop--OPP--acm-obs-odf`), Capabilities: []string{"opp"}},
 			// ACM+Virt test patterns with acm-virt capability
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM-Virt--`), Capabilities: []string{"acm-virt"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--acm-virt`), Capabilities: []string{"acm-virt"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM--`), Capabilities: []string{"acm-virt"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ACM--`), Capabilities: []string{"acm-virt"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--ACM--`), Capabilities: []string{"acm-virt"}},
-			// OPP test patterns — opp capability (ACM-owned OPP application tests)
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--Observability`), Capabilities: []string{"opp"}},
-			{SuiteRegEx: regexp.MustCompile(`^acm-opp-app$`), Capabilities: []string{"opp"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--acm-opp-app`), Capabilities: []string{"opp"}},
-			// OBS-ODF test patterns — obs-odf capability (separated from opp)
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM-OBS-ODF`), Capabilities: []string{"obs-odf"}},
-			{SuiteRegEx: regexp.MustCompile(`(?i)^lp-interop--OPP--acm-obs-odf`), Capabilities: []string{"obs-odf"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM--OPP--`), Capabilities: []string{"opp"}},
 		},
 	},
 }

@@ -21,9 +21,6 @@ var LPquayComponent = Component{
 			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--Quay--`)},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--Quay--`)},
 			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--Quay--`)},
-			// OPP test patterns with opp capability
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--QUAY`), Capabilities: []string{"opp"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--quay`), Capabilities: []string{"opp"}},
 		},
 	},
 }

@@ -17,6 +17,16 @@ var LPinteropOCPComponent = Component{
 		Operators:            []string{},
 		DefaultJiraComponent: "LP--OCP",
 		Matchers: []config.ComponentMatcher{
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OCP--smoke`), Capabilities: []string{"opp"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OCP--backup`), Capabilities: []string{"opp"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OCP--wait-mcp`), Capabilities: []string{"opp"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OCP--ocp-upgrade`), Capabilities: []string{"opp"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OCP--ocp-upgrade-healthcheck`), Capabilities: []string{"opp"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OCP--skip-gate`), Capabilities: []string{"opp"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OCP--preflight`), Capabilities: []string{"opp"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OCP--acm-clc`), Capabilities: []string{"opp"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OCP--ocs`), Capabilities: []string{"opp"}},
+			// Legacy OPP-prefixed patterns
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--smoke`), Capabilities: []string{"opp"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--backup`), Capabilities: []string{"opp"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--wait-mcp`), Capabilities: []string{"opp"}},
