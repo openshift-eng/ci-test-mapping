@@ -18,6 +18,9 @@ var LPquayComponent = Component{
 		DefaultJiraComponent: "LP--Quay",
 		Matchers: []config.ComponentMatcher{
 			{Suite: "Quay-lp-interop"},
+			// OPP-specific matchers (must appear before broad Quay matchers so FindMatch returns opp)
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--QUAY`), Capabilities: []string{"opp"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--quay`), Capabilities: []string{"opp"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--Quay--`)},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--Quay--`)},
 			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--Quay--`)},
