@@ -18,10 +18,15 @@ var LPcnvComponent = Component{
 		DefaultJiraComponent: "LP--CNV",
 		Matchers: []config.ComponentMatcher{
 			{Suite: "CNV-lp-interop"},
-			// ACM+Virt test patterns with acm-virt capability
-			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--CNV--`), Capabilities: []string{"acm-virt"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--CNV--`), Capabilities: []string{"acm-virt"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--CNV--`), Capabilities: []string{"acm-virt"}},
+			// OPP-specific matchers — OPP-first patterns MUST precede
+			// the broad CNV matchers below (FindMatch stops at first match).
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--cnv(--|$)`), Capabilities: []string{"OPP"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--CNV--`), Capabilities: []string{"OPP"}},
+			// ACM+Virt test patterns
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--CNV--`), Capabilities: []string{"ACM+Virt"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--cnv--`), Capabilities: []string{"ACM+Virt"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--CNV--`), Capabilities: []string{"ACM+Virt"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--CNV--`), Capabilities: []string{"ACM+Virt"}},
 		},
 	},
 }
