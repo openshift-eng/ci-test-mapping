@@ -26,6 +26,7 @@ var LPacmComponent = Component{
 			{SuiteRegEx: regexp.MustCompile(`(?i)^lp-interop--(OPP--)?acm-obs-odf`), Capabilities: []string{"OPP"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--acm-alc(--|$)`), Capabilities: []string{"OPP"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--acm-grc(--|$)`), Capabilities: []string{"OPP"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--ACM--`), Capabilities: []string{"OPP"}},
 			// ACM+Virt test patterns
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM-Virt--`), Capabilities: []string{"ACM+Virt"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--acm-virt`), Capabilities: []string{"ACM+Virt"}},

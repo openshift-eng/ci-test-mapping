@@ -25,6 +25,7 @@ var LPodfComponent = Component{
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ODF$`), Capabilities: []string{"OPP"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--odf-health(--|$)`), Capabilities: []string{"OPP"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--odf-upgrade(--|$)`), Capabilities: []string{"OPP"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--ODF--`), Capabilities: []string{"OPP"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ODF--`)},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ODF--`)},
 			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--ODF--`)},

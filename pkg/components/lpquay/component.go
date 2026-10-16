@@ -22,7 +22,7 @@ var LPquayComponent = Component{
 			// the broad Quay matchers below (FindMatch stops at first match).
 			// Note: ^lp-interop--OPP--quay-smoke falls back to ref default
 			// after #87216 removes the global override; kept for compatibility.
-			{SuiteRegEx: regexp.MustCompile(`(?i)^lp-interop--OPP--quay`), Capabilities: []string{"OPP"}},
+			{SuiteRegEx: regexp.MustCompile(`(?i)^lp-interop--OPP--Quay`), Capabilities: []string{"OPP"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--Quay--`)},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--Quay--`)},
 			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--Quay--`)},
