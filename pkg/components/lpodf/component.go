@@ -18,12 +18,13 @@ var LPodfComponent = Component{
 		DefaultJiraComponent: "LP--ODF",
 		Matchers: []config.ComponentMatcher{
 			{Suite: "ODF-lp-interop"},
-			// OPP-specific matchers (must appear before broad ODF matchers so FindMatch returns opp)
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ODF--OPP--`), Capabilities: []string{"opp"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--pytest`), Capabilities: []string{"opp"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ODF$`), Capabilities: []string{"opp"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--odf-health`), Capabilities: []string{"opp"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--odf-upgrade`), Capabilities: []string{"opp"}},
+			// OPP-specific matchers — OPP-first patterns MUST precede
+			// the broad ODF matchers below (FindMatch stops at first match).
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--odf(--|$)`), Capabilities: []string{"OPP"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--pytest(--|$)`), Capabilities: []string{"OPP"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ODF$`), Capabilities: []string{"OPP"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--odf-health(--|$)`), Capabilities: []string{"OPP"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--odf-upgrade(--|$)`), Capabilities: []string{"OPP"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ODF--`)},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ODF--`)},
 			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--ODF--`)},

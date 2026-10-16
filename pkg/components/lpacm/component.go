@@ -18,19 +18,20 @@ var LPacmComponent = Component{
 		DefaultJiraComponent: "LP--ACM",
 		Matchers: []config.ComponentMatcher{
 			{Suite: "ACM-lp-interop"},
-			// OPP-specific matchers (must appear before broad ACM matchers so FindMatch returns opp)
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM--OPP--`), Capabilities: []string{"opp"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--Observability`), Capabilities: []string{"opp"}},
-			{SuiteRegEx: regexp.MustCompile(`^acm-opp-app$`), Capabilities: []string{"opp"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--acm-opp-app`), Capabilities: []string{"opp"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM-OBS-ODF`), Capabilities: []string{"opp"}},
-			{SuiteRegEx: regexp.MustCompile(`(?i)^lp-interop--OPP--acm-obs-odf`), Capabilities: []string{"opp"}},
-			// ACM+Virt test patterns with acm-virt capability
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM-Virt--`), Capabilities: []string{"acm-virt"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--acm-virt`), Capabilities: []string{"acm-virt"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM--`), Capabilities: []string{"acm-virt"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ACM--`), Capabilities: []string{"acm-virt"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--ACM--`), Capabilities: []string{"acm-virt"}},
+			// OPP-specific matchers — specific OPP-first patterns MUST precede
+			// the broad ACM matchers below (FindMatch stops at first match).
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--Observability(--|$)`), Capabilities: []string{"OPP"}},
+			{SuiteRegEx: regexp.MustCompile(`^acm-opp-app$`), Capabilities: []string{"OPP"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--acm-opp-app(--|$)`), Capabilities: []string{"OPP"}},
+			{SuiteRegEx: regexp.MustCompile(`(?i)^lp-interop--(OPP--)?acm-obs-odf`), Capabilities: []string{"OPP"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--acm-alc(--|$)`), Capabilities: []string{"OPP"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--acm-grc(--|$)`), Capabilities: []string{"OPP"}},
+			// ACM+Virt test patterns
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM-Virt--`), Capabilities: []string{"ACM+Virt"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--acm-virt`), Capabilities: []string{"ACM+Virt"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM--`), Capabilities: []string{"ACM+Virt"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ACM--`), Capabilities: []string{"ACM+Virt"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--ACM--`), Capabilities: []string{"ACM+Virt"}},
 		},
 	},
 }
