@@ -469,7 +469,7 @@ func NewComponentRegistry() *Registry {
 	r.Register("LP--ACS", &lpacs.LPacsComponent)
 	r.Register("LP--OADP", &lpoadp.LPoadpComponent)
 	r.Register("LP--Fusion-access", &lpfusionaccess.LPfusionaccessComponent)
-	r.Register("lp-interop--OPP", &lpinteropopp.LPinteropOPPComponent)
+	r.Register("LP--OPP", &lpinteropopp.LPinteropOPPComponent)
 	r.Register("LP--OCP", &lpinteropocp.LPinteropOCPComponent)
 	// New components go here
 
