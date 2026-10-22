@@ -18,13 +18,15 @@ var LPodfComponent = Component{
 		DefaultJiraComponent: "LP--ODF",
 		Matchers: []config.ComponentMatcher{
 			{Suite: "ODF-lp-interop"},
-			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ODF--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ODF--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--ODF--`)},
-			// OPP test patterns with opp capability
+			// OPP-specific matchers (must appear before broad ODF matchers so FindMatch returns opp)
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ODF--OPP--`), Capabilities: []string{"opp"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--pytest`), Capabilities: []string{"opp"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ODF$`), Capabilities: []string{"opp"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--odf-health`), Capabilities: []string{"opp"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--odf-upgrade`), Capabilities: []string{"opp"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ODF--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ODF--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--ODF--`)},
 		},
 	},
 }

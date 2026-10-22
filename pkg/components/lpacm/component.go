@@ -18,16 +18,21 @@ var LPacmComponent = Component{
 		DefaultJiraComponent: "LP--ACM",
 		Matchers: []config.ComponentMatcher{
 			{Suite: "ACM-lp-interop"},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM--ACM\+Virt--`), Capabilities: []string{"ACM+Virt"}},
+			// OPP-specific matchers (must appear before broad ACM matchers so FindMatch returns opp)
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM--OPP--`), Capabilities: []string{"opp"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--Observability`), Capabilities: []string{"opp"}},
+			{SuiteRegEx: regexp.MustCompile(`^acm-opp-app$`), Capabilities: []string{"opp"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--acm-opp-app`), Capabilities: []string{"opp"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM-OBS-ODF`), Capabilities: []string{"opp"}},
+			{SuiteRegEx: regexp.MustCompile(`(?i)^lp-interop--OPP--acm-obs-odf`), Capabilities: []string{"opp"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--acm`), Capabilities: []string{"opp"}},
+			// ACM+Virt test patterns with ACM+Virt capability
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM-Virt--`), Capabilities: []string{"ACM+Virt"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--acm-virt`), Capabilities: []string{"ACM+Virt"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM--ACM\+Virt--`), Capabilities: []string{"ACM+Virt"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM--`), Capabilities: []string{"ACM+Virt"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ACM--`), Capabilities: []string{"ACM+Virt"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--ACM--`), Capabilities: []string{"ACM+Virt"}},
-			// OPP test patterns with opp capability
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--Observability`), Capabilities: []string{"opp"}},
-			{SuiteRegEx: regexp.MustCompile(`^acm-opp-app$`), Capabilities: []string{"opp"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--acm`), Capabilities: []string{"opp"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM-OBS-ODF`), Capabilities: []string{"opp"}},
 		},
 	},
 }

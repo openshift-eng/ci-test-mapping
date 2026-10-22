@@ -13,9 +13,9 @@ type Component struct {
 
 var LPinteropOPPComponent = Component{
 	Component: &config.Component{
-		Name:                 "lp-interop--OPP",
+		Name:                 "LP--OPP",
 		Operators:            []string{},
-		DefaultJiraComponent: "lp-interop--OPP",
+		DefaultJiraComponent: "LP--OPP",
 		Matchers: []config.ComponentMatcher{
 			{Suite: "lp-interop--OPP"},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--interop-opp-`)},

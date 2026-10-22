@@ -5592,12 +5592,12 @@
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Unknown",
+    "Component": "LP--CNV",
     "Capabilities": [
-      "Other"
+      "ACM+Virt"
     ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
   },
   {
     "APIVersion": "v1",
@@ -90419,12 +90419,12 @@
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Unknown",
+    "Component": "LP--CNV",
     "Capabilities": [
-      "Other"
+      "ACM+Virt"
     ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
   },
   {
     "APIVersion": "v1",
@@ -90435,12 +90435,12 @@
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Unknown",
+    "Component": "LP--CNV",
     "Capabilities": [
-      "Other"
+      "ACM+Virt"
     ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
   },
   {
     "APIVersion": "v1",
@@ -90451,12 +90451,12 @@
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Unknown",
+    "Component": "LP--CNV",
     "Capabilities": [
-      "Other"
+      "ACM+Virt"
     ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
   },
   {
     "APIVersion": "v1",
@@ -90467,12 +90467,12 @@
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Unknown",
+    "Component": "LP--CNV",
     "Capabilities": [
-      "Other"
+      "ACM+Virt"
     ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
   },
   {
     "APIVersion": "v1",
@@ -90483,12 +90483,12 @@
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Unknown",
+    "Component": "LP--CNV",
     "Capabilities": [
-      "Other"
+      "ACM+Virt"
     ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
   },
   {
     "APIVersion": "v1",
@@ -90499,12 +90499,12 @@
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Unknown",
+    "Component": "LP--CNV",
     "Capabilities": [
-      "Other"
+      "ACM+Virt"
     ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
   },
   {
     "APIVersion": "v1",
@@ -90515,12 +90515,12 @@
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Unknown",
+    "Component": "LP--CNV",
     "Capabilities": [
-      "Other"
+      "ACM+Virt"
     ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
   },
   {
     "APIVersion": "v1",
@@ -90531,12 +90531,12 @@
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Unknown",
+    "Component": "LP--CNV",
     "Capabilities": [
-      "Other"
+      "ACM+Virt"
     ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
   },
   {
     "APIVersion": "v1",
@@ -90547,12 +90547,12 @@
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Unknown",
+    "Component": "LP--CNV",
     "Capabilities": [
-      "Other"
+      "ACM+Virt"
     ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
   },
   {
     "APIVersion": "v1",
@@ -90563,12 +90563,12 @@
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Unknown",
+    "Component": "LP--CNV",
     "Capabilities": [
-      "Other"
+      "ACM+Virt"
     ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
   },
   {
     "APIVersion": "v1",
@@ -90579,12 +90579,12 @@
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Unknown",
+    "Component": "LP--CNV",
     "Capabilities": [
-      "Other"
+      "ACM+Virt"
     ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
   },
   {
     "APIVersion": "v1",
@@ -90595,12 +90595,12 @@
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Unknown",
+    "Component": "LP--CNV",
     "Capabilities": [
-      "Other"
+      "ACM+Virt"
     ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
   },
   {
     "APIVersion": "v1",
@@ -90611,12 +90611,12 @@
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Unknown",
+    "Component": "LP--CNV",
     "Capabilities": [
-      "Other"
+      "ACM+Virt"
     ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
   },
   {
     "APIVersion": "v1",
@@ -386467,12 +386467,12 @@
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Unknown",
+    "Component": "LP--CNV",
     "Capabilities": [
-      "Other"
+      "ACM+Virt"
     ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
   },
   {
     "APIVersion": "v1",
@@ -386483,12 +386483,12 @@
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Unknown",
+    "Component": "LP--CNV",
     "Capabilities": [
-      "Other"
+      "ACM+Virt"
     ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
   },
   {
     "APIVersion": "v1",
@@ -1110013,12 +1110013,12 @@
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Unknown",
+    "Component": "LP--OCP",
     "Capabilities": [
-      "Other"
+      "opp"
     ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
+    "JIRAComponent": "LP--OCP",
+    "JIRAComponentID": null
   },
   {
     "APIVersion": "v1",
@@ -1110045,12 +1110045,12 @@
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Unknown",
+    "Component": "LP--OCP",
     "Capabilities": [
-      "Other"
+      "opp"
     ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
+    "JIRAComponent": "LP--OCP",
+    "JIRAComponentID": null
   },
   {
     "APIVersion": "v1",
@@ -1110125,12 +1110125,12 @@
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Unknown",
+    "Component": "LP--OCP",
     "Capabilities": [
-      "Other"
+      "opp"
     ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
+    "JIRAComponent": "LP--OCP",
+    "JIRAComponentID": null
   },
   {
     "APIVersion": "v1",
@@ -1110333,12 +1110333,12 @@
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Unknown",
+    "Component": "LP--OCP",
     "Capabilities": [
-      "Other"
+      "opp"
     ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
+    "JIRAComponent": "LP--OCP",
+    "JIRAComponentID": null
   },
   {
     "APIVersion": "v1",
@@ -1117803,14 +1117803,14 @@
     "Name": "odf-upgrade",
     "Suite": "lp-interop--OPP--odf-upgrade",
     "Product": "OpenShift",
-    "Priority": -10,
+    "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Cluster Version Operator",
+    "Component": "LP--ODF",
     "Capabilities": [
-      "ClusterUpgrade"
+      "opp"
     ],
-    "JIRAComponent": "Cluster Version Operator",
-    "JIRAComponentID": "14665"
+    "JIRAComponent": "LP--ODF",
+    "JIRAComponentID": "14867"
   },
   {
     "APIVersion": "v1",
@@ -1121725,12 +1121725,12 @@
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Unknown",
+    "Component": "LP--OCP",
     "Capabilities": [
-      "Other"
+      "opp"
     ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
+    "JIRAComponent": "LP--OCP",
+    "JIRAComponentID": null
   },
   {
     "APIVersion": "v1",
@@ -1122413,12 +1122413,12 @@
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Unknown",
+    "Component": "LP--OCP",
     "Capabilities": [
-      "Other"
+      "opp"
     ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
+    "JIRAComponent": "LP--OCP",
+    "JIRAComponentID": null
   },
   {
     "APIVersion": "v1",
@@ -1122427,14 +1122427,14 @@
     "Name": "quay-upgrade",
     "Suite": "lp-interop--OPP--quay-upgrade",
     "Product": "OpenShift",
-    "Priority": -10,
+    "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Cluster Version Operator",
+    "Component": "LP--Quay",
     "Capabilities": [
-      "ClusterUpgrade"
+      "opp"
     ],
-    "JIRAComponent": "Cluster Version Operator",
-    "JIRAComponentID": "14665"
+    "JIRAComponent": "LP--Quay",
+    "JIRAComponentID": "14962"
   },
   {
     "APIVersion": "v1",
@@ -1143357,12 +1143357,12 @@
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Unknown",
+    "Component": "LP--OCP",
     "Capabilities": [
-      "Other"
+      "opp"
     ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
+    "JIRAComponent": "LP--OCP",
+    "JIRAComponentID": null
   },
   {
     "APIVersion": "v1",

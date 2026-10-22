@@ -18,8 +18,12 @@ var LPcnvComponent = Component{
 		DefaultJiraComponent: "LP--CNV",
 		Matchers: []config.ComponentMatcher{
 			{Suite: "CNV-lp-interop", Capabilities: []string{"ACM+Virt"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--CNV--ACM\+Virt--`), Capabilities: []string{"ACM+Virt"}},
+			// OPP-specific matchers (must appear before broad CNV matchers so FindMatch returns opp)
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--CNV--OPP--`), Capabilities: []string{"opp"}},
+			// ACM+Virt test patterns with ACM+Virt capability
 			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--CNV--`), Capabilities: []string{"ACM+Virt"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--cnv--`), Capabilities: []string{"ACM+Virt"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--CNV--ACM\+Virt--`), Capabilities: []string{"ACM+Virt"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--CNV--`), Capabilities: []string{"ACM+Virt"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--CNV--`), Capabilities: []string{"ACM+Virt"}},
 		},
