@@ -2,11 +2,16 @@ package components
 
 import (
 	"reflect"
+	"strings"
 	"testing"
 
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpacm"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpacs"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpcnv"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpinteropopp"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpodf"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpquay"
 	"github.com/openshift-eng/ci-test-mapping/pkg/config"
 	"github.com/openshift-eng/ci-test-mapping/pkg/registry"
 	"github.com/openshift-eng/ci-test-mapping/pkg/util"
@@ -42,6 +47,25 @@ func TestLPCapabilities(t *testing.T) {
 		{"acm-opp-app", "LP--ACM", "opp"},
 		{"lp-interop--OPP--acm", "LP--ACM", "opp"},
 		{"lp-interop--ACM-OBS-ODF", "LP--ACM", "opp"},
+		// Canonical component-first OPP suite names (ADR 0007) route with the
+		// opp capability; for ACM this is also the ACM+Virt negative.
+		{"lp-interop--ACM--OPP--acm/policy/all", "LP--ACM", "opp"},
+		{"lp-interop--ACM--OPP--acm/policy/smoke", "LP--ACM", "opp"},
+		{"lp-interop--ACM--OPP--acm/lifecycle/all", "LP--ACM", "opp"},
+		{"lp-interop--ACM--OPP--acm/lifecycle/smoke", "LP--ACM", "opp"},
+		{"lp-interop--ACS--OPP--acs/all", "LP--ACS", "opp"},
+		{"lp-interop--ODF--OPP--odf/all", "LP--ODF", "opp"},
+		{"lp-interop--Quay--OPP--quay/smoke", "LP--Quay", "opp"},
+		{"lp-interop--OCP--OPP--wait-mcp", "lp-interop--OPP", "opp"},
+		// TODO(INTEROP-9629): transitional bridges for currently-unprefixed
+		// emissions; remove with the producers' canonical rename.
+		{"opp-restore", "lp-interop--OPP", "opp"},
+		{"preflight", "lp-interop--OPP", "opp"},
+		{"ocp-upgrade", "lp-interop--OPP", "opp"},
+		{"opp-post-upgrade-policy", "lp-interop--OPP", "opp"},
+		{"opp-pre-upgrade-checks", "lp-interop--OPP", "opp"},
+		{"interop-opp-product-upgrade-acm", "LP--ACM", "opp"},
+		{"interop-tests-opp-quay-smoke", "LP--Quay", "opp"},
 		{"ACM-lp-interop", "LP--ACM", ""},
 		{"CNV-lp-interop", "LP--CNV", "ACM+Virt"},
 	}
@@ -159,6 +183,81 @@ func TestLPMatcherPrecedence(t *testing.T) {
 				t.Errorf("FindMatch() = %+v, want no match for suffixed flat suite", matcher)
 			}
 		})
+	}
+}
+
+func TestCanonicalOPPMatcherPrecedence(t *testing.T) {
+	t.Parallel()
+	components := []struct {
+		name      string
+		component *config.Component
+	}{
+		{"ACM", lpacm.LPacmComponent.Component},
+		{"ACS", lpacs.LPacsComponent.Component},
+		{"ODF", lpodf.LPodfComponent.Component},
+		{"Quay", lpquay.LPquayComponent.Component},
+	}
+	for _, component := range components {
+		t.Run(component.name+"/canonical OPP matcher wins", func(t *testing.T) {
+			t.Parallel()
+			matcher := component.component.FindMatch(&v1.TestInfo{Suite: "lp-interop--" + component.name + "--OPP--suite/all"})
+			if matcher == nil || matcher.SuiteRegEx == nil {
+				t.Fatalf("FindMatch() = %+v, want the OPP matcher", matcher)
+			}
+			if want := "^lp-interop--" + component.name + "--OPP--"; matcher.SuiteRegEx.String() != want {
+				t.Errorf("FindMatch() regex = %q, want %q", matcher.SuiteRegEx, want)
+			}
+			if !reflect.DeepEqual(matcher.Capabilities, []string{"opp"}) {
+				t.Errorf("FindMatch() capabilities = %v, want [opp]", matcher.Capabilities)
+			}
+		})
+		t.Run(component.name+"/broad rule unchanged for non-OPP names", func(t *testing.T) {
+			t.Parallel()
+			matcher := component.component.FindMatch(&v1.TestInfo{Suite: "lp-interop--" + component.name + "--standalone"})
+			if matcher == nil || matcher.SuiteRegEx == nil {
+				t.Fatalf("FindMatch() = %+v, want the broad rule", matcher)
+			}
+			if want := "^lp-interop--" + component.name + "--"; matcher.SuiteRegEx.String() != want {
+				t.Errorf("FindMatch() regex = %q, want %q (broad rule bytes must stay identical)", matcher.SuiteRegEx, want)
+			}
+			// The broad rule's capabilities must stay byte-identical too: ACM
+			// carries ACM+Virt, the others carry none.
+			var wantCapabilities []string
+			if component.name == "ACM" {
+				wantCapabilities = []string{"ACM+Virt"}
+			}
+			if !reflect.DeepEqual(matcher.Capabilities, wantCapabilities) {
+				t.Errorf("FindMatch() broad-rule capabilities = %v, want %v", matcher.Capabilities, wantCapabilities)
+			}
+		})
+	}
+	t.Run("OCP platform-infra class", func(t *testing.T) {
+		t.Parallel()
+		matcher := lpinteropopp.LPinteropOPPComponent.FindMatch(&v1.TestInfo{Suite: "lp-interop--OCP--OPP--wait-mcp"})
+		if matcher == nil || matcher.SuiteRegEx == nil || matcher.SuiteRegEx.String() != `^lp-interop--OCP--OPP--` {
+			t.Fatalf("FindMatch() = %+v, want the OCP OPP matcher", matcher)
+		}
+		if !reflect.DeepEqual(matcher.Capabilities, []string{"opp"}) {
+			t.Errorf("FindMatch() capabilities = %v, want [opp]", matcher.Capabilities)
+		}
+	})
+}
+
+func TestEqualPriorityMultiClaimErrors(t *testing.T) {
+	t.Parallel()
+	tied := &v1.TestOwnership{Name: "health", Suite: "lp-interop--X--OPP--all", Component: "LP--A", Priority: 0}
+	other := &v1.TestOwnership{Name: "health", Suite: "lp-interop--X--OPP--all", Component: "LP--B", Priority: 0}
+	_, err := getHighestPriority([]*v1.TestOwnership{tied, other})
+	if err == nil {
+		t.Fatal("getHighestPriority() = nil error, want an equal-priority multi-claim error")
+	}
+	if !strings.Contains(err.Error(), "unable to resolve conflict") {
+		t.Errorf("getHighestPriority() error = %q, want the tie-conflict message", err)
+	}
+	high := &v1.TestOwnership{Name: "health", Suite: "lp-interop--X--OPP--all", Component: "LP--C", Priority: 1}
+	owner, err := getHighestPriority([]*v1.TestOwnership{tied, high})
+	if err != nil || owner.Component != "LP--C" {
+		t.Fatalf("getHighestPriority() = %v, %v; want the priority-1 owner without error", owner, err)
 	}
 }
 

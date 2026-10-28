@@ -19,10 +19,16 @@ var LPquayComponent = Component{
 		Matchers: []config.ComponentMatcher{
 			{Suite: "Quay-lp-interop"},
 			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--Quay--`)},
+			// OPP component-first suites (must precede the broad Quay-- rule: first match wins)
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--Quay--OPP--`), Capabilities: []string{"opp"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--Quay--`)},
 			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--Quay--`)},
 			// OPP test patterns with opp capability
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--QUAY`), Capabilities: []string{"opp"}},
+			// TODO(INTEROP-9629): transitional bridge for the raw emission of
+			// interop-tests-opp-quay-smoke (no ExitTrap prefix, e.g. FIPS jobs);
+			// remove when the producer emits a canonical lp-interop--Quay--OPP--* name.
+			{Suite: "interop-tests-opp-quay-smoke", Capabilities: []string{"opp"}},
 		},
 	},
 }

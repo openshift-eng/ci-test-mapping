@@ -19,6 +19,8 @@ var LPacsComponent = Component{
 		Matchers: []config.ComponentMatcher{
 			{Suite: "ACS-lp-interop"},
 			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ACS--`)},
+			// OPP component-first suites (must precede the broad ACS-- rule: first match wins)
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACS--OPP--`), Capabilities: []string{"opp"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACS--`)},
 			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--ACS--`)},
 			// OPP test patterns with opp capability

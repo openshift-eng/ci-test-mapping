@@ -20,6 +20,8 @@ var LPacmComponent = Component{
 			{Suite: "ACM-lp-interop"},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM--ACM\+Virt--`), Capabilities: []string{"ACM+Virt"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM-Virt--`), Capabilities: []string{"ACM+Virt"}},
+			// OPP component-first suites (must precede the broad ACM-- rule: first match wins)
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM--OPP--`), Capabilities: []string{"opp"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM--`), Capabilities: []string{"ACM+Virt"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ACM--`), Capabilities: []string{"ACM+Virt"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--ACM--`), Capabilities: []string{"ACM+Virt"}},
@@ -28,6 +30,10 @@ var LPacmComponent = Component{
 			{SuiteRegEx: regexp.MustCompile(`^acm-opp-app$`), Capabilities: []string{"opp"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--acm`), Capabilities: []string{"opp"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM-OBS-ODF`), Capabilities: []string{"opp"}},
+			// TODO(INTEROP-9629): transitional bridge for the unprefixed emission of
+			// interop-opp-product-upgrade-acm; remove when the producer emits a
+			// canonical lp-interop--ACM--OPP--* name.
+			{Suite: "interop-opp-product-upgrade-acm", Capabilities: []string{"opp"}},
 		},
 	},
 }
