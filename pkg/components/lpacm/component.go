@@ -30,10 +30,6 @@ var LPacmComponent = Component{
 			{SuiteRegEx: regexp.MustCompile(`^acm-opp-app$`), Capabilities: []string{"opp"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--acm`), Capabilities: []string{"opp"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM-OBS-ODF`), Capabilities: []string{"opp"}},
-			// TODO(INTEROP-9629): transitional bridge for the unprefixed emission of
-			// interop-opp-product-upgrade-acm; remove when the producer emits a
-			// canonical lp-interop--ACM--OPP--* name.
-			{Suite: "interop-opp-product-upgrade-acm", Capabilities: []string{"opp"}},
 		},
 	},
 }

@@ -1,74 +1,78 @@
 package components
 
 import (
+	"os"
 	"reflect"
 	"strings"
 	"testing"
 
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpacm"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpacs"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpcnv"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpinteropopp"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpodf"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpquay"
 	"github.com/openshift-eng/ci-test-mapping/pkg/config"
 	"github.com/openshift-eng/ci-test-mapping/pkg/registry"
 	"github.com/openshift-eng/ci-test-mapping/pkg/util"
+	"gopkg.in/yaml.v2"
 )
+
+// lpCapabilityTests is the LP capability fixture table. Every row resolves
+// through the full identifier.Identify path, so an equal-priority
+// multi-claim (tie) fails the row.
+var lpCapabilityTests = []struct {
+	suite      string
+	component  string
+	capability string
+}{
+	{"lp-interop--ACM--ACM+Virt--GRC", "LP--ACM", "ACM+Virt"},
+	{"lp-interop--ACM--ACM+Virt--observability", "LP--ACM", "ACM+Virt"},
+	{"lp-interop--CNV--ACM+Virt--Testing VM workload.", "LP--CNV", "ACM+Virt"},
+	{"lp-interop--ACM-Virt--GRC", "LP--ACM", "ACM+Virt"},
+	{"lp-interop--ACM-Virt--observability", "LP--ACM", "ACM+Virt"},
+	{"lp-interop--ACM--ACMVirt--GRC", "LP--ACM", "ACM+Virt"},
+	{"lp-interop--CNV--ACMVirt--Testing VM workload.", "LP--CNV", "ACM+Virt"},
+	{"lp-interop--ACM--ACM+Virtual--GRC", "LP--ACM", "ACM+Virt"},
+	{"lp-interop--CNV--ACM+Virtual--Testing VM workload.", "LP--CNV", "ACM+Virt"},
+	{"lp-interop--ACM--ACM+Virt", "LP--ACM", "ACM+Virt"},
+	{"lp-interop--CNV--ACM+Virt", "LP--CNV", "ACM+Virt"},
+	{"lp-interop--ACM--ACM+Virt-GRC", "LP--ACM", "ACM+Virt"},
+	{"lp-interop--CNV--ACM+Virt-Testing VM workload.", "LP--CNV", "ACM+Virt"},
+	{"lp-interop--ACM--standalone", "LP--ACM", "ACM+Virt"},
+	{"lp-interop--CNV--standalone", "LP--CNV", "ACM+Virt"},
+	{"lp-chaos--ACM--ACM+Virt--GRC", "LP--ACM", "ACM+Virt"},
+	{"lp-chaos--CNV--ACM+Virt--Testing VM workload.", "LP--CNV", "ACM+Virt"},
+	{"lp-ocp-compat--ACM--ACM+Virt--GRC", "LP--ACM", "ACM+Virt"},
+	{"lp-ocp-compat--CNV--ACM+Virt--Testing VM workload.", "LP--CNV", "ACM+Virt"},
+	{"lp-interop--OPP--Observability", "LP--ACM", "opp"},
+	{"acm-opp-app", "LP--ACM", "opp"},
+	{"lp-interop--OPP--acm", "LP--ACM", "opp"},
+	{"lp-interop--ACM-OBS-ODF", "LP--ACM", "opp"},
+	// Canonical component-first OPP suite names (ADR 0007) route with the
+	// opp capability; for ACM this is also the ACM+Virt negative (ADR 0007
+	// assigns capability opp, not ACM+Virt, to canonical OPP suites).
+	// OPP matchers exist for exactly ACM/ACS/ODF/Quay plus OCP in
+	// lp-interop--OPP; any other product's --OPP-- suite would fall to its
+	// broad rule (capability Other/ACM+Virt) — add a matcher and rows here
+	// when a product joins the OPP lane.
+	{"lp-interop--ACM--OPP--acm/policy/all", "LP--ACM", "opp"},
+	{"lp-interop--ACM--OPP--acm/policy/smoke", "LP--ACM", "opp"},
+	{"lp-interop--ACM--OPP--acm/lifecycle/all", "LP--ACM", "opp"},
+	{"lp-interop--ACM--OPP--acm/lifecycle/smoke", "LP--ACM", "opp"},
+	{"lp-interop--ACS--OPP--acs/all", "LP--ACS", "opp"},
+	{"lp-interop--ODF--OPP--odf/all", "LP--ODF", "opp"},
+	{"lp-interop--Quay--OPP--quay/smoke", "LP--Quay", "opp"},
+	{"lp-interop--OCP--OPP--wait-mcp", "lp-interop--OPP", "opp"},
+	// Broad-rule outcome pins: the broad ^lp-interop--<COMP>-- rules are
+	// unchanged by the OPP additions above (no capability for ACS/ODF/Quay).
+	{"lp-interop--ACS--standalone", "LP--ACS", ""},
+	{"lp-interop--ODF--standalone", "LP--ODF", ""},
+	{"lp-interop--Quay--standalone", "LP--Quay", ""},
+	{"ACM-lp-interop", "LP--ACM", ""},
+	{"CNV-lp-interop", "LP--CNV", "ACM+Virt"},
+}
 
 func TestLPCapabilities(t *testing.T) {
 	t.Parallel()
-	tests := []struct {
-		suite      string
-		component  string
-		capability string
-	}{
-		{"lp-interop--ACM--ACM+Virt--GRC", "LP--ACM", "ACM+Virt"},
-		{"lp-interop--ACM--ACM+Virt--observability", "LP--ACM", "ACM+Virt"},
-		{"lp-interop--CNV--ACM+Virt--Testing VM workload.", "LP--CNV", "ACM+Virt"},
-		{"lp-interop--ACM-Virt--GRC", "LP--ACM", "ACM+Virt"},
-		{"lp-interop--ACM-Virt--observability", "LP--ACM", "ACM+Virt"},
-		{"lp-interop--ACM--ACMVirt--GRC", "LP--ACM", "ACM+Virt"},
-		{"lp-interop--CNV--ACMVirt--Testing VM workload.", "LP--CNV", "ACM+Virt"},
-		{"lp-interop--ACM--ACM+Virtual--GRC", "LP--ACM", "ACM+Virt"},
-		{"lp-interop--CNV--ACM+Virtual--Testing VM workload.", "LP--CNV", "ACM+Virt"},
-		{"lp-interop--ACM--ACM+Virt", "LP--ACM", "ACM+Virt"},
-		{"lp-interop--CNV--ACM+Virt", "LP--CNV", "ACM+Virt"},
-		{"lp-interop--ACM--ACM+Virt-GRC", "LP--ACM", "ACM+Virt"},
-		{"lp-interop--CNV--ACM+Virt-Testing VM workload.", "LP--CNV", "ACM+Virt"},
-		{"lp-interop--ACM--standalone", "LP--ACM", "ACM+Virt"},
-		{"lp-interop--CNV--standalone", "LP--CNV", "ACM+Virt"},
-		{"lp-chaos--ACM--ACM+Virt--GRC", "LP--ACM", "ACM+Virt"},
-		{"lp-chaos--CNV--ACM+Virt--Testing VM workload.", "LP--CNV", "ACM+Virt"},
-		{"lp-ocp-compat--ACM--ACM+Virt--GRC", "LP--ACM", "ACM+Virt"},
-		{"lp-ocp-compat--CNV--ACM+Virt--Testing VM workload.", "LP--CNV", "ACM+Virt"},
-		{"lp-interop--OPP--Observability", "LP--ACM", "opp"},
-		{"acm-opp-app", "LP--ACM", "opp"},
-		{"lp-interop--OPP--acm", "LP--ACM", "opp"},
-		{"lp-interop--ACM-OBS-ODF", "LP--ACM", "opp"},
-		// Canonical component-first OPP suite names (ADR 0007) route with the
-		// opp capability; for ACM this is also the ACM+Virt negative.
-		{"lp-interop--ACM--OPP--acm/policy/all", "LP--ACM", "opp"},
-		{"lp-interop--ACM--OPP--acm/policy/smoke", "LP--ACM", "opp"},
-		{"lp-interop--ACM--OPP--acm/lifecycle/all", "LP--ACM", "opp"},
-		{"lp-interop--ACM--OPP--acm/lifecycle/smoke", "LP--ACM", "opp"},
-		{"lp-interop--ACS--OPP--acs/all", "LP--ACS", "opp"},
-		{"lp-interop--ODF--OPP--odf/all", "LP--ODF", "opp"},
-		{"lp-interop--Quay--OPP--quay/smoke", "LP--Quay", "opp"},
-		{"lp-interop--OCP--OPP--wait-mcp", "lp-interop--OPP", "opp"},
-		// TODO(INTEROP-9629): transitional bridges for currently-unprefixed
-		// emissions; remove with the producers' canonical rename.
-		{"opp-restore", "lp-interop--OPP", "opp"},
-		{"preflight", "lp-interop--OPP", "opp"},
-		{"ocp-upgrade", "lp-interop--OPP", "opp"},
-		{"opp-post-upgrade-policy", "lp-interop--OPP", "opp"},
-		{"opp-pre-upgrade-checks", "lp-interop--OPP", "opp"},
-		{"interop-opp-product-upgrade-acm", "LP--ACM", "opp"},
-		{"interop-tests-opp-quay-smoke", "LP--Quay", "opp"},
-		{"ACM-lp-interop", "LP--ACM", ""},
-		{"CNV-lp-interop", "LP--CNV", "ACM+Virt"},
-	}
+	tests := lpCapabilityTests
 	componentRegistry := registry.NewComponentRegistry()
 	identifier := NewTestIdentifier(componentRegistry, nil)
 	for _, testCase := range tests {
@@ -186,78 +190,148 @@ func TestLPMatcherPrecedence(t *testing.T) {
 	}
 }
 
-func TestCanonicalOPPMatcherPrecedence(t *testing.T) {
+func TestPriorityResolution(t *testing.T) {
 	t.Parallel()
-	components := []struct {
-		name      string
-		component *config.Component
+	// The highest priority value wins (pkg/api/types/v1/component.go: "The
+	// highest value wins"); Cluster Version Operator deliberately loses
+	// upgrade tests with Priority -10. Ties at the highest value hard-error.
+	zero := &v1.TestOwnership{Name: "health", Suite: "s", Component: "LP--A", Priority: 0}
+	neg := &v1.TestOwnership{Name: "health", Suite: "s", Component: "LP--B", Priority: -10}
+	one := &v1.TestOwnership{Name: "health", Suite: "s", Component: "LP--C", Priority: 1}
+	for _, tc := range []struct {
+		name   string
+		owners []*v1.TestOwnership
+		want   string
 	}{
-		{"ACM", lpacm.LPacmComponent.Component},
-		{"ACS", lpacs.LPacsComponent.Component},
-		{"ODF", lpodf.LPodfComponent.Component},
-		{"Quay", lpquay.LPquayComponent.Component},
-	}
-	for _, component := range components {
-		t.Run(component.name+"/canonical OPP matcher wins", func(t *testing.T) {
+		{"priority 0 beats -10", []*v1.TestOwnership{zero, neg}, "LP--A"},
+		{"priority 0 beats -10, reversed order", []*v1.TestOwnership{neg, zero}, "LP--A"},
+		{"priority 1 beats 0", []*v1.TestOwnership{zero, one}, "LP--C"},
+	} {
+		t.Run(tc.name, func(t *testing.T) {
 			t.Parallel()
-			matcher := component.component.FindMatch(&v1.TestInfo{Suite: "lp-interop--" + component.name + "--OPP--suite/all"})
-			if matcher == nil || matcher.SuiteRegEx == nil {
-				t.Fatalf("FindMatch() = %+v, want the OPP matcher", matcher)
-			}
-			if want := "^lp-interop--" + component.name + "--OPP--"; matcher.SuiteRegEx.String() != want {
-				t.Errorf("FindMatch() regex = %q, want %q", matcher.SuiteRegEx, want)
-			}
-			if !reflect.DeepEqual(matcher.Capabilities, []string{"opp"}) {
-				t.Errorf("FindMatch() capabilities = %v, want [opp]", matcher.Capabilities)
-			}
-		})
-		t.Run(component.name+"/broad rule unchanged for non-OPP names", func(t *testing.T) {
-			t.Parallel()
-			matcher := component.component.FindMatch(&v1.TestInfo{Suite: "lp-interop--" + component.name + "--standalone"})
-			if matcher == nil || matcher.SuiteRegEx == nil {
-				t.Fatalf("FindMatch() = %+v, want the broad rule", matcher)
-			}
-			if want := "^lp-interop--" + component.name + "--"; matcher.SuiteRegEx.String() != want {
-				t.Errorf("FindMatch() regex = %q, want %q (broad rule bytes must stay identical)", matcher.SuiteRegEx, want)
-			}
-			// The broad rule's capabilities must stay byte-identical too: ACM
-			// carries ACM+Virt, the others carry none.
-			var wantCapabilities []string
-			if component.name == "ACM" {
-				wantCapabilities = []string{"ACM+Virt"}
-			}
-			if !reflect.DeepEqual(matcher.Capabilities, wantCapabilities) {
-				t.Errorf("FindMatch() broad-rule capabilities = %v, want %v", matcher.Capabilities, wantCapabilities)
+			owner, err := getHighestPriority(tc.owners)
+			if err != nil || owner == nil || owner.Component != tc.want {
+				t.Fatalf("getHighestPriority() = %v, %v; want component %s without error", owner, err, tc.want)
 			}
 		})
 	}
-	t.Run("OCP platform-infra class", func(t *testing.T) {
-		t.Parallel()
-		matcher := lpinteropopp.LPinteropOPPComponent.FindMatch(&v1.TestInfo{Suite: "lp-interop--OCP--OPP--wait-mcp"})
-		if matcher == nil || matcher.SuiteRegEx == nil || matcher.SuiteRegEx.String() != `^lp-interop--OCP--OPP--` {
-			t.Fatalf("FindMatch() = %+v, want the OCP OPP matcher", matcher)
-		}
-		if !reflect.DeepEqual(matcher.Capabilities, []string{"opp"}) {
-			t.Errorf("FindMatch() capabilities = %v, want [opp]", matcher.Capabilities)
-		}
-	})
+	if owner, err := getHighestPriority(nil); err != nil || owner != nil {
+		t.Fatalf("getHighestPriority(nil) = %v, %v; want nil, nil", owner, err)
+	}
 }
 
-func TestEqualPriorityMultiClaimErrors(t *testing.T) {
+// knownOPPMisroutes pins today's WRONG routing for runtime-first OPP infra
+// suites, observed in data/openshift-gce-devel/ci_analysis_us only (0 rows in
+// ci_analysis_qe): smoke/backup/wait-mcp have no suite matcher and resolve to
+// Unknown; odf-upgrade/quay-upgrade are stolen by Cluster Version Operator,
+// which matches the TEST NAME substring "upgrade" (Priority -10, capability
+// ClusterUpgrade). TODO(INTEROP-9629): update these rows when the producer
+// rename (openshift/release#86217) emits canonical lp-interop--OCP--OPP--*
+// names.
+var knownOPPMisroutes = []struct {
+	testName         string
+	suite            string
+	wantComponent    string
+	wantCapabilities []string
+	wantPriority     int
+}{
+	{"acm-connectivity", "lp-interop--OPP--smoke", "Unknown", []string{DefaultCapability}, 0},
+	{"backup", "lp-interop--OPP--backup", "Unknown", []string{DefaultCapability}, 0},
+	{"wait-mcp", "lp-interop--OPP--wait-mcp", "Unknown", []string{DefaultCapability}, 0},
+	{"odf-upgrade", "lp-interop--OPP--odf-upgrade", "Cluster Version Operator", []string{"ClusterUpgrade"}, -10},
+	{"quay-upgrade", "lp-interop--OPP--quay-upgrade", "Cluster Version Operator", []string{"ClusterUpgrade"}, -10},
+}
+
+// oppYieldPins proves product suite matchers at Priority 0 beat Cluster
+// Version Operator's Priority -10 name-based claim on upgrade-flavoured test
+// names — the no-tie/no-steal property the canonical matchers rely on.
+var oppYieldPins = []struct {
+	testName         string
+	suite            string
+	wantComponent    string
+	wantCapabilities []string
+	wantPriority     int
+}{
+	{"acm-upgrade", "lp-interop--OPP--acm-upgrade", "LP--ACM", []string{"opp"}, 0},
+	{"acs-upgrade", "lp-interop--OPP--acs-upgrade", "LP--ACS", []string{"opp"}, 0},
+}
+
+func TestKnownOPPMisroutes(t *testing.T) {
 	t.Parallel()
-	tied := &v1.TestOwnership{Name: "health", Suite: "lp-interop--X--OPP--all", Component: "LP--A", Priority: 0}
-	other := &v1.TestOwnership{Name: "health", Suite: "lp-interop--X--OPP--all", Component: "LP--B", Priority: 0}
-	_, err := getHighestPriority([]*v1.TestOwnership{tied, other})
-	if err == nil {
-		t.Fatal("getHighestPriority() = nil error, want an equal-priority multi-claim error")
+	identifier := NewTestIdentifier(registry.NewComponentRegistry(), nil)
+	for _, row := range append(append([]struct {
+		testName         string
+		suite            string
+		wantComponent    string
+		wantCapabilities []string
+		wantPriority     int
+	}{}, knownOPPMisroutes...), oppYieldPins...) {
+		t.Run(row.testName+"/"+row.suite, func(t *testing.T) {
+			t.Parallel()
+			ownership, err := identifier.Identify(&v1.TestInfo{Name: row.testName, Suite: row.suite})
+			if err != nil || ownership == nil {
+				t.Fatalf("Identify() = %v, %v", ownership, err)
+			}
+			if ownership.Component != row.wantComponent || ownership.Priority != row.wantPriority {
+				t.Errorf("Identify() = %s/%d, want %s/%d", ownership.Component, ownership.Priority, row.wantComponent, row.wantPriority)
+			}
+			if !reflect.DeepEqual(ownership.Capabilities, row.wantCapabilities) {
+				t.Errorf("Identify() capabilities = %v, want %v", ownership.Capabilities, row.wantCapabilities)
+			}
+		})
 	}
-	if !strings.Contains(err.Error(), "unable to resolve conflict") {
-		t.Errorf("getHighestPriority() error = %q, want the tie-conflict message", err)
+}
+
+// TestOPPFixtureSuitesAdmittedByUSConfig guards against fixture rows (and the
+// matchers they witness) that the production US mapping pipeline can never
+// reach: config/openshift-eng.yaml admits suites only via includeSuites and
+// includeSuitePatterns, compiled to SQL in pkg/bigquery/test_table.go
+// (buildSuitesFilter/buildExcludeSuitesFilter) before any matcher runs. A
+// bare exact-Suite matcher such as {Suite: "preflight"} is unreachable there,
+// and reachable only in the unfiltered QE run (--config ""), where it would
+// over-claim. US-only guard; not QE evidence.
+func TestOPPFixtureSuitesAdmittedByUSConfig(t *testing.T) {
+	t.Parallel()
+	data, err := os.ReadFile("../../config/openshift-eng.yaml")
+	if err != nil {
+		t.Fatalf("read config: %v", err)
 	}
-	high := &v1.TestOwnership{Name: "health", Suite: "lp-interop--X--OPP--all", Component: "LP--C", Priority: 1}
-	owner, err := getHighestPriority([]*v1.TestOwnership{tied, high})
-	if err != nil || owner.Component != "LP--C" {
-		t.Fatalf("getHighestPriority() = %v, %v; want the priority-1 owner without error", owner, err)
+	var cfg v1.Config
+	if err := yaml.Unmarshal(data, &cfg); err != nil {
+		t.Fatalf("parse config: %v", err)
+	}
+	// Fail closed on shapes this guard does not model: exclusion lists and
+	// non-trailing-% LIKE patterns.
+	if len(cfg.ExcludeSuites) > 0 || len(cfg.ExcludeSuitePatterns) > 0 {
+		t.Fatalf("config now has exclusion lists; extend this guard to model them")
+	}
+	admitted := func(suite string) bool {
+		for _, s := range cfg.IncludeSuites {
+			if s == suite {
+				return true
+			}
+		}
+		for _, p := range cfg.IncludeSuitePatterns {
+			prefix, ok := strings.CutSuffix(p, "%")
+			if !ok {
+				t.Fatalf("unexpected include pattern shape %q; extend this guard, do not assume LIKE", p)
+			}
+			if strings.HasPrefix(suite, prefix) {
+				return true
+			}
+		}
+		return false
+	}
+	if admitted("preflight") {
+		t.Fatal("guard is vacuous: bare suite 'preflight' must not be admitted")
+	}
+	for _, tc := range lpCapabilityTests {
+		if !strings.Contains(tc.suite, "--OPP--") {
+			continue
+		}
+		if !admitted(tc.suite) {
+			t.Errorf("fixture suite %q is not admitted by config/openshift-eng.yaml; its matcher can never fire in the US pipeline", tc.suite)
+		}
 	}
 }
 

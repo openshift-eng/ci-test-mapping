@@ -19,19 +19,15 @@ var LPinteropOPPComponent = Component{
 		Matchers: []config.ComponentMatcher{
 			{Suite: "lp-interop--OPP"},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--interop-opp-`)},
-			// OPP component-first platform-infra suites (ADR 0007): tie-free
-			// OCP class; no generic ^lp-interop--OPP-- parent matcher exists
-			// because equal-priority multi-claims hard-error conflict resolution.
+			// OPP component-first platform-infra suites (ADR 0007): canonical
+			// OCP-class suites route to this component because no LP--OCP
+			// component is registered; if one is ever created, MOVE this matcher
+			// here (never copy it). Do not add a generic ^lp-interop--OPP-- parent
+			// matcher: it would tie at Priority 0 with lpodf's
+			// ^lp-interop--OPP--pytest (28 live rows) and lpacm's
+			// ^lp-interop--OPP--acm, and equal-priority multi-claims hard-error
+			// conflict resolution (pkg/components/component.go getHighestPriority).
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OCP--OPP--`), Capabilities: []string{"opp"}},
-			// TODO(INTEROP-9629): transitional bridges for currently-unprefixed
-			// infra emissions (these exact suite names are emitted only by OPP
-			// interop lane steps); remove when the producers emit canonical
-			// lp-interop--OCP--OPP--* names.
-			{Suite: "opp-restore", Capabilities: []string{"opp"}},
-			{Suite: "preflight", Capabilities: []string{"opp"}},
-			{Suite: "ocp-upgrade", Capabilities: []string{"opp"}},
-			{Suite: "opp-post-upgrade-policy", Capabilities: []string{"opp"}},
-			{Suite: "opp-pre-upgrade-checks", Capabilities: []string{"opp"}},
 		},
 	},
 }
