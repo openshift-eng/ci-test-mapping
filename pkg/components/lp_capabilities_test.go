@@ -26,48 +26,30 @@ var lpCapabilityTests = []struct {
 	{"lp-interop--ACM--ACM+Virt--GRC", "LP--ACM", "ACM+Virt"},
 	{"lp-interop--ACM--ACM+Virt--observability", "LP--ACM", "ACM+Virt"},
 	{"lp-interop--CNV--ACM+Virt--Testing VM workload.", "LP--CNV", "ACM+Virt"},
-	{"lp-interop--ACM-Virt--GRC", "LP--ACM", "ACM+Virt"},
-	{"lp-interop--ACM-Virt--observability", "LP--ACM", "ACM+Virt"},
-	{"lp-interop--ACM--ACMVirt--GRC", "LP--ACM", "ACM+Virt"},
-	{"lp-interop--CNV--ACMVirt--Testing VM workload.", "LP--CNV", "ACM+Virt"},
-	{"lp-interop--ACM--ACM+Virtual--GRC", "LP--ACM", "ACM+Virt"},
-	{"lp-interop--CNV--ACM+Virtual--Testing VM workload.", "LP--CNV", "ACM+Virt"},
-	{"lp-interop--ACM--ACM+Virt", "LP--ACM", "ACM+Virt"},
-	{"lp-interop--CNV--ACM+Virt", "LP--CNV", "ACM+Virt"},
-	{"lp-interop--ACM--ACM+Virt-GRC", "LP--ACM", "ACM+Virt"},
-	{"lp-interop--CNV--ACM+Virt-Testing VM workload.", "LP--CNV", "ACM+Virt"},
-	{"lp-interop--ACM--standalone", "LP--ACM", "ACM+Virt"},
-	{"lp-interop--CNV--standalone", "LP--CNV", "ACM+Virt"},
 	{"lp-chaos--ACM--ACM+Virt--GRC", "LP--ACM", ""},
 	{"lp-chaos--CNV--ACM+Virt--Testing VM workload.", "LP--CNV", ""},
 	{"lp-ocp-compat--ACM--ACM+Virt--GRC", "LP--ACM", ""},
 	{"lp-ocp-compat--CNV--ACM+Virt--Testing VM workload.", "LP--CNV", ""},
-	{"lp-interop--OPP--Observability", "LP--ACM", "opp"},
-	{"acm-opp-app", "LP--ACM", "opp"},
-	{"lp-interop--OPP--acm", "LP--ACM", "opp"},
-	{"lp-interop--ACM-OBS-ODF", "LP--ACM", "opp"},
 	// Canonical component-first OPP suite names (agreed 2026-10-23) route
-	// with the opp capability; for ACM this is also the ACM+Virt negative
-	// (canonical OPP suites carry the opp capability, not ACM+Virt).
+	// with the OPP capability; for ACM this is also the ACM+Virt negative
+	// (canonical OPP suites carry the OPP capability, not ACM+Virt).
 	// OPP matchers exist for ACM/ACS/CNV/ODF/Quay; canonical OCP-class
 	// platform-infra suites (lp-interop--OCP--OPP--*) intentionally remain
 	// Unknown — no OCP component is registered, and the lp-interop--OPP
 	// component was removed per review (0 rows in both datasets). When an
-	// OCP home is decided, add a matcher and rows for it.
-	{"lp-interop--ACM--OPP--acm/policy/all", "LP--ACM", "opp"},
-	{"lp-interop--ACM--OPP--acm/policy/smoke", "LP--ACM", "opp"},
-	{"lp-interop--ACM--OPP--acm/lifecycle/all", "LP--ACM", "opp"},
-	{"lp-interop--ACM--OPP--acm/lifecycle/smoke", "LP--ACM", "opp"},
-	{"lp-interop--ACS--OPP--acs/all", "LP--ACS", "opp"},
-	{"lp-interop--CNV--OPP--cnv/lifecycle/all", "LP--CNV", "opp"},
-	{"lp-interop--CNV--OPP--cnv/lifecycle/smoke", "LP--CNV", "opp"},
-	{"lp-interop--ODF--OPP--odf/all", "LP--ODF", "opp"},
-	{"lp-interop--Quay--OPP--quay/smoke", "LP--Quay", "opp"},
-	// Broad-rule outcome pins: the broad ^lp-interop--<COMP>-- rules are
-	// unchanged by the OPP additions above (no capability for ACS/ODF/Quay).
-	{"lp-interop--ACS--standalone", "LP--ACS", ""},
-	{"lp-interop--ODF--standalone", "LP--ODF", ""},
-	{"lp-interop--Quay--standalone", "LP--Quay", ""},
+	// OCP home is decided, add a matcher and rows for it. Suites whose
+	// matchers were removed per the exact structure agreed in review
+	// (broad component rules, ACM-Virt, and the runtime-first OPP test
+	// patterns) are pinned as Unknown in TestKnownUnroutedLPSuites.
+	{"lp-interop--ACM--OPP--acm/policy/all", "LP--ACM", "OPP"},
+	{"lp-interop--ACM--OPP--acm/policy/smoke", "LP--ACM", "OPP"},
+	{"lp-interop--ACM--OPP--acm/lifecycle/all", "LP--ACM", "OPP"},
+	{"lp-interop--ACM--OPP--acm/lifecycle/smoke", "LP--ACM", "OPP"},
+	{"lp-interop--ACS--OPP--acs/all", "LP--ACS", "OPP"},
+	{"lp-interop--CNV--OPP--cnv/lifecycle/all", "LP--CNV", "OPP"},
+	{"lp-interop--CNV--OPP--cnv/lifecycle/smoke", "LP--CNV", "OPP"},
+	{"lp-interop--ODF--OPP--odf/all", "LP--ODF", "OPP"},
+	{"lp-interop--Quay--OPP--quay/smoke", "LP--Quay", "OPP"},
 	{"ACM-lp-interop", "LP--ACM", ""},
 	{"CNV-lp-interop", "LP--CNV", "ACM+Virt"},
 }
@@ -144,26 +126,33 @@ func TestLPMatcherPrecedence(t *testing.T) {
 	for _, component := range components {
 		prefix := "lp-interop--" + component.name + "--"
 		tests := []struct {
-			suffix       string
-			wantSpecific bool
+			suffix      string
+			wantPattern string // empty means no matcher may claim the suite
 		}{
-			{"ACM+Virt--GRC", true},
-			{"ACM+Virt--Testing VM workload.", true},
-			{"ACMVirt--GRC", false},
-			{"ACMMVirt--GRC", false},
-			{"ACM+Virtual--GRC", false},
-			{"ACM+Virt", false},
-			{"ACM+Virt-GRC", false},
-			{"standalone", false},
+			{"ACM+Virt--GRC", `ACM\+Virt--`},
+			{"ACM+Virt--Testing VM workload.", `ACM\+Virt--`},
+			{"OPP--GRC", `OPP--`},
+			{"OPP--acm/policy/all", `OPP--`},
+			{"ACMVirt--GRC", ""},
+			{"ACMMVirt--GRC", ""},
+			{"ACM+Virtual--GRC", ""},
+			{"ACM+Virt", ""},
+			{"ACM+Virt-GRC", ""},
+			{"standalone", ""},
 		}
 		for _, testCase := range tests {
 			t.Run(component.name+"/"+testCase.suffix, func(t *testing.T) {
 				t.Parallel()
-				wantPattern := "^" + prefix
-				if testCase.wantSpecific {
-					wantPattern += `ACM\+Virt--`
-				}
 				matcher := component.component.FindMatch(&v1.TestInfo{Suite: prefix + testCase.suffix})
+				if testCase.wantPattern == "" {
+					// The broad component rules are gone: only the exact
+					// runtime arms may claim; everything else stays Unknown.
+					if matcher != nil {
+						t.Errorf("FindMatch() = %+v, want no match", matcher)
+					}
+					return
+				}
+				wantPattern := "^" + prefix + testCase.wantPattern
 				if matcher == nil || matcher.SuiteRegEx == nil {
 					t.Fatalf("FindMatch() = %+v, want regex %q", matcher, wantPattern)
 				}
@@ -247,6 +236,11 @@ var knownOPPMisroutes = []struct {
 	{"wait-mcp", "lp-interop--OCP--OPP--wait-mcp", "Unknown", []string{DefaultCapability}, 0},
 	{"odf-upgrade", "lp-interop--OPP--odf-upgrade", "Cluster Version Operator", []string{"ClusterUpgrade"}, -10},
 	{"quay-upgrade", "lp-interop--OPP--quay-upgrade", "Cluster Version Operator", []string{"ClusterUpgrade"}, -10},
+	// The runtime-first OPP test patterns were removed per the exact
+	// structure agreed in review, so their upgrade-flavoured names lose the
+	// LP component claim and are stolen by Cluster Version Operator.
+	{"acm-upgrade", "lp-interop--OPP--acm-upgrade", "Cluster Version Operator", []string{"ClusterUpgrade"}, -10},
+	{"acs-upgrade", "lp-interop--OPP--acs-upgrade", "Cluster Version Operator", []string{"ClusterUpgrade"}, -10},
 }
 
 // oppYieldPins proves product suite matchers at Priority 0 beat Cluster
@@ -259,8 +253,63 @@ var oppYieldPins = []struct {
 	wantCapabilities []string
 	wantPriority     int
 }{
-	{"acm-upgrade", "lp-interop--OPP--acm-upgrade", "LP--ACM", []string{"opp"}, 0},
-	{"acs-upgrade", "lp-interop--OPP--acs-upgrade", "LP--ACS", []string{"opp"}, 0},
+	{"acm-upgrade", "lp-interop--ACM--OPP--acm/lifecycle/all", "LP--ACM", []string{"OPP"}, 0},
+	{"acs-upgrade", "lp-interop--ACS--OPP--acs/all", "LP--ACS", []string{"OPP"}, 0},
+}
+
+// knownUnroutedSuites pins the LP suites whose matchers were removed per the
+// exact structure agreed in review: the broad ^lp-interop--<COMP>-- rules,
+// ^lp-interop--ACM-Virt--, and the runtime-first OPP test patterns. They now
+// resolve to Unknown; TODO(INTEROP-9629): producers emit canonical
+// lp-interop--<COMP>--OPP--* names (openshift/release#86217) and these rows
+// disappear as the raw emissions retire.
+var knownUnroutedSuites = []string{
+	"lp-interop--ACM-Virt--GRC",
+	"lp-interop--ACM-Virt--observability",
+	"lp-interop--ACM--ACMVirt--GRC",
+	"lp-interop--CNV--ACMVirt--Testing VM workload.",
+	"lp-interop--ACM--ACM+Virtual--GRC",
+	"lp-interop--CNV--ACM+Virtual--Testing VM workload.",
+	"lp-interop--ACM--ACM+Virt",
+	"lp-interop--CNV--ACM+Virt",
+	"lp-interop--ACM--ACM+Virt-GRC",
+	"lp-interop--CNV--ACM+Virt-Testing VM workload.",
+	"lp-interop--ACM--standalone",
+	"lp-interop--CNV--standalone",
+	"lp-interop--ACS--standalone",
+	"lp-interop--ODF--standalone",
+	"lp-interop--Quay--standalone",
+	"lp-interop--OPP--Observability",
+	"acm-opp-app",
+	"lp-interop--OPP--acm",
+	"lp-interop--ACM-OBS-ODF",
+	"lp-interop--OPP--acs",
+	"lp-interop--OPP--pytest",
+	"lp-interop--ODF",
+	"lp-interop--OPP--odf-health",
+	"lp-interop--OPP--QUAY",
+}
+
+func TestKnownUnroutedLPSuites(t *testing.T) {
+	t.Parallel()
+	identifier := NewTestIdentifier(registry.NewComponentRegistry(), nil)
+	for _, suite := range knownUnroutedSuites {
+		suite := suite
+		t.Run(suite, func(t *testing.T) {
+			t.Parallel()
+			testInfo := &v1.TestInfo{Name: "should preserve VM workload availability", Suite: suite}
+			ownership, err := identifier.Identify(testInfo)
+			if err != nil || ownership == nil {
+				t.Fatalf("Identify() = %v, %v", ownership, err)
+			}
+			if ownership.Component != "Unknown" || ownership.Priority != 0 {
+				t.Errorf("Identify() = %s/%d, want Unknown/0", ownership.Component, ownership.Priority)
+			}
+			if !reflect.DeepEqual(ownership.Capabilities, []string{DefaultCapability}) {
+				t.Errorf("Identify() capabilities = %v, want [%s]", ownership.Capabilities, DefaultCapability)
+			}
+		})
+	}
 }
 
 func TestKnownOPPMisroutes(t *testing.T) {
@@ -355,9 +404,9 @@ func TestLPAdditionalCapabilities(t *testing.T) {
 		{"ACM-lp-interop", "[Feature:LPFeature] checks workload", []string{"LPFeature"}, "LP--ACM"},
 		{"lp-chaos--ACM--GRC", "[Feature:Chaos] checks workload", []string{"Chaos"}, "LP--ACM"},
 		{"lp-ocp-compat--CNV--Testing VM workload.", "[Feature:Compatibility] checks workload", []string{"Compatibility"}, "LP--CNV"},
-		{"lp-interop--OPP--Observability", "[Feature:LPFeature] checks workload", []string{"LPFeature", "opp"}, "LP--ACM"},
+		{"lp-interop--ACM--OPP--acm", "[Feature:LPFeature] checks workload", []string{"LPFeature", "OPP"}, "LP--ACM"},
 		{"CNV-lp-interop", "[Feature:ResourceQuota] checks quota", []string{"ResourceQuota"}, "kube-controller-manager"},
-		{"lp-interop--OPP--Observability", "[Feature:ResourceQuota] checks quota", []string{"ResourceQuota"}, "kube-controller-manager"},
+		{"lp-interop--ACM--OPP--acm", "[Feature:ResourceQuota] checks quota", []string{"ResourceQuota"}, "kube-controller-manager"},
 	}
 	identifier := NewTestIdentifier(registry.NewComponentRegistry(), nil)
 	for _, testCase := range tests {

@@ -22,8 +22,7 @@ var LPcnvComponent = Component{
 			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--CNV--`)},
 			//  LP Interop Test Suites: Capability is used to group Runtime Env.
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--CNV--ACM\+Virt--`), Capabilities: []string{"ACM+Virt"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--CNV--OPP--`), Capabilities: []string{"opp"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--CNV--`), Capabilities: []string{"ACM+Virt"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--CNV--OPP--`), Capabilities: []string{"OPP"}},
 		},
 	},
 }
