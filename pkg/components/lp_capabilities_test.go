@@ -38,29 +38,31 @@ var lpCapabilityTests = []struct {
 	{"lp-interop--CNV--ACM+Virt-Testing VM workload.", "LP--CNV", "ACM+Virt"},
 	{"lp-interop--ACM--standalone", "LP--ACM", "ACM+Virt"},
 	{"lp-interop--CNV--standalone", "LP--CNV", "ACM+Virt"},
-	{"lp-chaos--ACM--ACM+Virt--GRC", "LP--ACM", "ACM+Virt"},
-	{"lp-chaos--CNV--ACM+Virt--Testing VM workload.", "LP--CNV", "ACM+Virt"},
-	{"lp-ocp-compat--ACM--ACM+Virt--GRC", "LP--ACM", "ACM+Virt"},
-	{"lp-ocp-compat--CNV--ACM+Virt--Testing VM workload.", "LP--CNV", "ACM+Virt"},
+	{"lp-chaos--ACM--ACM+Virt--GRC", "LP--ACM", ""},
+	{"lp-chaos--CNV--ACM+Virt--Testing VM workload.", "LP--CNV", ""},
+	{"lp-ocp-compat--ACM--ACM+Virt--GRC", "LP--ACM", ""},
+	{"lp-ocp-compat--CNV--ACM+Virt--Testing VM workload.", "LP--CNV", ""},
 	{"lp-interop--OPP--Observability", "LP--ACM", "opp"},
 	{"acm-opp-app", "LP--ACM", "opp"},
 	{"lp-interop--OPP--acm", "LP--ACM", "opp"},
 	{"lp-interop--ACM-OBS-ODF", "LP--ACM", "opp"},
-	// Canonical component-first OPP suite names (ADR 0007) route with the
-	// opp capability; for ACM this is also the ACM+Virt negative (ADR 0007
-	// assigns capability opp, not ACM+Virt, to canonical OPP suites).
-	// OPP matchers exist for exactly ACM/ACS/ODF/Quay plus OCP in
-	// lp-interop--OPP; any other product's --OPP-- suite would fall to its
-	// broad rule (capability Other/ACM+Virt) — add a matcher and rows here
-	// when a product joins the OPP lane.
+	// Canonical component-first OPP suite names (agreed 2026-10-23) route
+	// with the opp capability; for ACM this is also the ACM+Virt negative
+	// (canonical OPP suites carry the opp capability, not ACM+Virt).
+	// OPP matchers exist for ACM/ACS/CNV/ODF/Quay; canonical OCP-class
+	// platform-infra suites (lp-interop--OCP--OPP--*) intentionally remain
+	// Unknown — no OCP component is registered, and the lp-interop--OPP
+	// component was removed per review (0 rows in both datasets). When an
+	// OCP home is decided, add a matcher and rows for it.
 	{"lp-interop--ACM--OPP--acm/policy/all", "LP--ACM", "opp"},
 	{"lp-interop--ACM--OPP--acm/policy/smoke", "LP--ACM", "opp"},
 	{"lp-interop--ACM--OPP--acm/lifecycle/all", "LP--ACM", "opp"},
 	{"lp-interop--ACM--OPP--acm/lifecycle/smoke", "LP--ACM", "opp"},
 	{"lp-interop--ACS--OPP--acs/all", "LP--ACS", "opp"},
+	{"lp-interop--CNV--OPP--cnv/lifecycle/all", "LP--CNV", "opp"},
+	{"lp-interop--CNV--OPP--cnv/lifecycle/smoke", "LP--CNV", "opp"},
 	{"lp-interop--ODF--OPP--odf/all", "LP--ODF", "opp"},
 	{"lp-interop--Quay--OPP--quay/smoke", "LP--Quay", "opp"},
-	{"lp-interop--OCP--OPP--wait-mcp", "lp-interop--OPP", "opp"},
 	// Broad-rule outcome pins: the broad ^lp-interop--<COMP>-- rules are
 	// unchanged by the OPP additions above (no capability for ACS/ODF/Quay).
 	{"lp-interop--ACS--standalone", "LP--ACS", ""},
@@ -238,6 +240,11 @@ var knownOPPMisroutes = []struct {
 	{"acm-connectivity", "lp-interop--OPP--smoke", "Unknown", []string{DefaultCapability}, 0},
 	{"backup", "lp-interop--OPP--backup", "Unknown", []string{DefaultCapability}, 0},
 	{"wait-mcp", "lp-interop--OPP--wait-mcp", "Unknown", []string{DefaultCapability}, 0},
+	// Canonical OCP-class platform-infra suites stay Unknown too: no OCP
+	// component is registered and the lp-interop--OPP component was removed
+	// per review (0 rows in both datasets). TODO: give these a home when the
+	// OCP component question is decided.
+	{"wait-mcp", "lp-interop--OCP--OPP--wait-mcp", "Unknown", []string{DefaultCapability}, 0},
 	{"odf-upgrade", "lp-interop--OPP--odf-upgrade", "Cluster Version Operator", []string{"ClusterUpgrade"}, -10},
 	{"quay-upgrade", "lp-interop--OPP--quay-upgrade", "Cluster Version Operator", []string{"ClusterUpgrade"}, -10},
 }
@@ -346,8 +353,8 @@ func TestLPAdditionalCapabilities(t *testing.T) {
 		{"CNV-lp-interop", "[Feature:LPFeature] checks workload", []string{"ACM+Virt", "LPFeature"}, "LP--CNV"},
 		{"CNV-lp-interop", "[Feature:ACM+Virt] checks workload", []string{"ACM+Virt"}, "LP--CNV"},
 		{"ACM-lp-interop", "[Feature:LPFeature] checks workload", []string{"LPFeature"}, "LP--ACM"},
-		{"lp-chaos--ACM--GRC", "[Feature:Chaos] checks workload", []string{"ACM+Virt", "Chaos"}, "LP--ACM"},
-		{"lp-ocp-compat--CNV--Testing VM workload.", "[Feature:Compatibility] checks workload", []string{"ACM+Virt", "Compatibility"}, "LP--CNV"},
+		{"lp-chaos--ACM--GRC", "[Feature:Chaos] checks workload", []string{"Chaos"}, "LP--ACM"},
+		{"lp-ocp-compat--CNV--Testing VM workload.", "[Feature:Compatibility] checks workload", []string{"Compatibility"}, "LP--CNV"},
 		{"lp-interop--OPP--Observability", "[Feature:LPFeature] checks workload", []string{"LPFeature", "opp"}, "LP--ACM"},
 		{"CNV-lp-interop", "[Feature:ResourceQuota] checks quota", []string{"ResourceQuota"}, "kube-controller-manager"},
 		{"lp-interop--OPP--Observability", "[Feature:ResourceQuota] checks quota", []string{"ResourceQuota"}, "kube-controller-manager"},
