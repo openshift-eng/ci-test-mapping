@@ -17,7 +17,6 @@ var LPodfComponent = Component{
 		Operators:            []string{},
 		DefaultJiraComponent: "LP--ODF",
 		Matchers: []config.ComponentMatcher{
-			{Suite: "ODF-lp-interop"},
 			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--ODF--`)},
 			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ODF--`)},
 			//  LP Interop Test Suites: Capability is used to group Runtime Env.

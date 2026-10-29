@@ -17,7 +17,6 @@ var LPacmComponent = Component{
 		Operators:            []string{},
 		DefaultJiraComponent: "LP--ACM",
 		Matchers: []config.ComponentMatcher{
-			{Suite: "ACM-lp-interop"},
 			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--ACM--`)},
 			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ACM--`)},
 			//  LP Interop Test Suites: Capability is used to group Runtime Env.

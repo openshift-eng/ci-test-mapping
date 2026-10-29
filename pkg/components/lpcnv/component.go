@@ -17,7 +17,6 @@ var LPcnvComponent = Component{
 		Operators:            []string{},
 		DefaultJiraComponent: "LP--CNV",
 		Matchers: []config.ComponentMatcher{
-			{Suite: "CNV-lp-interop", Capabilities: []string{"ACM+Virt"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--CNV--`)},
 			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--CNV--`)},
 			//  LP Interop Test Suites: Capability is used to group Runtime Env.

@@ -17,7 +17,6 @@ var LPacsComponent = Component{
 		Operators:            []string{},
 		DefaultJiraComponent: "LP--ACS",
 		Matchers: []config.ComponentMatcher{
-			{Suite: "ACS-lp-interop"},
 			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--ACS--`)},
 			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ACS--`)},
 			//  LP Interop Test Suites: Capability is used to group Runtime Env.

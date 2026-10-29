@@ -17,7 +17,6 @@ var LPquayComponent = Component{
 		Operators:            []string{},
 		DefaultJiraComponent: "LP--Quay",
 		Matchers: []config.ComponentMatcher{
-			{Suite: "Quay-lp-interop"},
 			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--Quay--`)},
 			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--Quay--`)},
 			//  LP Interop Test Suites: Capability is used to group Runtime Env.

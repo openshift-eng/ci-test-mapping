@@ -50,8 +50,6 @@ var lpCapabilityTests = []struct {
 	{"lp-interop--CNV--OPP--cnv/lifecycle/smoke", "LP--CNV", "OPP"},
 	{"lp-interop--ODF--OPP--odf/all", "LP--ODF", "OPP"},
 	{"lp-interop--Quay--OPP--quay/smoke", "LP--Quay", "OPP"},
-	{"ACM-lp-interop", "LP--ACM", ""},
-	{"CNV-lp-interop", "LP--CNV", "ACM+Virt"},
 }
 
 func TestLPCapabilities(t *testing.T) {
@@ -167,12 +165,14 @@ func TestLPMatcherPrecedence(t *testing.T) {
 				t.Errorf("FindMatch() = %+v, want no match", matcher)
 			}
 		})
-		t.Run(component.name+"/exact flat suite", func(t *testing.T) {
+		// The legacy exact-Suite matchers ("<X>-lp-interop") were removed
+		// per maintainer review (2026-10-29): producers migrate to the
+		// canonical lp-interop--<X>-- prefix (openshift/release#86217).
+		t.Run(component.name+"/flat suite unclaimed", func(t *testing.T) {
 			t.Parallel()
 			suite := component.name + "-lp-interop"
-			matcher := component.component.FindMatch(&v1.TestInfo{Suite: suite})
-			if matcher == nil || matcher.Suite != suite || matcher.SuiteRegEx != nil {
-				t.Errorf("FindMatch() = %+v, want exact suite %q", matcher, suite)
+			if matcher := component.component.FindMatch(&v1.TestInfo{Suite: suite}); matcher != nil {
+				t.Errorf("FindMatch() = %+v, want no match for flat suite %q", matcher, suite)
 			}
 			if matcher := component.component.FindMatch(&v1.TestInfo{Suite: suite + "--extra"}); matcher != nil {
 				t.Errorf("FindMatch() = %+v, want no match for suffixed flat suite", matcher)
@@ -259,11 +259,18 @@ var oppYieldPins = []struct {
 
 // knownUnroutedSuites pins the LP suites whose matchers were removed per the
 // exact structure agreed in review: the broad ^lp-interop--<COMP>-- rules,
-// ^lp-interop--ACM-Virt--, and the runtime-first OPP test patterns. They now
+// ^lp-interop--ACM-Virt--, the runtime-first OPP test patterns, and the
+// legacy exact-Suite matchers ("<X>-lp-interop", removed per maintainer
+// review 2026-10-29 — producers migrate to the canonical prefix). They now
 // resolve to Unknown; TODO(INTEROP-9629): producers emit canonical
 // lp-interop--<COMP>--OPP--* names (openshift/release#86217) and these rows
 // disappear as the raw emissions retire.
 var knownUnroutedSuites = []string{
+	"ACM-lp-interop",
+	"ACS-lp-interop",
+	"CNV-lp-interop",
+	"ODF-lp-interop",
+	"Quay-lp-interop",
 	"lp-interop--ACM-Virt--GRC",
 	"lp-interop--ACM-Virt--observability",
 	"lp-interop--ACM--ACMVirt--GRC",
@@ -398,9 +405,11 @@ func TestLPAdditionalCapabilities(t *testing.T) {
 		wantCapabilities []string
 		wantComponent    string
 	}{
-		{"CNV-lp-interop", "[Feature:LPFeature] checks workload", []string{"ACM+Virt", "LPFeature"}, "LP--CNV"},
-		{"CNV-lp-interop", "[Feature:ACM+Virt] checks workload", []string{"ACM+Virt"}, "LP--CNV"},
-		{"ACM-lp-interop", "[Feature:LPFeature] checks workload", []string{"LPFeature"}, "LP--ACM"},
+		// The flat "<X>-lp-interop" suites lost their legacy claimant per
+		// review; name-derived capabilities still apply on the Unknown path.
+		{"CNV-lp-interop", "[Feature:LPFeature] checks workload", []string{"LPFeature"}, "Unknown"},
+		{"CNV-lp-interop", "[Feature:ACM+Virt] checks workload", []string{"ACM+Virt"}, "Unknown"},
+		{"ACM-lp-interop", "[Feature:LPFeature] checks workload", []string{"LPFeature"}, "Unknown"},
 		{"lp-chaos--ACM--GRC", "[Feature:Chaos] checks workload", []string{"Chaos"}, "LP--ACM"},
 		{"lp-ocp-compat--CNV--Testing VM workload.", "[Feature:Compatibility] checks workload", []string{"Compatibility"}, "LP--CNV"},
 		{"lp-interop--ACM--OPP--acm", "[Feature:LPFeature] checks workload", []string{"LPFeature", "OPP"}, "LP--ACM"},
