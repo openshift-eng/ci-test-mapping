@@ -294,7 +294,6 @@ func TestKnownUnroutedLPSuites(t *testing.T) {
 	t.Parallel()
 	identifier := NewTestIdentifier(registry.NewComponentRegistry(), nil)
 	for _, suite := range knownUnroutedSuites {
-		suite := suite
 		t.Run(suite, func(t *testing.T) {
 			t.Parallel()
 			testInfo := &v1.TestInfo{Name: "should preserve VM workload availability", Suite: suite}
