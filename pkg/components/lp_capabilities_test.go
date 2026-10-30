@@ -165,14 +165,16 @@ func TestLPMatcherPrecedence(t *testing.T) {
 				t.Errorf("FindMatch() = %+v, want no match", matcher)
 			}
 		})
-		// The legacy exact-Suite matchers ("<X>-lp-interop") were removed
-		// per maintainer review (2026-10-29): producers migrate to the
-		// canonical lp-interop--<X>-- prefix (openshift/release#86217).
-		t.Run(component.name+"/flat suite unclaimed", func(t *testing.T) {
+		// The legacy exact-Suite matchers ("<X>-lp-interop") were restored per
+		// maintainer direction (etirta, 2026-10-30): live rows still carry
+		// the flat names. The claim is exact — suffixed variants must not
+		// match.
+		t.Run(component.name+"/flat suite claimed", func(t *testing.T) {
 			t.Parallel()
 			suite := component.name + "-lp-interop"
-			if matcher := component.component.FindMatch(&v1.TestInfo{Suite: suite}); matcher != nil {
-				t.Errorf("FindMatch() = %+v, want no match for flat suite %q", matcher, suite)
+			matcher := component.component.FindMatch(&v1.TestInfo{Suite: suite})
+			if matcher == nil || matcher.Suite != suite {
+				t.Errorf("FindMatch() = %+v, want exact-Suite match for flat suite %q", matcher, suite)
 			}
 			if matcher := component.component.FindMatch(&v1.TestInfo{Suite: suite + "--extra"}); matcher != nil {
 				t.Errorf("FindMatch() = %+v, want no match for suffixed flat suite", matcher)
@@ -236,10 +238,12 @@ var knownOPPMisroutes = []struct {
 	{"wait-mcp", "lp-interop--OCP--OPP--wait-mcp", "Unknown", []string{DefaultCapability}, 0},
 	{"odf-upgrade", "lp-interop--OPP--odf-upgrade", "Cluster Version Operator", []string{"ClusterUpgrade"}, -10},
 	{"quay-upgrade", "lp-interop--OPP--quay-upgrade", "Cluster Version Operator", []string{"ClusterUpgrade"}, -10},
-	// The runtime-first OPP test patterns were removed per the exact
-	// structure agreed in review, so their upgrade-flavoured names lose the
-	// LP component claim and are stolen by Cluster Version Operator.
-	{"acm-upgrade", "lp-interop--OPP--acm-upgrade", "Cluster Version Operator", []string{"ClusterUpgrade"}, -10},
+	// ^lp-interop--OPP--acm was restored per maintainer direction (etirta,
+	// 2026-10-30), so its upgrade-flavoured names are claimed by LP--ACM
+	// again (base behavior) instead of being stolen by Cluster Version
+	// Operator. The ACS pattern stays removed (0 live rows), so acs-upgrade
+	// names are still stolen.
+	{"acm-upgrade", "lp-interop--OPP--acm-upgrade", "LP--ACM", []string{"opp"}, 0},
 	{"acs-upgrade", "lp-interop--OPP--acs-upgrade", "Cluster Version Operator", []string{"ClusterUpgrade"}, -10},
 }
 
@@ -259,18 +263,16 @@ var oppYieldPins = []struct {
 
 // knownUnroutedSuites pins the LP suites whose matchers were removed per the
 // exact structure agreed in review: the broad ^lp-interop--<COMP>-- rules,
-// ^lp-interop--ACM-Virt--, the runtime-first OPP test patterns, and the
-// legacy exact-Suite matchers ("<X>-lp-interop", removed per maintainer
-// review 2026-10-29 — producers migrate to the canonical prefix). They now
-// resolve to Unknown; TODO(INTEROP-9629): producers emit canonical
-// lp-interop--<COMP>--OPP--* names (openshift/release#86217) and these rows
-// disappear as the raw emissions retire.
+// ^lp-interop--ACM-Virt--, and the runtime-first OPP test patterns with no
+// live rows. They now resolve to Unknown; TODO(INTEROP-9629): producers emit
+// canonical lp-interop--<COMP>--OPP--* names (openshift/release#86217) and
+// these rows disappear as the raw emissions retire. The legacy flat
+// "<X>-lp-interop" suites and the runtime-first OPP patterns that still
+// carry live rows are NOT unrouted: their matchers were restored per
+// maintainer direction (etirta, 2026-10-30) — the flat suites are pinned
+// positively in TestLPAdditionalCapabilities, and the live-row runtime-first
+// OPP patterns are restored in the component matcher lists.
 var knownUnroutedSuites = []string{
-	"ACM-lp-interop",
-	"ACS-lp-interop",
-	"CNV-lp-interop",
-	"ODF-lp-interop",
-	"Quay-lp-interop",
 	"lp-interop--ACM-Virt--GRC",
 	"lp-interop--ACM-Virt--observability",
 	"lp-interop--ACM--ACMVirt--GRC",
@@ -288,13 +290,7 @@ var knownUnroutedSuites = []string{
 	"lp-interop--Quay--standalone",
 	"lp-interop--OPP--Observability",
 	"acm-opp-app",
-	"lp-interop--OPP--acm",
-	"lp-interop--ACM-OBS-ODF",
 	"lp-interop--OPP--acs",
-	"lp-interop--OPP--pytest",
-	"lp-interop--ODF",
-	"lp-interop--OPP--odf-health",
-	"lp-interop--OPP--QUAY",
 }
 
 func TestKnownUnroutedLPSuites(t *testing.T) {
@@ -405,14 +401,23 @@ func TestLPAdditionalCapabilities(t *testing.T) {
 		wantCapabilities []string
 		wantComponent    string
 	}{
-		// The flat "<X>-lp-interop" suites lost their legacy claimant per
-		// review; name-derived capabilities still apply on the Unknown path.
-		{"CNV-lp-interop", "[Feature:LPFeature] checks workload", []string{"LPFeature"}, "Unknown"},
-		{"CNV-lp-interop", "[Feature:ACM+Virt] checks workload", []string{"ACM+Virt"}, "Unknown"},
-		{"ACM-lp-interop", "[Feature:LPFeature] checks workload", []string{"LPFeature"}, "Unknown"},
+		// The flat "<X>-lp-interop" suites are claimed by the restored legacy
+		// exact-Suite matchers (etirta, 2026-10-30); name-derived capabilities
+		// still apply on the claimed path.
+		{"CNV-lp-interop", "[Feature:LPFeature] checks workload", []string{"LPFeature"}, "LP--CNV"},
+		{"CNV-lp-interop", "[Feature:ACM+Virt] checks workload", []string{"ACM+Virt"}, "LP--CNV"},
+		{"ACM-lp-interop", "[Feature:LPFeature] checks workload", []string{"LPFeature"}, "LP--ACM"},
 		{"lp-chaos--ACM--GRC", "[Feature:Chaos] checks workload", []string{"Chaos"}, "LP--ACM"},
 		{"lp-ocp-compat--CNV--Testing VM workload.", "[Feature:Compatibility] checks workload", []string{"Compatibility"}, "LP--CNV"},
 		{"lp-interop--ACM--OPP--acm", "[Feature:LPFeature] checks workload", []string{"LPFeature", "OPP"}, "LP--ACM"},
+		// Restored runtime-first OPP patterns (etirta, 2026-10-30) claim their
+		// live-row suites with the base capability value.
+		{"lp-interop--OPP--pytest", "test_rwo_dynamic_pvc[CephBlockPool-Delete]", []string{"opp"}, "LP--ODF"},
+		{"lp-interop--OPP--QUAY", "test_quay_registry_operational", []string{"opp"}, "LP--Quay"},
+		{"lp-interop--OPP--acm-obs-odf", "thanos-health", []string{"opp"}, "LP--ACM"},
+		{"lp-interop--ACM-OBS-ODF", "thanos-query", []string{"opp"}, "LP--ACM"},
+		// kube-controller-manager keeps this row: its ResourceQuota name
+		// matcher carries Priority 2 and beats the flat suite claim (Priority 0).
 		{"CNV-lp-interop", "[Feature:ResourceQuota] checks quota", []string{"ResourceQuota"}, "kube-controller-manager"},
 		{"lp-interop--ACM--OPP--acm", "[Feature:ResourceQuota] checks quota", []string{"ResourceQuota"}, "kube-controller-manager"},
 	}
