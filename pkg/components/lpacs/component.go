@@ -17,13 +17,16 @@ var LPacsComponent = Component{
 		Operators:            []string{},
 		DefaultJiraComponent: "LP--ACS",
 		Matchers: []config.ComponentMatcher{
+			// Legacy flat suite, restored per maintainer direction (etirta,
+			// 2026-10-30): map-verify validates against the periodically
+			// refreshed junit.json snapshot, which still carries live rows with
+			// this exact suite name. Do not remove until the flat emissions
+			// retire (INTEROP-9629 lineage).
 			{Suite: "ACS-lp-interop"},
-			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ACS--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACS--`)},
 			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--ACS--`)},
-			// OPP test patterns with opp capability
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--acs`), Capabilities: []string{"opp"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--ACS`), Capabilities: []string{"opp"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ACS--`)},
+			//  LP Interop Test Suites: Capability is used to group Runtime Env.
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACS--OPP--`), Capabilities: []string{"OPP"}},
 		},
 	},
 }

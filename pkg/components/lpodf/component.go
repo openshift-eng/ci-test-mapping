@@ -17,11 +17,19 @@ var LPodfComponent = Component{
 		Operators:            []string{},
 		DefaultJiraComponent: "LP--ODF",
 		Matchers: []config.ComponentMatcher{
+			// Legacy flat suite, restored per maintainer direction (etirta,
+			// 2026-10-30): map-verify validates against the periodically
+			// refreshed junit.json snapshot, which still carries live rows with
+			// this exact suite name. Do not remove until the flat emissions
+			// retire (INTEROP-9629 lineage).
 			{Suite: "ODF-lp-interop"},
-			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ODF--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ODF--`)},
 			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--ODF--`)},
-			// OPP test patterns with opp capability
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ODF--`)},
+			//  LP Interop Test Suites: Capability is used to group Runtime Env.
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ODF--OPP--`), Capabilities: []string{"OPP"}},
+			// Legacy runtime-first OPP patterns, restored per maintainer
+			// direction (etirta, 2026-10-30): live rows still carry these
+			// suite names. Do not remove until the emissions retire.
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--pytest`), Capabilities: []string{"opp"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ODF$`), Capabilities: []string{"opp"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--odf-health`), Capabilities: []string{"opp"}},

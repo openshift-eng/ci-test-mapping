@@ -17,11 +17,19 @@ var LPquayComponent = Component{
 		Operators:            []string{},
 		DefaultJiraComponent: "LP--Quay",
 		Matchers: []config.ComponentMatcher{
+			// Legacy flat suite, restored per maintainer direction (etirta,
+			// 2026-10-30): map-verify validates against the periodically
+			// refreshed junit.json snapshot, which still carries live rows with
+			// this exact suite name. Do not remove until the flat emissions
+			// retire (INTEROP-9629 lineage).
 			{Suite: "Quay-lp-interop"},
-			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--Quay--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--Quay--`)},
 			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--Quay--`)},
-			// OPP test patterns with opp capability
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--Quay--`)},
+			//  LP Interop Test Suites: Capability is used to group Runtime Env.
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--Quay--OPP--`), Capabilities: []string{"OPP"}},
+			// Legacy runtime-first OPP pattern, restored per maintainer
+			// direction (etirta, 2026-10-30): live rows still carry this
+			// suite name. Do not remove until the emissions retire.
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--QUAY`), Capabilities: []string{"opp"}},
 		},
 	},
