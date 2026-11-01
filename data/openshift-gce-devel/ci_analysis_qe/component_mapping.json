@@ -161341,6 +161341,102 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "GCP HCP E2E Test Suite:950339fb9f47f09c071f9dbccb47399d",
+    "Name": "[It] ArgoCD Application Sync Management Cluster should have ArgoCD namespace [argocd, mc]",
+    "Suite": "GCP HCP E2E Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "GCP HCP E2E Test Suite:e213766bcee2cd1a69591831256c39d1",
+    "Name": "[It] ArgoCD Application Sync Management Cluster should have ArgoCD server deployment ready [argocd, mc]",
+    "Suite": "GCP HCP E2E Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "GCP HCP E2E Test Suite:4bd04db47ac89e9c983191895436f5a4",
+    "Name": "[It] ArgoCD Application Sync Management Cluster should have all applications synced [argocd, mc]",
+    "Suite": "GCP HCP E2E Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "GCP HCP E2E Test Suite:34d6718dff556059f64f05c36de1ae0b",
+    "Name": "[It] ArgoCD Application Sync Region Cluster should have ArgoCD namespace [argocd, region]",
+    "Suite": "GCP HCP E2E Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "GCP HCP E2E Test Suite:3206c1f52d9724e4ca3df1c032e8dca4",
+    "Name": "[It] ArgoCD Application Sync Region Cluster should have ArgoCD server deployment ready [argocd, region]",
+    "Suite": "GCP HCP E2E Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "GCP HCP E2E Test Suite:00a8a7cb35f5036bc09d2a6c489a805f",
+    "Name": "[It] ArgoCD Application Sync Region Cluster should have all applications synced [argocd, region]",
+    "Suite": "GCP HCP E2E Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "Cluster_Infrastructure:3e9ed31500bf05692f2a0d10bc4bb6ca",
     "Name": "[It] Autoscaler should use a ClusterAutoscaler that has 100 maximum total nodes count It scales from/to zero [autoscaler, disruptive, Serial, periodic]",
     "Suite": "Cluster_Infrastructure",
@@ -164400,6 +164496,22 @@
     "ID": "Controllers Integration Suite:5ec3e1306bdaa53e8027997f27dff7f2",
     "Name": "[It] Controllers/Podplacement/PodReconciler when The node affinity scoring plugin is enabled with different types of preferred affinities skips appending the ClusterPodPlacementConfig node affinity to the predefined preferred affinities",
     "Suite": "Controllers Integration Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "GCP HCP E2E Test Suite:417dfe4383040381e67eaef9118c854c",
+    "Name": "[It] Hosted Cluster Lifecycle should create, verify, and delete a hosted cluster [hc-lifecycle]",
+    "Suite": "GCP HCP E2E Test Suite",
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
