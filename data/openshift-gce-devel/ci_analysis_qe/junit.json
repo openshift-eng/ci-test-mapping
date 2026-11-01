@@ -40332,6 +40332,30 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[It] ArgoCD Application Sync Management Cluster should have ArgoCD namespace [argocd, mc]",
+    "Suite": "GCP HCP E2E Test Suite"
+  },
+  {
+    "Name": "[It] ArgoCD Application Sync Management Cluster should have ArgoCD server deployment ready [argocd, mc]",
+    "Suite": "GCP HCP E2E Test Suite"
+  },
+  {
+    "Name": "[It] ArgoCD Application Sync Management Cluster should have all applications synced [argocd, mc]",
+    "Suite": "GCP HCP E2E Test Suite"
+  },
+  {
+    "Name": "[It] ArgoCD Application Sync Region Cluster should have ArgoCD namespace [argocd, region]",
+    "Suite": "GCP HCP E2E Test Suite"
+  },
+  {
+    "Name": "[It] ArgoCD Application Sync Region Cluster should have ArgoCD server deployment ready [argocd, region]",
+    "Suite": "GCP HCP E2E Test Suite"
+  },
+  {
+    "Name": "[It] ArgoCD Application Sync Region Cluster should have all applications synced [argocd, region]",
+    "Suite": "GCP HCP E2E Test Suite"
+  },
+  {
     "Name": "[It] Autoscaler should use a ClusterAutoscaler that has 100 maximum total nodes count It scales from/to zero [autoscaler, disruptive, Serial, periodic]",
     "Suite": "Cluster_Infrastructure"
   },
@@ -41098,6 +41122,10 @@
   {
     "Name": "[It] Controllers/Podplacement/PodReconciler when The node affinity scoring plugin is enabled with different types of preferred affinities skips appending the ClusterPodPlacementConfig node affinity to the predefined preferred affinities",
     "Suite": "Controllers Integration Suite"
+  },
+  {
+    "Name": "[It] Hosted Cluster Lifecycle should create, verify, and delete a hosted cluster [hc-lifecycle]",
+    "Suite": "GCP HCP E2E Test Suite"
   },
   {
     "Name": "[It] Internal/Controller/PodPlacement/scheduling_gate_mutating_webhook when The scheduling gat mutating webhook is handling the mutation of pods should ignore pods with a non-empty nodeName",

@@ -29084,6 +29084,10 @@
     "Suite": "Serverless-lp-interop"
   },
   {
+    "Name": "TestBrokerConformance/Prerequisite/#00/Setup/install_broker_\"broker-patlupiy\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestBrokerConformance/Prerequisite/#00/Setup/install_broker_\"broker-pfugegwm\"",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -32432,6 +32436,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestBrokerSupportsAuthZ/Prerequisite/#00/Setup/install_broker_\"broker-oevnpezs\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestBrokerSupportsAuthZ/Prerequisite/#00/Setup/install_broker_\"broker-ofyoypzc\"",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -33374,6 +33382,10 @@
   {
     "Name": "TestBrokerSupportsOIDC/Prerequisite/#00/Setup/install_broker_\"broker-efbbbxhj\"",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestBrokerSupportsOIDC/Prerequisite/#00/Setup/install_broker_\"broker-elncrqjd\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestBrokerSupportsOIDC/Prerequisite/#00/Setup/install_broker_\"broker-elvupqtc\"",
@@ -36173,6 +36185,10 @@
   },
   {
     "Name": "TestChannelBasedBrokerToKsvc/Prerequisite/#00/Setup/install_broker_\"broker-touhlbmi\"",
+    "Suite": "lp-ocp-compat--Serverless--test/eventinge2erekt"
+  },
+  {
+    "Name": "TestChannelBasedBrokerToKsvc/Prerequisite/#00/Setup/install_broker_\"broker-tqlxormu\"",
     "Suite": "lp-ocp-compat--Serverless--test/eventinge2erekt"
   },
   {
@@ -49256,6 +49272,10 @@
     "Suite": "Serverless-lp-interop"
   },
   {
+    "Name": "TestKafkaSinkSupportsAuthZ/Prerequisite#01/#00/Setup/install_KafkaSink_\"kafkasink-klogjlwi\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestKafkaSinkSupportsAuthZ/Prerequisite#01/#00/Setup/install_KafkaSink_\"kafkasink-kqxeuoyj\"",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -50041,6 +50061,10 @@
   },
   {
     "Name": "TestKafkaSinkSupportsAuthZ/Prerequisite/#00/Setup/install_Topic_\"topic-jsfxbtyt\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestKafkaSinkSupportsAuthZ/Prerequisite/#00/Setup/install_Topic_\"topic-jsyebhay\"",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -51788,6 +51812,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestKafkaSinkSupportsOIDC/Prerequisite#01/#00/Setup/install_KafkaSink_\"kafkasink-yxlcvzha\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestKafkaSinkSupportsOIDC/Prerequisite#01/#00/Setup/install_KafkaSink_\"kafkasink-zblfjyuq\"",
     "Suite": "Serverless-lp-interop"
   },
@@ -52237,6 +52265,10 @@
   },
   {
     "Name": "TestKafkaSinkSupportsOIDC/Prerequisite/#00/Setup/install_Topic_\"topic-loektayk\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestKafkaSinkSupportsOIDC/Prerequisite/#00/Setup/install_Topic_\"topic-lousossu\"",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -59116,6 +59148,10 @@
     "Suite": "Serverless-lp-interop"
   },
   {
+    "Name": "TestNamespacedBrokerNamespaceDeletion/delete_namespace/Assert/wait_for_namespace_test-namespaced-broker-zanknqzp_to_be_deleted",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNamespacedBrokerNamespaceDeletion/delete_namespace/Assert/wait_for_namespace_test-namespaced-broker-zditddnn_to_be_deleted",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -59982,6 +60018,10 @@
   {
     "Name": "TestNamespacedBrokerNamespaceDeletion/delete_namespace/Setup/delete_namespace_test-namespaced-broker-yqrofupf",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNamespacedBrokerNamespaceDeletion/delete_namespace/Setup/delete_namespace_test-namespaced-broker-zanknqzp",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNamespacedBrokerNamespaceDeletion/delete_namespace/Setup/delete_namespace_test-namespaced-broker-zditddnn",
@@ -60876,6 +60916,10 @@
     "Suite": "Serverless-lp-interop"
   },
   {
+    "Name": "TestNamespacedBrokerNamespaceDeletion/setup_namespace/Setup/install_namespace_test-namespaced-broker-zanknqzp",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNamespacedBrokerNamespaceDeletion/setup_namespace/Setup/install_namespace_test-namespaced-broker-zditddnn",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -61206,6 +61250,10 @@
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-bahnlrqp",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-bamifvdj",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-baskoxzu",
@@ -62025,6 +62073,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-hwuqmvhy",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-hxfuzhzq",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -62905,6 +62957,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-omjhqnvj",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-omxnnoch",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -64097,6 +64153,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-xvszuzrl",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-xvtcidai",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -66132,6 +66192,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-ibmgxpsq",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-ibwsdavg",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -66520,6 +66584,10 @@
     "Suite": "Serverless-lp-interop"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-jzsoahxg",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-kawgpjkv",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -66733,6 +66801,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-ljblvblp",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-lkobwvdl",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -68060,6 +68132,10 @@
     "Suite": "Serverless-lp-interop"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-sohmcvlk",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-sohtwnvk",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -68536,6 +68612,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-vfjfdwhr",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-vftlcrkb",
     "Suite": "Serverless-lp-interop"
   },
@@ -68789,6 +68869,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-wnjzexvw",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-woiuqadz",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -69817,6 +69901,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/CloudEvents_SQL_filter/Requirement/Install_event_sender_sender-egznhnfn",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/CloudEvents_SQL_filter/Requirement/Install_event_sender_sender-ehtrgnjb",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -71128,6 +71216,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/CloudEvents_SQL_filter/Requirement/Install_event_sender_sender-zewgqzak",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/CloudEvents_SQL_filter/Requirement/Install_event_sender_sender-zfucizgj",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -71812,6 +71904,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/Exact_filter/Requirement/Install_event_sender_sender-jpxydnwp",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Exact_filter/Requirement/Install_event_sender_sender-jtcwosrz",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -71950,6 +72046,10 @@
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Exact_filter/Requirement/Install_event_sender_sender-lvidkfqc",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/Exact_filter/Requirement/Install_event_sender_sender-lxfvjubl",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Exact_filter/Requirement/Install_event_sender_sender-lzcwwdfb",
@@ -72992,6 +73092,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/FilterAttributeWithEmptyFiltersFeature/Requirement/Install_event_sender_sender-apkmjoru",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/FilterAttributeWithEmptyFiltersFeature/Requirement/Install_event_sender_sender-aqqpsggp",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -73278,6 +73382,10 @@
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/FilterAttributeWithEmptyFiltersFeature/Requirement/Install_event_sender_sender-fydknsmt",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/FilterAttributeWithEmptyFiltersFeature/Requirement/Install_event_sender_sender-gbdtcwpx",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/FilterAttributeWithEmptyFiltersFeature/Requirement/Install_event_sender_sender-gbrksecu",
@@ -74812,6 +74920,10 @@
     "Suite": "Serverless-lp-interop"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/FiltersOverrideAttributeFilterFeature/Requirement/Install_event_sender_sender-dbduablg",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/FiltersOverrideAttributeFilterFeature/Requirement/Install_event_sender_sender-dbtozggu",
     "Suite": "Serverless-lp-interop"
   },
@@ -75426,6 +75538,10 @@
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/FiltersOverrideAttributeFilterFeature/Requirement/Install_event_sender_sender-mqxwvxqs",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/FiltersOverrideAttributeFilterFeature/Requirement/Install_event_sender_sender-mslqwbil",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/FiltersOverrideAttributeFilterFeature/Requirement/Install_event_sender_sender-mssesdwg",
@@ -76522,6 +76638,10 @@
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MissingAttributesFeature/Requirement/Install_event_sender_sender-cewnubad",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MissingAttributesFeature/Requirement/Install_event_sender_sender-cgcxhlwj",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MissingAttributesFeature/Requirement/Install_event_sender_sender-cjycabvx",
@@ -77994,6 +78114,10 @@
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MissingAttributesFeature/Requirement/Install_event_sender_sender-zsnhrzqo",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MissingAttributesFeature/Requirement/Install_event_sender_sender-zsqscudx",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MissingAttributesFeature/Requirement/Install_event_sender_sender-zsqshfur",
@@ -79744,6 +79868,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-mchvkusy",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-mcmsevob",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -80612,6 +80740,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-tlgyxhai",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-tlxiriwp",
     "Suite": "Serverless-lp-interop"
   },
@@ -80765,6 +80897,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-uqjqcxfo",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-uqrcagmi",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -81157,6 +81293,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-xvtauyww",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-xwgcwsxj",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -83436,6 +83576,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-hjsjpdeh",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-hjxjydga",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -83474,6 +83618,10 @@
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-hmliqxaz",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-hnfxnhdq",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-hnuuceur",
@@ -83646,6 +83794,10 @@
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-iaaaxymb",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-iatmyscp",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-iatofmig",
@@ -85096,6 +85248,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-nkppkoti",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-nksxaxsm",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -86028,6 +86184,10 @@
     "Suite": "Serverless-lp-interop"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-rhjhorvm",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-rhyhmfmg",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -86046,6 +86206,10 @@
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-rllkddea",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-rmrcglbo",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-rmuxpzxn",
@@ -87752,6 +87916,10 @@
     "Suite": "Serverless-lp-interop"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-yopggecx",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-yoradxeq",
     "Suite": "Serverless-lp-interop"
   },
@@ -88017,6 +88185,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-zljufdmo",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-zmrqmwbw",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -88476,6 +88648,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/Prefix_filter/Requirement/Install_event_sender_sender-enbsfvaq",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Prefix_filter/Requirement/Install_event_sender_sender-eothoxtn",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -88753,6 +88929,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Prefix_filter/Requirement/Install_event_sender_sender-iovnnoev",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/Prefix_filter/Requirement/Install_event_sender_sender-iphcwylt",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -90420,6 +90600,10 @@
     "Suite": "Serverless-lp-interop"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/Suffix_filter/Requirement/Install_event_sender_sender-gvaroiqn",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Suffix_filter/Requirement/Install_event_sender_sender-gvdccmng",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -91421,6 +91605,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Suffix_filter/Requirement/Install_event_sender_sender-xlkxgaaw",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/Suffix_filter/Requirement/Install_event_sender_sender-xmifawwx",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -103113,6 +103301,10 @@
   },
   {
     "Name": "[Feature:EVPN][Feature:RouteAdvertisements][ovn-kubernetes-ote][sig-network] BGP: For BGP configured networks When the tested network is of type Layer 3 CUDN VRF-Lite When a pod runs on the tested network When there is other network Of type Layer 3 CUDN EVPN IP-VRF Both networks are isolated",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Feature:EgressFirewall][ovn-kubernetes-ote][sig-network] Status manager validation Should validate the egress firewall status when adding a new node zone [Serial][Suite:ovn-kubernetes/conformance/serial]",
     "Suite": "openshift-tests"
   },
   {
@@ -135592,22 +135784,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-22mb6 should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-22mb6 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-247wf should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-247wf should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-256dd should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
@@ -135648,14 +135824,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-2h8s5 should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-2h8s5 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-2hbpb should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
@@ -135680,35 +135848,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-2nj9c should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-2nj9c should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-2nvxb should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-2nvxb should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-2sqjx should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-2sqjx should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-2vs9g should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-2vs9g should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -135752,27 +135896,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-46nfl should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-46nfl should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-46r66 should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-46r66 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-46szk should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-46szk should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -135816,14 +135944,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-4kszm should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-4kszm should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-4l4l4 should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
@@ -135848,35 +135968,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-4sbwx should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-4sbwx should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-4txlb should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-4txlb should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-4vp4w should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-4vp4w should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-4w7nz should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-4w7nz should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -135912,14 +136008,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-57qkp should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-57qkp should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-588kd should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
@@ -135944,14 +136032,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-5d445 should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-5d445 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-5kq98 should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
@@ -135960,35 +136040,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-5lbwl should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-5lbwl should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-5m9zt should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-5m9zt should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-5q8sl should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-5q8sl should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-5rwr9 should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-5rwr9 should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -136040,27 +136096,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-68fnk should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-68fnk should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-68j7k should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-68j7k should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-6bt9g should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-6bt9g should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -136120,35 +136160,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-6kp5p should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-6kp5p should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-6ngwg should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-6ngwg should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-6p29l should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-6p29l should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-6rzk4 should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-6rzk4 should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -136184,14 +136200,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-72455 should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-72455 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-72q66 should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
@@ -136213,14 +136221,6 @@
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-75dsf should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-75m4z should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-75m4z should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -136277,14 +136277,6 @@
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-7cngv should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-7dwp6 should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-7dwp6 should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -136352,14 +136344,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-7njt4 should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-7njt4 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-7nngk should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
@@ -136384,27 +136368,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-7rp48 should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-7rp48 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-7tgb6 should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-7tgb6 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-7w47d should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-7w47d should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -136448,27 +136416,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-86qlg should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-86qlg should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-88qvg should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-88qvg should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-88swk should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-88swk should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -136512,22 +136464,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-8lcpf should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-8lcpf should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-8lfjj should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-8lfjj should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-8pjmx should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
@@ -136536,35 +136472,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-8rzbh should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-8rzbh should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-8s556 should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-8s556 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-8s6tf should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-8s6tf should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-8v7js should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-8v7js should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -136624,22 +136536,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-972jz should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-972jz should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-98cnj should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-98cnj should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-9bqxt should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
@@ -136696,14 +136592,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-9l2mb should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-9l2mb should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-9lkdf should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
@@ -136733,14 +136621,6 @@
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-9r9q2 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-9v69n should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-9v69n should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -136824,14 +136704,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-b7g59 should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-b7g59 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-b88kv should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
@@ -136840,27 +136712,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-bc8zv should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-bc8zv should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-bdft2 should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-bdft2 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-bfmhm should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-bfmhm should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -136936,14 +136792,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-bwqx9 should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-bwqx9 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-bxft6 should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
@@ -136976,35 +136824,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-c6glv should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-c6glv should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-cbpxf should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-cbpxf should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-cc5cz should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-cc5cz should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-ccxdw should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-ccxdw should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -137037,14 +136861,6 @@
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-ckxhj should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-cl98t should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-cl98t should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -137093,14 +136909,6 @@
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-cwspm should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-d2s8q should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-d2s8q should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -137168,27 +136976,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-dgrxm should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-dgrxm should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-dkkjd should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-dkkjd should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-dkn45 should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-dkn45 should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -137221,14 +137013,6 @@
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-dpkcn should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-ds65d should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-ds65d should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -137328,27 +137112,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-fchtd should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-fchtd should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-ffvw4 should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-ffvw4 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-fgz79 should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-fgz79 should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -137373,22 +137141,6 @@
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-fqjmb should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-frdt4 should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-frdt4 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-frpcm should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-frpcm should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -137424,22 +137176,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-fvwsq should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-fvwsq should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-fxbhm should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-fxbhm should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-g4g22 should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
@@ -137461,30 +137197,6 @@
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-g9db7 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-gd6nr should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-gd6nr should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-gd6qt should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-gd6qt should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-gdg9q should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-gdg9q should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -137536,14 +137248,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-gpgml should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-gpgml should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-gq7xp should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
@@ -137565,14 +137269,6 @@
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-grd46 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-grdrm should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-grdrm should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -137640,14 +137336,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-h9ftg should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-h9ftg should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-hcgc6 should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
@@ -137696,27 +137384,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-hj7lx should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-hj7lx should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-hkghj should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-hkghj should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-hkprf should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-hkprf should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -137733,14 +137405,6 @@
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-hmw6f should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-hqtfm should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-hqtfm should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -137776,14 +137440,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-hwjld should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-hwjld should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-hws78 should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
@@ -137805,14 +137461,6 @@
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-hx8wt should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-hznwk should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-hznwk should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -138032,14 +137680,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-jtzxv should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-jtzxv should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-jv69d should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
@@ -138048,27 +137688,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-jz6p9 should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-jz6p9 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-k2gv9 should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-k2gv9 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-k4v2q should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-k4v2q should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -138093,14 +137717,6 @@
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-k84jd should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-k8nt2 should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-k8nt2 should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -138149,22 +137765,6 @@
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-kcq8k should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-kdkqb should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-kdkqb should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-kdmxm should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-kdmxm should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -138232,14 +137832,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-kwd42 should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-kwd42 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-kxl9b should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
@@ -138269,14 +137861,6 @@
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-l79m7 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-l8kxx should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-l8kxx should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -138317,14 +137901,6 @@
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-lfvz5 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-lgg5w should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-lgg5w should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -138456,35 +138032,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-mhzk7 should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-mhzk7 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-mllw2 should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-mllw2 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-mm557 should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-mm557 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-mqh2d should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-mqh2d should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -138501,14 +138053,6 @@
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-mspxb should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-msv98 should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-msv98 should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -138536,14 +138080,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-mz6pp should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-mz6pp should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-mztw6 should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
@@ -138568,27 +138104,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-n4mxz should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-n4mxz should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-n4n8q should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-n4n8q should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-n5448 should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-n5448 should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -138600,27 +138120,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-n89fw should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-n89fw should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-n8dv7 should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-n8dv7 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-n8pw5 should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-n8pw5 should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -138632,14 +138136,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-njhjn should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-njhjn should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-nksz9 should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
@@ -138648,35 +138144,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-nlgzt should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-nlgzt should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-nmsqd should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-nmsqd should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-nq6xd should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-nq6xd should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-nr9mh should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-nr9mh should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -138720,22 +138192,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-nvcbf should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-nvcbf should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-nwflt should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-nwflt should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-nwxbt should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
@@ -138757,14 +138213,6 @@
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-p6fqg should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-p78tl should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-p78tl should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -138888,14 +138336,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-px82v should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-px82v should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-pzcm7 should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
@@ -138912,38 +138352,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-q4sgc should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-q4sgc should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-q6vht should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-q6vht should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-q7p86 should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-q7p86 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-q9fw5 should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-q9fw5 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-qb8mr should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
@@ -138952,27 +138360,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-qbdz7 should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-qbdz7 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-qct4n should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-qct4n should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-qct5r should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-qct5r should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -139080,27 +138472,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-r4tj8 should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-r4tj8 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-r7z4l should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-r7z4l should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-r92pf should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-r92pf should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -139117,22 +138493,6 @@
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-rdzgw should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-rf8dn should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-rf8dn should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-rfgmv should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-rfgmv should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -139296,35 +138656,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-sjbbp should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-sjbbp should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-sk8h2 should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-sk8h2 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-sklzg should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-sklzg should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-skvsh should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-skvsh should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -139349,14 +138685,6 @@
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-smrtz should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-smwdj should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-smwdj should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -139389,14 +138717,6 @@
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-ssqjr should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-sv7xd should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-sv7xd should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -139464,14 +138784,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-t6x9x should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-t6x9x should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-t77xs should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
@@ -139485,30 +138797,6 @@
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-t8q7m should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-tbjnj should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-tbjnj should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-tcd8n should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-tcd8n should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-tckxf should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-tckxf should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -139568,27 +138856,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-tpfdn should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-tpfdn should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-tqxjh should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-tqxjh should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-trvf5 should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-trvf5 should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -139648,22 +138920,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-v25pb should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-v25pb should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-v4mpw should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-v4mpw should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-v5dpq should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
@@ -139680,35 +138936,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-v6mgn should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-v6mgn should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-v6r4j should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-v6r4j should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-v7ft2 should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-v7ft2 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-v7njx should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-v7njx should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -139784,22 +139016,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-vtn64 should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-vtn64 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-vvcn7 should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-vvcn7 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-vxn97 should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
@@ -139816,27 +139032,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-vzlsz should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-vzlsz should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-w26t7 should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-w26t7 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-w58pl should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-w58pl should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -139880,14 +139080,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-wfwpd should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-wfwpd should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-wfzkz should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
@@ -139909,22 +139101,6 @@
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-wk72x should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-wm4n4 should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-wm4n4 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-wmf7b should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-wmf7b should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -139976,14 +139152,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-wtdxd should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-wtdxd should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-wwp4q should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
@@ -140013,14 +139181,6 @@
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-wzxb7 should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-x2wgk should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-x2wgk should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -140064,14 +139224,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-x9rvw should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-x9rvw should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-xbxj8 should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
@@ -140112,14 +139264,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-xf4jl should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-xf4jl should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-xjhj7 should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
@@ -140141,14 +139285,6 @@
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-xk6kq should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-xlk8r should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-xlk8r should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -140232,22 +139368,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-z48vm should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-z48vm should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-z5j5r should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-z5j5r should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-z66sj should have generation increasing monotonically",
     "Suite": "openshift-tests"
   },
@@ -140261,14 +139381,6 @@
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-z6dsz should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-z6rft should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-z6rft should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -140421,14 +139533,6 @@
   },
   {
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-zstxk should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-ztg44 should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-ztg44 should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -142348,14 +141452,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-22mb6 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-247wf should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-256dd should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
@@ -142376,10 +141472,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-2h8s5 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-2hbpb should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
@@ -142392,19 +141484,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-2nj9c should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-2nvxb should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-2sqjx should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-2vs9g should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -142428,15 +141508,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-46nfl should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-46r66 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-46szk should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -142460,10 +141532,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-4kszm should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-4l4l4 should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
@@ -142476,19 +141544,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-4sbwx should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-4txlb should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-4vp4w should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-4w7nz should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -142508,10 +141564,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-57qkp should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-588kd should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
@@ -142524,27 +141576,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-5d445 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-5kq98 should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-5lbwl should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-5m9zt should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-5q8sl should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-5rwr9 should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -142572,15 +141608,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-68fnk should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-68j7k should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-6bt9g should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -142612,19 +141640,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-6kp5p should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-6ngwg should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-6p29l should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-6rzk4 should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -142644,10 +141660,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-72455 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-72q66 should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
@@ -142657,10 +141669,6 @@
   },
   {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-75dsf should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-75m4z should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -142689,10 +141697,6 @@
   },
   {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-7cngv should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-7dwp6 should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -142728,10 +141732,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-7njt4 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-7nngk should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
@@ -142744,15 +141744,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-7rp48 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-7tgb6 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-7w47d should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -142776,15 +141768,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-86qlg should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-88qvg should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-88swk should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -142808,31 +141792,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-8lcpf should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-8lfjj should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-8pjmx should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-8rzbh should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-8s556 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-8s6tf should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-8v7js should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -142864,14 +141828,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-972jz should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-98cnj should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-9bqxt should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
@@ -142900,10 +141856,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-9l2mb should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-9lkdf should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
@@ -142917,10 +141869,6 @@
   },
   {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-9r9q2 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-9v69n should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -142964,23 +141912,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-b7g59 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-b88kv should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-bc8zv should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-bdft2 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-bfmhm should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -143020,10 +141956,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-bwqx9 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-bxft6 should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
@@ -143040,19 +141972,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-c6glv should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-cbpxf should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-cc5cz should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-ccxdw should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -143069,10 +141989,6 @@
   },
   {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-ckxhj should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-cl98t should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -143097,10 +142013,6 @@
   },
   {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-cwspm should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-d2s8q should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -143136,15 +142048,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-dgrxm should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-dkkjd should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-dkn45 should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -143161,10 +142065,6 @@
   },
   {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-dpkcn should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-ds65d should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -143216,15 +142116,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-fchtd should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-ffvw4 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-fgz79 should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -143237,14 +142129,6 @@
   },
   {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-fqjmb should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-frdt4 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-frpcm should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -143264,14 +142148,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-fvwsq should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-fxbhm should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-g4g22 should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
@@ -143281,18 +142157,6 @@
   },
   {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-g9db7 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-gd6nr should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-gd6qt should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-gdg9q should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -143320,10 +142184,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-gpgml should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-gq7xp should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
@@ -143333,10 +142193,6 @@
   },
   {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-grd46 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-grdrm should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -143372,10 +142228,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-h9ftg should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-hcgc6 should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
@@ -143400,15 +142252,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-hj7lx should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-hkghj should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-hkprf should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -143417,10 +142261,6 @@
   },
   {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-hmw6f should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-hqtfm should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -143440,10 +142280,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-hwjld should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-hws78 should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
@@ -143453,10 +142289,6 @@
   },
   {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-hx8wt should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-hznwk should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -143568,23 +142400,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-jtzxv should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-jv69d should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-jz6p9 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-k2gv9 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-k4v2q should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -143597,10 +142417,6 @@
   },
   {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-k84jd should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-k8nt2 should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -143625,14 +142441,6 @@
   },
   {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-kcq8k should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-kdkqb should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-kdmxm should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -143668,10 +142476,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-kwd42 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-kxl9b should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
@@ -143685,10 +142489,6 @@
   },
   {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-l79m7 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-l8kxx should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -143709,10 +142509,6 @@
   },
   {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-lfvz5 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-lgg5w should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -143780,19 +142576,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-mhzk7 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-mllw2 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-mm557 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-mqh2d should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -143801,10 +142585,6 @@
   },
   {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-mspxb should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-msv98 should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -143820,10 +142600,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-mz6pp should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-mztw6 should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
@@ -143836,15 +142612,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-n4mxz should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-n4n8q should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-n5448 should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -143852,15 +142620,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-n89fw should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-n8dv7 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-n8pw5 should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -143868,27 +142628,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-njhjn should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-nksz9 should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-nlgzt should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-nmsqd should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-nq6xd should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-nr9mh should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -143912,14 +142656,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-nvcbf should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-nwflt should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-nwxbt should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
@@ -143929,10 +142665,6 @@
   },
   {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-p6fqg should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-p78tl should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -143996,10 +142728,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-px82v should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-pzcm7 should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
@@ -144008,35 +142736,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-q4sgc should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-q6vht should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-q7p86 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-q9fw5 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-qb8mr should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-qbdz7 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-qct4n should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-qct5r should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -144092,15 +142796,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-r4tj8 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-r7z4l should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-r92pf should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -144109,14 +142805,6 @@
   },
   {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-rdzgw should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-rf8dn should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-rfgmv should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -144200,19 +142888,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-sjbbp should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-sk8h2 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-sklzg should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-skvsh should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -144225,10 +142901,6 @@
   },
   {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-smrtz should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-smwdj should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -144245,10 +142917,6 @@
   },
   {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-ssqjr should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-sv7xd should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -144284,27 +142952,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-t6x9x should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-t77xs should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-t8q7m should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-tbjnj should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-tcd8n should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-tckxf should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -144336,15 +142988,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-tpfdn should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-tqxjh should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-trvf5 should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -144376,14 +143020,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-v25pb should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-v4mpw should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-v5dpq should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
@@ -144392,19 +143028,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-v6mgn should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-v6r4j should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-v7ft2 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-v7njx should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -144444,14 +143068,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-vtn64 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-vvcn7 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-vxn97 should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
@@ -144460,15 +143076,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-vzlsz should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-w26t7 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-w58pl should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -144492,10 +143100,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-wfwpd should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-wfzkz should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
@@ -144505,14 +143109,6 @@
   },
   {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-wk72x should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-wm4n4 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-wmf7b should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -144540,10 +143136,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-wtdxd should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-wwp4q should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
@@ -144557,10 +143149,6 @@
   },
   {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-wzxb7 should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-x2wgk should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -144584,10 +143172,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-x9rvw should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-xbxj8 should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
@@ -144608,10 +143192,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-xf4jl should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-xjhj7 should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
@@ -144621,10 +143201,6 @@
   },
   {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-xk6kq should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-xlk8r should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -144668,23 +143244,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-z48vm should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-z5j5r should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-z66sj should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-z6dsz should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-z6rft should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -144761,10 +143325,6 @@
   },
   {
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-zstxk should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-ztg44 should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -161880,7 +160440,51 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[Suite:openshift/nodes/isolated][sig-node] ContainerRuntimeConfig [OTP] Verify overlaySize is applied to node and container [OCP-46313]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Suite:openshift/nodes/isolated][sig-node] ContainerRuntimeConfig [OTP] Verify pidsLimit and MCO overwrite behavior [OCP-45351]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Suite:openshift/nodes/isolated][sig-node] Kubelet TLS configuration should upgrade kubelet TLS from 1.2 to 1.3 on a custom pool [apigroup:machineconfiguration.openshift.io]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[Suite:openshift/nodes/isolated][sig-node] KubeletConfig Features [Slow]should apply KubeletConfig with logging verbosity to custom pool [apigroup:machineconfiguration.openshift.io]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Suite:openshift/nodes/isolated][sig-node] Node sizing should have NODE_SIZING_ENABLED=true by default and NODE_SIZING_ENABLED=false when KubeletConfig with autoSizingReserved=false is applied",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Suite:openshift/nodes/isolated][sig-node] PodDisruptionBudget [OTP] Node's drain should block when PodDisruptionBudget minAvailable equals 100 percentage and selector is empty [OCP-67564]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Suite:openshift/nodes/isolated][sig-node] Probe configuration [OTP] Liveness probe should fall back to pod-level terminationGracePeriodSeconds when probe-level is not set [OCP-44493]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Suite:openshift/nodes/isolated][sig-node] Probe configuration [OTP] Liveness probe should respect probe-level terminationGracePeriodSeconds [OCP-44493]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Suite:openshift/nodes/isolated][sig-node] Probe configuration [OTP] Startup probe should respect probe-level terminationGracePeriodSeconds [OCP-44493]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Suite:openshift/nodes/isolated][sig-node] System Compressible CPU should enforce system compressible CPU limit by default [Serial]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Suite:openshift/nodes/isolated][sig-node] System Compressible CPU should not enable system compressible when reserved CPU is configured [Serial]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Suite:openshift/nodes/isolated][sig-node] System Compressible CPU should not enforce CPU limit when system compressible is disabled [Serial]",
     "Suite": "openshift-tests"
   },
   {
