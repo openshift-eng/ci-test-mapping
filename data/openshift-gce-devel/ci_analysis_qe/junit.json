@@ -104,10 +104,6 @@
     "Suite": "(OCP-53591 Network_Observability) Netflow Topology edges,labels, badges features"
   },
   {
-    "Name": "(OCP-53591 Network_Observability) Netflow Topology groups features \"after all\" hook: after all tests are done for \"(OCP-53591, memodi, Network_Observability) should verify group NS+Owners\"",
-    "Suite": "(OCP-53591 Network_Observability) Netflow Topology groups features"
-  },
-  {
     "Name": "(OCP-53591 Network_Observability) Netflow Topology groups features \"after all\" hook: after all tests are done for \"(OCP-53591, memodi, Network_Observability) should verify namespace scope\"",
     "Suite": "(OCP-53591 Network_Observability) Netflow Topology groups features"
   },
@@ -405,10 +401,6 @@
   },
   {
     "Name": "(OCP-67617 Network_Observability) User in group with cluster-admin role \"after all\" hook for \"(OCP-67617, aramesha, Network_Observability) should verify user NOT in group with cluster-admin role is NOT able to access flows\"",
-    "Suite": "(OCP-67617 Network_Observability) User in group with cluster-admin role"
-  },
-  {
-    "Name": "(OCP-67617 Network_Observability) User in group with cluster-admin role \"after all\" hook: all tests for \"(OCP-67617, aramesha, Network_Observability) should verify user NOT in group with cluster-admin role is NOT able to access flows\"",
     "Suite": "(OCP-67617 Network_Observability) User in group with cluster-admin role"
   },
   {
