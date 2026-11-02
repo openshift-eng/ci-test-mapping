@@ -418,22 +418,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "(OCP-53591 Network_Observability) Netflow Topology groups features:2525a6fd9ddb57c4437c1870f64444e4",
-    "Name": "(OCP-53591 Network_Observability) Netflow Topology groups features \"after all\" hook: after all tests are done for \"(OCP-53591, memodi, Network_Observability) should verify group NS+Owners\"",
-    "Suite": "(OCP-53591 Network_Observability) Netflow Topology groups features",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "(OCP-53591 Network_Observability) Netflow Topology groups features:47917615815e9a6f83c97fc79c001f8b",
     "Name": "(OCP-53591 Network_Observability) Netflow Topology groups features \"after all\" hook: after all tests are done for \"(OCP-53591, memodi, Network_Observability) should verify namespace scope\"",
     "Suite": "(OCP-53591 Network_Observability) Netflow Topology groups features",
@@ -1620,22 +1604,6 @@
     "Kind": "TestOwnership",
     "ID": "(OCP-67617 Network_Observability) User in group with cluster-admin role:af0c8105dc0c92fcc1c8e69b1d822a9d",
     "Name": "(OCP-67617 Network_Observability) User in group with cluster-admin role \"after all\" hook for \"(OCP-67617, aramesha, Network_Observability) should verify user NOT in group with cluster-admin role is NOT able to access flows\"",
-    "Suite": "(OCP-67617 Network_Observability) User in group with cluster-admin role",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "(OCP-67617 Network_Observability) User in group with cluster-admin role:0cda58fb1c950c5f42a5e4034f5e202e",
-    "Name": "(OCP-67617 Network_Observability) User in group with cluster-admin role \"after all\" hook: all tests for \"(OCP-67617, aramesha, Network_Observability) should verify user NOT in group with cluster-admin role is NOT able to access flows\"",
     "Suite": "(OCP-67617 Network_Observability) User in group with cluster-admin role",
     "Product": "OpenShift",
     "Priority": 0,
