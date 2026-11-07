@@ -17,17 +17,18 @@ var LPacmComponent = Component{
 		Operators:            []string{},
 		DefaultJiraComponent: "LP--ACM",
 		Matchers: []config.ComponentMatcher{
+			// Legacy flat suite, restored per maintainer direction (etirta,
+			// 2026-10-30 22:34Z correction): only this exact-Suite matcher is
+			// restored — the other legacy LP matchers stay removed. map-verify
+			// validates against the periodically refreshed junit.json snapshot,
+			// which still carries live rows with this exact suite name. Do not
+			// remove until the flat emissions retire (INTEROP-9629 lineage).
 			{Suite: "ACM-lp-interop"},
+			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--ACM--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ACM--`)},
+			//  LP Interop Test Suites: Capability is used to group Runtime Env.
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM--ACM\+Virt--`), Capabilities: []string{"ACM+Virt"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM-Virt--`), Capabilities: []string{"ACM+Virt"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM--`), Capabilities: []string{"ACM+Virt"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ACM--`), Capabilities: []string{"ACM+Virt"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--ACM--`), Capabilities: []string{"ACM+Virt"}},
-			// OPP test patterns with opp capability
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--Observability`), Capabilities: []string{"opp"}},
-			{SuiteRegEx: regexp.MustCompile(`^acm-opp-app$`), Capabilities: []string{"opp"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--acm`), Capabilities: []string{"opp"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM-OBS-ODF`), Capabilities: []string{"opp"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM--OPP--`), Capabilities: []string{"OPP"}},
 		},
 	},
 }

@@ -17,14 +17,10 @@ var LPodfComponent = Component{
 		Operators:            []string{},
 		DefaultJiraComponent: "LP--ODF",
 		Matchers: []config.ComponentMatcher{
-			{Suite: "ODF-lp-interop"},
-			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ODF--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ODF--`)},
 			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--ODF--`)},
-			// OPP test patterns with opp capability
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--pytest`), Capabilities: []string{"opp"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ODF$`), Capabilities: []string{"opp"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--odf-health`), Capabilities: []string{"opp"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ODF--`)},
+			//  LP Interop Test Suites: Capability is used to group Runtime Env.
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ODF--OPP--`), Capabilities: []string{"OPP"}},
 		},
 	},
 }

@@ -17,12 +17,10 @@ var LPquayComponent = Component{
 		Operators:            []string{},
 		DefaultJiraComponent: "LP--Quay",
 		Matchers: []config.ComponentMatcher{
-			{Suite: "Quay-lp-interop"},
-			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--Quay--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--Quay--`)},
 			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--Quay--`)},
-			// OPP test patterns with opp capability
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--QUAY`), Capabilities: []string{"opp"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--Quay--`)},
+			//  LP Interop Test Suites: Capability is used to group Runtime Env.
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--Quay--OPP--`), Capabilities: []string{"OPP"}},
 		},
 	},
 }
