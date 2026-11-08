@@ -102327,6 +102327,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "Logging:7d03e1f9de435f8f82af5e8e9c9dddf0",
+    "Name": "OCP-55396:ikanse:Logging:[sig-openshift-logging] Logging  Log Forward to User-Managed-ES alert rule CollectorNodeDown testing",
+    "Suite": "Logging",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Logging",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Logging",
+    "JIRAComponentID": "14829"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "Cluster_Infrastructure:3716eb7f462f59d4b805c7e833bde595",
     "Name": "OCP-55408:miyadav:Cluster_Infrastructure:[sig-cluster-lifecycle] Cluster_Infrastructure MAPI Rate limiting on Azure",
     "Suite": "Cluster_Infrastructure",

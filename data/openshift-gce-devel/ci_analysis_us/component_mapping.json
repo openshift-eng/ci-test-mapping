@@ -786510,6 +786510,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:943afa1d3dc4ab4364bd8af844da9aaa",
+    "Name": "[sig-installer][Feature:NoRegistryClusterInstall][Disruptive] InternalReleaseImage deletion disables the registry when the deletion guard is removed should disable the master registry and reclaim its storage [apigroup:machineconfiguration.openshift.io] [Serial]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Installer / Agent based installation",
+    "Capabilities": [
+      "NoRegistryClusterInstall"
+    ],
+    "JIRAComponent": "Installer / Agent based installation",
+    "JIRAComponentID": "14855"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:a216427b8e6a01f6af92a0f2b3a44c8d",
     "Name": "[sig-installer][Feature:NoRegistryClusterInstall][Disruptive] InternalReleaseImage deletion disables the registry when the deletion guard is removed should garbage-collect the resource and disable the master registry [apigroup:machineconfiguration.openshift.io] [Serial]",
     "Suite": "openshift-tests",
@@ -793891,6 +793907,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:bc43d665b08e681ddd05fdbd1c5286be",
+    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO Storage [PolarionID:63477][OTP] Deploy files using all available ignition configs. Default 3.6.0[Disruptive]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Machine Config Operator",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Machine Config Operator",
+    "JIRAComponentID": "14737"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:caee7e73540ac67a0abf4c8bd5ebc96e",
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO Storage [PolarionID:64833][OTP] Do not make an 'orig' copy for config.json file [Serial]",
     "Suite": "openshift-tests",
@@ -800171,6 +800203,22 @@
     "Kind": "TestOwnership",
     "ID": "Cluster upgrade:446d9d2f3b07f20ede9b61a12f844422",
     "Name": "[sig-network-edge][Feature:Router][apigroup:gateway.networking.k8s.io] Verify Gateway API functionality during upgrade",
+    "Suite": "Cluster upgrade",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Cluster upgrade:2944e9172f74690bd2b52b808e52e864",
+    "Name": "[sig-network-edge][Feature:Router][apigroup:operator.openshift.io] Verify the default IngressController TLS profile is preserved across upgrade",
     "Suite": "Cluster upgrade",
     "Product": "OpenShift",
     "Priority": 0,

@@ -195592,6 +195592,10 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-installer][Feature:NoRegistryClusterInstall][Disruptive] InternalReleaseImage deletion disables the registry when the deletion guard is removed should disable the master registry and reclaim its storage [apigroup:machineconfiguration.openshift.io] [Serial]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-installer][Feature:NoRegistryClusterInstall][Disruptive] InternalReleaseImage deletion disables the registry when the deletion guard is removed should garbage-collect the resource and disable the master registry [apigroup:machineconfiguration.openshift.io] [Serial]",
     "Suite": "openshift-tests"
   },
@@ -197436,6 +197440,10 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO Storage [PolarionID:63477][OTP] Deploy files using all available ignition configs. Default 3.6.0[Disruptive]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO Storage [PolarionID:64833][OTP] Do not make an 'orig' copy for config.json file [Serial]",
     "Suite": "openshift-tests"
   },
@@ -199005,6 +199013,10 @@
   },
   {
     "Name": "[sig-network-edge][Feature:Router][apigroup:gateway.networking.k8s.io] Verify Gateway API functionality during upgrade",
+    "Suite": "Cluster upgrade"
+  },
+  {
+    "Name": "[sig-network-edge][Feature:Router][apigroup:operator.openshift.io] Verify the default IngressController TLS profile is preserved across upgrade",
     "Suite": "Cluster upgrade"
   },
   {
