@@ -25580,6 +25580,10 @@
     "Suite": "Logging"
   },
   {
+    "Name": "OCP-55396:ikanse:Logging:[sig-openshift-logging] Logging  Log Forward to User-Managed-ES alert rule CollectorNodeDown testing",
+    "Suite": "Logging"
+  },
+  {
     "Name": "OCP-55408:miyadav:Cluster_Infrastructure:[sig-cluster-lifecycle] Cluster_Infrastructure MAPI Rate limiting on Azure",
     "Suite": "Cluster_Infrastructure"
   },
