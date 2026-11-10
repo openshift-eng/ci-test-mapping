@@ -358,7 +358,8 @@ func TestKnownOPPMisroutes(t *testing.T) {
 // TestOPPFixtureSuitesAdmittedByUSConfig guards against fixture rows (and the
 // matchers they witness) that the production US mapping pipeline can never
 // reach: config/openshift-eng.yaml admits suites only via includeSuites and
-// includeSuitePatterns, compiled to SQL in pkg/bigquery/test_table.go
+// includeSuitePatterns, minus excludeSuites and excludeSuitePatterns, all
+// compiled to SQL in pkg/bigquery/test_table.go
 // (buildSuitesFilter/buildExcludeSuitesFilter) before any matcher runs. A
 // bare exact-Suite matcher such as {Suite: "preflight"} is unreachable there,
 // and reachable only in the unfiltered QE run (--config ""), where it would
@@ -373,30 +374,61 @@ func TestOPPFixtureSuitesAdmittedByUSConfig(t *testing.T) {
 	if err := yaml.Unmarshal(data, &cfg); err != nil {
 		t.Fatalf("parse config: %v", err)
 	}
-	// Fail closed on shapes this guard does not model: exclusion lists and
+	// Fail closed on pattern shapes this guard does not model:
 	// non-trailing-% LIKE patterns.
-	if len(cfg.ExcludeSuites) > 0 || len(cfg.ExcludeSuitePatterns) > 0 {
-		t.Fatalf("config now has exclusion lists; extend this guard to model them")
-	}
 	admitted := func(suite string) bool {
+		included := false
 		for _, s := range cfg.IncludeSuites {
 			if s == suite {
-				return true
+				included = true
+				break
 			}
 		}
-		for _, p := range cfg.IncludeSuitePatterns {
+		if !included {
+			for _, p := range cfg.IncludeSuitePatterns {
+				prefix, ok := strings.CutSuffix(p, "%")
+				if !ok {
+					t.Fatalf("unexpected include pattern shape %q; extend this guard, do not assume LIKE", p)
+				}
+				if strings.HasPrefix(suite, prefix) {
+					included = true
+					break
+				}
+			}
+		}
+		if !included {
+			return false
+		}
+		// Inclusion is necessary but not sufficient: exclusions win over
+		// inclusions (buildExcludeSuitesFilter ANDs NOT IN / NOT LIKE onto
+		// the OR'd include filter).
+		for _, s := range cfg.ExcludeSuites {
+			if s == suite {
+				return false
+			}
+		}
+		for _, p := range cfg.ExcludeSuitePatterns {
 			prefix, ok := strings.CutSuffix(p, "%")
 			if !ok {
-				t.Fatalf("unexpected include pattern shape %q; extend this guard, do not assume LIKE", p)
+				t.Fatalf("unexpected exclude pattern shape %q; extend this guard, do not assume LIKE", p)
 			}
 			if strings.HasPrefix(suite, prefix) {
-				return true
+				return false
 			}
 		}
-		return false
+		return true
 	}
 	if admitted("preflight") {
 		t.Fatal("guard is vacuous: bare suite 'preflight' must not be admitted")
+	}
+	// The exclusion path must actually bite: the legacy runtime-first OPP
+	// prefix is include-pattern-admitted (lp-interop--%) yet excluded, so a
+	// matcher on such a suite would be unreachable in the US pipeline.
+	if admitted("lp-interop--OPP--pytest") {
+		t.Fatal("guard is vacuous: excluded legacy suite 'lp-interop--OPP--pytest' must not be admitted")
+	}
+	if !admitted("lp-interop--ACM--OPP--acm") {
+		t.Fatal("guard over-excludes: canonical component-first suite 'lp-interop--ACM--OPP--acm' must stay admitted")
 	}
 	for _, tc := range lpCapabilityTests {
 		if !strings.Contains(tc.suite, "--OPP--") {
