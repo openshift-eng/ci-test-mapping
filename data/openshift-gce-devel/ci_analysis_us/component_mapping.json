@@ -1095197,6 +1095197,54 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-interop--OPP--smoke:69a8db93ab7b26ac4698d797a6567f01",
+    "Name": "acm-connectivity",
+    "Suite": "lp-interop--OPP--smoke",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-interop--OPP--smoke:b8fb4f9d44888b5dacf09f6e383176fa",
+    "Name": "acs-sensors",
+    "Suite": "lp-interop--OPP--smoke",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-interop--OPP--acs-upgrade:6ef25b9144dfe89f553a3f624bc9e24d",
+    "Name": "acs-upgrade",
+    "Suite": "lp-interop--OPP--acs-upgrade",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--ACS",
+    "Capabilities": [
+      "OPP"
+    ],
+    "JIRAComponent": "LP--ACS",
+    "JIRAComponentID": "14702"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "chaos-krkn:4a8639be97d79a2b49d99cc14cc86ed0",
     "Name": "application-outages",
     "Suite": "chaos-krkn",
@@ -1095229,6 +1095277,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-interop--OPP--backup:402051f4be0cc3aad33bcf3ac3d6532b",
+    "Name": "backup",
+    "Suite": "lp-interop--OPP--backup",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--ACS--Check unexpected pod restarts:a42a6c7fb85673fff8937f8543a589a2",
     "Name": "central",
     "Suite": "lp-ocp-compat--ACS--Check unexpected pod restarts",
@@ -1095257,6 +1095321,38 @@
     ],
     "JIRAComponent": "LP--ACS",
     "JIRAComponentID": "14702"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-interop--OPP--odf-health:9135fc1c8bc713259f034ff0c95b8592",
+    "Name": "ceph-health-detail",
+    "Suite": "lp-interop--OPP--odf-health",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--ODF",
+    "Capabilities": [
+      "OPP"
+    ],
+    "JIRAComponent": "LP--ODF",
+    "JIRAComponentID": "14867"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-interop--OPP--odf-health:a12fcdfe4ff57d4323848aa21503b2e3",
+    "Name": "cephcluster-health",
+    "Suite": "lp-interop--OPP--odf-health",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--ODF",
+    "Capabilities": [
+      "OPP"
+    ],
+    "JIRAComponent": "LP--ODF",
+    "JIRAComponentID": "14867"
   },
   {
     "APIVersion": "v1",
@@ -1095344,6 +1095440,22 @@
     "ID": "openshift-tests:b1728ce591ce9b10a27a7b0435f34451",
     "Name": "cluster-config-operator should report complete ClusterOperator status with health and version information [apigroup:config.openshift.io][Operator][Parallel]",
     "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-interop--OPP--smoke:2a85770e42735575c0c599cbddb3858e",
+    "Name": "cluster-health",
+    "Suite": "lp-interop--OPP--smoke",
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
@@ -1096061,6 +1096173,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-interop--OPP--acm-obs-odf:d3e5333ff9b4cf6225636c4881f93ec8",
+    "Name": "mco-ready",
+    "Suite": "lp-interop--OPP--acm-obs-odf",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--ACM",
+    "Capabilities": [
+      "OPP"
+    ],
+    "JIRAComponent": "LP--ACM",
+    "JIRAComponentID": "85914"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "chaos-krkn:64adcc42ee9bf8f81483027f8a597ef3",
     "Name": "memory-hog",
     "Suite": "chaos-krkn",
@@ -1096105,6 +1096233,38 @@
     ],
     "JIRAComponent": "Unknown",
     "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-interop--OPP--odf-health:78e4786a2b1e586c35b885ce1d999bbf",
+    "Name": "noobaa-s3-functional",
+    "Suite": "lp-interop--OPP--odf-health",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--ODF",
+    "Capabilities": [
+      "OPP"
+    ],
+    "JIRAComponent": "LP--ODF",
+    "JIRAComponentID": "14867"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-interop--OPP--acm-obs-odf:cd6a0ba6ad9ce336a4119bbac3aa820a",
+    "Name": "obc-bound",
+    "Suite": "lp-interop--OPP--acm-obs-odf",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--ACM",
+    "Capabilities": [
+      "OPP"
+    ],
+    "JIRAComponent": "LP--ACM",
+    "JIRAComponentID": "85914"
   },
   {
     "APIVersion": "v1",
@@ -1102605,6 +1102765,54 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-interop--OPP--odf-health:eaff25e8097b07f96021e9ebfdc8a70a",
+    "Name": "odf-csv-phase",
+    "Suite": "lp-interop--OPP--odf-health",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--ODF",
+    "Capabilities": [
+      "OPP"
+    ],
+    "JIRAComponent": "LP--ODF",
+    "JIRAComponentID": "14867"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-interop--OPP--acm-obs-odf:5481a9c540da48470930a3d0952907e8",
+    "Name": "odf-storage-ready",
+    "Suite": "lp-interop--OPP--acm-obs-odf",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--ACM",
+    "Capabilities": [
+      "OPP"
+    ],
+    "JIRAComponent": "LP--ACM",
+    "JIRAComponentID": "85914"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-interop--OPP--odf-upgrade:a279cd5b01ea1f596fffcae88fbc8ff2",
+    "Name": "odf-upgrade",
+    "Suite": "lp-interop--OPP--odf-upgrade",
+    "Product": "OpenShift",
+    "Priority": -10,
+    "StaffApprovedObsolete": false,
+    "Component": "Cluster Version Operator",
+    "Capabilities": [
+      "ClusterUpgrade"
+    ],
+    "JIRAComponent": "Cluster Version Operator",
+    "JIRAComponentID": "14665"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "Operator results:466e1a49a33b63218495dc8201953194",
     "Name": "operator conditions authentication",
     "Suite": "Operator results",
@@ -1106509,6 +1106717,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-interop--OPP--smoke:2b5999e84f8ed057e6b4146f23bfb23a",
+    "Name": "opp-operators",
+    "Suite": "lp-interop--OPP--smoke",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "chaos-krkn:cc310f9b4992f33efbcbee41a6975bee",
     "Name": "pod-network-chaos",
     "Suite": "chaos-krkn",
@@ -1106845,6 +1107069,54 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-interop--OPP--wait-mcp:e72f1c87ca9e6f27efe03823ae693364",
+    "Name": "predicate-selftest",
+    "Suite": "lp-interop--OPP--wait-mcp",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-interop--OPP--odf-health:a4b86fecd945d89145f6d0e044c0dfce",
+    "Name": "pvc-provision-cephfs",
+    "Suite": "lp-interop--OPP--odf-health",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--ODF",
+    "Capabilities": [
+      "OPP"
+    ],
+    "JIRAComponent": "LP--ODF",
+    "JIRAComponentID": "14867"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-interop--OPP--odf-health:e46274d6f6c73c22cfe67296e7a8a6a5",
+    "Name": "pvc-provision-rbd",
+    "Suite": "lp-interop--OPP--odf-health",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--ODF",
+    "Capabilities": [
+      "OPP"
+    ],
+    "JIRAComponent": "LP--ODF",
+    "JIRAComponentID": "14867"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "chaos-krkn:472985a9d134f1183138692874be9283",
     "Name": "pvc-scenario",
     "Suite": "chaos-krkn",
@@ -1106857,6 +1107129,38 @@
     ],
     "JIRAComponent": "Unknown",
     "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-interop--OPP--smoke:3590ce6274bdeb9c94c2274a182bc5b3",
+    "Name": "quay-pull",
+    "Suite": "lp-interop--OPP--smoke",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-interop--OPP--quay-upgrade:08afd6e97b15dab6aec5344e7ed86d27",
+    "Name": "quay-upgrade",
+    "Suite": "lp-interop--OPP--quay-upgrade",
+    "Product": "OpenShift",
+    "Priority": -10,
+    "StaffApprovedObsolete": false,
+    "Component": "Cluster Version Operator",
+    "Capabilities": [
+      "ClusterUpgrade"
+    ],
+    "JIRAComponent": "Cluster Version Operator",
+    "JIRAComponentID": "14665"
   },
   {
     "APIVersion": "v1",
@@ -1106905,6 +1107209,54 @@
     ],
     "JIRAComponent": "LP--ACS",
     "JIRAComponentID": "14702"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-interop--OPP--acm-obs-odf:feb307a033cf5f8c86d0684336920c8b",
+    "Name": "storage-endpoint",
+    "Suite": "lp-interop--OPP--acm-obs-odf",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--ACM",
+    "Capabilities": [
+      "OPP"
+    ],
+    "JIRAComponent": "LP--ACM",
+    "JIRAComponentID": "85914"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-interop--OPP--odf-health:7a056fb088024f2867765c40394e6e25",
+    "Name": "storageclasses-available",
+    "Suite": "lp-interop--OPP--odf-health",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--ODF",
+    "Capabilities": [
+      "OPP"
+    ],
+    "JIRAComponent": "LP--ODF",
+    "JIRAComponentID": "14867"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-interop--OPP--odf-health:efa864b1cc63e438dea6d1c82602afe2",
+    "Name": "storagecluster-ready",
+    "Suite": "lp-interop--OPP--odf-health",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--ODF",
+    "Capabilities": [
+      "OPP"
+    ],
+    "JIRAComponent": "LP--ODF",
+    "JIRAComponentID": "14867"
   },
   {
     "APIVersion": "v1",
@@ -1108761,6 +1109113,38 @@
     ],
     "JIRAComponent": "Insights Operator",
     "JIRAComponentID": "14926"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-interop--OPP--acm-obs-odf:243c252fa77e88ce3b6e1b81095cad24",
+    "Name": "thanos-health",
+    "Suite": "lp-interop--OPP--acm-obs-odf",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--ACM",
+    "Capabilities": [
+      "OPP"
+    ],
+    "JIRAComponent": "LP--ACM",
+    "JIRAComponentID": "85914"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-interop--OPP--acm-obs-odf:e909d5e61090fec29ac41c71c194c52a",
+    "Name": "thanos-query",
+    "Suite": "lp-interop--OPP--acm-obs-odf",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--ACM",
+    "Capabilities": [
+      "OPP"
+    ],
+    "JIRAComponent": "LP--ACM",
+    "JIRAComponentID": "85914"
   },
   {
     "APIVersion": "v1",
@@ -1125808,6 +1126192,22 @@
     "ID": "openshift-tests:62f646a84807df3d62920d496457214b",
     "Name": "verify the cluster readiness and stability",
     "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-interop--OPP--wait-mcp:5a08dbf91a08ede6d63058721b6709f1",
+    "Name": "wait-mcp",
+    "Suite": "lp-interop--OPP--wait-mcp",
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,

@@ -271288,6 +271288,18 @@
     "Suite": "lp-ocp-compat--CNV--KubeVirt Tests Suite"
   },
   {
+    "Name": "acm-connectivity",
+    "Suite": "lp-interop--OPP--smoke"
+  },
+  {
+    "Name": "acs-sensors",
+    "Suite": "lp-interop--OPP--smoke"
+  },
+  {
+    "Name": "acs-upgrade",
+    "Suite": "lp-interop--OPP--acs-upgrade"
+  },
+  {
     "Name": "application-outages",
     "Suite": "chaos-krkn"
   },
@@ -271296,12 +271308,24 @@
     "Suite": "lp-ocp-compat--CNV--CNV-lp-interop"
   },
   {
+    "Name": "backup",
+    "Suite": "lp-interop--OPP--backup"
+  },
+  {
     "Name": "central",
     "Suite": "lp-ocp-compat--ACS--Check unexpected pod restarts"
   },
   {
     "Name": "central-worker pod should be running",
     "Suite": "lp-ocp-compat--ACS--CentralWorkerTest"
+  },
+  {
+    "Name": "ceph-health-detail",
+    "Suite": "lp-interop--OPP--odf-health"
+  },
+  {
+    "Name": "cephcluster-health",
+    "Suite": "lp-interop--OPP--odf-health"
   },
   {
     "Name": "cluster-config-operator should expose metrics endpoint for monitoring [apigroup:monitoring.coreos.com][Operator][Parallel]",
@@ -271326,6 +271350,10 @@
   {
     "Name": "cluster-config-operator should report complete ClusterOperator status with health and version information [apigroup:config.openshift.io][Operator][Parallel]",
     "Suite": "openshift-tests"
+  },
+  {
+    "Name": "cluster-health",
+    "Suite": "lp-interop--OPP--smoke"
   },
   {
     "Name": "cpu-hog",
@@ -271504,6 +271532,10 @@
     "Suite": "chaos-krkn"
   },
   {
+    "Name": "mco-ready",
+    "Suite": "lp-interop--OPP--acm-obs-odf"
+  },
+  {
     "Name": "memory-hog",
     "Suite": "chaos-krkn"
   },
@@ -271514,6 +271546,14 @@
   {
     "Name": "node-disruptions",
     "Suite": "chaos-krkn"
+  },
+  {
+    "Name": "noobaa-s3-functional",
+    "Suite": "lp-interop--OPP--odf-health"
+  },
+  {
+    "Name": "obc-bound",
+    "Suite": "lp-interop--OPP--acm-obs-odf"
   },
   {
     "Name": "objects in ns/default should have generation increasing monotonically",
@@ -273140,6 +273180,18 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "odf-csv-phase",
+    "Suite": "lp-interop--OPP--odf-health"
+  },
+  {
+    "Name": "odf-storage-ready",
+    "Suite": "lp-interop--OPP--acm-obs-odf"
+  },
+  {
+    "Name": "odf-upgrade",
+    "Suite": "lp-interop--OPP--odf-upgrade"
+  },
+  {
     "Name": "operator conditions authentication",
     "Suite": "Operator results"
   },
@@ -274116,6 +274168,10 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "opp-operators",
+    "Suite": "lp-interop--OPP--smoke"
+  },
+  {
     "Name": "pod-network-chaos",
     "Suite": "chaos-krkn"
   },
@@ -274200,8 +274256,28 @@
     "Suite": "chaos-krkn"
   },
   {
+    "Name": "predicate-selftest",
+    "Suite": "lp-interop--OPP--wait-mcp"
+  },
+  {
+    "Name": "pvc-provision-cephfs",
+    "Suite": "lp-interop--OPP--odf-health"
+  },
+  {
+    "Name": "pvc-provision-rbd",
+    "Suite": "lp-interop--OPP--odf-health"
+  },
+  {
     "Name": "pvc-scenario",
     "Suite": "chaos-krkn"
+  },
+  {
+    "Name": "quay-pull",
+    "Suite": "lp-interop--OPP--smoke"
+  },
+  {
+    "Name": "quay-upgrade",
+    "Suite": "lp-interop--OPP--quay-upgrade"
   },
   {
     "Name": "resource operator.openshift.io.olms/cluster has been updated too often",
@@ -274214,6 +274290,18 @@
   {
     "Name": "scanner",
     "Suite": "lp-ocp-compat--ACS--Check unexpected pod restarts"
+  },
+  {
+    "Name": "storage-endpoint",
+    "Suite": "lp-interop--OPP--acm-obs-odf"
+  },
+  {
+    "Name": "storageclasses-available",
+    "Suite": "lp-interop--OPP--odf-health"
+  },
+  {
+    "Name": "storagecluster-ready",
+    "Suite": "lp-interop--OPP--odf-health"
   },
   {
     "Name": "syn-flood",
@@ -274678,6 +274766,14 @@
   {
     "Name": "tests.data_downloaded.test_archive_contains_basic_files",
     "Suite": "insights-operator-tests"
+  },
+  {
+    "Name": "thanos-health",
+    "Suite": "lp-interop--OPP--acm-obs-odf"
+  },
+  {
+    "Name": "thanos-query",
+    "Suite": "lp-interop--OPP--acm-obs-odf"
   },
   {
     "Name": "upgrade",
@@ -278942,6 +279038,10 @@
   {
     "Name": "verify the cluster readiness and stability",
     "Suite": "openshift-tests"
+  },
+  {
+    "Name": "wait-mcp",
+    "Suite": "lp-interop--OPP--wait-mcp"
   },
   {
     "Name": "zone-outages",

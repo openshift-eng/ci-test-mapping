@@ -21,6 +21,17 @@ var LPacsComponent = Component{
 			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ACS--`)},
 			//  LP Interop Test Suites: Capability is used to group Runtime Env.
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACS--OPP--`), Capabilities: []string{"OPP"}},
+			// Runtime-first emission from interop-opp-product-upgrade-acs,
+			// which still writes the literal suite name in openshift/release.
+			// Restored with the ingestion narrowing so the live acs-upgrade row
+			// keeps its ACS ownership instead of being stolen by Cluster
+			// Version Operator; drop once that step migrates (INTEROP-9629).
+			{Suite: "lp-interop--OPP--acs-upgrade", Capabilities: []string{"OPP"}},
+			// Same restoration for interop-opp-deploy-acs, which emits
+			// lp-interop--OPP--acs-deploy (0 rows in the current US snapshot;
+			// the removed ^lp-interop--OPP--acs matcher claimed it before this
+			// branch). Keep the claim so a future row does not land in Unknown.
+			{Suite: "lp-interop--OPP--acs-deploy", Capabilities: []string{"OPP"}},
 		},
 	},
 }

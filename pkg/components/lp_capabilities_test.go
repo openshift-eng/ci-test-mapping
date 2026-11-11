@@ -40,7 +40,10 @@ var lpCapabilityTests = []struct {
 	// OCP home is decided, add a matcher and rows for it. Suites whose
 	// matchers were removed per the exact structure agreed in review
 	// (broad component rules, ACM-Virt, and the runtime-first OPP test
-	// patterns) are pinned as Unknown in TestKnownUnroutedLPSuites.
+	// patterns) are pinned as Unknown in TestKnownUnroutedLPSuites, except
+	// the two runtime-first names whose producers are still live
+	// (odf-health, acm-obs-odf), which are routed below because their rows
+	// stay ingested.
 	{"lp-interop--ACM--OPP--acm/policy/all", "LP--ACM", "OPP"},
 	{"lp-interop--ACM--OPP--acm/policy/smoke", "LP--ACM", "OPP"},
 	{"lp-interop--ACM--OPP--acm/lifecycle/all", "LP--ACM", "OPP"},
@@ -50,6 +53,15 @@ var lpCapabilityTests = []struct {
 	{"lp-interop--CNV--OPP--cnv/lifecycle/smoke", "LP--CNV", "OPP"},
 	{"lp-interop--ODF--OPP--odf/all", "LP--ODF", "OPP"},
 	{"lp-interop--Quay--OPP--quay/smoke", "LP--Quay", "OPP"},
+	// Runtime-first OPP emissions that are still live in openshift/release
+	// (interop-opp-odf-health, interop-opp-observability-odf,
+	// interop-opp-product-upgrade-acs). Their exact suite names stay admitted
+	// by config/openshift-eng.yaml and routed here; the exclusion now covers
+	// only the OPP names with no producer left.
+	{"lp-interop--OPP--odf-health", "LP--ODF", "OPP"},
+	{"lp-interop--OPP--acm-obs-odf", "LP--ACM", "OPP"},
+	{"lp-interop--OPP--acs-upgrade", "LP--ACS", "OPP"},
+	{"lp-interop--OPP--acs-deploy", "LP--ACS", "OPP"},
 }
 
 func TestLPCapabilities(t *testing.T) {
@@ -224,9 +236,10 @@ func TestPriorityResolution(t *testing.T) {
 // ci_analysis_qe): smoke/backup/wait-mcp have no suite matcher and resolve to
 // Unknown; odf-upgrade/quay-upgrade are stolen by Cluster Version Operator,
 // which matches the TEST NAME substring "upgrade" (Priority -10, capability
-// ClusterUpgrade). TODO(INTEROP-9629): update these rows when the producer
-// rename (openshift/release#86217) emits canonical lp-interop--OCP--OPP--*
-// names.
+// ClusterUpgrade). acs-upgrade used to be stolen the same way and keeps its
+// ACS ownership through an exact-Suite matcher instead (see oppYieldPins).
+// TODO(INTEROP-9629): update these rows when the producer rename
+// (openshift/release#86217) emits canonical lp-interop--OCP--OPP--* names.
 var knownOPPMisroutes = []struct {
 	testName         string
 	suite            string
@@ -248,9 +261,9 @@ var knownOPPMisroutes = []struct {
 	// structure agreed in review (etirta's 2026-10-30 22:34Z correction
 	// restored only the ACM flat Suite), so their upgrade-flavoured names
 	// lose the LP component claim and are stolen by Cluster Version
-	// Operator.
+	// Operator. acm-upgrade is also excluded from US ingestion (no producer
+	// left in openshift/release), so only the routing is pinned here.
 	{"acm-upgrade", "lp-interop--OPP--acm-upgrade", "Cluster Version Operator", []string{"ClusterUpgrade"}, -10},
-	{"acs-upgrade", "lp-interop--OPP--acs-upgrade", "Cluster Version Operator", []string{"ClusterUpgrade"}, -10},
 }
 
 // oppYieldPins proves product suite matchers at Priority 0 beat Cluster
@@ -265,6 +278,9 @@ var oppYieldPins = []struct {
 }{
 	{"acm-upgrade", "lp-interop--ACM--OPP--acm/lifecycle/all", "LP--ACM", []string{"OPP"}, 0},
 	{"acs-upgrade", "lp-interop--ACS--OPP--acs/all", "LP--ACS", []string{"OPP"}, 0},
+	// Runtime-first acs-upgrade emission: its exact-Suite matcher must also
+	// outrank Cluster Version Operator's -10 name-based claim.
+	{"acs-upgrade", "lp-interop--OPP--acs-upgrade", "LP--ACS", []string{"OPP"}, 0},
 }
 
 // knownUnroutedSuites pins the LP suites whose matchers were removed per the
@@ -273,10 +289,12 @@ var oppYieldPins = []struct {
 // legacy exact-Suite matchers ("<X>-lp-interop", removed per maintainer
 // review 2026-10-29 — producers migrate to the canonical prefix). Etirta's
 // 2026-10-30 22:34Z correction restored only {Suite: "ACM-lp-interop"};
-// the other flat names and the runtime-first patterns stay unrouted. They
-// now resolve to Unknown; TODO(INTEROP-9629): producers emit canonical
-// lp-interop--<COMP>--OPP--* names (openshift/release#86217) and these rows
-// disappear as the raw emissions retire.
+// the other flat names stay unrouted. The runtime-first OPP patterns stay
+// unrouted too, except the two live emissions (odf-health, acm-obs-odf)
+// that the ingestion narrowing keeps admitted and routes to LP--ODF /
+// LP--ACM. These resolve to Unknown; TODO(INTEROP-9629): producers emit
+// canonical lp-interop--<COMP>--OPP--* names (openshift/release#86217) and
+// these rows disappear as the raw emissions retire.
 var knownUnroutedSuites = []string{
 	"ACS-lp-interop",
 	"CNV-lp-interop",
@@ -304,7 +322,6 @@ var knownUnroutedSuites = []string{
 	"lp-interop--OPP--acs",
 	"lp-interop--OPP--pytest",
 	"lp-interop--ODF",
-	"lp-interop--OPP--odf-health",
 	"lp-interop--OPP--QUAY",
 }
 

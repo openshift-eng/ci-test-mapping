@@ -29,6 +29,13 @@ var LPacmComponent = Component{
 			//  LP Interop Test Suites: Capability is used to group Runtime Env.
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM--ACM\+Virt--`), Capabilities: []string{"ACM+Virt"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM--OPP--`), Capabilities: []string{"OPP"}},
+			// Runtime-first emission from interop-opp-observability-odf, which
+			// still writes the literal suite name in openshift/release (the
+			// canonical matcher above does not cover it). Restored so the live
+			// acm-obs-odf rows stay mapped instead of falling to Unknown; drop
+			// together with the exclusion narrowing once that step migrates
+			// (INTEROP-9629).
+			{Suite: "lp-interop--OPP--acm-obs-odf", Capabilities: []string{"OPP"}},
 		},
 	},
 }

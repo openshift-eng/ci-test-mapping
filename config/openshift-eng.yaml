@@ -35,15 +35,30 @@ excludeSuites:
   # match these (the component slug occupies the second position).
   - "lp-interop--ODF"
   - "lp-interop--ACM-OBS-ODF"
+  # Runtime-first OPP names whose producer is gone from
+  # openshift/release upstream/main (re-checked 2026-11-11). The pytest,
+  # acm-opp-app and acm-upgrade producers were replaced by the
+  # LP_QE__CR__TS_NAME__PFX__<COMP> migration (openshift/release#87932);
+  # the per-case "QUAY OCP-*" suites have no emitter in any indexed repo.
+  # Kept as an exact name list on purpose: the runtime-first OPP suites
+  # that are still live (smoke, odf-health, acm-obs-odf, wait-mcp,
+  # backup, readiness, skip-gate, acs-deploy, odf-deploy, acs-upgrade,
+  # odf-upgrade, quay-upgrade) are written literally by twelve
+  # interop/opp step scripts and must stay ingested until those steps get
+  # the same migration (INTEROP-9629). A prefix exclusion would drop them.
+  - "lp-interop--OPP--pytest"
+  - "lp-interop--OPP--acm-opp-app"
+  - "lp-interop--OPP--acm-upgrade"
+  - "lp-interop--OPP--QUAY OCP-54498"
+  - "lp-interop--OPP--QUAY OCP-54502"
+  - "lp-interop--OPP--QUAY OCP-54503"
+  - "lp-interop--OPP--QUAY OCP-54506"
+  - "lp-interop--OPP--QUAY OCP-73425"
+  - "lp-interop--OPP--QUAY OCP-85085"
 includeSuitePatterns:
   - "lp-chaos--%"
   - "lp-interop--%"
   - "lp-ocp-compat--%"
-excludeSuitePatterns:
-  # Legacy runtime-first OPP prefix (producer mechanism removed in
-  # openshift/release#87932); cannot collide with canonical
-  # lp-interop--<COMP>--OPP-- names.
-  - "lp-interop--OPP--%"
 excludeTests:
   - "Build image%"
   - "Find the input image%"

@@ -21,6 +21,12 @@ var LPodfComponent = Component{
 			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ODF--`)},
 			//  LP Interop Test Suites: Capability is used to group Runtime Env.
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ODF--OPP--`), Capabilities: []string{"OPP"}},
+			// Runtime-first emission from interop-opp-odf-health, which still
+			// writes the literal suite name in openshift/release (the canonical
+			// matcher above does not cover it). Restored so the live odf-health
+			// rows stay mapped instead of falling to Unknown; drop together with
+			// the exclusion narrowing once that step migrates (INTEROP-9629).
+			{Suite: "lp-interop--OPP--odf-health", Capabilities: []string{"OPP"}},
 		},
 	},
 }
