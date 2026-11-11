@@ -23464,19 +23464,11 @@
     "Suite": "NODE"
   },
   {
-    "Name": "OCP-52326:minmli:NODE:[sig-node] NODE initContainer policy,volume,readines,quota set workload resource usage from pod level : pod can override defaults and pod should not be set if annotation not specified [Disruptive] [Serial][Slow]",
-    "Suite": "NODE"
-  },
-  {
     "Name": "OCP-52328:minmli:NODE:[sig-node] NODE initContainer policy,volume,readines,quota set workload resource usage from pod level : pod should not take effect if not defaulted or specified in workload [Disruptive] [Serial][Slow]",
     "Suite": "NODE"
   },
   {
     "Name": "OCP-52329:minmli:NODE:[sig-node] NODE initContainer policy,volume,readines,quota set workload resource usage from pod level : pod can get configured to defaults and override defaults and pod should not be set if annotation not specified [Disruptive] [Serial][Slow]",
-    "Suite": "NODE"
-  },
-  {
-    "Name": "OCP-52329:minmli:NODE:[sig-node] NODE initContainer policy,volume,readines,quota set workload resource usage from pod level : pod can override defaults and pod should not be set if annotation not specified [Disruptive] [Serial][Slow]",
     "Suite": "NODE"
   },
   {
@@ -29036,10 +29028,6 @@
     "Suite": "Cluster_Operator"
   },
   {
-    "Name": "OCP-63301:asood:SDN:[sig-networking] SDN service Kubes API intermitent timeout via sdn or internal services from nodes or pods using hostnetwork. [Disruptive] [Serial]",
-    "Suite": "SDN"
-  },
-  {
     "Name": "OCP-63301:asood:SDN:[sig-networking] SDN service [FdpOvnOvs] Kubes API intermitent timeout via sdn or internal services from nodes or pods using hostnetwork. [Disruptive] [Serial]",
     "Suite": "SDN"
   },
@@ -31417,10 +31405,6 @@
   },
   {
     "Name": "OCP-67619:memodi:SDN:[sig-networking] SDN sriov NetObserv SRIOV Scenarios when SRIOV interfaces are up prior to agents Verify NetObserv flows are seen on SRIOV interfaces [Serial]",
-    "Suite": "SDN"
-  },
-  {
-    "Name": "OCP-67619:memodi:SDN:[sig-networking] SDN sriov Verify NetObserv flows are seen on SRIOV interfaces [Serial]",
     "Suite": "SDN"
   },
   {

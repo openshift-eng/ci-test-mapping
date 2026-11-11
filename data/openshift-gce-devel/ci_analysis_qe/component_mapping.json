@@ -93863,22 +93863,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "NODE:ab1b9bbaf0f551dae19d59592fbeeb60",
-    "Name": "OCP-52326:minmli:NODE:[sig-node] NODE initContainer policy,volume,readines,quota set workload resource usage from pod level : pod can override defaults and pod should not be set if annotation not specified [Disruptive] [Serial][Slow]",
-    "Suite": "NODE",
-    "Product": "OpenShift",
-    "Priority": 1,
-    "StaffApprovedObsolete": false,
-    "Component": "Node / Kubelet",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Node / Kubelet",
-    "JIRAComponentID": "14851"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "NODE:ca0c503037c9e03d96d3f4a0c26b36e6",
     "Name": "OCP-52328:minmli:NODE:[sig-node] NODE initContainer policy,volume,readines,quota set workload resource usage from pod level : pod should not take effect if not defaulted or specified in workload [Disruptive] [Serial][Slow]",
     "Suite": "NODE",
@@ -93897,22 +93881,6 @@
     "Kind": "TestOwnership",
     "ID": "NODE:c5f4eb4f541ffa52b916b278456d2ce0",
     "Name": "OCP-52329:minmli:NODE:[sig-node] NODE initContainer policy,volume,readines,quota set workload resource usage from pod level : pod can get configured to defaults and override defaults and pod should not be set if annotation not specified [Disruptive] [Serial][Slow]",
-    "Suite": "NODE",
-    "Product": "OpenShift",
-    "Priority": 1,
-    "StaffApprovedObsolete": false,
-    "Component": "Node / Kubelet",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Node / Kubelet",
-    "JIRAComponentID": "14851"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "NODE:34050a97469916e4df876ebb989a8caf",
-    "Name": "OCP-52329:minmli:NODE:[sig-node] NODE initContainer policy,volume,readines,quota set workload resource usage from pod level : pod can override defaults and pod should not be set if annotation not specified [Disruptive] [Serial][Slow]",
     "Suite": "NODE",
     "Product": "OpenShift",
     "Priority": 1,
@@ -116151,22 +116119,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "SDN:0455c1352742fd39e895a10e768eadda",
-    "Name": "OCP-63301:asood:SDN:[sig-networking] SDN service Kubes API intermitent timeout via sdn or internal services from nodes or pods using hostnetwork. [Disruptive] [Serial]",
-    "Suite": "SDN",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Networking / openshift-sdn",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Networking / openshift-sdn",
-    "JIRAComponentID": "14763"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "SDN:17a672f28d3cd490a4109a9edb0199a1",
     "Name": "OCP-63301:asood:SDN:[sig-networking] SDN service [FdpOvnOvs] Kubes API intermitent timeout via sdn or internal services from nodes or pods using hostnetwork. [Disruptive] [Serial]",
     "Suite": "SDN",
@@ -125673,22 +125625,6 @@
     "Kind": "TestOwnership",
     "ID": "SDN:e4037c25103a6f5a1dbeba1db9b54da7",
     "Name": "OCP-67619:memodi:SDN:[sig-networking] SDN sriov NetObserv SRIOV Scenarios when SRIOV interfaces are up prior to agents Verify NetObserv flows are seen on SRIOV interfaces [Serial]",
-    "Suite": "SDN",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Networking / openshift-sdn",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Networking / openshift-sdn",
-    "JIRAComponentID": "14763"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "SDN:0c1c48ff9aa89c9420ccf3b6d4937ee3",
-    "Name": "OCP-67619:memodi:SDN:[sig-networking] SDN sriov Verify NetObserv flows are seen on SRIOV interfaces [Serial]",
     "Suite": "SDN",
     "Product": "OpenShift",
     "Priority": 0,
