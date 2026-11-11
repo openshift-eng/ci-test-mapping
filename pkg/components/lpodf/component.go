@@ -27,6 +27,13 @@ var LPodfComponent = Component{
 			// rows stay mapped instead of falling to Unknown; drop together with
 			// the exclusion narrowing once that step migrates (INTEROP-9629).
 			{Suite: "lp-interop--OPP--odf-health", Capabilities: []string{"OPP"}},
+			// Runtime-first emission from interop-opp-product-upgrade-odf,
+			// which still writes the literal suite name in openshift/release.
+			// The exact Suite claim outranks Cluster Version Operator's
+			// Priority -10 name-based "upgrade" match, so the live odf-upgrade
+			// row keeps ODF ownership. Drop once that step migrates
+			// (INTEROP-9629).
+			{Suite: "lp-interop--OPP--odf-upgrade", Capabilities: []string{"OPP"}},
 		},
 	},
 }

@@ -29,6 +29,12 @@ includeSuites:
 # lp-interop--<COMP>--... names are admitted via includeSuitePatterns);
 # no live job still emits the flat names (remaining flat-named configs
 # carry the never-cron "0 23 31 2 *").
+# Retiring a name also retires its mapping row, not just future ingestion:
+# the mapper queries the whole junit table (no time window) and
+# PruneMappings keeps only the latest created_at batch, so historical
+# results for these suites stop mapping once the daily job runs. That is
+# intended for names whose producer is gone; the runtime-first names with
+# a live producer stay admitted below until INTEROP-9629 migrates them.
 excludeSuites:
   # Legacy runtime-first suite names admitted by the lp-interop--% pattern;
   # canonical component-first names (lp-interop--<COMP>--OPP--...) do not

@@ -21,6 +21,12 @@ var LPquayComponent = Component{
 			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--Quay--`)},
 			//  LP Interop Test Suites: Capability is used to group Runtime Env.
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--Quay--OPP--`), Capabilities: []string{"OPP"}},
+			// Runtime-first emission from interop-opp-product-upgrade-quay, which
+			// still writes the literal suite name in openshift/release. The
+			// exact Suite claim outranks Cluster Version Operator's Priority -10
+			// name-based "upgrade" match, so the live quay-upgrade row keeps Quay
+			// ownership. Drop once that step migrates (INTEROP-9629).
+			{Suite: "lp-interop--OPP--quay-upgrade", Capabilities: []string{"OPP"}},
 		},
 	},
 }

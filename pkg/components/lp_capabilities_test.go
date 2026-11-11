@@ -264,10 +264,11 @@ type oppRoutingPin struct {
 // knownOPPMisroutes pins today's WRONG routing for runtime-first OPP infra
 // suites, observed in data/openshift-gce-devel/ci_analysis_us only (0 rows in
 // ci_analysis_qe): smoke/backup/wait-mcp have no suite matcher and resolve to
-// Unknown; odf-upgrade/quay-upgrade are stolen by Cluster Version Operator,
-// which matches the TEST NAME substring "upgrade" (Priority -10, capability
-// ClusterUpgrade). acs-upgrade used to be stolen the same way and keeps its
-// ACS ownership through an exact-Suite matcher instead (see oppYieldPins).
+// Unknown. The upgrade-flavoured names were all stolen by Cluster Version
+// Operator, which matches the TEST NAME substring "upgrade" (Priority -10,
+// capability ClusterUpgrade); acs-upgrade, odf-upgrade and quay-upgrade each
+// now keep their component through an exact Suite matcher instead (see
+// oppYieldPins).
 // TODO(INTEROP-9629): update these rows when the producer rename
 // (openshift/release#86217) emits canonical lp-interop--OCP--OPP--* names.
 //
@@ -283,8 +284,6 @@ var knownOPPMisroutes = []oppRoutingPin{
 	// per review (0 rows in both datasets). TODO: give these a home when the
 	// OCP component question is decided.
 	{"wait-mcp", "lp-interop--OCP--OPP--wait-mcp", "Unknown", []string{DefaultCapability}, 0, usAdmitted},
-	{"odf-upgrade", "lp-interop--OPP--odf-upgrade", "Cluster Version Operator", []string{"ClusterUpgrade"}, -10, usAdmitted},
-	{"quay-upgrade", "lp-interop--OPP--quay-upgrade", "Cluster Version Operator", []string{"ClusterUpgrade"}, -10, usAdmitted},
 	// The runtime-first OPP test patterns were removed per the exact
 	// structure agreed in review (etirta's 2026-10-30 22:34Z correction
 	// restored only the ACM flat Suite), so their upgrade-flavoured names
@@ -303,9 +302,14 @@ var knownOPPMisroutes = []oppRoutingPin{
 var oppYieldPins = []oppRoutingPin{
 	{"acm-upgrade", "lp-interop--ACM--OPP--acm/lifecycle/all", "LP--ACM", []string{"OPP"}, 0, usAdmitted},
 	{"acs-upgrade", "lp-interop--ACS--OPP--acs/all", "LP--ACS", []string{"OPP"}, 0, usAdmitted},
-	// Runtime-first acs-upgrade emission: its exact-Suite matcher must also
+	// Runtime-first acs-upgrade emission: its exact Suite matcher must also
 	// outrank Cluster Version Operator's -10 name-based claim.
 	{"acs-upgrade", "lp-interop--OPP--acs-upgrade", "LP--ACS", []string{"OPP"}, 0, usAdmitted},
+	// Same yield property for the runtime-first odf-upgrade and quay-upgrade
+	// emissions, whose test names also carry the "upgrade" substring CVO
+	// claims by name.
+	{"odf-upgrade", "lp-interop--OPP--odf-upgrade", "LP--ODF", []string{"OPP"}, 0, usAdmitted},
+	{"quay-upgrade", "lp-interop--OPP--quay-upgrade", "LP--Quay", []string{"OPP"}, 0, usAdmitted},
 }
 
 // unroutedPin is one pinned Unknown row: the suite that must resolve to

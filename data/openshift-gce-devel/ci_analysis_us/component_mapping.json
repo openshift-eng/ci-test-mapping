@@ -1113250,14 +1113250,14 @@
     "Name": "odf-upgrade",
     "Suite": "lp-interop--OPP--odf-upgrade",
     "Product": "OpenShift",
-    "Priority": -10,
+    "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Cluster Version Operator",
+    "Component": "LP--ODF",
     "Capabilities": [
-      "ClusterUpgrade"
+      "OPP"
     ],
-    "JIRAComponent": "Cluster Version Operator",
-    "JIRAComponentID": "14665"
+    "JIRAComponent": "LP--ODF",
+    "JIRAComponentID": "14867"
   },
   {
     "APIVersion": "v1",
@@ -1117602,14 +1117602,14 @@
     "Name": "quay-upgrade",
     "Suite": "lp-interop--OPP--quay-upgrade",
     "Product": "OpenShift",
-    "Priority": -10,
+    "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Cluster Version Operator",
+    "Component": "LP--Quay",
     "Capabilities": [
-      "ClusterUpgrade"
+      "OPP"
     ],
-    "JIRAComponent": "Cluster Version Operator",
-    "JIRAComponentID": "14665"
+    "JIRAComponent": "LP--Quay",
+    "JIRAComponentID": "14962"
   },
   {
     "APIVersion": "v1",
