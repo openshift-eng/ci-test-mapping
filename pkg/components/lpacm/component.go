@@ -17,12 +17,17 @@ var LPacmComponent = Component{
 		Operators:            []string{},
 		DefaultJiraComponent: "LP--ACM",
 		Matchers: []config.ComponentMatcher{
-			// Legacy flat suite, restored per maintainer direction (etirta,
-			// 2026-10-30 22:34Z correction): only this exact-Suite matcher is
-			// restored — the other legacy LP matchers stay removed. map-verify
-			// validates against the periodically refreshed junit.json snapshot,
-			// which still carries live rows with this exact suite name. Do not
-			// remove until the flat emissions retire (INTEROP-9629 lineage).
+			// Legacy flat suite, kept solely because maintainer direction
+			// (etirta, PR 908 comment 2026-10-30 22:34Z) named this one entry
+			// for restoration; every other legacy LP matcher stays removed.
+			// It carries no rows today and cannot acquire any: "ACM-lp-interop"
+			// has 0 rows in both committed snapshots (ci_analysis_us,
+			// ci_analysis_qe) at this head and at the merge base, and the US
+			// ingestion filter never admits the name (it is absent from
+			// includeSuites and matches none of includeSuitePatterns), so the
+			// matcher is inert here and map-verify is unaffected either way.
+			// Declared intent only; retirable when the maintainer says so
+			// (INTEROP-9629 lineage).
 			{Suite: "ACM-lp-interop"},
 			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--ACM--`)},
 			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ACM--`)},
