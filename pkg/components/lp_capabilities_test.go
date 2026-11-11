@@ -231,6 +231,36 @@ func TestPriorityResolution(t *testing.T) {
 	}
 }
 
+// usStatus is a pinned name's intended reachability in the production US
+// mapping pipeline (config/openshift-eng.yaml). Suites are filtered by
+// includeSuites/includeSuitePatterns minus excludeSuites/excludeSuitePatterns
+// (compiled to SQL in pkg/bigquery/test_table.go) before any matcher runs, so
+// a filtered name can never produce a row however the matchers resolve.
+type usStatus string
+
+const (
+	// usAdmitted: the name survives the US suite filter, so its pin
+	// describes routing the pipeline can still produce.
+	usAdmitted usStatus = "admitted"
+	// usUnreachable: the name is filtered out before matching, so its pin
+	// fixes matcher behaviour for a name US ingestion never sees (retired
+	// producers, superseded flat suites). The unfiltered QE run
+	// (--config "") is out of scope here.
+	usUnreachable usStatus = "unreachable"
+)
+
+// oppRoutingPin is one pinned routing row: the test identity to resolve, the
+// ownership the identifier must yield today, and the row's intended US
+// reachability.
+type oppRoutingPin struct {
+	testName         string
+	suite            string
+	wantComponent    string
+	wantCapabilities []string
+	wantPriority     int
+	us               usStatus
+}
+
 // knownOPPMisroutes pins today's WRONG routing for runtime-first OPP infra
 // suites, observed in data/openshift-gce-devel/ci_analysis_us only (0 rows in
 // ci_analysis_qe): smoke/backup/wait-mcp have no suite matcher and resolve to
@@ -240,47 +270,49 @@ func TestPriorityResolution(t *testing.T) {
 // ACS ownership through an exact-Suite matcher instead (see oppYieldPins).
 // TODO(INTEROP-9629): update these rows when the producer rename
 // (openshift/release#86217) emits canonical lp-interop--OCP--OPP--* names.
-var knownOPPMisroutes = []struct {
-	testName         string
-	suite            string
-	wantComponent    string
-	wantCapabilities []string
-	wantPriority     int
-}{
-	{"acm-connectivity", "lp-interop--OPP--smoke", "Unknown", []string{DefaultCapability}, 0},
-	{"backup", "lp-interop--OPP--backup", "Unknown", []string{DefaultCapability}, 0},
-	{"wait-mcp", "lp-interop--OPP--wait-mcp", "Unknown", []string{DefaultCapability}, 0},
+//
+// The us field declares each row's intended reachability, so a pin on a name
+// US ingestion no longer produces reads as matcher history rather than a live
+// misroute; TestOPPFixtureSuitesAdmittedByUSConfig enforces it.
+var knownOPPMisroutes = []oppRoutingPin{
+	{"acm-connectivity", "lp-interop--OPP--smoke", "Unknown", []string{DefaultCapability}, 0, usAdmitted},
+	{"backup", "lp-interop--OPP--backup", "Unknown", []string{DefaultCapability}, 0, usAdmitted},
+	{"wait-mcp", "lp-interop--OPP--wait-mcp", "Unknown", []string{DefaultCapability}, 0, usAdmitted},
 	// Canonical OCP-class platform-infra suites stay Unknown too: no OCP
 	// component is registered and the lp-interop--OPP component was removed
 	// per review (0 rows in both datasets). TODO: give these a home when the
 	// OCP component question is decided.
-	{"wait-mcp", "lp-interop--OCP--OPP--wait-mcp", "Unknown", []string{DefaultCapability}, 0},
-	{"odf-upgrade", "lp-interop--OPP--odf-upgrade", "Cluster Version Operator", []string{"ClusterUpgrade"}, -10},
-	{"quay-upgrade", "lp-interop--OPP--quay-upgrade", "Cluster Version Operator", []string{"ClusterUpgrade"}, -10},
+	{"wait-mcp", "lp-interop--OCP--OPP--wait-mcp", "Unknown", []string{DefaultCapability}, 0, usAdmitted},
+	{"odf-upgrade", "lp-interop--OPP--odf-upgrade", "Cluster Version Operator", []string{"ClusterUpgrade"}, -10, usAdmitted},
+	{"quay-upgrade", "lp-interop--OPP--quay-upgrade", "Cluster Version Operator", []string{"ClusterUpgrade"}, -10, usAdmitted},
 	// The runtime-first OPP test patterns were removed per the exact
 	// structure agreed in review (etirta's 2026-10-30 22:34Z correction
 	// restored only the ACM flat Suite), so their upgrade-flavoured names
 	// lose the LP component claim and are stolen by Cluster Version
 	// Operator. acm-upgrade is also excluded from US ingestion (no producer
-	// left in openshift/release), so only the routing is pinned here.
-	{"acm-upgrade", "lp-interop--OPP--acm-upgrade", "Cluster Version Operator", []string{"ClusterUpgrade"}, -10},
+	// left in openshift/release), so only the routing is pinned here, and the
+	// row is declared unreachable rather than a live misroute.
+	{"acm-upgrade", "lp-interop--OPP--acm-upgrade", "Cluster Version Operator", []string{"ClusterUpgrade"}, -10, usUnreachable},
 }
 
 // oppYieldPins proves product suite matchers at Priority 0 beat Cluster
 // Version Operator's Priority -10 name-based claim on upgrade-flavoured test
-// names — the no-tie/no-steal property the canonical matchers rely on.
-var oppYieldPins = []struct {
-	testName         string
-	suite            string
-	wantComponent    string
-	wantCapabilities []string
-	wantPriority     int
-}{
-	{"acm-upgrade", "lp-interop--ACM--OPP--acm/lifecycle/all", "LP--ACM", []string{"OPP"}, 0},
-	{"acs-upgrade", "lp-interop--ACS--OPP--acs/all", "LP--ACS", []string{"OPP"}, 0},
+// names: the no-tie/no-steal property the canonical matchers rely on. Every
+// row is usAdmitted, because a yield pin only means something where US
+// ingestion still produces the name.
+var oppYieldPins = []oppRoutingPin{
+	{"acm-upgrade", "lp-interop--ACM--OPP--acm/lifecycle/all", "LP--ACM", []string{"OPP"}, 0, usAdmitted},
+	{"acs-upgrade", "lp-interop--ACS--OPP--acs/all", "LP--ACS", []string{"OPP"}, 0, usAdmitted},
 	// Runtime-first acs-upgrade emission: its exact-Suite matcher must also
 	// outrank Cluster Version Operator's -10 name-based claim.
-	{"acs-upgrade", "lp-interop--OPP--acs-upgrade", "LP--ACS", []string{"OPP"}, 0},
+	{"acs-upgrade", "lp-interop--OPP--acs-upgrade", "LP--ACS", []string{"OPP"}, 0, usAdmitted},
+}
+
+// unroutedPin is one pinned Unknown row: the suite that must resolve to
+// Unknown, plus its intended US reachability.
+type unroutedPin struct {
+	suite string
+	us    usStatus
 }
 
 // knownUnroutedSuites pins the LP suites whose matchers were removed per the
@@ -295,40 +327,52 @@ var oppYieldPins = []struct {
 // LP--ACM. These resolve to Unknown; TODO(INTEROP-9629): producers emit
 // canonical lp-interop--<COMP>--OPP--* names (openshift/release#86217) and
 // these rows disappear as the raw emissions retire.
-var knownUnroutedSuites = []string{
-	"ACS-lp-interop",
-	"CNV-lp-interop",
-	"ODF-lp-interop",
-	"Quay-lp-interop",
-	"lp-interop--ACM-Virt--GRC",
-	"lp-interop--ACM-Virt--observability",
-	"lp-interop--ACM--ACMVirt--GRC",
-	"lp-interop--CNV--ACMVirt--Testing VM workload.",
-	"lp-interop--ACM--ACM+Virtual--GRC",
-	"lp-interop--CNV--ACM+Virtual--Testing VM workload.",
-	"lp-interop--ACM--ACM+Virt",
-	"lp-interop--CNV--ACM+Virt",
-	"lp-interop--ACM--ACM+Virt-GRC",
-	"lp-interop--CNV--ACM+Virt-Testing VM workload.",
-	"lp-interop--ACM--standalone",
-	"lp-interop--CNV--standalone",
-	"lp-interop--ACS--standalone",
-	"lp-interop--ODF--standalone",
-	"lp-interop--Quay--standalone",
-	"lp-interop--OPP--Observability",
-	"acm-opp-app",
-	"lp-interop--OPP--acm",
-	"lp-interop--ACM-OBS-ODF",
-	"lp-interop--OPP--acs",
-	"lp-interop--OPP--pytest",
-	"lp-interop--ODF",
-	"lp-interop--OPP--QUAY",
+//
+// The us field separates live Unknown rows (still admitted, still visible in
+// US data) from retired names that only matcher hygiene keeps here, so no row
+// reads as a live unrouted suite when the pipeline cannot produce it.
+var knownUnroutedSuites = []unroutedPin{
+	// Flat "<X>-lp-interop" names: dropped from includeSuites, and nothing
+	// matches them by pattern, so US ingestion never sees them.
+	{"ACS-lp-interop", usUnreachable},
+	{"CNV-lp-interop", usUnreachable},
+	{"ODF-lp-interop", usUnreachable},
+	{"Quay-lp-interop", usUnreachable},
+	// Admitted by "lp-interop--%": live rows that must stay Unknown.
+	{"lp-interop--ACM-Virt--GRC", usAdmitted},
+	{"lp-interop--ACM-Virt--observability", usAdmitted},
+	{"lp-interop--ACM--ACMVirt--GRC", usAdmitted},
+	{"lp-interop--CNV--ACMVirt--Testing VM workload.", usAdmitted},
+	{"lp-interop--ACM--ACM+Virtual--GRC", usAdmitted},
+	{"lp-interop--CNV--ACM+Virtual--Testing VM workload.", usAdmitted},
+	{"lp-interop--ACM--ACM+Virt", usAdmitted},
+	{"lp-interop--CNV--ACM+Virt", usAdmitted},
+	{"lp-interop--ACM--ACM+Virt-GRC", usAdmitted},
+	{"lp-interop--CNV--ACM+Virt-Testing VM workload.", usAdmitted},
+	{"lp-interop--ACM--standalone", usAdmitted},
+	{"lp-interop--CNV--standalone", usAdmitted},
+	{"lp-interop--ACS--standalone", usAdmitted},
+	{"lp-interop--ODF--standalone", usAdmitted},
+	{"lp-interop--Quay--standalone", usAdmitted},
+	{"lp-interop--OPP--Observability", usAdmitted},
+	// Bare name with no include entry and no pattern match.
+	{"acm-opp-app", usUnreachable},
+	{"lp-interop--OPP--acm", usAdmitted},
+	// Excluded by exact name (retired producer / superseded flat suite).
+	{"lp-interop--ACM-OBS-ODF", usUnreachable},
+	{"lp-interop--OPP--acs", usAdmitted},
+	{"lp-interop--OPP--pytest", usUnreachable},
+	{"lp-interop--ODF", usUnreachable},
+	// The bare runtime-first name stays admitted; only the per-case
+	// "lp-interop--OPP--QUAY OCP-*" suites are excluded.
+	{"lp-interop--OPP--QUAY", usAdmitted},
 }
 
 func TestKnownUnroutedLPSuites(t *testing.T) {
 	t.Parallel()
 	identifier := NewTestIdentifier(registry.NewComponentRegistry(), nil)
-	for _, suite := range knownUnroutedSuites {
+	for _, pin := range knownUnroutedSuites {
+		suite := pin.suite
 		t.Run(suite, func(t *testing.T) {
 			t.Parallel()
 			testInfo := &v1.TestInfo{Name: "should preserve VM workload availability", Suite: suite}
@@ -349,13 +393,7 @@ func TestKnownUnroutedLPSuites(t *testing.T) {
 func TestKnownOPPMisroutes(t *testing.T) {
 	t.Parallel()
 	identifier := NewTestIdentifier(registry.NewComponentRegistry(), nil)
-	for _, row := range append(append([]struct {
-		testName         string
-		suite            string
-		wantComponent    string
-		wantCapabilities []string
-		wantPriority     int
-	}{}, knownOPPMisroutes...), oppYieldPins...) {
+	for _, row := range append(append([]oppRoutingPin{}, knownOPPMisroutes...), oppYieldPins...) {
 		t.Run(row.testName+"/"+row.suite, func(t *testing.T) {
 			t.Parallel()
 			ownership, err := identifier.Identify(&v1.TestInfo{Name: row.testName, Suite: row.suite})
@@ -380,7 +418,10 @@ func TestKnownOPPMisroutes(t *testing.T) {
 // (buildSuitesFilter/buildExcludeSuitesFilter) before any matcher runs. A
 // bare exact-Suite matcher such as {Suite: "preflight"} is unreachable there,
 // and reachable only in the unfiltered QE run (--config ""), where it would
-// over-claim. US-only guard; not QE evidence.
+// over-claim. US-only guard; not QE evidence. It covers every pinned name
+// (capability fixtures and the three pin lists), each asserted against the
+// reachability its us field declares, so a pin cannot describe live routing
+// for a name the filter drops (or dead routing for a name it still admits).
 func TestOPPFixtureSuitesAdmittedByUSConfig(t *testing.T) {
 	t.Parallel()
 	data, err := os.ReadFile("../../config/openshift-eng.yaml")
@@ -392,8 +433,10 @@ func TestOPPFixtureSuitesAdmittedByUSConfig(t *testing.T) {
 		t.Fatalf("parse config: %v", err)
 	}
 	// Fail closed on pattern shapes this guard does not model:
-	// non-trailing-% LIKE patterns.
-	admitted := func(suite string) bool {
+	// non-trailing-% LIKE patterns. The *testing.T is the caller's so a
+	// subtest's failure is reported against the subtest.
+	admitted := func(t *testing.T, suite string) bool {
+		t.Helper()
 		included := false
 		for _, s := range cfg.IncludeSuites {
 			if s == suite {
@@ -435,25 +478,63 @@ func TestOPPFixtureSuitesAdmittedByUSConfig(t *testing.T) {
 		}
 		return true
 	}
-	if admitted("preflight") {
+	if admitted(t, "preflight") {
 		t.Fatal("guard is vacuous: bare suite 'preflight' must not be admitted")
 	}
 	// The exclusion path must actually bite: the legacy runtime-first OPP
 	// prefix is include-pattern-admitted (lp-interop--%) yet excluded, so a
 	// matcher on such a suite would be unreachable in the US pipeline.
-	if admitted("lp-interop--OPP--pytest") {
+	if admitted(t, "lp-interop--OPP--pytest") {
 		t.Fatal("guard is vacuous: excluded legacy suite 'lp-interop--OPP--pytest' must not be admitted")
 	}
-	if !admitted("lp-interop--ACM--OPP--acm") {
+	if !admitted(t, "lp-interop--ACM--OPP--acm") {
 		t.Fatal("guard over-excludes: canonical component-first suite 'lp-interop--ACM--OPP--acm' must stay admitted")
 	}
 	for _, tc := range lpCapabilityTests {
 		if !strings.Contains(tc.suite, "--OPP--") {
 			continue
 		}
-		if !admitted(tc.suite) {
+		if !admitted(t, tc.suite) {
 			t.Errorf("fixture suite %q is not admitted by config/openshift-eng.yaml; its matcher can never fire in the US pipeline", tc.suite)
 		}
+	}
+	// Every pinned name carries its intended reachability, and the guard must
+	// check all of them: the pin lists exist to fix behaviour for names that
+	// US ingestion may stop (or never start) producing, so an unchecked pin
+	// can read as a live routing fact after the filter moves out from under it.
+	assertUSStatus := func(t *testing.T, list, suite string, want usStatus) {
+		t.Helper()
+		got := admitted(t, suite)
+		switch want {
+		case usAdmitted:
+			if !got {
+				t.Errorf("%s pin %q is not admitted by config/openshift-eng.yaml but the row declares %q; the pin claims live US routing the pipeline can never produce", list, suite, want)
+			}
+		case usUnreachable:
+			if got {
+				t.Errorf("%s pin %q is admitted by config/openshift-eng.yaml but the row declares %q; the pin claims dead US routing the pipeline still produces", list, suite, want)
+			}
+		default:
+			t.Errorf("%s pin %q declares no intended US reachability (%q); use %q or %q", list, suite, want, usAdmitted, usUnreachable)
+		}
+	}
+	for _, row := range knownOPPMisroutes {
+		t.Run("knownOPPMisroutes/"+row.suite, func(t *testing.T) {
+			t.Parallel()
+			assertUSStatus(t, "knownOPPMisroutes", row.suite, row.us)
+		})
+	}
+	for _, row := range oppYieldPins {
+		t.Run("oppYieldPins/"+row.suite, func(t *testing.T) {
+			t.Parallel()
+			assertUSStatus(t, "oppYieldPins", row.suite, row.us)
+		})
+	}
+	for _, pin := range knownUnroutedSuites {
+		t.Run("knownUnroutedSuites/"+pin.suite, func(t *testing.T) {
+			t.Parallel()
+			assertUSStatus(t, "knownUnroutedSuites", pin.suite, pin.us)
+		})
 	}
 }
 
