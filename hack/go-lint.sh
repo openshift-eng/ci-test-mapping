@@ -26,6 +26,6 @@ else
     --volume "${PWD}:/go/src/github.com/openshift-eng/ci-test-mapping:z" \
     --workdir /go/src/github.com/openshift-eng/ci-test-mapping \
     --env GOMEMLIMIT \
-    docker.io/golangci/golangci-lint:v2.10.1 \
+    docker.io/golangci/golangci-lint:v2.15.0 \
     golangci-lint "${@}"
 fi
