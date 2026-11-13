@@ -27560,10 +27560,6 @@
     "Suite": "Workloads"
   },
   {
-    "Name": "OCP-60594:yinzhou:Workloads:[sig-cli] Workloads ImageSetConfig containing OCI FBC and release platform and additionalImages works well with --use-oci-feature flag [Serial]",
-    "Suite": "Workloads"
-  },
-  {
     "Name": "OCP-60594:yinzhou:Workloads:[sig-cli] Workloads ocmirror v1 works well ImageSetConfig containing OCI FBC and release platform and additionalImages works well with --include-local-oci-catalogs flag [Serial]",
     "Suite": "Workloads"
   },
@@ -27641,10 +27637,6 @@
   },
   {
     "Name": "OCP-60602:yinzhou:Workloads:[sig-cli] Workloads ocmirror v1 works well oc mirror support to filter operator by channels on oci fbc catalog [Serial]",
-    "Suite": "Workloads"
-  },
-  {
-    "Name": "OCP-60603:yinzhou:Workloads:[sig-cli] Workloads oc-mirror negative test",
     "Suite": "Workloads"
   },
   {
@@ -29318,10 +29310,6 @@
   {
     "Name": "OCP-63796:xiyuan:Security_and_Compliance:[sig-isc] Security_and_Compliance The Compliance Operator on hypershift hosted cluster Scan hosted cluster for ocp4-cis and ocp4-cis-node profiles on hypershift hosted cluster [Serial]",
     "Suite": "Security_and_Compliance"
-  },
-  {
-    "Name": "OCP-63822:yinzhou:Workloads:[sig-cli] Workloads oc-mirror support for TargetCatalog field for operator[Serial]",
-    "Suite": "Workloads"
   },
   {
     "Name": "OCP-63829:miyadav:Cluster_Infrastructure:[CCM] Target workload annotation should be present in deployments of ccm ",
@@ -33504,10 +33492,6 @@
     "Suite": "Security_and_Compliance"
   },
   {
-    "Name": "OCP-71327:yuewu:OAP:[sig-oap] OAP cert-manager API groups should pass DAST scan",
-    "Suite": "OAP"
-  },
-  {
     "Name": "OCP-71378:mmakwana:STORAGE:[sig-storage] STORAGE [LVMS] Recover LVMS cluster from on-disk metadata [Disruptive] [Serial]",
     "Suite": "STORAGE"
   },
@@ -37142,10 +37126,6 @@
   {
     "Name": "OCP-77811:yuewu:CFE:[sig-auth] CFE cert-manager google-cas-issuer should integrate well as an external issuer with cert-manager operator",
     "Suite": "CFE"
-  },
-  {
-    "Name": "OCP-77811:yuewu:OAP:[sig-oap] OAP cert-manager Google CAS issuer should integrate well as an external issuer",
-    "Suite": "OAP"
   },
   {
     "Name": "OCP-77811:yuewu:OAP:[sig-oap] OAP cert-manager google-cas-issuer should integrate well as an external issuer with cert-manager operator",
@@ -46049,10 +46029,6 @@
   },
   {
     "Name": "feature for hypershift provisined cluster \"after all\" hook for \"(OCP-48890,yanpzhan,UserInterface) The TopologyMode needs to be passed to the console via console-config.yaml\"",
-    "Suite": "feature for hypershift provisined cluster"
-  },
-  {
-    "Name": "feature for hypershift provisined cluster \"after all\" hook for \"(OCP-50239,yanpzhan,UserInterface) Update cluster setting page and overview page for hypershift provisioned cluster\"",
     "Suite": "feature for hypershift provisined cluster"
   },
   {
