@@ -147154,6 +147154,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/eventinge2erekt:ba64089300b8280cc5d781764958631e",
+    "Name": "TestChannelBasedBrokerToKsvc/Prerequisite/#00/Setup/install_broker_\"broker-byphnqnx\"",
+    "Suite": "lp-ocp-compat--Serverless--test/eventinge2erekt",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/eventinge2erekt:d42bf0b4105502edc78b7c54ec8f72d3",
     "Name": "TestChannelBasedBrokerToKsvc/Prerequisite/#00/Setup/install_broker_\"broker-cbjuvyzm\"",
     "Suite": "lp-ocp-compat--Serverless--test/eventinge2erekt",
@@ -818080,6 +818096,22 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:6e1f2c6d90731296690b39d2d78c7524",
     "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Router Cluster ingress health checks and routes fail on swapping application router between public and private [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:cd09543957ab219af8c4869990f126fa",
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Router Ingress Controller sets allowPrivilegeEscalation on the haproxy container in the router deployment [Serial] [Suite:openshift/conformance/serial]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
