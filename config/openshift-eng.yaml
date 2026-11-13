@@ -14,26 +14,57 @@ includeSuites:
   - telco-verification
   - OLM-Catalog-Validation
   - insights-operator-tests
-  - CNV-lp-interop
-  - Quay-lp-interop
   - OpenshiftPipelines-lp-interop
   - ServiceMesh-lp-interop
   - Serverless-lp-interop
-  - ODF-lp-interop
   - MTA-lp-interop
   - Gitops-lp-interop
-  - ACS-lp-interop
   - Fusion-access-lp-interop
   - OADP-lp-interop
   - tracing-uiplugin
   - E2E Suite
   - Machine Suite
-excludeSuites: []
+# CNV/ODF/ACS/Quay-lp-interop removed 2026-11-10: legacy flat suite names
+# retired per openshift/release#87932 (canonical component-first
+# lp-interop--<COMP>--... names are admitted via includeSuitePatterns);
+# no live job still emits the flat names (remaining flat-named configs
+# carry the never-cron "0 23 31 2 *").
+# Retiring a name also retires its mapping row, not just future ingestion:
+# the mapper queries the whole junit table (no time window) and
+# PruneMappings keeps only the latest created_at batch, so historical
+# results for these suites stop mapping once the daily job runs. That is
+# intended for names whose producer is gone; the runtime-first names with
+# a live producer stay admitted below until INTEROP-9629 migrates them.
+excludeSuites:
+  # Legacy runtime-first suite names admitted by the lp-interop--% pattern;
+  # canonical component-first names (lp-interop--<COMP>--OPP--...) do not
+  # match these (the component slug occupies the second position).
+  - "lp-interop--ODF"
+  - "lp-interop--ACM-OBS-ODF"
+  # Runtime-first OPP names whose producer is gone from
+  # openshift/release upstream/main (re-checked 2026-11-11). The pytest,
+  # acm-opp-app and acm-upgrade producers were replaced by the
+  # LP_QE__CR__TS_NAME__PFX__<COMP> migration (openshift/release#87932);
+  # the per-case "QUAY OCP-*" suites have no emitter in any indexed repo.
+  # Kept as an exact name list on purpose: the runtime-first OPP suites
+  # that are still live (smoke, odf-health, acm-obs-odf, wait-mcp,
+  # backup, readiness, skip-gate, acs-deploy, odf-deploy, acs-upgrade,
+  # odf-upgrade, quay-upgrade) are written literally by twelve
+  # interop/opp step scripts and must stay ingested until those steps get
+  # the same migration (INTEROP-9629). A prefix exclusion would drop them.
+  - "lp-interop--OPP--pytest"
+  - "lp-interop--OPP--acm-opp-app"
+  - "lp-interop--OPP--acm-upgrade"
+  - "lp-interop--OPP--QUAY OCP-54498"
+  - "lp-interop--OPP--QUAY OCP-54502"
+  - "lp-interop--OPP--QUAY OCP-54503"
+  - "lp-interop--OPP--QUAY OCP-54506"
+  - "lp-interop--OPP--QUAY OCP-73425"
+  - "lp-interop--OPP--QUAY OCP-85085"
 includeSuitePatterns:
   - "lp-chaos--%"
   - "lp-interop--%"
   - "lp-ocp-compat--%"
-excludeSuitePatterns: []
 excludeTests:
   - "Build image%"
   - "Find the input image%"
