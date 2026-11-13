@@ -18,6 +18,11 @@ linters:
     - unconvert
     - unparam
   settings:
+    goconst:
+      # Struct literal values and call arguments (e.g. test names) are not worth hoisting into constants.
+      exclude-types:
+        - Call
+        - CompositeLit
     gocritic:
       enabled-checks:
         - commentedOutCode

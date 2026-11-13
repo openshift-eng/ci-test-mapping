@@ -110247,22 +110247,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "Workloads:b91cb4a375eb86bebeb7968e6569ffb8",
-    "Name": "OCP-60594:yinzhou:Workloads:[sig-cli] Workloads ImageSetConfig containing OCI FBC and release platform and additionalImages works well with --use-oci-feature flag [Serial]",
-    "Suite": "Workloads",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "oc",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "oc",
-    "JIRAComponentID": "14806"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "Workloads:33b6bd842f71b83ae6bc4068b0d5c862",
     "Name": "OCP-60594:yinzhou:Workloads:[sig-cli] Workloads ocmirror v1 works well ImageSetConfig containing OCI FBC and release platform and additionalImages works well with --include-local-oci-catalogs flag [Serial]",
     "Suite": "Workloads",
@@ -110569,22 +110553,6 @@
     "Kind": "TestOwnership",
     "ID": "Workloads:3df76ee1fae4ca6f08241b8b078b2111",
     "Name": "OCP-60602:yinzhou:Workloads:[sig-cli] Workloads ocmirror v1 works well oc mirror support to filter operator by channels on oci fbc catalog [Serial]",
-    "Suite": "Workloads",
-    "Product": "OpenShift",
-    "Priority": 5,
-    "StaffApprovedObsolete": false,
-    "Component": "oc-mirror",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "oc-mirror",
-    "JIRAComponentID": "14970"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "Workloads:b821dec41e3b678f7d457054498bd0e5",
-    "Name": "OCP-60603:yinzhou:Workloads:[sig-cli] Workloads oc-mirror negative test",
     "Suite": "Workloads",
     "Product": "OpenShift",
     "Priority": 5,
@@ -117283,22 +117251,6 @@
     ],
     "JIRAComponent": "Unknown",
     "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "Workloads:253a8cae386e16d7ed261b218cdf5642",
-    "Name": "OCP-63822:yinzhou:Workloads:[sig-cli] Workloads oc-mirror support for TargetCatalog field for operator[Serial]",
-    "Suite": "Workloads",
-    "Product": "OpenShift",
-    "Priority": 5,
-    "StaffApprovedObsolete": false,
-    "Component": "oc-mirror",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "oc-mirror",
-    "JIRAComponentID": "14970"
   },
   {
     "APIVersion": "v1",
@@ -134025,22 +133977,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "OAP:5bb9d6db10aa8b45904bac0209e37146",
-    "Name": "OCP-71327:yuewu:OAP:[sig-oap] OAP cert-manager API groups should pass DAST scan",
-    "Suite": "OAP",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "cert-manager",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "cert-manager",
-    "JIRAComponentID": "14833"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "STORAGE:c26bd2a92e5d7a72473daba394dd1c7f",
     "Name": "OCP-71378:mmakwana:STORAGE:[sig-storage] STORAGE [LVMS] Recover LVMS cluster from on-disk metadata [Disruptive] [Serial]",
     "Suite": "STORAGE",
@@ -148573,22 +148509,6 @@
     "ID": "CFE:8fd52816ce170bde6a886137bc6a621f",
     "Name": "OCP-77811:yuewu:CFE:[sig-auth] CFE cert-manager google-cas-issuer should integrate well as an external issuer with cert-manager operator",
     "Suite": "CFE",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "cert-manager",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "cert-manager",
-    "JIRAComponentID": "14833"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "OAP:9d061ce0f26a066861ccdedaee2ddd2e",
-    "Name": "OCP-77811:yuewu:OAP:[sig-oap] OAP cert-manager Google CAS issuer should integrate well as an external issuer",
-    "Suite": "OAP",
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
@@ -184218,22 +184138,6 @@
     "Kind": "TestOwnership",
     "ID": "feature for hypershift provisined cluster:dce27b0ee3b53a8e4a13df632c48d3f1",
     "Name": "feature for hypershift provisined cluster \"after all\" hook for \"(OCP-48890,yanpzhan,UserInterface) The TopologyMode needs to be passed to the console via console-config.yaml\"",
-    "Suite": "feature for hypershift provisined cluster",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "HyperShift",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "HyperShift",
-    "JIRAComponentID": "14684"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "feature for hypershift provisined cluster:f0573881ab2fcc03738602b48a01a2a7",
-    "Name": "feature for hypershift provisined cluster \"after all\" hook for \"(OCP-50239,yanpzhan,UserInterface) Update cluster setting page and overview page for hypershift provisioned cluster\"",
     "Suite": "feature for hypershift provisined cluster",
     "Product": "OpenShift",
     "Priority": 0,
