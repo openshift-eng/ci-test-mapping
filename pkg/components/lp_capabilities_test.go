@@ -35,7 +35,7 @@ var lpCapabilityTests = []struct {
 	// (canonical OPP suites carry the OPP capability, not ACM+Virt).
 	// OPP matchers exist for ACM/ACS/CNV/ODF/Quay; canonical OCP-class
 	// platform-infra suites (lp-interop--OCP--OPP--*) intentionally remain
-	// Unknown — no OCP component is registered, and the lp-interop--OPP
+	// Unknown: no OCP component is registered, and the lp-interop--OPP
 	// component was removed per review (0 rows in both datasets). When an
 	// OCP home is decided, add a matcher and rows for it. Suites whose
 	// matchers were removed per the exact structure agreed in review
@@ -180,8 +180,8 @@ func TestLPMatcherPrecedence(t *testing.T) {
 		// The legacy exact-Suite matchers ("<X>-lp-interop") were removed
 		// per maintainer review (2026-10-29), with one exception directed by
 		// etirta's 2026-10-30 22:34Z correction: only {Suite:
-		// "ACM-lp-interop"} is restored. The ACM claim is exact — suffixed
-		// variants must not match — and the other flat names stay unclaimed
+		// "ACM-lp-interop"} is restored. The ACM claim is exact: suffixed
+		// variants must not match, and the other flat names stay unclaimed
 		// (ACS/ODF/Quay are pinned in knownUnroutedSuites).
 		t.Run(component.name+"/flat suite claim", func(t *testing.T) {
 			t.Parallel()
@@ -323,7 +323,7 @@ type unroutedPin struct {
 // exact structure agreed in review: the broad ^lp-interop--<COMP>-- rules,
 // ^lp-interop--ACM-Virt--, the runtime-first OPP test patterns, and the
 // legacy exact-Suite matchers ("<X>-lp-interop", removed per maintainer
-// review 2026-10-29 — producers migrate to the canonical prefix). Etirta's
+// review 2026-10-29: producers migrate to the canonical prefix). Etirta's
 // 2026-10-30 22:34Z correction restored only {Suite: "ACM-lp-interop"};
 // the other flat names stay unrouted. The runtime-first OPP patterns stay
 // unrouted too, except the two live emissions (odf-health, acm-obs-odf)
