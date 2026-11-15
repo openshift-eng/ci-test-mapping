@@ -149314,6 +149314,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/eventinge2erekt:ed5ad68b9f11642b20f09bd3df5943fc",
+    "Name": "TestChannelBasedBrokerToKsvc/Prerequisite/#00/Setup/install_broker_\"broker-pgwtqahx\"",
+    "Suite": "lp-ocp-compat--Serverless--test/eventinge2erekt",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "Serverless-lp-interop:416fb7e4413747d24aed7c4f49d27897",
     "Name": "TestChannelBasedBrokerToKsvc/Prerequisite/#00/Setup/install_broker_\"broker-phdfddkv\"",
     "Suite": "Serverless-lp-interop",
@@ -150916,6 +150932,22 @@
     "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/eventinge2erekt:4297bb0e0a987bccc19b68b6740c1faf",
     "Name": "TestChannelBasedBrokerToKsvc/Prerequisite/#00/Setup/install_broker_\"broker-ywvmbpos\"",
+    "Suite": "lp-ocp-compat--Serverless--test/eventinge2erekt",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/eventinge2erekt:bf5c1ec7ee3af5165206e69c75f23392",
+    "Name": "TestChannelBasedBrokerToKsvc/Prerequisite/#00/Setup/install_broker_\"broker-yycmhmxo\"",
     "Suite": "lp-ocp-compat--Serverless--test/eventinge2erekt",
     "Product": "OpenShift",
     "Priority": 0,
