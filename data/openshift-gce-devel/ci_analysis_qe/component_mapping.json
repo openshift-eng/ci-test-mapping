@@ -482,22 +482,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "(OCP-53591 Network_Observability) Netflow Topology groups features:bc03154b572022398d107c7d030ed624",
-    "Name": "(OCP-53591 Network_Observability) Netflow Topology groups features \"before each\" hook: run before each test for \"(OCP-53591, memodi, Network_Observability) should verify group NS+Owners\"",
-    "Suite": "(OCP-53591 Network_Observability) Netflow Topology groups features",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "(OCP-53591 Network_Observability) Netflow Topology groups features:050f4a5f933fa76e98b0c6d573411d3d",
     "Name": "(OCP-53591 Network_Observability) Netflow Topology groups features \"before each\" hook: run before each test for \"(OCP-53591, memodi, Network_Observability) should verify group Nodes+NS\"",
     "Suite": "(OCP-53591 Network_Observability) Netflow Topology groups features",
@@ -43987,22 +43971,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "Image_Registry:e9ba1f4989abe3409cff29bce6b80410",
-    "Name": "OCP-31767:wewang:Image_Registry:Warning appears when registry use invalid AdditionalTrustedCA [Disruptive] [Serial]",
-    "Suite": "Image_Registry",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Image Registry",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Image Registry",
-    "JIRAComponentID": "14735"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "Image_Registry:8f077a7586a2d17fcf826e3417e3e61f",
     "Name": "OCP-31767:wewang:Image_Registry:[sig-imageregistry] Image_Registry Warning appears when registry use invalid AdditionalTrustedCA [Disruptive] [Serial]",
     "Suite": "Image_Registry",
@@ -82803,22 +82771,6 @@
     ],
     "JIRAComponent": "Storage",
     "JIRAComponentID": "14799"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "Image_Registry:3b5ef554fd84b555b3cd25587015f5aa",
-    "Name": "OCP-48739:xiuwang:Image_Registry:Pull through works with icsp which source and mirror without full path [Disruptive] [Serial]",
-    "Suite": "Image_Registry",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Image Registry",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Image Registry",
-    "JIRAComponentID": "14735"
   },
   {
     "APIVersion": "v1",
@@ -154985,22 +154937,6 @@
     ],
     "JIRAComponent": "Unknown",
     "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "Hypershift:48b4708d2ac727649494df4c9e4964b5",
-    "Name": "OCP-83958:wewang:Hypershift:[sig-hypershift] Hypershift Make sure internalJoinSubnet and internalTransitSwitchSubnet works",
-    "Suite": "Hypershift",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "HyperShift",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "HyperShift",
-    "JIRAComponentID": "14684"
   },
   {
     "APIVersion": "v1",

@@ -120,10 +120,6 @@
     "Suite": "(OCP-53591 Network_Observability) Netflow Topology groups features"
   },
   {
-    "Name": "(OCP-53591 Network_Observability) Netflow Topology groups features \"before each\" hook: run before each test for \"(OCP-53591, memodi, Network_Observability) should verify group NS+Owners\"",
-    "Suite": "(OCP-53591 Network_Observability) Netflow Topology groups features"
-  },
-  {
     "Name": "(OCP-53591 Network_Observability) Netflow Topology groups features \"before each\" hook: run before each test for \"(OCP-53591, memodi, Network_Observability) should verify group Nodes+NS\"",
     "Suite": "(OCP-53591 Network_Observability) Netflow Topology groups features"
   },
@@ -10996,10 +10992,6 @@
     "Suite": "OLM"
   },
   {
-    "Name": "OCP-31767:wewang:Image_Registry:Warning appears when registry use invalid AdditionalTrustedCA [Disruptive] [Serial]",
-    "Suite": "Image_Registry"
-  },
-  {
     "Name": "OCP-31767:wewang:Image_Registry:[sig-imageregistry] Image_Registry Warning appears when registry use invalid AdditionalTrustedCA [Disruptive] [Serial]",
     "Suite": "Image_Registry"
   },
@@ -20698,10 +20690,6 @@
   {
     "Name": "OCP-48723:chaoyang:STORAGE:[sig-storage] STORAGE [CSI-Driver] [Snapshot] [block] provisioning should provision storage with snapshot data source and restore it successfully",
     "Suite": "STORAGE"
-  },
-  {
-    "Name": "OCP-48739:xiuwang:Image_Registry:Pull through works with icsp which source and mirror without full path [Disruptive] [Serial]",
-    "Suite": "Image_Registry"
   },
   {
     "Name": "OCP-48739:xiuwang:Image_Registry:[sig-imageregistry] Image_Registry Pull through works with icsp which source and mirror without full path [Disruptive] [Serial]",
@@ -38742,10 +38730,6 @@
   {
     "Name": "OCP-83956:jitli:OAP:[sig-oap] OAP must-gather Install MustGather Operator and verify pod readiness",
     "Suite": "OAP"
-  },
-  {
-    "Name": "OCP-83958:wewang:Hypershift:[sig-hypershift] Hypershift Make sure internalJoinSubnet and internalTransitSwitchSubnet works",
-    "Suite": "Hypershift"
   },
   {
     "Name": "OCP-83984:jfan:OAP:[sig-oap] OAP eso ESO operator and operands containers should have readOnlyRootFilesystem",
