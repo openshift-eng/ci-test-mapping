@@ -17,17 +17,30 @@ var LPacmComponent = Component{
 		Operators:            []string{},
 		DefaultJiraComponent: "LP--ACM",
 		Matchers: []config.ComponentMatcher{
+			// Legacy flat suite, kept solely because maintainer direction
+			// (etirta, PR 908 comment 2026-10-30 22:34Z) named this one entry
+			// for restoration; every other legacy LP matcher stays removed.
+			// It carries no rows today and cannot acquire any: "ACM-lp-interop"
+			// has 0 rows in both committed snapshots (ci_analysis_us,
+			// ci_analysis_qe) at this head and at the merge base, and the US
+			// ingestion filter never admits the name (it is absent from
+			// includeSuites and matches none of includeSuitePatterns), so the
+			// matcher is inert here and map-verify is unaffected either way.
+			// Declared intent only; retirable when the maintainer says so
+			// (INTEROP-9629 lineage).
 			{Suite: "ACM-lp-interop"},
+			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--ACM--`)},
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ACM--`)},
+			//  LP Interop Test Suites: Capability is used to group Runtime Env.
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM--ACM\+Virt--`), Capabilities: []string{"ACM+Virt"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM-Virt--`), Capabilities: []string{"ACM+Virt"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM--`), Capabilities: []string{"ACM+Virt"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ACM--`), Capabilities: []string{"ACM+Virt"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--ACM--`), Capabilities: []string{"ACM+Virt"}},
-			// OPP test patterns with opp capability
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--Observability`), Capabilities: []string{"opp"}},
-			{SuiteRegEx: regexp.MustCompile(`^acm-opp-app$`), Capabilities: []string{"opp"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--acm`), Capabilities: []string{"opp"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM-OBS-ODF`), Capabilities: []string{"opp"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM--OPP--`), Capabilities: []string{"OPP"}},
+			// Runtime-first emission from interop-opp-observability-odf, which
+			// still writes the literal suite name in openshift/release (the
+			// canonical matcher above does not cover it). Restored so the live
+			// acm-obs-odf rows stay mapped instead of falling to Unknown; drop
+			// together with the exclusion narrowing once that step migrates
+			// (INTEROP-9629).
+			{Suite: "lp-interop--OPP--acm-obs-odf", Capabilities: []string{"OPP"}},
 		},
 	},
 }
