@@ -185796,10 +185796,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[sig-auth] all workloads in ns/openshift-must-gather-9pskc must set the 'openshift.io/required-scc' annotation",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[sig-auth] all workloads in ns/openshift-network-console must set the 'openshift.io/required-scc' annotation",
     "Suite": "openshift-tests-upgrade"
   },
@@ -203897,6 +203893,114 @@
   },
   {
     "Name": "[sig-network-edge][Feature:IngressOperator] Author:shudili-ROSA-OSD_CCS-ARO-NonPreRelease-Medium-60013-matchExpressions for namespaceSelector defined in an ingress-controller [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Haproxy Configmap mounted on router volume after ingresscontroller has spec field HttpErrorCodePage populated with configmap name",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Haproxy Errorfile stanzas and dummy default html files have been added to the router",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Haproxy HAProxyDown message only for pods and No reaper messages for zombie processes",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Haproxy Health check when there are multi service and each service has one backend",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Haproxy Idling StatefulSet is not supported",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Haproxy Ingress controller stats port is not set according to endpointPublishingStrategy",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Haproxy IngressController option to use PROXY protocol with IBM Cloud load-balancers - TCP, PROXY and omitted",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Haproxy Ingresscontroller routes traffic only to ready pods/backends",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Haproxy Ingresscontroller with private endpoint publishing strategy supports PROXY protocol",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Haproxy No health check when there is only one endpoint for a route",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Haproxy Power-of-two feature allows unsupportedConfigOverrides ingress operator option to enable leastconn balancing algorithm",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Haproxy Set Cookie2 by an application in a route should not kill all router pods",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Haproxy Setting ROUTER_ENABLE_COMPRESSION and ROUTER_COMPRESSION_MIME in HAProxy",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Haproxy The Power of two balancing  honours the per route balancing algorithm defined via haproxy.router.openshift.io/balance annotation",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Haproxy The Power-of-two balancing features defaults to random LB algorithm instead of leastconn for REEN/Edge/insecure routes",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Haproxy The Power-of-two balancing features switches to roundrobin mode for REEN/Edge/insecure/passthrough routes with multiple backends configured with weights",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Haproxy The Power-of-two balancing features switches to source algorithm for passthrough routes",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Haproxy The backend health check interval of unsecure/edge/passthrough/reencrypt route can be set by annotation",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Haproxy The logEmptyRequests ingresscontroller parameter set to Ignore add the dontlognull option in the haproxy configuration",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Haproxy The logEmptyRequests option only gets applied when the access logging is configured for the ingresscontroller",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Haproxy User can customize HAProxy 2.0 Error Page",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Haproxy User can delete configmap and update configmap with new custom error page",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Haproxy httpEmptyRequestsPolicy ingresscontroller parameter set to ignore adds the http-ignore-probes option in the haproxy configuration",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Haproxy misc tests for haproxy router",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Haproxy router continues to function normally with the service selector of exposed route gets removed/deleted",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Haproxy router support HTTP2 for passthrough route and reencrypt route with custom certs",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Haproxy the 503 Error page should not contain license for a vulnerable release of Bootstrap",
     "Suite": "openshift-tests"
   },
   {
@@ -222441,6 +222545,14 @@
   },
   {
     "Name": "[sig-scheduling][Early] The openshift-operator-lifecycle-manager pods should be scheduled on different nodes [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-scheduling][OCPFeatureGate:TopologyAwareWorkloadScheduling][Suite:openshift/workload-scheduling][Serial] should keep a gang pending when no single topology domain can hold it",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-scheduling][OCPFeatureGate:TopologyAwareWorkloadScheduling][Suite:openshift/workload-scheduling][Serial] should place an entire gang inside a single topology domain",
     "Suite": "openshift-tests"
   },
   {
@@ -286644,27 +286756,7 @@
     "Suite": "Cluster upgrade"
   },
   {
-    "Name": "user system:serviceaccount:openshift-authentication-operator:authentication-operator in ns/openshift-authentication-operator must not produce too many applies",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "user system:serviceaccount:openshift-infra:podsecurity-admission-label-syncer-controller in ns/openshift-infra must not produce too many applies",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "user system:serviceaccount:openshift-infra:serviceaccount-pull-secrets-controller in ns/openshift-infra must not produce too many applies",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "user system:serviceaccount:openshift-monitoring:prometheus-operator in ns/openshift-monitoring must not produce too many applies",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "user system:serviceaccount:openshift-network-operator:cluster-network-operator in ns/openshift-network-operator must not produce too many applies",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "user system:serviceaccount:openshift-ovn-kubernetes:ovn-kubernetes-control-plane in ns/openshift-ovn-kubernetes must not produce too many applies",
     "Suite": "openshift-tests"
   },
   {
