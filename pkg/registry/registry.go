@@ -103,6 +103,7 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpgitops"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpmta"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpoadp"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpocp"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpodf"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpopenshiftpipelines"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/lpquay"
@@ -467,6 +468,7 @@ func NewComponentRegistry() *Registry {
 	r.Register("LP--ACS", &lpacs.LPacsComponent)
 	r.Register("LP--OADP", &lpoadp.LPoadpComponent)
 	r.Register("LP--Fusion-access", &lpfusionaccess.LPfusionaccessComponent)
+	r.Register("LP--OCP", &lpocp.LPocpComponent)
 	// New components go here
 
 	return &r
