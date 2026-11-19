@@ -33,17 +33,14 @@ var lpCapabilityTests = []struct {
 	// Canonical component-first OPP suite names (agreed 2026-10-23) route
 	// with the OPP capability; for ACM this is also the ACM-Virt negative
 	// (canonical OPP suites carry the OPP capability, not ACM-Virt).
-	// OPP matchers exist for ACM/ACS/CNV/ODF/Quay; canonical OCP-class
-	// platform-infra suites (lp-interop--OCP--OPP--*) intentionally remain
-	// Unknown: no OCP component is registered, and the lp-interop--OPP
-	// component was removed per review (0 rows in both datasets). When an
-	// OCP home is decided, add a matcher and rows for it. Suites whose
-	// matchers were removed per the exact structure agreed in review
+	// OPP matchers exist for ACM/ACS/CNV/ODF/Quay/OCP. Canonical OCP-class
+	// platform-infra suites (lp-interop--OCP--OPP--*) route to LP--OCP with
+	// OPP via the ^lp-interop--OCP--OPP-- regex; the lp-interop--OPP
+	// component was removed per review (0 rows in both datasets). Suites
+	// whose matchers were removed per the exact structure agreed in review
 	// (broad component rules, ACM-Virt, and the runtime-first OPP test
 	// patterns) are pinned as Unknown in TestKnownUnroutedLPSuites, except
-	// the two runtime-first names whose producers are still live
-	// (odf-health, acm-obs-odf), which are routed below because their rows
-	// stay ingested.
+	// the live runtime-first names that stay admitted and routed below.
 	{"lp-interop--ACM--OPP--acm/policy/all", "LP--ACM", "OPP"},
 	{"lp-interop--ACM--OPP--acm/policy/smoke", "LP--ACM", "OPP"},
 	{"lp-interop--ACM--OPP--acm/lifecycle/all", "LP--ACM", "OPP"},
@@ -53,15 +50,23 @@ var lpCapabilityTests = []struct {
 	{"lp-interop--CNV--OPP--cnv/lifecycle/smoke", "LP--CNV", "OPP"},
 	{"lp-interop--ODF--OPP--odf/all", "LP--ODF", "OPP"},
 	{"lp-interop--Quay--OPP--quay/smoke", "LP--Quay", "OPP"},
+	{"lp-interop--OCP--OPP--smoke", "LP--OCP", "OPP"},
+	{"lp-interop--OCP--OPP--backup", "LP--OCP", "OPP"},
+	{"lp-interop--OCP--OPP--wait-mcp", "LP--OCP", "OPP"},
 	// Runtime-first OPP emissions that are still live in openshift/release
 	// (interop-opp-odf-health, interop-opp-observability-odf,
-	// interop-opp-product-upgrade-acs). Their exact suite names stay admitted
-	// by config/openshift-eng.yaml and routed here; the exclusion now covers
-	// only the OPP names with no producer left.
+	// interop-opp-product-upgrade-acs, plus the OCP platform-infra suites
+	// smoke/backup/wait-mcp now owned by LP--OCP until INTEROP-9629 migrates
+	// them to canonical lp-interop--OCP--OPP--* names). Their exact suite
+	// names stay admitted by config/openshift-eng.yaml and routed here; the
+	// exclusion now covers only the OPP names with no producer left.
 	{"lp-interop--OPP--odf-health", "LP--ODF", "OPP"},
 	{"lp-interop--OPP--acm-obs-odf", "LP--ACM", "OPP"},
 	{"lp-interop--OPP--acs-upgrade", "LP--ACS", "OPP"},
 	{"lp-interop--OPP--acs-deploy", "LP--ACS", "OPP"},
+	{"lp-interop--OPP--smoke", "LP--OCP", "OPP"},
+	{"lp-interop--OPP--backup", "LP--OCP", "OPP"},
+	{"lp-interop--OPP--wait-mcp", "LP--OCP", "OPP"},
 }
 
 func TestLPCapabilities(t *testing.T) {
@@ -266,29 +271,21 @@ type oppRoutingPin struct {
 	us               usStatus
 }
 
-// knownOPPMisroutes pins today's WRONG routing for runtime-first OPP infra
-// suites, observed in data/openshift-gce-devel/ci_analysis_us only (0 rows in
-// ci_analysis_qe): smoke/backup/wait-mcp have no suite matcher and resolve to
-// Unknown. The upgrade-flavoured names were all stolen by Cluster Version
-// Operator, which matches the TEST NAME substring "upgrade" (Priority -10,
-// capability ClusterUpgrade); acs-upgrade, odf-upgrade and quay-upgrade each
-// now keep their component through an exact Suite matcher instead (see
-// oppYieldPins).
-// TODO(INTEROP-9629): update these rows when the producer rename
-// (openshift/release#86217) emits canonical lp-interop--OCP--OPP--* names.
+// knownOPPMisroutes pins today's WRONG routing for the remaining
+// runtime-first OPP infra suite observed in
+// data/openshift-gce-devel/ci_analysis_us only (0 rows in
+// ci_analysis_qe): the upgrade-flavoured names were stolen by Cluster
+// Version Operator, which matches the TEST NAME substring "upgrade" (Priority
+// -10, capability ClusterUpgrade); acs-upgrade, odf-upgrade and quay-upgrade
+// each now keep their component through an exact Suite matcher instead (see
+// oppYieldPins). The former smoke/backup/wait-mcp misroutes and the
+// forward-looking canonical lp-interop--OCP--OPP--wait-mcp pin now route to
+// LP--OCP with OPP (see lpCapabilityTests).
 //
 // The us field declares each row's intended reachability, so a pin on a name
 // US ingestion no longer produces reads as matcher history rather than a live
 // misroute; TestOPPFixtureSuitesAdmittedByUSConfig enforces it.
 var knownOPPMisroutes = []oppRoutingPin{
-	{"acm-connectivity", "lp-interop--OPP--smoke", "Unknown", []string{DefaultCapability}, 0, usAdmitted},
-	{"backup", "lp-interop--OPP--backup", "Unknown", []string{DefaultCapability}, 0, usAdmitted},
-	{"wait-mcp", "lp-interop--OPP--wait-mcp", "Unknown", []string{DefaultCapability}, 0, usAdmitted},
-	// Canonical OCP-class platform-infra suites stay Unknown too: no OCP
-	// component is registered and the lp-interop--OPP component was removed
-	// per review (0 rows in both datasets). TODO: give these a home when the
-	// OCP component question is decided.
-	{"wait-mcp", "lp-interop--OCP--OPP--wait-mcp", "Unknown", []string{DefaultCapability}, 0, usAdmitted},
 	// The runtime-first OPP test patterns were removed per the exact
 	// structure agreed in review (etirta's 2026-10-30 22:34Z correction
 	// restored only the ACM flat Suite), so their upgrade-flavoured names
