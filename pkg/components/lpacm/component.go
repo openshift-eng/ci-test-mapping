@@ -32,10 +32,11 @@ var LPacmComponent = Component{
 			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--ACM--`)},
 			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ACM--`)},
 			//  LP Interop Test Suites: Capability is used to group Runtime Env.
-			// The runtime segment uses a hyphen (ACM-Virt), not the legacy
-			// plus form: the canonical suite name is
-			// lp-interop--ACM--ACM-Virt--<ote-suite-id>.
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM--ACM-Virt--`), Capabilities: []string{"ACM-Virt"}},
+			// Suite names keep the producer-emitted plus form (regex-escaped
+			// ACM\+Virt; per the 2026-11-19 meeting agreement, only the
+			// capability label is renamed, so no producer-side prefix change
+			// is required): lp-interop--ACM--ACM+Virt--<ote-suite-id>.
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM--ACM\+Virt--`), Capabilities: []string{"ACM-Virt"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM--OPP--`), Capabilities: []string{"OPP"}},
 			// Runtime-first emission from interop-opp-observability-odf, which
 			// still writes the literal suite name in openshift/release (the

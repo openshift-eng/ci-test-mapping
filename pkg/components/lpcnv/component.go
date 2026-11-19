@@ -20,10 +20,11 @@ var LPcnvComponent = Component{
 			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--CNV--`)},
 			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--CNV--`)},
 			//  LP Interop Test Suites: Capability is used to group Runtime Env.
-			// The runtime segment uses a hyphen (ACM-Virt), not the legacy
-			// plus form: the canonical suite name is
-			// lp-interop--CNV--ACM-Virt--<ote-suite-id>.
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--CNV--ACM-Virt--`), Capabilities: []string{"ACM-Virt"}},
+			// Suite names keep the producer-emitted plus form (regex-escaped
+			// ACM\+Virt; per the 2026-11-19 meeting agreement, only the
+			// capability label is renamed, so no producer-side prefix change
+			// is required): lp-interop--CNV--ACM+Virt--<ote-suite-id>.
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--CNV--ACM\+Virt--`), Capabilities: []string{"ACM-Virt"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--CNV--OPP--`), Capabilities: []string{"OPP"}},
 		},
 	},

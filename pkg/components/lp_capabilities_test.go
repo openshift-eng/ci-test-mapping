@@ -23,13 +23,13 @@ var lpCapabilityTests = []struct {
 	component  string
 	capability string
 }{
-	{"lp-interop--ACM--ACM-Virt--GRC", "LP--ACM", "ACM-Virt"},
-	{"lp-interop--ACM--ACM-Virt--observability", "LP--ACM", "ACM-Virt"},
-	{"lp-interop--CNV--ACM-Virt--Testing VM workload.", "LP--CNV", "ACM-Virt"},
-	{"lp-chaos--ACM--ACM-Virt--GRC", "LP--ACM", ""},
-	{"lp-chaos--CNV--ACM-Virt--Testing VM workload.", "LP--CNV", ""},
-	{"lp-ocp-compat--ACM--ACM-Virt--GRC", "LP--ACM", ""},
-	{"lp-ocp-compat--CNV--ACM-Virt--Testing VM workload.", "LP--CNV", ""},
+	{"lp-interop--ACM--ACM+Virt--GRC", "LP--ACM", "ACM-Virt"},
+	{"lp-interop--ACM--ACM+Virt--observability", "LP--ACM", "ACM-Virt"},
+	{"lp-interop--CNV--ACM+Virt--Testing VM workload.", "LP--CNV", "ACM-Virt"},
+	{"lp-chaos--ACM--ACM+Virt--GRC", "LP--ACM", ""},
+	{"lp-chaos--CNV--ACM+Virt--Testing VM workload.", "LP--CNV", ""},
+	{"lp-ocp-compat--ACM--ACM+Virt--GRC", "LP--ACM", ""},
+	{"lp-ocp-compat--CNV--ACM+Virt--Testing VM workload.", "LP--CNV", ""},
 	// Canonical component-first OPP suite names (agreed 2026-10-23) route
 	// with the OPP capability; for ACM this is also the ACM-Virt negative
 	// (canonical OPP suites carry the OPP capability, not ACM-Virt).
@@ -111,7 +111,7 @@ func TestLPCapabilities(t *testing.T) {
 			t.Parallel()
 			testInfo := &v1.TestInfo{
 				Name:  "[Feature:ACM-Virt] should preserve VM workload availability",
-				Suite: "lp-interop--" + component + "--ACM-Virt--Testing VM workload.",
+				Suite: "lp-interop--" + component + "--ACM+Virt--Testing VM workload.",
 			}
 			ownership, err := identifier.Identify(testInfo)
 			if err != nil || ownership == nil {
@@ -139,19 +139,20 @@ func TestLPMatcherPrecedence(t *testing.T) {
 			suffix      string
 			wantPattern string // empty means no matcher may claim the suite
 		}{
-			{"ACM-Virt--GRC", `ACM-Virt--`},
-			{"ACM-Virt--Testing VM workload.", `ACM-Virt--`},
+			{"ACM+Virt--GRC", `ACM\+Virt--`},
+			{"ACM+Virt--Testing VM workload.", `ACM\+Virt--`},
 			{"OPP--GRC", `OPP--`},
 			{"OPP--acm/policy/all", `OPP--`},
 			{"ACMVirt--GRC", ""},
 			{"ACMMVirt--GRC", ""},
-			{"ACM-Virtual--GRC", ""},
-			{"ACM-Virt", ""},
-			{"ACM-Virt-GRC", ""},
-			// The legacy plus form is retired: hyphen-only, so the plus
-			// name stays unclaimed (its live rows drift to Unknown;
-			// pinned in knownUnroutedSuites).
-			{"ACM+Virt--GRC", ""},
+			{"ACM+Virtual--GRC", ""},
+			{"ACM+Virt", ""},
+			{"ACM+Virt-GRC", ""},
+			// Only the capability label is renamed (ACM-Virt); the suite
+			// regex stays on the producer-emitted plus form per the
+			// 2026-11-19 meeting agreement, so the hyphen suite form is
+			// not matched.
+			{"ACM-Virt--GRC", ""},
 			{"standalone", ""},
 		}
 		for _, testCase := range tests {
@@ -177,7 +178,7 @@ func TestLPMatcherPrecedence(t *testing.T) {
 		}
 		t.Run(component.name+"/anchored prefix", func(t *testing.T) {
 			t.Parallel()
-			if matcher := component.component.FindMatch(&v1.TestInfo{Suite: "unrelated--" + prefix + "ACM-Virt--GRC"}); matcher != nil {
+			if matcher := component.component.FindMatch(&v1.TestInfo{Suite: "unrelated--" + prefix + "ACM+Virt--GRC"}); matcher != nil {
 				t.Errorf("FindMatch() = %+v, want no match", matcher)
 			}
 		})
@@ -296,14 +297,6 @@ var knownOPPMisroutes = []oppRoutingPin{
 	// left in openshift/release), so only the routing is pinned here, and the
 	// row is declared unreachable rather than a live misroute.
 	{"acm-upgrade", "lp-interop--OPP--acm-upgrade", "Cluster Version Operator", []string{"ClusterUpgrade"}, -10, usUnreachable},
-	// Transitional misroute from the ACM-Virt hyphen rename: the legacy
-	// plus-form CNV pytest rows carry "upgrade" in their test names, so
-	// with the plus matchers gone Cluster Version Operator's Priority -10
-	// name claim is the only claimant left on them. The daily US refresh
-	// reads an all-time DISTINCT snapshot, so these rows persist until
-	// retired from US ingestion; the producer-side prefix rename only
-	// stops new plus emissions.
-	{"test_is_vm_running_after_upgrade", "lp-interop--CNV--ACM+Virt--pytest", "Cluster Version Operator", []string{"ClusterUpgrade"}, -10, usAdmitted},
 }
 
 // oppYieldPins proves product suite matchers at Priority 0 beat Cluster
@@ -359,26 +352,12 @@ var knownUnroutedSuites = []unroutedPin{
 	{"lp-interop--ACM-Virt--observability", usAdmitted},
 	{"lp-interop--ACM--ACMVirt--GRC", usAdmitted},
 	{"lp-interop--CNV--ACMVirt--Testing VM workload.", usAdmitted},
-	{"lp-interop--ACM--ACM-Virtual--GRC", usAdmitted},
-	{"lp-interop--CNV--ACM-Virtual--Testing VM workload.", usAdmitted},
-	{"lp-interop--ACM--ACM-Virt", usAdmitted},
-	{"lp-interop--CNV--ACM-Virt", usAdmitted},
-	{"lp-interop--ACM--ACM-Virt-GRC", usAdmitted},
-	{"lp-interop--CNV--ACM-Virt-Testing VM workload.", usAdmitted},
-	// The legacy plus-form runtime segment is retired with the hyphen
-	// rename: its matchers are gone, so the still-emitted plus names
-	// (lp-interop--ACM--ACM+Virt--cclm-*, lp-interop--CNV--ACM+Virt--pytest
-	// in the committed US snapshot) drift to Unknown. The daily US
-	// refresh reads an all-time DISTINCT snapshot (no time bound), so
-	// the rows persist as Unknown even after the producers rename, until
-	// retired from US ingestion; map-verify is red on this PR's
-	// presubmit only (main still assigns them), and post-merge
-	// refreshes are green (Unknown on both sides). Upgrade-flavoured
-	// pytest rows are additionally stolen by Cluster Version Operator
-	// (pinned in knownOPPMisroutes).
-	{"lp-interop--ACM--ACM+Virt--GRC", usAdmitted},
-	{"lp-interop--ACM--ACM+Virt--cclm-live-migration", usAdmitted},
-	{"lp-interop--CNV--ACM+Virt--pytest", usAdmitted},
+	{"lp-interop--ACM--ACM+Virtual--GRC", usAdmitted},
+	{"lp-interop--CNV--ACM+Virtual--Testing VM workload.", usAdmitted},
+	{"lp-interop--ACM--ACM+Virt", usAdmitted},
+	{"lp-interop--CNV--ACM+Virt", usAdmitted},
+	{"lp-interop--ACM--ACM+Virt-GRC", usAdmitted},
+	{"lp-interop--CNV--ACM+Virt-Testing VM workload.", usAdmitted},
 	{"lp-interop--ACM--standalone", usAdmitted},
 	{"lp-interop--CNV--standalone", usAdmitted},
 	{"lp-interop--ACS--standalone", usAdmitted},
