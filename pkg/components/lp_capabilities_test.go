@@ -149,8 +149,8 @@ func TestLPMatcherPrecedence(t *testing.T) {
 			{"ACM-Virt", ""},
 			{"ACM-Virt-GRC", ""},
 			// The legacy plus form is retired: hyphen-only, so the plus
-			// name stays unclaimed (its live rows drift to Unknown until
-			// the producers rename; pinned in knownUnroutedSuites).
+			// name stays unclaimed (its live rows drift to Unknown;
+			// pinned in knownUnroutedSuites).
 			{"ACM+Virt--GRC", ""},
 			{"standalone", ""},
 		}
@@ -299,8 +299,10 @@ var knownOPPMisroutes = []oppRoutingPin{
 	// Transitional misroute from the ACM-Virt hyphen rename: the legacy
 	// plus-form CNV pytest rows carry "upgrade" in their test names, so
 	// with the plus matchers gone Cluster Version Operator's Priority -10
-	// name claim is the only claimant left on them. The rows disappear
-	// when the producers rename to the canonical hyphen form.
+	// name claim is the only claimant left on them. The daily US refresh
+	// reads an all-time DISTINCT snapshot, so these rows persist until
+	// retired from US ingestion; the producer-side prefix rename only
+	// stops new plus emissions.
 	{"test_is_vm_running_after_upgrade", "lp-interop--CNV--ACM+Virt--pytest", "Cluster Version Operator", []string{"ClusterUpgrade"}, -10, usAdmitted},
 }
 
@@ -366,10 +368,14 @@ var knownUnroutedSuites = []unroutedPin{
 	// The legacy plus-form runtime segment is retired with the hyphen
 	// rename: its matchers are gone, so the still-emitted plus names
 	// (lp-interop--ACM--ACM+Virt--cclm-*, lp-interop--CNV--ACM+Virt--pytest
-	// in the committed US snapshot) drift to Unknown until the producers
-	// rename. map-verify is expected-red for those rows while they exist;
-	// upgrade-flavoured pytest rows are additionally stolen by Cluster
-	// Version Operator (pinned in knownOPPMisroutes).
+	// in the committed US snapshot) drift to Unknown. The daily US
+	// refresh reads an all-time DISTINCT snapshot (no time bound), so
+	// the rows persist as Unknown even after the producers rename, until
+	// retired from US ingestion; map-verify is red on this PR's
+	// presubmit only (main still assigns them), and post-merge
+	// refreshes are green (Unknown on both sides). Upgrade-flavoured
+	// pytest rows are additionally stolen by Cluster Version Operator
+	// (pinned in knownOPPMisroutes).
 	{"lp-interop--ACM--ACM+Virt--GRC", usAdmitted},
 	{"lp-interop--ACM--ACM+Virt--cclm-live-migration", usAdmitted},
 	{"lp-interop--CNV--ACM+Virt--pytest", usAdmitted},
