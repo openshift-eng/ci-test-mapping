@@ -17,14 +17,23 @@ var LPodfComponent = Component{
 		Operators:            []string{},
 		DefaultJiraComponent: "LP--ODF",
 		Matchers: []config.ComponentMatcher{
-			{Suite: "ODF-lp-interop"},
-			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ODF--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ODF--`)},
 			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--ODF--`)},
-			// OPP test patterns with opp capability
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--pytest`), Capabilities: []string{"opp"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ODF$`), Capabilities: []string{"opp"}},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--odf-health`), Capabilities: []string{"opp"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ODF--`)},
+			//  LP Interop Test Suites: Capability is used to group Runtime Env.
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ODF--OPP--`), Capabilities: []string{"OPP"}},
+			// Runtime-first emission from interop-opp-odf-health, which still
+			// writes the literal suite name in openshift/release (the canonical
+			// matcher above does not cover it). Restored so the live odf-health
+			// rows stay mapped instead of falling to Unknown; drop together with
+			// the exclusion narrowing once that step migrates (INTEROP-9629).
+			{Suite: "lp-interop--OPP--odf-health", Capabilities: []string{"OPP"}},
+			// Runtime-first emission from interop-opp-product-upgrade-odf,
+			// which still writes the literal suite name in openshift/release.
+			// The exact Suite claim outranks Cluster Version Operator's
+			// Priority -10 name-based "upgrade" match, so the live odf-upgrade
+			// row keeps ODF ownership. Drop once that step migrates
+			// (INTEROP-9629).
+			{Suite: "lp-interop--OPP--odf-upgrade", Capabilities: []string{"OPP"}},
 		},
 	},
 }
