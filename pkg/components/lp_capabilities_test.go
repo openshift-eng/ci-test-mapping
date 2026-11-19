@@ -23,16 +23,16 @@ var lpCapabilityTests = []struct {
 	component  string
 	capability string
 }{
-	{"lp-interop--ACM--ACM+Virt--GRC", "LP--ACM", "ACM+Virt"},
-	{"lp-interop--ACM--ACM+Virt--observability", "LP--ACM", "ACM+Virt"},
-	{"lp-interop--CNV--ACM+Virt--Testing VM workload.", "LP--CNV", "ACM+Virt"},
-	{"lp-chaos--ACM--ACM+Virt--GRC", "LP--ACM", ""},
-	{"lp-chaos--CNV--ACM+Virt--Testing VM workload.", "LP--CNV", ""},
-	{"lp-ocp-compat--ACM--ACM+Virt--GRC", "LP--ACM", ""},
-	{"lp-ocp-compat--CNV--ACM+Virt--Testing VM workload.", "LP--CNV", ""},
+	{"lp-interop--ACM--ACM-Virt--GRC", "LP--ACM", "ACM-Virt"},
+	{"lp-interop--ACM--ACM-Virt--observability", "LP--ACM", "ACM-Virt"},
+	{"lp-interop--CNV--ACM-Virt--Testing VM workload.", "LP--CNV", "ACM-Virt"},
+	{"lp-chaos--ACM--ACM-Virt--GRC", "LP--ACM", ""},
+	{"lp-chaos--CNV--ACM-Virt--Testing VM workload.", "LP--CNV", ""},
+	{"lp-ocp-compat--ACM--ACM-Virt--GRC", "LP--ACM", ""},
+	{"lp-ocp-compat--CNV--ACM-Virt--Testing VM workload.", "LP--CNV", ""},
 	// Canonical component-first OPP suite names (agreed 2026-10-23) route
-	// with the OPP capability; for ACM this is also the ACM+Virt negative
-	// (canonical OPP suites carry the OPP capability, not ACM+Virt).
+	// with the OPP capability; for ACM this is also the ACM-Virt negative
+	// (canonical OPP suites carry the OPP capability, not ACM-Virt).
 	// OPP matchers exist for ACM/ACS/CNV/ODF/Quay; canonical OCP-class
 	// platform-infra suites (lp-interop--OCP--OPP--*) intentionally remain
 	// Unknown: no OCP component is registered, and the lp-interop--OPP
@@ -110,15 +110,15 @@ func TestLPCapabilities(t *testing.T) {
 		t.Run(component+" feature capability is unique", func(t *testing.T) {
 			t.Parallel()
 			testInfo := &v1.TestInfo{
-				Name:  "[Feature:ACM+Virt] should preserve VM workload availability",
-				Suite: "lp-interop--" + component + "--ACM+Virt--Testing VM workload.",
+				Name:  "[Feature:ACM-Virt] should preserve VM workload availability",
+				Suite: "lp-interop--" + component + "--ACM-Virt--Testing VM workload.",
 			}
 			ownership, err := identifier.Identify(testInfo)
 			if err != nil || ownership == nil {
 				t.Fatalf("Identify() = %v, %v", ownership, err)
 			}
-			if !reflect.DeepEqual(ownership.Capabilities, []string{"ACM+Virt"}) {
-				t.Errorf("Identify() capabilities = %v, want exactly [ACM+Virt]", ownership.Capabilities)
+			if !reflect.DeepEqual(ownership.Capabilities, []string{"ACM-Virt"}) {
+				t.Errorf("Identify() capabilities = %v, want exactly [ACM-Virt]", ownership.Capabilities)
 			}
 		})
 	}
@@ -139,15 +139,19 @@ func TestLPMatcherPrecedence(t *testing.T) {
 			suffix      string
 			wantPattern string // empty means no matcher may claim the suite
 		}{
-			{"ACM+Virt--GRC", `ACM\+Virt--`},
-			{"ACM+Virt--Testing VM workload.", `ACM\+Virt--`},
+			{"ACM-Virt--GRC", `ACM-Virt--`},
+			{"ACM-Virt--Testing VM workload.", `ACM-Virt--`},
 			{"OPP--GRC", `OPP--`},
 			{"OPP--acm/policy/all", `OPP--`},
 			{"ACMVirt--GRC", ""},
 			{"ACMMVirt--GRC", ""},
-			{"ACM+Virtual--GRC", ""},
-			{"ACM+Virt", ""},
-			{"ACM+Virt-GRC", ""},
+			{"ACM-Virtual--GRC", ""},
+			{"ACM-Virt", ""},
+			{"ACM-Virt-GRC", ""},
+			// The legacy plus form is retired: hyphen-only, so the plus
+			// name stays unclaimed (its live rows drift to Unknown until
+			// the producers rename; pinned in knownUnroutedSuites).
+			{"ACM+Virt--GRC", ""},
 			{"standalone", ""},
 		}
 		for _, testCase := range tests {
@@ -173,7 +177,7 @@ func TestLPMatcherPrecedence(t *testing.T) {
 		}
 		t.Run(component.name+"/anchored prefix", func(t *testing.T) {
 			t.Parallel()
-			if matcher := component.component.FindMatch(&v1.TestInfo{Suite: "unrelated--" + prefix + "ACM+Virt--GRC"}); matcher != nil {
+			if matcher := component.component.FindMatch(&v1.TestInfo{Suite: "unrelated--" + prefix + "ACM-Virt--GRC"}); matcher != nil {
 				t.Errorf("FindMatch() = %+v, want no match", matcher)
 			}
 		})
@@ -292,6 +296,12 @@ var knownOPPMisroutes = []oppRoutingPin{
 	// left in openshift/release), so only the routing is pinned here, and the
 	// row is declared unreachable rather than a live misroute.
 	{"acm-upgrade", "lp-interop--OPP--acm-upgrade", "Cluster Version Operator", []string{"ClusterUpgrade"}, -10, usUnreachable},
+	// Transitional misroute from the ACM-Virt hyphen rename: the legacy
+	// plus-form CNV pytest rows carry "upgrade" in their test names, so
+	// with the plus matchers gone Cluster Version Operator's Priority -10
+	// name claim is the only claimant left on them. The rows disappear
+	// when the producers rename to the canonical hyphen form.
+	{"test_is_vm_running_after_upgrade", "lp-interop--CNV--ACM+Virt--pytest", "Cluster Version Operator", []string{"ClusterUpgrade"}, -10, usAdmitted},
 }
 
 // oppYieldPins proves product suite matchers at Priority 0 beat Cluster
@@ -347,12 +357,22 @@ var knownUnroutedSuites = []unroutedPin{
 	{"lp-interop--ACM-Virt--observability", usAdmitted},
 	{"lp-interop--ACM--ACMVirt--GRC", usAdmitted},
 	{"lp-interop--CNV--ACMVirt--Testing VM workload.", usAdmitted},
-	{"lp-interop--ACM--ACM+Virtual--GRC", usAdmitted},
-	{"lp-interop--CNV--ACM+Virtual--Testing VM workload.", usAdmitted},
-	{"lp-interop--ACM--ACM+Virt", usAdmitted},
-	{"lp-interop--CNV--ACM+Virt", usAdmitted},
-	{"lp-interop--ACM--ACM+Virt-GRC", usAdmitted},
-	{"lp-interop--CNV--ACM+Virt-Testing VM workload.", usAdmitted},
+	{"lp-interop--ACM--ACM-Virtual--GRC", usAdmitted},
+	{"lp-interop--CNV--ACM-Virtual--Testing VM workload.", usAdmitted},
+	{"lp-interop--ACM--ACM-Virt", usAdmitted},
+	{"lp-interop--CNV--ACM-Virt", usAdmitted},
+	{"lp-interop--ACM--ACM-Virt-GRC", usAdmitted},
+	{"lp-interop--CNV--ACM-Virt-Testing VM workload.", usAdmitted},
+	// The legacy plus-form runtime segment is retired with the hyphen
+	// rename: its matchers are gone, so the still-emitted plus names
+	// (lp-interop--ACM--ACM+Virt--cclm-*, lp-interop--CNV--ACM+Virt--pytest
+	// in the committed US snapshot) drift to Unknown until the producers
+	// rename. map-verify is expected-red for those rows while they exist;
+	// upgrade-flavoured pytest rows are additionally stolen by Cluster
+	// Version Operator (pinned in knownOPPMisroutes).
+	{"lp-interop--ACM--ACM+Virt--GRC", usAdmitted},
+	{"lp-interop--ACM--ACM+Virt--cclm-live-migration", usAdmitted},
+	{"lp-interop--CNV--ACM+Virt--pytest", usAdmitted},
 	{"lp-interop--ACM--standalone", usAdmitted},
 	{"lp-interop--CNV--standalone", usAdmitted},
 	{"lp-interop--ACS--standalone", usAdmitted},
@@ -555,7 +575,7 @@ func TestLPAdditionalCapabilities(t *testing.T) {
 		// Only ACM keeps its flat claim (etirta's 2026-10-30 22:34Z
 		// correction).
 		{"CNV-lp-interop", "[Feature:LPFeature] checks workload", []string{"LPFeature"}, "Unknown"},
-		{"CNV-lp-interop", "[Feature:ACM+Virt] checks workload", []string{"ACM+Virt"}, "Unknown"},
+		{"CNV-lp-interop", "[Feature:ACM-Virt] checks workload", []string{"ACM-Virt"}, "Unknown"},
 		{"ACM-lp-interop", "[Feature:LPFeature] checks workload", []string{"LPFeature"}, "LP--ACM"},
 		{"lp-chaos--ACM--GRC", "[Feature:Chaos] checks workload", []string{"Chaos"}, "LP--ACM"},
 		{"lp-ocp-compat--CNV--Testing VM workload.", "[Feature:Compatibility] checks workload", []string{"Compatibility"}, "LP--CNV"},
