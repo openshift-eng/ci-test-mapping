@@ -472684,6 +472684,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:2d25856487273ea8561e0045d7beba3b",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-095_validate_dex_clientsecret verifies the operator deletes legacy non-expiring Dex kubernetes.io/service-account-token Secrets and drops them from the Dex SA [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:596ddbcd8845a4e42bf984437d543edf",
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-096-validate_home_env_argocd_controller verifies openshift-gitops app controller StatefulSet container has expected HOME and REDIS_PASSWORD values",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
@@ -473630,6 +473646,22 @@
     "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:4e5aff212505ccdc61f1fa83375486c1",
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-141_source_hydrator hydrate kustomize to another branch via ssh [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:f83a29969a2a9ca96a908986b51d7ab9",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-143_dex_OpenshiftOAuth_on_xKS_OpenShift should fail reconciliation when OpenShiftOAuth is enabled on a non-OpenShift cluster [xks]",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
     "Product": "OpenShift",
     "Priority": 0,
@@ -573889,70 +573921,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:c309b5b68b1e5322afc64840a1b77361",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-2sqjx should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:bcfbd1a8c957a65b849d213d962e3c98",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-2sqjx should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:61267617ff9d4ae921990e26540ba818",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-2w2xs should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:c4ab6e846a205e116e13576991a41f57",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-2w2xs should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:d8de40407d97ca6bc47ad692b106ab6b",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-2w4qq should have generation increasing monotonically",
     "Suite": "openshift-tests",
@@ -575041,38 +575009,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:b4f13a24ae5d0caa42d8a61b7da07b3b",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-6h4l4 should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:9bcbedff7f850b896a6ce7ea421d606d",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-6h4l4 should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:849a7072234fd2899c75276091739be9",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-6j8cj should have generation increasing monotonically",
     "Suite": "openshift-tests",
@@ -576129,38 +576065,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:59bbdfea47b2500ca5dddbf15234650a",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-85wff should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:bbc6074454ee9457e998a5cbac02e661",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-85wff should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:a551493e393344b4a66569b619b6ddd5",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-88qvg should have generation increasing monotonically",
     "Suite": "openshift-tests",
@@ -576371,38 +576275,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:963f3c3a890eda4a4fd4ac361ba53f79",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-8pjmx should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:0fbe89c24a9fdb6fc4b093bcd01a2b32",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-8s6tf should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:560aa9c25f2ba4579d75c424a91be9d6",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-8s6tf should not have too many generations",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -576673,38 +576545,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:519b2db28a1f0596d578340741a9f5cc",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-9fpl5 should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:7567a6a95c8c27f59646ecbeeecec7ec",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-9fpl5 should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:6bb5286c2ad3f01a39ff27056ac9292f",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-9g8qr should have generation increasing monotonically",
     "Suite": "openshift-tests",
@@ -576819,38 +576659,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:1539d45d2dcccfe7a911268fd8546eab",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-9k2bh should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:ab71ff45b92e898ba3ed4219bb7bc2c1",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-9k2h7 should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:2cde54c0430d9e1ca2525a6319251702",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-9k2h7 should not have too many generations",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -577377,38 +577185,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:bf72413889fe08eecad00a2d2f043821",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-bh49k should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:ce21a014fcb297eff2189d465f9aa63b",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-bh49k should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:ea1a2367526564a57eeb22138f2848c2",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-bhtkm should have generation increasing monotonically",
     "Suite": "openshift-tests",
@@ -577427,38 +577203,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:f7b7ccb46f77a001c93568307a3753eb",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-bhtkm should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:3887fd5e248086adac3408f00b279186",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-bhxrb should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:56b746cbf20a428e310d8fc715b9b2fa",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-bhxrb should not have too many generations",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -577619,38 +577363,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:80112984974e2cb37b7da52a685bcf72",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-bv7mb should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:ba989aaa168a0a5beb802882c9df6e0c",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-bvpp4 should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:6f23e16b5047277ce95e1ac51689b879",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-bvpp4 should not have too many generations",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -578387,38 +578099,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:49a6e27c021a3a6b7da977d4d65a9860",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-dfnfk should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:70cecac5607b58ac0fa9e73a75e9930a",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-dkkjd should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:bbcbde28de2fd1a75769e145e96d095a",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-dkkjd should not have too many generations",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -579905,38 +579585,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:bf659da5edace7012c4351c7ef7a0841",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-hf2wp should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:ef2c7914d74bb111e94c928bf0edb110",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-hf2wp should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:64b669b51200093ddb403ba5f504f020",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-hg7rk should have generation increasing monotonically",
     "Suite": "openshift-tests",
@@ -581025,38 +580673,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:522d34fe0438e5b987dc8f4ab253b948",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-jrs4b should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:f737b2b2f41d8b07cebda42525e6d01c",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-jrs4b should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:5d9aac219303ab1caad04271cbaf2ed4",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-jscgp should have generation increasing monotonically",
     "Suite": "openshift-tests",
@@ -581441,38 +581057,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:3e0eb4a6119911056cfd99731bf9263b",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-kcgng should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:d0d380c87ada094b7fd41d9f0dacdb6b",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-kcgng should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:656e6b846fe5aeeffb8eaf4e1b1ad2e4",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-kchrz should have generation increasing monotonically",
     "Suite": "openshift-tests",
@@ -581633,70 +581217,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:ce7d2d0c48f995b185311d730318eafb",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-klnhx should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:82e3d77a9674221771122590dad9a7b6",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-klnhx should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:0d4ffd8a2ac776284d2dccc028e9d85d",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-knl6z should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:22e3d16d626d93e14e9abc788b4a04e5",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-knl6z should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:cba85d06048fdac838b540e68266797d",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-kqpcd should have generation increasing monotonically",
     "Suite": "openshift-tests",
@@ -581715,38 +581235,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:ceb0e7e2701c2ca53de29fef236f7843",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-kqpcd should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:b4d7ac1c3e48fbb8d504b81c097a427e",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-kqw5h should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:4ade77337cb6749e2f9d8411bc3c02a7",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-kqw5h should not have too many generations",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -581971,70 +581459,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:4c2cfd5b1f0f1e9d0b2c3c5162458a27",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-l8z64 should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:efad6018e1598531c6b5b605e06af9cd",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-lbznw should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:78b59224952fc90445fa907056541e26",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-lbznw should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:5757fd50d7514cee9671a68f9519f82a",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-lclb7 should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:ac5f53e3b5c6fee33b1b1a491ebe67da",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-lclb7 should not have too many generations",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -582401,38 +581825,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:fff40a0e7af6c05a90a4ad256c7b4211",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-m5v2c should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:3871f569f71047a9d5527ac22fc3fc46",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-m5v2c should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:d4408a5984c3ae4f6477fe7443ce7554",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-m6mts should have generation increasing monotonically",
     "Suite": "openshift-tests",
@@ -582483,38 +581875,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:a14b7a1767ac61b60333666a6c2d0db9",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-m6tbc should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:4b7a84a05f84ceeb5e0031d8d20a30a8",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-m9nlk should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:feba489d056dd7562facf9160bbd6677",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-m9nlk should not have too many generations",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -582611,38 +581971,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:c987088d4f9a01a9f912f30282f06a9d",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-mf65n should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:050318b1b09edf954d56c5039d92fd58",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-mllw2 should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:47255b7f15bac8a4196d8495fa29e452",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-mllw2 should not have too many generations",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -585665,38 +584993,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:8d113f3660209466673d29e07e31b368",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-t8q7m should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:fce82ac2ae357b0a5fb8bda1e90b1b70",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-t8q7m should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:64cca11434699ed3638578a47b9bb3b9",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-tj27z should have generation increasing monotonically",
     "Suite": "openshift-tests",
@@ -586835,38 +586131,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:73338464e3efcc7fd85f422062c00666",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-wfzkz should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:ca4b480ecab09254ff88fc57f9f14f9c",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-wjc2p should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:ac0fedbcb006756fda2a4b4fe60efca2",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-wjc2p should not have too many generations",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -588691,38 +587955,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:8f354108b1f691efe325513ddded1288",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-zw584 should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:1f5b1e01ee6f4f9041e533adb8f93035",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-zwtzf should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:3e16c07d390dbb32c8212a93f541fbf8",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-zwtzf should not have too many generations",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -596433,38 +595665,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:b30733c721bf104037901c1d0e535f90",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-2sqjx should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:72d5a248f24aedea0b915eaf91bbfa52",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-2w2xs should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:52a6a81508f775cdb0ec535940f7f27e",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-2w4qq should not submit invalid apply statements",
     "Suite": "openshift-tests",
@@ -597009,22 +596209,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:7f9c32538dccbe2ded93517aecee2281",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-6h4l4 should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:819a04cbb7d3e32a7971a021a9c6d912",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-6j8cj should not submit invalid apply statements",
     "Suite": "openshift-tests",
@@ -597553,22 +596737,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:380fbdea7de19d8bc31889ecac2d7b0b",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-85wff should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:d53c8d3f2c2073777a088d7422e3116b",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-88qvg should not submit invalid apply statements",
     "Suite": "openshift-tests",
@@ -597667,22 +596835,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:5c67f3bb64c1e17b136552ff1240354c",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-8pjmx should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:260ea9d5889f21e775e19559b6234cbb",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-8s6tf should not submit invalid apply statements",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -597825,22 +596977,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:a9dd212f150a1c6776e9985b95c3d236",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-9fpl5 should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:62d620cc5a905c975a932cf0d0285104",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-9g8qr should not submit invalid apply statements",
     "Suite": "openshift-tests",
@@ -597891,22 +597027,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:1304b874ac894450398d24273822b791",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-9k2bh should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:69219865451ec499bfffe3356974adb8",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-9k2h7 should not submit invalid apply statements",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -598177,40 +597297,8 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:1e70130f5e3150dd5c4ee3fecdb4d04e",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-bh49k should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:4633c052b77c18ad1b74ebc47d947d94",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-bhtkm should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:2171f7d6573cbc216c45e32845cb11e0",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-bhxrb should not submit invalid apply statements",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -598291,22 +597379,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:6c606aa9d6bfe6041978766933edc559",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-bv7mb should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:0d78587c409656925a6e2b818f66daa6",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-bvpp4 should not submit invalid apply statements",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -598675,22 +597747,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:8b1c05d240f4814d862516198878bcab",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-dfnfk should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:e2b64dc6bf2adff290bf9a818f113bd5",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-dkkjd should not submit invalid apply statements",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -599441,22 +598497,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:bfcc3a8c75194f9be72464c20217afa4",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-hf2wp should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:ceb6c9c6be4f47f071c2b206f2537061",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-hg7rk should not submit invalid apply statements",
     "Suite": "openshift-tests",
@@ -600001,22 +599041,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:c7af1c0ff28b1b18c02283ff2ba453e5",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-jrs4b should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:54450e18c6fb92a12004efdb3c8ed987",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-jscgp should not submit invalid apply statements",
     "Suite": "openshift-tests",
@@ -600209,22 +599233,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:dfa2773c1547a4770f06dd2749de5d05",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-kcgng should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:eba5e7af2c10ec4670cf9d7fe1e366d7",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-kchrz should not submit invalid apply statements",
     "Suite": "openshift-tests",
@@ -600305,56 +599313,8 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:76bf60081e448d0bcb593daa6e8dcd2c",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-klnhx should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:f8c9f5a80806130af122723dbef94651",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-knl6z should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:12bf70e81bcd8a5dce7d9f94cb099f74",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-kqpcd should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:1d5600472d8f57193d71edb52f2eea8f",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-kqw5h should not submit invalid apply statements",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -600467,38 +599427,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:d9398458e7df4fe68a4a6bc770e71310",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-l8z64 should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:25f8ba09fe4968f311247bcc2a2bc01d",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-lbznw should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:fd56d5fc603493125fd0d37ddba3761d",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-lclb7 should not submit invalid apply statements",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -600689,22 +599617,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:1d940b8cacaee92a1cf7ebf841659d38",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-m5v2c should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:b33a8dd968e14acea9139fd3a03a766d",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-m6mts should not submit invalid apply statements",
     "Suite": "openshift-tests",
@@ -600723,22 +599635,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:f6ab54da0707916912bb488e5070b823",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-m6tbc should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:17cab2494f0b4314321ca862b583fe66",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-m9nlk should not submit invalid apply statements",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -600787,22 +599683,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:5a60df4d13f4add7222420a23784b5c0",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-mf65n should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:80961cd88d9ab0560b5bf2f1c932cd84",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-mllw2 should not submit invalid apply statements",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -602321,22 +601201,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:e7bb47603a8fc6d8cbb6495019cd209a",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-t8q7m should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:5c01eb9362d181e1bb159132c421d8af",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-tj27z should not submit invalid apply statements",
     "Suite": "openshift-tests",
@@ -602899,22 +601763,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:6a126dde4fee66487a90cf9ef66a4592",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-wfzkz should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:0a6efe78f5f8991fcbb363bfaa33bd89",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-wjc2p should not submit invalid apply statements",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -603827,22 +602675,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:0f74119e84446e6c9178a8f0d2771618",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-zw584 should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:b8c070ae1c2e7e4b443597d249968a46",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-zwtzf should not submit invalid apply statements",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -811805,310 +810637,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:3b0957a055f4976a7c9fc841792f9588",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration] MCO Storage [PolarionID:42520][OTP] retrieve mc with large size from mcs [Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:68b883ab24bd00ff06637a1c41a2197f",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration] MCO Storage [PolarionID:46314][OTP] Incorrect file contents if compression field is specified [Serial]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:44e3a42ef69b7e6f41bb21a0a92f85f8",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration] MCO Storage [PolarionID:59837][OTP] Use wrong user when creating a file [Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:e46981d13d8e3537932c7ae1670826ce",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration] MCO Storage [PolarionID:59867][OTP] Create files specifying user and group [Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:46f163edb88bd32f957c9a0afbaa4d55",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration] MCO Storage [PolarionID:63477][OTP] Deploy files using all available ignition configs. Default 3.5.0[Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:5bfd2665dd251e2e9c3841ee41c5fe8b",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration] MCO Storage [PolarionID:64833][OTP] Do not make an 'orig' copy for config.json file [Serial]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:7eb59827fe922f2d6aa1d3c115199eda",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration] MCO Storage [PolarionID:70090][OTP] apiserver-url.env file can be created on all cluster nodes [Serial]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:6aa83a677e7c53b76b4f3a14d1e5fc62",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration] MCO Storage [PolarionID:72008][OTP] recreate currentconfig missing on the filesystem [Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:faa209abf35c949a957a1077fbbcc90c",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration] MCO Storage [PolarionID:72129][OTP] Don't allow creating the force file via MachineConfig [Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:f7d07b0801f9344d9cdb595e5f30e81a",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration] MCO Storage [PolarionID:74608][OTP] Env file /etc/kubernetes/node.env should not be overwritten after a node restart [Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:4d9179fa54f650384c5cc790b1e90eaa",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration] MCO Storage [PolarionID:82976][OTP] MachineConfigOperator creates incorrect file contents if compression field is specified [Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:0397a9bc9588229037039667df50c676",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration] MCO Storage [PolarionID:84219][OTP] Ensure new nodes adopt irreconcilable config while in old nodes surf [Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:aee7a0a35e56c6a217c7638793f42eea",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration] MCO Storage [PolarionID:85162][OTP] Ensure MCP is degraded when we apply the extra-disks config [Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:f691a8f1c2a94984ac9ce6f262ebd4c1",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration] MCO units [PolarionID:42361][OTP] add chrony systemd config [Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:ac17afccbbfbabe17615d005d38a9904",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration] MCO units [PolarionID:42438][OTP][LEVEL0] add journald systemd config [Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:a9a126be62c01f519c375f34d297086f",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration] MCO units [PolarionID:46434][OTP] Mask service [Serial]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:8ef182f660ebda67c129c562ecd6df66",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration] MCO units [PolarionID:56614][OTP] Create unit with content and mask=true[Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:d00de28bb8f3efd93f54ca8aa56bea38",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration] MCO units [PolarionID:80547][OTP] Disable chrony time service[Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:bcb378d440a57eb03f6351ca96b59a01",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration] MCO units [PolarionID:86869][OTP] kdump.service to be enabled after applying the MC [Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:f981082db6b72d207d2789b33dd4ebdf",
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Disruptive] MCO kernel [PolarionID:42364][OTP] add selinux kernel argument [Disruptive]",
     "Suite": "openshift-tests",
@@ -812861,38 +811389,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:eb98bc9d64ad6c16cd626b57c09fbfba",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO MachineConfigNode DEPRECATED. MachineConfigNode UpdateCompatible is Unknown when MC contains kernel argument in ignition section [apigroup:machineconfiguration.openshift.io]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:bc7c4e8c33098ea938d4220c59fc46dd",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO MachineConfigNode MachineConfigNode corresponding condition status is Unknown when node is degraded [apigroup:machineconfiguration.openshift.io]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:3a76fc43fcc664f34286b2813c2a66ca",
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO MachineConfigNode Manual cordon and uncordon should be reported without making an updated pool updating [apigroup:machineconfiguration.openshift.io]",
     "Suite": "openshift-tests",
@@ -812927,134 +811423,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:7acb517c7b8b493e856f1ae5600c2489",
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO MachineConfigNode Manual reboot should be reported on the MachineConfigNode [apigroup:machineconfiguration.openshift.io]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:1b57cce46848fb9b466fe994f4d8bfaa",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO MachineConfigNode Should apply MOSC to existing nodes and verify MCN image status [apigroup:machineconfiguration.openshift.io]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:54966d6f53aa6e3e177f5910f3a7302b",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO MachineConfigNode Should enable feature gate MachineConfigNodes [apigroup:machineconfiguration.openshift.io]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:8f20b0b6132220866e47387f2b45f191",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO MachineConfigNode Should scope each MCN object to only be accessible from its associated MCD [apigroup:machineconfiguration.openshift.io]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:a52686877b38051310cee9fd7de7ba47",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO MachineConfigNode Should support custom MCPs in MachineConfigNodes [apigroup:machineconfiguration.openshift.io]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:635cbeb7a77111ba8e2c88e83e931484",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO MachineConfigNode Should sync MachineConfigNode resources when node is created/deleted [apigroup:machineconfiguration.openshift.io]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:7da5c5017713b135cb2153088e5c950d",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO MachineConfigNode Should validate MachineConfigNode condition status transition [apigroup:machineconfiguration.openshift.io]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:a609ac265954d85c94244aec24c2d792",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO MachineConfigNode Should validate MachineConfigNodes properties [apigroup:machineconfiguration.openshift.io]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:23e4b2580e308e75bf313fd2d093c3a2",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO MachineConfigNode Should verify MachineConfigNode shows degrade node status for PIS [apigroup:machineconfiguration.openshift.io]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -820069,6 +818437,22 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:dd29b8802bf1f60397877a8fc1c0ba97",
     "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Haproxy User can customize HAProxy 2.0 Error Page",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:a07c493ea965a45205b6064ab7a0cc06",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Haproxy User can customize HAProxy error pages",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
