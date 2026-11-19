@@ -1115910,12 +1115910,12 @@
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Unknown",
+    "Component": "LP--OCP",
     "Capabilities": [
-      "Other"
+      "OPP"
     ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
+    "JIRAComponent": "LP--OCP",
+    "JIRAComponentID": null
   },
   {
     "APIVersion": "v1",
@@ -1115926,12 +1115926,12 @@
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Unknown",
+    "Component": "LP--OCP",
     "Capabilities": [
-      "Other"
+      "OPP"
     ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
+    "JIRAComponent": "LP--OCP",
+    "JIRAComponentID": null
   },
   {
     "APIVersion": "v1",
@@ -1115990,12 +1115990,12 @@
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Unknown",
+    "Component": "LP--OCP",
     "Capabilities": [
-      "Other"
+      "OPP"
     ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
+    "JIRAComponent": "LP--OCP",
+    "JIRAComponentID": null
   },
   {
     "APIVersion": "v1",
@@ -1116166,12 +1116166,12 @@
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Unknown",
+    "Component": "LP--OCP",
     "Capabilities": [
-      "Other"
+      "OPP"
     ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
+    "JIRAComponent": "LP--OCP",
+    "JIRAComponentID": null
   },
   {
     "APIVersion": "v1",
@@ -1127446,12 +1127446,12 @@
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Unknown",
+    "Component": "LP--OCP",
     "Capabilities": [
-      "Other"
+      "OPP"
     ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
+    "JIRAComponent": "LP--OCP",
+    "JIRAComponentID": null
   },
   {
     "APIVersion": "v1",
@@ -1127798,12 +1127798,12 @@
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Unknown",
+    "Component": "LP--OCP",
     "Capabilities": [
-      "Other"
+      "OPP"
     ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
+    "JIRAComponent": "LP--OCP",
+    "JIRAComponentID": null
   },
   {
     "APIVersion": "v1",
@@ -1127862,12 +1127862,12 @@
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Unknown",
+    "Component": "LP--OCP",
     "Capabilities": [
-      "Other"
+      "OPP"
     ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
+    "JIRAComponent": "LP--OCP",
+    "JIRAComponentID": null
   },
   {
     "APIVersion": "v1",
@@ -1147286,12 +1147286,12 @@
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Unknown",
+    "Component": "LP--OCP",
     "Capabilities": [
-      "Other"
+      "OPP"
     ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
+    "JIRAComponent": "LP--OCP",
+    "JIRAComponentID": null
   },
   {
     "APIVersion": "v1",
