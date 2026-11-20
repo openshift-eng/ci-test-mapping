@@ -16,6 +16,11 @@ var MachineAPIProvidersComponent = Component{
 		DefaultJiraComponent: "Cloud Compute / Machine API Providers",
 		Matchers: []config.ComponentMatcher{
 			{
+				Suite:      "openshift-tests",
+				IncludeAll: []string{"verify all machines should be in Running state"},
+				Priority:   1,
+			},
+			{
 				IncludeAny: []string{
 					"[sig-cluster-lifecycle] Cluster_Infrastructure MAPI", // openshift-tests-private
 					"[sig-cluster-lifecycle] Machine API",                 // cluster-api-actuator-pkg
