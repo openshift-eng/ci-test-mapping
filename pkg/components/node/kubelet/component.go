@@ -16,6 +16,11 @@ var KubeletComponent = Component{
 		DefaultJiraComponent: "Node / Kubelet",
 		Matchers: []config.ComponentMatcher{
 			{
+				Suite:      "openshift-tests",
+				IncludeAll: []string{"ensure 1 worker node at least gets ready"},
+				Priority:   1,
+			},
+			{
 				SIG:      "sig-node",
 				Priority: 1,
 			},

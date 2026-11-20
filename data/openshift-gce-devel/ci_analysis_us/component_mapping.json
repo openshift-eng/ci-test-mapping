@@ -1116564,14 +1116564,14 @@
     "Name": "ensure 1 worker node at least gets ready",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
-    "Priority": 0,
+    "Priority": 1,
     "StaffApprovedObsolete": false,
-    "Component": "Unknown",
+    "Component": "Node / Kubelet",
     "Capabilities": [
       "Other"
     ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
+    "JIRAComponent": "Node / Kubelet",
+    "JIRAComponentID": "14851"
   },
   {
     "APIVersion": "v1",
@@ -1146580,14 +1146580,14 @@
     "Name": "verify all machines should be in Running state",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
-    "Priority": 0,
+    "Priority": 1,
     "StaffApprovedObsolete": false,
-    "Component": "Unknown",
+    "Component": "Cloud Compute / Machine API Providers",
     "Capabilities": [
       "Other"
     ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
+    "JIRAComponent": "Cloud Compute / Machine API Providers",
+    "JIRAComponentID": "14845"
   },
   {
     "APIVersion": "v1",
@@ -1147270,12 +1147270,12 @@
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Unknown",
+    "Component": "Cluster Version Operator",
     "Capabilities": [
       "Other"
     ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
+    "JIRAComponent": "Cluster Version Operator",
+    "JIRAComponentID": "14665"
   },
   {
     "APIVersion": "v1",
