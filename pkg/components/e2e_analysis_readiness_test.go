@@ -64,7 +64,7 @@ func TestE2EAnalysisReadinessSuitePin(t *testing.T) {
 			if err != nil || ownership == nil {
 				t.Fatalf("Identify() = %v, %v", ownership, err)
 			}
-			if ownership.Component != "Unknown" {
+			if ownership.Component != DefaultComponent {
 				t.Errorf("Identify() = %s, want Unknown for suite other-suite", ownership.Component)
 			}
 		})
@@ -74,7 +74,7 @@ func TestE2EAnalysisReadinessSuitePin(t *testing.T) {
 			if err != nil || ownership == nil {
 				t.Fatalf("Identify() = %v, %v", ownership, err)
 			}
-			if ownership.Component != "Unknown" {
+			if ownership.Component != DefaultComponent {
 				t.Errorf("Identify() = %s, want Unknown for empty suite", ownership.Component)
 			}
 		})
