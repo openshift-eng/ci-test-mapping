@@ -1644,6 +1644,10 @@
     "Suite": "Logging related features"
   },
   {
+    "Name": "Logging related features \"before each\" hook for \"(OCP-66825,qitang,Logging) Vector - OpenShift Logging Collection Vector metrics dashboard\"",
+    "Suite": "Logging related features"
+  },
+  {
     "Name": "Logging related features \"before each\" hook for \"(OCP-70833,gkarager,Logging) Deploy loki-operator via Web Console\"",
     "Suite": "Logging related features"
   },
@@ -27664,6 +27668,10 @@
     "Suite": "Workloads"
   },
   {
+    "Name": "OCP-60699:gkarager:Logging:[sig-openshift-logging] Logging  Log Forward to Syslog Vector-Forward logs to syslog(RFCRFCThirtyOneSixtyFour)",
+    "Suite": "Logging"
+  },
+  {
     "Name": "OCP-60699:gkarager:Logging:[sig-openshift-logging] Logging  to Syslog Vector forward logs to syslog(RFCThirtyOneSixtyFour)",
     "Suite": "Logging"
   },
@@ -28060,7 +28068,19 @@
     "Suite": "Logging"
   },
   {
+    "Name": "OCP-61477:gkarager:Logging:[sig-openshift-logging] Logging  Log Forward to Syslog Vector-Forward logs to syslog - mtls with private key passphrase",
+    "Suite": "Logging"
+  },
+  {
     "Name": "OCP-61477:gkarager:Logging:[sig-openshift-logging] Logging  to Syslog Vector-Forward logs to syslog - mtls with private key passphrase",
+    "Suite": "Logging"
+  },
+  {
+    "Name": "OCP-61479:gkarager:Logging:[sig-openshift-logging] Logging  Log Forward to Syslog V-ICA.02-V-ICA.03-Vector forward logs to syslog(tls)",
+    "Suite": "Logging"
+  },
+  {
+    "Name": "OCP-61479:gkarager:Logging:[sig-openshift-logging] Logging  Log Forward to Syslog VA-IAC.03-Vector-Forward logs to syslog(tls)",
     "Suite": "Logging"
   },
   {
@@ -31292,6 +31312,10 @@
     "Suite": "Logging"
   },
   {
+    "Name": "OCP-67423:anli:Logging:[sig-openshift-logging] Logging  rapidast scan Cluster Logging Operator should pass DAST test",
+    "Suite": "Logging"
+  },
+  {
     "Name": "OCP-67424:anli:Logging:[sig-openshift-logging] Logging  rapidast scan loki-operator should pass DAST test",
     "Suite": "Logging"
   },
@@ -33396,6 +33420,10 @@
     "Suite": "OLM"
   },
   {
+    "Name": "OCP-71143:qitang:Logging:[sig-openshift-logging] Logging  Log Forward to Syslog Collect or exclude audit logs.",
+    "Suite": "Logging"
+  },
+  {
     "Name": "OCP-71143:qitang:Logging:[sig-openshift-logging] Logging  to Syslog Collect or exclude audit logs.",
     "Suite": "Logging"
   },
@@ -33592,6 +33620,10 @@
     "Suite": "LOGGING"
   },
   {
+    "Name": "OCP-71773:kbharti:Logging:[sig-openshift-logging] Logging  loki-operator - Managed auth/STS mode Verify CCO support with custom region on a AZWIF cluster and forward logs to LokiStack logstore[Serial]",
+    "Suite": "Logging"
+  },
+  {
     "Name": "OCP-71777:qitang:Logging:[sig-openshift-logging] Logging  Forward to GCL Include or exclude logs by combining namespace and container selectors.[Slow]",
     "Suite": "Logging"
   },
@@ -33610,6 +33642,10 @@
   {
     "Name": "OCP-71790:geliu:ETCD:[sig-etcd] ETCD Microshift Etcd db defragment manually. [Disruptive] [Serial]",
     "Suite": "ETCD"
+  },
+  {
+    "Name": "OCP-71794:kbharti:Logging:[sig-openshift-logging] Logging  loki-operator - Managed auth/STS mode Verify CCO support with default region on a AZWIF cluster and forward logs to LokiStack logstore[Serial]",
+    "Suite": "Logging"
   },
   {
     "Name": "OCP-71796:xiyuan:Security_and_Compliance:[sig-isc] Security_and_Compliance File_Integrity_Operator an end user handle FIO within a namespace V-EST.01-V-EDR.01-file integrity operator should pass DAST test",
@@ -36060,6 +36096,10 @@
     "Suite": "Security_and_Compliance"
   },
   {
+    "Name": "OCP-75317:anli:Logging:[sig-openshift-logging] Logging  Log Forward to Syslog forward logs to Syslog customized fields and debug mode",
+    "Suite": "Logging"
+  },
+  {
     "Name": "OCP-75317:anli:Logging:[sig-openshift-logging] Logging  to Syslog forward logs to Syslog customized fields and debug mode",
     "Suite": "Logging"
   },
@@ -36108,6 +36148,10 @@
     "Suite": "Logging"
   },
   {
+    "Name": "OCP-75351:qitang:Logging:[sig-openshift-logging] Logging  Otlp output testing Tech preview annotation should be enabled when forwarding logs via otlp",
+    "Suite": "Logging"
+  },
+  {
     "Name": "OCP-75366:yinzhou:Workloads:[sig-cli] Workloads ocmirror v2 works well show operator on error logs and skip bundle when related image associated failed [Serial]",
     "Suite": "Workloads"
   },
@@ -36137,6 +36181,10 @@
   },
   {
     "Name": "OCP-75390:qitang:Logging:[sig-openshift-logging] Logging  Splunk Custom Tenant CLF should be rejected and show error message if the filters are invalid",
+    "Suite": "Logging"
+  },
+  {
+    "Name": "OCP-75415:qitang:Logging:[sig-openshift-logging] Logging  Log Forward to Cloudwatch Validation for multiple cloudwatch outputs in iamRole mode.[Slow]",
     "Suite": "Logging"
   },
   {
@@ -36174,6 +36222,10 @@
   {
     "Name": "OCP-75430:jhajyahy:INSTALLER:[sig-baremetal] INSTALLER IPI for INSTALLER_DEDICATED job on BareMetal Update host FW via HostFirmwareComponents CRD [Disruptive] [Serial]",
     "Suite": "INSTALLER"
+  },
+  {
+    "Name": "OCP-75431:anli:Logging:[sig-openshift-logging] Logging  Log Forward to Syslog forward logs to Syslog using KubernetesMinimal",
+    "Suite": "Logging"
   },
   {
     "Name": "OCP-75431:anli:Logging:[sig-openshift-logging] Logging  to Syslog forward logs to Syslog using KubernetesMinimal",
@@ -45760,6 +45812,10 @@
     "Suite": "Overall CI (test step)"
   },
   {
+    "Name": "cucushift-logging",
+    "Suite": "Overall CI (test step)"
+  },
+  {
     "Name": "cucushift-ota-postupgrade",
     "Suite": "Overall CI (test step)"
   },
@@ -45945,6 +46001,10 @@
   },
   {
     "Name": "enable-qe-catalogsource-disconnected",
+    "Suite": "Overall CI (test step)"
+  },
+  {
+    "Name": "enable-qe-catalogsource-logging",
     "Suite": "Overall CI (test step)"
   },
   {
@@ -46498,6 +46558,10 @@
   {
     "Name": "install should succeed: pre configuration",
     "Suite": "cluster install"
+  },
+  {
+    "Name": "install-operators",
+    "Suite": "Overall CI (test step)"
   },
   {
     "Name": "instrumentation-apache-httpd",
@@ -47749,6 +47813,10 @@
   },
   {
     "Name": "openshift-e2e-test-qe-report",
+    "Suite": "Overall CI (test step)"
+  },
+  {
+    "Name": "openshift-extended-logging-test",
     "Suite": "Overall CI (test step)"
   },
   {

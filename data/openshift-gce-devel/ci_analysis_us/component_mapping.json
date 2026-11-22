@@ -118210,6 +118210,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:1de46bf922027c7e911ac9e3a642e8c0",
+    "Name": "TestBrokerConformance/Prerequisite/#00/Setup/install_broker_\"broker-arusjuhe\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "Serverless-lp-interop:b8c816a978cac198a0725269b50b225a",
     "Name": "TestBrokerConformance/Prerequisite/#00/Setup/install_broker_\"broker-bcdbyisq\"",
     "Suite": "Serverless-lp-interop",
@@ -135010,6 +135026,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:5bdb90c03a32b7bd4408318412b29dd9",
+    "Name": "TestBrokerSupportsAuthZ/Prerequisite/#00/Setup/install_broker_\"broker-uosqvcxj\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/e2e_new:17489d8efcc6a86f298634383b37c7e6",
     "Name": "TestBrokerSupportsAuthZ/Prerequisite/#00/Setup/install_broker_\"broker-uvetrlch\"",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
@@ -139876,6 +139908,22 @@
     "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/e2e_new:cf94c545789d4b572f63362a55967464",
     "Name": "TestBrokerSupportsOIDC/Prerequisite/#00/Setup/install_broker_\"broker-rkxquovk\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:b7bb85e61cbd3722c162af00cb680921",
+    "Name": "TestBrokerSupportsOIDC/Prerequisite/#00/Setup/install_broker_\"broker-rpefwbch\"",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
     "Product": "OpenShift",
     "Priority": 0,
@@ -150290,6 +150338,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/eventinge2erekt:f13735ee14dcceec16153cf3234aa73c",
+    "Name": "TestChannelBasedBrokerToKsvc/Prerequisite/#00/Setup/install_broker_\"broker-wfbocgrf\"",
+    "Suite": "lp-ocp-compat--Serverless--test/eventinge2erekt",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/eventinge2erekt:85f461764b3374598190c9cb6bc17326",
     "Name": "TestChannelBasedBrokerToKsvc/Prerequisite/#00/Setup/install_broker_\"broker-wizuzpew\"",
     "Suite": "lp-ocp-compat--Serverless--test/eventinge2erekt",
@@ -159460,6 +159524,22 @@
     "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/e2e_new_channel:23e0769512eb4f57d1b97294ddd16f60",
     "Name": "TestChannelWithBackingKafkaChannelSupportsAuthZ/Prerequisite/Channel_goes_ready./Setup/install_a_Channel_named_\"channel-nyporbiy\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new_channel",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new_channel:314fab1fbd7b65cb963079fc302dc0b2",
+    "Name": "TestChannelWithBackingKafkaChannelSupportsAuthZ/Prerequisite/Channel_goes_ready./Setup/install_a_Channel_named_\"channel-nyqfewst\"",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new_channel",
     "Product": "OpenShift",
     "Priority": 0,
@@ -192450,6 +192530,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new_channel:aa262aa5ee6b5f8aff2b2b4252076418",
+    "Name": "TestKafkaChannelOIDC/Prerequisite/ChannelImpl_goes_ready./Setup/install_a_KafkaChannel_named_\"kafka-channel-kpzligrk\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new_channel",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "Serverless-lp-interop:e8908f4855321c74845b851cf3259db4",
     "Name": "TestKafkaChannelOIDC/Prerequisite/ChannelImpl_goes_ready./Setup/install_a_KafkaChannel_named_\"kafka-channel-krrwgybv\"",
     "Suite": "Serverless-lp-interop",
@@ -199570,6 +199666,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new_channel:732fa33a70e809e1a63ae7a8d30d3907",
+    "Name": "TestKafkaChannelSupportsAuthZ/Prerequisite/ChannelImpl_goes_ready./Setup/install_a_KafkaChannel_named_\"kafkachannel-vvyntxzz\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new_channel",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "Serverless-lp-interop:2bd162b5bd55d00b336f4838ab33ebde",
     "Name": "TestKafkaChannelSupportsAuthZ/Prerequisite/ChannelImpl_goes_ready./Setup/install_a_KafkaChannel_named_\"kafkachannel-vxaruffo\"",
     "Suite": "Serverless-lp-interop",
@@ -202213,6 +202325,22 @@
     "ID": "Serverless-lp-interop:4d8ab8f580157c56a955b27da73b1779",
     "Name": "TestKafkaSinkSupportsAuthZ/Prerequisite#01/#00/Setup/install_KafkaSink_\"kafkasink-dwggwcqb\"",
     "Suite": "Serverless-lp-interop",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:528f9a854eb7fc02e1a0091889a1d62b",
+    "Name": "TestKafkaSinkSupportsAuthZ/Prerequisite#01/#00/Setup/install_KafkaSink_\"kafkasink-dwipocry\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
@@ -206100,6 +206228,22 @@
     "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/e2e_new:884af50335e51c69402711d5d7714b6d",
     "Name": "TestKafkaSinkSupportsAuthZ/Prerequisite/#00/Setup/install_Topic_\"topic-fbijoyhv\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:79ea9e310c165694b6b53749ae1ca723",
+    "Name": "TestKafkaSinkSupportsAuthZ/Prerequisite/#00/Setup/install_Topic_\"topic-fcjtrmqp\"",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
     "Product": "OpenShift",
     "Priority": 0,
@@ -214066,6 +214210,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:ca02192fe525b057c92a665702579ac7",
+    "Name": "TestKafkaSinkSupportsOIDC/Prerequisite#01/#00/Setup/install_KafkaSink_\"kafkasink-xvukwydw\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/e2e_new:43943ecfd9f30c938fe67f30037913ab",
     "Name": "TestKafkaSinkSupportsOIDC/Prerequisite#01/#00/Setup/install_KafkaSink_\"kafkasink-xwckomoy\"",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
@@ -217908,6 +218068,22 @@
     "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/e2e_new:47afb565acbc45449e408c10ccadbe12",
     "Name": "TestKafkaSinkSupportsOIDC/Prerequisite/#00/Setup/install_Topic_\"topic-wepaxgab\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:4909fefb3ebba90cbd5c0a96d34b067b",
+    "Name": "TestKafkaSinkSupportsOIDC/Prerequisite/#00/Setup/install_Topic_\"topic-wfockknn\"",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
     "Product": "OpenShift",
     "Priority": 0,
@@ -242194,6 +242370,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:6183faa9423c410c290e6643cd9767da",
+    "Name": "TestNamespacedBrokerNamespaceDeletion/delete_namespace/Assert/wait_for_namespace_test-namespaced-broker-lgvckluw_to_be_deleted",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/e2e_new:b1f5d63437c2663a758278022d83e2ae",
     "Name": "TestNamespacedBrokerNamespaceDeletion/delete_namespace/Assert/wait_for_namespace_test-namespaced-broker-lgvkwgvb_to_be_deleted",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
@@ -246020,6 +246212,22 @@
     "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/e2e_new:3726d84068a5d3bb3bd0ef7c908e6517",
     "Name": "TestNamespacedBrokerNamespaceDeletion/delete_namespace/Setup/delete_namespace_test-namespaced-broker-lfumftbx",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:146576315134dc0e08930a5fdffd9d05",
+    "Name": "TestNamespacedBrokerNamespaceDeletion/delete_namespace/Setup/delete_namespace_test-namespaced-broker-lgvckluw",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
     "Product": "OpenShift",
     "Priority": 0,
@@ -249956,6 +250164,22 @@
     "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/e2e_new:58f60c8a6b9c8bc98e57fcb55e9f6113",
     "Name": "TestNamespacedBrokerNamespaceDeletion/setup_namespace/Setup/install_namespace_test-namespaced-broker-lfumftbx",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:4fe812b1aedfe6779492c713b9885554",
+    "Name": "TestNamespacedBrokerNamespaceDeletion/setup_namespace/Setup/install_namespace_test-namespaced-broker-lgvckluw",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
     "Product": "OpenShift",
     "Priority": 0,
@@ -255746,6 +255970,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:f13159bffb4cc66f34619542ca17b6e8",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-fgyjrtxu",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/e2e_new:674fbf3d3a6024b3630432abc52ed823",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-fhhrqsub",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
@@ -258914,6 +259154,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:af6bd1d9f992b2b0d30ff56dfa8f4641",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-lbdqlrui",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "Serverless-lp-interop:082b280fdee8422480acc2d1671ee5a7",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-ldbqsgjg",
     "Suite": "Serverless-lp-interop",
@@ -260788,6 +261044,22 @@
     "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/e2e_new:1eddc3cdbb64c960a2c596a73a2b2841",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-oghvsnev",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:8a4f94b375076fe973c1dc77661e4505",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-ohbeakmr",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
     "Product": "OpenShift",
     "Priority": 0,
@@ -265810,6 +266082,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:db4ad626e99328bf188341fe4cc1befb",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-wrufbrzo",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/e2e_new:eaafb76d17ceff2f7712b491efec46bb",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-wrxiqlzk",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
@@ -268722,6 +269010,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:898e74868271b303b6403d1bd7de4953",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-auwqhidj",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/e2e_new:a55ac56a8a90f0d88dad3fa97016b702",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-awhyjswg",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
@@ -269188,6 +269492,22 @@
     "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/e2e_new:e645e943fa78af870ff8a2f39848b362",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-bkuxzmjp",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:cd9cb3a6c6bc64efd1cd67c9e2a95373",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-blvqvbjj",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
     "Product": "OpenShift",
     "Priority": 0,
@@ -273426,6 +273746,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:78895d27133960dccf82158f54900b86",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-ggcyfyzw",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/e2e_new:dd5fc2dbad52cba029c188c3ede93c59",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-ggdnuphs",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
@@ -276613,6 +276949,22 @@
     "ID": "Serverless-lp-interop:ac5359ad46657dda2b8a3b43bcdcae8f",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-jpsojzoo",
     "Suite": "Serverless-lp-interop",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:53d759ad8decc613289287d0d087cda0",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-jqpwplzj",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
@@ -279845,6 +280197,22 @@
     "ID": "Serverless-lp-interop:8206ea032cdca419f2710d70b8286fec",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-nqgizpre",
     "Suite": "Serverless-lp-interop",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:baa069f0f6a45a57ded6785c06994086",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-nqiwxabr",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
@@ -288578,6 +288946,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:eb114c27204de0ef2745e20b4e9aa538",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-yizgkryv",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "Serverless-lp-interop:a56bff33a5407c2eb14cdf1ca23cf20a",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-yjelxzco",
     "Suite": "Serverless-lp-interop",
@@ -292290,6 +292674,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:22d5fa291ee8525d6a5f1f38e99bfbf0",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/CloudEvents_SQL_filter/Requirement/Install_event_sender_sender-gozxlcnh",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/e2e_new:70c138c81117f0d3921b692b845f238f",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/CloudEvents_SQL_filter/Requirement/Install_event_sender_sender-gpkxhwmv",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
@@ -293860,6 +294260,22 @@
     "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/e2e_new:a59700800639d15b5147737ceaf8ce5a",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/CloudEvents_SQL_filter/Requirement/Install_event_sender_sender-ltxynyoc",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:8030f21146ecf0dba94dd0fcb95ab530",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/CloudEvents_SQL_filter/Requirement/Install_event_sender_sender-lvbhyoiy",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
     "Product": "OpenShift",
     "Priority": 0,
@@ -304482,6 +304898,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:46d5481557f9b3a586857ad54b37b07b",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/Exact_filter/Requirement/Install_event_sender_sender-xciqakil",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/e2e_new:72381ca6ba609e607a0419600de3f2c1",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Exact_filter/Requirement/Install_event_sender_sender-xgbamfue",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
@@ -305188,6 +305620,22 @@
     "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/e2e_new:09ba0e56eda16489701d29e39d983cf1",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Exact_filter/Requirement/Install_event_sender_sender-zlzpfdic",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:da0f55e31bcefbc781e49d1dd6101374",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/Exact_filter/Requirement/Install_event_sender_sender-zmvwktje",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
     "Product": "OpenShift",
     "Priority": 0,
@@ -307650,6 +308098,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:a94055d9fa2b53a9d9e571fed3c7f484",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/FilterAttributeWithEmptyFiltersFeature/Requirement/Install_event_sender_sender-hypdgodn",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/e2e_new:a7d0e9c3d7919856a0f8fe72de61bfd8",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/FilterAttributeWithEmptyFiltersFeature/Requirement/Install_event_sender_sender-hyunlqon",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
@@ -309876,6 +310340,22 @@
     "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/e2e_new:a0d0bfa16ddd296bc6f96e5cadc93813",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/FilterAttributeWithEmptyFiltersFeature/Requirement/Install_event_sender_sender-pclddhqa",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:361c0848cafd09e9b4b4e8c73c8a2e6a",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/FilterAttributeWithEmptyFiltersFeature/Requirement/Install_event_sender_sender-peqjsajg",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
     "Product": "OpenShift",
     "Priority": 0,
@@ -314258,6 +314738,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:e8ade07c3247252221ee50146a5eeb45",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/FiltersOverrideAttributeFilterFeature/Requirement/Install_event_sender_sender-elxptzsf",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/e2e_new:992a62119a10224a94f70d6c52632be5",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/FiltersOverrideAttributeFilterFeature/Requirement/Install_event_sender_sender-emetxyyo",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
@@ -318372,6 +318868,22 @@
     "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/e2e_new:9d42b7636d260faf9f6b1f15b54c0bd1",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/FiltersOverrideAttributeFilterFeature/Requirement/Install_event_sender_sender-tclczjvd",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:83a2390aa357f99fb8d4fa26cfde9d6e",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/FiltersOverrideAttributeFilterFeature/Requirement/Install_event_sender_sender-thpwhbua",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
     "Product": "OpenShift",
     "Priority": 0,
@@ -323634,6 +324146,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:bec662bfebadfe7accf60da7bb7da020",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MissingAttributesFeature/Requirement/Install_event_sender_sender-kvqrkija",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/e2e_new:35408ba4726dae5f6164531dd297eb16",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MissingAttributesFeature/Requirement/Install_event_sender_sender-kwnojeun",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
@@ -327892,6 +328420,22 @@
     "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/e2e_new:f34ade1574639c59ecf1db56c60863d5",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MissingAttributesFeature/Requirement/Install_event_sender_sender-zpryrntl",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:f58fb2cf8f47ef53992f644dfcdcfc75",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MissingAttributesFeature/Requirement/Install_event_sender_sender-zqkfldrz",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
     "Product": "OpenShift",
     "Priority": 0,
@@ -335650,6 +336194,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:aa89809ac5735241405125c960ce973c",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-mjnykftt",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/e2e_new:4b9d962ce8d5ed49ee8612e0e9c11c1a",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-mjqqbzye",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
@@ -337266,6 +337826,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:6558573e4cd863a2de7201bc89f77c80",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-pbasxtia",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/e2e_new:6ac91d0da530d5b460ce8a9306640927",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-pbugakxc",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
@@ -337605,6 +338181,22 @@
     "ID": "Serverless-lp-interop:1fef3207643213c3a200ebcbee8da2c7",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-pqpvzfpb",
     "Suite": "Serverless-lp-interop",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:b3fdf92f278ae8ed14907fb13c71d6ea",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-pswdnbrs",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
@@ -339812,6 +340404,22 @@
     "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/e2e_new:1876f58b5cea74565f913b89ec4b69ac",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-udcizujy",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:1631eb74fbe5135dc4cce63a41ddc8b3",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-uezakzlu",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
     "Product": "OpenShift",
     "Priority": 0,
@@ -357810,6 +358418,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:8a84b4ccbbe62a9b0b8e73bc4f813d02",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-meppyhjs",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "Serverless-lp-interop:a51a6e53129b185555738b2f6889bbf9",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-metuydxv",
     "Suite": "Serverless-lp-interop",
@@ -358693,6 +359317,22 @@
     "ID": "Serverless-lp-interop:d391424e42b73f2eb8b7ef2e4503c2d5",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-mxcmqhur",
     "Suite": "Serverless-lp-interop",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:f43fab40f586e58adaf3249bf77dbd0e",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-mxokytvx",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
@@ -362693,6 +363333,22 @@
     "ID": "Serverless-lp-interop:888008f0ce4ddf119a2250d6b37c76be",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-qnennaia",
     "Suite": "Serverless-lp-interop",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:9d97717f7405588c2fa0d978d6336b2b",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-qnjmgvnn",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
@@ -366930,6 +367586,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:c08600a02936d5a4d49be46d41e0483b",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-uradasxf",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/e2e_new:d5d98a675492f251f8ccf98eac2b5cb9",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-urfscqxl",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
@@ -367604,6 +368276,22 @@
     "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/e2e_new:910d927f27e7ba2bf3e10b76347164aa",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-vlaamate",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:0170d30c86e82c0167c09218b19d1c94",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-vlgechsi",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
     "Product": "OpenShift",
     "Priority": 0,
@@ -368914,6 +369602,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:89a592a07ba9b03a4e589a48be49709e",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-wkyxvlkt",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/e2e_new:e04225186ca130765b02b9d80f688876",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-wlkflndb",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
@@ -370002,6 +370706,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:74f77a6bf64f83940bd0bb366584db5f",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-xhobcjdw",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "Serverless-lp-interop:29319bb3c509cabcf2aa10d9a8096740",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-xhqxuxog",
     "Suite": "Serverless-lp-interop",
@@ -370757,6 +371477,22 @@
     "ID": "Serverless-lp-interop:e906ea4f0cadfd2b6fc32770794c5e61",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-ybunhshg",
     "Suite": "Serverless-lp-interop",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:2316440900b1a39bc5e36a0d27c961ac",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-ycetcxdo",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
@@ -374290,6 +375026,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:5a19c311a30f4803dc90f5bcb35fb3aa",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/Prefix_filter/Requirement/Install_event_sender_sender-eaasreja",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/e2e_new:f0a33966957d1226eddfa776699c227f",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Prefix_filter/Requirement/Install_event_sender_sender-eckgkzrj",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
@@ -377092,6 +377844,22 @@
     "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/e2e_new:358c8f061f9104279cda44d44eeab181",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Prefix_filter/Requirement/Install_event_sender_sender-nqsospfh",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:85eb75a8d4114396a15fa5eda259335b",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/Prefix_filter/Requirement/Install_event_sender_sender-nwzeuznu",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
     "Product": "OpenShift",
     "Priority": 0,
@@ -382050,6 +382818,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:46499224b3de83c5b4167bca3c1de4d6",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/Suffix_filter/Requirement/Install_event_sender_sender-dwhdkkaz",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/e2e_new:1f2dc51fc355a7aafd2eb9c705267537",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Suffix_filter/Requirement/Install_event_sender_sender-ealuexfe",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
@@ -383205,6 +383989,22 @@
     "ID": "Serverless-lp-interop:4e79c56e2654c41298c4465463dbd86c",
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Suffix_filter/Requirement/Install_event_sender_sender-hpljwack",
     "Suite": "Serverless-lp-interop",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/e2e_new:9207e65027912457a8aa0f0d80b323bf",
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/Suffix_filter/Requirement/Install_event_sender_sender-hrkhunrw",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new",
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
@@ -436876,6 +437676,42 @@
     "Component": "Networking / ovn-kubernetes",
     "Capabilities": [
       "EgressIP"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:abb70d3d84b8ec230fa99afc2859cf56",
+    "Name": "[Feature:MACSecurity][Feature:NetworkSegmentation][FeatureGate:MACSecurity][ovn-kubernetes-ote][sig-network] Network Segmentation: MAC security using ClusterUserDefinedNetwork, connectivity between client and server pods over localnet, when mac-security disabled, should succeed (MAC spoofed traffic is allowed) [Serial][Suite:ovn-kubernetes/conformance/serial/virtualization]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "FeatureGate:MACSecurity",
+      "MACSecurity",
+      "NetworkSegmentation"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:0dedbe50ed52fde3296b65c1a551c324",
+    "Name": "[Feature:MACSecurity][Feature:NetworkSegmentation][FeatureGate:MACSecurity][ovn-kubernetes-ote][sig-network] Network Segmentation: MAC security using ClusterUserDefinedNetwork, connectivity between client and server pods over localnet, when mac-security enabled, should fail [Serial][Suite:ovn-kubernetes/conformance/serial/virtualization]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "FeatureGate:MACSecurity",
+      "MACSecurity",
+      "NetworkSegmentation"
     ],
     "JIRAComponent": "Networking / ovn-kubernetes",
     "JIRAComponentID": "14951"
@@ -574769,38 +575605,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:57ea50742c2dfb20059a6e7da461b72d",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-46r66 should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:608d1bbca65d5fd67f9e5b4c85e4ed13",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-46r66 should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:565d56416d75315fff68b4c5619d01fd",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-46w9k should have generation increasing monotonically",
     "Suite": "openshift-tests",
@@ -576849,38 +577653,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:ef645893654f4a147a054be3e1d2c4c4",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-8d2hs should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:f611da9a70c853f1bfd239d7bd95bde5",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-8d2hs should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:7d54c258faad1a92cfacccbe203c44ae",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-8d896 should have generation increasing monotonically",
     "Suite": "openshift-tests",
@@ -576963,38 +577735,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:8e5a0c1ee46eebdb1b65118e6b7bcab9",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-8hx75 should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:8d9a512a17dc77fe1da22dd237df95e1",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-8pjmx should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:963f3c3a890eda4a4fd4ac361ba53f79",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-8pjmx should not have too many generations",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -577489,38 +578229,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:9c94d6cdca58d38186cdc3d55c065827",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-9r9q2 should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:91928b8f8b8a71af0985a2cf584a0360",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-9r9q2 should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:ad5069a3613ed5edf1b732e544990a67",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-9vb8q should have generation increasing monotonically",
     "Suite": "openshift-tests",
@@ -577667,38 +578375,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:ecf002037253d46e60dba4843ee39afe",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-9vwhp should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:cbad4f548263e7413c6d0c5f3e46c6a9",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-b25xm should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:5e34c5395585eb57ee7a3b2d8b391c02",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-b25xm should not have too many generations",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -578147,38 +578823,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:e73505bc376f3d810164cadda3cc21fb",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-bxxcn should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:396fb7934638fd5170a8427d77145709",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-bz4v9 should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:ac9fec1ed6f5f5fbb519bccb77da8e77",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-bz4v9 should not have too many generations",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -579633,38 +580277,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:06545c429f4737c3a8b36df7c6c37978",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-g65kc should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:ca8712f4fc0123c5afa62c4338193096",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-g65kc should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:3c6e2d236f0a7f83820a4301b8d41bee",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-g9db7 should have generation increasing monotonically",
     "Suite": "openshift-tests",
@@ -579843,38 +580455,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:22fdc403fe75290d0953a281aa4e720e",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-gn7tl should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:e8cd40a8e9a281b3ce2ee936e7c1ed0e",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-gnvw6 should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:20b09d2a22d922ce9d4c80bbb4d9cd59",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-gnvw6 should not have too many generations",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -581553,38 +582133,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:a025482ae492aaadfc8ef41f5e268418",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-jv69d should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:4fa646d6c40a82d072dbbfd1d574afcb",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-jv69d should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:416c866a9d087f026f98b96edd611244",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-k2gv9 should have generation increasing monotonically",
     "Suite": "openshift-tests",
@@ -582449,38 +582997,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:c9589fa535161dbf6a042c6eab15f629",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-m4t8q should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:88ec78df9c2286a7f87bd24f8016cb10",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-m4t8q should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:b9106e89cbbb5ab02e02f704496d8e15",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-m4vf5 should have generation increasing monotonically",
     "Suite": "openshift-tests",
@@ -583203,38 +583719,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:564d23227cfde4c6823b19200ac5e60b",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-nrzxb should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:8f14674479f101072eafc9319005e06e",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-nsplr should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:c83317d1cd9ea85ec01f6dc51c1b8a44",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-nsplr should not have too many generations",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -584977,38 +585461,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:1d4009566ba2038b0d9a0224077b5afd",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-s5r28 should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:5e13ece1cef1ccec64cea0aca8ffdf0a",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-s5r28 should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:d789308bdcc0458bcc47b4af0e7e8568",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-s665c should have generation increasing monotonically",
     "Suite": "openshift-tests",
@@ -585745,38 +586197,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:17e51d14fcf955de5cc9375eab5219fc",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-tj8dd should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:400c066fb2fe7677e584fdb4463478b5",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-tj8dd should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:02d8a4bcb936b8a621e588e713be36e5",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-tlmm4 should have generation increasing monotonically",
     "Suite": "openshift-tests",
@@ -585891,38 +586311,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:2e0b68935f1a6f137a1cf376b82311f5",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-tmpr7 should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:58397167a4dfb63e0ed9d48ec42289b0",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-tngkb should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:9c75fd7eacc25e279e35c84dce180831",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-tngkb should not have too many generations",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -586897,38 +587285,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:7fc23e62e5b8445b16d88f3946b1b3c2",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-wnmwn should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:1bb46daa7be4ebe7e123652e6969e843",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-wnmwn should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:c3ea5e34307450c82569daa7a2d0c390",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-wphqr should have generation increasing monotonically",
     "Suite": "openshift-tests",
@@ -587857,38 +588213,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:483ef71f2acf4347be2fed83d15a4244",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-xzspw should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:6c35057c29ec98ba72d32237e6cba3bd",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-xzspw should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:91d47133d6b93253e362914554c5410e",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-z24wt should have generation increasing monotonically",
     "Suite": "openshift-tests",
@@ -587907,38 +588231,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:d7211a085581c14aa78f1f08cef64803",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-z24wt should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:cfc2655a2130652f7178b9c223a340c4",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-z2jkp should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:c15fbf4966ef15a89cd3e8582f82445b",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-z2jkp should not have too many generations",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -588483,38 +588775,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:7c73ce8726a753e1fc6f21b2bb70f107",
     "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-zp5sh should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:d7e0a6ac487e18389723cedbf22a5839",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-zq2r5 should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:f39ae64a1e678e5eb6dc0fa9fc67a933",
-    "Name": "[Monitor:generation-analyzer]objects in ns/openshift-copy-to-node-zq2r5 should not have too many generations",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -596449,22 +596709,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:0032e52ed837c63c299d8f35251ee335",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-46r66 should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:3a9fffa180fcc9671a0a9744ed448399",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-46w9k should not submit invalid apply statements",
     "Suite": "openshift-tests",
@@ -597489,22 +597733,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:4510e8181ff241a003a569e4439bb466",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-8d2hs should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:acb26291647ac64bd494a14a07c7fcbb",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-8d896 should not submit invalid apply statements",
     "Suite": "openshift-tests",
@@ -597539,22 +597767,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:274f30f9970ff58043d48714db8925b0",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-8hx75 should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:5c67f3bb64c1e17b136552ff1240354c",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-8pjmx should not submit invalid apply statements",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -597809,22 +598021,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:505b821eb99db2b1c1de36acde4862e0",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-9r9q2 should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:3ac1145f527aaecd082ac0b02c0ccd39",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-9vb8q should not submit invalid apply statements",
     "Suite": "openshift-tests",
@@ -597891,22 +598087,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:fca092f27de2a99e99c469910051c87e",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-9vwhp should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:9865272b4bd42376962130c6c3dc7eab",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-b25xm should not submit invalid apply statements",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -598131,22 +598311,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:c3d0e656a6d03b5692cea6da3e0d2e2d",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-bxxcn should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:7482b67bf6d0c82bdd5a527fe320e2b5",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-bz4v9 should not submit invalid apply statements",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -598881,22 +599045,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:af5b53322cad5ae6b0a9e96e3c5582d6",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-g65kc should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:5d74e2ce956e0b560385a0f1bde902b9",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-g9db7 should not submit invalid apply statements",
     "Suite": "openshift-tests",
@@ -598979,22 +599127,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:7278d68ca62b905aacb50db0afc6b6ea",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-gn7tl should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:2c90db3003c7d6153b5c11442c27bcaf",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-gnvw6 should not submit invalid apply statements",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -599841,22 +599973,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:81bee855be48310e70405cd689ed5cfe",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-jv69d should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:d037614ee111427be1f80f9543adb087",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-k2gv9 should not submit invalid apply statements",
     "Suite": "openshift-tests",
@@ -600289,22 +600405,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:febd459c1def2d885dec243ff32b84bd",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-m4t8q should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:b4e4f1667f411a676aedac785d3200af",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-m4vf5 should not submit invalid apply statements",
     "Suite": "openshift-tests",
@@ -600659,22 +600759,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:332844e24b49ebcec2ab0cdc259b00c8",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-nrzxb should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:8c0b4da7b07353a7a2befe1bc9a64dad",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-nsplr should not submit invalid apply statements",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -601553,22 +601637,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:9c0ab7f86dec5eb080b5e380f0063b25",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-s5r28 should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:af526b4aff23e9b940ddce470ddc02c7",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-s665c should not submit invalid apply statements",
     "Suite": "openshift-tests",
@@ -601937,22 +602005,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:fb07ea2bb0ad2fdacefd2690d07af70f",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-tj8dd should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:00912a96330408253d6856e71238e984",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-tlmm4 should not submit invalid apply statements",
     "Suite": "openshift-tests",
@@ -602003,22 +602055,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:83fde8c637ca47e728bb2b59ce907e87",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-tmpr7 should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:8573b12a0d7017b3c4e78a93ab56072e",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-tngkb should not submit invalid apply statements",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -602513,22 +602549,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:46d97edbf466be421be65a89ec839e66",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-wnmwn should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:d18b4c1bb3f30a0ae23c3129a711c7a0",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-wphqr should not submit invalid apply statements",
     "Suite": "openshift-tests",
@@ -602993,40 +603013,8 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:91406b8c81c8f3b0370cb0ab216a7175",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-xzspw should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:a4dbcab9c9bac66204f36a95e0cd8349",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-z24wt should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:5f6310c9b97e8c50de14e7a53359ca61",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-z2jkp should not submit invalid apply statements",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -603299,22 +603287,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:db929902767d0246551690fb29733755",
     "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-zp5sh should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:04ed351ce1927451ccbb5a297ad1e68c",
-    "Name": "[Monitor:initial-and-final-operator-log-scraper]operators in in ns/openshift-copy-to-node-zq2r5 should not submit invalid apply statements",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -772201,6 +772173,70 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "hypershift-e2e:893bb63d673f00dfa5d6c03fb815b6fa",
+    "Name": "[sig-hypershift][Jira:Hypershift] Etcd Encryption Re-encryption Condition Bubble-Up should have matching EtcdDataEncryptionUpToDate on HCP and HostedCluster",
+    "Suite": "hypershift-e2e",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "HyperShift",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "HyperShift",
+    "JIRAComponentID": "14684"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "hypershift-e2e:455292812b568d7b282a090ceae10d23",
+    "Name": "[sig-hypershift][Jira:Hypershift] Etcd Encryption Re-encryption [Feature:AWSKMSReencryption] AWS KMS Key Rotation should re-encrypt all etcd data after active key rotation",
+    "Suite": "hypershift-e2e",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "HyperShift",
+    "Capabilities": [
+      "AWSKMSReencryption"
+    ],
+    "JIRAComponent": "HyperShift",
+    "JIRAComponentID": "14684"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "hypershift-e2e:fa9cdf4cbb31ae14c837fbb393f47271",
+    "Name": "[sig-hypershift][Jira:Hypershift] Etcd Encryption Re-encryption [Feature:AzureKMSReencryption] Azure KMS Consecutive Key Rotation should complete two consecutive key rotations successfully",
+    "Suite": "hypershift-e2e",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "HyperShift",
+    "Capabilities": [
+      "AzureKMSReencryption"
+    ],
+    "JIRAComponent": "HyperShift",
+    "JIRAComponentID": "14684"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "hypershift-e2e:a8f5ab887d38f5ecfccce360f00e30d8",
+    "Name": "[sig-hypershift][Jira:Hypershift] Etcd Encryption Re-encryption [Feature:AzureKMSReencryption] Azure KMS Key Rotation should re-encrypt all etcd data after key version rotation",
+    "Suite": "hypershift-e2e",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "HyperShift",
+    "Capabilities": [
+      "AzureKMSReencryption"
+    ],
+    "JIRAComponent": "HyperShift",
+    "JIRAComponentID": "14684"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "hypershift-e2e:3c5b7a11b102a01ea07c074da6899da3",
     "Name": "[sig-hypershift][Jira:Hypershift] Hosted Cluster AWS [Feature:AWSNLB] AWS CCM NLB Security Group when AWSServiceLBNetworkSecurityGroup feature gate is enabled should have NLBSecurityGroupMode=Managed in the aws-cloud-config ConfigMap",
     "Suite": "hypershift-e2e",
@@ -798494,150 +798530,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:f981082db6b72d207d2789b33dd4ebdf",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Disruptive] MCO kernel [PolarionID:42364][OTP] add selinux kernel argument [Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:456944f7d8c94f05d48c750aad0aa588",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Disruptive] MCO kernel [PolarionID:42365][OTP] add real time kernel argument [Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:542a1f4341568c32b49a5629e7f84084",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Disruptive] MCO kernel [PolarionID:53668][OTP] when FIPS and realtime kernel are both enabled node should NOT be degraded [Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:c5b3ffce68a8f90d2d3223e42649e14b",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Disruptive] MCO kernel [PolarionID:54922][OTP] daemon: add check before updating kernelArgs [Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:74004aa5465c8edc2bcc00e495348dd2",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Disruptive] MCO kernel [PolarionID:67787][OTP] switch kernel type to 64k-pages for clusters with arm64 nodes [Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:5320a59fa1c4b74b1441cf635b35d19d",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Disruptive] MCO kernel [PolarionID:67788][OTP] kernel type 64k-pages is not supported on non-arm64 nodes [Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:63711a8e07444d8405db8b3b992ea4a5",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Disruptive] MCO kernel [PolarionID:67790][OTP] create MC with extensions, 64k-pages kernel type and kernel argument [Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:ac22afb77ea9d436186469d5da50b41f",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Disruptive] MCO kernel [PolarionID:67825][OTP] Use duplicated kernel arguments [Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:f62ae9fa2c39422be8ee961e5c29d6d7",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Disruptive] MCO kernel [PolarionID:72136][OTP] Reject MCs with ignition containing kernelArguments [Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:a310ee0f8f519f09d35ab397ef168286",
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Disruptive][OCPFeatureGate:OSStreams] Machines, MachineSets, and ControlPlaneMachineSets (if applicable) are labeled with OSStream [apigroup:machineconfiguration.openshift.io]",
     "Suite": "openshift-tests",
@@ -800432,6 +800324,70 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:df221e8d2dd950caf0ad5017b005b1a2",
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO Storage [PolarionID:85162][OTP] Ensure MCP is degraded when we apply the extra-disks config [Disruptive]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Machine Config Operator",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Machine Config Operator",
+    "JIRAComponentID": "14737"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:5c15fbc9441131fde769d24dd0437fe0",
+    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO Storage [TODO-POLARION][OTP] Ignition 3.5 MachineConfig strips special mode bits silently [Disruptive]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Machine Config Operator",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Machine Config Operator",
+    "JIRAComponentID": "14737"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:57b82dab275e1b83642f36b7214ad3c8",
+    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO Storage [TODO-POLARION][OTP] Ignition 3.6 special mode bits are applied to files on nodes [Disruptive]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Machine Config Operator",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Machine Config Operator",
+    "JIRAComponentID": "14737"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:cbc195c5af68bbd2e58d8ee39dd25575",
+    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO Storage [TODO-TESTID][MCO-2685][OTP] Ignition 3.5 MachineConfig strips special mode bits silently [Disruptive]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Machine Config Operator",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Machine Config Operator",
+    "JIRAComponentID": "14737"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:06a50fb7563c7572bebf1e235e7b6c99",
+    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO Storage [TODO-TESTID][MCO-2685][OTP] Ignition 3.6 special mode bits are applied to files on nodes [Disruptive]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -805412,6 +805368,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:7cda4e49faa8cbcf0d390cb8f0fcd2aa",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Haproxy Routers with hostnetwork endpoint strategy with same http/https/stat port numbers cannot be deployed on the same worker node [Serial]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:491e44085637daec4ae4b932fbf44c5e",
     "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Haproxy Set Cookie2 by an application in a route should not kill all router pods",
     "Suite": "openshift-tests",
@@ -805510,6 +805482,22 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:c5ecfc4e24e294f2ff968b2bd0e6b498",
     "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Haproxy The backend health check interval of unsecure/edge/passthrough/reencrypt route can be set by annotation",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:2fefc659d4c7e42aa784594f2c0f9581",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Haproxy The endpointPublishingStrategy parameter allows TCP, PROXY, and empty definitions for HostNetwork [Serial]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -805670,6 +805658,1142 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:5455b7af8e77b29c0d3508b56c75b41a",
     "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Haproxy the 503 Error page should not contain license for a vulnerable release of Bootstrap",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:5796b0130d3514f461fde8dc8a267457",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route HTTPS redirect happens even if there is a more specific http-only",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:1cb0dfc06fe58e21c5bc7f56651ff268",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route Ipv6 addresses are also acceptable for whitelisting",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:8d1b5ea0a6a6ddb29afacdf9d826515f",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route Limit the number of TCP connection per IP in specified time period",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:59d48e3ae614fc3d05f76761a7683b39",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route NetworkEdge 'haproxy.router.openshift.io/timeout-tunnel' annotation gets applied alongside 'haproxy.router.openshift.io/timeout' for clear/edge/reencrypt routes",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:7ddef16db5dfbcb3f6d5769a094f46de",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route NetworkEdge 'haproxy.router.openshift.io/timeout-tunnel' annotation takes precedence over 'haproxy.router.openshift.io/timeout' values for passthrough routes",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:d95e84774d0efc803f79ef5ca24a7e0e",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route NetworkEdge Check haproxy.config when overwriting 'timeout server' which was already specified",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:f1faf39305e3440ff0ef70f87c491a8d",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route NetworkEdge Check the cookie if using secure mode when insecureEdgeTerminationPolicy to Redirect for edge/reencrypt route",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:ab618fb5abb68dddb7ed96c1ae57f19e",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route NetworkEdge Enable/Disable haproxy cookies based sticky session for edge termination routes",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:799e6ee89b3167f1a029f3e94dfccfec",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route NetworkEdge Only host in allowlist can access unsecure/edge/reencrypt/passthrough routes",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:a0bcf8aceb38142f03ff644cb3b7e8c9",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route NetworkEdge Only the host in whitelist could access unsecure/edge/reencrypt/passthrough routes",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:879b182da892e04e4c66253304ae7cda",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route NetworkEdge Route does not enable allowlist with than 61 CIDRs and if invalid IP annotation is given",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:04d758d8de158c2d17ed6678def8edc9",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route NetworkEdge Route gives allowlist precedence when whitelist and allowlist annotations are both present",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:01a2afa3f038e8069de70813272a75e9",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route NetworkEdge Routes annotated with 'haproxy.router.openshift.io/rewrite-target=/path' will replace and rewrite http request with specified '/path'",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:8e81e287f01dcd36aa107f8bb13bcd9f",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route NetworkEdge Set insecureEdgeTerminationPolicy to Allow for reencrypt/edge route",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:bcb389011abadbde8397f08d4ade68da",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route NetworkEdge Set insecureEdgeTerminationPolicy to Redirect for passthrough/edge/reencrypt route",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:d2ef392ec72646904cb40887a88ce67d",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route NetworkEdge Set timeout server for http route",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:a4d06cae4ae852f73278f59039f03682",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route NetworkEdge Set timeout server for passthough route",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:6f710bb8f54a12dd94ccc0be2d911b41",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route NetworkEdge Should use the same cookies for secure and insecure access when insecureEdgeTerminationPolicy set to allow for edge/reencrypt route",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:0aa927cd8b6e481b73b7b27781bca8ef",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route NetworkEdge can set cookie name for edge/reen routes by annotation",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:d1a6e5a06017998decb8ecbe2387e110",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route NetworkEdge limits backend pod max concurrent connections for unsecure, edge, reen, passthrough route",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:73dc543f151ef605dc6b467441494219",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route NetworkEdge limits multiple backend pods max concurrent connections",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:91d01cdf0d4e915b75aecd4b2de6d46e",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route NetworkEdge oc help information should contain option wildcard-policy",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:dcd8ae885075762edc6e042fca9fea42",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route Route could NOT be updated after created",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:eac7a45fb053161ac3fbd28a3bcfc8a1",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route Service endpoint can be work well if the mapping pod ip is updated",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:6ade632710de6166c766981793400ee1",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route Set balance leastconn for passthrough routes",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:aacfe1a83c124ccf376a1b0f0ba1b179",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route The later route should be HostAlreadyClaimed when there is a same host exist",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:facd8aa7e2e55d1227774d17c70c6c71",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route The path specified in route can work well for edge/unsecure termination",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:b346dfc351840dcfe809f0bc880cf933",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route The path specified in route can work well for reencrypt terminated",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:3a8a7d1c893fb8f222b196b62a846d14",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route Unsecure route with path and another tls route with same hostname can work at the same time",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:8ce63c9c0032da0d021b2bd59138b252",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route haproxy config information should be clean when changing the service to another route",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:d8552476de2b2fd04da541f2ae9af1f1",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route haproxy hash based sticky session for tcp mode passthrough routes",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:e8de2dda28a9d4b58e012042652cb3e2",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route haproxy router support websocket via unsecure route",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:680c83f24f0d89c53f46385447f595ef",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route ingress canary route redirects http to https",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:6aab48f57ba9744ae5c494c5989fc826",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route ingress controller continue to function normally with unexpected high timeout value",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:752ddd46664381812dda5b792b012204",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route reencrypt route with no cert if a router is configured with a default wildcard cert",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:5c28b10ce43bf55caece97c07aba78a8",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route route can be configured to whitelist more than 61 ips/CIDRs",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:d1706b3d706969ee33754b73deb569ca",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route router can do a case-insensitive match of a hostname for unsecure/edge/passthrough/reencrypt route",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:e451ffc141512668f08a68505b89dd44",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route-Admission Set namespaceOwnership of routeAdmission to InterNamespaceAllowed",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:1a59352578e4e909223bcdfe5371b9e0",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route-Admission Set namespaceOwnership of routeAdmission to Strict",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:76d20b94822a9595efd2c4abc78ef3e8",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route-Admission Set wildcardPolicy of routeAdmission to WildcardsAllowed",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:e3f26ec8bc247d81c4aebe4df07cdc79",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route-Admission Set wildcardPolicy of routeAdmission to WildcardsDisallowed",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:46eddd6487ff0747c4aa826421a8fec1",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route-Admission Update the namespaceOwnership of routeAdmission",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:b27cec600cc494f6110e583c59f23bd0",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route-Cookies Can set cookie name for unsecure routes by annotation",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:476a2184a488016038292c9f07daddcc",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route-Cookies Cookie name should not use openshift prefix",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:d777ceac6df0481c6eb7786f717b0abc",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route-Cookies Enable/Disable haproxy cookies based sticky session for unsecure routes",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:05dad68affda56f20a742f7af87b2f96",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route-Cookies router.openshift.io/cookie-same-site route annotation accepts None Lax or Strict attribute for Reencrypt routes",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:fd6e825aa35fe316ccb50bd1569471fe",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route-Cookies router.openshift.io/cookie-same-site route annotation accepts None Lax or Strict attribute for edge routes",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:b64624bf5fdf002299de27fb9e98f5c8",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route-HSTS The edge/reencrypt route supports HSTS but unsecure/passthrough route does not",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:5acc362db3bafbf88b9f05f200d306b3",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route-Headers Configure Ingresscontroller to preserve existing header with forwardedHeaderPolicy set to Append",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:e667ac96daecf4f48f79c090c995bcb4",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route-Headers Configure Ingresscontroller to replace any existing Forwarded header with forwardedHeaderPolicy set to Replace",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:1fe0ebf23c10d8f3f75751496634fcae",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route-Headers Configure Ingresscontroller to set the headers if they are not already set with forwardedHeaderPolicy set to Ifnone",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:b014106c292cfab94f1e79770f002ea9",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route-Headers Forwarded header includes empty quoted proto-version parameter",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:502ecbc010e1b68db325e574ec56642c",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route-Headers adding/deleting http headers to a http route by a router owner",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:58a12b27f5edbc9bf9f44896d9b8bb73",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route-Headers adding/deleting http headers to a http route by an ingress-controller as a cluster administrator",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:f8b8d6da7341d656942bbfa9d92ac047",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route-Headers adding/deleting http headers to a reen route by a router owner",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:c140b35e606c5bccb811162c0fe3b7b5",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route-Headers adding/deleting http headers to a reen route by an ingress-controller as a cluster administrator",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:1f8a6fee102ef0fcf7fc1ad51821f885",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route-Headers adding/deleting http headers to an edge route by a router owner",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:78672450a6acf132e50c456f58d4d610",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route-Headers adding/deleting http headers to an edge route by an ingress-controller as a cluster administrator",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:1ea60db871bc25551ee5a63987dd5457",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route-Headers http request with duplicated headers should not cause disruption to a router pod",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:f7c28da134e0266dd39f9e37eeedef68",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route-Headers negative test of adding/deleting http headers",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:e82d04e721c152c93ad723b054842dc6",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route-Headers set different type of values for a http header name and its value",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:14887613f2af9886a9e59d4d49680500",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route-Headers supported max http headers, max length of a http header name, max length value of a http header",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:650b6cc47f39d3e7f7e8cdb2e59be00c",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route-Logging Capture and log http cookies with specific prefixes via httpCaptureCookies option",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:e83fb4e8daa232d5a9b409f225e3c442",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route-Logging Capture and log http requests using UniqueID with custom logging format defined via httpHeader option",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:86b77177c8ef159200157b9dfd77559e",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route-Logging The httpCaptureHeaders option strictly adheres to the maxlength parameter",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:b65c5f3849dc600891be38b9e1321061",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route-Weight Alternate Backends and Weights for a route work well",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:c0ad6f6537544c60cb26efc3f8f6b6b0",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route-Weight Each endpoint gets weight/numberOfEndpoints portion of the requests",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:4cbc9093681530364bb574fba71c5ebe",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route-Weight Endpoint will end up weight 1 when scaled weight per endpoint is less than 1",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:07d5ae2772d838a249b38ce2da9617fe",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route-Weight Set backends weight for edge/passthrough/reencrypt/unsecure route",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:b6a5e2684cdd801f351c6bec48b577b5",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route-Weight Set multiple backends weight for route",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:272df9d43e5a5a427ae078d753f6c658",
+    "Name": "[sig-network-edge][Feature:Router][OTP][Level0] Network_Edge Component_Route-Weight Sticky session could work normally after set weight for route",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -807200,6 +808324,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:306da47dc55fdbf359c9207f4f9e2777",
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Router Azure external and internal load balancer services receive IPs [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:6e1f2c6d90731296690b39d2d78c7524",
     "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Router Cluster ingress health checks and routes fail on swapping application router between public and private [Suite:openshift/conformance/parallel]",
     "Suite": "openshift-tests",
@@ -807376,6 +808516,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:79075d5abc2268d295356f798037898c",
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Router component route hostname is RFC compliant [Serial] [Suite:openshift/conformance/serial]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:c7b4b80a5432daf1144f556a1a02cceb",
     "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Router different router deployment with same route using subdomain [Suite:openshift/conformance/parallel]",
     "Suite": "openshift-tests",
@@ -807458,6 +808614,22 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:3b0e72f82e89ad419d6e46cf5c2e3bfc",
     "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Router openshift ingress operator is failing to update router-certs [Serial] [Suite:openshift/conformance/serial]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:780e04f8fcd45fb19650d34d15d9ca68",
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Router router rejects invalid certificate content on ingress [Serial] [Suite:openshift/conformance/serial]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -825965,6 +827137,24 @@
     "Component": "Networking / ovn-kubernetes",
     "Capabilities": [
       "IPsec"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:37c447c6f00add1ad49db86777e9ccaa",
+    "Name": "[sig-network][Feature:Layer2LiveMigration][Feature:baremetal][OCPFeatureGate:NetworkSegmentation][Suite:openshift/network/virtualization] primary UDN migration egress when using openshift ovn-kubernetes should consistently egress through each VM's own node while another VM migrates",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Layer2LiveMigration",
+      "OCPFeatureGate:NetworkSegmentation",
+      "baremetal"
     ],
     "JIRAComponent": "Networking / ovn-kubernetes",
     "JIRAComponentID": "14951"

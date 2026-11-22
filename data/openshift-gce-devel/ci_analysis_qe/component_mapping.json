@@ -6578,6 +6578,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "Logging related features:3940a29f391becbf802df54e1f527723",
+    "Name": "Logging related features \"before each\" hook for \"(OCP-66825,qitang,Logging) Vector - OpenShift Logging Collection Vector metrics dashboard\"",
+    "Suite": "Logging related features",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Logging",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Logging",
+    "JIRAComponentID": "14829"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "Logging related features:e5ccfc7787aa521a27b34d82fd23f3ab",
     "Name": "Logging related features \"before each\" hook for \"(OCP-70833,gkarager,Logging) Deploy loki-operator via Web Console\"",
     "Suite": "Logging related features",
@@ -110663,6 +110679,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "Logging:b41b3b468acd00f645bb45a45638e2dd",
+    "Name": "OCP-60699:gkarager:Logging:[sig-openshift-logging] Logging  Log Forward to Syslog Vector-Forward logs to syslog(RFCRFCThirtyOneSixtyFour)",
+    "Suite": "Logging",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Logging",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Logging",
+    "JIRAComponentID": "14829"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "Logging:9ca598508fa655b8e61324dba49c4464",
     "Name": "OCP-60699:gkarager:Logging:[sig-openshift-logging] Logging  to Syslog Vector forward logs to syslog(RFCThirtyOneSixtyFour)",
     "Suite": "Logging",
@@ -112247,8 +112279,56 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "Logging:e507a68cee0e07a098c0e694acc5bf41",
+    "Name": "OCP-61477:gkarager:Logging:[sig-openshift-logging] Logging  Log Forward to Syslog Vector-Forward logs to syslog - mtls with private key passphrase",
+    "Suite": "Logging",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Logging",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Logging",
+    "JIRAComponentID": "14829"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "Logging:6f4d632c07486473979ff7fd3b542c12",
     "Name": "OCP-61477:gkarager:Logging:[sig-openshift-logging] Logging  to Syslog Vector-Forward logs to syslog - mtls with private key passphrase",
+    "Suite": "Logging",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Logging",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Logging",
+    "JIRAComponentID": "14829"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Logging:8d890f5b4e7b64407c19be6308155676",
+    "Name": "OCP-61479:gkarager:Logging:[sig-openshift-logging] Logging  Log Forward to Syslog V-ICA.02-V-ICA.03-Vector forward logs to syslog(tls)",
+    "Suite": "Logging",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Logging",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Logging",
+    "JIRAComponentID": "14829"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Logging:656a894ec9958ed55caff8df4a871c99",
+    "Name": "OCP-61479:gkarager:Logging:[sig-openshift-logging] Logging  Log Forward to Syslog VA-IAC.03-Vector-Forward logs to syslog(tls)",
     "Suite": "Logging",
     "Product": "OpenShift",
     "Priority": 0,
@@ -125175,6 +125255,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "Logging:74df432b07a4d34094e6ec5ef69486d2",
+    "Name": "OCP-67423:anli:Logging:[sig-openshift-logging] Logging  rapidast scan Cluster Logging Operator should pass DAST test",
+    "Suite": "Logging",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Logging",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Logging",
+    "JIRAComponentID": "14829"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "Logging:c60d1e374a90d4c5fa6d466d00216e91",
     "Name": "OCP-67424:anli:Logging:[sig-openshift-logging] Logging  rapidast scan loki-operator should pass DAST test",
     "Suite": "Logging",
@@ -133593,6 +133689,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "Logging:7da32d5575f895cf995214caeb9f49b8",
+    "Name": "OCP-71143:qitang:Logging:[sig-openshift-logging] Logging  Log Forward to Syslog Collect or exclude audit logs.",
+    "Suite": "Logging",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Logging",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Logging",
+    "JIRAComponentID": "14829"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "Logging:ffb37cf7e765852a5504e1412326eb2e",
     "Name": "OCP-71143:qitang:Logging:[sig-openshift-logging] Logging  to Syslog Collect or exclude audit logs.",
     "Suite": "Logging",
@@ -134377,6 +134489,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "Logging:ed95eeb837ba603588471edc5f0b1c11",
+    "Name": "OCP-71773:kbharti:Logging:[sig-openshift-logging] Logging  loki-operator - Managed auth/STS mode Verify CCO support with custom region on a AZWIF cluster and forward logs to LokiStack logstore[Serial]",
+    "Suite": "Logging",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Logging",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Logging",
+    "JIRAComponentID": "14829"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "Logging:c0247f1427b70d096d967cdffa82d380",
     "Name": "OCP-71777:qitang:Logging:[sig-openshift-logging] Logging  Forward to GCL Include or exclude logs by combining namespace and container selectors.[Slow]",
     "Suite": "Logging",
@@ -134453,6 +134581,22 @@
     ],
     "JIRAComponent": "Etcd",
     "JIRAComponentID": "14713"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Logging:79053b286da1d00bca6f7c6108455a2c",
+    "Name": "OCP-71794:kbharti:Logging:[sig-openshift-logging] Logging  loki-operator - Managed auth/STS mode Verify CCO support with default region on a AZWIF cluster and forward logs to LokiStack logstore[Serial]",
+    "Suite": "Logging",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Logging",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Logging",
+    "JIRAComponentID": "14829"
   },
   {
     "APIVersion": "v1",
@@ -144249,6 +144393,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "Logging:9bcb1b7fed2f9a9c071dafa66e6287a8",
+    "Name": "OCP-75317:anli:Logging:[sig-openshift-logging] Logging  Log Forward to Syslog forward logs to Syslog customized fields and debug mode",
+    "Suite": "Logging",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Logging",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Logging",
+    "JIRAComponentID": "14829"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "Logging:a6e29ffecd64cadb8bae575ad319855f",
     "Name": "OCP-75317:anli:Logging:[sig-openshift-logging] Logging  to Syslog forward logs to Syslog customized fields and debug mode",
     "Suite": "Logging",
@@ -144441,6 +144601,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "Logging:a2098790240423c54cf19c6378da6b7f",
+    "Name": "OCP-75351:qitang:Logging:[sig-openshift-logging] Logging  Otlp output testing Tech preview annotation should be enabled when forwarding logs via otlp",
+    "Suite": "Logging",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Logging",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Logging",
+    "JIRAComponentID": "14829"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "Workloads:532112a9401619aea99d49b9f6c8ca86",
     "Name": "OCP-75366:yinzhou:Workloads:[sig-cli] Workloads ocmirror v2 works well show operator on error logs and skip bundle when related image associated failed [Serial]",
     "Suite": "Workloads",
@@ -144555,6 +144731,22 @@
     "Kind": "TestOwnership",
     "ID": "Logging:fe4415d024b6d3cb9a977ab5d4ca6b9a",
     "Name": "OCP-75390:qitang:Logging:[sig-openshift-logging] Logging  Splunk Custom Tenant CLF should be rejected and show error message if the filters are invalid",
+    "Suite": "Logging",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Logging",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Logging",
+    "JIRAComponentID": "14829"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Logging:6c1eaa3086d0d407158ec4d9f6d45a33",
+    "Name": "OCP-75415:qitang:Logging:[sig-openshift-logging] Logging  Log Forward to Cloudwatch Validation for multiple cloudwatch outputs in iamRole mode.[Slow]",
     "Suite": "Logging",
     "Product": "OpenShift",
     "Priority": 0,
@@ -144709,6 +144901,22 @@
     ],
     "JIRAComponent": "Unknown",
     "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Logging:cdbdcbd6cb673a17b764743b81b6c605",
+    "Name": "OCP-75431:anli:Logging:[sig-openshift-logging] Logging  Log Forward to Syslog forward logs to Syslog using KubernetesMinimal",
+    "Suite": "Logging",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Logging",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Logging",
+    "JIRAComponentID": "14829"
   },
   {
     "APIVersion": "v1",
@@ -183056,6 +183264,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "Overall CI (test step):de06e64d9aada748909489d38bcd3a06",
+    "Name": "cucushift-logging",
+    "Suite": "Overall CI (test step)",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "Overall CI (test step):f943ac2ae668d2387a5ac2e2fc8424f1",
     "Name": "cucushift-ota-postupgrade",
     "Suite": "Overall CI (test step)",
@@ -183802,6 +184026,22 @@
     "Kind": "TestOwnership",
     "ID": "Overall CI (test step):1c0e518b725a00b25a272c60f32dd9f3",
     "Name": "enable-qe-catalogsource-disconnected",
+    "Suite": "Overall CI (test step)",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Overall CI (test step):1053d85a5f4b999dd5dd9c9d2dd7b26e",
+    "Name": "enable-qe-catalogsource-logging",
     "Suite": "Overall CI (test step)",
     "Product": "OpenShift",
     "Priority": 0,
@@ -186020,6 +186260,22 @@
     ],
     "JIRAComponent": "Installer / openshift-installer",
     "JIRAComponentID": "14798"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Overall CI (test step):f9e83787e70206c3ada8242569f3365c",
+    "Name": "install-operators",
+    "Suite": "Overall CI (test step)",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
   },
   {
     "APIVersion": "v1",
@@ -191025,6 +191281,22 @@
     "Component": "Unknown",
     "Capabilities": [
       "LEVEL0"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Overall CI (test step):6fd12222b58019c9f969a091c845f779",
+    "Name": "openshift-extended-logging-test",
+    "Suite": "Overall CI (test step)",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
     ],
     "JIRAComponent": "Unknown",
     "JIRAComponentID": "14832"
