@@ -36556,6 +36556,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/eventinge2erekt"
   },
   {
+    "Name": "TestChannelBasedBrokerToKsvc/Prerequisite/#00/Setup/install_broker_\"broker-rxewxqft\"",
+    "Suite": "lp-ocp-compat--Serverless--test/eventinge2erekt"
+  },
+  {
     "Name": "TestChannelBasedBrokerToKsvc/Prerequisite/#00/Setup/install_broker_\"broker-rxhkafiw\"",
     "Suite": "lp-ocp-compat--Serverless--test/eventinge2erekt"
   },
@@ -196573,6 +196577,10 @@
   },
   {
     "Name": "[sig-hypershift][Jira:Hypershift][Feature:Metrics] Hosted Cluster Metrics when KAS health metrics are exposed should contain availability and latency data from CPO",
+    "Suite": "hypershift-e2e"
+  },
+  {
+    "Name": "[sig-hypershift][Jira:Hypershift][Feature:Metrics] Hosted Cluster Metrics when NodePool vCPU metrics are supported should expose NodePool vCPU and node-count metrics with workload_type labels",
     "Suite": "hypershift-e2e"
   },
   {
