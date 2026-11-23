@@ -1,6 +1,8 @@
 package machineconfigoperator
 
 import (
+	"regexp"
+
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/config"
 )
@@ -43,6 +45,15 @@ var MachineConfigOperatorComponent = Component{
 			{Suite: "MCO"},
 			{
 				SIG: "sig-mco",
+			},
+			// LP Interop OPP platform-infra wait-mcp suite, MachineConfigPool convergence checks (INTEROP-9630).
+			// Matches both runtime-first lp-interop--OPP--wait-mcp and canonical lp-interop--OCP--OPP--wait-mcp.
+			{
+				SuiteRegEx: regexp.MustCompile(`^lp-interop--(OCP--)?OPP--wait-mcp$`),
+				IncludeAny: []string{
+					"wait-mcp",
+					"predicate-selftest",
+				},
 			},
 		},
 		TestRenames: map[string]string{

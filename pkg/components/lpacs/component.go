@@ -21,6 +21,12 @@ var LPacsComponent = Component{
 			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ACS--`)},
 			//  LP Interop Test Suites: Capability is used to group Runtime Env.
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACS--OPP--`), Capabilities: []string{"OPP"}},
+			// Platform-infra smoke suite, routed to the existing ACS component
+			// (INTEROP-9630): both the runtime-first lp-interop--OPP--smoke and
+			// the canonical lp-interop--OCP--OPP--smoke forms carry the
+			// acs-sensors case, so the claim is scoped by suite and test name
+			// and does not collide with the canonical OPP matchers above.
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--(OCP--)?OPP--smoke$`), IncludeAny: []string{"acs-sensors"}},
 			// Runtime-first emission from interop-opp-product-upgrade-acs,
 			// which still writes the literal suite name in openshift/release.
 			// Restored with the ingestion narrowing so the live acs-upgrade row
