@@ -149746,6 +149746,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Serverless--test/eventinge2erekt:79dd5c6583b63f15a0333c324b47d467",
+    "Name": "TestChannelBasedBrokerToKsvc/Prerequisite/#00/Setup/install_broker_\"broker-rxewxqft\"",
+    "Suite": "lp-ocp-compat--Serverless--test/eventinge2erekt",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Serverless",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Serverless",
+    "JIRAComponentID": "14812"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Serverless--test/eventinge2erekt:dd1bd25182b4245fd725579360a7a7f4",
     "Name": "TestChannelBasedBrokerToKsvc/Prerequisite/#00/Setup/install_broker_\"broker-rxhkafiw\"",
     "Suite": "lp-ocp-compat--Serverless--test/eventinge2erekt",
@@ -790447,6 +790463,22 @@
     "Kind": "TestOwnership",
     "ID": "hypershift-e2e:b579db43515502b07d02fe138508501e",
     "Name": "[sig-hypershift][Jira:Hypershift][Feature:Metrics] Hosted Cluster Metrics when KAS health metrics are exposed should contain availability and latency data from CPO",
+    "Suite": "hypershift-e2e",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "HyperShift",
+    "Capabilities": [
+      "Metrics"
+    ],
+    "JIRAComponent": "HyperShift",
+    "JIRAComponentID": "14684"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "hypershift-e2e:d80fe3cb5c65e74383fae28bcec9477d",
+    "Name": "[sig-hypershift][Jira:Hypershift][Feature:Metrics] Hosted Cluster Metrics when NodePool vCPU metrics are supported should expose NodePool vCPU and node-count metrics with workload_type labels",
     "Suite": "hypershift-e2e",
     "Product": "OpenShift",
     "Priority": 0,
