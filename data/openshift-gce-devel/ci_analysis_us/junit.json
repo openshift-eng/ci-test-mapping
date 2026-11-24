@@ -107176,6 +107176,22 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[Conformance][Suite:openshift/kube-apiserver/rollout][Jira:kube-apiserver][sig-kube-apiserver] kube-apiserver [OTP][OCP-44738] should handle installer pod fall-backoff correctly when latestAvailableRevision greater than targetRevision [APIServer_Disruptive][Disruptive] [Serial]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Conformance][Suite:openshift/kube-apiserver/rollout][Jira:kube-apiserver][sig-kube-apiserver] kube-apiserver [OTP][OCP-56693] should make SAR traffic from oauth and openshift apiserver exempt with API Priority and Fairness [APIServer_Disruptive][Slow][Disruptive] [Serial]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Conformance][Suite:openshift/kube-apiserver/rollout][Jira:kube-apiserver][sig-kube-apiserver] kube-apiserver [OTP][OCP-78850] should fall back to last good revision when SNO kube-apiserver fails to roll out [APIServer_Disruptive][Disruptive] [Serial]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Conformance][Suite:openshift/kube-apiserver/rollout][Jira:kube-apiserver][sig-kube-apiserver] kube-apiserver should roll out new revisions without disruption [apigroup:config.openshift.io][apigroup:operator.openshift.io]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[Conformance][sig-api-machinery][Feature:APIServer] kube-apiserver should be accessible via api-ext endpoint [Suite:openshift/conformance/parallel/minimal]",
     "Suite": "openshift-tests"
   },
@@ -191652,6 +191668,18 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestBackupPolicyRetentionAcrossPVCs [Timeout:30m]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestInvalidBackupPolicySchedule",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestMultipleBackupsAreQueued [Timeout:30m]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestMultipleBackupsAreSkipped",
     "Suite": "openshift-tests"
   },
@@ -191660,7 +191688,15 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestPeriodicBackupLocalAllNodes [Timeout:30m]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestRetentionBySize",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestRetentionBySize [Timeout:30m]",
     "Suite": "openshift-tests"
   },
   {
@@ -198188,6 +198224,18 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-mco][Suite:openshift/machine-config-operator/disruptive][Disruptive][OCPFeatureGate:OSStreams] VAP blocks MCP OS stream downgrade on rhel-10 cluster [apigroup:machineconfiguration.openshift.io]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-mco][Suite:openshift/machine-config-operator/disruptive][Disruptive][OCPFeatureGate:OSStreams] VAP blocks OSImageStream defaultStream downgrade from rhel-10 to rhel-9 [apigroup:machineconfiguration.openshift.io]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-mco][Suite:openshift/machine-config-operator/disruptive][Disruptive][OCPFeatureGate:OSStreams] VAP blocks rhel-9 custom MCP creation on rhel-10 cluster [apigroup:machineconfiguration.openshift.io]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/disruptive][OCPFeatureGate:OnClusterBuild][Serial][Disruptive] MCO ocb PolarionID:77781-A successfully built MachineOSConfig can be re-build",
     "Suite": "openshift-tests"
   },
@@ -198696,10 +198744,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO Kubelet and ContainerRuntime [PolarionID:74540][OTP] Author:ptalgulk-NonHyperShiftHOST-NonPreRelease-Longduration-High-74540-[P1][OnCLayer] kubelet does not start after reboot due to dependency issue[Disruptive]",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO Kubelet and ContainerRuntime [PolarionID:74540][OTP] kubelet does not start after reboot due to dependency issue [Disruptive]",
     "Suite": "openshift-tests"
   },
@@ -198761,10 +198805,6 @@
   },
   {
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO MachineConfigNode Manual reboot should be reported on the MachineConfigNode [apigroup:machineconfiguration.openshift.io]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO MachineConfigNode [PolarionID:69184][OTP] Enable feature gate MachineConfigNodes [apigroup:machineconfiguration.openshift.io]",
     "Suite": "openshift-tests"
   },
   {
@@ -198956,19 +198996,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO Registry [PolarionID:43405][PolarionID:50508][OTP] node drain is not needed for mirror config change in container registry. Nodes not tainted. [Disruptive]",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO Registry [PolarionID:52520][OTP] Configure unqualified-search-registries in Image.config resource [Disruptive]",
     "Suite": "openshift-tests"
   },
   {
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO Registry [PolarionID:57595][OTP] Use empty pull-secret[Disruptive]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO Registry [PolarionID:57595][OTP][OnCLayer] Use empty pull-secret[Disruptive]",
     "Suite": "openshift-tests"
   },
   {
@@ -198984,15 +199016,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO Registry [PolarionID:66046][OTP][OnCLayer] Check image registry certificates",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO Registry [PolarionID:68736][OTP] machine config server supports bootstrap with IR certs [Serial]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO Registry [PolarionID:68736][OTP][OnCLayer] machine config server supports bootstrap with IR certs [Serial]",
     "Suite": "openshift-tests"
   },
   {
@@ -199100,10 +199124,6 @@
     "Suite": "openshift-tests-upgrade"
   },
   {
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO [PolarionID:42347][OTP] Author:rioliu-NonHyperShiftHOST-Critical-42347-[P1][OnCLayer] health check for machine-config-operator [Serial]",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO [PolarionID:42347][OTP] health check for machine-config-operator [Serial]",
     "Suite": "openshift-tests"
   },
@@ -199116,15 +199136,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO [PolarionID:43124][OTP] Author:mhanss-NonPreRelease-Longduration-High-43124-[P2][OnCLayer] add machine config with invalid ignition version [Serial]",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO [PolarionID:43124][OTP] add machine config with invalid ignition version [Serial]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO [PolarionID:43726][OTP] Author:sregidor-NonPreRelease-Longduration-High-43726-[P1][OnCLayer] azure Controller-Config Infrastructure does not match cluster Infrastructure resource [Serial]",
     "Suite": "openshift-tests"
   },
   {
@@ -199144,15 +199156,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO [PolarionID:63868][OTP] Author:sregidor-NonHyperShiftHOST-NonPreRelease-Longduration-High-63868-[OnCLayer] ControllerConfig sync after Infrastructure objects are updated[Disruptive]",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO [PolarionID:63868][OTP] ControllerConfig sync after Infrastructure objects are updated [Disruptive]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO [PolarionID:68695][OTP] Author:rioliu-NonPreRelease-Critical-68695-[P1] Machine-Config-Operator should not be degraded when image-registry is not installed [Serial]",
     "Suite": "openshift-tests"
   },
   {
@@ -199181,10 +199185,6 @@
   },
   {
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO [PolarionID:75149][OTP] Update pool with manually cordoned nodes",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO [PolarionID:75258][OTP] Author:sregidor-NonHyperShiftHOST-NonPreRelease-Critical-75258-[OnCLayer] No ordering cycle issues should exist [Disruptive]",
     "Suite": "openshift-tests"
   },
   {
@@ -199256,10 +199256,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO daemon [PolarionID:68684][OTP] Author:sregidor-NonPreRelease-Medium-68684-[P2][OnCLayer] machine-config-controller pod restart should not make nodes unschedulable [Disruptive]",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO daemon [PolarionID:68684][OTP] machine-config-controller pod restart should not make nodes unschedulable [Disruptive]",
     "Suite": "openshift-tests"
   },
@@ -199280,23 +199276,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO daemon [PolarionID:82299][OTP] Author:sregidor-NonHyperShiftHOST-NonPreRelease-Longduration-Critical-82299-Check race condition in rpm-ostree update logic [Disruptive]",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO daemon [PolarionID:82299][OTP] Check race condition in rpm-ostree update logic [Disruptive]",
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO daemon [PolarionID:83134][OTP] Author:sregidor-NonHyperShiftHOST-Low-83134-Check that MCC can find all requested resources",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO daemon [PolarionID:83134][OTP] Check that MCC can find all requested resources [Serial]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO daemon [PolarionID:83943][OTP] Author:ptalgulk-NonHyperShiftHOST-NonPreRelease-Longduration-Critical-83943-[P1] CoreDNS Static Pod Redeploy Causes DNS Failure and rpm ostree disable on vSphere IPI [Disruptive]",
     "Suite": "openshift-tests"
   },
   {
@@ -199356,15 +199340,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO kernel [PolarionID:72132][OTP] Author:sregidor-NonHyperShiftHOST-NonPreRelease-[P2] Longduration-Medium-72132-[OnCLayer] enable FIPS by Machine-Config-Operator not supported [Disruptive]",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO kernel [PolarionID:72132][OTP] enable FIPS by Machine-Config-Operator not supported [Disruptive]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO kernel [PolarionID:72135][OTP] Author:sregidor-NonHyperShiftHOST-NonPreRelease-Longduration-Low-72135-[P1][OnCLayer] Refuse to disable FIPS mode by  Machine-Config-Operator [Disruptive]",
     "Suite": "openshift-tests"
   },
   {
@@ -199373,10 +199349,6 @@
   },
   {
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO kernel [PolarionID:72136][OTP] Reject MCs with ignition containing kernelArguments [Disruptive]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO kernel [PolarionID:88729] Verify USBGuard extension can be installed and enabled via MachineConfig on worker nodes [Disruptive]",
     "Suite": "openshift-tests"
   },
   {
@@ -199548,15 +199520,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO security [PolarionID:43278][OTP] Author:rioliu-NonPreRelease-Longduration-High-43278-[P2][OnCLayer] security fix for unsafe cipher [Serial]",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO security [PolarionID:43278][OTP] security fix for unsafe cipher [Serial]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO security [PolarionID:46965][OTP] Author:rioliu-NonPreRelease-Longduration-High-46965-[P2] Avoid workload disruption for GPG Public Key Rotation [Serial]",
     "Suite": "openshift-tests"
   },
   {
@@ -199564,23 +199528,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO security [PolarionID:47062][OTP] Author:rioliu-NonPreRelease-Longduration-High-47062-change policy.json on worker nodes [Serial]",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO security [PolarionID:47062][OTP] change policy.json on worker nodes [Serial]",
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO security [PolarionID:62084][OTP] Author:sregidor-NonHyperShiftHOST-NonPreRelease-Longduration-Critical-62084-[OnCLayer] Certificate rotation in paused pools[Disruptive]",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO security [PolarionID:62084][OTP] Certificate rotation in paused pools [Disruptive]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO security [PolarionID:65208][OTP] Author:sregidor-NonHyperShiftHOST-Low-65208-[OnCLayer] Check the visibility of certificates",
     "Suite": "openshift-tests"
   },
   {
@@ -199592,15 +199544,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO security [PolarionID:66436][OTP] Author:sregidor-NonHyperShiftHOST-NonPreRelease-Medium-66436-[P2][OnCLayer] disable weak SSH cipher suites [Serial]",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO security [PolarionID:66436][OTP] disable weak SSH cipher suites [Serial]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO security [PolarionID:67395][OTP] Author:sregidor-NonPreRelease-Longduration-Critical-67395-[P2][OnCLayer] rotate kubernetes certificate authority. Certificates managed via non-MC path.[Disruptive]",
     "Suite": "openshift-tests"
   },
   {
@@ -199612,15 +199556,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO security [PolarionID:75222][OTP] tlSecurityProfile switch and check the expected tlsMinVersion and cipheres suite are seen in MCS,MSS and rbac-kube-proxy pod logs[Disruptive]",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO security [PolarionID:75521][OTP] Log details for malformed certificates. No infinite loop [Disruptive]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO security [PolarionID:75543][OTP] tlsSecurity setting is also propagated on node in kubelet.conf [Disruptive]",
     "Suite": "openshift-tests"
   },
   {
@@ -199669,10 +199605,6 @@
   },
   {
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO units [PolarionID:56614][OTP] Create unit with content and mask=true[Disruptive]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO units [PolarionID:72025][OTP] Author:sregidor-NonHyperShiftHOST-NonPreRelease-Critical-72025-[P1][OnCLayer] nmstate keeps service yamls[Disruptive]",
     "Suite": "openshift-tests"
   },
   {
@@ -276025,6 +275957,14 @@
   },
   {
     "Name": "[sig-storage][OCPFeatureGate:VSphereMixedNodeEnv][platform:vsphere] vSphere Hybrid Environment when VSphereMixedNodeEnv feature gate is enabled should validate node labels and verify appropriate operator state [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-storage][Suite:openshift/disruptive-longrunning][OCPFeatureGate:ControllerManagerConfig][Serial][Disruptive][apigroup:config.openshift.io][Skipped:SingleReplicaTopology][Timeout:75m] ControllerManager volumeForceDetach behavior should NOT force detach a volume after timeout when volumeForceDetach is OnOutOfServiceTaintOnly",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-storage][Suite:openshift/disruptive-longrunning][OCPFeatureGate:ControllerManagerConfig][Serial][Disruptive][apigroup:config.openshift.io][Skipped:SingleReplicaTopology][Timeout:75m] ControllerManager volumeForceDetach behavior should force detach a volume after timeout when volumeForceDetach is OnUnmountTimeout",
     "Suite": "openshift-tests"
   },
   {
