@@ -432230,6 +432230,70 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:5a7d1b5f12c742822b4921ed19f24d8f",
+    "Name": "[Conformance][Suite:openshift/kube-apiserver/rollout][Jira:kube-apiserver][sig-kube-apiserver] kube-apiserver [OTP][OCP-44738] should handle installer pod fall-backoff correctly when latestAvailableRevision greater than targetRevision [APIServer_Disruptive][Disruptive] [Serial]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "kube-apiserver",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "kube-apiserver",
+    "JIRAComponentID": "14814"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:d88499bd384ba89620684ea5526375c2",
+    "Name": "[Conformance][Suite:openshift/kube-apiserver/rollout][Jira:kube-apiserver][sig-kube-apiserver] kube-apiserver [OTP][OCP-56693] should make SAR traffic from oauth and openshift apiserver exempt with API Priority and Fairness [APIServer_Disruptive][Slow][Disruptive] [Serial]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "kube-apiserver",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "kube-apiserver",
+    "JIRAComponentID": "14814"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:f32d0a7f932079ba502567e71b98514d",
+    "Name": "[Conformance][Suite:openshift/kube-apiserver/rollout][Jira:kube-apiserver][sig-kube-apiserver] kube-apiserver [OTP][OCP-78850] should fall back to last good revision when SNO kube-apiserver fails to roll out [APIServer_Disruptive][Disruptive] [Serial]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "kube-apiserver",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "kube-apiserver",
+    "JIRAComponentID": "14814"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:22c03b895cb05687935af443201f35ca",
+    "Name": "[Conformance][Suite:openshift/kube-apiserver/rollout][Jira:kube-apiserver][sig-kube-apiserver] kube-apiserver should roll out new revisions without disruption [apigroup:config.openshift.io][apigroup:operator.openshift.io]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "kube-apiserver",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "kube-apiserver",
+    "JIRAComponentID": "14814"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:18508421f3a44b269370b7b81d556766",
     "Name": "[Conformance][sig-api-machinery][Feature:APIServer] kube-apiserver should be accessible via api-ext endpoint [Suite:openshift/conformance/parallel/minimal]",
     "Suite": "openshift-tests",
@@ -770762,6 +770826,54 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:a1fe15ef267b16fb5919ed33a676547d",
+    "Name": "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestBackupPolicyRetentionAcrossPVCs [Timeout:30m]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Etcd",
+    "Capabilities": [
+      "OCPFeatureGate:AutomatedEtcdBackup"
+    ],
+    "JIRAComponent": "Etcd",
+    "JIRAComponentID": "14713"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:4962315fb98b7c2653841a0d3da24612",
+    "Name": "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestInvalidBackupPolicySchedule",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Etcd",
+    "Capabilities": [
+      "OCPFeatureGate:AutomatedEtcdBackup"
+    ],
+    "JIRAComponent": "Etcd",
+    "JIRAComponentID": "14713"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:992475525f26557fb2e8a705998c1667",
+    "Name": "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestMultipleBackupsAreQueued [Timeout:30m]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Etcd",
+    "Capabilities": [
+      "OCPFeatureGate:AutomatedEtcdBackup"
+    ],
+    "JIRAComponent": "Etcd",
+    "JIRAComponentID": "14713"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:d4b2628e27e34e40077d8a281f2e5816",
     "Name": "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestMultipleBackupsAreSkipped",
     "Suite": "openshift-tests",
@@ -770794,8 +770906,40 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:9ef55056e5848d95f64252a6c895fa31",
+    "Name": "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestPeriodicBackupLocalAllNodes [Timeout:30m]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Etcd",
+    "Capabilities": [
+      "OCPFeatureGate:AutomatedEtcdBackup"
+    ],
+    "JIRAComponent": "Etcd",
+    "JIRAComponentID": "14713"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:a6e196fddd2b3b4843f2f3193c0cb0aa",
     "Name": "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestRetentionBySize",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Etcd",
+    "Capabilities": [
+      "OCPFeatureGate:AutomatedEtcdBackup"
+    ],
+    "JIRAComponent": "Etcd",
+    "JIRAComponentID": "14713"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:776f0b4d5e62f40bf1768bd9cb94a5e0",
+    "Name": "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestRetentionBySize [Timeout:30m]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -796914,6 +797058,54 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:c4b2966a2969577eeab264f503b523b2",
+    "Name": "[sig-mco][Suite:openshift/machine-config-operator/disruptive][Disruptive][OCPFeatureGate:OSStreams] VAP blocks MCP OS stream downgrade on rhel-10 cluster [apigroup:machineconfiguration.openshift.io]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Machine Config Operator",
+    "Capabilities": [
+      "OCPFeatureGate:OSStreams"
+    ],
+    "JIRAComponent": "Machine Config Operator",
+    "JIRAComponentID": "14737"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:833dbf7a046e248da423f8f224390601",
+    "Name": "[sig-mco][Suite:openshift/machine-config-operator/disruptive][Disruptive][OCPFeatureGate:OSStreams] VAP blocks OSImageStream defaultStream downgrade from rhel-10 to rhel-9 [apigroup:machineconfiguration.openshift.io]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Machine Config Operator",
+    "Capabilities": [
+      "OCPFeatureGate:OSStreams"
+    ],
+    "JIRAComponent": "Machine Config Operator",
+    "JIRAComponentID": "14737"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:79ce2ce04d0db8416083b9f01e0ad50a",
+    "Name": "[sig-mco][Suite:openshift/machine-config-operator/disruptive][Disruptive][OCPFeatureGate:OSStreams] VAP blocks rhel-9 custom MCP creation on rhel-10 cluster [apigroup:machineconfiguration.openshift.io]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Machine Config Operator",
+    "Capabilities": [
+      "OCPFeatureGate:OSStreams"
+    ],
+    "JIRAComponent": "Machine Config Operator",
+    "JIRAComponentID": "14737"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:a21b7d9afcd7b219b7276ac8224ec410",
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/disruptive][OCPFeatureGate:OnClusterBuild][Serial][Disruptive] MCO ocb PolarionID:77781-A successfully built MachineOSConfig can be re-build",
     "Suite": "openshift-tests",
@@ -798946,22 +799138,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:d495cb4800523746af5cc6cefb5de084",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO Kubelet and ContainerRuntime [PolarionID:74540][OTP] Author:ptalgulk-NonHyperShiftHOST-NonPreRelease-Longduration-High-74540-[P1][OnCLayer] kubelet does not start after reboot due to dependency issue[Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:3b45ed6ecc21da6346138764477e3ac4",
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO Kubelet and ContainerRuntime [PolarionID:74540][OTP] kubelet does not start after reboot due to dependency issue [Disruptive]",
     "Suite": "openshift-tests",
@@ -799204,22 +799380,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:7acb517c7b8b493e856f1ae5600c2489",
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO MachineConfigNode Manual reboot should be reported on the MachineConfigNode [apigroup:machineconfiguration.openshift.io]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:622696ff8dbb09298924f5dc43418e7e",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO MachineConfigNode [PolarionID:69184][OTP] Enable feature gate MachineConfigNodes [apigroup:machineconfiguration.openshift.io]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -799986,22 +800146,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:98f53d43d634e609e655539c6d2bf8f3",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO Registry [PolarionID:43405][PolarionID:50508][OTP] node drain is not needed for mirror config change in container registry. Nodes not tainted. [Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:f5b27ce90c3df8b235839a58e5b7cf78",
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO Registry [PolarionID:52520][OTP] Configure unqualified-search-registries in Image.config resource [Disruptive]",
     "Suite": "openshift-tests",
@@ -800020,22 +800164,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:31b6ab3640b57dc58085b93a9bc54bcc",
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO Registry [PolarionID:57595][OTP] Use empty pull-secret[Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:d446f3aed346ef14db2b1875077956ff",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO Registry [PolarionID:57595][OTP][OnCLayer] Use empty pull-secret[Disruptive]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -800098,40 +800226,8 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:019c29ad37079efcb231183591249e02",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO Registry [PolarionID:66046][OTP][OnCLayer] Check image registry certificates",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:e578bb9ee8e92c9b18cacc56a310ab36",
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO Registry [PolarionID:68736][OTP] machine config server supports bootstrap with IR certs [Serial]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:ce2232b795b50c9814cc5c827d9b1353",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO Registry [PolarionID:68736][OTP][OnCLayer] machine config server supports bootstrap with IR certs [Serial]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -800562,22 +800658,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:4d9f0f3d4e6bcfa1567a7b36b51ced93",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO [PolarionID:42347][OTP] Author:rioliu-NonHyperShiftHOST-Critical-42347-[P1][OnCLayer] health check for machine-config-operator [Serial]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:ea10baf7c82ac5b1cd766ba2262cfd10",
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO [PolarionID:42347][OTP] health check for machine-config-operator [Serial]",
     "Suite": "openshift-tests",
@@ -800626,40 +800706,8 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:20f42105b7aa2aaa7159299c3f87de68",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO [PolarionID:43124][OTP] Author:mhanss-NonPreRelease-Longduration-High-43124-[P2][OnCLayer] add machine config with invalid ignition version [Serial]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:c59e445501a494a062c2696d66b2559c",
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO [PolarionID:43124][OTP] add machine config with invalid ignition version [Serial]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:015bd9fde7078c7ca2631a392d9b4ecd",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO [PolarionID:43726][OTP] Author:sregidor-NonPreRelease-Longduration-High-43726-[P1][OnCLayer] azure Controller-Config Infrastructure does not match cluster Infrastructure resource [Serial]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -800738,40 +800786,8 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:1ff60391a98c6b98f8768caa5d7cb6ac",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO [PolarionID:63868][OTP] Author:sregidor-NonHyperShiftHOST-NonPreRelease-Longduration-High-63868-[OnCLayer] ControllerConfig sync after Infrastructure objects are updated[Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:3d92dd39d5b666501ab7490092e75ea6",
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO [PolarionID:63868][OTP] ControllerConfig sync after Infrastructure objects are updated [Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:2e395f324dd837dbfbc8a23c91e07d8f",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO [PolarionID:68695][OTP] Author:rioliu-NonPreRelease-Critical-68695-[P1] Machine-Config-Operator should not be degraded when image-registry is not installed [Serial]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -800884,22 +800900,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:1196e740db232adcb01a65f092bc847b",
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO [PolarionID:75149][OTP] Update pool with manually cordoned nodes",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:fdede1cd0fc1c70172fec8b5a2c7a83f",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO [PolarionID:75258][OTP] Author:sregidor-NonHyperShiftHOST-NonPreRelease-Critical-75258-[OnCLayer] No ordering cycle issues should exist [Disruptive]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -801186,22 +801186,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:78f6e0b9f7496de8c226644b322cfaba",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO daemon [PolarionID:68684][OTP] Author:sregidor-NonPreRelease-Medium-68684-[P2][OnCLayer] machine-config-controller pod restart should not make nodes unschedulable [Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:e401a12de68e68150311703f7e445cce",
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO daemon [PolarionID:68684][OTP] machine-config-controller pod restart should not make nodes unschedulable [Disruptive]",
     "Suite": "openshift-tests",
@@ -801282,22 +801266,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:ebfdba44c8e442891801bba9efdcc810",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO daemon [PolarionID:82299][OTP] Author:sregidor-NonHyperShiftHOST-NonPreRelease-Longduration-Critical-82299-Check race condition in rpm-ostree update logic [Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:1dfd54c6671c2103bcce1126f3a66bd8",
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO daemon [PolarionID:82299][OTP] Check race condition in rpm-ostree update logic [Disruptive]",
     "Suite": "openshift-tests",
@@ -801314,40 +801282,8 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:e6539fe8a8631491c5c22d4733294dc5",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO daemon [PolarionID:83134][OTP] Author:sregidor-NonHyperShiftHOST-Low-83134-Check that MCC can find all requested resources",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:f464f8ffb73ac1db1bb63dcc81584931",
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO daemon [PolarionID:83134][OTP] Check that MCC can find all requested resources [Serial]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:1827f34e0f1ea0aeb8a11ec986ba89fc",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO daemon [PolarionID:83943][OTP] Author:ptalgulk-NonHyperShiftHOST-NonPreRelease-Longduration-Critical-83943-[P1] CoreDNS Static Pod Redeploy Causes DNS Failure and rpm ostree disable on vSphere IPI [Disruptive]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -801586,40 +801522,8 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:fe76f3591dbed690c2769e0b0a98fba7",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO kernel [PolarionID:72132][OTP] Author:sregidor-NonHyperShiftHOST-NonPreRelease-[P2] Longduration-Medium-72132-[OnCLayer] enable FIPS by Machine-Config-Operator not supported [Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:ef09bca1267b2b9ba3264dc4ee6f8c67",
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO kernel [PolarionID:72132][OTP] enable FIPS by Machine-Config-Operator not supported [Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:1c3f002b0abec1b29e00c84c6136cb76",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO kernel [PolarionID:72135][OTP] Author:sregidor-NonHyperShiftHOST-NonPreRelease-Longduration-Low-72135-[P1][OnCLayer] Refuse to disable FIPS mode by  Machine-Config-Operator [Disruptive]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -801652,22 +801556,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:9773e747ec06b55c6a1715f1746cbac3",
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO kernel [PolarionID:72136][OTP] Reject MCs with ignition containing kernelArguments [Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:ebb0513219ba1ca0c2d3811494f224bc",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO kernel [PolarionID:88729] Verify USBGuard extension can be installed and enabled via MachineConfig on worker nodes [Disruptive]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -802354,40 +802242,8 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:ebcdaa6d821c98165354e73efddf31d4",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO security [PolarionID:43278][OTP] Author:rioliu-NonPreRelease-Longduration-High-43278-[P2][OnCLayer] security fix for unsafe cipher [Serial]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:a4e63dd2e4e0684f1d9f9430f6b5da63",
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO security [PolarionID:43278][OTP] security fix for unsafe cipher [Serial]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:ef87ab7c344d3a4c42ee7da0f0498471",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO security [PolarionID:46965][OTP] Author:rioliu-NonPreRelease-Longduration-High-46965-[P2] Avoid workload disruption for GPG Public Key Rotation [Serial]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -802418,22 +802274,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:ae1f3418710df83de96c3e07b0927484",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO security [PolarionID:47062][OTP] Author:rioliu-NonPreRelease-Longduration-High-47062-change policy.json on worker nodes [Serial]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:cafb9e479a0f861e4080bea6cf20a894",
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO security [PolarionID:47062][OTP] change policy.json on worker nodes [Serial]",
     "Suite": "openshift-tests",
@@ -802450,40 +802290,8 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:36cd03240c8bf5d0f5ad9b94fdb0ec69",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO security [PolarionID:62084][OTP] Author:sregidor-NonHyperShiftHOST-NonPreRelease-Longduration-Critical-62084-[OnCLayer] Certificate rotation in paused pools[Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:6205188d4d499d8b073a432c63173b48",
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO security [PolarionID:62084][OTP] Certificate rotation in paused pools [Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:88f164a22fc0080f2cc9b8fea423842d",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO security [PolarionID:65208][OTP] Author:sregidor-NonHyperShiftHOST-Low-65208-[OnCLayer] Check the visibility of certificates",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -802530,40 +802338,8 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:f6226e2628746c7e4862d56e047a7a1d",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO security [PolarionID:66436][OTP] Author:sregidor-NonHyperShiftHOST-NonPreRelease-Medium-66436-[P2][OnCLayer] disable weak SSH cipher suites [Serial]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:b18add46ec39896c18f91f7f48573d7c",
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO security [PolarionID:66436][OTP] disable weak SSH cipher suites [Serial]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:f99b3009f67307abfed41a539c4c86a3",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO security [PolarionID:67395][OTP] Author:sregidor-NonPreRelease-Longduration-Critical-67395-[P2][OnCLayer] rotate kubernetes certificate authority. Certificates managed via non-MC path.[Disruptive]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -802610,40 +802386,8 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:25877d79dc44bc868760c334082692d7",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO security [PolarionID:75222][OTP] tlSecurityProfile switch and check the expected tlsMinVersion and cipheres suite are seen in MCS,MSS and rbac-kube-proxy pod logs[Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:2fdf64d9700e2135803273f7e9b73361",
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO security [PolarionID:75521][OTP] Log details for malformed certificates. No infinite loop [Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:e36e222645f59ec5360a59671f00de3e",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO security [PolarionID:75543][OTP] tlsSecurity setting is also propagated on node in kubelet.conf [Disruptive]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -802836,22 +802580,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:822e9c06a9da0f7e9bc05e400490cb1f",
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO units [PolarionID:56614][OTP] Create unit with content and mask=true[Disruptive]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Machine Config Operator",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Machine Config Operator",
-    "JIRAComponentID": "14737"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:928efd04b931885b6ff11b9d3784d8e3",
-    "Name": "[sig-mco][Suite:openshift/machine-config-operator/longduration][Serial][Disruptive] MCO units [PolarionID:72025][OTP] Author:sregidor-NonHyperShiftHOST-NonPreRelease-Critical-72025-[P1][OnCLayer] nmstate keeps service yamls[Disruptive]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -1114172,6 +1113900,38 @@
     "Component": "Storage",
     "Capabilities": [
       "OCPFeatureGate:VSphereMixedNodeEnv"
+    ],
+    "JIRAComponent": "Storage",
+    "JIRAComponentID": "14799"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:e6277e554a70e1cf1a52a58e99e597d8",
+    "Name": "[sig-storage][Suite:openshift/disruptive-longrunning][OCPFeatureGate:ControllerManagerConfig][Serial][Disruptive][apigroup:config.openshift.io][Skipped:SingleReplicaTopology][Timeout:75m] ControllerManager volumeForceDetach behavior should NOT force detach a volume after timeout when volumeForceDetach is OnOutOfServiceTaintOnly",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 1,
+    "StaffApprovedObsolete": false,
+    "Component": "Storage",
+    "Capabilities": [
+      "OCPFeatureGate:ControllerManagerConfig"
+    ],
+    "JIRAComponent": "Storage",
+    "JIRAComponentID": "14799"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:879709fb3692706bbb89a60e45fd3374",
+    "Name": "[sig-storage][Suite:openshift/disruptive-longrunning][OCPFeatureGate:ControllerManagerConfig][Serial][Disruptive][apigroup:config.openshift.io][Skipped:SingleReplicaTopology][Timeout:75m] ControllerManager volumeForceDetach behavior should force detach a volume after timeout when volumeForceDetach is OnUnmountTimeout",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 1,
+    "StaffApprovedObsolete": false,
+    "Component": "Storage",
+    "Capabilities": [
+      "OCPFeatureGate:ControllerManagerConfig"
     ],
     "JIRAComponent": "Storage",
     "JIRAComponentID": "14799"
