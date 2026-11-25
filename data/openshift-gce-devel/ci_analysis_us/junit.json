@@ -23204,6 +23204,54 @@
     "Suite": "ServiceMesh-lp-interop"
   },
   {
+    "Name": "Service CA Operator Webhook Injection should inject CA bundle into all webhook types",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "Service CA Operator should collect metrics and service CA metrics",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "Service CA Operator should create a serving cert secret for services with the serving-cert annotation",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "Service CA Operator should handle forced CA rotation",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "Service CA Operator should handle time-based CA rotation",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "Service CA Operator should handle vulnerable legacy CA bundle injection configmap",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "Service CA Operator should inject a CA bundle into an annotated configmap",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "Service CA Operator should recreate a serving cert secret when the secret is deleted",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "Service CA Operator should refresh CA when secret is deleted",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "Service CA Operator should regenerate serving cert secret when TLS cert is modified",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "Service CA Operator should remove extra data from serving cert secret",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "Service CA Operator should update CA bundle injection configmap when modified",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "Service mesh buttons are displayed",
     "Suite": "lp-ocp-compat--ServiceMesh--ServiceMesh-lp-interop"
   },
@@ -169972,6 +170020,218 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[networking] Node Shutdown and Startup should maintain cluster health after node shutdown and startup [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation ClusterUserDefinedNetwork CRD Controller pod connected to ClusterUserDefinedNetwork CR \u0026 managed NADs cannot be deleted when being used [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation ClusterUserDefinedNetwork CRD Controller should create NAD according to spec in each target namespace and report active namespaces [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation ClusterUserDefinedNetwork CRD Controller should create NAD in new created namespaces that apply to namespace-selector [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation ClusterUserDefinedNetwork CRD Controller when CR is deleted, should delete all managed NAD in each target namespace [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation ClusterUserDefinedNetwork CRD Controller when namespace-selector is mutated should create NAD in namespaces that apply to mutated namespace-selector [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation ClusterUserDefinedNetwork CRD Controller when namespace-selector is mutated should delete managed NAD in namespaces that no longer apply to namespace-selector [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation Sync perform east/west traffic between nodes following OVN Kube node pod restart L2 [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation Sync perform east/west traffic between nodes following OVN Kube node pod restart L2 with custom network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation Sync perform east/west traffic between nodes following OVN Kube node pod restart L3 [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation UserDefinedNetwork CRD Controller for L2 secondary network pod connected to UserDefinedNetwork cannot be deleted when being used [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation UserDefinedNetwork CRD Controller for L2 secondary network should create NetworkAttachmentDefinition according to spec [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation UserDefinedNetwork CRD Controller for L2 secondary network should delete NetworkAttachmentDefinition when UserDefinedNetwork is deleted [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation UserDefinedNetwork CRD Controller for primary UDN without required namespace label should be able to create pod and it will attach to the cluster default network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation UserDefinedNetwork CRD Controller for primary UDN without required namespace label should not be able to update the namespace and add the UDN label [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation UserDefinedNetwork CRD Controller for primary UDN without required namespace label should not be able to update the namespace and remove the UDN label [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using ClusterUserDefinedNetwork can perform east/west traffic between nodes two pods connected over a L2 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using ClusterUserDefinedNetwork can perform east/west traffic between nodes two pods connected over a L2 primary UDN with custom network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using ClusterUserDefinedNetwork can perform east/west traffic between nodes two pods connected over a L3 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using ClusterUserDefinedNetwork creates a networkStatus Annotation with UDN interface L2 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using ClusterUserDefinedNetwork creates a networkStatus Annotation with UDN interface L2 primary UDN with custom network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using ClusterUserDefinedNetwork creates a networkStatus Annotation with UDN interface L3 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using NetworkAttachmentDefinitions can perform east/west traffic between nodes two pods connected over a L2 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using NetworkAttachmentDefinitions can perform east/west traffic between nodes two pods connected over a L2 primary UDN with custom network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using NetworkAttachmentDefinitions can perform east/west traffic between nodes two pods connected over a L3 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using NetworkAttachmentDefinitions creates a networkStatus Annotation with UDN interface L2 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using NetworkAttachmentDefinitions creates a networkStatus Annotation with UDN interface L2 primary UDN with custom network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using NetworkAttachmentDefinitions creates a networkStatus Annotation with UDN interface L3 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using UserDefinedNetwork can perform east/west traffic between nodes two pods connected over a L2 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using UserDefinedNetwork can perform east/west traffic between nodes two pods connected over a L2 primary UDN with custom network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using UserDefinedNetwork can perform east/west traffic between nodes two pods connected over a L3 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using UserDefinedNetwork creates a networkStatus Annotation with UDN interface L2 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using UserDefinedNetwork creates a networkStatus Annotation with UDN interface L2 primary UDN with custom network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using UserDefinedNetwork creates a networkStatus Annotation with UDN interface L3 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network doesn't cause network name conflict [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation when primary network exist, ClusterUserDefinedNetwork status should report not-ready [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation when primary network exist, UserDefinedNetwork status should report not-ready [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation: Default network multus annotation ValidatingAdmissionPolicy protection should prevent adding, modifying and removing the default-network annotation on existing pods [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation: Default network multus annotation when added with static IP and MAC to a pod belonging to primary UDN should create the pod with the specified static IP and MAC address with persistent IPAM [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation: Default network multus annotation when added with static IP and MAC to a pod belonging to primary UDN should create the pod with the specified static IP and MAC address without persistent IPAM enabled [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation: Network Policies on a user defined primary network pods within namespace should be isolated when deny policy is present in L2 dualstack primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation: Network Policies on a user defined primary network pods within namespace should be isolated when deny policy is present in L2 dualstack primary UDN with custom network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation: Network Policies on a user defined primary network pods within namespace should be isolated when deny policy is present in L3 dualstack primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation: Preconfigured Layer2 UDN duplicate IP validation with primary UDN layer 2 pods should fail when creating second pod with duplicate static IP IPv4 duplicate [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation: Preconfigured Layer2 UDN duplicate IP validation with primary UDN layer 2 pods should fail when creating second pod with duplicate static IP IPv6 duplicate [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation: Preconfigured Layer2 UDN should respect network configuration Layer2 basic configuration [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation: Preconfigured Layer2 UDN should respect network configuration Layer2 with custom subnets [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation: Preconfigured Layer2 UDN should respect network configuration Layer2 with inverted gateway/management IPs [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation: Preconfigured Layer2 UDN unmasked reserved / infrastructure subnets are not allowed Layer2 with unmasked IPv4 infrastructure subnets [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation: Preconfigured Layer2 UDN unmasked reserved / infrastructure subnets are not allowed Layer2 with unmasked IPv4 reserved subnets [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation: Preconfigured Layer2 UDN unmasked reserved / infrastructure subnets are not allowed Layer2 with unmasked IPv6 infrastructure subnets [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation: Preconfigured Layer2 UDN unmasked reserved / infrastructure subnets are not allowed Layer2 with unmasked IPv6 reserved subnets [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation: services on a user defined primary network should be reachable through their cluster IP, node port and load balancer L2 primary UDN with custom network, cluster-networked pods, NodePort service [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[oauth-apiserver][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-oauth-apiserver",
     "Suite": "openshift-tests-upgrade"
   },
@@ -187548,6 +187808,10 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-cli] oc adm must-gather run the must-gather command with own name space [apigroup:config.openshift.io] [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-cli] oc adm must-gather run the must-gather command with own name space [apigroup:config.openshift.io][Timeout:20m] [Suite:openshift/conformance/parallel]",
     "Suite": "openshift-tests"
   },
@@ -200968,6 +201232,130 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Ingress Azure external and internal load balancer services receive IPs [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Ingress Ingress operator is enabled as an optional component [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Ingress Propagate ingress labels to generated routes [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Ingress Router deployment using different shard with same subdomain [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Ingress Setting route.openshift.io/termination annotation to Edge/Passthrough/Reencrypt in ingress resource [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Ingress different router deployment with same route using subdomain [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Ingress host name of the route depends on the subdomain if provided [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Ingress use IngressClass controller for ingress-to-route [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Ingress-Operator Cluster ingress health checks and routes fail on swapping application router between public and private [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Ingress-Operator Ingress operator support for private hosted zones in Shared VPC clusters [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Ingress-Operator Router should support SHA1 CA certificates in the default certificate chain [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Ingress-Operator The namespaceSelector of router is controlled by ingresscontroller [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Ingress-Operator The nodeSelector and tolerations of router deployment are controlled by ingresscontroller [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Ingress-Operator The routeSelector of router is controlled by ingresscontroller [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Ingress-Operator matchExpressions for namespaceSelector defined in an ingress-controller [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Ingress-Operator matchExpressions for routeSelector defined in an ingress-controller [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Ingress-Operator misc tests for ingress operator [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Route-CLB AWS NLB allocates and updates Elastic IP allocations [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Route-CLB AWS NLB supports selecting subnets [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Route-CLB IngressController sets the expected endpoint publishing strategy for the cluster platform [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Route-CLB IngressController supports multiple CIDR blocks in one Azure NSG rule [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Route-CLB Switching an AWS load balancer between Classic and NLB requires service recreation [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Route-Tunning Default HAProxy maxconn is 50000 [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Route-Tunning IngressController tuningOptions configure HAProxy header buffers [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Route-Tunning The threadCount parameter controls HAProxy nbthread [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Route-Tunning TuningOptions configure HAProxy reload interval [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Route-Tunning TuningOptions configure HTTP keep-alive timeout [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Route-Tunning TuningOptions configure ROUTER_MAX_CONNECTIONS [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Route-Tunning TuningOptions configure TCP client and server timeouts [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Route-Tunning TuningOptions configure TLS inspect delay [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Route-Tunning TuningOptions configure router backend check interval [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Router Azure external and internal load balancer services receive IPs [Suite:openshift/conformance/parallel]",
     "Suite": "openshift-tests"
   },
@@ -205576,15 +205964,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[sig-network][Feature:EgressIP] [external-targets] only pods matched by the pod selector should have the EgressIPs [Skipped:Network/OpenShiftSDN] [Serial] [Suite:openshift/conformance/serial]",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[sig-network][Feature:EgressIP] [external-targets] pods should have the assigned EgressIPs and EgressIPs can be deleted and recreated [Skipped:azure] [Serial] [Suite:openshift/conformance/serial]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[sig-network][Feature:EgressIP] [external-targets] pods should have the assigned EgressIPs and EgressIPs can be updated [Skipped:Network/OpenShiftSDN] [Serial] [Suite:openshift/conformance/serial]",
     "Suite": "openshift-tests"
   },
   {
@@ -217598,6 +217978,210 @@
   {
     "Name": "[sig-operator]virt-handler canary upgrade should successfully upgrade virt-handler",
     "Suite": "lp-ocp-compat--CNV--KubeVirt Tests Suite"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation ClusterUserDefinedNetwork CRD Controller pod connected to ClusterUserDefinedNetwork CR \u0026 managed NADs cannot be deleted when being used [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation ClusterUserDefinedNetwork CRD Controller should create NAD according to spec in each target namespace and report active namespaces [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation ClusterUserDefinedNetwork CRD Controller should create NAD in new created namespaces that apply to namespace-selector [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation ClusterUserDefinedNetwork CRD Controller when CR is deleted, should delete all managed NAD in each target namespace [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation ClusterUserDefinedNetwork CRD Controller when namespace-selector is mutated should create NAD in namespaces that apply to mutated namespace-selector [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation ClusterUserDefinedNetwork CRD Controller when namespace-selector is mutated should delete managed NAD in namespaces that no longer apply to namespace-selector [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation Sync perform east/west traffic between nodes following OVN Kube node pod restart L2 [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation Sync perform east/west traffic between nodes following OVN Kube node pod restart L2 with custom network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation Sync perform east/west traffic between nodes following OVN Kube node pod restart L3 [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation UserDefinedNetwork CRD Controller for L2 secondary network pod connected to UserDefinedNetwork cannot be deleted when being used [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation UserDefinedNetwork CRD Controller for L2 secondary network should create NetworkAttachmentDefinition according to spec [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation UserDefinedNetwork CRD Controller for L2 secondary network should delete NetworkAttachmentDefinition when UserDefinedNetwork is deleted [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation UserDefinedNetwork CRD Controller for primary UDN without required namespace label should be able to create pod and it will attach to the cluster default network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation UserDefinedNetwork CRD Controller for primary UDN without required namespace label should not be able to update the namespace and add the UDN label [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation UserDefinedNetwork CRD Controller for primary UDN without required namespace label should not be able to update the namespace and remove the UDN label [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using ClusterUserDefinedNetwork can perform east/west traffic between nodes two pods connected over a L2 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using ClusterUserDefinedNetwork can perform east/west traffic between nodes two pods connected over a L2 primary UDN with custom network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using ClusterUserDefinedNetwork can perform east/west traffic between nodes two pods connected over a L3 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using ClusterUserDefinedNetwork creates a networkStatus Annotation with UDN interface L2 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using ClusterUserDefinedNetwork creates a networkStatus Annotation with UDN interface L2 primary UDN with custom network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using ClusterUserDefinedNetwork creates a networkStatus Annotation with UDN interface L3 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using ClusterUserDefinedNetwork isolates overlapping CIDRs with L2 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using NetworkAttachmentDefinitions can perform east/west traffic between nodes two pods connected over a L2 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using NetworkAttachmentDefinitions can perform east/west traffic between nodes two pods connected over a L2 primary UDN with custom network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using NetworkAttachmentDefinitions can perform east/west traffic between nodes two pods connected over a L3 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using NetworkAttachmentDefinitions creates a networkStatus Annotation with UDN interface L2 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using NetworkAttachmentDefinitions creates a networkStatus Annotation with UDN interface L2 primary UDN with custom network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using NetworkAttachmentDefinitions creates a networkStatus Annotation with UDN interface L3 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using NetworkAttachmentDefinitions isolates overlapping CIDRs with L2 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using UserDefinedNetwork can perform east/west traffic between nodes two pods connected over a L2 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using UserDefinedNetwork can perform east/west traffic between nodes two pods connected over a L2 primary UDN with custom network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using UserDefinedNetwork can perform east/west traffic between nodes two pods connected over a L3 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using UserDefinedNetwork creates a networkStatus Annotation with UDN interface L2 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using UserDefinedNetwork creates a networkStatus Annotation with UDN interface L2 primary UDN with custom network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using UserDefinedNetwork creates a networkStatus Annotation with UDN interface L3 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using UserDefinedNetwork isolates overlapping CIDRs with L2 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using UserDefinedNetwork isolates overlapping CIDRs with L3 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network doesn't cause network name conflict [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation when primary network exist, ClusterUserDefinedNetwork status should report not-ready [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation when primary network exist, UserDefinedNetwork status should report not-ready [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation: Default network multus annotation ValidatingAdmissionPolicy protection should prevent adding, modifying and removing the default-network annotation on existing pods [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation: Default network multus annotation when added with static IP and MAC to a pod belonging to primary UDN should create the pod with the specified static IP and MAC address [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation: Network Policies on a user defined primary network pods within namespace should be isolated when deny policy is present in L2 dualstack primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation: Network Policies on a user defined primary network pods within namespace should be isolated when deny policy is present in L2 dualstack primary UDN with custom network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation: Network Policies on a user defined primary network pods within namespace should be isolated when deny policy is present in L3 dualstack primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation: Preconfigured Layer2 UDN duplicate IP validation with primary UDN layer 2 pods should fail when creating second pod with duplicate static IP IPv4 duplicate [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation: Preconfigured Layer2 UDN duplicate IP validation with primary UDN layer 2 pods should fail when creating second pod with duplicate static IP IPv6 duplicate [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation: Preconfigured Layer2 UDN should respect network configuration Layer2 basic configuration [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation: Preconfigured Layer2 UDN should respect network configuration Layer2 with custom subnets [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation: Preconfigured Layer2 UDN should respect network configuration Layer2 with inverted gateway/management IPs [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation: services on a user defined primary network should be reachable through their cluster IP, node port and load balancer L2 primary UDN with custom network, cluster-networked pods, NodePort service [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
   },
   {
     "Name": "[sig-performance] CPU latency tests for measuring realtime VMs performance running cyclictest and collecting results directly from VM",
@@ -278597,6 +279181,18 @@
   },
   {
     "Name": "objects in ns/openshift-vsphere-infra should not have too many generations",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "oc adm transition discovery lists available topology transitions [TopologyTransition][Serial][Skipped:MicroShift]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "oc adm transition dry-run previews an available topology transition [TopologyTransition][Serial][Skipped:MicroShift]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "oc adm transition initiate completes a topology transition through the status-read path [TopologyTransition][Serial][Skipped:MicroShift]",
     "Suite": "openshift-tests"
   },
   {
