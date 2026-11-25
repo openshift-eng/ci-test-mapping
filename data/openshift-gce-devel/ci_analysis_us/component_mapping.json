@@ -96338,6 +96338,198 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:d05b6707ba507dd2f945f20256fc4ac8",
+    "Name": "Service CA Operator Webhook Injection should inject CA bundle into all webhook types",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:ca2c1ec3bdcdf269e8ed87dd79075690",
+    "Name": "Service CA Operator should collect metrics and service CA metrics",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:f2ac4c891214f74fa27f2bfbe7d3ebee",
+    "Name": "Service CA Operator should create a serving cert secret for services with the serving-cert annotation",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:817bfc153678633f626b793f6d42bb24",
+    "Name": "Service CA Operator should handle forced CA rotation",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:1391555bc2f54c38d3ea29ca93fcb5c4",
+    "Name": "Service CA Operator should handle time-based CA rotation",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:827047357e16322bb1a92ec256387fd3",
+    "Name": "Service CA Operator should handle vulnerable legacy CA bundle injection configmap",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:245175dbc11e1c2b37f92df403573b40",
+    "Name": "Service CA Operator should inject a CA bundle into an annotated configmap",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:79e342870c9c5f0887c605575f89b6d6",
+    "Name": "Service CA Operator should recreate a serving cert secret when the secret is deleted",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:cf58364ca790a78f82c90ed6cf460e92",
+    "Name": "Service CA Operator should refresh CA when secret is deleted",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:073744e0089b52dd597b12f4d1ad2253",
+    "Name": "Service CA Operator should regenerate serving cert secret when TLS cert is modified",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:30e29b5e2245808d1c16b723260987b7",
+    "Name": "Service CA Operator should remove extra data from serving cert secret",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:2422e3032cbae9658850a93052f0d9ee",
+    "Name": "Service CA Operator should update CA bundle injection configmap when modified",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--ServiceMesh--ServiceMesh-lp-interop:3aa5802a5f047b38e93714b765ad7a69",
     "Name": "Service mesh buttons are displayed",
     "Suite": "lp-ocp-compat--ServiceMesh--ServiceMesh-lp-interop",
@@ -683805,6 +683997,854 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:3d5dccde78e1e1b057b4a1979c012f3b",
+    "Name": "[networking] Node Shutdown and Startup should maintain cluster health after node shutdown and startup [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:d026ded0ecd1478d9e5ffc358489d0bd",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation ClusterUserDefinedNetwork CRD Controller pod connected to ClusterUserDefinedNetwork CR \u0026 managed NADs cannot be deleted when being used [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:481c71320881e3dea15796b5ad91be31",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation ClusterUserDefinedNetwork CRD Controller should create NAD according to spec in each target namespace and report active namespaces [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:58e9a0f8b2a78079ac8713707ce224c1",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation ClusterUserDefinedNetwork CRD Controller should create NAD in new created namespaces that apply to namespace-selector [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:cae383cc946b9144d60a5aff43f22c2c",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation ClusterUserDefinedNetwork CRD Controller when CR is deleted, should delete all managed NAD in each target namespace [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:2e07817079b797aa5ec4bfc7d7798904",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation ClusterUserDefinedNetwork CRD Controller when namespace-selector is mutated should create NAD in namespaces that apply to mutated namespace-selector [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:454b7a35a3770a3e09be6043ba47534a",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation ClusterUserDefinedNetwork CRD Controller when namespace-selector is mutated should delete managed NAD in namespaces that no longer apply to namespace-selector [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:3b3ca58c8dd66c1a1471153e9f6c9808",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation Sync perform east/west traffic between nodes following OVN Kube node pod restart L2 [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:f40f69c9a9ad8da463c58795ccfc49e4",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation Sync perform east/west traffic between nodes following OVN Kube node pod restart L2 with custom network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:29344c421f3a666d098c1db48d5b2817",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation Sync perform east/west traffic between nodes following OVN Kube node pod restart L3 [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:ce26baee9176c791b74cd11c0e8e11fd",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation UserDefinedNetwork CRD Controller for L2 secondary network pod connected to UserDefinedNetwork cannot be deleted when being used [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:63ff99e66f45f41509de4317b43335ba",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation UserDefinedNetwork CRD Controller for L2 secondary network should create NetworkAttachmentDefinition according to spec [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:88c3ba72d1016c5dbf77478b5c7a21e5",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation UserDefinedNetwork CRD Controller for L2 secondary network should delete NetworkAttachmentDefinition when UserDefinedNetwork is deleted [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:924cf561e24ecca71566ca0a55320405",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation UserDefinedNetwork CRD Controller for primary UDN without required namespace label should be able to create pod and it will attach to the cluster default network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:26a7be2e477b072e47d5c703f62ffdfc",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation UserDefinedNetwork CRD Controller for primary UDN without required namespace label should not be able to update the namespace and add the UDN label [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:7761295551056aab1bbab81553af2f59",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation UserDefinedNetwork CRD Controller for primary UDN without required namespace label should not be able to update the namespace and remove the UDN label [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:e3b2d173ca65e0c953639e5d2d3f15be",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using ClusterUserDefinedNetwork can perform east/west traffic between nodes two pods connected over a L2 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:6a11f3bb87887a663b3c701ee4455603",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using ClusterUserDefinedNetwork can perform east/west traffic between nodes two pods connected over a L2 primary UDN with custom network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:025ff553521a3bd227076ef5a1478866",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using ClusterUserDefinedNetwork can perform east/west traffic between nodes two pods connected over a L3 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:3bb3317adac78cf7b9fcddf7356cb554",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using ClusterUserDefinedNetwork creates a networkStatus Annotation with UDN interface L2 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:ef642f0226eee21d4d4ec755eaa893b3",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using ClusterUserDefinedNetwork creates a networkStatus Annotation with UDN interface L2 primary UDN with custom network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:f54286e602c1d3b81231e8a44e2eb745",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using ClusterUserDefinedNetwork creates a networkStatus Annotation with UDN interface L3 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:3ddea60cb166423b24338d63fb02b014",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using NetworkAttachmentDefinitions can perform east/west traffic between nodes two pods connected over a L2 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:d11b7e701168d312ddaf8f7f39bdfcf5",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using NetworkAttachmentDefinitions can perform east/west traffic between nodes two pods connected over a L2 primary UDN with custom network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:76dc9930eca5a8252f9d10b4ed8c2e97",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using NetworkAttachmentDefinitions can perform east/west traffic between nodes two pods connected over a L3 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:19644f28afac78cc971828f9b35378a9",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using NetworkAttachmentDefinitions creates a networkStatus Annotation with UDN interface L2 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:953cd26a069c575060c945143e21d0c9",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using NetworkAttachmentDefinitions creates a networkStatus Annotation with UDN interface L2 primary UDN with custom network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:0c3055e4025c9ed913b8f23195911326",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using NetworkAttachmentDefinitions creates a networkStatus Annotation with UDN interface L3 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:18e6ee65866e5f949423162d809607e0",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using UserDefinedNetwork can perform east/west traffic between nodes two pods connected over a L2 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:d0d873cc64d829c75e3df99ee803fcde",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using UserDefinedNetwork can perform east/west traffic between nodes two pods connected over a L2 primary UDN with custom network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:9af1751d1a13c330574684d91f451050",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using UserDefinedNetwork can perform east/west traffic between nodes two pods connected over a L3 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:a9ab20554dc271a6ef83d4a097d677e3",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using UserDefinedNetwork creates a networkStatus Annotation with UDN interface L2 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:0a650fc1758214b162b74d852178646b",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using UserDefinedNetwork creates a networkStatus Annotation with UDN interface L2 primary UDN with custom network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:f4f2c99e7fdde7b1d8673bdff0e84fca",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using UserDefinedNetwork creates a networkStatus Annotation with UDN interface L3 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:f8e1c0eff6f43c10a3383a70074b97ed",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network doesn't cause network name conflict [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:05a0e9da484f620f19d0d1d212c27958",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation when primary network exist, ClusterUserDefinedNetwork status should report not-ready [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:51bf9d979f2a125bedfda60f0fc84bfa",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation when primary network exist, UserDefinedNetwork status should report not-ready [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:cb1fec7dfd4884654cec05f5db571f9a",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation: Default network multus annotation ValidatingAdmissionPolicy protection should prevent adding, modifying and removing the default-network annotation on existing pods [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:6e9c0d84e135a5cb9dfe2ef4c3b9627e",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation: Default network multus annotation when added with static IP and MAC to a pod belonging to primary UDN should create the pod with the specified static IP and MAC address with persistent IPAM [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:9f84f7b0538baaa5866dd0e0f790f255",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation: Default network multus annotation when added with static IP and MAC to a pod belonging to primary UDN should create the pod with the specified static IP and MAC address without persistent IPAM enabled [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:dd8d5b84183645f266170af70e684417",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation: Network Policies on a user defined primary network pods within namespace should be isolated when deny policy is present in L2 dualstack primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:dd4bf65b870b8309a48a254d049c3c7d",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation: Network Policies on a user defined primary network pods within namespace should be isolated when deny policy is present in L2 dualstack primary UDN with custom network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:0c4825e81cec769290f257206676350d",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation: Network Policies on a user defined primary network pods within namespace should be isolated when deny policy is present in L3 dualstack primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:8dc3c8cde42a3361f4dcd0375e9542fa",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation: Preconfigured Layer2 UDN duplicate IP validation with primary UDN layer 2 pods should fail when creating second pod with duplicate static IP IPv4 duplicate [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:1fbaba3cd96b16a2e7811f58091efd4d",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation: Preconfigured Layer2 UDN duplicate IP validation with primary UDN layer 2 pods should fail when creating second pod with duplicate static IP IPv6 duplicate [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:b863b5b31e965a1dc2362486950be637",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation: Preconfigured Layer2 UDN should respect network configuration Layer2 basic configuration [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:a39c8b745e55ebc17a1fdd9dbdc1f365",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation: Preconfigured Layer2 UDN should respect network configuration Layer2 with custom subnets [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:a4ce5ca701390df6af566deb3ff7f21b",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation: Preconfigured Layer2 UDN should respect network configuration Layer2 with inverted gateway/management IPs [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:cf01f9e80a76d3d3f9b9df65fb348bda",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation: Preconfigured Layer2 UDN unmasked reserved / infrastructure subnets are not allowed Layer2 with unmasked IPv4 infrastructure subnets [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:9f62f1fe25ca8382f0f62aa8e9955100",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation: Preconfigured Layer2 UDN unmasked reserved / infrastructure subnets are not allowed Layer2 with unmasked IPv4 reserved subnets [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:6ab3d858c6496cbce332737167c9b003",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation: Preconfigured Layer2 UDN unmasked reserved / infrastructure subnets are not allowed Layer2 with unmasked IPv6 infrastructure subnets [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:29a08306f6612246ecc26811628cf534",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation: Preconfigured Layer2 UDN unmasked reserved / infrastructure subnets are not allowed Layer2 with unmasked IPv6 reserved subnets [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:1470ffc235cadb570f1b5694b7a809d2",
+    "Name": "[networking][OCPFeature:NetworkSegmentation] Network Segmentation: services on a user defined primary network should be reachable through their cluster IP, node port and load balancer L2 primary UDN with custom network, cluster-networked pods, NodePort service [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests-upgrade:9a8add6ce87647f043e31555ecade9a2",
     "Name": "[oauth-apiserver][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-oauth-apiserver",
     "Suite": "openshift-tests-upgrade",
@@ -754333,6 +755373,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:2f4d73b2f9a60e9748c5f91f80e9b239",
+    "Name": "[sig-cli] oc adm must-gather run the must-gather command with own name space [apigroup:config.openshift.io] [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "oc",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "oc",
+    "JIRAComponentID": "14806"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:a1c2c3d9c02be9b8bcba8cf7573b18dc",
     "Name": "[sig-cli] oc adm must-gather run the must-gather command with own name space [apigroup:config.openshift.io][Timeout:20m] [Suite:openshift/conformance/parallel]",
     "Suite": "openshift-tests",
@@ -808084,6 +809140,502 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:80aaa53fdeec94bee711817554a3ead5",
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Ingress Azure external and internal load balancer services receive IPs [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:9fb8fd7630fd77d738261831490514c2",
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Ingress Ingress operator is enabled as an optional component [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:afdfc1877ff922d872a0ede556b7a51d",
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Ingress Propagate ingress labels to generated routes [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:67c172961b1db7a0f5882f9e31c2df44",
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Ingress Router deployment using different shard with same subdomain [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:dd04b4f90c4d4bcbabd30119360e4165",
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Ingress Setting route.openshift.io/termination annotation to Edge/Passthrough/Reencrypt in ingress resource [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:567aa110d2d985e918950b9a2f231205",
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Ingress different router deployment with same route using subdomain [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:6a4fbce828c63297026c03b26b3b3dbf",
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Ingress host name of the route depends on the subdomain if provided [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:ec56694dbccfa8d6f8a97f53b47b17f7",
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Ingress use IngressClass controller for ingress-to-route [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:249b369388e858a31c93b79ff4b35187",
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Ingress-Operator Cluster ingress health checks and routes fail on swapping application router between public and private [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:89acae1bc293e112da0e145f3f96f490",
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Ingress-Operator Ingress operator support for private hosted zones in Shared VPC clusters [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:cba696041d4126819395f97a8ebcc687",
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Ingress-Operator Router should support SHA1 CA certificates in the default certificate chain [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:ade264c31f7de004784a1f55f1368e73",
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Ingress-Operator The namespaceSelector of router is controlled by ingresscontroller [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:2793c1d3f053c529177dec43fe244814",
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Ingress-Operator The nodeSelector and tolerations of router deployment are controlled by ingresscontroller [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:e22566e869d0101ee019177df752d16d",
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Ingress-Operator The routeSelector of router is controlled by ingresscontroller [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:c91c0cab0ed2f7f62652f221007ce8cb",
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Ingress-Operator matchExpressions for namespaceSelector defined in an ingress-controller [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:84a5171f6cf62cca3057ba4bf321debf",
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Ingress-Operator matchExpressions for routeSelector defined in an ingress-controller [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:aecaace94ad980b7183514955e64b593",
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Ingress-Operator misc tests for ingress operator [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:f428e7b4577cf9c783775af7ce772e70",
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Route-CLB AWS NLB allocates and updates Elastic IP allocations [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:ca0356aa8dc1eb910de543c76e139895",
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Route-CLB AWS NLB supports selecting subnets [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:17a7bd59ccaa23c139c01585a52d9c50",
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Route-CLB IngressController sets the expected endpoint publishing strategy for the cluster platform [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:a065ae2a5ae9e288c901773d1542b0da",
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Route-CLB IngressController supports multiple CIDR blocks in one Azure NSG rule [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:3f6fe2022ef603f6e594a7046d088fb9",
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Route-CLB Switching an AWS load balancer between Classic and NLB requires service recreation [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:2c53d178427d01649e198dc2b47795a4",
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Route-Tunning Default HAProxy maxconn is 50000 [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:55ad80d8904f7f9def057979d5126716",
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Route-Tunning IngressController tuningOptions configure HAProxy header buffers [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:29c072d1d52171bdb37e1e89acda586b",
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Route-Tunning The threadCount parameter controls HAProxy nbthread [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:4371af972ddaa1a1ae11b8d854de8f1d",
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Route-Tunning TuningOptions configure HAProxy reload interval [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:7b26d124eccc68a1d1e7d6980e9d1a79",
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Route-Tunning TuningOptions configure HTTP keep-alive timeout [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:01d2c05adcd455de11125a41835b4bd4",
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Route-Tunning TuningOptions configure ROUTER_MAX_CONNECTIONS [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:dd4991d38731eea784fb170acd02b5c8",
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Route-Tunning TuningOptions configure TCP client and server timeouts [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:5bc4bbd376d1faa70a72e8d744ad0856",
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Route-Tunning TuningOptions configure TLS inspect delay [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:0fe71284b25223b8a54a252a95a16afd",
+    "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Route-Tunning TuningOptions configure router backend check interval [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "Router"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": "14827"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:306da47dc55fdbf359c9207f4f9e2777",
     "Name": "[sig-network-edge][OTP][Level0][Feature:Router] Network_Edge Component_Router Azure external and internal load balancer services receive IPs [Suite:openshift/conformance/parallel]",
     "Suite": "openshift-tests",
@@ -826520,22 +828072,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:7f7fa70f0011cfa36534ea9f62c32911",
-    "Name": "[sig-network][Feature:EgressIP] [external-targets] only pods matched by the pod selector should have the EgressIPs [Skipped:Network/OpenShiftSDN] [Serial] [Suite:openshift/conformance/serial]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Networking / ovn-kubernetes",
-    "Capabilities": [
-      "EgressIP"
-    ],
-    "JIRAComponent": "Networking / ovn-kubernetes",
-    "JIRAComponentID": "14951"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:216f46841c4ad7524518dca1fcd0b547",
     "Name": "[sig-network][Feature:EgressIP] [external-targets] pods should have the assigned EgressIPs and EgressIPs can be deleted and recreated [Skipped:azure] [Serial] [Suite:openshift/conformance/serial]",
     "Suite": "openshift-tests",
@@ -826548,22 +828084,6 @@
     ],
     "JIRAComponent": "Networking / cluster-network-operator",
     "JIRAComponentID": "14922"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:24bd3b8d749d3b5df6d35bd2554f1f1c",
-    "Name": "[sig-network][Feature:EgressIP] [external-targets] pods should have the assigned EgressIPs and EgressIPs can be updated [Skipped:Network/OpenShiftSDN] [Serial] [Suite:openshift/conformance/serial]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Networking / ovn-kubernetes",
-    "Capabilities": [
-      "EgressIP"
-    ],
-    "JIRAComponent": "Networking / ovn-kubernetes",
-    "JIRAComponentID": "14951"
   },
   {
     "APIVersion": "v1",
@@ -875436,6 +876956,822 @@
     ],
     "JIRAComponent": "OLM",
     "JIRAComponentID": "14927"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:2fe3a17b9385992f784b6fe21e2e9935",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation ClusterUserDefinedNetwork CRD Controller pod connected to ClusterUserDefinedNetwork CR \u0026 managed NADs cannot be deleted when being used [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:c5f3ae2479345a6c9305ba5cc5c0d9aa",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation ClusterUserDefinedNetwork CRD Controller should create NAD according to spec in each target namespace and report active namespaces [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:0eded171ea98d16185db503a4b71f8e7",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation ClusterUserDefinedNetwork CRD Controller should create NAD in new created namespaces that apply to namespace-selector [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:ffff3e534b31030d8305f6a9e78bcf2f",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation ClusterUserDefinedNetwork CRD Controller when CR is deleted, should delete all managed NAD in each target namespace [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:9cfee145ea1b37a9dd7e482bc68ac734",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation ClusterUserDefinedNetwork CRD Controller when namespace-selector is mutated should create NAD in namespaces that apply to mutated namespace-selector [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:5275f471b9c272e3f55c095ebe917f8a",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation ClusterUserDefinedNetwork CRD Controller when namespace-selector is mutated should delete managed NAD in namespaces that no longer apply to namespace-selector [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:42bcb6fb631666fa92bd66bd6b000c17",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation Sync perform east/west traffic between nodes following OVN Kube node pod restart L2 [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:e274368f0931b0932e5739757d9a5af1",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation Sync perform east/west traffic between nodes following OVN Kube node pod restart L2 with custom network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:5e5b5f986c231ee702a3ad735e430dfe",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation Sync perform east/west traffic between nodes following OVN Kube node pod restart L3 [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:22dcc82613e321d5c26345b313e03cd8",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation UserDefinedNetwork CRD Controller for L2 secondary network pod connected to UserDefinedNetwork cannot be deleted when being used [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:4ca1b1431a5a1c23bc8201356ce7a66b",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation UserDefinedNetwork CRD Controller for L2 secondary network should create NetworkAttachmentDefinition according to spec [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:4c689b835db25c830d6f90442e3a3b40",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation UserDefinedNetwork CRD Controller for L2 secondary network should delete NetworkAttachmentDefinition when UserDefinedNetwork is deleted [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:87dca0abbfe62167a471b5049f2f122a",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation UserDefinedNetwork CRD Controller for primary UDN without required namespace label should be able to create pod and it will attach to the cluster default network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:708424fd8491578d645815e653f011f1",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation UserDefinedNetwork CRD Controller for primary UDN without required namespace label should not be able to update the namespace and add the UDN label [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:4570ef68b60f623317093d04f6ce5519",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation UserDefinedNetwork CRD Controller for primary UDN without required namespace label should not be able to update the namespace and remove the UDN label [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:de11cfa8fdfe2c6a10afe1999a60dc39",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using ClusterUserDefinedNetwork can perform east/west traffic between nodes two pods connected over a L2 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:dea8ce357d357479e46a31fe7ad5141e",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using ClusterUserDefinedNetwork can perform east/west traffic between nodes two pods connected over a L2 primary UDN with custom network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:4b1e5367dd44598e93c2b416bf25c1ee",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using ClusterUserDefinedNetwork can perform east/west traffic between nodes two pods connected over a L3 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:6185c1d77fa52ededeabea5ba17d1529",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using ClusterUserDefinedNetwork creates a networkStatus Annotation with UDN interface L2 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:f455bfed7e04d7f44292dc10a4f7828b",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using ClusterUserDefinedNetwork creates a networkStatus Annotation with UDN interface L2 primary UDN with custom network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:554946f3137e1748da3f0029d2afc69a",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using ClusterUserDefinedNetwork creates a networkStatus Annotation with UDN interface L3 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:3bb4dc026b2e930cc8423205fc1c1cec",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using ClusterUserDefinedNetwork isolates overlapping CIDRs with L2 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:4060381a50aabc09369b3fdebbb05a11",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using NetworkAttachmentDefinitions can perform east/west traffic between nodes two pods connected over a L2 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:fed2a3f66ba1cd06b203ab1d56389d56",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using NetworkAttachmentDefinitions can perform east/west traffic between nodes two pods connected over a L2 primary UDN with custom network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:af44473d3ab701b1ceeb480ac1274b2a",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using NetworkAttachmentDefinitions can perform east/west traffic between nodes two pods connected over a L3 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:4c070b34bf8deec1c60a0aeb3c15af47",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using NetworkAttachmentDefinitions creates a networkStatus Annotation with UDN interface L2 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:6eec165e02073d45be762937ac427ffa",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using NetworkAttachmentDefinitions creates a networkStatus Annotation with UDN interface L2 primary UDN with custom network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:5fad2e524c18dd55f06399cc0531121a",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using NetworkAttachmentDefinitions creates a networkStatus Annotation with UDN interface L3 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:051c78cab7caee951031e92e25ee9274",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using NetworkAttachmentDefinitions isolates overlapping CIDRs with L2 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:4efa75ddd9a4cd43ed8a5989f6f4d099",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using UserDefinedNetwork can perform east/west traffic between nodes two pods connected over a L2 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:634403e7a55425eaa68fbeb4aa7e2a4b",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using UserDefinedNetwork can perform east/west traffic between nodes two pods connected over a L2 primary UDN with custom network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:46fd886cc865693eadc070e91ada2ea3",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using UserDefinedNetwork can perform east/west traffic between nodes two pods connected over a L3 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:fcd4c7be06f67266b0ef96cb8cf88991",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using UserDefinedNetwork creates a networkStatus Annotation with UDN interface L2 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:07a3942103f1a696f65c7df3e8d93109",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using UserDefinedNetwork creates a networkStatus Annotation with UDN interface L2 primary UDN with custom network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:f232a604009e8e561594dd33eb2baffd",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using UserDefinedNetwork creates a networkStatus Annotation with UDN interface L3 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:f48c37f058dd42e1559943d44d98d1d1",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using UserDefinedNetwork isolates overlapping CIDRs with L2 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:ac08dd30b2c822b0080ffcf2b08cfd96",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network created using UserDefinedNetwork isolates overlapping CIDRs with L3 primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:feb724072442105a38df4391a8de5682",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation a user defined primary network doesn't cause network name conflict [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:38230de00d8e4ba01ef2c0335829c7fb",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation when primary network exist, ClusterUserDefinedNetwork status should report not-ready [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:92d9f4bd104e871be443b7132ea341c2",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation when primary network exist, UserDefinedNetwork status should report not-ready [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:f82a5539b498b9281e2d089015ef4591",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation: Default network multus annotation ValidatingAdmissionPolicy protection should prevent adding, modifying and removing the default-network annotation on existing pods [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:1794e2f5b3d994fc99d67e887cd53c64",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation: Default network multus annotation when added with static IP and MAC to a pod belonging to primary UDN should create the pod with the specified static IP and MAC address [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:94aa30ec3e1ce18ddfeb26ea32fb58b0",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation: Network Policies on a user defined primary network pods within namespace should be isolated when deny policy is present in L2 dualstack primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:a79f5f73907e3723b9de9a564384b340",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation: Network Policies on a user defined primary network pods within namespace should be isolated when deny policy is present in L2 dualstack primary UDN with custom network [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:9e48dbd04308c2085c23772f1781d19d",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation: Network Policies on a user defined primary network pods within namespace should be isolated when deny policy is present in L3 dualstack primary UDN [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:19f2376ecc86e9d710a4f76aed22adff",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation: Preconfigured Layer2 UDN duplicate IP validation with primary UDN layer 2 pods should fail when creating second pod with duplicate static IP IPv4 duplicate [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:3db724405b07ca752f9c16ed5899ffa2",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation: Preconfigured Layer2 UDN duplicate IP validation with primary UDN layer 2 pods should fail when creating second pod with duplicate static IP IPv6 duplicate [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:66f60062241383c66400d0faf44a3987",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation: Preconfigured Layer2 UDN should respect network configuration Layer2 basic configuration [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:c6d320180d095b241a43c57240445146",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation: Preconfigured Layer2 UDN should respect network configuration Layer2 with custom subnets [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:c2a709d900eb0e672f2659f0e2334235",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation: Preconfigured Layer2 UDN should respect network configuration Layer2 with inverted gateway/management IPs [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:1af00afcded2b24321a29f76309f5ad3",
+    "Name": "[sig-ovn-kubernetes][OCPFeature:NetworkSegmentation] Network Segmentation: services on a user defined primary network should be reachable through their cluster IP, node port and load balancer L2 primary UDN with custom network, cluster-networked pods, NodePort service [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
   },
   {
     "APIVersion": "v1",
@@ -1124466,6 +1126802,54 @@
     ],
     "JIRAComponent": "Machine Config Operator / platform-vsphere",
     "JIRAComponentID": "14801"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:5f033f6495d9ba3e840d960ec80877d0",
+    "Name": "oc adm transition discovery lists available topology transitions [TopologyTransition][Serial][Skipped:MicroShift]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:35caab5c4e74b9d56dc57a4705dc0a9d",
+    "Name": "oc adm transition dry-run previews an available topology transition [TopologyTransition][Serial][Skipped:MicroShift]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:7e5b5e7e49470303c21679c8ee380af5",
+    "Name": "oc adm transition initiate completes a topology transition through the status-read path [TopologyTransition][Serial][Skipped:MicroShift]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
   },
   {
     "APIVersion": "v1",
