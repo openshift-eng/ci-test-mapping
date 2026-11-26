@@ -438063,6 +438063,42 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:ea591000d1574f308db17b58960f7f13",
+    "Name": "[Feature:MACSecurity][Feature:VirtualMachineSupport][FeatureGate:MACSecurity][ovn-kubernetes-ote][sig-network] Kubevirt Virtual Machines user-defined network port-security disabled, TCP connections with spoofed MAC should survive successful and failed live migration over localnet [Suite:ovn-kubernetes/conformance/serial/virtualization]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "FeatureGate:MACSecurity",
+      "MACSecurity",
+      "VirtualMachineSupport"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:d3b247719475c985e0f0c6aa7694991e",
+    "Name": "[Feature:MACSecurity][Feature:VirtualMachineSupport][FeatureGate:MACSecurity][ovn-kubernetes-ote][sig-network] Kubevirt Virtual Machines user-defined network port-security disabled, TCP connections with spoofed MAC should survive successful and failed live migration over secondary layer2 [Suite:ovn-kubernetes/conformance/serial/virtualization]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "FeatureGate:MACSecurity",
+      "MACSecurity",
+      "VirtualMachineSupport"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:a1a17ad368942328cd26f5090f3503ff",
     "Name": "[Feature:MultiHoming][ovn-kubernetes-ote][sig-network] Multi Homing A pod with multiple attachments to the same secondary NAD features multiple different IPs and connectivity redundancy Localnet secondary NAD",
     "Suite": "openshift-tests",
@@ -669582,6 +669618,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:7d23ac8c9dbd0242d1fb7cdce9f29c11",
+    "Name": "[OTP][sig-baremetal] IPI BareMetal Author:jhajyahy-High-91125-Virtual media TLS listener matches the Provisioning spec [Level0]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:8be3232580f48c76c4201dda190972c0",
     "Name": "[OTP][sig-baremetal] IPI BareMetal Author:jhajyahy-Medium-33516-Verify that cluster baremetal operator is active [Level0]",
     "Suite": "openshift-tests",
@@ -715166,6 +715218,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests-upgrade:2bfb4b0b870432656962f427f6ecb711",
+    "Name": "[sig-arch] all containers in ns/openshift-compatibility-requirements-operator must have terminationMessagePolicy=FallbackToLogsOnError",
+    "Suite": "openshift-tests-upgrade",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:2bfb4b0b870432656962f427f6ecb711",
     "Name": "[sig-arch] all containers in ns/openshift-compatibility-requirements-operator must have terminationMessagePolicy=FallbackToLogsOnError",
     "Suite": "openshift-tests",
@@ -729328,6 +729396,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests-upgrade:9e0bd5b5fb024861bfaaf3a9a7cd7e4f",
+    "Name": "[sig-architecture] platform pods in ns/openshift-compatibility-requirements-operator should not exit a moderate amount of times",
+    "Suite": "openshift-tests-upgrade",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:9e0bd5b5fb024861bfaaf3a9a7cd7e4f",
     "Name": "[sig-architecture] platform pods in ns/openshift-compatibility-requirements-operator should not exit a moderate amount of times",
     "Suite": "openshift-tests",
@@ -729344,9 +729428,41 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests-upgrade:5c8128ffa1224e52d1133b6343740707",
+    "Name": "[sig-architecture] platform pods in ns/openshift-compatibility-requirements-operator should not exit an excessive amount of times",
+    "Suite": "openshift-tests-upgrade",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:5c8128ffa1224e52d1133b6343740707",
     "Name": "[sig-architecture] platform pods in ns/openshift-compatibility-requirements-operator should not exit an excessive amount of times",
     "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests-upgrade:2fe065182e5307cdc128f76b1b886555",
+    "Name": "[sig-architecture] platform pods in ns/openshift-compatibility-requirements-operator should not fail to start",
+    "Suite": "openshift-tests-upgrade",
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
@@ -740317,6 +740433,22 @@
     "ID": "openshift-tests:d68fdddf124137721dac033868806a9e",
     "Name": "[sig-auth] all workloads in ns/openshift-cnv must set the 'openshift.io/required-scc' annotation",
     "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": -1,
+    "StaffApprovedObsolete": false,
+    "Component": "oauth-apiserver",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "oauth-apiserver",
+    "JIRAComponentID": "14859"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests-upgrade:fb42f85e538319a3d411b56de7356da8",
+    "Name": "[sig-auth] all workloads in ns/openshift-compatibility-requirements-operator must set the 'openshift.io/required-scc' annotation",
+    "Suite": "openshift-tests-upgrade",
     "Product": "OpenShift",
     "Priority": -1,
     "StaffApprovedObsolete": false,
@@ -1122518,9 +1122650,41 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests-upgrade:48eda471d54c57a12c01d2e9651d4f45",
+    "Name": "objects in ns/openshift-compatibility-requirements-operator should have generation increasing monotonically",
+    "Suite": "openshift-tests-upgrade",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:48eda471d54c57a12c01d2e9651d4f45",
     "Name": "objects in ns/openshift-compatibility-requirements-operator should have generation increasing monotonically",
     "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests-upgrade:53ba9deafa8491123701ed3767621930",
+    "Name": "objects in ns/openshift-compatibility-requirements-operator should not have too many generations",
+    "Suite": "openshift-tests-upgrade",
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
@@ -1128648,6 +1128812,22 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests-upgrade:f1a21641dbb5286a4e7844cb182f9594",
     "Name": "operators in in ns/openshift-commatrix-test should not submit invalid apply statements",
+    "Suite": "openshift-tests-upgrade",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests-upgrade:066db0d58280c52f7ed63cf37f9ef6da",
+    "Name": "operators in in ns/openshift-compatibility-requirements-operator should not submit invalid apply statements",
     "Suite": "openshift-tests-upgrade",
     "Product": "OpenShift",
     "Priority": 0,
@@ -1139222,9 +1139402,41 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests-upgrade:af456787f2c9ead1f455bb7378d43e8b",
+    "Name": "users in ns/openshift-compatibility-requirements-operator must not produce too many applies",
+    "Suite": "openshift-tests-upgrade",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:af456787f2c9ead1f455bb7378d43e8b",
     "Name": "users in ns/openshift-compatibility-requirements-operator must not produce too many applies",
     "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests-upgrade:c4d5371d46baa951e818691ae839b3a1",
+    "Name": "users in ns/openshift-compatibility-requirements-operator must not produce too many invalid \"apply\" requests",
+    "Suite": "openshift-tests-upgrade",
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
@@ -1139254,6 +1139466,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests-upgrade:dad2cc90bbecd100558c6aae1afa2155",
+    "Name": "users in ns/openshift-compatibility-requirements-operator must not produce too many invalid \"create\" requests",
+    "Suite": "openshift-tests-upgrade",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:dad2cc90bbecd100558c6aae1afa2155",
     "Name": "users in ns/openshift-compatibility-requirements-operator must not produce too many invalid \"create\" requests",
     "Suite": "openshift-tests",
@@ -1139270,9 +1139498,41 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests-upgrade:4ed19191fa59ae0982f0a27b9c801327",
+    "Name": "users in ns/openshift-compatibility-requirements-operator must not produce too many invalid \"patch\" requests",
+    "Suite": "openshift-tests-upgrade",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:4ed19191fa59ae0982f0a27b9c801327",
     "Name": "users in ns/openshift-compatibility-requirements-operator must not produce too many invalid \"patch\" requests",
     "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests-upgrade:066be0940ca171e54f85c88efa268b9c",
+    "Name": "users in ns/openshift-compatibility-requirements-operator must not produce too many invalid \"update\" requests",
+    "Suite": "openshift-tests-upgrade",
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,

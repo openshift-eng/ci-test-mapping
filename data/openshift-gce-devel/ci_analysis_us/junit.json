@@ -108548,6 +108548,14 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[Feature:MACSecurity][Feature:VirtualMachineSupport][FeatureGate:MACSecurity][ovn-kubernetes-ote][sig-network] Kubevirt Virtual Machines user-defined network port-security disabled, TCP connections with spoofed MAC should survive successful and failed live migration over localnet [Suite:ovn-kubernetes/conformance/serial/virtualization]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Feature:MACSecurity][Feature:VirtualMachineSupport][FeatureGate:MACSecurity][ovn-kubernetes-ote][sig-network] Kubevirt Virtual Machines user-defined network port-security disabled, TCP connections with spoofed MAC should survive successful and failed live migration over secondary layer2 [Suite:ovn-kubernetes/conformance/serial/virtualization]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[Feature:MultiHoming][ovn-kubernetes-ote][sig-network] Multi Homing A pod with multiple attachments to the same secondary NAD features multiple different IPs and connectivity redundancy Localnet secondary NAD",
     "Suite": "openshift-tests"
   },
@@ -166424,6 +166432,10 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[OTP][sig-baremetal] IPI BareMetal Author:jhajyahy-High-91125-Virtual media TLS listener matches the Provisioning spec [Level0]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[OTP][sig-baremetal] IPI BareMetal Author:jhajyahy-Medium-33516-Verify that cluster baremetal operator is active [Level0]",
     "Suite": "openshift-tests"
   },
@@ -177777,6 +177789,10 @@
   },
   {
     "Name": "[sig-arch] all containers in ns/openshift-compatibility-requirements-operator must have terminationMessagePolicy=FallbackToLogsOnError",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[sig-arch] all containers in ns/openshift-compatibility-requirements-operator must have terminationMessagePolicy=FallbackToLogsOnError",
     "Suite": "openshift-tests"
   },
   {
@@ -181317,11 +181333,23 @@
   },
   {
     "Name": "[sig-architecture] platform pods in ns/openshift-compatibility-requirements-operator should not exit a moderate amount of times",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[sig-architecture] platform pods in ns/openshift-compatibility-requirements-operator should not exit a moderate amount of times",
     "Suite": "openshift-tests"
   },
   {
     "Name": "[sig-architecture] platform pods in ns/openshift-compatibility-requirements-operator should not exit an excessive amount of times",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[sig-architecture] platform pods in ns/openshift-compatibility-requirements-operator should not exit an excessive amount of times",
     "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-architecture] platform pods in ns/openshift-compatibility-requirements-operator should not fail to start",
+    "Suite": "openshift-tests-upgrade"
   },
   {
     "Name": "[sig-architecture] platform pods in ns/openshift-compatibility-requirements-operator should not fail to start",
@@ -184050,6 +184078,10 @@
   {
     "Name": "[sig-auth] all workloads in ns/openshift-cnv must set the 'openshift.io/required-scc' annotation",
     "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-auth] all workloads in ns/openshift-compatibility-requirements-operator must set the 'openshift.io/required-scc' annotation",
+    "Suite": "openshift-tests-upgrade"
   },
   {
     "Name": "[sig-auth] all workloads in ns/openshift-compatibility-requirements-operator must set the 'openshift.io/required-scc' annotation",
@@ -278113,7 +278145,15 @@
   },
   {
     "Name": "objects in ns/openshift-compatibility-requirements-operator should have generation increasing monotonically",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "objects in ns/openshift-compatibility-requirements-operator should have generation increasing monotonically",
     "Suite": "openshift-tests"
+  },
+  {
+    "Name": "objects in ns/openshift-compatibility-requirements-operator should not have too many generations",
+    "Suite": "openshift-tests-upgrade"
   },
   {
     "Name": "objects in ns/openshift-compatibility-requirements-operator should not have too many generations",
@@ -279645,6 +279685,10 @@
   },
   {
     "Name": "operators in in ns/openshift-commatrix-test should not submit invalid apply statements",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "operators in in ns/openshift-compatibility-requirements-operator should not submit invalid apply statements",
     "Suite": "openshift-tests-upgrade"
   },
   {
@@ -282289,7 +282333,15 @@
   },
   {
     "Name": "users in ns/openshift-compatibility-requirements-operator must not produce too many applies",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "users in ns/openshift-compatibility-requirements-operator must not produce too many applies",
     "Suite": "openshift-tests"
+  },
+  {
+    "Name": "users in ns/openshift-compatibility-requirements-operator must not produce too many invalid \"apply\" requests",
+    "Suite": "openshift-tests-upgrade"
   },
   {
     "Name": "users in ns/openshift-compatibility-requirements-operator must not produce too many invalid \"apply\" requests",
@@ -282297,11 +282349,23 @@
   },
   {
     "Name": "users in ns/openshift-compatibility-requirements-operator must not produce too many invalid \"create\" requests",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "users in ns/openshift-compatibility-requirements-operator must not produce too many invalid \"create\" requests",
     "Suite": "openshift-tests"
   },
   {
     "Name": "users in ns/openshift-compatibility-requirements-operator must not produce too many invalid \"patch\" requests",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "users in ns/openshift-compatibility-requirements-operator must not produce too many invalid \"patch\" requests",
     "Suite": "openshift-tests"
+  },
+  {
+    "Name": "users in ns/openshift-compatibility-requirements-operator must not produce too many invalid \"update\" requests",
+    "Suite": "openshift-tests-upgrade"
   },
   {
     "Name": "users in ns/openshift-compatibility-requirements-operator must not produce too many invalid \"update\" requests",
