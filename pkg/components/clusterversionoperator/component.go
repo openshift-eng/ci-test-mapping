@@ -29,6 +29,10 @@ var ClusterVersionOperatorComponent = Component{
 		},
 		Matchers: []config.ComponentMatcher{
 			{
+				Suite:      "openshift-tests",
+				IncludeAll: []string{"verify the cluster readiness and stability"},
+			},
+			{
 				IncludeAny: []string{
 					"cluster-version-operator",
 					"bz-Cluster Version Operator",
