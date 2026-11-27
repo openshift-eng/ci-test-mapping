@@ -1,6 +1,8 @@
 package etcd
 
 import (
+	"regexp"
+
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/config"
 )
@@ -42,6 +44,14 @@ var EtcdComponent = Component{
 			{Suite: "DR_Testing"},
 			{Suite: "ETCD"},
 			{Suite: "etcd related features"},
+			// LP Interop OPP platform-infra backup suite, captures the etcd snapshot plus cluster state (INTEROP-9630).
+			// Matches both runtime-first lp-interop--OPP--backup and canonical lp-interop--OCP--OPP--backup.
+			{
+				SuiteRegEx: regexp.MustCompile(`^lp-interop--(OCP--)?OPP--backup$`),
+				IncludeAny: []string{
+					"backup",
+				},
+			},
 		},
 		TestRenames: map[string]string{
 			"[bz-etcd] pathological event should not see excessive RequiredInstallerResourcesMissing secrets":         "[bz-etcd] should not see excessive RequiredInstallerResourcesMissing secrets",

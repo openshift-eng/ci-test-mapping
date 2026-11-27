@@ -21,6 +21,12 @@ var LPquayComponent = Component{
 			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--Quay--`)},
 			//  LP Interop Test Suites: Capability is used to group Runtime Env.
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--Quay--OPP--`), Capabilities: []string{"OPP"}},
+			// Platform-infra smoke suite, routed to the existing Quay component
+			// (INTEROP-9630): both the runtime-first lp-interop--OPP--smoke and
+			// the canonical lp-interop--OCP--OPP--smoke forms carry the
+			// quay-pull case, so the claim is scoped by suite and test name
+			// and does not collide with the canonical OPP matchers above.
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--(OCP--)?OPP--smoke$`), IncludeAny: []string{"quay-pull"}},
 			// Runtime-first emission from interop-opp-product-upgrade-quay, which
 			// still writes the literal suite name in openshift/release. The
 			// exact Suite claim outranks Cluster Version Operator's Priority -10

@@ -1,6 +1,8 @@
 package clusterversionoperator
 
 import (
+	"regexp"
+
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/config"
 )
@@ -48,6 +50,14 @@ var ClusterVersionOperatorComponent = Component{
 					"upgrade should succeed: cvo",
 					"upgrade should succeed: rollback",
 					"upgrade should succeed: admin_ack",
+				},
+			},
+			// LP Interop OPP platform-infra smoke suite, queries ClusterOperators, nodes, ClusterVersion (INTEROP-9630).
+			// Matches both runtime-first lp-interop--OPP--smoke and canonical lp-interop--OCP--OPP--smoke.
+			{
+				SuiteRegEx: regexp.MustCompile(`^lp-interop--(OCP--)?OPP--smoke$`),
+				IncludeAny: []string{
+					"cluster-health",
 				},
 			},
 			{

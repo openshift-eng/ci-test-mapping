@@ -34,10 +34,11 @@ var lpCapabilityTests = []struct {
 	// with the OPP capability; for ACM this is also the ACM-Virt negative
 	// (canonical OPP suites carry the OPP capability, not ACM-Virt).
 	// OPP matchers exist for ACM/ACS/CNV/ODF/Quay; canonical OCP-class
-	// platform-infra suites (lp-interop--OCP--OPP--*) intentionally remain
-	// Unknown: no OCP component is registered, and the lp-interop--OPP
-	// component was removed per review (0 rows in both datasets). When an
-	// OCP home is decided, add a matcher and rows for it. Suites whose
+	// platform-infra suites (lp-interop--OCP--OPP--*) route per-case to the
+	// owning platform components through Suite-scoped IncludeAny matchers
+	// (INTEROP-9630, see oppPlatformInfraTests); no OCP component is
+	// registered and the lp-interop--OPP component was removed per review
+	// (0 rows in both datasets), so cases with no owner stay Unknown. Suites whose
 	// matchers were removed per the exact structure agreed in review
 	// (broad component rules, ACM-Virt, and the runtime-first OPP test
 	// patterns) are pinned as Unknown in TestKnownUnroutedLPSuites, except
@@ -236,6 +237,76 @@ func TestPriorityResolution(t *testing.T) {
 	}
 }
 
+// oppPlatformInfraTests pins routing for the 8 Unknown OPP platform-infra
+// rows (INTEROP-9630): runtime-first lp-interop--OPP--* and forward-looking
+// canonical lp-interop--OCP--OPP--* forms must both resolve to existing
+// components through Suite-scoped IncludeAny matchers. 8 runtime-first rows
+// plus 8 canonical rows. These rows graduated from knownOPPMisroutes when
+// the INTEROP-9630 matchers landed; the us field keeps them under the same
+// US reachability guard as the pin lists.
+var oppPlatformInfraTests = []struct {
+	suite     string
+	name      string
+	component string
+	us        usStatus
+}{
+	// Runtime-first suite forms (live rows in data/openshift-gce-devel/ci_analysis_us).
+	{"lp-interop--OPP--smoke", "acm-connectivity", "LP--ACM", usAdmitted},
+	{"lp-interop--OPP--smoke", "acs-sensors", "LP--ACS", usAdmitted},
+	{"lp-interop--OPP--smoke", "quay-pull", "LP--Quay", usAdmitted},
+	{"lp-interop--OPP--smoke", "cluster-health", "Cluster Version Operator", usAdmitted},
+	{"lp-interop--OPP--smoke", "opp-operators", "OLM", usAdmitted},
+	{"lp-interop--OPP--backup", "backup", "Etcd", usAdmitted},
+	{"lp-interop--OPP--wait-mcp", "wait-mcp", "Machine Config Operator", usAdmitted},
+	{"lp-interop--OPP--wait-mcp", "predicate-selftest", "Machine Config Operator", usAdmitted},
+	// Canonical suite forms (forward-looking, no rows yet; proven by fixture, not regeneration).
+	{"lp-interop--OCP--OPP--smoke", "acm-connectivity", "LP--ACM", usAdmitted},
+	{"lp-interop--OCP--OPP--smoke", "acs-sensors", "LP--ACS", usAdmitted},
+	{"lp-interop--OCP--OPP--smoke", "quay-pull", "LP--Quay", usAdmitted},
+	{"lp-interop--OCP--OPP--smoke", "cluster-health", "Cluster Version Operator", usAdmitted},
+	{"lp-interop--OCP--OPP--smoke", "opp-operators", "OLM", usAdmitted},
+	{"lp-interop--OCP--OPP--backup", "backup", "Etcd", usAdmitted},
+	{"lp-interop--OCP--OPP--wait-mcp", "wait-mcp", "Machine Config Operator", usAdmitted},
+	{"lp-interop--OCP--OPP--wait-mcp", "predicate-selftest", "Machine Config Operator", usAdmitted},
+}
+
+func TestOPPPlatformInfraRouting(t *testing.T) {
+	t.Parallel()
+	componentRegistry := registry.NewComponentRegistry()
+	identifier := NewTestIdentifier(componentRegistry, nil)
+	for _, tc := range oppPlatformInfraTests {
+		t.Run(tc.suite+"/"+tc.name, func(t *testing.T) {
+			t.Parallel()
+			testInfo := &v1.TestInfo{Name: tc.name, Suite: tc.suite}
+			ownership, err := identifier.Identify(testInfo)
+			if err != nil || ownership == nil {
+				t.Fatalf("Identify() = %v, %v", ownership, err)
+			}
+			if ownership.Component != tc.component {
+				t.Errorf("Identify() component = %q, want %q", ownership.Component, tc.component)
+			}
+			if ownership.JIRAComponent != tc.component {
+				t.Errorf("Identify() JIRAComponent = %q, want %q", ownership.JIRAComponent, tc.component)
+			}
+			if ownership.Name != testInfo.Name {
+				t.Errorf("Identify() changed test name: %+v", ownership)
+			}
+			// Also verify direct component claim (no priority tie).
+			comp := componentRegistry.Components[tc.component]
+			if comp == nil {
+				t.Fatalf("component %q not in registry", tc.component)
+			}
+			direct, err := comp.IdentifyTest(testInfo)
+			if err != nil || direct == nil {
+				t.Fatalf("IdentifyTest() = %v, %v for component %q", direct, err, tc.component)
+			}
+			if direct.Component != tc.component {
+				t.Errorf("IdentifyTest() component = %q, want %q", direct.Component, tc.component)
+			}
+		})
+	}
+}
+
 // usStatus is a pinned name's intended reachability in the production US
 // mapping pipeline (config/openshift-eng.yaml). Suites are filtered by
 // includeSuites/includeSuitePatterns minus excludeSuites/excludeSuitePatterns
@@ -268,8 +339,11 @@ type oppRoutingPin struct {
 
 // knownOPPMisroutes pins today's WRONG routing for runtime-first OPP infra
 // suites, observed in data/openshift-gce-devel/ci_analysis_us only (0 rows in
-// ci_analysis_qe): smoke/backup/wait-mcp have no suite matcher and resolve to
-// Unknown. The upgrade-flavoured names were all stolen by Cluster Version
+// ci_analysis_qe): the smoke/backup/wait-mcp cases used to have no suite
+// matcher and resolved to Unknown, until the INTEROP-9630 matchers routed
+// them to existing components (their correct routing is now pinned in
+// oppPlatformInfraTests). The remaining misroute is the upgrade-flavoured
+// name stolen by Cluster Version
 // Operator, which matches the TEST NAME substring "upgrade" (Priority -10,
 // capability ClusterUpgrade); acs-upgrade, odf-upgrade and quay-upgrade each
 // now keep their component through an exact Suite matcher instead (see
@@ -281,14 +355,6 @@ type oppRoutingPin struct {
 // US ingestion no longer produces reads as matcher history rather than a live
 // misroute; TestOPPFixtureSuitesAdmittedByUSConfig enforces it.
 var knownOPPMisroutes = []oppRoutingPin{
-	{"acm-connectivity", "lp-interop--OPP--smoke", "Unknown", []string{DefaultCapability}, 0, usAdmitted},
-	{"backup", "lp-interop--OPP--backup", "Unknown", []string{DefaultCapability}, 0, usAdmitted},
-	{"wait-mcp", "lp-interop--OPP--wait-mcp", "Unknown", []string{DefaultCapability}, 0, usAdmitted},
-	// Canonical OCP-class platform-infra suites stay Unknown too: no OCP
-	// component is registered and the lp-interop--OPP component was removed
-	// per review (0 rows in both datasets). TODO: give these a home when the
-	// OCP component question is decided.
-	{"wait-mcp", "lp-interop--OCP--OPP--wait-mcp", "Unknown", []string{DefaultCapability}, 0, usAdmitted},
 	// The runtime-first OPP test patterns were removed per the exact
 	// structure agreed in review (etirta's 2026-10-30 22:34Z correction
 	// restored only the ACM flat Suite), so their upgrade-flavoured names
@@ -543,6 +609,12 @@ func TestOPPFixtureSuitesAdmittedByUSConfig(t *testing.T) {
 		t.Run("knownUnroutedSuites/"+pin.suite, func(t *testing.T) {
 			t.Parallel()
 			assertUSStatus(t, "knownUnroutedSuites", pin.suite, pin.us)
+		})
+	}
+	for _, row := range oppPlatformInfraTests {
+		t.Run("oppPlatformInfraTests/"+row.suite, func(t *testing.T) {
+			t.Parallel()
+			assertUSStatus(t, "oppPlatformInfraTests", row.suite, row.us)
 		})
 	}
 }

@@ -1,6 +1,8 @@
 package olm
 
 import (
+	"regexp"
+
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/config"
 )
@@ -51,6 +53,14 @@ var OLMComponent = Component{
 			},
 			{Suite: "Marketplace related scenarios"},
 			{Suite: "OLM"},
+			// LP Interop OPP platform-infra smoke suite, checks the CSV phase and pods of the four LP operators (INTEROP-9630).
+			// Matches both runtime-first lp-interop--OPP--smoke and canonical lp-interop--OCP--OPP--smoke.
+			{
+				SuiteRegEx: regexp.MustCompile(`^lp-interop--(OCP--)?OPP--smoke$`),
+				IncludeAny: []string{
+					"opp-operators",
+				},
+			},
 		},
 		TestRenames: map[string]string{
 			"[OLM][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-marketplace":                   "[bz-OLM][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-marketplace",
