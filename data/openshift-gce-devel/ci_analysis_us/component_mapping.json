@@ -439012,6 +439012,134 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:fd26cebcc9e4c7b50a8c20eff284388b",
+    "Name": "[Feature:NetworkSegmentation][Serial][ovn-kubernetes-ote][sig-network] Network Segmentation: MAC binding mirroring with ARP/NDP flood disabled ages out the CDN-triggered binding on every gateway router once traffic stops [Serial] [Suite:ovn-kubernetes/conformance/serial]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "NetworkSegmentation"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:2488a3dcc84003808115b0104b7cbc33",
+    "Name": "[Feature:NetworkSegmentation][Serial][ovn-kubernetes-ote][sig-network] Network Segmentation: MAC binding mirroring with ARP/NDP flood disabled ages out the UDN-triggered binding on every gateway router once traffic stops [Serial] [Suite:ovn-kubernetes/conformance/serial]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "NetworkSegmentation"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:1a01bdfdcd95135f45be0c7f1fdfbc1b",
+    "Name": "[Feature:NetworkSegmentation][Serial][ovn-kubernetes-ote][sig-network] Network Segmentation: MAC binding mirroring with ARP/NDP flood disabled binds node IPs statically on the UDNs instead of mirroring them [Serial] [Suite:ovn-kubernetes/conformance/serial]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "NetworkSegmentation"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:fa01af8285a6a4112523ea5d50db86bf",
+    "Name": "[Feature:NetworkSegmentation][Serial][ovn-kubernetes-ote][sig-network] Network Segmentation: MAC binding mirroring with ARP/NDP flood disabled does not leak the bindings into the other nodes' zones [Serial] [Suite:ovn-kubernetes/conformance/serial]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "NetworkSegmentation"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:df3682a8663fd75483290ba2f885bda4",
+    "Name": "[Feature:NetworkSegmentation][Serial][ovn-kubernetes-ote][sig-network] Network Segmentation: MAC binding mirroring with ARP/NDP flood disabled has no MAC bindings for the external containers before any traffic [Serial] [Suite:ovn-kubernetes/conformance/serial]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "NetworkSegmentation"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:a3595d6aec457966c08a7699ee0605a2",
+    "Name": "[Feature:NetworkSegmentation][Serial][ovn-kubernetes-ote][sig-network] Network Segmentation: MAC binding mirroring with ARP/NDP flood disabled mirrors a binding triggered by a UDN pod to the CDN and every other UDN [Serial] [Suite:ovn-kubernetes/conformance/serial]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "NetworkSegmentation"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:83ea42c8e0bb9d0357600370624766b1",
+    "Name": "[Feature:NetworkSegmentation][Serial][ovn-kubernetes-ote][sig-network] Network Segmentation: MAC binding mirroring with ARP/NDP flood disabled mirrors the binding learned by the CDN gateway router to every UDN [Serial] [Suite:ovn-kubernetes/conformance/serial]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "NetworkSegmentation"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:dd55a0973b75f1d30d150a985458135e",
+    "Name": "[Feature:NetworkSegmentation][Serial][ovn-kubernetes-ote][sig-network] Network Segmentation: MAC binding mirroring with ARP/NDP flood disabled never adds a static MAC binding to the default network gateway router [Serial] [Suite:ovn-kubernetes/conformance/serial]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / ovn-kubernetes",
+    "Capabilities": [
+      "NetworkSegmentation"
+    ],
+    "JIRAComponent": "Networking / ovn-kubernetes",
+    "JIRAComponentID": "14951"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:515b6d07ce3226f64351b279bdf24a56",
     "Name": "[Feature:NetworkSegmentation][ovn-kubernetes-ote][sig-network] Network Segmentation ClusterUserDefinedNetwork CRD Controller pod connected to ClusterUserDefinedNetwork CR \u0026 managed NADs cannot be deleted when being used [Suite:openshift/conformance/parallel]",
     "Suite": "openshift-tests",

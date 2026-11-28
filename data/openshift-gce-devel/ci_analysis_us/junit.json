@@ -108784,6 +108784,38 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[Feature:NetworkSegmentation][Serial][ovn-kubernetes-ote][sig-network] Network Segmentation: MAC binding mirroring with ARP/NDP flood disabled ages out the CDN-triggered binding on every gateway router once traffic stops [Serial] [Suite:ovn-kubernetes/conformance/serial]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Feature:NetworkSegmentation][Serial][ovn-kubernetes-ote][sig-network] Network Segmentation: MAC binding mirroring with ARP/NDP flood disabled ages out the UDN-triggered binding on every gateway router once traffic stops [Serial] [Suite:ovn-kubernetes/conformance/serial]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Feature:NetworkSegmentation][Serial][ovn-kubernetes-ote][sig-network] Network Segmentation: MAC binding mirroring with ARP/NDP flood disabled binds node IPs statically on the UDNs instead of mirroring them [Serial] [Suite:ovn-kubernetes/conformance/serial]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Feature:NetworkSegmentation][Serial][ovn-kubernetes-ote][sig-network] Network Segmentation: MAC binding mirroring with ARP/NDP flood disabled does not leak the bindings into the other nodes' zones [Serial] [Suite:ovn-kubernetes/conformance/serial]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Feature:NetworkSegmentation][Serial][ovn-kubernetes-ote][sig-network] Network Segmentation: MAC binding mirroring with ARP/NDP flood disabled has no MAC bindings for the external containers before any traffic [Serial] [Suite:ovn-kubernetes/conformance/serial]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Feature:NetworkSegmentation][Serial][ovn-kubernetes-ote][sig-network] Network Segmentation: MAC binding mirroring with ARP/NDP flood disabled mirrors a binding triggered by a UDN pod to the CDN and every other UDN [Serial] [Suite:ovn-kubernetes/conformance/serial]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Feature:NetworkSegmentation][Serial][ovn-kubernetes-ote][sig-network] Network Segmentation: MAC binding mirroring with ARP/NDP flood disabled mirrors the binding learned by the CDN gateway router to every UDN [Serial] [Suite:ovn-kubernetes/conformance/serial]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Feature:NetworkSegmentation][Serial][ovn-kubernetes-ote][sig-network] Network Segmentation: MAC binding mirroring with ARP/NDP flood disabled never adds a static MAC binding to the default network gateway router [Serial] [Suite:ovn-kubernetes/conformance/serial]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[Feature:NetworkSegmentation][ovn-kubernetes-ote][sig-network] Network Segmentation ClusterUserDefinedNetwork CRD Controller pod connected to ClusterUserDefinedNetwork CR \u0026 managed NADs cannot be deleted when being used [Suite:openshift/conformance/parallel]",
     "Suite": "openshift-tests"
   },
