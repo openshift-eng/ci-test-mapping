@@ -164493,6 +164493,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "GCP HCP E2E Test Suite:f72ae0339cbf61e4c2b3e61f18fc865f",
+    "Name": "[It] Hosted Cluster Ingress serves a route on the default wildcard certificate of an ingress-enabled cluster [hc-ingress]",
+    "Suite": "GCP HCP E2E Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "GCP HCP E2E Test Suite:417dfe4383040381e67eaef9118c854c",
     "Name": "[It] Hosted Cluster Lifecycle should create, verify, and delete a hosted cluster [hc-lifecycle]",
     "Suite": "GCP HCP E2E Test Suite",

@@ -41120,6 +41120,10 @@
     "Suite": "Controllers Integration Suite"
   },
   {
+    "Name": "[It] Hosted Cluster Ingress serves a route on the default wildcard certificate of an ingress-enabled cluster [hc-ingress]",
+    "Suite": "GCP HCP E2E Test Suite"
+  },
+  {
     "Name": "[It] Hosted Cluster Lifecycle should create, verify, and delete a hosted cluster [hc-lifecycle]",
     "Suite": "GCP HCP E2E Test Suite"
   },
